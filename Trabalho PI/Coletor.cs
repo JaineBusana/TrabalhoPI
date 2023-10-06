@@ -15,7 +15,7 @@ namespace Trabalho_PI
         public static string formaDaColeta { get; set; }
         public static string descricao { get; set; }
 
-        public static void Poupular()
+        public void Popular()
         {
             
             Console.WriteLine("Deseja realizar o cadastro como Pessoa Física ou Jurídica (1 = Física, 2 = Jurídica)");
