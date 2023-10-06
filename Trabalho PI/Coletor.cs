@@ -24,32 +24,25 @@ namespace Trabalho_PI
             {
                 Console.Write("Digite o seu CPF = ");
                 CPF = Convert.ToDouble(Console.ReadLine());
-                Console.Write("Digite o seu Endereço = ");
-                endereco = Console.ReadLine();
-                Console.Write("Digite a forma de coleta = ");
-                formaDaColeta = Console.ReadLine();
-                Console.Write("Digite uma descrição = ");
-                descricao = Console.ReadLine();
-                Console.WriteLine("Coletor cadastrado!");
             }
             if (respTipoPessoa == 2)
             {
                 Console.Write("Digite o seu CNPJ = ");
                 CNPJ = Convert.ToDouble(Console.ReadLine());
-                Console.Write("Digite o seu Endereço = ");
-                endereco = Console.ReadLine();
-                Console.Write("Digite a forma de coleta = ");
-                formaDaColeta = Console.ReadLine();
-                Console.Write("Digite uma descrição = ");
-                descricao = Console.ReadLine();
-                Console.WriteLine("Coletor cadastrado!");
             }
+            Console.Write("Digite o seu Endereço = ");
+            endereco = Console.ReadLine();
+            Console.Write("Digite a forma de coleta = ");
+            formaDaColeta = Console.ReadLine();
+            Console.Write("Digite uma descrição = ");
+            descricao = Console.ReadLine();
+            Console.WriteLine("Coletor cadastrado!");
             if (respTipoPessoa != 1 && respTipoPessoa != 2)
             {
                 Console.Clear();
                 Console.WriteLine("Resposta invalida! ");
                 Console.WriteLine();
-                Poupular();
+                Popular();
             }
             
         }
