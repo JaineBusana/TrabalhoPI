@@ -17,7 +17,7 @@ namespace Trabalho_PI
 
         private static List<Coletor> ListaColetor;
 
-        public static void Poupular()
+        public void Popular()
         {
             Coletor novoColetor = new Coletor();
             Console.WriteLine("Deseja realizar o cadastro como Pessoa Física ou Jurídica (1 = Física, 2 = Jurídica)");
