@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Trabalho_PI
 {
-    internal class Usuario
+    public class Usuario
     {
         public string Nome { get; set; }
         public char Sexo { get; set; }

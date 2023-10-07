@@ -17,7 +17,7 @@ namespace Trabalho_PI
         {
             // TODO: CHAMAR READ
             int index = Convert.ToInt32(Console.ReadLine());
-            coletores[index].Popular();
+            //coletores[index].Popular();
         }
 
         public void Delete()
