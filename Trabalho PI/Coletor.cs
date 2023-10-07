@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Trabalho_PI
 {
-    public class Coletor : Usuario
+    public class Coletor : Usuario, Ipl
     {
         //A class Coletor herda do Usuario Nome, Telefone, Sexo, Data de Nascimento, e-mail, usuário e senha
         public static double CPF { get; set; }
@@ -15,7 +15,7 @@ namespace Trabalho_PI
         public static string formaDaColeta { get; set; }
         public static string descricao { get; set; }
 
-        public static void Popular()
+        public void Popular()
         {
             
            EditarCPFeCNPJ();
@@ -29,7 +29,7 @@ namespace Trabalho_PI
             
             
         }
-        public static void EditarCPFeCNPJ()
+        public void EditarCPFeCNPJ()
         {
             Console.WriteLine("Deseja realizar o cadastro como Pessoa Física ou Jurídica (1 = Física, 2 = Jurídica)");
             int respTipoPessoa = Convert.ToInt32(Console.ReadLine());
@@ -51,7 +51,7 @@ namespace Trabalho_PI
                 Popular();
             }
         }
-        public static void ListarColetor()
+        public void Listar()
         {
             Console.WriteLine($"CPF {CPF}");
             Console.WriteLine($"Enderço {endereco}");

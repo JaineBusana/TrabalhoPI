@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Trabalho_PI
 {
-    public class UsuarioModel
+    public class UsuarioModel: Icrud
     {
         private List<Usuario> usuarios = new List<Usuario>();
 

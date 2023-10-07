@@ -6,25 +6,25 @@ using System.Threading.Tasks;
 
 namespace Trabalho_PI
 {
-    public class ColetorModel
+    public class ColetorModel: Icrud
     {
             private List<Coletor> coletores = new List<Coletor>();
 
        
 
        // HACK:
-           public void Update()
+           public void Atualizar()
         {
             // TODO: CHAMAR READ
             int index = Convert.ToInt32(Console.ReadLine());
             //coletores[index].Popular();
         }
 
-        public void Delete()
+        public void Deletar()
         {
             // TODO: CHAMAR READ
             Console.WriteLine("Você possui certeza que deseja excluir seu perfil?");
-            // TODO: NOME DO USUÁRIO, coletores.RemoveAt(login);
+            coletores.RemoveAt(nomeUsuario);
         }
 
     }
