@@ -11,14 +11,47 @@ namespace Trabalho_PI
             private List<Coletor> coletores = new List<Coletor>();
 
        
-
-       // HACK:
            public void Atualizar()
-        {
-            // TODO: CHAMAR READ
-            int index = Convert.ToInt32(Console.ReadLine());
-            //coletores[index].Popular();
-        }
+           {
+            Console.WriteLine("Qual campo você deseja editar: \n1-Nome \n2-Telefone " +
+                "\n3-Sexo \n4-Data de nascimento \n5-E-mail \n6-CPF/CNPJ \n7-Endereço " +
+                "\n8-Forma de coleta \n9-Descrição \n10-Todos os campos descritos acima."); 
+            int resposta = Convert.ToInt32(Console.ReadLine());
+
+            switch (resposta)
+            {
+                case 1:
+
+                    break;
+                case 2:
+
+                    break;
+                case 3:
+
+                    break;
+                case 4:
+
+                    break;
+                case 5:
+
+                    break;
+                case 6:
+                    Coletor.EditarCPFeCNPJ();
+                    break;
+                case 7:
+
+                    break;
+                case 8:
+
+                    break;
+                case 9:
+
+                    break;
+                case 10:
+                    break;
+            }
+
+           }
 
         public void Deletar()
         {
