@@ -10,11 +10,14 @@ namespace Trabalho_PI
     {
         private List<Usuario> usuarios = new List<Usuario>();
 
-        // usar o nome listarUsuario para READ? qq coisa muda
-
-        public void listarUsuario() //Read();
+        public void Create()
         {
+            Usuario.Popular();
+        }
 
+        public void Read() //Read();
+        {
+            Usuario.Listar();
         }
     
         public void alterarUsuario()
