@@ -15,7 +15,7 @@ namespace Trabalho_PI
            {
             Console.WriteLine("Qual campo você deseja editar: \n1-Nome \n2-Telefone " +
                 "\n3-Sexo \n4-Data de nascimento \n5-E-mail \n6-CPF/CNPJ \n7-Endereço " +
-                "\n8-Forma de coleta \n9-Descrição \n10-Todos os campos descritos acima."); 
+                "\n8-Forma de coleta \n9-Descrição \n10- Senha \n11-Todos os campos descritos acima."); 
             int resposta = Convert.ToInt32(Console.ReadLine());
 
             switch (resposta)
@@ -48,6 +48,10 @@ namespace Trabalho_PI
 
                     break;
                 case 10:
+
+                    break;
+                case 11:
+
                     break;
             }
 
