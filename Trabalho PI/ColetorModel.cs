@@ -55,9 +55,9 @@ namespace Trabalho_PI
 
         public void Deletar()
         {
-            // TODO: CHAMAR READ
             Console.WriteLine("Você possui certeza que deseja excluir seu perfil?");
-            coletores.RemoveAt(nomeUsuario);
+            coletores.RemoveAt(nomeUsuario, senhaUsuario);
+            //TODO: chamar a função que loga;
         }
 
     }
