@@ -15,7 +15,7 @@ namespace Trabalho_PI
         public static string formaDaColeta { get; set; }
         public static string descricao { get; set; }
 
-        public void Popular()
+        public static void Popular()
         {
             
            EditarCPFeCNPJ();
@@ -29,7 +29,7 @@ namespace Trabalho_PI
             
             
         }
-        public void EditarCPFeCNPJ()
+        public static void EditarCPFeCNPJ()
         {
             Console.WriteLine("Deseja realizar o cadastro como Pessoa Física ou Jurídica (1 = Física, 2 = Jurídica)");
             int respTipoPessoa = Convert.ToInt32(Console.ReadLine());

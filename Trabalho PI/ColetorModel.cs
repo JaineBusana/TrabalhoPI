@@ -56,8 +56,17 @@ namespace Trabalho_PI
         public void Deletar()
         {
             Console.WriteLine("Você possui certeza que deseja excluir seu perfil?");
-            coletores.RemoveAt(nomeUsuario, senhaUsuario);
-            //TODO: chamar a função que loga;
+            int resposta = Convert.ToInt32(Console.ReadLine());
+
+            if (resposta.Equals("sim"))
+            {
+                coletores.RemoveAt(nomeUsuario);
+                //TODO: chamar a função que loga;
+            }
+            else
+            {
+                // TODO: chamar menu perfil;
+            }
         }
 
     }
