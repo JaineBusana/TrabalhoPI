@@ -10,17 +10,23 @@ namespace Trabalho_PI
     {
         private List<Usuario> usuarios = new List<Usuario>();
 
-        public void Create()
+        public void Criar()
         {
-            Usuario.Popular();
+            Usuario usuario = new Usuario();
+            usuario.Popular();
+            usuarios.Add(usuario);
         }
 
-        public void Read() //Read();
+        public void Ler()
         {
-            Usuario.Listar();
+            //como fazer sem lista? como saber qual usuario esta logado?
+            for (int i = 0; i < usuarios.Count; i++)
+            {
+                usuarios[i].Listar();
+            }
         }
     
-        public void alterarUsuario()
+        public void Atualizar()
         {
             //listarUsuario();
             Console.WriteLine("Digite o número do item a ser alterado:");
@@ -32,7 +38,7 @@ namespace Trabalho_PI
             else { Console.WriteLine($"Gentileza inserir um número entre 0 e {usuarios.Count}.");}
         }
 
-        public void removerUsuario()
+        public void Deletar()
         {
             //listarUsuario();
             Console.WriteLine("Digite o número do item a ser excluído:");
