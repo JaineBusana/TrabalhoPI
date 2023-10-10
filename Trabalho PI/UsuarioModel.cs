@@ -6,18 +6,27 @@ using System.Threading.Tasks;
 
 namespace Trabalho_PI
 {
-    public class UsuarioModel
+    public class UsuarioModel: Icrud
     {
         private List<Usuario> usuarios = new List<Usuario>();
 
-        // usar o nome listarUsuario para READ? qq coisa muda
-
-        public void listarUsuario() //Read();
+        public void Criar()
         {
+            Usuario usuario = new Usuario();
+            usuario.Popular();
+            usuarios.Add(usuario);
+        }
 
+        public void Ler()
+        {
+            //como fazer sem lista? como saber qual usuario esta logado?
+            for (int i = 0; i < usuarios.Count; i++)
+            {
+                usuarios[i].Listar();
+            }
         }
     
-        public void alterarUsuario()
+        public void Atualizar()
         {
             //listarUsuario();
             Console.WriteLine("Digite o número do item a ser alterado:");
@@ -29,7 +38,7 @@ namespace Trabalho_PI
             else { Console.WriteLine($"Gentileza inserir um número entre 0 e {usuarios.Count}.");}
         }
 
-        public void removerUsuario()
+        public void Deletar()
         {
             //listarUsuario();
             Console.WriteLine("Digite o número do item a ser excluído:");
