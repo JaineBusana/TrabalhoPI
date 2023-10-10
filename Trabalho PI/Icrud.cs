@@ -8,9 +8,9 @@ namespace Trabalho_PI
 {
     internal interface Icrud
     {
-        void Criar();
-        void Ler();
-        void Atualizar();
-        void Deletar();
+        public void Criar();
+        public void Ler();
+        public void Atualizar();
+        public void Deletar();
     }
 }

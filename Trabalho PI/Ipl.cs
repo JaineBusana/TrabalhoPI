@@ -8,7 +8,7 @@ namespace Trabalho_PI
 {
     internal interface Ipl
     {
-        void Popular();
-        void Listar(); 
+        public void Popular();
+        public void Listar(); 
     }
 }
