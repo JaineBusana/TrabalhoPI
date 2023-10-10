@@ -16,18 +16,12 @@ namespace Trabalho_PI
         public static string descricao { get; set; }
 
         public static void Popular()
-        {
-            
-           EditarCPFeCNPJ();
-            Console.Write("Digite o seu Endereço = ");
-            endereco = Console.ReadLine();
-            Console.Write("Digite a forma de coleta = ");
-            formaDaColeta = Console.ReadLine();
-            Console.Write("Digite uma descrição = ");
-            descricao = Console.ReadLine();
+        {  
+            EditarCPFeCNPJ();
+            EditarEndereco();
+            EditarFormaDaColeta();
+            EditarDescricao();
             Console.WriteLine("Coletor cadastrado!");
-            
-            
         }
         public static void EditarCPFeCNPJ()
         {
@@ -51,7 +45,24 @@ namespace Trabalho_PI
                 Popular();
             }
         }
-        public void Listar()
+
+        public static void EditarEndereco()
+        {
+            Console.Write("Digite o seu Endereço = ");
+            endereco = Console.ReadLine();
+        }
+        public static void EditarFormaDaColeta()
+        {
+            Console.Write("Digite a forma de coleta = ");
+            formaDaColeta = Console.ReadLine();
+        }
+        public static void EditarDescricao()
+        {
+            Console.Write("Digite uma descrição = ");
+            descricao = Console.ReadLine();
+        }
+
+        public static void Listar()
         {
             Console.WriteLine($"CPF {CPF}");
             Console.WriteLine($"Enderço {endereco}");

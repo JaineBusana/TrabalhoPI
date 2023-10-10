@@ -79,7 +79,12 @@ namespace Trabalho_PI
                 Console.WriteLine("Opção inválida");
                 Atualizar();
             }
-        }  
+        }
+
+        public void Criar()
+        {
+            throw new NotImplementedException();
+        }
 
         public void Deletar()
         {
@@ -88,7 +93,7 @@ namespace Trabalho_PI
 
             if (resposta.Equals("sim"))
             {
-                coletores.RemoveAt(nomeUsuario);
+                //coletores.RemoveAt(nomeUsuario);
                 //TODO: chamar a função que loga;
             }
             else
@@ -97,6 +102,10 @@ namespace Trabalho_PI
             }
         }
 
+        public void Ler()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 
