@@ -55,10 +55,10 @@ namespace Trabalho_PI
                 switch (resposta2)
                 {
                     case 1:
-                        Coletor.EditarCPFeCNPJ();
+                        
                         break;
                     case 2:
-
+                        Coletor.EditarNome();
                         break;
                     case 3:
 
@@ -83,7 +83,9 @@ namespace Trabalho_PI
 
         public void Criar()
         {
-            throw new NotImplementedException();
+            Coletor coletor = new Coletor();
+            coletor.Popular();
+            coletores.Add(coletor);
         }
 
         public void Deletar()
@@ -104,7 +106,10 @@ namespace Trabalho_PI
 
         public void Ler()
         {
-            throw new NotImplementedException();
+            //Revisar
+            Coletor coletor = new Coletor();
+            coletor.Popular();
+            coletores.Add(coletor);
         }
     }
 }
