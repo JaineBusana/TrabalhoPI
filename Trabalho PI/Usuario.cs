@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Trabalho_PI
 {
-    public class Usuario : Ipl
+    public class Usuario 
     {
         public string Nome { get; set; }
         public char Sexo { get; set; }
@@ -16,7 +16,7 @@ namespace Trabalho_PI
         public static string NomeUsuario { get; set; }
         public static string Senha { get; set; }
 
-        public void Popular()
+        public void PopularUsuario()
         {
             EditarNome();
             EditarDataNascimento();
@@ -28,7 +28,7 @@ namespace Trabalho_PI
             EditarSenha();
         }
 
-        public void Listar()
+        public void ListarUsuario()
         {
             Console.WriteLine($"Nome: {Nome}");
             Console.WriteLine($"Sexo: {Sexo}");

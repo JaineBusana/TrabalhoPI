@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Trabalho_PI
 {
-    public class Coletor : Usuario, Ipl
+    public class Coletor : Usuario
     {
         //A class Coletor herda do Usuario Nome, Telefone, Sexo, Data de Nascimento, e-mail, usuário e senha
         public double CPF { get; set; }
@@ -15,7 +15,7 @@ namespace Trabalho_PI
         public string formaDaColeta { get; set; }
         public string descricao { get; set; }
 
-        public void Popular()
+        public void PopularColetor()
         {  
             EditarCPFeCNPJ();
             EditarEndereco();
@@ -42,7 +42,7 @@ namespace Trabalho_PI
                 Console.Clear();
                 Console.WriteLine("Resposta invalida! ");
                 Console.WriteLine();
-                Popular();
+                PopularColetor();
             }
         }
 
@@ -62,7 +62,7 @@ namespace Trabalho_PI
             descricao = Console.ReadLine();
         }
 
-        public void Listar()
+        public void ListarColetor()
         {
             Console.WriteLine($"CPF {CPF}");
             Console.WriteLine($"Enderço {endereco}");

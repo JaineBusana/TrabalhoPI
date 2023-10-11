@@ -13,7 +13,7 @@ namespace Trabalho_PI
         public void Criar()
         {
             Usuario usuario = new Usuario();
-            usuario.Popular();
+            usuario.PopularUsuario();
             usuarios.Add(usuario);
         }
 
@@ -22,7 +22,7 @@ namespace Trabalho_PI
             //como fazer sem lista? como saber qual usuario esta logado?
             for (int i = 0; i < usuarios.Count; i++)
             {
-                usuarios[i].Listar();
+                usuarios[i].ListarUsuario();
             }
         }
     
@@ -33,7 +33,7 @@ namespace Trabalho_PI
             int indice = Convert.ToInt32(Console.ReadLine());
             if (indice > 0 && indice < usuarios.Count)
             {
-                usuarios[indice].Popular();
+                usuarios[indice].PopularUsuario();
             }
             else { Console.WriteLine($"Gentileza inserir um número entre 0 e {usuarios.Count}.");}
         }

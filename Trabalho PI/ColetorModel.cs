@@ -8,8 +8,8 @@ namespace Trabalho_PI
 {
     public class ColetorModel: Icrud
     {
-            private List<Coletor> coletores = new List<Coletor>();
-
+        private List<Coletor> coletores = new List<Coletor>();
+        public Coletor coletor = new Coletor();
 
         public void Atualizar()
         {
@@ -26,51 +26,47 @@ namespace Trabalho_PI
                 switch (resposta1)
                 {
                     case 1:
-
+                        coletor.EditarNome();
                         break;
                     case 2:
-
+                        coletor.EditarTelefone();
                         break;
                     case 3:
-
+                        coletor.EditarSexo();
                         break;
                     case 4:
-
+                        coletor.EditarDataNascimento();
                         break;
                     case 5:
-
+                        coletor.EditarEmail();
                         break;
                     case 6:
-
+                        coletor.PopularUsuario();
                         break;
                 }
             }
             else if (resp.Equals("coletor"))
             {
 
-                Console.WriteLine("\n1-CPF/CNPJ \n2-Endereço \n3-Forma de coleta \n4-Descrição \n5- Senha " +
-                    "\n6-Todos os campos descritos acima.");
+                Console.WriteLine("\n1-CPF/CNPJ \n2-Endereço \n3-Forma de coleta \n4-Descrição \n5-Todos os campos descritos acima.");
                 int resposta2 = Convert.ToInt32(Console.ReadLine());
             
                 switch (resposta2)
                 {
                     case 1:
-                        
+                        coletor.EditarCPFeCNPJ();
                         break;
                     case 2:
-                        Coletor.EditarNome();
+                        coletor.EditarEndereco();
                         break;
                     case 3:
-
+                        coletor.EditarFormaDaColeta();
                         break;
                     case 4:
-
+                        coletor.EditarDescricao();
                         break;
                     case 5:
-
-                        break;
-                    case 6:
-
+                        coletor.PopularColetor();
                         break;
                 }
             }
@@ -84,7 +80,7 @@ namespace Trabalho_PI
         public void Criar()
         {
             Coletor coletor = new Coletor();
-            coletor.Popular();
+            coletor.PopularColetor();
             coletores.Add(coletor);
         }
 
@@ -108,7 +104,7 @@ namespace Trabalho_PI
         {
             //Revisar
             Coletor coletor = new Coletor();
-            coletor.Popular();
+            coletor.PopularColetor();
             coletores.Add(coletor);
         }
     }
