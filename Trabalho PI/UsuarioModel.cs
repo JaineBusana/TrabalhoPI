@@ -10,14 +10,14 @@ namespace Trabalho_PI
     {
         private List<Usuario> usuarios = new List<Usuario>();
 
-        public void Criar()
+        public void Create()
         {
             Usuario usuario = new Usuario();
             usuario.PopularUsuario();
             usuarios.Add(usuario);
         }
 
-        public void Ler()
+        public void Read()
         {
             //como fazer sem lista? como saber qual usuario esta logado?
             for (int i = 0; i < usuarios.Count; i++)
@@ -26,37 +26,30 @@ namespace Trabalho_PI
             }
         }
     
-        public void Atualizar()
+        public void Update()
         {
-            //listarUsuario();
-            Console.WriteLine("Digite o número do item a ser alterado:");
-            int indice = Convert.ToInt32(Console.ReadLine());
-            if (indice > 0 && indice < usuarios.Count)
+            char confirmacao = ConfirmarAcao("editar");
+
+            if (confirmacao == 'S')
             {
-                usuarios[indice].PopularUsuario();
+
             }
-            else { Console.WriteLine($"Gentileza inserir um número entre 0 e {usuarios.Count}.");}
+
+
         }
 
-        public void Deletar()
+        public char ConfirmarAcao(string acao)
         {
-            //listarUsuario();
-            Console.WriteLine("Digite o número do item a ser excluído:");
-            int id = Convert.ToInt32(Console.ReadLine());
-            if (id > 0 && id < usuarios.Count)
-            {
-                Console.WriteLine("Você tem certeza que deseja excluir sua conta? Digite sim ou não:");
-                string confirmacao = Console.ReadLine();
-                if (confirmacao.ToLower().Equals("sim"))
-                {
-                    usuarios.RemoveAt(id);
-                }
-                else if (confirmacao.ToLower().Equals("não"))
-                {
-                    // VOLTAR PARA O MENU
-                }
-            }
-            else { Console.WriteLine($"Gentileza inserir um número entre 0 e {usuarios.Count}."); }
+
+            Console.WriteLine($"Você possui certeza que deseja {acao} seu perfil? \n Digite S para sim ou N para não.");
+
+            char resposta = Convert.ToChar(Console.ReadLine().ToUpper());
+
+            return resposta;
+            
+        }
+        public void Delete()
+        {
         }
     }
 }

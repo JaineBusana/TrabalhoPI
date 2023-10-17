@@ -11,7 +11,7 @@ namespace Trabalho_PI
         private List<Coletor> coletores = new List<Coletor>();
         public Coletor coletor = new Coletor();
 
-        public void Atualizar()
+        public void Update()
         {
             Console.WriteLine("Você deseja editar os dados de usuário ou coletor?");
             string resp = (Console.ReadLine());
@@ -77,14 +77,14 @@ namespace Trabalho_PI
             }
         }
 
-        public void Criar()
+        public void Create()
         {
             Coletor coletor = new Coletor();
             coletor.PopularColetor();
             coletores.Add(coletor);
         }
 
-        public void Deletar()
+        public void Delete()
         {
             Console.WriteLine("Você possui certeza que deseja excluir seu perfil?");
             int resposta = Convert.ToInt32(Console.ReadLine());
@@ -100,7 +100,7 @@ namespace Trabalho_PI
             }
         }
 
-        public void Ler()
+        public void Read()
         {
             //Revisar
             Coletor coletor = new Coletor();
