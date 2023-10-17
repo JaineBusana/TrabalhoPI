@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Trabalho_PI.Helpers;
 
 namespace Trabalho_PI
 {
-    public class UsuarioModel: Icrud
+    public class UsuarioModel: BancoDeDados,Icrud
     {
         private List<Usuario> usuarios = new List<Usuario>();
 
@@ -17,13 +18,16 @@ namespace Trabalho_PI
             usuarios.Add(usuario);
         }
 
+        private IEnumerable<UsuarioEntity> ListUsuarioEntity()
+        {
+            string sql = "SELECT * FROM USUARIO";
+            return this.GetConnetion().Query<UsuarioEntity>(sql)
+
+        }
+
         public void Read()
         {
-            //como fazer sem lista? como saber qual usuario esta logado?
-            for (int i = 0; i < usuarios.Count; i++)
-            {
-                usuarios[i].ListarUsuario();
-            }
+            foreach (var dado in ListUsuarioEntity())
         }
     
         public void Update()
@@ -41,7 +45,7 @@ namespace Trabalho_PI
         public char ConfirmarAcao(string acao)
         {
 
-            Console.WriteLine($"Você possui certeza que deseja {acao} seu perfil? \n Digite S para sim ou N para não.");
+            Console.WriteLine($"Você tem certeza que deseja {acao} seu perfil? \n Digite S para sim ou N para não.");
 
             char resposta = Convert.ToChar(Console.ReadLine().ToUpper());
 
