@@ -73,7 +73,7 @@ namespace Trabalho_PI
             else
             {
                 Console.WriteLine("Opção inválida");
-                Atualizar();
+                Update();
             }
         }
 
