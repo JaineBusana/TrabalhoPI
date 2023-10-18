@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Trabalho_PI.Entity;
 
 namespace Trabalho_PI
 {
@@ -13,75 +14,64 @@ namespace Trabalho_PI
 
         public void Update()
         {
-            Console.WriteLine("Você deseja editar os dados de usuário ou coletor?");
-            string resp = (Console.ReadLine());
-            resp = resp.ToLower();
+            // TODO: CHAMAAR Read();
+            char confirmacao = ConfirmarAcao("editar");
 
-            if (resp.Equals("usuário"))
+            if (confirmacao == 'S')
             {
-                Console.WriteLine("Qual campo você deseja editar: \n1-Nome \n2-Telefone " +
-                "\n3-Sexo \n4-Data de nascimento \n5-E-mail \n6-Todos os campos descritos acima");
-                int resposta1 = Convert.ToInt32(Console.ReadLine());
 
-                switch (resposta1)
-                {
-                    case 1:
-                        coletor.EditarNome();
-                        break;
-                    case 2:
-                        coletor.EditarTelefone();
-                        break;
-                    case 3:
-                        coletor.EditarSexo();
-                        break;
-                    case 4:
-                        coletor.EditarDataNascimento();
-                        break;
-                    case 5:
-                        coletor.EditarEmail();
-                        break;
-                    case 6:
-                        coletor.PopularUsuario();
-                        break;
-                }
             }
-            else if (resp.Equals("coletor"))
-            {
 
-                Console.WriteLine("\n1-CPF/CNPJ \n2-Endereço \n3-Forma de coleta \n4-Descrição \n5-Todos os campos descritos acima.");
-                int resposta2 = Convert.ToInt32(Console.ReadLine());
-            
-                switch (resposta2)
+
+        }
+        private string ChangeValue(string informacao)
+        {
+            if (!string.IsNullOrEmpty(informacao))
+            {
+                Console.WriteLine($"Você deseja alterar esta informação: {informacao}? S/N");
+                char resposta = Convert.ToChar(Console.ReadLine().ToUpper());
+                if (resposta == 'S')
                 {
-                    case 1:
-                        coletor.EditarCPFeCNPJ();
-                        break;
-                    case 2:
-                        coletor.EditarEndereco();
-                        break;
-                    case 3:
-                        coletor.EditarFormaDaColeta();
-                        break;
-                    case 4:
-                        coletor.EditarDescricao();
-                        break;
-                    case 5:
-                        coletor.PopularColetor();
-                        break;
+                    Console.WriteLine("Digite a nova informação que deseja: ");
+                    informacao = Console.ReadLine();
                 }
             }
             else
             {
-                Console.WriteLine("Opção inválida");
-                Update();
+                informacao = Console.ReadLine();
             }
+            return informacao;
+        }
+        public char ConfirmarAcao(string acao)
+        {
+
+            Console.WriteLine($"Você possui certeza que deseja {acao} seu perfil? \n Digite S para sim ou N para não.");
+
+            char resposta = Convert.ToChar(Console.ReadLine().ToUpper());
+
+            return resposta;
         }
 
+        private ColetorEntity PopularColetor(ColetorEntity coletor)
+        {
+            //TODO: MUDAR PARA NOMES COLOCADO NO BANCO DE DADOS
+            Console.Write("Digite o seu CPF/CNPJ = ");
+            double resposta = Convert.ToDouble(Console.ReadLine());
+
+            if (resposta == )
+            coletor.CPF = ChangeValue(coletor.CPF);
+
+
+            //usuario.USUARIO_ID = ChangeUsuario(usuario);
+            return coletor;
+        }
         public void Create()
         {
-            Coletor coletor = new Coletor();
-            coletor.PopularColetor();
-            coletores.Add(coletor);
+            ColetorEntity coletor = new ColetorEntity();
+            coletor = PopularColetor(coletor);
+            //TODO: MUDAR PARA NOMES COLOCADO NO BANCO DE DADOS
+            //string sql = "INSERT INTO COLETOR VALUE (NULL, @, @, @)";
+            //int linhas = this.Execute(sql, coletor);
         }
 
         public void Delete()

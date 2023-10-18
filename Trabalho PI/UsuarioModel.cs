@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Trabalho_PI.Entity;
+using Trabalho_PI.Helpers;
 
 namespace Trabalho_PI
 {
-    public class UsuarioModel: Icrud
+    public class UsuarioModel: BancoDeDados, Icrud
     {
         private List<Usuario> usuarios = new List<Usuario>();
 
@@ -36,21 +37,19 @@ namespace Trabalho_PI
         {
             UsuarioEntity usuario = new UsuarioEntity();
             usuario = PopularUsuario(usuario);
-            string sql = "INSERT INTO USUARIO VALUE (NULL, @, @, @)";
-            int linhas = this.Execute(sql, usuario);
+            //TODO: MUDAR PARA NOMES COLOCADO NO BANCO DE DADOS
+            //string sql = "INSERT INTO USUARIO VALUE (NULL, @, @, @)";
+            //int linhas = this.Execute(sql, usuario);
         }
 
         public void Read()
         {
-            //como fazer sem lista? como saber qual usuario esta logado?
-            for (int i = 0; i < usuarios.Count; i++)
-            {
-                usuarios[i].ListarUsuario();
-            }
+            // TODO
         }
     
         public void Update()
         {
+            // TODO: CHAMAAR Read();
             char confirmacao = ConfirmarAcao("editar");
 
             if (confirmacao == 'S')
