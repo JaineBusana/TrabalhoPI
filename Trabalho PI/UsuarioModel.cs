@@ -3,12 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+<<<<<<< HEAD
+using Trabalho_PI.Helpers;
+=======
 using Trabalho_PI.Entity;
+<<<<<<< HEAD
 using Trabalho_PI.Helpers;
 
 namespace Trabalho_PI
 {
     public class UsuarioModel: BancoDeDados, Icrud
+=======
+>>>>>>> 086258c599f460bd9b88a713d65ef0500ed457b6
+
+namespace Trabalho_PI
+{
+    public class UsuarioModel: BancoDeDados,Icrud
+>>>>>>> main
     {
         private List<Usuario> usuarios = new List<Usuario>();
 
@@ -42,9 +53,20 @@ namespace Trabalho_PI
             //int linhas = this.Execute(sql, usuario);
         }
 
+        private IEnumerable<UsuarioEntity> ListUsuarioEntity()
+        {
+            string sql = "SELECT * FROM USUARIO";
+            return this.GetConnetion().Query<UsuarioEntity>(sql)
+
+        }
+
         public void Read()
         {
+<<<<<<< HEAD
             // TODO
+=======
+            foreach (var dado in ListUsuarioEntity())
+>>>>>>> main
         }
     
         public void Update()
@@ -63,7 +85,7 @@ namespace Trabalho_PI
         public char ConfirmarAcao(string acao)
         {
 
-            Console.WriteLine($"Você possui certeza que deseja {acao} seu perfil? \n Digite S para sim ou N para não.");
+            Console.WriteLine($"Você tem certeza que deseja {acao} seu perfil? \n Digite S para sim ou N para não.");
 
             char resposta = Convert.ToChar(Console.ReadLine().ToUpper());
 
