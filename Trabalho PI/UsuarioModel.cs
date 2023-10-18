@@ -7,11 +7,19 @@ using System.Threading.Tasks;
 using Trabalho_PI.Helpers;
 =======
 using Trabalho_PI.Entity;
+<<<<<<< HEAD
+using Trabalho_PI.Helpers;
+
+namespace Trabalho_PI
+{
+    public class UsuarioModel: BancoDeDados, Icrud
+=======
 >>>>>>> 086258c599f460bd9b88a713d65ef0500ed457b6
 
 namespace Trabalho_PI
 {
     public class UsuarioModel: BancoDeDados,Icrud
+>>>>>>> main
     {
         private List<Usuario> usuarios = new List<Usuario>();
 
@@ -40,8 +48,9 @@ namespace Trabalho_PI
         {
             UsuarioEntity usuario = new UsuarioEntity();
             usuario = PopularUsuario(usuario);
-            string sql = "INSERT INTO USUARIO VALUE (NULL, @, @, @)";
-            int linhas = this.Execute(sql, usuario);
+            //TODO: MUDAR PARA NOMES COLOCADO NO BANCO DE DADOS
+            //string sql = "INSERT INTO USUARIO VALUE (NULL, @, @, @)";
+            //int linhas = this.Execute(sql, usuario);
         }
 
         private IEnumerable<UsuarioEntity> ListUsuarioEntity()
@@ -53,11 +62,16 @@ namespace Trabalho_PI
 
         public void Read()
         {
+<<<<<<< HEAD
+            // TODO
+=======
             foreach (var dado in ListUsuarioEntity())
+>>>>>>> main
         }
     
         public void Update()
         {
+            // TODO: CHAMAAR Read();
             char confirmacao = ConfirmarAcao("editar");
 
             if (confirmacao == 'S')

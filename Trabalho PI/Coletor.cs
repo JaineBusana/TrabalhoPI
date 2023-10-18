@@ -9,8 +9,8 @@ namespace Trabalho_PI
     public class Coletor : Usuario
     {
         //A class Coletor herda do Usuario Nome, Telefone, Sexo, Data de Nascimento, e-mail, usuário e senha
-        public double CPF { get; set; }
-        public double CNPJ { get; set;}
+        public string CPF { get; set; }
+        public string CNPJ { get; set;}
         public string endereco { get; set; }
         public string formaDaColeta { get; set; }
         public string descricao { get; set; }
