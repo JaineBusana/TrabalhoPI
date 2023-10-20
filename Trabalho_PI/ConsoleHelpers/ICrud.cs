@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Trabalho_PI.ConsoleHelpers
 {
-    internal class Database1
+    public interface ICrud
     {
+        public void Create();
+        public void Read();
+        public void Update();
+        public void Delete();
+
     }
 }
