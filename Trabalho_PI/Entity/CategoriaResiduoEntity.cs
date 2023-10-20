@@ -10,8 +10,9 @@ namespace Trabalho_PI.Entity
     {
         public int ID { get; set; }
         public string NOME { get; set; }
-        public string RESIUO_ID { get; set;}
+        public string RESIDUO_ID { get; set;}
 
+        public ResiduoEntity RESIDUO{ get; set; }
 
 
     }
