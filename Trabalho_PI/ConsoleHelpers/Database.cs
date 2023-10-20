@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Trabalho_PI.ConsoleHelpers
 {
-    internal class Database
+    public class Database
     {
+
     }
 }

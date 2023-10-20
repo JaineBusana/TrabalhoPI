@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Trabalho_PI.Entity
 {
-    internal class CategoriaResiduoEntity
+    public class CategoriaResiduoEntity
     {
     }
 }
