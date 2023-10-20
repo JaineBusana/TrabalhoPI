@@ -12,7 +12,5 @@ namespace Trabalho_PI.Entity
         public string NOME { get; set; }
         public string RESIUO_ID { get; set;}
 
-
-
     }
 }
