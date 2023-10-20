@@ -8,5 +8,11 @@ namespace Trabalho_PI.Entity
 {
     public class CategoriaResiduoEntity
     {
+        public int ID { get; set; }
+        public string NOME { get; set; }
+        public string RESIUO_ID { get; set;}
+
+
+
     }
 }
