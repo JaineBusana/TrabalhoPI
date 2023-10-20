@@ -8,5 +8,7 @@ namespace Trabalho_PI.Entity
 {
     public class ResiduoEntity
     {
+        public int ID { get; set; }
+        public string NOME { get; set; }
     }
 }
