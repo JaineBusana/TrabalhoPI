@@ -66,8 +66,7 @@ namespace Trabalho_PI.Model
         {
 
             Read();
-            ResiduoEntity residuo = new ResiduoEntity();
-            residuo = GetResiduoEntity();
+            ResiduoEntity residuo = GetResiduoEntity();
             UpdateResiduoNome(residuo);
             string sql = "UPDATE RESIDUO SET NOME = @NOME WHERE ID = @ID";
             this.Execute(sql, residuo);
