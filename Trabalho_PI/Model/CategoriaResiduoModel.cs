@@ -55,14 +55,36 @@ namespace Trabalho_PI.Model
         private CategoriaResiduoEntity Popular(CategoriaResiduoEntity categoriaResiduo)
         {
             Console.WriteLine("Digite o nome do produto");
-            categoriaResiduo.NOME = ConsoleHelper.ChangeValue(categoriaResiduo.DESCRICAO);
+            categoriaResiduo.NOME = ConsoleHelper.ChangeValue(categoriaResiduo.NOME);
             Console.WriteLine("Digite o preço do produto");
             
 
-            categoriaResiduo.RESIDUO_ID = ChangeTipo(categoriaResiduo);
+            categoriaResiduo.RESIDUO_ID = ChangeResiduo(categoriaResiduo);
             return categoriaResiduo;
         }
+        private int ChangeResiduo(CategoriaResiduoEntity categoriaResiduo)
+        {
+            ResiduoModel residuoModel = new ResiduoModel();
 
+            if (categoriaResiduo.RESIDUO_ID > 0)
+            {
+                Console.WriteLine($"Atual = {categoriaResiduo.RESIDUO.NOME}  deseja alterar ? S/N");
+                char resposta = Convert.ToChar(Console.ReadLine().ToUpper());
+                if (resposta == 'S')
+                {
+                    residuoModel.Read();
+                    Console.WriteLine("Digite o id do tipo do produto");
+                    categoriaResiduo.RESIDUO_ID = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+            else
+            {
+                residuoModel.Read();
+                Console.WriteLine("Digite o id do tipo do produto");
+                categoriaResiduo.RESIDUO_ID = Convert.ToInt32(Console.ReadLine());
+            }
+            return categoriaResiduo.RESIDUO_ID;
+        }
 
 
     }
