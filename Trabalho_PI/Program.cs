@@ -6,9 +6,11 @@ namespace Trabalho_PI
     {
         static void Main(string[] args)
         {
+            ResiduoModel residuoModel = new ResiduoModel();
             CategoriaResiduoModel residuo = new CategoriaResiduoModel();
-            residuo.Create();
-            residuo.Read();
+            
+            residuo.Delete();
+            
         }
     }
 }
