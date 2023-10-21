@@ -10,7 +10,7 @@ namespace Trabalho_PI.ConsoleHelpers
 {
     public class Database
     {
-        protected string conectionString = "Server=localhost;Database=TRABALHO_PI;User=root;Password=root;";
+        protected string conectionString = "Server=localhost;Database=trabalho_pi;User=root;Password=root;";
 
 
         protected MySqlConnection GetConnection()

@@ -1,10 +1,13 @@
-﻿namespace Trabalho_PI
+﻿using Trabalho_PI.Model;
+
+namespace Trabalho_PI
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            ResiduoModel residuo = new ResiduoModel();
+            
         }
     }
 }
