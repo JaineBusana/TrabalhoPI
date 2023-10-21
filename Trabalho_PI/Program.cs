@@ -8,7 +8,6 @@ namespace Trabalho_PI
     {
         static void Main(string[] args)
         {
-<<<<<<< HEAD
             try
             {
             Menu menu = new Menu();
@@ -25,11 +24,9 @@ namespace Trabalho_PI
                 Console.WriteLine("Erro");
                 Console.WriteLine(ex.Message);
             }
-=======
             CategoriaResiduoModel residuo = new CategoriaResiduoModel();
             residuo.Create();
             residuo.Read();
->>>>>>> 1698013b561a4fc2556bc9ba710ead92d81bd1ee
         }
     }
 }

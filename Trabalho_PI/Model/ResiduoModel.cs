@@ -30,18 +30,11 @@ namespace Trabalho_PI.Model
         public void Delete()
         {
             Read();
-            int id = PerguntarID("excluir");
+            int id = ConsoleHelper.PerguntarID("excluir");
             var parametros = new { ID = id };
             string sql = "DELETE FROM RESIDUO WHERE ID = @ID";
             this.Execute(sql, parametros);
             Console.WriteLine("Residuo excluido com sucesso!");
-        }
-
-        private int PerguntarID(string acao = "")
-        {
-            Console.WriteLine($"Digite o ID do residuo que deseja {acao}");
-            int id = Convert.ToInt32(Console.ReadLine());
-            return id;
         }
 
         public void Read()
@@ -67,7 +60,7 @@ namespace Trabalho_PI.Model
 
         public ResiduoEntity GetResiduoEntity()
         {
-            return GetById(PerguntarID("editar"));
+            return GetById(ConsoleHelper.PerguntarID("editar"));
         }
         public void Update()
         {

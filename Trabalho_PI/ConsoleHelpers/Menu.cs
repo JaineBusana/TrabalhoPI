@@ -14,13 +14,13 @@ namespace Trabalho_PI.ConsoleHelpers
 
         public void MostrarMenuPrincipal()
         {
-            switch(MenuPricipal())
+            switch (MenuPricipal())
             {
                 case 1:
                     MostrarMenuCrud(_residuoModel);
                     break;
                 case 2:
-                    MostrarMenuCrud(_categoriaResiduoModel); 
+                    MostrarMenuCrud(_categoriaResiduoModel);
                     break;
                 default:
                     Console.WriteLine("Opção invalida!");
@@ -36,7 +36,7 @@ namespace Trabalho_PI.ConsoleHelpers
             {
                 case 1:
                     crud.Read();
-                break;
+                    break;
                 case 2:
                     crud.Create();
                     break;
@@ -60,20 +60,30 @@ namespace Trabalho_PI.ConsoleHelpers
         {
             Console.Clear();
 
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine(" --  Seja bem-vindo ao ColetaBlu  -- ");
+            Console.ResetColor();
+            Console.WriteLine("\nDigite a opção que deseja:");
             Console.WriteLine("1 - Residuo");
-            Console.WriteLine("1 - Categoria Residuo");
+            Console.WriteLine("2 - Categoria Residuo");
             return Convert.ToInt32(Console.ReadLine());
         }
         public int MenuCrud()
         {
             Console.Clear();
 
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine("    --  ColetaBlu  --  ");
+            Console.ResetColor();
+            Console.WriteLine("\nDigite a opção que deseja:");
             Console.WriteLine("1 - Visualizar");
             Console.WriteLine("2 - Cadastrar");
-            Console.WriteLine("3 - Ediatr");
+            Console.WriteLine("3 - Editar");
             Console.WriteLine("4 - Excluir");
             Console.WriteLine("0 - Rertornar");
             return Convert.ToInt32(Console.ReadLine());
         }
+
     }
 }
+
