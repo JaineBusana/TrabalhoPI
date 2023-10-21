@@ -55,6 +55,9 @@ namespace Trabalho_PI.ConsoleHelpers
                     MostrarMenuCrud(crud);
                     break;
             }
+            Console.WriteLine("Precione uma tecla para retornar ao menu");
+            Console.ReadLine();
+            MostrarMenuCrud(crud);
         }
         public int MenuPricipal()
         {
