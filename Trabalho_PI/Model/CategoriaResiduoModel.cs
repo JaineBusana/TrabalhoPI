@@ -25,7 +25,7 @@ namespace Trabalho_PI.Model
         {
             foreach (var categoriaresiduo in ListCategoriaResiduoEntity())
             {
-                Console.WriteLine($"{categoriaresiduo.ID} - categoria {categoriaresiduo.NOME} - subcategoria: {categoriaresiduo.RESIDUO_ID} ");
+                Console.WriteLine($"{categoriaresiduo.ID} - categoria: {categoriaresiduo.NOME} - residuo: {categoriaresiduo.RESIDUO_ID} ");
             }
         }
         public void Delete()
@@ -66,7 +66,10 @@ namespace Trabalho_PI.Model
 
         private IEnumerable<CategoriaResiduoEntity> ListCategoriaResiduoEntity()
         {
-            string sql = "SELECT * FROM CATEGORIA_RESIDUO join residuo ";
+            string sql = @"SELECT * 
+                           FROM CATEGORIA_RESIDUO 
+                           JOIN RESIDUO
+                           ON  RESIDUO.ID = RESIDUO_ID ";
             return this.GetConnection().Query<CategoriaResiduoEntity, ResiduoEntity, CategoriaResiduoEntity>(
                 sql,
                 (categoriaresiduo, residuo) =>
