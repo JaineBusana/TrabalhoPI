@@ -66,7 +66,7 @@ namespace Trabalho_PI.Model
 
         private IEnumerable<CategoriaResiduoEntity> ListCategoriaResiduoEntity()
         {
-            string sql = "SELECT * FROM CATEGORIA_RESIDUO JOIN RESIDUO ON RESIDUO.ID = CATEGORIA_RESIDUO.ID ";
+            string sql = "SELECT * FROM CATEGORIA_RESIDUO join residuo ";
             return this.GetConnection().Query<CategoriaResiduoEntity, ResiduoEntity, CategoriaResiduoEntity>(
                 sql,
                 (categoriaresiduo, residuo) =>

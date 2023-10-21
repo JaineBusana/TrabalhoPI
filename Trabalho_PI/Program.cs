@@ -8,6 +8,17 @@ namespace Trabalho_PI
     {
         static void Main(string[] args)
         {
+<<<<<<< HEAD
+=======
+
+            ResiduoModel residuoModel = new ResiduoModel();
+            CategoriaResiduoModel residuo = new CategoriaResiduoModel();
+            
+            residuo.Delete();
+            
+
+
+>>>>>>> 089381b5258f1d3d8ce5366b7f402c3ec2ad38d7
             try
             {
             Menu menu = new Menu();
@@ -24,9 +35,14 @@ namespace Trabalho_PI
                 Console.WriteLine("Erro");
                 Console.WriteLine(ex.Message);
             }
+<<<<<<< HEAD
             CategoriaResiduoModel residuo = new CategoriaResiduoModel();
             residuo.Create();
             residuo.Read();
+=======
+
+            
+>>>>>>> 089381b5258f1d3d8ce5366b7f402c3ec2ad38d7
         }
     }
 }
