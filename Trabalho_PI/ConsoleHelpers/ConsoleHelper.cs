@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Trabalho_PI.ConsoleHelpers
 {
-    internal class ConsoleHelper
+    public class ConsoleHelper
     {
         public static string ChangeValue(string value)
         {
@@ -46,5 +46,16 @@ namespace Trabalho_PI.ConsoleHelpers
             Console.WriteLine($"{mensagem}? S/N");
             return Convert.ToChar(Console.ReadLine().ToUpper());
         }
+        public static int PerguntarID(string acao = "")
+        {
+            Console.WriteLine($"Digite o ID do residuo que deseja {acao}");
+            int id = Convert.ToInt32(Console.ReadLine());
+            return id;
+        }
+
+
+
     }
+
+
 }

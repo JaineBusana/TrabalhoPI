@@ -15,7 +15,7 @@ namespace Trabalho_PI.Model
         {
             CategoriaResiduoEntity categoriaResiduo = new CategoriaResiduoEntity();
             categoriaResiduo = Popular(categoriaResiduo);
-            string sql = "INSERT INTO PRODUTO VALUE (NULL, @NOME, @RESIDUO_ID)";
+            string sql = "INSERT INTO CATEGORIA_RESIDUO VALUE (NULL, @NOME, @RESIDUO_ID)";
             int linhas = this.Execute(sql, categoriaResiduo);
         }
 
@@ -37,35 +37,28 @@ namespace Trabalho_PI.Model
             Console.WriteLine("Categoria excluida com sucesso");
         }
 
-        public ResiduoEntity GetById(int id)
-        {
-            string sql = "SELECT ID, NOME FROM RESIDUO WHERE ID = @ID";
-            var parametros = new { ID = id };
-            return this.GetConnection().QueryFirst<ResiduoEntity>(sql, parametros);
-        }
-
-        public CategoriaResiduoEntity GetResiduoEntity()
-        {
-            return GetById(ConsoleHelper.PerguntarID("editar"));
-        }
         public void Update()
-        {
 
+        {
+            CategoriaResiduoEntity categoriaResiduo = Popular(GetById());
+            string sql = "UPDATE CATEGORIA_RESIDUO SET NOME = @NOME, RESIDUO = @RESIDUO, RESIDUO_ID = @RESIDUO_ID WHERE ID = @ID";
+            int linhas = this.Execute(sql, categoriaResiduo);
+            Console.WriteLine("Categoria atualizado com sucesso!");
+        }
+        public CategoriaResiduoEntity GetById(int id = 0)
+        {
+            if (id == 0)
+            {
+                id = GetIndex();
+            }
+            return ListCategoriaResiduoEntity().Where(o => o.ID == id).ToList()[0];
+        }
+        private int GetIndex()
+        {
             Read();
-            CategoriaResiduoEntity categoriaResiduo = new CategoriaResiduoEntity();
-            categoriaResiduo = GetResiduoEntity();
-            UpdateResiduoNome(categoriaResiduo);
-            string sql = "UPDATE RESIDUO SET NOME = @NOME WHERE ID = @ID";
-            this.Execute(sql, categoriaResiduo);
-            Console.WriteLine("Residuo atualizado com sucesso!");
+            Console.WriteLine("Digite o id para continuar");
+            return Convert.ToInt32(Console.ReadLine());
         }
-        private static void UpdateResiduoNome(CategoriaResiduoEntity categoriaResiduo)
-        {
-            Console.WriteLine($"Digite o novo nome para o residuo {categoriaResiduo.NOME}");
-            categoriaResiduo.NOME = Console.ReadLine();
-        }
-
-
 
 
 
@@ -73,7 +66,7 @@ namespace Trabalho_PI.Model
 
         private IEnumerable<CategoriaResiduoEntity> ListCategoriaResiduoEntity()
         {
-            string sql = "SELECT * FROM CATEGORIA_RESIDUO JOIN RESIDU ON RESIDUO.ID = CATEGORIA_RESIDUO.ID ";
+            string sql = "SELECT * FROM CATEGORIA_RESIDUO JOIN RESIDUO ON RESIDUO.ID = CATEGORIA_RESIDUO.ID ";
             return this.GetConnection().Query<CategoriaResiduoEntity, ResiduoEntity, CategoriaResiduoEntity>(
                 sql,
                 (categoriaresiduo, residuo) =>
@@ -86,11 +79,9 @@ namespace Trabalho_PI.Model
 
         private CategoriaResiduoEntity Popular(CategoriaResiduoEntity categoriaResiduo)
         {
-            Console.WriteLine("Digite o nome do produto");
+            Console.WriteLine("Digite o nome da categoria");
             categoriaResiduo.NOME = ConsoleHelper.ChangeValue(categoriaResiduo.NOME);
-            Console.WriteLine("Digite o preço do produto");
             
-
             categoriaResiduo.RESIDUO_ID = ChangeResiduo(categoriaResiduo);
             return categoriaResiduo;
         }
@@ -105,14 +96,14 @@ namespace Trabalho_PI.Model
                 if (resposta == 'S')
                 {
                     residuoModel.Read();
-                    Console.WriteLine("Digite o id do tipo do produto");
+                    Console.WriteLine("Digite o id do residuo");
                     categoriaResiduo.RESIDUO_ID = Convert.ToInt32(Console.ReadLine());
                 }
             }
             else
             {
                 residuoModel.Read();
-                Console.WriteLine("Digite o id do tipo do produto");
+                Console.WriteLine("Digite o id do tipo do residuo");
                 categoriaResiduo.RESIDUO_ID = Convert.ToInt32(Console.ReadLine());
             }
             return categoriaResiduo.RESIDUO_ID;
