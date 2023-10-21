@@ -1,6 +1,7 @@
 ﻿using Dapper;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,15 +30,16 @@ namespace Trabalho_PI.Model
         public void Delete()
         {
             Read();
-            int id = PerguntarID("Digite o ID do residuo que deseja excluir");
+            int id = PerguntarID("excluir");
             var parametros = new { ID = id };
             string sql = "DELETE FROM RESIDUO WHERE ID = @ID";
             this.Execute(sql, parametros);
+            Console.WriteLine("Residuo excluido com sucesso!");
         }
 
-        private int PerguntarID(string mensagem = "")
+        private int PerguntarID(string acao = "")
         {
-            Console.WriteLine(mensagem);
+            Console.WriteLine($"Digite o ID do residuo que deseja {acao}");
             int id = Convert.ToInt32(Console.ReadLine());
             return id;
         }
@@ -56,15 +58,33 @@ namespace Trabalho_PI.Model
             return this.GetConnection().Query<ResiduoEntity>(sql);
         }
 
+        public ResiduoEntity GetById(int id)
+        {
+            string sql = "SELECT ID, NOME FROM RESIDUO WHERE ID = @ID";
+            var parametros = new { ID = id };
+            return this.GetConnection().QueryFirst<ResiduoEntity>(sql, parametros);
+        }
+
+        public ResiduoEntity GetResiduoEntity()
+        {
+            return GetById(PerguntarID("editar"));
+        }
         public void Update()
         {
-            Read();
-            int id = PerguntarID("Digite o ID do residuo que deseja editar");
-            ResiduoEntity residuo = new ResiduoEntity();
-            var parametros = new { ID = id };
-            string sql = "SELECT ID, NOME FROM RESIDUO WHERE ID = @ID";
-            residuo = this.GetConnection().QueryFirst<ResiduoEntity>(sql, parametros);
 
+            Read();
+            ResiduoEntity residuo = new ResiduoEntity();
+            residuo = GetResiduoEntity();
+            UpdateResiduoNome(residuo);
+            string sql = "UPDATE RESIDUO SET NOME = @NOME WHERE ID = @ID";
+            this.Execute(sql, residuo);
+            Console.WriteLine("Residuo atualizado com sucesso!");
+        }
+
+        private static void UpdateResiduoNome(ResiduoEntity residuo)
+        {
+            Console.WriteLine($"Digite o novo nome para o residuo {residuo.NOME}");
+            residuo.NOME = Console.ReadLine();
         }
     }
 }

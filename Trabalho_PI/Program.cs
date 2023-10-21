@@ -7,7 +7,8 @@ namespace Trabalho_PI
         static void Main(string[] args)
         {
             ResiduoModel residuo = new ResiduoModel();
-            
+            residuo.Update();
+            residuo.Read();
         }
     }
 }
