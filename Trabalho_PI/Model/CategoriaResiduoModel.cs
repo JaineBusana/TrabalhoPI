@@ -17,14 +17,9 @@ namespace Trabalho_PI.Model
             categoriaResiduo = Popular(categoriaResiduo);
             string sql = "INSERT INTO PRODUTO VALUE (NULL, @NOME, @RESIDUO_ID)";
             int linhas = this.Execute(sql, categoriaResiduo);
-            Console.WriteLine($"Produto inserido - {linhas} linhas afetadas");
-
         }
 
-        public void Delete()
-        {
-            throw new NotImplementedException();
-        }
+     
 
         public void Read()
         {
@@ -33,15 +28,52 @@ namespace Trabalho_PI.Model
                 Console.WriteLine($"{categoriaresiduo.ID} - categoria {categoriaresiduo.NOME} - subcategoria: {categoriaresiduo.RESIDUO_ID} ");
             }
         }
+        public void Delete()
+        {
+            Read();
+            var parameters = new { Id = ConsoleHelper.PerguntarID("excluir") };
+            string sql = "DELETE FROM CATEGORIA_RESIDUO WHERE ID = @ID";
+            this.Execute(sql, parameters);
+            Console.WriteLine("Categoria excluida com sucesso");
+        }
 
+        public ResiduoEntity GetById(int id)
+        {
+            string sql = "SELECT ID, NOME FROM RESIDUO WHERE ID = @ID";
+            var parametros = new { ID = id };
+            return this.GetConnection().QueryFirst<ResiduoEntity>(sql, parametros);
+        }
+
+        public CategoriaResiduoEntity GetResiduoEntity()
+        {
+            return GetById(ConsoleHelper.PerguntarID("editar"));
+        }
         public void Update()
         {
-            throw new NotImplementedException();
+
+            Read();
+            CategoriaResiduoEntity categoriaResiduo = new CategoriaResiduoEntity();
+            categoriaResiduo = GetResiduoEntity();
+            UpdateResiduoNome(categoriaResiduo);
+            string sql = "UPDATE RESIDUO SET NOME = @NOME WHERE ID = @ID";
+            this.Execute(sql, categoriaResiduo);
+            Console.WriteLine("Residuo atualizado com sucesso!");
         }
+        private static void UpdateResiduoNome(CategoriaResiduoEntity categoriaResiduo)
+        {
+            Console.WriteLine($"Digite o novo nome para o residuo {categoriaResiduo.NOME}");
+            categoriaResiduo.NOME = Console.ReadLine();
+        }
+
+
+
+
+
+
 
         private IEnumerable<CategoriaResiduoEntity> ListCategoriaResiduoEntity()
         {
-            string sql = "SELECT * FROM CATEGORIA_RESIDUO JOIN IN RESIDU on residuo.id = categoria_residuo.id ";
+            string sql = "SELECT * FROM CATEGORIA_RESIDUO JOIN RESIDU ON RESIDUO.ID = CATEGORIA_RESIDUO.ID ";
             return this.GetConnection().Query<CategoriaResiduoEntity, ResiduoEntity, CategoriaResiduoEntity>(
                 sql,
                 (categoriaresiduo, residuo) =>
