@@ -14,31 +14,35 @@ namespace Trabalho_PI.Model
     {
         public void Create()
         {
+            Console.Clear();
             ResiduoEntity residuo = new ResiduoEntity();
             residuo = Popular(residuo);
             string sql = "INSERT INTO RESIDUO VALUE (NULL, @NOME)";
             this.Execute(sql, residuo);
+            Console.WriteLine("\nResíduo criado com sucesso!");
         }
 
         private ResiduoEntity Popular(ResiduoEntity residuo)
         {
-            Console.WriteLine("Informe o nome do residuo:");
+            Console.WriteLine("Informe o nome do resíduo:");
             residuo.NOME = Console.ReadLine();
             return residuo;
         }
 
         public void Delete()
         {
+            Console.Clear();
             Read();
             int id = ConsoleHelper.PerguntarID("excluir");
             var parametros = new { ID = id };
             string sql = "DELETE FROM RESIDUO WHERE ID = @ID";
             this.Execute(sql, parametros);
-            Console.WriteLine("Residuo excluido com sucesso!");
+            Console.WriteLine("\nResíduo excluído com sucesso!");
         }
 
         public void Read()
         {
+            Console.Clear();
             foreach (var residuo in ListResiduos())
             {
                 Console.WriteLine($"{residuo.ID} - {residuo.NOME}");
@@ -64,13 +68,13 @@ namespace Trabalho_PI.Model
         }
         public void Update()
         {
-
+            Console.Clear();
             Read();
             ResiduoEntity residuo = GetResiduoEntity();
             UpdateResiduoNome(residuo);
             string sql = "UPDATE RESIDUO SET NOME = @NOME WHERE ID = @ID";
             this.Execute(sql, residuo);
-            Console.WriteLine("Residuo atualizado com sucesso!");
+            Console.WriteLine("\nResíduo atualizado com sucesso!");
         }
 
         private static void UpdateResiduoNome(ResiduoEntity residuo)

@@ -23,7 +23,7 @@ namespace Trabalho_PI.ConsoleHelpers
                     MostrarMenuCrud(_categoriaResiduoModel);
                     break;
                 default:
-                    Console.WriteLine("Opção invalida!");
+                    Console.WriteLine("Opção inválida!");
                     Console.ReadLine();
                     break;
             }
@@ -50,12 +50,12 @@ namespace Trabalho_PI.ConsoleHelpers
                     MostrarMenuPrincipal();
                     break;
                 default:
-                    Console.WriteLine("Opção invalida, precione uma tecla para continuar");
+                    Console.WriteLine("Opção inválida, pressione uma tecla para continuar");
                     Console.ReadLine();
                     MostrarMenuCrud(crud);
                     break;
             }
-            Console.WriteLine("Precione uma tecla para retornar ao menu");
+            Console.WriteLine("Pressione uma tecla para retornar ao menu");
             Console.ReadLine();
             MostrarMenuCrud(crud);
         }
@@ -67,8 +67,8 @@ namespace Trabalho_PI.ConsoleHelpers
             Console.WriteLine(" --  Seja bem-vindo ao ColetaBlu  -- ");
             Console.ResetColor();
             Console.WriteLine("\nDigite a opção que deseja:");
-            Console.WriteLine("1 - Residuo");
-            Console.WriteLine("2 - Categoria Residuo");
+            Console.WriteLine("1 - Resíduo");
+            Console.WriteLine("2 - Categoria Resíduo");
             return Convert.ToInt32(Console.ReadLine());
         }
         public int MenuCrud()
@@ -83,7 +83,7 @@ namespace Trabalho_PI.ConsoleHelpers
             Console.WriteLine("2 - Cadastrar");
             Console.WriteLine("3 - Editar");
             Console.WriteLine("4 - Excluir");
-            Console.WriteLine("0 - Rertornar");
+            Console.WriteLine("0 - Retornar");
             return Convert.ToInt32(Console.ReadLine());
         }
 
