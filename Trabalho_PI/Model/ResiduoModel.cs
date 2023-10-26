@@ -10,7 +10,7 @@ using Trabalho_PI.Entity;
 
 namespace Trabalho_PI.Model
 {
-    internal class ResiduoModel : Database, ICrud
+    public class ResiduoModel : Database, ICrud
     {
         public void Create()
         {
