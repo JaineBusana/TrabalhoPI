@@ -48,7 +48,7 @@ namespace Trabalho_PI.ConsoleHelpers
         }
         public static int PerguntarID(string acao = "")
         {
-            Console.WriteLine($"Digite o ID do residuo que deseja {acao}");
+            Console.WriteLine($"Digite o código do residuo que deseja {acao}");
             int id = Convert.ToInt32(Console.ReadLine());
             return id;
         }

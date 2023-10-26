@@ -51,7 +51,7 @@ namespace Trabalho_PI.Model
 
         private IEnumerable<ResiduoEntity> ListResiduos()
         {
-            string sql = "SELECT * FROM RESIDUO";
+            string sql = "SELECT * FROM RESIDUO ORDER BY ID ASC";
             return this.GetConnection().Query<ResiduoEntity>(sql);
         }
 
@@ -62,15 +62,11 @@ namespace Trabalho_PI.Model
             return this.GetConnection().QueryFirst<ResiduoEntity>(sql, parametros);
         }
 
-        public ResiduoEntity GetResiduoEntity()
-        {
-            return GetById(ConsoleHelper.PerguntarID("editar"));
-        }
         public void Update()
         {
             Console.Clear();
             Read();
-            ResiduoEntity residuo = GetResiduoEntity();
+            ResiduoEntity residuo = GetById(ConsoleHelper.PerguntarID("editar"));
             UpdateResiduoNome(residuo);
             string sql = "UPDATE RESIDUO SET NOME = @NOME WHERE ID = @ID";
             this.Execute(sql, residuo);
