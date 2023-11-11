@@ -10,7 +10,10 @@
       theme: {
         extend: {
           colors: {
-            clifford: '#da373d',
+            fundo: '#FAF3E1',
+            verde: '#307C52',
+            cortexto: '#2C5746',
+            preto: '#000000',
           }
         }
       }
@@ -18,15 +21,58 @@
   </script>
 </head>
 <body>
-  <div>Queremos muito ouvir o que você tem a dizer</div>
-  <div>Envie-nos uma mensagem!</div>
-  <div>Fale conosco</div>
-  <div>Nossos colaboradores atendem em horário comercial: de segunda à sexta-feira, das 9h às 18 horas. </div>
-  <div>As perguntas enviadas pelo SAC serão respondidas pela equipe Coletablu dentro de 24 horas. Você também poderá entrar em contato pelo nosso e-mail para: contato@coletablu.com.br</div>
-  <div>Conectando interessados em realizar o descarte com os coletores de resíduos, facilitando o processo e gerando recompensas.</div>
-  <div>Nome*</div>
-  <div>E-mail</div>
-  <div>Telefone</div>
-  <div>Mensagem</div>
+  <div class="p-8">
+    BARRA INICIO
+  </div>
+  <div class="flex p-16">
+  <div class="gradiente text-cortexto p-8 rounded-2xl w-1/3 m-8 bg-opacity-20">  <!--opacity-20-->
+    <div class="text-opacity-100">
+      <h2 class="text-xl font-bold mb-4">Queremos muito ouvir o que você tem a dizer</h2>
+      <p class="text-cortexto">Envie-nos uma mensagem!</p>
+    </div>
+  </div>
+  <div class="text-cortexto p-8 ">
+    <h2 class="text-xl font-bold mb-4">Fale conosco</h2>
+    <p class="mb-4">Nossos colaboradores atendem em horário comercial: de segunda à sexta-feira, das 9h às 18 horas.</p>
+    <p>As perguntas enviadas pelo SAC serão respondidas pela equipe Coletablu dentro de 24 horas. Você também poderá entrar em contato pelo nosso e-mail para: contato@coletablu.com.br</p>
+    <p>Conectando interessados em realizar o descarte com os coletores de resíduos, facilitando o processo e gerando recompensas.</p>
+  </div>  
+  </div>
+</div>
+  <div class="flex  mx-64">
+    <div class="shrink w-128 w-1/2 p-3 mx-4">
+      <p class="text-cortexto m-2">Nome*</p>
+      <div class="retangulo p-3"> 
+      <p>Primeiro e último</p>
+      </div>
+    </div>
+    <div class="shrink w-128 w-1/2 p-3 mx-4">
+      <p class="text-cortexto m-2">E-mail</p>
+      <div class="retangulo p-3"> 
+      <p>seu@email.com</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex mx-64">
+    <div class="shrink w-128 w-1/2 p-3 mx-4">
+      <p class="text-cortexto m-2">Assunto</p>
+      <div class="retangulo p-3"> 
+      <p>COLOCAR OPÇÕES: Local de descarte etc</p>
+      </div>
+    </div>
+    <div class="shrink w-128 w-1/2 p-3 mx-4">
+      <p class="text-cortexto m-2">Telefone</p>
+      <div class="retangulo p-3"> 
+      <p>(DDD) xxxxx-xxxx</p>
+      </div>
+    </div>
+  </div>
+    <div class="p-3 mx-64">
+      <p class="text-cortexto p-3 mx-4">Mensagem</p>
+      <div class="retanguloMaior p-3"> 
+      <p>Descreva sua mensagem</p>
+      </div>
+    </div>
+
 </body>
 </html>
