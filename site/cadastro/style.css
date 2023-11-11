@@ -1,10 +1,40 @@
-body{
-    background-color: #FAF3E1;
-}
-header img {
-    margin-top: 143px;
-    margin-left: 194px;
-width: 495px;
-height: 180px;
+* {
+    font-family: sans-serif !important;
+  }
+.container {
+    width: 100%;
 
 }
+
+body {
+    background-color: #faf3e1;
+}
+
+header div h1 {
+
+    color: #3B5284;
+}
+
+.body-container {
+    margin: 60px 0px 0px 430px;
+
+}
+
+.form {
+    width: 200px;
+    height: 600px;
+    background-color: #E8E5DF;
+    border-radius: 20px;
+    margin: 50px 0px 0px 300px;
+
+
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+ .btn-nome{
+    margin: 10px;
+ }
+

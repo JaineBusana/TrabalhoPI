@@ -1,11 +1,13 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
   <script>
     tailwind.config = {
       theme: {
@@ -18,10 +20,34 @@
     }
   </script>
 </head>
+
 <body>
-    <header >
-        <img class="header-logo flex " src="./assets/img/MicrosoftTeams-image.png" alt="Imagem logo coletablu"/>
+  <div class="container">
+    <header class="h-4">
+      <div class="flex flex-row-reverse">
+        <h1 class="mt-40 mr-32 text-3xl font-bold">CADASTRO</h1>
+      </div>
     </header>
-  
+    <div class="body-container mt-40 flex flex-row align-top">
+      <img class="logo w-96 " src="./assets/img/MicrosoftTeams-image.png" alt="Imagem logo coletablu" />
+      <div class="form w-96">
+        <div class="mt-7">
+          <label for="nome" class="ml-7  ">NOME</label>
+        </div>
+        <input type="text" id="nome" class="ml-3 mt-2  rounded-md">
+
+      </div>
+    </div>
+    <div>
+      <p class="text-4xl italic font-normal w-96">Atender a necessidade <br> de saber as formas <br>corretas e
+        disponíveis <br>
+        para descartes de <br> resíduos e entulhos.</p>
+    </div>
+    <div>
+
+
+    </div>
+  </div>
 </body>
+
 </html>
