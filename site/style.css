@@ -1,3 +1,25 @@
-body{
+body {
     background-color: #FAF3E1;
+}
+
+.botao-login {
+    border-color: #5D6E1E;
+    color: #5D6E1E;
+}
+
+.header-pesquisa {
+    width: 700px;
+    border-color: #5D6E1E;
+    outline: none;
+}
+
+.header-pesquisa:active,
+.header-pesquisa:focus {
+    border-color: #5BA8A0;
+
+}
+
+.header-menu li {
+    padding-right: 18px;
+    color: #5D6E1E;
 }

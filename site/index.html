@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,14 +18,40 @@
     }
   </script>
 </head>
+
 <body>
-  <header class="p-10 text-white">
-        <img src="./assets/img/logo-com-slogan.png" alt="Logo ColetaBlu" class="h-14">
-        <!-- <input type="text" name="teste">  professor vai ensinar -->
-        <button type="button">
-            login
+  <header class="py-10">
+    <div class="container mx-auto flex justify-between">
+
+
+      <img src="./assets/img/logo-com-slogan.png" alt="Logo ColetaBlu" class="h-14">
+      <!-- <input type="text" name="teste">  professor vai ensinar -->
+      <div class="flex justify-items-end">
+        <input type="text" name="barra de pesquisa" value="Onde posso descartar remédios, pilhas, TV...,"
+          class="header-pesquisa border rounded-full opacity-50 px-2">
+
+        <button class="border rounded-full botao-login px-2 shadow-md text-lg flex py-3 ml-4">
+          <img src="./assets/img/img-login.png" alt="ícone de usuário" class="h-8 pr-2">
+          Login
         </button>
+      </div>
+    </div>
+
+    <div class="container mx-auto flex flex-row-reverse py-10">
+      <div class="header-menu">
+        <ul class="flex justify-items-end font-bold">
+          <li>O Coletablu</li>
+          <li>Pontos de Coleta</li>
+          <li>Coletores</li>
+          <li>Contato</li>
+        </ul>
+      </div>
+    </div>
+
+
+
 
   </header>
 </body>
+
 </html>
