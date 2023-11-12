@@ -1,40 +1,10 @@
-* {
-    font-family: sans-serif !important;
-  }
-.container {
-    width: 100%;
-
+body{
+    background-color: bisque;
+    justify-content: center;
+    align-items: center;
 }
-
-body {
-    background-color: #faf3e1;
+body form{
+    width: 90px;
+    height: 90px;
+    background-color: aqua;
 }
-
-header div h1 {
-
-    color: #3B5284;
-}
-
-.body-container {
-    margin: 60px 0px 0px 430px;
-
-}
-
-.form {
-    width: 200px;
-    height: 600px;
-    background-color: #E8E5DF;
-    border-radius: 20px;
-    margin: 50px 0px 0px 300px;
-
-
-}
-
-.logo {
-    width: 100px;
-    height: 100px;
-}
- .btn-nome{
-    margin: 10px;
- }
-
