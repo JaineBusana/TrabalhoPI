@@ -1,10 +1,29 @@
 body{
-    background-color: bisque;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    background-color: #FAF3E1;
 }
-body form{
-    width: 90px;
-    height: 90px;
-    background-color: aqua;
+.container{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;}
+form{
+    display: grid;
+
+    width: 400px;
+    height: 600px;
+    background-color: #E8E5DF;
+    border-radius: 30px;
+     
+}   
+.cadastro{
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.cadastro ul {
+    margin: 10px 20px 2px 2px;
+}
+.logo-texto{
+    display: grid;
+    place-items: center;
 }
