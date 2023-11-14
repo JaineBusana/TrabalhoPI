@@ -8,15 +8,22 @@ body {
 }
 
 .header-pesquisa {
-    width: 700px;
-    border-color: #5D6E1E;
+    width: 600px;
+    border-color: #3B5284;
+    background-color: #fff;
     outline: none;
+   padding-left: 8px;
 }
 
 .header-pesquisa:active,
 .header-pesquisa:focus {
-    border-color: #5BA8A0;
+    border-color: #3B5284;
+    border-width: 3px;
+}
 
+.header-botao-pesquisa{
+    width: 100px;
+ background-color: #3B5284;
 }
 
 .header-menu li {

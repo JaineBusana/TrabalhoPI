@@ -27,9 +27,13 @@
       <img src="./assets/img/logo-com-slogan.png" alt="Logo ColetaBlu" class="h-14">
       <!-- <input type="text" name="teste">  professor vai ensinar -->
       <div class="flex justify-items-end">
-        <input type="text" name="barra de pesquisa" value="Onde posso descartar remédios, pilhas, TV...,"
-          class="header-pesquisa border rounded-full opacity-50 px-2">
-
+        <div class="header-pesquisa border rounded-full h-10">
+          <input type="text" name="barra de pesquisa" placeholder="Onde posso descartar remédios, pilhas, TV...,">
+        <button class="header-botao-pesquisa border rounded-full h-10">
+          <img src="./assets/img/lupa-header-pesquisa.png" alt="lupa" class="h-8 inline-block align-middle ">
+        </button>
+        </div>
+        
         <button class="border rounded-full botao-login px-2 shadow-md text-lg flex py-3 ml-4">
           <img src="./assets/img/img-login.png" alt="ícone de usuário" class="h-8 pr-2">
           Login
@@ -39,7 +43,7 @@
 
     <div class="container mx-auto flex flex-row-reverse py-10">
       <div class="header-menu">
-        <ul class="flex justify-items-end font-bold">
+        <ul class="flex justify-items-end font-bold cursor-pointer">
           <li>O Coletablu</li>
           <li>Pontos de Coleta</li>
           <li>Coletores</li>
