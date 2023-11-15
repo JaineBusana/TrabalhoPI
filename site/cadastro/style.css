@@ -20,6 +20,14 @@ form{
     place-items: center;
     text-align: center;
 }
+.input-cadastro{
+    width: 350px;
+    height: 350px;
+    display: grid;
+    place-items: center;
+    justify-self: center;
+    text-align: start;
+}
 .cadastro ul {
     margin: 10px 20px 2px 2px;
 }
