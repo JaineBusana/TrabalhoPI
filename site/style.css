@@ -2,6 +2,27 @@ body {
     background-color: #FAF3E1;
 }
 
+
+#modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: rgba(0,0,0,.6);
+    display: none;
+}
+
+.modal-active {
+    display: block !important;
+}
+
+#fechar-modal {
+    font-size: 30px;
+    color: #fff;
+}
+
 .botao-login {
     border-color: #5D6E1E;
     color: #5D6E1E;
@@ -13,6 +34,8 @@ body {
     background-color: #fff;
     outline: none;
    padding-left: 8px;
+   padding-right: 100px;
+   margin-right: -100px;
 }
 
 .header-pesquisa:active,
@@ -30,3 +53,4 @@ body {
     padding-right: 18px;
     color: #5D6E1E;
 }
+
