@@ -1,0 +1,29 @@
+@font-face{
+    font-family: "mukta_bold";
+    src: url("./Assents/fonts/Mukta-Bold.ttf")
+}
+@font-face{
+    font-family: "mukta_medium";
+    src: url("./Assents/fonts/Mukta-Medium.ttf")
+}
+
+.card{
+    border-radius: 4px;
+}
+#título-banner{
+    font-family: mukta_bold;
+}
+
+#tag{
+    top: 5%;
+    border-radius: 5%;
+    background-color: #3B5284;
+    color: #fff;
+    align-items: center;
+    width: 6%;
+    height: 4%;
+    z-index: 100;
+}
+p{
+    font-family: mukta_medium;
+}
