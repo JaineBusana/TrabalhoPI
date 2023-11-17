@@ -1,37 +1,76 @@
-body{
+@font-face {
+    font-family: "ptssansbold";
+    src: url("./assets/fonts/PTSansNarrow-Bold.ttf");
+}
+body {
     width: 100%;
     background-color: #FAF3E1;
 }
-.container{ 
+
+.container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;}
-form{
+    justify-content: center;
+}
+
+form {
     display: grid;
 
-    width: 400px;
-    height: 600px;
+    width: 350px;
+    height: 500px;
     background-color: #E8E5DF;
     border-radius: 30px;
-     
-}   
-.cadastro{
+
+}
+
+.cadastro {
     display: grid;
     place-items: center;
     text-align: center;
+    color: #3B5284;
 }
-.input-cadastro{
+
+input {
+    border-radius: 10px;
+}
+
+.input-cadastro {
+    color: #2C5746;
     width: 350px;
     height: 350px;
     display: grid;
     place-items: center;
     justify-self: center;
     text-align: start;
+    font-family: ptssansbold;
+    font-size: 22px;
 }
-.cadastro ul {
-    margin: 10px 20px 2px 2px;
-}
-.logo-texto{
+
+.logo-texto {
     display: grid;
-    place-items: center;
+    place-items: end;
+}
+.logo-texto p{
+    margin-bottom: 160px;
+}
+
+#btn-continue {
+    margin: 20px;
+    width: 270px;
+    background-color: #3B5284;
+    color: #fdfeff;
+    font-size: 20px;
+    padding: 10px 39px;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 14px;
+
+}
+#login{
+    color: #2C5746;
+    font-family: ptssansbold;
+    font-size: 22px;
+}
+#login span{
+    color: #307C52;
 }
