@@ -34,8 +34,8 @@ body {
     background-color: #fff;
     outline: none;
    padding-left: 8px;
-   padding-right: 100px;
-   margin-right: -100px;
+   padding-right: 96px;
+   margin-right: -96px;
 }
 
 .header-pesquisa:active,
@@ -54,3 +54,16 @@ body {
     color: #5D6E1E;
 }
 
+.rodape {
+    position: absolute;
+    bottom: 0;
+    background-color: #5D6E1E;
+    color: #fff;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+
+    
+}
+.rodape-menu ul{
+    display: flex;
+}
