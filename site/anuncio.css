@@ -1,13 +1,14 @@
-@font-face{
+@font-face {
     font-family: "mukta_bold";
     src: url("./assets/img/fonts/Mukta-Bold.ttf")
 }
-@font-face{
+
+@font-face {
     font-family: "mukta_medium";
     src: url("./assets/img/fonts/Mukta-Medium.ttf")
 }
 
-.card{
+.card {
     border-radius: 22px;
     border-color: rgba(91, 168, 160, 0.25);
     background-color: rgba(91, 168, 160, 0.25);
@@ -15,23 +16,25 @@
     width: 249px;
 }
 
-.imagem-card{
+.imagem-card {
     border-radius: 4px;
 }
-#título-banner{
+
+#título-banner {
     font-family: mukta_bold;
 }
 
-#quantidades{
-    color:#5D6E1E ; 
+#quantidades {
+    color: #5D6E1E;
     font-weight: 600;
 }
 
-.informações{
-    color:#5D6E1E ; 
+.informações {
+    color: #5D6E1E;
     font-weight: 700;
 }
-#tag-venda{
+
+#tag-venda {
     font-size: 12px;
     margin-left: -8px;
     margin-top: 8px;
@@ -43,8 +46,8 @@
     height: 20px;
 }
 
-#tag-compra{
-     font-size: 12px;
+#tag-compra {
+    font-size: 12px;
     margin-left: -8px;
     margin-top: 8px;
     border-radius: 3px;
@@ -55,6 +58,6 @@
     height: 20px;
 }
 
-p{
+p {
     font-family: mukta_medium;
 }
