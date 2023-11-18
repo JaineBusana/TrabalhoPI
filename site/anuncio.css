@@ -8,10 +8,36 @@
     src: url("./assets/img/fonts/Mukta-Medium.ttf")
 }
 
+.separador{
+       background-color: rgba(48, 124, 82,0.25);
+       height: 580px;
+      
+     
+}
+
+
+.categorias{
+    
+    font-size: 18px;
+    border: 2px solid #fff;
+    background-color: #94B447;
+    color: #fff;
+    align-items:center;
+    justify-content: center;
+    width: 250px;
+    height: 50px;
+    font-weight: 600;
+    
+}
+
+
+
 .card {
+    margin-top: 50px;
+    cursor: pointer;
     border-radius: 22px;
-    border-color: rgba(91, 168, 160, 0.25);
-    background-color: rgba(91, 168, 160, 0.25);
+    border-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.25);
     height: 379px;
     width: 249px;
 }
@@ -34,7 +60,7 @@
     font-weight: 700;
 }
 
-#tag-venda {
+#tag-venda, #tag-compra {
     font-size: 12px;
     margin-left: -8px;
     margin-top: 8px;
@@ -47,15 +73,8 @@
 }
 
 #tag-compra {
-    font-size: 12px;
-    margin-left: -8px;
-    margin-top: 8px;
-    border-radius: 3px;
     background-color: #94B447;
-    color: #fff;
-    align-items: center;
-    width: 55px;
-    height: 20px;
+ 
 }
 
 p {
