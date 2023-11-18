@@ -8,10 +8,23 @@
 }
 
 .card{
+    border-radius: 22px;
+    border-color: rgba(91, 168, 160, 0.25);
+    background-color: rgba(91, 168, 160, 0.25);
+    height: 366px;
+    width: 249px;
+}
+
+.imagem-card{
     border-radius: 4px;
 }
 #título-banner{
     font-family: mukta_bold;
+}
+
+#quantidades{
+    color:#5D6E1E ; 
+    font-weight: 600;
 }
 
 #tag{
