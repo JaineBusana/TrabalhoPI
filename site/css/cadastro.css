@@ -1,0 +1,305 @@
+/* @font-face {
+    font-family: "ptssansbold";
+    src: url("./assets/fonts/PTSansNarrow-Bold.ttf");
+}
+@font-face{
+    font-family: "judson";
+    src: url("./assets/fonts/Judson-Italic.ttf");
+}
+body {
+    width: 100%;
+    background-color: #FAF3E1;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+.logo-texto p {
+    font-family: judson;
+    color: #5D6E1E;
+    text-shadow: 3px 4px 5px rgba(0,0,0,0.61);}
+
+form {
+    display: grid;
+
+    width: 350px;
+    height: 500px;
+    background-color: #E8E5DF;
+    border-radius: 30px;
+
+}
+
+.cadastro {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: #3B5284;
+}
+
+input {
+    border-radius: 10px;
+}
+
+.input-cadastro {
+    color: #2C5746;
+    width: 350px;
+    height: 350px;
+    display: grid;
+    place-items: center;
+    justify-self: center;
+    text-align: start;
+    font-family: ptssansbold;
+    font-size: 22px;
+}
+
+.logo-texto {
+    display: grid;
+    place-items: end;
+}
+.logo-texto p{
+    margin-bottom: 160px;
+}
+
+#btn-continue {
+    margin: 20px;
+    width: 270px;
+    background-color: #3B5284;
+    color: #fdfeff;
+    font-size: 20px;
+    padding: 10px 39px;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 14px;
+    
+}
+#login{
+    color: #2C5746;
+    font-family: ptssansbold;
+    font-size: 22px;
+}
+#login span{
+    color: #307C52;
+} */
+@font-face {
+    font-family: "commissioner-bold";
+    src: url("../assets/fonts/Commissioner/static/Commissioner-Bold.ttf");
+}
+
+@font-face {
+    font-family: "commissioner-ligth";
+    src: url("../assets/fonts/Commissioner/static/Commissioner-Light.ttf");
+}
+
+body {
+    height: 90vh;
+    background: linear-gradient(180deg, #507263 21.35%, #8D965A 100%);
+}
+
+main {
+
+    background-color: #fff;
+    width: 303px;
+    height: 448px;
+    margin: 110px auto;
+    border-radius: 20px;
+    border: 1px solid black;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+main h1 {
+    font-family: "commissioner-bold";
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+aside {
+    display: none;
+}
+
+#login-face-google {
+    margin: 20px 0px 34px;
+    display: flex;
+    direction: row;
+    justify-content: center;
+}
+
+#login-face-google img {
+    margin: 0px 17px;
+    height: 25px;
+    width: 25px;
+}
+
+.formulario {
+    width: 190px;
+    height: 260px;
+    margin: auto;
+
+}
+
+.formulario input {
+    width: 190px;
+    height: 30px;
+    padding-left: 5px;
+    font-size: 15px;
+    font-family: "commissioner-bold";
+    background-color: rgba(217, 217, 217, 56%);
+    margin-bottom: 22px;
+}
+
+#btn-criarconta {
+    width: 120px;
+    height: 46px;
+    background-color: rgba(59, 82, 132, 100%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    margin: auto;
+    color: #fff;
+}
+
+#login {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    font-family: "commissioner-bold";
+
+}
+
+#login a {
+    color: #7E8D5D;
+}
+
+.banner {
+    display: none;
+}
+
+@media(min-width: 970px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #fff;
+        width: 1000px;
+        height: 600px;
+        margin: 110px auto;
+        border-radius: 20px;
+        border: 1px solid black;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    .banner {
+        display: block;
+    }
+
+    aside {
+        
+        width: 500px;
+        height: 600px;
+        background: #3B5284;
+        border-top-left-radius: 18px;
+        border-bottom-left-radius: 18px;
+    }
+
+    aside div {
+        display: flex;
+        direction: column;
+        justify-content: center;
+        width: 276px;
+        height: 379px;
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    aside h1 {
+        margin: 60px;
+        color: #fff;
+        font-family:"commissioner-bold" ;
+       
+    }
+
+    aside p {
+        margin: 0px 0px 77px ;
+        color: #fff;
+        font-size: 20px;
+
+    }
+    aside img {
+        height: 210px;
+        width: 210px;
+        margin: auto;
+    }
+    .container{
+        display: grid;
+        direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    main h1 {
+        font-family: "commissioner-bold";
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    #login-face-google {
+        margin: 20px 0px 34px;
+        display: flex;
+        direction: row;
+        justify-content: center;
+    }
+
+    #login-face-google img {
+        margin: 0px 17px;
+        height: 25px;
+        width: 25px;
+    }
+
+    .formulario {
+        width: 190px;
+        height: 260px;
+        margin: auto;
+
+    }
+
+    .formulario input {
+        width: 190px;
+        height: 30px;
+        padding-left: 5px;
+        font-size: 15px;
+        font-family: "commissioner-bold";
+        background-color: rgba(217, 217, 217, 56%);
+        margin-bottom: 22px;
+    }
+    .criar-conta h1{
+        margin-top: 60px;
+    }
+    #btn-criarconta {
+        width: 120px;
+        height: 46px;
+        background-color: rgba(59, 82, 132, 100%);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        padding: 16px;
+        margin: auto;
+        color: #fff;
+    }
+
+    #login {
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        font-family: "commissioner-bold";
+
+    }
+
+    #login a {
+        color: #7E8D5D;
+    }
+
+}
