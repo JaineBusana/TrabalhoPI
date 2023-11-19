@@ -1,0 +1,136 @@
+@font-face {
+    font-family:Fredoka;
+    src: url(./assets/fonts/Fredoka.ttf);
+}
+
+@font-face {
+    font-family:Montserrat;
+    src: url(./assets/fonts/Montserrat.ttf);
+}
+
+@font-face {
+    font-family:Montserrat-Italic;
+    src: url(./assets/fonts/Montserrat-Italic.ttf);
+}
+
+body {
+    background-color: #FAF3E1;
+}
+
+.header-pesquisa {
+    width: 600px;
+    height: 40px;
+    border: 2px solid #3B5284; 
+    border-radius: 20px;   
+    background-color: #fff;
+    outline: none;
+   padding-left: 10px;
+   padding-right: 96px;
+   margin-right: -96px;
+}
+
+.header-pesquisa:active,
+.header-pesquisa:focus {
+    border-color: #3B5284;
+    border-width: 3px;
+}
+
+.header-btn-pesquisa{
+    width: 100px;
+    height: 40px;
+    border: 2px solid #3B5284; 
+    border-radius: 20px;  
+    background-color: #3B5284;
+    font-family:Fredoka !important;
+}
+
+.header-btn-login{
+    width: 100px;
+    height: 40px;
+    padding-left: 5px;
+    border: 1px solid #5D6E1E; 
+    border-radius: 20px;  
+    font-size: 18px;
+}
+
+
+.header-menu li {
+    padding-right: 18px;
+    color: #5D6E1E;
+    font-size: 20px;
+    font-family:Montserrat !important;
+}
+
+.rodape {
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+    background-color: #5D6E1E;
+    color: #fff;  
+}
+/* 
+display: grid;
+grid-template-columns:  1fr 1fr 1fr; */
+
+.rodape-menu{
+    display: inline-block;
+    padding-top: 80px;
+}
+.rodape-menu ul{
+   justify-content: flex-start;
+    margin-left:  20px;
+}
+
+.rodape-menu li{
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-family:Montserrat !important;
+}
+
+.logo-rodape{
+    margin-top: 10px;
+}
+
+.rodape-denuncia h1,
+.rodape-sugestoes h1{
+    font-family:Fredoka !important;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.rodape-denuncia p,
+.rodape-sugestoes p{
+    font-family:Montserrat !important;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.rodape-denuncia a{
+    font-family:Montserrat !important;
+    font-size: 20px;
+    padding: 5px;
+    border: 2px solid #3B5284; 
+    border-radius: 20px;  
+    background-color: #3B5284;
+}
+
+.rodape-sugestoes{
+    margin-left: 10px;
+}
+
+#rodape-sugestoes-textarea{
+    width: 360px;
+    height: 90px;
+    border: 2px solid #3B5284;  
+    color: #000;
+}
+
+.rodape-sugestoes-btn{
+    font-family:Fredoka !important;
+    font-size: 15px;
+    width: 60px;
+    height: 90px;
+    border: 2px solid #3B5284;
+    background-color: #3B5284; 
+    color: #fff;
+}
