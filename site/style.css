@@ -5,6 +5,10 @@ body {
 #header-menu-list li:hover > .header-anuncios-list-submenu{
     opacity: 1;
     pointer-events:all;
+    background-color: #CDE54E;
+    border-radius: 20px;
+    padding-left: 10px;
+    width: 90px;
  }
 .header-anuncios-list-submenu{
     position: absolute;
@@ -13,10 +17,7 @@ body {
 }
 
 .header-anuncios-list-submenu li:hover{
-    padding-left: 5px;
-    background-color: #fff;
-    border-radius: 30px;
-    color: #CDE54E;
+    color: #fff;
 }
 
 #modal {
