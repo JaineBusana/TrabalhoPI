@@ -8,6 +8,7 @@
     src: url("./assets/img/fonts/Mukta-Medium.ttf")
 }
 
+
 .separador{
        background-color: rgba(48, 124, 82,0.25);
        padding-top: 20px;  
@@ -54,7 +55,6 @@ a {
 
 .informações {
     color: #5D6E1E;
-    font-weight: 700;
 }
 
 #tag-venda, #tag-compra {
