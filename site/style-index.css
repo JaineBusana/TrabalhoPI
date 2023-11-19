@@ -1,15 +1,15 @@
 @font-face {
-    font-family:Fredoka;
+    font-family: Fredoka;
     src: url(./assets/fonts/Fredoka.ttf);
 }
 
 @font-face {
-    font-family:Montserrat;
+    font-family: Montserrat;
     src: url(./assets/fonts/Montserrat.ttf);
 }
 
 @font-face {
-    font-family:Montserrat-Italic;
+    font-family: Montserrat-Italic;
     src: url(./assets/fonts/Montserrat-Italic.ttf);
 }
 
@@ -20,13 +20,13 @@ body {
 .header-pesquisa {
     width: 600px;
     height: 40px;
-    border: 2px solid #3B5284; 
-    border-radius: 20px;   
+    border: 2px solid #3B5284;
+    border-radius: 20px;
     background-color: #fff;
     outline: none;
-   padding-left: 10px;
-   padding-right: 96px;
-   margin-right: -96px;
+    padding-left: 10px;
+    padding-right: 96px;
+    margin-right: -96px;
 }
 
 .header-pesquisa:active,
@@ -35,21 +35,21 @@ body {
     border-width: 3px;
 }
 
-.header-btn-pesquisa{
+.header-btn-pesquisa {
     width: 100px;
     height: 40px;
-    border: 2px solid #3B5284; 
-    border-radius: 20px;  
+    border: 2px solid #3B5284;
+    border-radius: 20px;
     background-color: #3B5284;
-    font-family:Fredoka !important;
+    font-family: Fredoka !important;
 }
 
-.header-btn-login{
+.header-btn-login {
     width: 100px;
     height: 40px;
     padding-left: 5px;
-    border: 1px solid #5D6E1E; 
-    border-radius: 20px;  
+    border: 1px solid #5D6E1E;
+    border-radius: 20px;
     font-size: 18px;
 }
 
@@ -58,7 +58,7 @@ body {
     padding-right: 18px;
     color: #5D6E1E;
     font-size: 20px;
-    font-family:Montserrat !important;
+    font-family: Montserrat !important;
 }
 
 .rodape {
@@ -66,71 +66,73 @@ body {
     position: absolute;
     bottom: 0;
     background-color: #5D6E1E;
-    color: #fff;  
+    color: #fff;
 }
+
 /* 
 display: grid;
 grid-template-columns:  1fr 1fr 1fr; */
 
-.rodape-menu{
+.rodape-menu {
     display: inline-block;
     padding-top: 80px;
 }
-.rodape-menu ul{
-   justify-content: flex-start;
-    margin-left:  20px;
+
+.rodape-menu ul {
+    justify-content: flex-start;
+    margin-left: 20px;
 }
 
-.rodape-menu li{
+.rodape-menu li {
     padding-bottom: 10px;
     font-size: 18px;
-    font-family:Montserrat !important;
+    font-family: Montserrat !important;
 }
 
-.logo-rodape{
+.logo-rodape {
     margin-top: 10px;
 }
 
 .rodape-denuncia h1,
-.rodape-sugestoes h1{
-    font-family:Fredoka !important;
+.rodape-sugestoes h1 {
+    font-family: Fredoka !important;
     font-size: 25px;
     margin-bottom: 10px;
 }
 
 .rodape-denuncia p,
-.rodape-sugestoes p{
-    font-family:Montserrat !important;
+.rodape-sugestoes p {
+    font-family: Montserrat !important;
     font-size: 15px;
     margin-bottom: 10px;
 }
 
-.rodape-denuncia a{
-    font-family:Montserrat !important;
+.rodape-denuncia a {
+    font-family: Montserrat !important;
     font-size: 20px;
     padding: 5px;
-    border: 2px solid #3B5284; 
-    border-radius: 20px;  
+    border: 2px solid #3B5284;
+    border-radius: 20px;
     background-color: #3B5284;
 }
 
-.rodape-sugestoes{
+.rodape-sugestoes {
     margin-left: 10px;
 }
 
-#rodape-sugestoes-textarea{
+#rodape-sugestoes-textarea {
     width: 360px;
     height: 90px;
-    border: 2px solid #3B5284;  
+    border: 2px solid #3B5284;
     color: #000;
 }
 
-.rodape-sugestoes-btn{
-    font-family:Fredoka !important;
+.rodape-sugestoes-btn {
+    font-family: Fredoka !important;
     font-size: 15px;
     width: 60px;
     height: 90px;
     border: 2px solid #3B5284;
-    background-color: #3B5284; 
+    background-color: #3B5284;
     color: #fff;
 }
