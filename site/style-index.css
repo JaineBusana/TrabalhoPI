@@ -51,6 +51,7 @@ body {
     border: 1px solid #5D6E1E; 
     border-radius: 20px;  
     font-size: 18px;
+    font-family:Fredoka !important;
 }
 
 
@@ -102,13 +103,6 @@ body {
     font-size: 20px;
     color: #307c52;
 }
-
-/* .rodape{
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-} */
 
 .rodape-colunas {
     height: 230px;
