@@ -2,6 +2,23 @@ body {
     background-color: #FAF3E1;
 }
 
+#header-menu-list li:hover > .header-anuncios-list-submenu{
+    opacity: 1;
+    pointer-events:all;
+    background-color: #CDE54E;
+    border-radius: 20px;
+    padding-left: 10px;
+    width: 90px;
+ }
+.header-anuncios-list-submenu{
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.header-anuncios-list-submenu li:hover{
+    color: #fff;
+}
 
 #modal {
     position: fixed;
