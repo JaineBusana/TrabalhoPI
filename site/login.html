@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./Style_Login.css">
+    <link rel="stylesheet" href="./reset.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="flex">
+    <div>
+        <div class="flex">
+            <img id="logo" class="h-20" src="./assets/img/MicrosoftTeams-image (7).png" alt="Logo da ColetaBLU">
+            <h1 class=" text-4xl mt-14 text-green-800">Entrar</h1>
+        </div>
+        <div class="">
+            <h1 id="usuario" class="mt-10 ml-16">Usuário</h1>
+        </div>
+        <div>
+            <input id="insert_usuario" class="ml-16 border-2 mb-2 " type="text">
+        </div>
+        <div>
+            <h1 id="senha" class="ml-16 text-green-950">Senha</h1>
+        </div>
+        <div class="flex">
+            <input id="insert_senha" class="ml-16 border-2" type="password">
+        </div>
+        <div>
+            <a id="esqueci_senha" class="text-green-600" href="">Esqueci a senha!</a>
+        </div>
+        <div>
+            <button class="mt-10 login">Login</button>
+        </div>
+        <div class="flex">
+            <h1 class="cadastrar ml-5">Não tem uma conta?</h1>
+            <button class="cadastrar ml-1 text-green-600 ">Cadastre-se!</button>
+        </div>
+    </div>
+    <img id="foto_fundo" src="./assets/img/Foto_Fundo_Login.jpg" alt="Imagen fundo">
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
