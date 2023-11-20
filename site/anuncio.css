@@ -11,6 +11,7 @@
 .separador{
        background-color: rgba(48, 124, 82,0.25);
        padding-top: 20px;  
+       height: 100vh;
 }
 .categorias{
     
