@@ -62,6 +62,24 @@ body {
     font-family:Montserrat !important;
 }
 
+#header-menu-list li:hover > .header-anuncios-list-submenu{
+    opacity: 1;
+    pointer-events:all;
+    background-color: #CDE54E;
+    border-radius: 20px;
+    padding-left: 10px;
+    width: 90px;
+ }
+.header-anuncios-list-submenu{
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.header-anuncios-list-submenu li:hover{
+    color: #fff;
+}
+
 .quem-somos h1,
 .como-te-ajudamos h1{
     font-family:Fredoka !important;
@@ -131,7 +149,6 @@ body {
 
 .rodape-denuncia h1,
 .rodape-sugestoes h1{
-    c
     font-size: 25px;
     margin-bottom: 10px;
 }
