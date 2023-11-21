@@ -1,0 +1,21 @@
+body {
+    height: 100vh;
+    background: linear-gradient(180deg, #5BA8A0 0%, #CDE54E 100%);
+}
+
+main {
+    background-color: #fff;
+    width: 961px;
+    height: 859px;
+    border-radius: 33px;
+    background: #FFF;
+    margin: 81px auto;
+}
+
+#logo {
+    width: 227px;
+    height: 270px;
+    margin: 59px auto;
+    display: flex;
+
+}
