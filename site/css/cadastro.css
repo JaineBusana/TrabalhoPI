@@ -1,87 +1,3 @@
-/* @font-face {
-    font-family: "ptssansbold";
-    src: url("./assets/fonts/PTSansNarrow-Bold.ttf");
-}
-@font-face{
-    font-family: "judson";
-    src: url("./assets/fonts/Judson-Italic.ttf");
-}
-body {
-    width: 100%;
-    background-color: #FAF3E1;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-}
-.logo-texto p {
-    font-family: judson;
-    color: #5D6E1E;
-    text-shadow: 3px 4px 5px rgba(0,0,0,0.61);}
-
-form {
-    display: grid;
-
-    width: 350px;
-    height: 500px;
-    background-color: #E8E5DF;
-    border-radius: 30px;
-
-}
-
-.cadastro {
-    display: grid;
-    place-items: center;
-    text-align: center;
-    color: #3B5284;
-}
-
-input {
-    border-radius: 10px;
-}
-
-.input-cadastro {
-    color: #2C5746;
-    width: 350px;
-    height: 350px;
-    display: grid;
-    place-items: center;
-    justify-self: center;
-    text-align: start;
-    font-family: ptssansbold;
-    font-size: 22px;
-}
-
-.logo-texto {
-    display: grid;
-    place-items: end;
-}
-.logo-texto p{
-    margin-bottom: 160px;
-}
-
-#btn-continue {
-    margin: 20px;
-    width: 270px;
-    background-color: #3B5284;
-    color: #fdfeff;
-    font-size: 20px;
-    padding: 10px 39px;
-    cursor: pointer;
-    transition: 1s;
-    border-radius: 14px;
-    
-}
-#login{
-    color: #2C5746;
-    font-family: ptssansbold;
-    font-size: 22px;
-}
-#login span{
-    color: #307C52;
-} */
 @font-face {
     font-family: "commissioner-bold";
     src: url("../assets/fonts/Commissioner/static/Commissioner-Bold.ttf");
@@ -94,30 +10,47 @@ input {
 
 body {
     height: 90vh;
-    background: linear-gradient(180deg, #507263 21.35%, #8D965A 100%);
+    background: #94B447
 }
 
-main {
-
-    background-color: #fff;
-    width: 303px;
-    height: 448px;
-    margin: 110px auto;
-    border-radius: 20px;
-    border: 1px solid black;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+main{
+    margin-top: 90px;
+    display: grid;
+    justify-content: center ;
 }
-
 main h1 {
     font-family: "commissioner-bold";
     font-size: 40px;
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
+    margin: auto;
+}
+.banner {
+    font-size: 20px;
+    color: #fff;
+    display: grid;
+    justify-content: center ;
+}
+.banner img {
+    width: 60px;
+    height: 60px;
+    margin: auto;
 }
 
-aside {
-    display: none;
+.banner p {
+    display: grid;
+    align-items: center;
+}
+
+.corpo {
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: #fff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
+}
+.corpo h1{
+    display: flex;
+    justify-content: center;
 }
 
 #login-face-google {
@@ -174,9 +107,6 @@ aside {
     color: #7E8D5D;
 }
 
-.banner {
-    display: none;
-}
 
 @media(min-width: 970px) {
     main {
@@ -194,6 +124,14 @@ aside {
     .banner {
         display: block;
     }
+    .banner img {
+        width: 195px;
+        height: 192px;
+        margin-top: 70px;
+    }
+    .corpo{
+        margin: auto;
+    }
 
     aside {
         
@@ -202,6 +140,7 @@ aside {
         background: #3B5284;
         border-top-left-radius: 18px;
         border-bottom-left-radius: 18px;
+        
     }
 
     aside div {
@@ -215,22 +154,27 @@ aside {
         
     }
     aside h1 {
-        margin: 60px;
+        margin: 15px;
         color: #fff;
         font-family:"commissioner-bold" ;
+        display: flex;
+        justify-content: center;
        
     }
 
     aside p {
-        margin: 0px 0px 77px ;
+        margin: 20px;
         color: #fff;
         font-size: 20px;
+        display: flex;
+        justify-content: center;
 
     }
     aside img {
         height: 210px;
         width: 210px;
-        margin: auto;
+        margin: 60px auto;
+       
     }
     .container{
         display: grid;
