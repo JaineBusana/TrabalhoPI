@@ -1,6 +1,6 @@
-div {
+#Modal_Login {
     max-width: 400px;
-}
+} 
 
 #foto_fundo {
     height: 440px;
@@ -11,20 +11,6 @@ div {
     background-color: green;
     border-radius: 5px;
     color: #FFF;
-}
-
-#modal {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
-    background-color: rgba(0, 0, 0, .6);
-}
-
-#fechar_modal {
-    font-size: 30px;
 }
 
 .login {

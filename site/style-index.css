@@ -192,18 +192,15 @@ body {
 
 #Modal_Login {
     position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    
     z-index: 2;
-    background-color: rgba(0,0,0,.6 );
+    background-color: #FFF;
     display: none;
 }
 
 #Fechar_Modal {
     font-size: 30px;
-    color: #FFF;
+    color: #000;
 }
 
 .Modal_Login-active {

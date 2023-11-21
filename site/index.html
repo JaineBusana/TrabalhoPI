@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style-index.css">
   <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="./Style_Login.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -38,6 +39,37 @@
         <script src="./index.js"></script>
         <div id="Modal_Login" class="">
           <button id="Fechar_Modal" onclick="CLOSE_MODAL_LOGIN()">X</button>
+          <div class="flex">
+            <div>
+              <div class="flex">
+                <img id="logo" class="h-20" src="./assets/img/MicrosoftTeams-image (7).png" alt="Logo da ColetaBLU">
+                <h1 class=" text-4xl mt-14 text-green-800">Entrar</h1>
+              </div>
+              <div class="">
+                <h1 id="usuario" class="mt-10 ml-16">Usuário</h1>
+              </div>
+              <div>
+                <input id="insert_usuario" class="ml-16 border-2 mb-2 " type="text">
+              </div>
+              <div>
+                <h1 id="senha" class="ml-16 text-green-950">Senha</h1>
+              </div>
+              <div class="flex">
+                <input id="insert_senha" class="ml-16 border-2" type="password">
+              </div>
+              <div>
+                <a id="esqueci_senha" class="text-green-600" href="">Esqueci a senha!</a>
+              </div>
+              <div>
+                <button class="mt-10 login">Login</button>
+              </div>
+              <div class="flex">
+                <h1 class="cadastrar ml-5">Não tem uma conta?</h1>
+                <button class="cadastrar ml-1 text-green-600 ">Cadastre-se!</button>
+              </div>
+            </div>
+            <img id="foto_fundo" src="./assets/img/Foto_Fundo_Login.jpg" alt="Imagen fundo">
+          </div>
         </div>
 
       </div>
@@ -52,7 +84,7 @@
               <li><a href="anuncio-plastico.html">Plásticos</a></li>
               <li><a href="anuncio-metal.html">Metais</a></li>
               <li><a href="anuncio-organicos.html">Orgânicos</a></li>
-          </ul>
+            </ul>
           </li>
           <li>Contato</li>
         </ul>
@@ -79,7 +111,7 @@
   </div>
 
   <div class="quem-pode-usar flex h-[320px] my-5">
-    <div >
+    <div>
       <img src="./assets/img/pessoas.png" alt="Grupo de pessoas" class="h-80">
     </div>
     <div class="grid content-center">
@@ -89,7 +121,8 @@
     <div class="quem-pode-usar-text grid content-center">
       <h1>Que pode usar a ferramenta?</h1>
       <p>
-        Todos! Toda população de Blumenau que esteja preocupada com o destino correto de resíduos e queira ter uma renda extra.
+        Todos! Toda população de Blumenau que esteja preocupada com o destino correto de resíduos e queira ter uma renda
+        extra.
       </p>
     </div>
   </div>
@@ -103,7 +136,8 @@
       <div class="grid content-center">
         <h1>Como a Coletablu te ajuda?</h1>
         <p>
-          Conectando interessados em realizar o descarte com os coletores de resíduos, facilitando o processo e gerando recompensas.
+          Conectando interessados em realizar o descarte com os coletores de resíduos, facilitando o processo e gerando
+          recompensas.
         </p>
         <div class="flex">
           <p class="mt-4">Se interessou?</p>
