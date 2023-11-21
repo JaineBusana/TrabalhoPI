@@ -1,15 +1,15 @@
 @font-face {
-    font-family:Fredoka;
+    font-family: Fredoka;
     src: url(./assets/fonts/Fredoka.ttf);
 }
 
 @font-face {
-    font-family:Montserrat;
+    font-family: Montserrat;
     src: url(./assets/fonts/Montserrat.ttf);
 }
 
 @font-face {
-    font-family:Montserrat-Italic;
+    font-family: Montserrat-Italic;
     src: url(./assets/fonts/Montserrat-Italic.ttf);
 }
 
@@ -17,16 +17,17 @@ body {
     background-color: #FAF3E1;
 }
 
+
 .header-pesquisa {
     width: 600px;
     height: 40px;
-    border: 2px solid #3B5284; 
-    border-radius: 20px;   
+    border: 2px solid #3B5284;
+    border-radius: 20px;
     background-color: #fff;
     outline: none;
-   padding-left: 10px;
-   padding-right: 96px;
-   margin-right: -96px;
+    padding-left: 10px;
+    padding-right: 96px;
+    margin-right: -96px;
 }
 
 .header-pesquisa:active,
@@ -35,23 +36,23 @@ body {
     border-width: 3px;
 }
 
-.header-btn-pesquisa{
+.header-btn-pesquisa {
     width: 100px;
     height: 40px;
-    border: 2px solid #3B5284; 
-    border-radius: 20px;  
+    border: 2px solid #3B5284;
+    border-radius: 20px;
     background-color: #3B5284;
-    font-family:Fredoka !important;
+    font-family: Fredoka !important;
 }
 
-.header-btn-login{
+.header-btn-login {
     width: 100px;
     height: 40px;
     padding-left: 5px;
-    border: 1px solid #5D6E1E; 
-    border-radius: 20px;  
+    border: 1px solid #5D6E1E;
+    border-radius: 20px;
     font-size: 18px;
-    font-family:Fredoka !important;
+    font-family: Fredoka !important;
 }
 
 
@@ -59,65 +60,86 @@ body {
     padding-right: 18px;
     color: #5D6E1E;
     font-size: 20px;
-    font-family:Montserrat !important;
+    font-family: Montserrat !important;
 }
 
-#header-menu-list li:hover > .header-anuncios-list-submenu{
+#header-menu-list li:hover>.header-anuncios-list-submenu {
     opacity: 1;
-    pointer-events:all;
+    pointer-events: all;
     background-color: #CDE54E;
     border-radius: 20px;
     padding-left: 10px;
     width: 90px;
- }
-.header-anuncios-list-submenu{
+}
+
+.header-anuncios-list-submenu {
     position: absolute;
     opacity: 0;
     pointer-events: none;
 }
 
-.header-anuncios-list-submenu li:hover{
+.header-anuncios-list-submenu li:hover {
     color: #fff;
 }
 
+.quem-somos, 
+.como-te-ajudamos {
+    display: flex;
+    direction: row;
+    height: 250px;
+    width: 600px; 
+}
+
 .quem-somos h1,
-.como-te-ajudamos h1{
-    font-family:Fredoka !important;
+.como-te-ajudamos h1 {
+    font-family: Fredoka !important;
     font-size: 40px;
     color: #5D6E1E;
     font-weight: 700;
 }
 
 .quem-somos p,
-.como-te-ajudamos p{
-    font-family:Montserrat !important;
+.como-te-ajudamos p {
+    font-family: Montserrat !important;
     font-size: 20px;
     color: #5D6E1E;
 }
 
-.como-te-ajudamos button{
+.como-te-ajudamos button {
     width: 150px;
     height: 40px;
-    border: 1px solid #5D6E1E; 
-    border-radius: 20px;  
+    border: 1px solid #5D6E1E;
+    border-radius: 20px;
     font-size: 18px;
-    font-family:Fredoka !important;
+    font-family: Fredoka !important;
     color: #fff;
     background-color: #5D6E1E;
 }
-.quem-pode-usar{
-    background-color: #307c524b;
+
+.quem-pode-usar {
+    background-color: rgba(48, 124, 82, 0.15);
+    height: 320px;
 }
 
-.quem-pode-usar-text h1{
-    font-family:Fredoka !important;
+#quem-pode-usar-img-text {
+    display: flex;
+    direction: row;
+    height: 250px;
+    width: 600px; 
+    border-radius: 45px;
+    background: linear-gradient(180deg, rgba(49, 125, 83, 0.15) 0%, rgba(49, 125, 83, 0.00) 100%);
+
+}
+
+.quem-pode-usar-text h1 {
+    font-family: Fredoka !important;
     font-size: 40px;
     color: #307c52;
     font-weight: 700;
 }
 
-.quem-pode-usar-text p{
-    font-family:Montserrat !important;
+.quem-pode-usar-text p {
+    font-family: Montserrat !important;
     font-size: 20px;
     color: #307c52;
 }
@@ -125,67 +147,269 @@ body {
 .rodape-colunas {
     height: 230px;
     background-color: #5D6E1E;
-    color: #fff;  
+    color: #fff;
 }
 
-.rodape-menu{
+.rodape-menu {
     display: inline-block;
     padding-top: 60px;
 }
-.rodape-menu ul{
-   justify-content: flex-start;
-    margin-left:  20px;
+
+.rodape-menu ul {
+    justify-content: flex-start;
+    margin-left: 20px;
 }
 
-.rodape-menu li{
+.rodape-menu li {
     padding-bottom: 10px;
     font-size: 18px;
-    font-family:Montserrat !important;
+    font-family: Montserrat !important;
 }
 
-.logo-rodape{
+.logo-rodape {
     margin-top: 10px;
 }
 
 .rodape-denuncia h1,
-.rodape-sugestoes h1{
+.rodape-sugestoes h1 {
     font-size: 25px;
     margin-bottom: 10px;
 }
 
 .rodape-denuncia p,
-.rodape-sugestoes p{
-    font-family:Montserrat !important;
+.rodape-sugestoes p {
+    font-family: Montserrat !important;
     font-size: 15px;
     margin-bottom: 10px;
 }
 
-.rodape-denuncia a{
-    font-family:Montserrat !important;
+.rodape-denuncia a {
+    font-family: Montserrat !important;
     font-size: 20px;
     padding: 5px;
-    border: 2px solid #3B5284; 
-    border-radius: 20px;  
+    border: 2px solid #3B5284;
+    border-radius: 20px;
     background-color: #3B5284;
 }
 
-.rodape-sugestoes{
+.rodape-sugestoes {
     margin-left: 10px;
 }
 
-#rodape-sugestoes-textarea{
+#rodape-sugestoes-textarea {
     width: 360px;
     height: 90px;
-    border: 2px solid #3B5284;  
+    border: 2px solid #3B5284;
     color: #000;
 }
 
-.rodape-sugestoes-btn{
-    font-family:Fredoka !important;
+.rodape-sugestoes-btn {
+    font-family: Fredoka !important;
     font-size: 15px;
     width: 60px;
     height: 90px;
     border: 2px solid #3B5284;
-    background-color: #3B5284; 
+    background-color: #3B5284;
     color: #fff;
 }
+
+
+
+
+/* 
+.header-pesquisa {
+    width: 600px;
+    height: 40px;
+    border: 2px solid #3B5284;
+    border-radius: 20px;
+    background-color: #fff;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 96px;
+    margin-right: -96px;
+}
+
+.header-pesquisa:active,
+.header-pesquisa:focus {
+    border-color: #3B5284;
+    border-width: 3px;
+}
+
+.header-btn-pesquisa {
+    width: 100px;
+    height: 40px;
+    border: 2px solid #3B5284;
+    border-radius: 20px;
+    background-color: #3B5284;
+    font-family: Fredoka !important;
+}
+
+.header-btn-login {
+    width: 100px;
+    height: 40px;
+    padding-left: 5px;
+    border: 1px solid #5D6E1E;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: Fredoka !important;
+}
+
+
+.header-menu li {
+    padding-right: 18px;
+    color: #5D6E1E;
+    font-size: 20px;
+    font-family: Montserrat !important;
+}
+
+#header-menu-list li:hover>.header-anuncios-list-submenu {
+    opacity: 1;
+    pointer-events: all;
+    background-color: #CDE54E;
+    border-radius: 20px;
+    padding-left: 10px;
+    width: 90px;
+}
+
+.header-anuncios-list-submenu {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.header-anuncios-list-submenu li:hover {
+    color: #fff;
+}
+
+.quem-somos, 
+.como-te-ajudamos {
+    display: flex;
+    direction: row;
+    height: 250px;
+    width: 600px; 
+}
+
+.quem-somos h1,
+.como-te-ajudamos h1 {
+    font-family: Fredoka !important;
+    font-size: 40px;
+    color: #5D6E1E;
+    font-weight: 700;
+}
+
+.quem-somos p,
+.como-te-ajudamos p {
+    font-family: Montserrat !important;
+    font-size: 20px;
+    color: #5D6E1E;
+}
+
+.como-te-ajudamos button {
+    width: 150px;
+    height: 40px;
+    border: 1px solid #5D6E1E;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: Fredoka !important;
+    color: #fff;
+    background-color: #5D6E1E;
+}
+
+.quem-pode-usar {
+    background-color: rgba(48, 124, 82, 0.15);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+}
+
+#quem-pode-usar-img-text {
+    display: flex;
+    direction: row;
+    height: 250px;
+    width: 550px; 
+    border-radius: 45px;
+    background: linear-gradient(180deg, rgba(49, 125, 83, 0.15) 0%, rgba(49, 125, 83, 0.00) 100%);
+
+}
+
+.quem-pode-usar-text h1 {
+    font-family: Fredoka !important;
+    font-size: 40px;
+    color: #307c52;
+    font-weight: 700;
+}
+
+.quem-pode-usar-text p {
+    font-family: Montserrat !important;
+    font-size: 20px;
+    color: #307c52;
+}
+
+.rodape-colunas {
+    height: 230px;
+    background-color: #5D6E1E;
+    color: #fff;
+}
+
+.rodape-menu {
+    display: inline-block;
+    padding-top: 60px;
+}
+
+.rodape-menu ul {
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.rodape-menu li {
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-family: Montserrat !important;
+}
+
+.logo-rodape {
+    margin-top: 10px;
+}
+
+.rodape-denuncia h1,
+.rodape-sugestoes h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.rodape-denuncia p,
+.rodape-sugestoes p {
+    font-family: Montserrat !important;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.rodape-denuncia a {
+    font-family: Montserrat !important;
+    font-size: 20px;
+    padding: 5px;
+    border: 2px solid #3B5284;
+    border-radius: 20px;
+    background-color: #3B5284;
+}
+
+.rodape-sugestoes {
+    margin-left: 10px;
+}
+
+#rodape-sugestoes-textarea {
+    width: 360px;
+    height: 90px;
+    border: 2px solid #3B5284;
+    color: #000;
+}
+
+.rodape-sugestoes-btn {
+    font-family: Fredoka !important;
+    font-size: 15px;
+    width: 60px;
+    height: 90px;
+    border: 2px solid #3B5284;
+    background-color: #3B5284;
+    color: #fff;
+} */
