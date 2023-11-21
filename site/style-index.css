@@ -189,3 +189,23 @@ body {
     background-color: #3B5284; 
     color: #fff;
 }
+
+#Modal_Login {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: rgba(0,0,0,.6 );
+    display: none;
+}
+
+#Fechar_Modal {
+    font-size: 30px;
+    color: #FFF;
+}
+
+.Modal_Login-active {
+    display: block !important;
+}

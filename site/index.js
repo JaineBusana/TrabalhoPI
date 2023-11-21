@@ -1,14 +1,10 @@
-function mostrarModal() {
-    let modal = document.querySelector("#modal");
-    modal.classList.add(`modal-active`);
+
+function SHOW_MODAL_LOGIN() {
+    let modal = document.querySelector('#Modal_Login')
+    modal.classList.add(`Modal_Login-active`);
 }
 
-function fecharModal() {
-    let modal = document.querySelector("#modal");
-    modal.classList.remove(`modal-active`);
-}
-
-let abrirModal = document.querySelectorAll(".abrir-modal");
-for (let abrir of abrirModal) {
-    abrir.addEventListener(`click`, mostrarModal);
+function CLOSE_MODAL_LOGIN() {
+    let modal = document.querySelector('#Modal_Login')
+    modal.classList.remove(`Modal_Login-active`);
 }

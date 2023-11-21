@@ -31,10 +31,14 @@
           <img src="./assets/img/lupa-header-pesquisa.png" alt="lupa" class="h-8 inline-block align-middle">
           <!-- pq nao da pra usar flex items-center na imagem? ou usar inline-block align-middle no btn-login? -->
         </button>
-        <button class="header-btn-login shadow-md ml-1 md:ml-4 flex items-center">
+        <button class="header-btn-login shadow-md ml-1 md:ml-4 flex items-center" onclick="SHOW_MODAL_LOGIN()">
           <img src="./assets/img/img-login.png" alt="ícone de usuário" class="h-8 pl-2">
           Login
         </button>
+        <script src="./index.js"></script>
+        <div id="Modal_Login" class="">
+          <button id="Fechar_Modal" onclick="CLOSE_MODAL_LOGIN()">X</button>
+        </div>
 
       </div>
     </div>
