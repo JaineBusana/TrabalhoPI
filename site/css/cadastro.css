@@ -117,18 +117,20 @@ main h1 {
         height: 600px;
         margin: 110px auto;
         border-radius: 20px;
-        border: 1px solid black;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
 
-    .banner {
-        display: block;
-    }
+  
     .banner img {
         width: 195px;
         height: 192px;
-        margin-top: 70px;
+        margin: 15px;
+        
     }
+    .banner h1 {
+        margin: 20px;
+    }
+  
     .corpo{
         margin: auto;
     }
@@ -142,108 +144,13 @@ main h1 {
         border-bottom-left-radius: 18px;
         
     }
-
-    aside div {
-        display: flex;
-        direction: column;
-        justify-content: center;
-        width: 276px;
-        height: 379px;
-        display: grid;
-        grid-template-columns: 1fr;
-        
-    }
-    aside h1 {
-        margin: 15px;
-        color: #fff;
-        font-family:"commissioner-bold" ;
-        display: flex;
-        justify-content: center;
-       
-    }
-
-    aside p {
-        margin: 20px;
-        color: #fff;
-        font-size: 20px;
-        display: flex;
-        justify-content: center;
-
-    }
-    aside img {
-        height: 210px;
-        width: 210px;
-        margin: 60px auto;
-       
-    }
-    .container{
-        display: grid;
-        direction: column;
-        text-align: center;
-        align-items: center;
-    }
-    main h1 {
-        font-family: "commissioner-bold";
-        font-size: 40px;
-        display: flex;
-        justify-content: center;
+    .banner div{
+        height: 300px;
+        margin: 70px auto;
         
     }
 
-    #login-face-google {
-        margin: 20px 0px 34px;
-        display: flex;
-        direction: row;
-        justify-content: center;
-    }
-
-    #login-face-google img {
-        margin: 0px 17px;
-        height: 25px;
-        width: 25px;
-    }
-
-    .formulario {
-        width: 190px;
-        height: 260px;
-        margin: auto;
-
-    }
-
-    .formulario input {
-        width: 190px;
-        height: 30px;
-        padding-left: 5px;
-        font-size: 15px;
-        font-family: "commissioner-bold";
-        background-color: rgba(217, 217, 217, 56%);
-        margin-bottom: 22px;
-    }
     .criar-conta h1{
         margin-top: 60px;
     }
-    #btn-criarconta {
-        width: 120px;
-        height: 46px;
-        background-color: rgba(59, 82, 132, 100%);
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-        padding: 16px;
-        margin: auto;
-        color: #fff;
-    }
-
-    #login {
-        font-size: 12px;
-        display: flex;
-        justify-content: center;
-        font-family: "commissioner-bold";
-
-    }
-
-    #login a {
-        color: #7E8D5D;
-    }
-
 }
