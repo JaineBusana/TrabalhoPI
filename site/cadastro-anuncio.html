@@ -14,23 +14,23 @@
             <img id="logo" src="./assets/img/MicrosoftTeams-image (2).png" alt="Logo">
             <h1>Cadastrar Anúncios</h1>
 
-            <form action="">
-                <input class="input" type="text" value="Nome" onfocus="this.value='';" required>
-                <input class="input" type="text" value="Descrição" onfocus="this.value='';" required>
+            <form class="form">
+                <input id="nome" class="input " type="text" value="Nome" onfocus="this.value='';" required>
+                <input id="descrição"  class="input" type="text" value="Descrição" onfocus="this.value='';" required >
 
                 <label class="labels">Modalidade</label>
-                <select class="select" required>
+                <select id="modalidade" class="select" required >
                     <option>Venda</option>
                     <option>Compra</option>
                 </select>
 
                 <div class="flex-container">
-                    <input class="input-container" type="text" value="Bairro" onfocus="this.value='';" required>
-                    <input class="input-container" type="text" value="CEP" onfocus="this.value='';" >
+                    <input id="bairro" class="input-container" type="text" value="Bairro" onfocus="this.value='';" required >
+                    <input id="cep" class="input-container" type="text" value="CEP" onfocus="this.value='';" >
                 </div>
 
                 <label class="labels">Categoria</label>
-                <select id="select-categoria" class="select" required>
+                <select id="categoria"  id="select-categoria" class="select" required >
                     <option>Vidros</option>
                     <option>Metais</option>
                     <option>Plásticos</option>
@@ -38,22 +38,23 @@
                 </select>
 
 
-                <input class="input" type="text" value="Subcategoria" onfocus="this.value='';" required>
+                <input id="subcategoria" class="input " type="text" value="Subcategoria" onfocus="this.value='';" required >
 
 
                 <div class="flex-container">
-                    <input class="input-container" type="text" value="Valor (R$)" onfocus="this.value='';" required>
-                    <input class="input-container" type="text" value="Quantidade" onfocus="this.value='';">
+                    <input id="valor" class="input-container" type="text" value="Valor (R$)" onfocus="this.value='';" required>
+                    <input id="quantidade" class="input-container" type="text" value="Quantidade" onfocus="this.value='';">
                 </div>
 
-                <input class="input" type="text" value="WhastApp" onfocus="this.value='';">
-                <input class="input" type="text" value="Telefone" onfocus="this.value='';"required>
+                <input id="whatsapp" class="input" type="text" value="WhastApp" onfocus="this.value='';">
+                <input id="telefone"  class="input" type="text" value="Telefone" onfocus="this.value=''; " required>
 
             </form>
-                <button id="btn-salvar">Salvar Anúncio</button>
+                <button type="submit" id="btn-salvar">Salvar Anúncio</button>
 
         </div>
     </main>
+    <script src="cadastro-anuncio.js"></script>
 </body>
 
 </html>
