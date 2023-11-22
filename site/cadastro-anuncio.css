@@ -111,13 +111,16 @@ h1 {
 }
 
 
-@media(max-width:640px) {
+@media(max-width:640px) {   
     body {
+        
         height: 180vh;
     }
 
     main {
         margin: 450px auto;
+        width: 500px;
+        height: 859px;
     }
 
     h1 {
@@ -125,19 +128,21 @@ h1 {
     }
 
     .input {
-        margin-left: 145px;
+        margin-left: 45px;
+        width: 420px;
     }
 
     .input-container {
-        margin-left: 145px;
+        margin-left: 40px;
+        margin-right: 20px;
+        width: 180px;
     }
 
     .labels {
-        margin-left: 150px;
+        margin-left: 50px;
     }
 
     .select {
-        width: 665px;
-    }
+        width: 360px;
 }
 
