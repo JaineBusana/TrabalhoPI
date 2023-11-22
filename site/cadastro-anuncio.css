@@ -4,7 +4,7 @@
 }
 
 body {
-    height: 150vh;
+    height: 155vh;
     background: linear-gradient(180deg, #5BA8A0 0%, #CDE54E 100%);
 }
 
@@ -104,4 +104,75 @@ h1 {
     color: #fff;
     font-family: mukta_bold;
     font-size: 14px;
+}
+
+@media(max-width:640px){
+    body {
+        height: 180vh;
+        background: linear-gradient(180deg, #5BA8A0 0%, #CDE54E 100%);
+    }
+
+    main {
+        background-color: #fff;
+        width: 955px;
+        height: 859px;
+        border-radius: 33px;
+        background: #FFF;
+        margin: 450px auto;
+    }
+
+    h1 {
+        color: #3B5284;
+        font-family: mukta_bold;
+        font-size: 25px;
+        position: absolute;
+        margin-left: 150px;
+        top: 700px;
+    }
+
+    .input {
+        margin-bottom: 22px;
+        margin-left: 145px;
+        padding-left: 10px;
+        font-family: mukta_bold;
+        font-size: 12px;
+        width: 720px;
+        height: 25px;
+        border-radius: 22px;
+        border: 1px solid #5BA8A0;
+        background: rgba(255, 255, 255, 0.13);
+    }
+
+    .input-container {
+        margin-right: 70px;
+        margin-left: 145px;
+        margin-bottom: 22px;
+        padding-left: 10px;
+        font-family: mukta_bold;
+        font-size: 12px;
+        width: 344px;
+        height: 25px;
+        border-radius: 22px;
+        border: 1px solid #5BA8A0;
+        background: rgba(255, 255, 255, 0.13);
+    }
+
+    .labels {
+        margin-left: 150px;
+        margin-bottom: 22px;
+        font-family: mukta_bold;
+        font-size: 12px;
+    }
+
+    .select {
+        margin-bottom: 22px;
+        padding-left: 10px;
+        font-family: mukta_bold;
+        font-size: 12px;
+        width: 665px;
+        height: 25px;
+        border-radius: 22px;
+        border: 1px solid #5BA8A0;
+        background: rgba(255, 255, 255, 0.13);
+    }
 }
