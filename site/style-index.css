@@ -189,20 +189,3 @@ body {
     background-color: #3B5284; 
     color: #fff;
 }
-
-#Modal_Login {
-    position: fixed;
-    
-    z-index: 2;
-    background-color: #FFF;
-    display: none;
-}
-
-#Fechar_Modal {
-    font-size: 30px;
-    color: #000;
-}
-
-.Modal_Login-active {
-    display: block !important;
-}

@@ -1,6 +1,29 @@
 #Modal_Login {
-    max-width: 400px;
-} 
+    background-color: rgba(0,0,0,.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 2;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#Fundo_Login {
+    background-color: #FFF;
+}
+
+#Fechar_Modal {
+    font-size: 30px;
+    color: #FFF;
+    display: block;
+}
+
+.Modal_Login-active {
+    display: flex !important;
+}
 
 #foto_fundo {
     height: 440px;
