@@ -1,4 +1,5 @@
 
+
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("form");
 
@@ -17,9 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
+
         if (!inputPreenchido) {
             event.preventDefault();
         }
     });
 });
-
