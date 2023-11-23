@@ -17,11 +17,10 @@ body {
     background-color: #FAF3E1;
 }
 
-
 .header-pesquisa {
     width: 600px;
     height: 40px;
-    border: 2px solid #3B5284;
+    border: 2px solid #307c52;
     border-radius: 20px;
     background-color: #fff;
     outline: none;
@@ -32,16 +31,16 @@ body {
 
 .header-pesquisa:active,
 .header-pesquisa:focus {
-    border-color: #3B5284;
+    border-color: #307c52;
     border-width: 3px;
 }
 
 .header-btn-pesquisa {
     width: 100px;
     height: 40px;
-    border: 2px solid #3B5284;
+    border: 2px solid #307c52;
     border-radius: 20px;
-    background-color: #3B5284;
+    background-color: #307c52;
     font-family: Fredoka !important;
 }
 
@@ -69,7 +68,7 @@ body {
     background-color: #CDE54E;
     border-radius: 20px;
     padding-left: 10px;
-    width: 90px;
+    width: 130px;
 }
 
 .header-anuncios-list-submenu {
@@ -82,23 +81,37 @@ body {
     color: #fff;
 }
 
-.quem-somos, 
-.como-te-ajudamos {
-    display: flex;
-    direction: row;
-    height: 250px;
-    width: 600px; 
+#quem-somos,
+.quem-pode-usar,
+.como-te-ajudamos{
+    display: grid;
+    justify-content: center;
+    margin: 20px 0;
 }
 
-.quem-somos h1,
+/* #direcao-pagina-index{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+} */
+
+.quem-somos-text,
+.quem-pode-usar-text, 
+.como-te-ajudamos-text{
+    display: flex;
+    margin: 30px 0px;
+}
+
+.quem-somos-text h1,
 .como-te-ajudamos h1 {
     font-family: Fredoka !important;
-    font-size: 40px;
+    font-size: 35px;
     color: #5D6E1E;
     font-weight: 700;
 }
 
-.quem-somos p,
+.quem-somos-text p,
 .como-te-ajudamos p {
     font-family: Montserrat !important;
     font-size: 20px;
@@ -118,22 +131,17 @@ body {
 
 .quem-pode-usar {
     background-color: rgba(48, 124, 82, 0.15);
-    height: 320px;
 }
 
 #quem-pode-usar-img-text {
     display: flex;
     direction: row;
-    height: 250px;
-    width: 600px; 
-    border-radius: 45px;
-    background: linear-gradient(180deg, rgba(49, 125, 83, 0.15) 0%, rgba(49, 125, 83, 0.00) 100%);
-
+    padding: 10px;
 }
 
 .quem-pode-usar-text h1 {
     font-family: Fredoka !important;
-    font-size: 40px;
+    font-size: 35px;
     color: #307c52;
     font-weight: 700;
 }
@@ -145,14 +153,24 @@ body {
 }
 
 .rodape-colunas {
-    height: 230px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 280px;
     background-color: #5D6E1E;
     color: #fff;
 }
 
-.rodape-menu {
-    display: inline-block;
-    padding-top: 60px;
+.rodape-menu,
+.rodape-denuncia,
+.rodape-sugestoes {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    margin: 0 10px;
+}
+
+.rodape-menu img{
+    margin-bottom: 10px;
 }
 
 .rodape-menu ul {
@@ -166,26 +184,23 @@ body {
     font-family: Montserrat !important;
 }
 
-.logo-rodape {
-    margin-top: 10px;
-}
-
 .rodape-denuncia h1,
 .rodape-sugestoes h1 {
-    font-size: 25px;
+    font-size: 18px;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 
 .rodape-denuncia p,
 .rodape-sugestoes p {
     font-family: Montserrat !important;
-    font-size: 15px;
-    margin-bottom: 10px;
+    font-size: 14px;
+    margin-bottom: 15px;
 }
 
 .rodape-denuncia a {
     font-family: Montserrat !important;
-    font-size: 20px;
+    font-size: 15px;
     padding: 5px;
     border: 2px solid #3B5284;
     border-radius: 20px;
@@ -197,7 +212,7 @@ body {
 }
 
 #rodape-sugestoes-textarea {
-    width: 360px;
+    width: 180px;
     height: 90px;
     border: 2px solid #3B5284;
     color: #000;
@@ -205,9 +220,9 @@ body {
 
 .rodape-sugestoes-btn {
     font-family: Fredoka !important;
-    font-size: 15px;
-    width: 60px;
-    height: 90px;
+    font-size: 14px;
+    width: 180px;
+    height: 25px;
     border: 2px solid #3B5284;
     background-color: #3B5284;
     color: #fff;
