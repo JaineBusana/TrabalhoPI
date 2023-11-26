@@ -43,7 +43,7 @@ main h1 {
 .corpo {
     width: 400px;
     height: 500px;
-    border-radius: 20px;
+    
     background-color: #fff;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     
@@ -133,6 +133,7 @@ main h1 {
   
     .corpo{
         margin: auto;
+        border-radius: 20px;
     }
 
     aside {

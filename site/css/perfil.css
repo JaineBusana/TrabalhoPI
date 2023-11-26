@@ -1,0 +1,81 @@
+@font-face {
+    font-family: Arsenal-bold;
+    src: url("../assets/fonts/Arsenal/Arsenal-Bold.ttf");
+}
+@font-face {
+    font-family: Arsenal;
+    src: url("../assets/fonts/Arsenal/Arsenal-Regular.ttf");
+}
+body{
+    background-color: #FAF3E1;
+    font-family: Arsenal;
+}
+header{
+    width: 110px;
+    display: flex;
+}
+#imagem-perfil{
+    width: 80px;
+    height: 80px;
+    margin: 20PX;
+}
+#imagem-menu{
+    width: 20px;
+    height: 20px;
+    margin: 5px 0px 0px -25px;
+}
+header H1 {
+    font-family: Arsenal-bold;
+    margin: 30px 0px 0px;
+}
+header h3{
+    font-family: Arsenal;
+    width: 240px;
+    font-size: 12px;
+}
+main section{
+    width: 350px;
+    height: 150px;
+    border: 1px solid #000;
+    border-top-right-radius: 10px ;
+    border-top-left-radius: 10px;
+    margin: auto;
+}
+.menu {
+    cursor: pointer;
+    margin: 10px 0px 0px -35px;
+    
+}
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #000;
+    margin: 5px auto;
+    transition: all 0.5s;
+
+}
+.menu .bar:nth-child(2){
+    background-color:rgba(205, 229, 79, 1);
+}
+.menu.ativo .bar:nth-child(1){
+    transform: translateY(8px) rotate(40deg);
+}
+.menu.ativo .bar:nth-child(2){
+    opacity: 0;
+}
+.menu.ativo .bar:nth-child(3){
+    transform: translatey(-8px) rotate(-45deg);
+}
+
+
+@media(min-width: 970px) {
+    .menu{
+        display: none;
+    }
+
+
+
+
+}
