@@ -31,12 +31,29 @@ body {
 
 .header-btn-login {
     width: 100px;
-    height: 40px;
+    height: 60px;
     padding-left: 5px;
     border: 1px solid #5D6E1E;
-    border-radius: 20px;
-    font-size: 18px;
-    font-family: Fredoka !important;
+    border-radius: 30px;
+    justify-content: center;
+}
+
+.header-menu-login{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-modal-menu-login{
+    display: none;
+    height: 118px;
+    width: 150px;
+    background-color: #94B447;
+    color: #FAF3E1;
+    font-family: Montserrat !important;
+    font-weight: 700;
+    border-radius: 30px;
+    padding-left: 15px;
+    padding-top: 15px;
 }
 
 .header-btn-menu {
@@ -63,7 +80,8 @@ body {
     padding: 10px;
 }
 
-.header-modal-menu li:hover {
+.header-modal-menu li:hover,
+.header-modal-menu-login li:hover {
     color: #fff;
 }
 
