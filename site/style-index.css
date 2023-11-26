@@ -1,0 +1,480 @@
+@font-face {
+    font-family: Fredoka;
+    src: url(./assets/fonts/Fredoka.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(./assets/fonts/Montserrat.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Italic;
+    src: url(./assets/fonts/Montserrat-Italic.ttf);
+}
+
+body {
+    background-color: #FAF3E1;
+}
+
+.centralizar{
+    display: flex;
+    justify-content: center;
+}
+
+.header-logo{
+    height: 80px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* .header-btn-login-menu{
+    display: flex;
+    justify-content: flex-end;
+} */
+
+.header-btn-login {
+    width: 100px;
+    height: 40px;
+    padding-left: 5px;
+    border: 1px solid #5D6E1E;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: Fredoka !important;
+}
+
+.header-btn-menu{
+    width: 100px;
+    height: 40px;
+}
+
+#header-btn-menu-texto{
+    transform: rotate(90deg);
+    color: #307c52;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.modal-active {
+    display: block !important;
+}
+
+.header-modal-menu{
+    display: none;
+    background-color: #307c52;
+    width: 100vw;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.header-modal-menu li:hover{
+    color: #fff;
+}
+
+.header-menu li {
+    padding-right: 18px;
+    color: #FAF3E1;
+    font-size: 20px;
+    font-family: Montserrat !important;
+}
+
+.header-modal-menu-residuos{
+    display: none;
+    padding-left: 30px;
+    color: #fff;
+}
+
+/* .header-pesquisa {
+    width: 600px;
+    height: 40px;
+    border: 2px solid #307c52;
+    border-radius: 20px;
+    background-color: #fff;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 96px;
+    margin-right: -96px;
+}
+
+.header-pesquisa:active,
+.header-pesquisa:focus {
+    border-color: #307c52;
+    border-width: 3px;
+}
+
+.header-btn-pesquisa {
+    width: 100px;
+    height: 40px;
+    border: 2px solid #307c52;
+    border-radius: 20px;
+    background-color: #307c52;
+    font-family: Fredoka !important;
+} */
+
+#quem-somos,
+.quem-pode-usar,
+.como-te-ajudamos{
+    margin: 20px 0;
+}
+
+.quem-somos-img,
+.quem-pode-usar-img,
+.como-te-ajudamos-img,
+.rodape-logo{
+    flex-wrap: wrap;
+    align-content: space-around; 
+}
+
+.quem-somos-text,
+.quem-pode-usar-text,
+.como-te-ajudamos-text{
+    margin: 30px 0px;
+}
+
+.quem-somos-text h1,
+.como-te-ajudamos h1 {
+    width: 250px;
+    font-family: Fredoka !important;
+    font-size: 30px;
+    color: #5D6E1E;
+    font-weight: 700;
+}
+
+.quem-somos-text p,
+.como-te-ajudamos p {
+    width: 250px;
+    font-family: Montserrat !important;
+    font-size: 18px;
+    color: #5D6E1E;
+}
+
+.como-te-ajudamos button {
+    width: 130px;
+    height: 40px;
+    border: 1px solid #5D6E1E;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: Fredoka !important;
+    color: #fff;
+    background-color: #5D6E1E;
+}
+
+.quem-pode-usar {
+    background-color: rgba(48, 124, 82, 0.15);
+}
+
+#quem-pode-usar-img-text {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+
+.quem-pode-usar-text h1 {
+    width: 250px;
+    font-family: Fredoka !important;
+    font-size: 30px;
+    color: #307c52;
+    font-weight: 700;
+}
+
+.quem-pode-usar-text p {
+    width: 250px;
+    font-family: Montserrat !important;
+    font-size: 18px;
+    color: #307c52;
+}
+
+.rodape-colunas{
+    background-color: #5D6E1E;
+    color: #fff;
+    display: grid;
+    justify-content: space-around;
+}
+
+.rodape-menu,
+.rodape-denuncia,
+.rodape-sugestoes {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.rodape-menu img{
+    margin-bottom: 10px;
+}
+
+.rodape-menu ul {
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.rodape-menu li {
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-family: Montserrat !important;
+}
+
+.rodape-denuncia h1,
+.rodape-sugestoes h1 {
+    font-family: Montserrat !important;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.rodape-denuncia p,
+.rodape-sugestoes p {
+    font-family: Montserrat !important;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.rodape-denuncia a {
+    font-family: Montserrat !important;
+    font-size: 15px;
+    border: 10px solid #3B5284;
+    border-radius: 20px;
+    background-color: #3B5284;
+}
+
+#rodape-sugestoes-textarea {
+    width: 300px;
+    height: 90px;
+    border: 2px solid #3B5284;
+    color: #000;
+}
+
+.rodape-sugestoes-btn {
+    font-family: Fredoka !important;
+    font-size: 14px;
+    width: 300px;
+    height: 25px;
+    border: 2px solid #3B5284;
+    background-color: #3B5284;
+    color: #fff;
+}
+
+@media(min-width: 970px) {
+    .header-logo{
+        height: 80px;
+        margin: 20px;
+        display: flex;
+        justify-content: baseline;
+    }
+    
+
+
+    .header-modal-menu{
+        display: flex !important; 
+        background-color: #307c52;
+        width: 100vw;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+
+
+
+}
+
+/*
+.header-pesquisa {
+    width: 600px;
+    height: 40px;
+    border: 2px solid #3B5284;
+    border-radius: 20px;
+    background-color: #fff;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 96px;
+    margin-right: -96px;
+}
+
+.header-pesquisa:active,
+.header-pesquisa:focus {
+    border-color: #3B5284;
+    border-width: 3px;
+}
+
+.header-btn-pesquisa {
+    width: 100px;
+    height: 40px;
+    border: 2px solid #3B5284;
+    border-radius: 20px;
+    background-color: #3B5284;
+    font-family: Fredoka !important;
+}
+
+.header-btn-login {
+    width: 100px;
+    height: 40px;
+    padding-left: 5px;
+    border: 1px solid #5D6E1E;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: Fredoka !important;
+}
+
+
+.header-menu li {
+    padding-right: 18px;
+    color: #5D6E1E;
+    font-size: 20px;
+    font-family: Montserrat !important;
+}
+
+#header-menu-list li:hover>.header-anuncios-list-submenu {
+    opacity: 1;
+    pointer-events: all;
+    background-color: #CDE54E;
+    border-radius: 20px;
+    padding-left: 10px;
+    width: 90px;
+}
+
+.header-anuncios-list-submenu {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.header-anuncios-list-submenu li:hover {
+    color: #fff;
+}
+
+.quem-somos,
+.como-te-ajudamos {
+    display: flex;
+    direction: row;
+    height: 250px;
+    width: 600px;
+}
+
+.quem-somos h1,
+.como-te-ajudamos h1 {
+    font-family: Fredoka !important;
+    font-size: 40px;
+    color: #5D6E1E;
+    font-weight: 700;
+}
+
+.quem-somos p,
+.como-te-ajudamos p {
+    font-family: Montserrat !important;
+    font-size: 20px;
+    color: #5D6E1E;
+}
+
+.como-te-ajudamos button {
+    width: 150px;
+    height: 40px;
+    border: 1px solid #5D6E1E;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: Fredoka !important;
+    color: #fff;
+    background-color: #5D6E1E;
+}
+
+.quem-pode-usar {
+    background-color: rgba(48, 124, 82, 0.15);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+}
+
+#quem-pode-usar-img-text {
+    display: flex;
+    direction: row;
+    height: 250px;
+    width: 550px;
+    border-radius: 45px;
+    background: linear-gradient(180deg, rgba(49, 125, 83, 0.15) 0%, rgba(49, 125, 83, 0.00) 100%);
+
+}
+
+.quem-pode-usar-text h1 {
+    font-family: Fredoka !important;
+    font-size: 40px;
+    color: #307c52;
+    font-weight: 700;
+}
+
+.quem-pode-usar-text p {
+    font-family: Montserrat !important;
+    font-size: 20px;
+    color: #307c52;
+}
+
+.rodape-colunas {
+    height: 230px;
+    background-color: #5D6E1E;
+    color: #fff;
+}
+
+.rodape-menu {
+    display: inline-block;
+    padding-top: 60px;
+}
+
+.rodape-menu ul {
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.rodape-menu li {
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-family: Montserrat !important;
+}
+
+.logo-rodape {
+    margin-top: 10px;
+}
+
+.rodape-denuncia h1,
+.rodape-sugestoes h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.rodape-denuncia p,
+.rodape-sugestoes p {
+    font-family: Montserrat !important;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.rodape-denuncia a {
+    font-family: Montserrat !important;
+    font-size: 20px;
+    padding: 5px;
+    border: 2px solid #3B5284;
+    border-radius: 20px;
+    background-color: #3B5284;
+}
+
+.rodape-sugestoes {
+    margin-left: 10px;
+}
+
+#rodape-sugestoes-textarea {
+    width: 360px;
+    height: 90px;
+    border: 2px solid #3B5284;
+    color: #000;
+}
+
+.rodape-sugestoes-btn {
+    font-family: Fredoka !important;
+    font-size: 15px;
+    width: 60px;
+    height: 90px;
+    border: 2px solid #3B5284;
+    background-color: #3B5284;
+    color: #fff;
+} */
