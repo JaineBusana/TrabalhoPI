@@ -22,62 +22,68 @@
 
 <body>
 
-  <header class="pt-5">
-    <div class="header-logo">
-      <img src="./assets/img/logo-com-slogan.png" alt="Logo ColetaBlu">
-    </div>
-    <div class="centralizar mb-4">
-      <!-- <input type="text" name="barra de pesquisa" class="header-pesquisa hidden md:flex md:w-96 lg:w-[600px]"
-          placeholder="Onde posso descartar remédios, pilhas, TV...,">
-        <button class="header-btn-pesquisa">
-          <img src="./assets/img/lupa-header-pesquisa.png" alt="lupa" class="h-8 inline-block align-middle">
-        </button> -->
+  <header class="pt-5 container mx-auto mb-10">
+    <div class="flex justify-end mr-4">
       <button class="header-btn-login flex items-center">
         <img src="./assets/img/img-login.png" alt="ícone de usuário" class="h-8 pl-2">
         Login
       </button>
-      <button class="header-btn-menu md:hidden" onclick="showModalHeaderMenu()">
-        <div id="header-btn-menu-texto">|||</div>
-      </button>
     </div>
+    <div id="header-logo-menu">
+      <div class="header-logo">
+        <img src="./assets/img/logo-com-slogan.png" alt="Logo ColetaBlu">
+      </div>
+      <div class="centralizar mb-4">
+        <!-- <input type="text" name="barra de pesquisa" class="header-pesquisa hidden md:flex md:w-96 lg:w-[600px]"
+      placeholder="Onde posso descartar remédios, pilhas, TV...,">
+    <button class="header-btn-pesquisa">
+      <img src="./assets/img/lupa-header-pesquisa.png" alt="lupa" class="h-8 inline-block align-middle">
+    </button> -->
 
-
-    <div class="header-modal-menu md:flex">
-      <div class="header-menu centralizar">
-        <ul class="font-bold cursor-pointer">
-          <li>
-            <a href="#quem-somos">O Coletablu</a>
-          </li>
-          <li class="open-modal-menu-residuos">Resíduos
-            <div class="header-modal-menu-residuos">
-              <ul>
-                <li><a href="anuncio-vidro.html">Vidros</a></li>
-                <li><a href="anuncio-plastico.html">Plásticos</a></li>
-                <li><a href="anuncio-metal.html">Metais</a></li>
-                <li><a href="anuncio-organicos.html">Orgânicos</a></li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="#sugestoes">Sugestões</a>
-          </li>
-        </ul>
+        <button class="header-btn-menu" onclick="showModalMenu('.header-modal-menu')">
+          <div id="header-btn-menu-texto">|||</div>
+        </button>
       </div>
 
 
+      <div class="header-modal-menu">
+        <div class="header-menu">
+          <ul class="font-bold cursor-pointer md:flex">
+            <li>
+              <a href="#quem-somos">O Coletablu</a>
+            </li>
+            <li onclick="showModalMenu('.header-modal-menu-residuos')">Resíduos
+              <div class="header-modal-menu-residuos">
+                <ul>
+                  <li><a href="anuncio-vidro.html">Vidros</a></li>
+                  <li><a href="anuncio-plastico.html">Plásticos</a></li>
+                  <li><a href="anuncio-metal.html">Metais</a></li>
+                  <li><a href="anuncio-organicos.html">Orgânicos</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#sugestoes">Sugestões</a>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
     </div>
+
 
   </header>
 
 
   <div class="my-5">
     <div id="quem-somos">
-      <div class="quem-somos-text centralizar">
+      <div class="quem-somos-logo-text centralizar">
         <div class="quem-somos-img centralizar">
           <img src="./assets/img/bola-logo-verde-claro.png" alt="logo do site, sendo um criculo com uma folha dentro"
             class="h-20">
         </div>
-        <div class="mx-[15px]">
+        <div class="quem-somos-text mx-[15px]">
           <h1>Quem somos?</h1>
           <p>
             Somos uma aplicação regional criada pelo alunos do curso #Entra21 da edição de 2023.
@@ -86,15 +92,18 @@
 
       </div>
       <div class="grid justify-items-center">
-        <img src="./assets/img/mapaBlumenau.png" alt="Mapa de Blumenau" class="h-60">
+        <img src="./assets/img/mapaBlumenau.png" alt="Mapa de Blumenau" class="quem-somos-img-mapa">
       </div>
     </div>
   </div>
 
-  <div class="quem-pode-usar centralizar">
+  <div class="quem-pode-usar">
+    <div class="quem-pode-usar-img">
+      <img src="./assets/img/pessoas-reciclando.png" alt="pessoas descartando residuos">
+    </div>
     <div class="quem-pode-usar-text">
-      <div id="quem-pode-usar-img-text">
-        <div class="quem-pode-usar-img centralizar">
+      <div id="quem-pode-usar-logo-text">
+        <div class="quem-pode-usar-logo centralizar">
           <img src="./assets/img/MicrosoftTeams-image (7).png" alt="logo do site, sendo um criculo com uma folha dentro"
             class="h-20">
         </div>
@@ -112,19 +121,18 @@
 
   <div class="my-5">
     <div class="como-te-ajudamos">
-      <div class="como-te-ajudamos-text centralizar">
+      <div class="como-te-ajudamos-logo-text centralizar">
         <div class="como-te-ajudamos-img centralizar">
           <img src="./assets/img/bola-logo-verde-claro.png" alt="logo do site, sendo um criculo com uma folha dentro"
             class="h-20">
         </div>
-        <div class="mx-[15px]">
+        <div class="como-te-ajudamos-text mx-[15px]">
           <h1>Como a Coletablu te ajuda?</h1>
           <p>
             Conectando interessados em realizar o descarte de materiais com os coletoresde resíduos,
             facilitando o processo e gerando recompensas. <br>Se interessou?
           </p>
           <div class="flex">
-            <!-- <p class="mt-4">Se interessou?</p> -->
             <button class="m-4">Cadastre-se</button>
           </div>
 
@@ -132,27 +140,30 @@
       </div>
 
       <div class="grid justify-items-center">
-        <img src="./assets/img/circulo-de-residuos.png" alt="Circulo com" class="h-80">
+        <img src="./assets/img/circulo-de-residuos.png" alt="Circulo com resíduos" class="como-te-ajudamos-residuos">
       </div>
     </div>
   </div>
 
   <footer>
-    <div class="md:hidden">
+    <div class="rodape-img-mobile">
       <img src="./assets/img/rodape-img-mobile.png" alt="">
+    </div>
+    <div class="rodape-img">
+      <img src="./assets/img/img-rodape.png" alt="">
     </div>
     <div class="rodape-colunas">
       <div class="rodape-menu">
         <div class="rodape-logo centralizar">
           <img src="./assets/img/MicrosoftTeams-image (8).png" alt="logo do site, sendo um criculo com uma folha dentro"
-            class="h-14">
+            class="rodape-img-logo">
         </div>
         <ul class="font-bold cursor-pointer">
           <li>
             <a href="#quem-somos">O Coletablu</a>
           </li>
-          <li class="open-modal-menu-residuos">Resíduos
-            <div class="header-modal-menu-residuos">
+          <li onclick="showModalMenu('.footer-modal-menu-residuos')">Resíduos
+            <div class="footer-modal-menu-residuos">
               <ul>
                 <li><a href="anuncio-vidro.html">Vidros</a></li>
                 <li><a href="anuncio-plastico.html">Plásticos</a></li>
@@ -192,111 +203,3 @@
 </body>
 
 </html>
-
-
-<!-- 
-<div class="grid grid-cols-2 gap-4 h-[320px] my-5">
-  <div class="flex items-center justify-center">
-    <div class="quem-somos ml-20 pt-6">
-      <div class="grid justify-items-end content-center">
-        <img src="./assets/img/bola-logo-verde-claro.png" alt="logo do site, sendo um criculo com uma folha dentro"
-          class="h-20">
-      </div>
-      <div class="grid content-center mx-[15px]">
-        <h1>Quem somos?</h1>
-        <p>
-          Somos uma aplicação regional criada <br>pelo alunos do curso #Entra21 <br>da edição de 2023.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="grid justify-items-center content-center">
-    <img src="./assets/img/mapaBlumenau.png" alt="Mapa de Blumenau" class="h-80 mr-20">
-  </div>
-</div>
-
-<div class="quem-pode-usar grid grid-cols-2 gap-4">
-  <div class="flex items-center justify-center">
-    <img src="./assets/img/pessoas.png" alt="Grupo de pessoas" class="h-80 ml-20">
-  </div>
-  <div class="flex items-center justify-center ml-20 pt-6">
-    <div id="quem-pode-usar-img-text">
-      <div class="grid content-center mx-[15px]">
-        <img src="./assets/img/MicrosoftTeams-image (7).png" alt="logo do site, sendo um criculo com uma folha dentro"
-          class="h-20">
-      </div>
-      <div class="quem-pode-usar-text grid content-center">
-        <h1>Quem pode usar <br>a ferramenta?<br></h1>
-        <p>
-          Todos! Toda população de Blumenau <br>que esteja preocupada com o destino<br> correto de resíduos e queira
-          ter uma renda extra.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="grid grid-cols-2 gap-4 h-[320px] my-5">
-  <div class="flex items-center justify-center">
-    <div class="como-te-ajudamos ml-20 pt-6">
-      <div class="grid justify-items-end content-center">
-        <img src="./assets/img/bola-logo-verde-claro.png" alt="logo do site, sendo um criculo com uma folha dentro"
-          class="h-20">
-      </div>
-      <div class="grid content-center mx-[15px]">
-        <h1>Como a Coletablu <br>te ajuda?<br></h1>
-        <p>
-          Conectando interessados em realizar<br>o descarte de materiais com<br>os coletoresde resíduos, facilitando<br>o processo e gerando recompensas.
-        </p>
-        <div class="flex">
-          <p class="mt-4">Se interessou?</p>
-          <button class="m-4">Cadastre-se</button>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <div class="grid justify-items-center content-center">
-    <img src="./assets/img/circulo-de-residuos.png" alt="Circulo com" class="h-80 mr-20">
-  </div>
-
-</div>
-
-
-<footer class="rodape">
-  <div class="img-rodape">
-    <img src="./assets/img/img-rodape.png" alt="" class="h-20 w-screen">
-  </div>
-  <div class="rodape-colunas grid grid-cols-3 gap-4">
-    <div class="rodape-menu flex justify-center">
-      <img src="./assets/img/MicrosoftTeams-image (8).png" alt="logo do site, sendo um criculo com uma folha dentro"
-        class="logo-rodape h-20">
-      <ul class="flex flex-col font-bold cursor-pointer">
-        <li>O Coletablu</li>
-        <li>Resíduos</li>
-        <li>Contato</li>
-      </ul>
-    </div>
-    <div class="rodape-denuncia text-center pt-[20px]">
-      <h1>Denúncias - Ligue 156</h1>
-      <p>A Fiscalização Ambiental no município de Blumenau é realizada através da Gerência de Fiscalização da
-        Semmas.
-        Para mais informações acesse:</p>
-      <a href="https://www.blumenau.sc.gov.br/governo/fundacao-do-meio-ambiente/pagina/fiscalizacao-faema">Site
-        Prefeitura de Blumenau</a>
-    </div>
-    <div class="rodape-sugestoes text-center pt-[20px]">
-
-      <h1>Sugestões</h1>
-      <p>Nos ajude a melhorar a sua experiência em nosso site, deixe sua opinião.</p>
-      <div class="flex justify-center">
-        <textarea name="sugestao" id="rodape-sugestoes-textarea" cols="40" rows="4"></textarea>
-        <div class="grid content-center">
-          <button class="rodape-sugestoes-btn">
-            Enviar
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer> -->
