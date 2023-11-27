@@ -80,7 +80,7 @@
 
 @media (max-width: 960px) {
 
-        .container {
+    .separador-container  {
             display: flex;
             justify-content: center;
         }
