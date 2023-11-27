@@ -1,14 +1,10 @@
-function mostrarModal() {
-    let modal = document.querySelector("#modal");
-    modal.classList.add(`modal-active`);
-}
+function showModalMenu(classe) {
+    let modal = document.querySelector(classe)
 
-function fecharModal() {
-    let modal = document.querySelector("#modal");
-    modal.classList.remove(`modal-active`);
-}
-
-let abrirModal = document.querySelectorAll(".abrir-modal");
-for (let abrir of abrirModal) {
-    abrir.addEventListener(`click`, mostrarModal);
+    if (modal.classList.contains(`modal-active`)){
+      modal.classList.remove(`modal-active`)
+    }
+    else{
+      modal.classList.add(`modal-active`);
+    }       
 }
