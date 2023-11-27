@@ -2,7 +2,6 @@
     font-family: "mukta_bold";
     src: url("./assets/img/fonts/Mukta-Bold.ttf")
 }
-
 @font-face {
     font-family: "mukta_medium";
     src: url("./assets/img/fonts/Mukta-Medium.ttf")
@@ -11,11 +10,9 @@
 
 .separador{
        background-color: rgba(48, 124, 82,0.25);
-       height: 580px;
-       width: 1500px;
        padding-top: 20px;  
+       height: 100vh;
 }
-
 .categorias{
     
     font-size: 18px;
@@ -29,9 +26,6 @@
     font-weight: 600;
     
 }
-
-
-
 .card {
     margin-top: 50px;
     border-radius: 22px;
@@ -40,16 +34,13 @@
     height: 379px;
     width: 249px;
 }
-
 .imagem-card {
     border-radius: 4px;
 }
-
 a {
     font-family: mukta_bold;
     cursor: pointer;
 }
-
 #quantidades {
     color: #5D6E1E;
     font-weight: 600;
@@ -70,12 +61,10 @@ a {
     width: 55px;
     height: 20px;
 }
-
 #tag-compra {
     background-color: #94B447;
  
 }
-
 p {
     font-family: mukta_medium;
 }
