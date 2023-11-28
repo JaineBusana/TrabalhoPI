@@ -41,6 +41,7 @@ body {
 .header-menu-login{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .header-modal-menu-login{
@@ -54,6 +55,8 @@ body {
     border-radius: 30px;
     padding-left: 15px;
     padding-top: 15px;
+    position: absolute;
+    top: 60px;
 }
 
 .header-btn-menu {

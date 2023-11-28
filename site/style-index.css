@@ -64,7 +64,7 @@ body {
 }
 
 .header-modal-menu li:hover {
-    color: #fff;
+    color: #5D6E1E;
 }
 
 .header-menu {
@@ -72,6 +72,9 @@ body {
     justify-content: center;
 }
 
+.header-menu-padding{
+    padding-bottom: 15px;
+}
 
 .header-menu li {
     padding-right: 18px;
@@ -214,7 +217,12 @@ body {
     justify-content: space-around;
 }
 
-.rodape-menu,
+.rodape-logo{
+height: 100px;
+width: 300px;
+margin: 20px 0;
+}
+
 .rodape-denuncia,
 .rodape-sugestoes {
     width: 300px;
@@ -222,21 +230,6 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     margin: 15px 0;
-}
-
-.rodape-menu img {
-    margin-bottom: 10px;
-}
-
-.rodape-menu ul {
-    justify-content: flex-start;
-    margin-left: 20px;
-}
-
-.rodape-menu li {
-    padding-bottom: 10px;
-    font-size: 18px;
-    font-family: Montserrat !important;
 }
 
 .rodape-denuncia h1,
@@ -299,6 +292,7 @@ body {
 
     .header-menu {
         align-items: center;
+        position: relative;
     }
 
     .header-btn-menu {
@@ -321,6 +315,22 @@ body {
     .header-modal-menu-residuos,
     .footer-modal-menu-residuos {
         padding-left: 0px;
+        position: absolute;
+        background-color: #94B447;
+        color: #FAF3E1;
+        border-radius: 30px;
+        font-family: Montserrat !important;
+        height: 198px;
+        width: 150px;
+        padding: 10px;
+    }
+
+    .footer-modal-menu-residuos{
+        position: relative !important;
+    }
+
+    .header-modal-menu-residuos li{
+        color: #FAF3E1;
     }
 
     #quem-somos,
@@ -385,20 +395,17 @@ display: flex;
     display: flex;
 }
 
+.rodape-logo{
+    height: 340px;
+    margin: 0;
+}
+
 .rodape-img-logo{
     height: 100px;
 }
 
-.rodape-menu ul {
-    display: grid;
-    align-items: center;
-    align-content: center;
-    gap: 10px;
-}
-
-
-.rodape-menu li {
-    font-size: 22px;
+.rodape-denuncia{
+    width: 400px;
 }
 
 .rodape-denuncia h1,
@@ -419,7 +426,7 @@ display: flex;
 }
 
 #rodape-sugestoes-textarea {
-    height: 170px;
+    height: 120px;
     width: 400px;
 }
 

@@ -5,6 +5,7 @@
     src: url("./assets/img/fonts/Mukta-Bold.ttf")
 }
 
+
 .error {
     background-color: orangered;
     color: #fff;
@@ -21,7 +22,6 @@ body {
     background: linear-gradient(180deg, #5BA8A0 0%, #CDE54E 100%);
 
 }
-
 
 
 

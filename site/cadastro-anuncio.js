@@ -51,46 +51,20 @@ window.addEventListener("load", (event) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
     function submitForm(event) {
-
-
-
 
         event.preventDefault();
 
-
-
-
         var nome = document.forms["formulario"]["nome"].value;
-
         var descricao = document.forms["formulario"]["descrição"].value;
-
         var modalidade = document.forms["formulario"]["modalidade"].value;
-
         var bairro = document.forms["formulario"]["bairro"].value;
-
         var cep = document.forms["formulario"]["cep"].value;
-
         var categoria = document.forms["formulario"]["select-categoria"].value;
-
         var subcategoria = document.forms["formulario"]["subcategoria"].value;
-
         var valor = document.forms["formulario"]["valor"].value;
-
         var quantidade = document.forms["formulario"]["quantidade"].value;
-
         var whatsapp = document.forms["formulario"]["whatsapp"].value;
-
         var telefone = document.forms["formulario"]["telefone"].value;
 
 
@@ -99,25 +73,15 @@ window.addEventListener("load", (event) => {
         var dataForm = {
 
             nome: nome,
-
             descricao: descricao,
-
             modalidade: modalidade,
-
             bairro: bairro,
-
             cep: cep,
-
             categoria: categoria,
-
             subcategoria: subcategoria,
-
             valor: valor,
-
             quantidade: quantidade,
-
             whatsapp: whatsapp,
-
             telefone: telefone
 
         };
@@ -126,16 +90,10 @@ window.addEventListener("load", (event) => {
 
 
         var dataStore = localStorage.getItem('data') || '[]';
-
         var dataArray = JSON.parse(dataStore);
-
         dataArray.push(dataForm);
 
         localStorage.setItem('data', JSON.stringify(dataArray));
-
-
-
-
         console.log('Cadastro Salvo!', dataArray);
 
     }
