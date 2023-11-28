@@ -64,7 +64,7 @@ body {
 }
 
 .header-modal-menu li:hover {
-    color: #fff;
+    color: #5D6E1E;
 }
 
 .header-menu {
@@ -72,6 +72,9 @@ body {
     justify-content: center;
 }
 
+.header-menu-padding{
+    padding-bottom: 15px;
+}
 
 .header-menu li {
     padding-right: 18px;
@@ -239,6 +242,10 @@ body {
     font-family: Montserrat !important;
 }
 
+.rodape-menu li li:hover {
+    color: #307c52;
+}
+
 .rodape-denuncia h1,
 .rodape-sugestoes h1 {
     font-family: Montserrat !important;
@@ -299,6 +306,7 @@ body {
 
     .header-menu {
         align-items: center;
+        position: relative;
     }
 
     .header-btn-menu {
@@ -321,6 +329,22 @@ body {
     .header-modal-menu-residuos,
     .footer-modal-menu-residuos {
         padding-left: 0px;
+        position: absolute;
+        background-color: #94B447;
+        color: #FAF3E1;
+        border-radius: 30px;
+        font-family: Montserrat !important;
+        height: 198px;
+        width: 150px;
+        padding: 10px;
+    }
+
+    .footer-modal-menu-residuos{
+        position: relative !important;
+    }
+
+    .header-modal-menu-residuos li{
+        color: #FAF3E1;
     }
 
     #quem-somos,
