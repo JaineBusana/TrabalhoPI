@@ -13,6 +13,7 @@
 
 .Entrar {
     font-size: 45px;
+    color: #307C52;
 }
 
 #Fundo_Login {
@@ -38,61 +39,84 @@
 }
 
 .login {
-    background-color: #5D6E1E;
-    border-radius: 5px;
+    background-color: #3B5284;
+    border-radius: 20px;
     color: #FFF;
     width: 150px ;
     height: 40px ;
     padding: 5px;
-    margin-left: 113px;
+    margin-left: 117px;
     margin-top: 73px;
 }
 
 #usuario {
-    color: #2C5746;
+    color: #307C52;
     font-size: 22px;
+    margin-left: 70px;
 }
 
 #logo {
     margin-top: 56px;
     width: 70px;
     height: 70px;
-    margin-left: 79px;
+    margin-left: 90px;
 }
 #esqueci_senha {
     margin-left: 210px;
     font-size: 14px;
+    color: #94B447;
 }
 #insert_usuario {
     border-radius: 15px;
+    margin-left: 70px;
     width: 250px;
     height: 28px;
+    border-width: 2px;
     background-color: #e5e5e5;
     padding-left: 12px;
     padding-right: 12px;
     font-size: small;
-
+    outline: none;
 }
+#insert_usuario:active,
+#insert_usuario:focus  {
+    border-color: #3B5284;
+    border-width: 2px;
+}
+#insert_senha:active,
+#insert_senha:focus  {
+    border-color: #3B5284;
+    border-width: 2px;
+}
+
 #insert_senha {
     border-radius: 15px;
     width: 250px;
     height: 28px;
+    margin-left: 70px;
+    border-width: 2px;
     background-color: #e5e5e5;
     padding-left: 12px;
     padding-right: 12px;
     font-size: small;
+    outline: none;
 }
 #insert_usuario :focus {
     border-color: #2C5746;
 }
 #senha {
-    color: #2C5746;
+    color: #307C52;
     margin-top: 15px;
     font-size: 22px;
+    margin-left: 70px;
 }
 .cadastrar {
     margin-top: 105px;
     font-size: 14px;
+}
+
+#link_cadastrar {
+    color: #94B447;
 }
 
 @media(max-width: 970px) {
