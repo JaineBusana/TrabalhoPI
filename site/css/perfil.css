@@ -9,9 +9,13 @@
 body{
     background-color: #FAF3E1;
     font-family: Arsenal;
+  
+}
+.container-header{
+    margin: auto;
+    display: flex;
 }
 header{
-    width: 110px;
     display: flex;
 }
 #imagem-perfil{
@@ -23,6 +27,12 @@ header{
     width: 20px;
     height: 20px;
     margin: 5px 0px 0px -25px;
+} 
+.menu{
+    cursor: pointer;
+    margin: 10px 0px 0px -35px;
+    
+    height: 20px;
 }
 header H1 {
     font-family: Arsenal-bold;
@@ -31,30 +41,7 @@ header H1 {
 header h3{
     font-family: Arsenal;
     width: 240px;
-    font-size: 12px;
-}
-main section{
-    width: 350px;
-    height: 150px;
-    border: 1px solid #000;
-    border-top-right-radius: 10px ;
-    border-top-left-radius: 10px;
-    margin: auto;
-}
-.menu {
-    cursor: pointer;
-    margin: 10px 0px 0px -35px;
-    
-}
-.menu .bar{
-    display: block;
-    width: 28px;
-    height: 3px;
-    border-radius: 3px;
-    background-color: #000;
-    margin: 5px auto;
-    transition: all 0.5s;
-
+    font-size: 13px;
 }
 .menu .bar:nth-child(2){
     background-color:rgba(205, 229, 79, 1);
@@ -68,8 +55,70 @@ main section{
 .menu.ativo .bar:nth-child(3){
     transform: translatey(-8px) rotate(-45deg);
 }
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #000;
+    margin: 5px auto;
+    transition: all 0.5s;
 
+}
+/*main*/
+main section{
+    width: 350px;
+    height: 252px;
+    border: 1px solid #000;
+    border-top-right-radius: 10px ;
+    border-top-left-radius: 10px;
+    margin: auto;
 
+    font-size: 0.6rem;
+    font-weight: 300;
+}
+.main-h2{
+    font-size: 1rem;
+    font-weight: 600;
+}
+article p{
+    font-size: 11px;
+    margin-left: 30px;
+    height: 80px;
+    width: 250px;
+}
+.section-container{
+
+    margin-left: 7px;
+}
+.informacoes div{
+    display: flex;
+    margin-left: 30px;
+}
+
+.telefone-img{
+
+    width: 8px;
+    height: 8px;
+}
+.pin-maps-img{
+    width: 13px;
+    height: 13px;
+}
+#maps {
+    border-radius:10px;
+    width: 150px;
+    height: 70px;
+}
+.informacoes h4{
+    margin: 0px 0px 15px ;
+    width: 110PX;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 @media(min-width: 970px) {
     .menu{
         display: none;

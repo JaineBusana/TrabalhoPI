@@ -11,39 +11,53 @@
 
 <body>
     <header>
-        <img id="imagem-perfil" src="./assets/img/bola-logo-azul.png" alt="imagem de perfil">
-        <div>
-            <h1>Name</h1>
-            <h3>Uma empresa de reciclagem de plástico e tem
-                crescido ao longo do tempo, reunindo a experiência
-                necessária até a atualidade.</h3>
-        </div>
-        <div class="menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+        <div class="container-header">
+            <img id="imagem-perfil" src="./assets/img/bola-logo-azul.png" alt="imagem de perfil">
+            <div>
+                <h1>Name</h1>
+                <h3>Uma empresa de reciclagem de plástico e tem
+                    crescido ao longo do tempo, reunindo a experiência
+                    necessária até a atualidade.</h3>
+            </div>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </header>
+
     <main>
         <section>
-            <h2>Pontuação</h2>
-            <article>
-                <div>
-                    <h2>Avaliação</h2>
-                    <p>O serviço de apoio ao cliente foi excecional, pois mantiveram-me atualizado
-                        durante todo o processo. Tive uma pergunta sobre o produto e a equipa de
-                        apoio respondeu prontamente e com profissionalismo.</p>
+            <div class="section-container">
+                <h2 class="main-h2">Pontuação:</h2>
+                <article>
+                    <div>
+                        <h2 class="main-h2">Avaliação:</h2>
+                        <p>O serviço de apoio ao cliente foi excecional, pois mantiveram-me atualizado
+                            durante todo o processo. Tive uma pergunta sobre o produto e a equipa de
+                            apoio respondeu prontamente e com profissionalismo.
+                        </p>
+                    </div>
+                </article>
+                <div class="container">
+                    <div class="informacoes">
+                        <div>
+                            <img class="telefone-img" src="./assets/img/cadastro/telefone.png" alt="telefone">
+                            <h4>(47) 9-99-999</h4>
+                        </div>
+                        <div>
+                            <img class="pin-maps-img" src="./assets/img/cadastro/pin.png" alt="maps">
+                            <h4>Av. Brasil, 610 - Ponta Aguda, Blumenau - SC, 89050-000</h4>
+                        </div>
+                    </div>
+                    <iframe id="maps" src="https://www.google.com/maps/embed?parameters_here" frameborder=""></iframe>
                 </div>
-                <div class="informacoes">
-                    <ul>Telefone</ul>
-                    <li>(47)9-99-999</li>
-                    <ul>Endereço</ul>
-                    <li>Av. Brasil 610, Blumenau, SC, 89050-000 </li>
-                </div>
-            </article>
+
+            </div>
         </section>
     </main>
-    <script src="perfil.js"></script>
+    <script src="./js/perfil.js"></script>
 </body>
 
 </html>
