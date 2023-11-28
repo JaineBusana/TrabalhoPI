@@ -1,4 +1,4 @@
-#Modal_Login {
+#modal-login {
     background-color: rgba(0,0,0,.35);
     top: 0;
     bottom: 0;
@@ -11,34 +11,34 @@
     justify-content: center;
 }
 
-.Entrar {
+.entrar {
     font-size: 45px;
     color: #307C52;
 }
 
-#Fundo_Login {
+#fundo-login {
     background-color: #FFF;
     border-radius: 12px;
     height: 630px;
 }
 
-#Fechar_Modal {
+#fechar-modal {
     font-size: 35px;
     color: #000;
     margin-left: 5px;
 }
 
-.Modal_Login-active {
+.modal-login-active {
     display: flex !important;
 }
 
-#foto_fundo {
+#foto-fundo {
     margin-left: 73px;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
 }
 
-.login {
+#login {
     background-color: #3B5284;
     border-radius: 20px;
     color: #FFF;
@@ -61,12 +61,14 @@
     height: 70px;
     margin-left: 90px;
 }
-#esqueci_senha {
+
+#esqueci-senha {
     margin-left: 210px;
     font-size: 14px;
     color: #94B447;
 }
-#insert_usuario {
+
+#insert-usuario {
     border-radius: 15px;
     margin-left: 70px;
     width: 250px;
@@ -78,18 +80,20 @@
     font-size: small;
     outline: none;
 }
-#insert_usuario:active,
-#insert_usuario:focus  {
-    border-color: #3B5284;
-    border-width: 2px;
-}
-#insert_senha:active,
-#insert_senha:focus  {
+
+#insert-usuario:active,
+#insert-usuario:focus  {
     border-color: #3B5284;
     border-width: 2px;
 }
 
-#insert_senha {
+#insert-senha:active,
+#insert-senha:focus  {
+    border-color: #3B5284;
+    border-width: 2px;
+}
+
+#insert-senha {
     border-radius: 15px;
     width: 250px;
     height: 28px;
@@ -101,33 +105,31 @@
     font-size: small;
     outline: none;
 }
-#insert_usuario :focus {
-    border-color: #2C5746;
-}
+
 #senha {
     color: #307C52;
     margin-top: 15px;
     font-size: 22px;
     margin-left: 70px;
 }
+
 .cadastrar {
     margin-top: 105px;
     font-size: 14px;
 }
 
-#link_cadastrar {
+#link-cadastrar {
     color: #94B447;
 }
 
 @media(max-width: 970px) {
-
-    #foto_fundo {
+    #foto-fundo {
         margin-left: 73px;
         border-radius: 12px;
         display: none;
     }
 
-    #Fundo_Login {
+    #fundo-login {
         background-color: #FFF;
         border-radius: 12px;
         padding-right: 60px;
