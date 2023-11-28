@@ -5,7 +5,13 @@
     src: url("./assets/img/fonts/Mukta-Bold.ttf")
 }
 
-
+.error {
+    background-color: orangered;
+    color: #fff;
+    margin: 5px 160px;
+    width: 170px;
+    padding: 5px;
+}
 
 
 body {
@@ -173,14 +179,6 @@ main {
 
 
 
-.error {
-
-    border-color: #e74c3c !important;
-
-}
-
-
-
 
 
 h1 {
@@ -267,4 +265,5 @@ h1 {
         width: 360px;
     }
 
+    
 }
