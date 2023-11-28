@@ -7,6 +7,17 @@
   <link rel="stylesheet" href="anuncio.css">
   <link rel="stylesheet" href="style-index.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+          },
+        },
+      },
+    };
+  </script>
 </head>
 
 <body>
@@ -23,10 +34,10 @@
       </div>
       <div class="centralizar mb-4">
         <!-- <input type="text" name="barra de pesquisa" class="header-pesquisa hidden md:flex md:w-96 lg:w-[600px]"
-          placeholder="Onde posso descartar remédios, pilhas, TV...,">
-        <button class="header-btn-pesquisa">
-          <img src="./assets/img/lupa-header-pesquisa.png" alt="lupa" class="h-8 inline-block align-middle">
-        </button> -->
+      placeholder="Onde posso descartar remédios, pilhas, TV...,">
+    <button class="header-btn-pesquisa">
+      <img src="./assets/img/lupa-header-pesquisa.png" alt="lupa" class="h-8 inline-block align-middle">
+    </button> -->
 
         <button class="header-btn-menu" onclick="showModalMenu('.header-modal-menu')">
           <div id="header-btn-menu-texto">|||</div>
@@ -35,11 +46,10 @@
 
 
       <div class="header-modal-menu">
-
         <div class="header-menu">
           <ul class="font-bold cursor-pointer md:flex">
             <li>
-              <a href="#quem-somos">O Coletablu</a>
+              <a href="./index.html#quem-somos">Quem Somos</a>
             </li>
             <li onclick="showModalMenu('.header-modal-menu-residuos')">Resíduos
               <div class="header-modal-menu-residuos">
@@ -60,21 +70,15 @@
 
       </div>
     </div>
+
+
   </header>
+
   <div class="separador">
     <div class=" categorias flex flex-col rounded-r-lg">Vidros</div>
-    <div class="container mx-auto mt-4">
+    <div class="separador-container container mx-auto mt-4">
       <div class="grid grid-cols-1 mx-4 sm:mx-12 sm:grid-cols-2 md:mx-1.5 md:grid-cols-3 lg:grid-cols-4 gap-4">
 
-        <div class="card border-2 p-2 flex flex-col ">
-          <div id="tag-venda" class="flex flex-col">Venda</div>
-          <img src="./assets/img/garrafas.jpg" alt="Produto" class="imagem-card pt-5 h-40 ">
-          <a href="" class="text-base mt-2"> Garrafas </a>
-          <p class="text-sm mt-2"> Garrafas de vidro de cores variadas para venda imediata.</p>
-          <p class="text-sm mt-2"> Alameda Rio Branco 165, Blumenau </p>
-          <div class="text-2xl my-2 font-bold"> R$ 10,50 </div>
-          <div class="text-sm">Restam <span id="quantidades"> 10 unidades</span></div>
-        </div>
         <div class="card border-2 p-2 flex flex-col ">
           <div id="tag-compra" class="flex flex-col ">Compra</div>
           <img src="./assets/img/garrafa.jpg" alt="Produto" class="imagem-card pt-5 h-40 ">
@@ -101,6 +105,16 @@
           <a href="" class="informações pt-5"> Saiba mais.</a>
         </div>
 
+        <div class="card border-2 p-2 flex flex-col ">
+          <div id="tag-venda" class="flex flex-col ">Venda</div>
+          <img src="./assets/img/garrafas.jpg" alt="Produto" class="imagem-card pt-5 h-40 ">
+          <a href="" class="text-base mt-2"> Caco de vidro </a>
+          <p class="text-sm mt-2"> Material misto.</p>
+          <p class="text-sm mt-2"> Rua Albert Goll, Blumenau </p>
+          <div class="text-2xl my-2 font-bold"> R$ 5,40 </div>
+          <div class="text-sm">Restam <span id="quantidades"> 100 unidades</span></div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -120,7 +134,7 @@
         </div>
         <ul class="font-bold cursor-pointer">
           <li>
-            <a href="#quem-somos">O Coletablu</a>
+            <a href="./index.html#quem-somos">Quem Somos</a>
           </li>
           <li onclick="showModalMenu('.footer-modal-menu-residuos')">Resíduos
             <div class="footer-modal-menu-residuos">
