@@ -31,12 +31,32 @@ body {
 
 .header-btn-login {
     width: 100px;
-    height: 40px;
+    height: 60px;
     padding-left: 5px;
     border: 1px solid #5D6E1E;
-    border-radius: 20px;
-    font-size: 18px;
-    font-family: Fredoka !important;
+    border-radius: 30px;
+    justify-content: center;
+}
+
+.header-menu-login{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.header-modal-menu-login{
+    display: none;
+    height: 118px;
+    width: 150px;
+    background-color: #94B447;
+    color: #FAF3E1;
+    font-family: Montserrat !important;
+    font-weight: 700;
+    border-radius: 30px;
+    padding-left: 15px;
+    padding-top: 15px;
+    position: absolute;
+    top: 60px;
 }
 
 .header-btn-menu {
@@ -63,8 +83,9 @@ body {
     padding: 10px;
 }
 
-.header-modal-menu li:hover {
-    color: #5D6E1E;
+.header-modal-menu li:hover,
+.header-modal-menu-login li:hover {
+    color: #fff;
 }
 
 .header-menu {
@@ -72,9 +93,6 @@ body {
     justify-content: center;
 }
 
-.header-menu-padding{
-    padding-bottom: 15px;
-}
 
 .header-menu li {
     padding-right: 18px;
@@ -217,12 +235,7 @@ body {
     justify-content: space-around;
 }
 
-.rodape-logo{
-height: 100px;
-width: 300px;
-margin: 20px 0;
-}
-
+.rodape-menu,
 .rodape-denuncia,
 .rodape-sugestoes {
     width: 300px;
@@ -230,6 +243,21 @@ margin: 20px 0;
     flex-wrap: wrap;
     justify-content: center;
     margin: 15px 0;
+}
+
+.rodape-menu img {
+    margin-bottom: 10px;
+}
+
+.rodape-menu ul {
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.rodape-menu li {
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-family: Montserrat !important;
 }
 
 .rodape-denuncia h1,
@@ -292,7 +320,6 @@ margin: 20px 0;
 
     .header-menu {
         align-items: center;
-        position: relative;
     }
 
     .header-btn-menu {
@@ -315,22 +342,6 @@ margin: 20px 0;
     .header-modal-menu-residuos,
     .footer-modal-menu-residuos {
         padding-left: 0px;
-        position: absolute;
-        background-color: #94B447;
-        color: #FAF3E1;
-        border-radius: 30px;
-        font-family: Montserrat !important;
-        height: 198px;
-        width: 150px;
-        padding: 10px;
-    }
-
-    .footer-modal-menu-residuos{
-        position: relative !important;
-    }
-
-    .header-modal-menu-residuos li{
-        color: #FAF3E1;
     }
 
     #quem-somos,
@@ -395,17 +406,20 @@ display: flex;
     display: flex;
 }
 
-.rodape-logo{
-    height: 340px;
-    margin: 0;
-}
-
 .rodape-img-logo{
     height: 100px;
 }
 
-.rodape-denuncia{
-    width: 400px;
+.rodape-menu ul {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+}
+
+
+.rodape-menu li {
+    font-size: 22px;
 }
 
 .rodape-denuncia h1,
@@ -426,7 +440,7 @@ display: flex;
 }
 
 #rodape-sugestoes-textarea {
-    height: 120px;
+    height: 170px;
     width: 400px;
 }
 
