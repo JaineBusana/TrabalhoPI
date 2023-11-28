@@ -1,5 +1,5 @@
 #Modal_Login {
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.35);
     top: 0;
     bottom: 0;
     left: 0;
@@ -11,14 +11,20 @@
     justify-content: center;
 }
 
+.Entrar {
+    font-size: 45px;
+}
+
 #Fundo_Login {
     background-color: #FFF;
+    border-radius: 12px;
+    height: 630px;
 }
 
 #Fechar_Modal {
-    font-size: 30px;
-    color: #FFF;
-    display: block;
+    font-size: 35px;
+    color: #000;
+    margin-left: 5px;
 }
 
 .Modal_Login-active {
@@ -26,41 +32,42 @@
 }
 
 #foto_fundo {
-    height: 440px;
     margin-left: 73px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 
 .login {
-    background-color: green;
+    background-color: #5D6E1E;
     border-radius: 5px;
     color: #FFF;
-}
-
-.login {
+    width: 150px ;
+    height: 40px ;
     padding: 5px;
-    width: 75px;
-    margin-left: 135px;
+    margin-left: 113px;
+    margin-top: 73px;
 }
 
 #usuario {
     color: #2C5746;
+    font-size: 22px;
 }
 
 #logo {
-    margin-top: 53px;
-    width: 50px;
-    height: 50px;
-    margin-left: 90px;
+    margin-top: 56px;
+    width: 70px;
+    height: 70px;
+    margin-left: 79px;
 }
 #esqueci_senha {
     margin-left: 210px;
-    font-size: 10px;
+    font-size: 14px;
 }
 #insert_usuario {
     border-radius: 15px;
-    width: 220px;
-    height: 25px;
-    background-color: #e9ebea;
+    width: 250px;
+    height: 28px;
+    background-color: #e5e5e5;
     padding-left: 12px;
     padding-right: 12px;
     font-size: small;
@@ -68,8 +75,9 @@
 }
 #insert_senha {
     border-radius: 15px;
-    width: 220px;
-    background-color: #e9ebea;
+    width: 250px;
+    height: 28px;
+    background-color: #e5e5e5;
     padding-left: 12px;
     padding-right: 12px;
     font-size: small;
@@ -79,8 +87,25 @@
 }
 #senha {
     color: #2C5746;
+    margin-top: 15px;
+    font-size: 22px;
 }
 .cadastrar {
-    margin-top: 71px;
+    margin-top: 105px;
     font-size: 14px;
+}
+
+@media(max-width: 970px) {
+
+    #foto_fundo {
+        margin-left: 73px;
+        border-radius: 12px;
+        display: none;
+    }
+
+    #Fundo_Login {
+        background-color: #FFF;
+        border-radius: 12px;
+        padding-right: 60px;
+    }
 }
