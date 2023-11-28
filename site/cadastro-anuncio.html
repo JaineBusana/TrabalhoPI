@@ -13,13 +13,17 @@
 
         <img id="logo" src="./assets/img/MicrosoftTeams-image (2).png" alt="Logo">
         <h1>Cadastrar Anúncios</h1>
+
+        <div class="msg"> </div>
         
-        <form id="formulario">
+        <form id="formulario" onsubmit="submitForm(event)">
+
             <input id="nome" class="input " type="text" value="Nome" onfocus="this.value='';">
             <input id="descrição" class="input" type="text" value="Descrição" onfocus="this.value='';" >
 
             <label class="labels">Modalidade</label>
             <select id="modalidade" class="select" required>
+                <option value="">Selecione</option>
                 <option>Venda</option>
                 <option>Compra</option>
             </select>
@@ -30,7 +34,10 @@
             </div>
 
             <label class="labels">Categoria</label>
-            <select id="categoria" id="select-categoria" class="select" >
+
+            <select id="categoria" class="select" >
+                <option value="">Selecione</option>
+
                 <option>Vidros</option>
                 <option>Metais</option>
                 <option>Plásticos</option>

@@ -6,6 +6,13 @@
 }
 
 
+.error {
+    background-color: orangered;
+    color: #fff;
+    margin: 5px 160px;
+    width: 170px;
+    padding: 5px;
+}
 
 
 body {
@@ -15,7 +22,6 @@ body {
     background: linear-gradient(180deg, #5BA8A0 0%, #CDE54E 100%);
 
 }
-
 
 
 
@@ -173,14 +179,6 @@ main {
 
 
 
-.error {
-
-    border-color: #e74c3c !important;
-
-}
-
-
-
 
 
 h1 {
@@ -267,4 +265,5 @@ h1 {
         width: 360px;
     }
 
+    
 }
