@@ -5,54 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="anuncio.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-index.css">
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
 <body>
-    <header class="py-10">
-        <div class="container mx-auto flex justify-between">
+  <header class="pt-5 container mx-auto mb-10">
+    <div class="flex justify-end mr-4">
+      <button class="header-btn-login flex items-center">
+        <img src="./assets/img/img-login.png" alt="ícone de usuário" class="h-8 px-2">
+        Login
+      </button>
+    </div>
+    <div id="header-logo-menu">
+      <div class="header-logo">
+        <img src="./assets/img/logo-com-slogan.png" alt="Logo ColetaBlu">
+      </div>
+      <div class="centralizar mb-4">
+        <!-- <input type="text" name="barra de pesquisa" class="header-pesquisa hidden md:flex md:w-96 lg:w-[600px]"
+      placeholder="Onde posso descartar remédios, pilhas, TV...,">
+    <button class="header-btn-pesquisa">
+      <img src="./assets/img/lupa-header-pesquisa.png" alt="lupa" class="h-8 inline-block align-middle">
+    </button> -->
+
+        <button class="header-btn-menu" onclick="showModalMenu('.header-modal-menu')">
+          <div id="header-btn-menu-texto">|||</div>
+        </button>
+      </div>
 
 
-            <img src="./assets/img/logo-com-slogan.png" alt="Logo ColetaBlu" class="h-14">
-            <div class="flex justify-items-end">
-                <input type="text" name="barra de pesquisa"
-                    class="header-pesquisa hidden border rounded-full h-10 md:flex md:w-96 lg:w-[600px] justify-between"
-                    placeholder="Onde posso descartar remédios, pilhas, TV...,">
-                <button class="header-botao-pesquisa border rounded-full h-10 w-24">
-                    <img src="./assets/img/lupa-header-pesquisa.png" alt="lupa" class="h-8 inline-block align-middle">
-                </button>
-                <button
-                    class="border rounded-full botao-login shadow-md text-lg flex sm:ml-1 md:ml-2 lg:ml-3 2xl:ml-4 h-10 w-24 pl-1 flex items-center">
-                    <img src="./assets/img/img-login.png" alt="ícone de usuário" class="h-8 pl-2 ">
-                    Login
-                </button>
-
-            </div>
-        </div>
-
-        <div class="container mx-auto flex flex-row-reverse py-10">
-            <div class="header-menu">
-                <ul id="header-menu-list" class="flex justify-items-end font-bold cursor-pointer">
-                    <li>O Coletablu</li>
-                    <li>Anuncios
-                        <ul class="header-anuncios-list-submenu">
-                            <li><a href="anuncio-vidro.html">Vidros</a></li>
-                            <li><a href="anuncio-plastico.html">Plásticos</a></li>
-                            <li><a href="anuncio-metal.html">Metais</a></li>
-                            <li><a href="anuncio-organicos.html">Orgânicos</a></li>
-                        </ul>
-                    </li>
-                    <li>Contato</li>
+      <div class="header-modal-menu">
+        <div class="header-menu">
+          <ul class="font-bold cursor-pointer md:flex">
+            <li class="header-menu-padding">
+              <a href="./index.html#quem-somos">Quem Somos</a>
+            </li>
+            <li class="header-menu-padding" onclick="showModalMenu('.header-modal-menu-residuos')">Resíduos
+              <div class="header-modal-menu-residuos">
+                <ul>
+                  <li class="header-menu-padding"><a href="anuncio-vidro.html">Vidros</a></li>
+                  <li class="header-menu-padding"><a href="anuncio-plastico.html">Plásticos</a></li>
+                  <li class="header-menu-padding"><a href="anuncio-metal.html">Metais</a></li>
+                  <li><a href="anuncio-organicos.html">Orgânicos</a></li>
                 </ul>
-            </div>
+              </div>
+            </li>
+            <li>
+              <a href="#sugestoes">Sugestões</a>
+            </li>
+          </ul>
         </div>
 
-    </header>
+
+      </div>
+    </div>
+
+
+  </header>
+
+
     <div class="separador">
         <div class=" categorias flex flex-col rounded-r-lg">Plásticos</div>
-        <div class="container mx-auto mt-4">
+        <div class="separador-container container mx-auto mt-4">
 
             <div class="grid grid-cols-1 mx-4 sm:mx-12 sm:grid-cols-2 md:mx-1.5 md:grid-cols-3 lg:grid-cols-4 gap-4">
 
@@ -81,7 +96,41 @@
     </div>
 
 
+    <footer>
+      <div class="rodape-img-mobile">
+        <img src="./assets/img/rodape-img-mobile.png" alt="">
+      </div>
+      <div class="rodape-img">
+        <img src="./assets/img/img-rodape.png" alt="">
+      </div>
+      <div class="rodape-colunas">
 
+        <div class="rodape-logo centralizar">
+          <img src="./assets/img/logo-com-slogan-branco.png" alt="">
+        </div>
+        <div class="rodape-denuncia">
+          <h1>Denúncias - Ligue 156</h1>
+          <p>A Fiscalização Ambiental no município de Blumenau é realizada através da Gerência de Fiscalização da
+            Semmas.
+            Para mais informações acesse o site:</p>
+          <a href="https://www.blumenau.sc.gov.br/governo/fundacao-do-meio-ambiente/pagina/fiscalizacao-faema">Prefeitura
+            de Blumenau</a>
+        </div>
+        <div id="sugestoes" class="rodape-sugestoes">
+          <h1>Sugestões</h1>
+          <p>Nos ajude a melhorar a sua experiência em nosso site, deixe sua opinião.</p>
+          <div class="grid">
+            <textarea name="sugestao" id="rodape-sugestoes-textarea" cols="40" rows="4"></textarea>
+            <div class="grid content-center">
+              <button class="rodape-sugestoes-btn">
+                Enviar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
 </body>
 
 

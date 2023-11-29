@@ -2,119 +2,160 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="anuncio.css" />
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="anuncio.css">
+  <link rel="stylesheet" href="style-index.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+          },
+        },
+      },
+    };
+  </script>
 </head>
 
 <body>
-    <header class="py-10">
-        <div class="container mx-auto flex justify-between">
-
-
-            <img src="./assets/img/logo-com-slogan.png" alt="Logo ColetaBlu" class="h-14">
-            <div class="flex justify-items-end">
-                <input type="text" name="barra de pesquisa"
-                    class="header-pesquisa hidden border rounded-full h-10 md:flex md:w-96 lg:w-[600px] justify-between"
-                    placeholder="Onde posso descartar remédios, pilhas, TV...,">
-                <button class="header-botao-pesquisa border rounded-full h-10 w-24">
-                    <img src="./assets/img/lupa-header-pesquisa.png" alt="lupa" class="h-8 inline-block align-middle">
-                </button>
-                <button
-                    class="border rounded-full botao-login shadow-md text-lg flex sm:ml-1 md:ml-2 lg:ml-3 2xl:ml-4 h-10 w-24 pl-1 flex items-center">
-                    <img src="./assets/img/img-login.png" alt="ícone de usuário" class="h-8 pl-2 ">
-                    Login
-                </button>
-
-            </div>
-        </div>
-
-        <div class="container mx-auto flex flex-row-reverse py-10">
-            <div class="header-menu">
-                <ul id="header-menu-list" class="flex justify-items-end font-bold cursor-pointer">
-                    <li>O Coletablu</li>
-                    <li>Anuncios
-                        <ul class="header-anuncios-list-submenu">
-                            <li><a href="anuncio-vidro.html">Vidros</a></li>
-                            <li><a href="anuncio-plastico.html">Plásticos</a></li>
-                            <li><a href="anuncio-metal.html">Metais</a></li>
-                            <li><a href="anuncio-organicos.html">Orgânicos</a></li>
-                        </ul>
-                    </li>
-                    <li>Contato</li>
-                </ul>
-            </div>
-        </div>
-
-    </header>
-    <div class="separador">
-        <div class=" categorias flex flex-col rounded-r-lg">Vidros</div>
-<<<<<<< HEAD:site/anuncio.html
-        <div class="container mx-16 ">
-
-            <div
-                class="grid grid-cols-1 mx-20 sm: mx-8 sm:grid-cols-2 sm:20 md:grid-cols-3 md: mx-px lg: mx-8 lg:grid-cols-4 gap-4">
-=======
-        <div class="container mx-auto mt-4">
-
-            <div class="grid grid-cols-1 mx-4 sm:mx-12 sm:grid-cols-2 md:mx-1.5 md:grid-cols-3 lg:grid-cols-4 gap-4">
->>>>>>> 198f55f58170019dafbb2ec799d1d7ffd8992c7d:site/anuncio-vidro.html
-
-
-                <div class="card border-2 p-2 flex flex-col ">
-                    <div id="tag-venda" class="flex flex-col">Venda</div>
-                    <img src="./assets/img/garrafas.jpg" alt="Produto" class="imagem-card pt-5 h-40 ">
-                    <a href="" class="text-base mt-2"> Garrafas </a>
-                    <p class="text-sm mt-2"> Garrafas de vidro de cores variadas para venda imediata.</p>
-                    <p class="text-sm mt-2"> Alameda Rio Branco 165, Blumenau </p>
-                    <div class="text-2xl my-2 font-bold"> R$ 10,50 </div>
-                    <div class="text-sm">Restam <span id="quantidades"> 10 unidades</span></div>
-                </div>
-
-                <div class="card border-2 p-2 flex flex-col ">
-                    <div id="tag-compra" class="flex flex-col ">Compra</div>
-                    <img src="./assets/img/garrafa.jpg" alt="Produto" class="imagem-card pt-5 h-40 ">
-                    <a href="" class="text-base mt-2"> Garrafa de vidro </a>
-                    <p class="text-sm mt-2"> Resíduo: Embalagem (Potes e Garrafas) de Vidro.</p>
-                    <p class="text-sm mt-2"> Rua Sao Rafael, Blumenau </p>
-                    <a href=""class="informações pt-5"> Saiba mais.</a>
-                </div>
-
-                <div class="card border-2 p-2 flex flex-col ">
-                    <div id="tag-venda" class="flex flex-col ">Venda</div>
-                    <img src="./assets/img/vidro-caos.webp" alt="Produto" class="imagem-card pt-5 h-40 ">
-                    <a href="" class="text-base mt-2"> Caco de vidro </a>
-                    <p class="text-sm mt-2"> Material misto.</p>
-                    <p class="text-sm mt-2"> Rua Albert Goll, Blumenau </p>
-                    <div class="text-2xl my-2 font-bold"> R$ 5,40 </div>
-                    <div class="text-sm">Restam <span id="quantidades"> 100 unidades</span></div>
-                </div>
-
-                <div class="card border-2 p-2 flex flex-col ">
-                    <div id="tag-compra" class="flex flex-col ">Compra</div>
-                    <img src="./assets/img/garrafas-vidro.webp" alt="Produto" class="imagem-card pt-5 h-40 ">
-                    <a href="" class="text-base mt-2"> Garrafa-vidro </a>
-                    <p class="text-sm mt-2"> Compro garrafas de vidro de todos os tipos.</p>
-                    <p class="text-sm mt-2"> Rua Martha Cordeiro </p>
-                    <a href="" class="informações pt-5"> Saiba mais.</a>
-                </div>
-        
-            </div>
-        </div>
+  <header class="pt-5 container mx-auto mb-10">
+    <div class="flex justify-end mr-4">
+      <button class="header-btn-login flex items-center">
+        <img src="./assets/img/img-login.png" alt="ícone de usuário" class="h-8 px-2">
+        Login
+      </button>
     </div>
-<<<<<<< HEAD:site/anuncio.html
-    
+    <div id="header-logo-menu">
+      <div class="header-logo">
+        <img src="./assets/img/logo-com-slogan.png" alt="Logo ColetaBlu">
+      </div>
+      <div class="centralizar mb-4">
+        <!-- <input type="text" name="barra de pesquisa" class="header-pesquisa hidden md:flex md:w-96 lg:w-[600px]"
+      placeholder="Onde posso descartar remédios, pilhas, TV...,">
+    <button class="header-btn-pesquisa">
+      <img src="./assets/img/lupa-header-pesquisa.png" alt="lupa" class="h-8 inline-block align-middle">
+    </button> -->
+
+        <button class="header-btn-menu" onclick="showModalMenu('.header-modal-menu')">
+          <div id="header-btn-menu-texto">|||</div>
+        </button>
+      </div>
 
 
-=======
+      <div class="header-modal-menu">
+        <div class="header-menu">
+          <ul class="font-bold cursor-pointer md:flex">
+
+            <li class="header-menu-padding">
+              <a href="./index.html#quem-somos">Quem Somos</a>
+            </li>
+            <li class="header-menu-padding" onclick="showModalMenu('.header-modal-menu-residuos')">Resíduos
+              <div class="header-modal-menu-residuos">
+                <ul>
+                  <li class="header-menu-padding"><a href="anuncio-vidro.html">Vidros</a></li>
+                  <li class="header-menu-padding"><a href="anuncio-plastico.html">Plásticos</a></li>
+                  <li class="header-menu-padding"><a href="anuncio-metal.html">Metais</a></li>
+                  <li><a href="anuncio-organicos.html">Orgânicos</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#sugestoes">Sugestões</a>
+            </li>
+          </ul>
+        </div>
 
 
+      </div>
+    </div>
 
->>>>>>> 198f55f58170019dafbb2ec799d1d7ffd8992c7d:site/anuncio-vidro.html
+
+  </header>
+
+  <div class="separador">
+    <div class=" categorias flex flex-col rounded-r-lg">Vidros</div>
+    <div class="separador-container container mx-auto mt-4">
+      <div class="grid grid-cols-1 mx-4 sm:mx-12 sm:grid-cols-2 md:mx-1.5 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+        <div class="card border-2 p-2 flex flex-col ">
+          <div id="tag-compra" class="flex flex-col ">Compra</div>
+          <img src="./assets/img/garrafa.jpg" alt="Produto" class="imagem-card pt-5 h-40 ">
+          <a href="" class="text-base mt-2"> Garrafa de vidro </a>
+          <p class="text-sm mt-2"> Resíduo: Embalagem (Potes e Garrafas) de Vidro.</p>
+          <p class="text-sm mt-2"> Rua Sao Rafael, Blumenau </p>
+          <a href="" class="informações pt-5"> Saiba mais.</a>
+        </div>
+        <div class="card border-2 p-2 flex flex-col ">
+          <div id="tag-venda" class="flex flex-col ">Venda</div>
+          <img src="./assets/img/vidro-caos.webp" alt="Produto" class="imagem-card pt-5 h-40 ">
+          <a href="" class="text-base mt-2"> Caco de vidro </a>
+          <p class="text-sm mt-2"> Material misto.</p>
+          <p class="text-sm mt-2"> Rua Albert Goll, Blumenau </p>
+          <div class="text-2xl my-2 font-bold"> R$ 5,40 </div>
+          <div class="text-sm">Restam <span id="quantidades"> 100 unidades</span></div>
+        </div>
+        <div class="card border-2 p-2 flex flex-col ">
+          <div id="tag-compra" class="flex flex-col ">Compra</div>
+          <img src="./assets/img/garrafas-vidro.webp" alt="Produto" class="imagem-card pt-5 h-40 ">
+          <a href="" class="text-base mt-2"> Garrafa-vidro </a>
+          <p class="text-sm mt-2"> Compro garrafas de vidro de todos os tipos.</p>
+          <p class="text-sm mt-2"> Rua Martha Cordeiro </p>
+          <a href="" class="informações pt-5"> Saiba mais.</a>
+        </div>
+
+        <div class="card border-2 p-2 flex flex-col ">
+          <div id="tag-venda" class="flex flex-col ">Venda</div>
+          <img src="./assets/img/garrafas.jpg" alt="Produto" class="imagem-card pt-5 h-40 ">
+          <a href="" class="text-base mt-2"> Caco de vidro </a>
+          <p class="text-sm mt-2"> Material misto.</p>
+          <p class="text-sm mt-2"> Rua Albert Goll, Blumenau </p>
+          <div class="text-2xl my-2 font-bold"> R$ 5,40 </div>
+          <div class="text-sm">Restam <span id="quantidades"> 100 unidades</span></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="rodape-img-mobile">
+      <img src="./assets/img/rodape-img-mobile.png" alt="">
+    </div>
+    <div class="rodape-img">
+      <img src="./assets/img/img-rodape.png" alt="">
+    </div>
+    <div class="rodape-colunas">
+
+      <div class="rodape-logo centralizar">
+        <img src="./assets/img/logo-com-slogan-branco.png" alt="">
+      </div>
+      <div class="rodape-denuncia">
+        <h1>Denúncias - Ligue 156</h1>
+        <p>A Fiscalização Ambiental no município de Blumenau é realizada através da Gerência de Fiscalização da
+          Semmas.
+          Para mais informações acesse o site:</p>
+        <a href="https://www.blumenau.sc.gov.br/governo/fundacao-do-meio-ambiente/pagina/fiscalizacao-faema">Prefeitura
+          de Blumenau</a>
+      </div>
+      <div id="sugestoes" class="rodape-sugestoes">
+        <h1>Sugestões</h1>
+        <p>Nos ajude a melhorar a sua experiência em nosso site, deixe sua opinião.</p>
+        <div class="grid">
+          <textarea name="sugestao" id="rodape-sugestoes-textarea" cols="40" rows="4"></textarea>
+          <div class="grid content-center">
+            <button class="rodape-sugestoes-btn">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+
 </body>
-
 
 </html>
