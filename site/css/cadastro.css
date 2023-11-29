@@ -1,0 +1,157 @@
+@font-face {
+    font-family: "commissioner-bold";
+    src: url("../assets/fonts/Commissioner/static/Commissioner-Bold.ttf");
+}
+
+@font-face {
+    font-family: "commissioner-ligth";
+    src: url("../assets/fonts/Commissioner/static/Commissioner-Light.ttf");
+}
+
+body {
+    height: 90vh;
+    background: #94B447
+}
+
+main {
+    margin-top: 40px;
+    display: grid;
+    justify-content: center;
+}
+
+main h1 {
+    font-family: "commissioner-bold";
+    font-size: 40px;
+    margin: auto;
+}
+
+aside{
+    color: #fff;
+    margin: auto;
+}
+.logo-image{
+    margin: auto;
+    height: 100px;
+    width: 100px;
+}
+.image-rodape{
+    height: 0px;
+    width: 0px;
+    opacity: 1;
+}
+.corpo {
+    margin-top: 20px;
+    width: 400px;
+    height: 450px;
+    background-color: #fff;
+}
+
+.corpo h1 {
+    display: flex;
+    justify-content: center;
+}
+
+#login-face-google {
+    margin: 10px 0px 20px;
+    display: flex;
+    direction: row;
+    justify-content: center;
+}
+
+#login-face-google img {
+    margin: 0px 17px;
+    height: 25px;
+    width: 25px;
+}
+
+.formulario {
+    width: 190px;
+    height: 260px;
+    margin: auto;
+
+}
+
+.formulario input {
+    width: 190px;
+    height: 30px;
+    padding-left: 5px;
+    font-size: 15px;
+    font-family: "commissioner-bold";
+    background-color: rgba(217, 217, 217, 56%);
+    margin-bottom: 22px;
+}
+
+#btn-criarconta {
+    width: 120px;
+    height: 46px;
+    background-color: rgba(59, 82, 132, 100%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    margin: auto;
+    color: #fff;
+}
+
+#login {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    font-family: "commissioner-bold";
+}
+
+#login a {
+    color: #7E8D5D;
+}
+
+
+@media(min-width: 970px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #fff;
+        width: 1000px;
+        height: 600px;
+        margin: 110px auto;
+        border-radius: 20px;
+    }
+
+    .logo-image {
+        width: 195px;
+        height: 192px;
+        margin: 15px;
+        margin: 60px auto;
+    }
+
+    aside {
+        width: 500px;
+        height: 600px;
+        background-color: #FAF3E1;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        color: #5D6E1E;
+        text-align: center;
+    }
+
+    #texto {
+        margin-bottom: 80px;
+    }
+
+    .image-rodape {
+        height: 100px;
+        width: 600px;
+        display: block;
+        border-bottom-left-radius: 20px;
+        opacity: 1;
+    }
+
+
+    .corpo {
+        margin: auto;
+        border-radius: 20px;
+    }
+
+    .criar-conta h1 {
+        margin-top: 60px;
+    }
+}
