@@ -29,7 +29,7 @@
 }
 
 .card {
-    box-shadow: -3px 2px 12px -4px rgba(0,0,0,0.91);
+    box-shadow: -3px 2px 12px -4px rgba(0, 0, 0, 0.91);
     margin-top: 50px;
     border-radius: 22px;
     border-color: rgba(255, 255, 255, 0.25);
@@ -81,8 +81,8 @@
 
 @media (max-width: 960px) {
 
-    .separador-container  {
-            display: flex;
-            justify-content: center;
-        }
+    .separador-container {
+        display: flex;
+        justify-content: center;
     }
+}

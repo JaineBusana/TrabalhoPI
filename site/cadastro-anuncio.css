@@ -7,11 +7,13 @@
 
 
 .error {
-    background-color: orangered;
-    color: #fff;
+    background-color: #CDE54E;
+    border-radius: 22px;
+    color: #307c52;
     margin: 5px 160px;
-    width: 170px;
+    width: 190px;
     padding: 5px;
+    font-family: mukta_bold;
 }
 
 
