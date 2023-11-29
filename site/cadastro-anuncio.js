@@ -37,9 +37,8 @@ window.addEventListener("load", (event) => {
  
 
         if (value.nome === '' || value.descricao === '' || value.modalidade === '' ||
-            value.bairro === '' || value.cep=== '' || value.categoria === '' ||
-            value.subcategoria=== '' || value.valor === '' || value.quantidade === '' ||
-            value.telefone === '' || value.whatsapp === '') {
+            value.bairro === '' || value.categoria === '' ||
+            value.subcategoria=== '' || value.valor === '' || value.whatsapp === '') {
 
             errorMessage.innerHTML = "Preencha todos os campos";
             errorMessage.classList.add("error");
@@ -47,17 +46,13 @@ window.addEventListener("load", (event) => {
             setTimeout(() => {
                 errorMessage.innerHTML = "";
                 errorMessage.classList.remove("error");
-            },5000);
+            },3000);
         }
         else {
             console.log(value);
         
         }
 
-
-
     })
-
-
-  
+ 
 });
