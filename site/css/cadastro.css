@@ -13,48 +13,46 @@ body {
     background: #94B447
 }
 
-main{
-    margin-top: 90px;
+main {
+    margin-top: 40px;
     display: grid;
-    justify-content: center ;
+    justify-content: center;
 }
+
 main h1 {
     font-family: "commissioner-bold";
     font-size: 40px;
     margin: auto;
 }
-.banner {
-    font-size: 20px;
+
+aside{
     color: #fff;
-    display: grid;
-    justify-content: center ;
-}
-.banner img {
-    width: 60px;
-    height: 60px;
     margin: auto;
 }
-
-.banner p {
-    display: grid;
-    align-items: center;
+.logo-image{
+    margin: auto;
+    height: 100px;
+    width: 100px;
 }
-
+.image-rodape{
+    height: 0px;
+    width: 0px;
+    opacity: 1;
+}
 .corpo {
+    margin-top: 20px;
     width: 400px;
-    height: 500px;
-    
+    height: 450px;
     background-color: #fff;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    
 }
-.corpo h1{
+
+.corpo h1 {
     display: flex;
     justify-content: center;
 }
 
 #login-face-google {
-    margin: 20px 0px 34px;
+    margin: 10px 0px 20px;
     display: flex;
     direction: row;
     justify-content: center;
@@ -100,7 +98,6 @@ main h1 {
     display: flex;
     justify-content: center;
     font-family: "commissioner-bold";
-
 }
 
 #login a {
@@ -117,41 +114,44 @@ main h1 {
         height: 600px;
         margin: 110px auto;
         border-radius: 20px;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
 
-  
-    .banner img {
+    .logo-image {
         width: 195px;
         height: 192px;
         margin: 15px;
-        
+        margin: 60px auto;
     }
-    .banner h1 {
-        margin: 20px;
+
+    aside {
+        width: 500px;
+        height: 600px;
+        background-color: #FAF3E1;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        color: #5D6E1E;
+        text-align: center;
     }
-  
-    .corpo{
+
+    #texto {
+        margin-bottom: 80px;
+    }
+
+    .image-rodape {
+        height: 100px;
+        width: 600px;
+        display: block;
+        border-bottom-left-radius: 20px;
+        opacity: 1;
+    }
+
+
+    .corpo {
         margin: auto;
         border-radius: 20px;
     }
 
-    aside {
-        
-        width: 500px;
-        height: 600px;
-        background: #3B5284;
-        border-top-left-radius: 18px;
-        border-bottom-left-radius: 18px;
-        
-    }
-    .banner div{
-        height: 300px;
-        margin: 70px auto;
-        
-    }
-
-    .criar-conta h1{
+    .criar-conta h1 {
         margin-top: 60px;
     }
 }
