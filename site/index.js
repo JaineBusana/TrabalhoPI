@@ -44,7 +44,3 @@ $(".rodape-sugestoes-btn").click((e) => {
 
 })
 
-
-
-
-})

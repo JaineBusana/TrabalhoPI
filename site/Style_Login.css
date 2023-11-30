@@ -1,3 +1,18 @@
+@font-face {
+    font-family: Fredoka;
+    src: url(./assets/fonts/Fredoka.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(./assets/fonts/Montserrat.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Italic;
+    src: url(./assets/fonts/Montserrat-Italic.ttf);
+}
+
 #modal-login {
     background-color: rgba(0,0,0,.35);
     top: 0;
@@ -14,6 +29,7 @@
 .entrar {
     font-size: 45px;
     color: #307C52;
+    font-family: Fredoka;
 }
 
 #fundo-login {
@@ -53,6 +69,7 @@
     color: #307C52;
     font-size: 22px;
     margin-left: 70px;
+    font-family: Montserrat;
 }
 
 #logo {
@@ -111,6 +128,7 @@
     margin-top: 15px;
     font-size: 22px;
     margin-left: 70px;
+    font-family: Montserrat-Italic;
 }
 
 .cadastrar {
