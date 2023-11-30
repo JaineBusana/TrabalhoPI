@@ -23,40 +23,41 @@
 </head>
 
 <body>
-<div id="modal-login" class="">
-  <div id="fundo-login" class="flex">
-    <div>
-      <button id="fechar-modal" onclick="CLOSE_MODAL_LOGIN()"><i class="las la-times-circle"></i></button>
-      <div class="flex">
-        <img id="logo" class="h-20" src="./assets/img/MicrosoftTeams-image (7).png" alt="Logo da ColetaBLU">
-        <h1 class=" mt-14 entrar">Entrar</h1>
-      </div>
-      <div class="">
-        <h1 id="usuario" class="mt-10">Usuário</h1>
-      </div>
+  <div id="modal-login" class="">
+    <div id="fundo-login" class="flex">
       <div>
-        <input id="insert-usuario" class="mb-2 " type="text">
+        <button id="fechar-modal" onclick="CLOSE_MODAL_LOGIN()"><i class="las la-times-circle"></i></button>
+        <div class="flex">
+          <img id="logo" class="h-20" src="./assets/img/MicrosoftTeams-image (7).png" alt="Logo da ColetaBLU">
+          <h1 class=" mt-14 entrar">Entrar</h1>
+        </div>
+        <div class="">
+          <h1 id="usuario" class="mt-10">Usuário</h1>
+        </div>
+        <div>
+          <input id="insert-usuario" class="mb-2 " type="text">
+        </div>
+        <div>
+          <h1 id="senha" class="">Senha</h1>
+        </div>
+        <div class="flex">
+          <input id="insert-senha" class="" type="password">
+        </div>
+        <div>
+          <a id="esqueci-senha" class="" href="">Esqueci a senha!</a>
+        </div>
+        <div>
+          <a href="./index-logado.html"><button id="login">Login</button></a>
+        </div>
+        <div class="flex">
+          <h1 class="cadastrar ml-5">Não tem uma conta?</h1>
+          <a id="link-cadastrar" class="cadastrar ml-1" href="cadastro.html">Cadastre-se!</a>
+        </div>
       </div>
-      <div>
-        <h1 id="senha" class="">Senha</h1>
-      </div>
-      <div class="flex">
-        <input id="insert-senha" class="" type="password">
-      </div>
-      <div>
-        <a id="esqueci-senha" class="" href="">Esqueci a senha!</a>
-      </div>
-      <div>
-        <a href="./index-logado.html"><button id="login">Login</button></a>
-      </div>
-      <div class="flex">
-        <h1 class="cadastrar ml-5">Não tem uma conta?</h1>
-        <a id="link-cadastrar" class="cadastrar ml-1" href="cadastro.html">Cadastre-se!</a>
-      </div>
+      <img id="foto-fundo" src="./assets/img/Foto_Fundo_Login.jpg" alt="Imagen fundo"
+        style="max-width:100%;height:auto;">
     </div>
-    <img id="foto-fundo" src="./assets/img/Foto_Fundo_Login.jpg" alt="Imagen fundo" style="max-width:100%;height:auto;">
   </div>
-</div>
 
   <header class="pt-5 container mx-auto mb-10">
     <div class="flex justify-end mr-4">
@@ -199,17 +200,20 @@
       <div id="sugestoes" class="rodape-sugestoes">
         <h1>Sugestões</h1>
         <p>Nos ajude a melhorar a sua experiência em nosso site, deixe sua opinião.</p>
-        <div class="grid">
+
+        <form class="grid">
           <textarea name="sugestao" id="rodape-sugestoes-textarea" cols="40" rows="4"></textarea>
           <div class="grid content-center">
             <button class="rodape-sugestoes-btn">
               Enviar
             </button>
           </div>
-        </div>
+        </form>
+
       </div>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="index.js"></script>
 </body>
 
