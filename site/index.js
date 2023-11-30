@@ -1,4 +1,4 @@
-$(() => {
+
 function SHOW_MODAL_LOGIN() {
     let modal = document.querySelector('#modal-login')
     modal.classList.add(`modal-login-active`);
@@ -42,7 +42,3 @@ $(".rodape-sugestoes-btn").click((e) => {
 
 })
 
-
-
-
-})
