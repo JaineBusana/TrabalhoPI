@@ -6,8 +6,8 @@ const passwordConfirmation = document.getElementById("password-confirmation");
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
-
     checkForm()
+    
 })
 nome.addEventListener ("blur", () => {
     checkInputNome()
@@ -85,7 +85,8 @@ function checkForm() {
         return item.className === "form-content"
     });
     if (isValid) {
-        alert("CADASTRADO COM SUCESSO")
+      
+            window.location = "index-logado.html"
     }
 
 }

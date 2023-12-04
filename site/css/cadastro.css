@@ -37,8 +37,14 @@ main h1 {
 aside h1 {
     margin: 1px;
 }
-#texto{
+#texto {
+    color: #fff;
     text-align: center;
+}
+#texto p{
+    color: #fff;
+    text-align: center;
+    margin: 5px;
 }
 
 #saudacoes{
@@ -56,7 +62,9 @@ aside h1 {
 #logo-image {
     width: 90px;
 }
-
+#logo-image-verde{
+    display: none;
+}
 #image-rodape {
     visibility: hidden;
     height: 0px;
@@ -78,6 +86,9 @@ aside h1 {
 
 }
 
+.formulario p{
+    margin-bottom: 10px;
+}
 #login-alternativo {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -99,6 +110,7 @@ aside h1 {
     align-items: center;
     justify-content: center;
     
+    
 }
 
 .form-content {
@@ -111,12 +123,13 @@ aside h1 {
     display: inline-block;
     margin-bottom: 4px;
     color: #000;
-    font-size: 13px;
+    font-size: 15px;
 
 }
 p {
     color: #000;
     text-align: center;
+    padding: 10px;
 }
 #link {
     color: #5D6E1E;
@@ -128,7 +141,7 @@ p {
     width: 300px;
     height: 30px;
     border-radius: 10px;
-    padding: 8px;
+    padding: 10px;
     border: 2px solid #b6b2b2;
     color: #000;
 
@@ -144,7 +157,7 @@ p {
 .form button {
     background-color: #3B5284;
     color: #fff;
-    width: 90px;
+    width: 100px;
     border-radius: 14px;
     padding: 8px;
     border: 0;
@@ -186,13 +199,15 @@ p {
         text-align: center;
     }
 
-    .logo-image {
-        width: 195px;
-        height: 192px;
+    #logo-image-verde {
+        width: 190px;
         margin: 15px;
-        margin: 60px auto;
+        margin: 40px auto;
+        display: block;
     }
-
+    #logo-image{
+        display: none;
+    }
     aside {
         width: 500px;
         height: 600px;
@@ -200,25 +215,26 @@ p {
         border-bottom-left-radius: 20px;
         border-top-left-radius: 20px;
         color: #5D6E1E;
-        text-align: center;
     }
 
-    #texto {
-        margin-bottom: 80px;
-        
+    #texto p{
+        margin-bottom: 61px;
+        color: #5D6E1E;
+        font-size: 18px;
+    }
+    #texto h1{
+        margin-bottom: 50px;
 
+        color: #5D6E1E;
     }
 
-    #saudacoes {
-        text-align: center;
-    }
 
-    .image-rodape {
+    #image-rodape {
         height: 100px;
         width: 600px;
         display: block;
         border-bottom-left-radius: 20px;
-        opacity: 1;
+        visibility: visible;
     }
 
 }
