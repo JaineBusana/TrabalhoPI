@@ -32,6 +32,15 @@
     font-family: Fredoka;
 }
 
+.msg {
+    position: absolute;
+    margin-left: 88px;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    margin-top: 7px;
+}
+
 #fundo-login {
     background-color: #FFF;
     border-radius: 12px;
@@ -73,7 +82,7 @@
 }
 
 #logo {
-    margin-top: 56px;
+    margin-top: 45px;
     width: 70px;
     height: 70px;
     margin-left: 90px;
@@ -128,7 +137,7 @@
     margin-top: 15px;
     font-size: 22px;
     margin-left: 70px;
-    font-family: Montserrat-Italic;
+    font-family: Montserrat;
 }
 
 .cadastrar {
