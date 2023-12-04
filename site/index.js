@@ -38,6 +38,15 @@ $(".rodape-sugestoes-btn").click((e) => {
             errorMessage.classList.remove("error");
         },3000);
       }  
+      else {
+        errorMessage.innerHTML = "Obrigada pela contribuição!";
+        errorMessage.classList.add("error");
+
+        setTimeout(() => {
+          errorMessage.innerHTML = "";
+          errorMessage.classList.remove("error");
+      },3000);
+      }
 
     const sugestao ={
        textoSugestao: $("#rodape-sugestoes-textarea")[0].value
@@ -49,9 +58,6 @@ $(".rodape-sugestoes-btn").click((e) => {
       $("#nome").addClass("invalid");
       return;
   }
-
-
-
     console.log(sugestao);
 
 })
