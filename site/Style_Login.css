@@ -34,10 +34,11 @@
 
 .msg {
     position: absolute;
-    margin-left: 97px;
+    margin-left: 88px;
     text-align: center;
     font-family: Montserrat;
-    font-size: 13px;
+    font-size: 14px;
+    margin-top: 7px;
 }
 
 #fundo-login {
