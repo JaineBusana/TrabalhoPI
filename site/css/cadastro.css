@@ -1,11 +1,18 @@
 @font-face {
-    font-family: "commissioner-bold";
-    src: url("../assets/fonts/Commissioner/static/Commissioner-Bold.ttf");
+    font-family: Fredoka;
+    src: url(../assets/fonts/Fredoka.ttf);
 }
 
 @font-face {
-    font-family: "commissioner-ligth";
-    src: url("../assets/fonts/Commissioner/static/Commissioner-Light.ttf");
+    font-family: Montserrat;
+    src: url(../assets/fonts/Montserrat.ttf);
+}
+
+@font-face {
+
+    font-family: "mukta_bold";
+
+    src: url("../assets/img/fonts/Mukta-Bold.ttf")
 }
 
 body {
@@ -14,98 +21,169 @@ body {
 }
 
 main {
-    margin-top: 40px;
-    display: grid;
+    font-family: montserrat;
+    color: #fff;
+    align-items: center;
     justify-content: center;
+
 }
 
 main h1 {
-    font-family: "commissioner-bold";
-    font-size: 40px;
-    margin: auto;
-}
-
-aside{
+    font-family: mukta_bold;
+    font-size: 35px;
     color: #fff;
-    margin: auto;
 }
-.logo-image{
-    margin: auto;
-    height: 100px;
-    width: 100px;
+
+aside h1 {
+    margin: 1px;
 }
-.image-rodape{
+#texto {
+    color: #fff;
+    text-align: center;
+}
+#texto p{
+    color: #fff;
+    text-align: center;
+    margin: 5px;
+}
+
+#saudacoes{
+    display: grid;
+    direction: column;
+    
+}
+#saudacoes-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#logo-image {
+    width: 90px;
+}
+#logo-image-verde{
+    display: none;
+}
+#image-rodape {
+    visibility: hidden;
     height: 0px;
-    width: 0px;
-    opacity: 1;
-}
-.corpo {
-    margin-top: 20px;
-    width: 400px;
-    height: 450px;
-    background-color: #fff;
-}
-
-.corpo h1 {
-    display: flex;
-    justify-content: center;
-}
-
-#login-face-google {
-    margin: 10px 0px 20px;
-    display: flex;
-    direction: row;
-    justify-content: center;
-}
-
-#login-face-google img {
-    margin: 0px 17px;
-    height: 25px;
-    width: 25px;
 }
 
 .formulario {
-    width: 190px;
-    height: 260px;
+    background-color: #fff;
+    max-width: 450px;
+    width: 100%;
     margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario h1 {
+    padding: 8px;
+    text-align: center;
+    color: #000;
 
 }
 
-.formulario input {
-    width: 190px;
-    height: 30px;
-    padding-left: 5px;
+.formulario p{
+    margin-bottom: 10px;
+}
+#login-alternativo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+#face{
+    justify-self: end;
+    width: 20px;
+    margin-right: 25px;
+}
+#google{
+    width: 20px;
+    margin-left: 25px;
+}
+
+.form {
+    display: grid;
+    direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.form-content {
+    margin-bottom: 4px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.form-content label {
+    display: inline-block;
+    margin-bottom: 4px;
+    color: #000;
     font-size: 15px;
-    font-family: "commissioner-bold";
-    background-color: rgba(217, 217, 217, 56%);
-    margin-bottom: 22px;
+
+}
+p {
+    color: #000;
+    text-align: center;
+    padding: 10px;
+}
+#link {
+    color: #5D6E1E;
+    font-family: mukta_bold;
+    font-size: 18px;
+}
+.form-content input {
+    display: block;
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid #b6b2b2;
+    color: #000;
+
 }
 
-#btn-criarconta {
-    width: 120px;
-    height: 46px;
-    background-color: rgba(59, 82, 132, 100%);
-    border-radius: 20px;
+.form-content a {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+}
+
+.form button {
+    background-color: #3B5284;
+    color: #fff;
+    width: 100px;
+    border-radius: 14px;
+    padding: 8px;
+    border: 0;
+    font-size: 16px;
+    margin-top: 10px;
+    
+}
+#submit{
     display: flex;
     align-items: center;
-    padding: 16px;
-    margin: auto;
-    color: #fff;
-}
-
-#login {
-    font-size: 12px;
-    display: flex;
     justify-content: center;
-    font-family: "commissioner-bold";
+    margin-bottom: 15px;
+    
 }
 
-#login a {
-    color: #7E8D5D;
+.form-content.error input {
+    border-color: #ff3b25;
 }
 
+.form-content.error a {
+    color: #ff3b25;
+    visibility: visible;
+}
 
 @media(min-width: 970px) {
+
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -116,13 +194,20 @@ aside{
         border-radius: 20px;
     }
 
-    .logo-image {
-        width: 195px;
-        height: 192px;
-        margin: 15px;
-        margin: 60px auto;
+    main h1 {
+        font-size: 40px;
+        text-align: center;
     }
 
+    #logo-image-verde {
+        width: 190px;
+        margin: 15px;
+        margin: 40px auto;
+        display: block;
+    }
+    #logo-image{
+        display: none;
+    }
     aside {
         width: 500px;
         height: 600px;
@@ -130,28 +215,26 @@ aside{
         border-bottom-left-radius: 20px;
         border-top-left-radius: 20px;
         color: #5D6E1E;
-        text-align: center;
     }
 
-    #texto {
-        margin-bottom: 80px;
+    #texto p{
+        margin-bottom: 61px;
+        color: #5D6E1E;
+        font-size: 18px;
+    }
+    #texto h1{
+        margin-bottom: 50px;
+
+        color: #5D6E1E;
     }
 
-    .image-rodape {
+
+    #image-rodape {
         height: 100px;
         width: 600px;
         display: block;
         border-bottom-left-radius: 20px;
-        opacity: 1;
+        visibility: visible;
     }
 
-
-    .corpo {
-        margin: auto;
-        border-radius: 20px;
-    }
-
-    .criar-conta h1 {
-        margin-top: 60px;
-    }
 }
