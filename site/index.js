@@ -11,3 +11,25 @@ function showModalMenu(classe) {
   }       
 
 }
+
+$(".rodape-sugestoes-btn").click((e) => {
+    e.preventDefault();
+      let div = $('<div/>').addClass('error').html('Oi tudo bem!').insertAfter($('#modal-login'));      
+
+    const sugestao ={
+       textoSugestao: $("#rodape-sugestoes-textarea")[0].value
+
+    }
+
+    if (!sugestao.textoSugestao) {
+      
+      $("#nome").addClass("invalid");
+      return;
+  }
+
+
+
+    console.log(sugestao);
+
+})
+

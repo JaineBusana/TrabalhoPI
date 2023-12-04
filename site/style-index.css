@@ -17,6 +17,16 @@ body {
     background-color: #FAF3E1;
 }
 
+.error {
+    background-color: #CDE54E;
+    border-radius: 22px;
+    color: #307c52;
+    margin: 5px 160px;
+    width: 190px;
+    padding: 5px;
+    font-family: mukta_bold;
+}
+
 .centralizar {
     display: flex;
     justify-content: center;
