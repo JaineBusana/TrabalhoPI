@@ -1,12 +1,4 @@
-function SHOW_MODAL_LOGIN() {
-    let modal = document.querySelector('#modal-login')
-    modal.classList.add(`modal-login-active`);
-}
 
-function CLOSE_MODAL_LOGIN() {
-    let modal = document.querySelector('#modal-login')
-    modal.classList.remove(`modal-login-active`);
-}
 
 function showModalMenu(classe) {
   let modal = document.querySelector(classe)
@@ -20,9 +12,33 @@ function showModalMenu(classe) {
 
 }
 
+$(() => {
+
 $(".rodape-sugestoes-btn").click((e) => {
     e.preventDefault();
-      let div = $('<div/>').addClass('error').html('Oi tudo bem!').insertAfter($('#modal-login'));      
+      const errorMessage = document.querySelector('#error')
+      const textarea = document.querySelector('#rodape-sugestoes-textarea')
+
+      const texto = textarea.value
+
+      if ( texto === ''){
+        errorMessage.innerHTML = "O campo deve ser preenchido!";
+        errorMessage.classList.add("error");
+        
+        setTimeout(() => {
+            errorMessage.innerHTML = "";
+            errorMessage.classList.remove("error");
+        },3000);
+      }  
+      else {
+        errorMessage.innerHTML = "Obrigada pela contribuição!";
+        errorMessage.classList.add("error");
+
+        setTimeout(() => {
+          errorMessage.innerHTML = "";
+          errorMessage.classList.remove("error");
+      },3000);
+      }
 
     const sugestao ={
        textoSugestao: $("#rodape-sugestoes-textarea")[0].value
@@ -34,10 +50,8 @@ $(".rodape-sugestoes-btn").click((e) => {
       $("#nome").addClass("invalid");
       return;
   }
-
-
-
     console.log(sugestao);
 
+})
 })
 

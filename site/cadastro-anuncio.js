@@ -50,7 +50,14 @@ window.addEventListener("load", (event) => {
         }
         else {
             console.log(value);
-        
+            
+            errorMessage.innerHTML = "Cadastro salvo!";
+            errorMessage.classList.add("error");
+    
+            setTimeout(() => {
+              errorMessage.innerHTML = "";
+              errorMessage.classList.remove("error");
+          },3000);
         }
 
     })
