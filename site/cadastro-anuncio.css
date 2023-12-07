@@ -67,7 +67,7 @@ main {
 
 .labels {
 
-    margin-left: 160px;
+    margin-left: 109px;
 
     margin-bottom: 22px;
 
@@ -116,9 +116,9 @@ main {
 
 .input-container {
 
-    margin-right: 70px;
+    margin-right: 125px;
 
-    margin-left: 155px;
+    margin-left: 105px;
 
     margin-bottom: 22px;
 
@@ -159,7 +159,7 @@ main {
 
     margin-bottom: 22px;
 
-    margin-left: 155px;
+    margin-left: 105px;
 
     padding-left: 10px;
 
@@ -274,12 +274,12 @@ h1 {
 
     .input {
         margin-left: 45px;
-        width: 420px;
+        width: 400px;
     }
 
     .input-container {
-        margin-left: 40px;
-        margin-right: 20px;
+        margin-left: 45px;
+        margin-right: 42px;
         width: 180px;
     }
 
@@ -288,7 +288,7 @@ h1 {
     }
 
     .select {
-        width: 360px;
+        width: 341px;
     }
 
     
