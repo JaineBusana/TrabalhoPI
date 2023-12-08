@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./Style_Login.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./assets/1.3.0/css/line-awesome.css">
+  <link rel="stylesheet" href="./style-esqueci.css">
   <script>
     tailwind.config = {
       theme: {
@@ -43,8 +44,6 @@
             <h1 id="senha" class="">Senha</h1>
           </div>
           <div class="flex">
-            saksoaosasko
-            jjJS
             <input id="insert-senha" class="" type="password" onfocus="this.value='';">
           </div>
           <div>
@@ -60,6 +59,13 @@
         </div>
         <img id="foto-fundo" src="./assets/img/Foto_Fundo_Login.jpg" alt="Imagen fundo"
           style="max-width:100%;height:auto;">
+      </div>
+    </div>
+  </form>
+  <form action="" id="formEsqueciSenha">
+    <div id="modal-esqueci">
+      <div id="fundo-esqueci" class="flex">
+        <button id="fechar-esqueci" onclick=""><i class="las la-times-circle"></i></button>
       </div>
     </div>
   </form>
