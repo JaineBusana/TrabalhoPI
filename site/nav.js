@@ -7,3 +7,8 @@ menu.addEventListener('click', () => {
     NavMenu.classList.toggle('ativo');
     NavHome.classList.toggle('ativo')
 })
+$(document).ready(function() {
+ 
+    $(".owl-carousel").owlCarousel();
+   
+  });
