@@ -70,6 +70,11 @@ body{
     background:#307A50;
 }
 
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 @media(max-width:970px) {
     .navigation{
         padding: 18px 20px;
