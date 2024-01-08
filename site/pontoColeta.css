@@ -129,7 +129,7 @@ form {
     margin-left: 33px;
     color: black;
     font-family: mukta_medium;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .tituloCard {
@@ -141,6 +141,7 @@ form {
 #nomeCard {
 
     font-family: mukta_bold;
-    font-size: 14px;
+    font-size: 16px;
     margin-left: 0 !important;
+    margin-bottom: 8px;
 }
