@@ -11,6 +11,14 @@
     src: url("./assets/fonts/pontoColeta/Mukta-Medium.ttf")
 }
 
+/* .banner {
+    width: 100%;
+    height: auto;
+    margin-top: -476px;
+    margin-bottom: -289px;
+} */
+
+/* <img id="banner"src="./assets/img/pontoColeta/banner.png"></img> */
 
 #tituloPrincipal,
 #PontosProximos {
@@ -122,7 +130,6 @@ form {
 }
 
 
-
 .card {
     flex-direction: column;
     position: relative;
@@ -167,7 +174,6 @@ form {
         margin-left: 151px !important;
     }
 
-    
     /* #localização {
         margin-left: 145px;
     }
