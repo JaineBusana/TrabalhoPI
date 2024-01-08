@@ -145,3 +145,34 @@ form {
     margin-left: 0 !important;
     margin-bottom: 8px;
 }
+
+@media(min-width:750px) {
+
+    #instrução,
+    #duvida,
+    #tituloPrincipal {
+
+        width: 750px;
+        margin-left: 151px;
+    }
+
+    form {
+
+        margin-top: 30px;
+        margin-left: 105px;
+    }
+
+    .card {
+
+        margin-left: 151px !important;
+    }
+
+    
+    /* #localização {
+        margin-left: 145px;
+    }
+
+    #PontosProximos {
+        margin-left: 145px;
+    } */
+}
