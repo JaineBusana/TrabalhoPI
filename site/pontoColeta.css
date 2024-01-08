@@ -60,7 +60,7 @@
 
     position: relative;
     width: 359px;
-    height: 38px;
+    height: 43px;
     border-radius: 22px;
     background-color: #FFFFFF;
     color: #6A994E;
@@ -71,8 +71,8 @@
 
     display: flex;
     position: relative;
-    width: 125px;
-    height: 37px;
+    width: 103px;
+    height: 43px;
     margin-left: -17px;
     border-radius: 22px, 0px, 22px, 22px;
 }
@@ -87,7 +87,7 @@ form {
 
 .designInput {
 
-    height: 38px;
+    height: 44px;
     width: 295px;
     background-color: white;
     display: inline-flex;
