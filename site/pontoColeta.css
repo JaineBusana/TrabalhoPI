@@ -11,17 +11,9 @@
     src: url("./assets/fonts/pontoColeta/Mukta-Medium.ttf")
 }
 
-/* .banner {
-    width: 100%;
-    height: auto;
-    margin-top: -476px;
-    margin-bottom: -289px;
-} */
 
-/* <img id="banner"src="./assets/img/pontoColeta/banner.png"></img> */
-
-#tituloPrincipal,
-#PontosProximos {
+#title,
+#localNext {
 
     position: relative;
     margin-left: 33px;
@@ -36,14 +28,14 @@
 }
 
 
-#PontosProximos {
+#localNext {
 
     margin-top: 80px;
     margin-left: 60px !important;
     margin-bottom: -20px;
 }
 
-#localizacao {
+#location {
 
     width: 50px;
     margin-top: 65px;
@@ -51,8 +43,8 @@
     position: absolute;
 }
 
-#instrução,
-#duvida {
+#instruction,
+#doubts {
 
     width: 306px;
     position: relative;
@@ -75,7 +67,7 @@
 }
 
 
-#folhaInput {
+#leafInput {
 
     display: flex;
     position: relative;
@@ -108,7 +100,7 @@ form {
 }
 
 
-#btnPontos {
+#btnLocal {
 
     height: 38px;
     width: 300px;
@@ -139,13 +131,13 @@ form {
     font-size: 15px;
 }
 
-.tituloCard {
+.titleCard {
 
     color: #6A994E;
 }
 
 
-#nomeCard {
+#nameCard {
 
     font-family: mukta_bold;
     font-size: 16px;
@@ -158,9 +150,9 @@ form {
     main{
         margin-left: 250px;
     }
-    #instrução,
-    #duvida,
-    #tituloPrincipal {
+    #instruction,
+    #doubts,
+    #title {
 
         width: 755px;
     }
@@ -171,7 +163,7 @@ form {
     }
 
 
-    #btnPontos{
+    #btnLocal{
         display: flex;
         margin-top: 60px;
         padding: 8px 80px;
