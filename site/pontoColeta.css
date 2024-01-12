@@ -12,6 +12,10 @@
 }
 
 
+main{
+    margin-top: 50px;
+}
+
 #title,
 #localNext {
 
@@ -143,6 +147,17 @@ form {
     font-size: 16px;
     margin-left: 0 !important;
     margin-bottom: 8px;
+}
+
+.error {
+    background-color: #CDE54E;
+    border-radius: 22px;
+    color: #307c52;
+    margin: 5px 160px;
+    width: 190px;
+    padding: 5px;
+    font-family: mukta_bold;
+    text-align: center;
 }
 
 @media(min-width:750px) {
