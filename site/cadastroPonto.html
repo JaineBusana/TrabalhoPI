@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cadastroPonto.css"/>
+    <link rel="stylesheet" href="cadastroPonto.css">
     <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <title>Cadastro de Locais </title>
 </head>
+
 <body>
     <header>
         <nav class="navigation">
             <a href="#" class="logo"><img src="./assets/img/logo-com-slogan.png" alt=""></a>
             <div class="nav-home">
-            <ul class="nav-menu">
-                <li class="nav-item "><a href="#">Home</a></li>
-                <li class="nav-item"><a href="#">Pontos de coleta</a></li>
-                <li class="nav-item"><a href="#">Contato</a></li>
-                <li class="nav-item"><a href="#">Login</a></li>
+                <ul class="nav-menu">
+                    <li class="nav-item "><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="pontoColeta.html">Pontos de coleta</a></li>
+                    <li class="nav-item"><a href="#">Contato</a></li>
+                    <li class="nav-item"><a href="#">Login</a></li>
 
 
-            </ul>
-        </div>
+                </ul>
+            </div>
             <div class="menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -29,10 +32,50 @@
         </nav>
     </header>
     <main>
-    <div>
+        <div class="container">
+            <section class="header">
+                <h1>Cadastro de Pontos de Coleta</h1>
+            </section>
 
-    </div>
-</main>
+            <form id="form" class="form">
+                <div class="form-content">
+                    <label for="placeName">Nome</label>
+                    <input type="text" id="placeName" placeholder="Digite o nome do ponto de coleta..." />
+                    <a>Mensagem de Erro</a>
+                </div>
 
+                <div class="form-content">
+                    <label for="address">Endereço</label>
+                    <input type="address" id="address" placeholder="Digite o endereço do local..." />
+                    <a>Mensagem de Erro</a>
+                </div>
+
+                <div class="form-content">
+                    <label for="phoneNumber">Número de contato</label>
+                    <input type="phoneNumber" id="phoneNumber" placeholder="Digite um número de contato..." />
+                    <a>Mensagem de Erro</a>
+                </div>
+
+                <div class="form-content">
+                    <label for="residue">Classificação do resíduo</label>
+                    <select class="select" id="select-residue">
+                        <option value="0">Selecione o resíduo</option>
+                        <option value="1">Pet</option>
+                        <option value="2">Vidro</option>
+                        <option value="3">Metal</option>
+                    </select>
+                    <a>Aqui vai a mensagem de erro....</a>
+                </div>
+
+                <button type="submit">Cadastrar</button>
+
+            </form>
+
+        </div>
+    </main>
+
+
+    <script src="./script.js"></script>
 </body>
+
 </html>
