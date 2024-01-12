@@ -92,6 +92,7 @@ window.addEventListener("load", (event) => {
         checkInputAddress();
         checkInputPhoneNumber();
         checkInputResidue();
+        const sucessMessage = document.querySelector('.msg')
 
         const formItems = form.querySelectorAll(".form-content")
 
@@ -100,7 +101,14 @@ window.addEventListener("load", (event) => {
         });
 
         if (isValid) {
-            alert("PONTO DE COLETA CADASTRADO COM SUCESSO!")
+
+            sucessMessage.innerHTML = "Cadastro salvo!";
+            sucessMessage.classList.add("sucess");
+
+            setTimeout(() => {
+                sucessMessage.innerHTML = "";
+                sucessMessage.classList.remove("sucess");
+            }, 5000);
         }
 
     }

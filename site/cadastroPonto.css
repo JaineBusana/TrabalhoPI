@@ -94,3 +94,8 @@ option{
     visibility: visible;
     margin-bottom: 5px;
 }
+
+.sucess {
+    color: #307c52;
+    font-family: mukta_bold;
+}
