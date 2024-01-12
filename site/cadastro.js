@@ -26,6 +26,10 @@ window.addEventListener("load", (event) => {
         checkInputPhoneNumber();
     })
 
+    residue.addEventListener("blur", () => {
+        checkInputResidue();
+    })
+
 
     function checkInputPlaceName() {
         const placeNameValue = placeName.value;
