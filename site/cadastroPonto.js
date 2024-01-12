@@ -63,7 +63,7 @@ window.addEventListener("load", (event) => {
         if (phoneNumberValue === "") {
             errorInput(phoneNumber, "NÚMERO DE CONTATO não preenchido!")
         } else if (phoneNumberValue.length < 9) {
-            errorInput(phoneNumber, "O número de contato precisa ter  8 CARACTERES.")
+            errorInput(phoneNumber, "O número de contato precisa ter  9 CARACTERES.")
         } else {
             const formItem = phoneNumber.parentElement;
             formItem.className = "form-content"
