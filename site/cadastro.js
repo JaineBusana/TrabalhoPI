@@ -1,110 +1,111 @@
-const form = document.getElementById("form");
-const username = document.getElementById("username")
-const email = document.getElementById("email")
-const password = document.getElementById("password")
-const passwordConfirmation = document.getElementById("password-confirmation");
+window.addEventListener("load", (event) => {
+
+    const form = document.getElementById("form");
+    const placeName = document.getElementById("placeName")
+    const address = document.getElementById("address")
+    const phoneNumber = document.getElementById("phoneNumber")
+    const residue = document.getElementById("select-residue");
 
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+    form.addEventListener("submit", (e) => {
+        event.preventDefault();
 
-  checkForm();
-})
+        checkForm();
+    })
 
-email.addEventListener("blur", () => {
-  checkInputEmail();
-})
-
-
-username.addEventListener("blur", () => {
-  checkInputUsername();
-})
+    address.addEventListener("blur", () => {
+        checkInputAddress();
+    })
 
 
-function checkInputUsername(){
-  const usernameValue = username.value;
-
-  if(usernameValue === ""){
-    errorInput(username, "Preencha um username!")
-  }else{
-    const formItem = username.parentElement;
-    formItem.className = "form-content"
-  }
-
-}
-
-function checkInputEmail(){
-  const emailValue = email.value;
-
-  if(emailValue === ""){
-    errorInput(email, "O email é obrigatório.")
-  }else{
-    const formItem = email.parentElement;
-    formItem.className = "form-content"
-  }
+    placeName.addEventListener("blur", () => {
+        checkInputPlaceName();
+    })
 
 
-}
+    function checkInputPlaceName() {
+        const placeNameValue = placeName.value;
+
+        if (placeNameValue === "") {
+            errorInput(placeName, " NOME do Ponto de Coleta não preenchido!")
+        } else {
+            const formItem = username.parentElement;
+            formItem.className = "form-content"
+        }
+
+    }
+
+    function checkInputAddress() {
+        const addressValue = address.value;
+
+        if (addressValue === "") {
+            errorInput(address, "ENDEREÇO não preenchido!")
+        } else {
+            const formItem = address.parentElement;
+            formItem.className = "form-content"
+        }
 
 
-function checkInputPassword(){
-  const passwordValue = password.value;
-
-  if(passwordValue === ""){
-    errorInput(password, "A senha é obrigatória.")
-  }else if(passwordValue.length < 8){
-    errorInput(password, "A senha precisa ter no mínimo 8 caracteres.")
-  }else{
-    const formItem = password.parentElement;
-    formItem.className = "form-content"
-  }
+    }
 
 
-}
+    function checkInputPhoneNumber() {
+        const phoneNumberValue = phoneNumber.value;
+
+        if (phoneNumberValue === "") {
+            errorInput(phoneNumber, "NÚMERO DE CONTATO não preenchido!")
+        } else if (phoneNumberValue.length < 9) {
+            errorInput(phoneNumber, "O número de contato precisa ter no mínimo 8 caracteres.")
+        } else {
+            const formItem = phoneNumber.parentElement;
+            formItem.className = "form-content"
+        }
 
 
-function checkInputPasswordConfirmation(){
-  const passwordValue = password.value;
-  const confirmationPasswordValue = passwordConfirmation.value;
-
-  if(confirmationPasswordValue === ""){
-    errorInput(passwordConfirmation, "A confirmação de senha é obrigatória.")
-  }else if(confirmationPasswordValue !== passwordValue){
-    errorInput(passwordConfirmation, "As senhas não são iguais.")
-  }else{
-    const formItem = passwordConfirmation.parentElement;
-    formItem.className = "form-content"
-  }
+    }
 
 
-}
+    function checkInputResidue() {
+        const residueValue = residue.value;
+
+        if (residueValue === "") {
+            errorInput(residue, "RESÍDUO não preenchido!")
+        } else {
+            const formItem = residue.parentElement;
+            formItem.className = "form-content"
+        }
 
 
-function checkForm(){
-  checkInputUsername();
-  checkInputEmail();
-  checkInputPassword();
-  checkInputPasswordConfirmation();
-
-  const formItems = form.querySelectorAll(".form-content")
-
-  const isValid = [...formItems].every( (item) => {
-    return item.className === "form-content"
-  });
-
-  if(isValid){
-    alert("CADASTRADO COM SUCESSO!")
-  }
-
-}
+    }
 
 
-function errorInput(input, message){
-  const formItem = input.parentElement;
-  const textMessage = formItem.querySelector("a")
 
-  textMessage.innerText = message;
+    function checkForm() {
+        checkInputPlaceName();
+        checkInputAddress();
+        checkInputPhoneNumber();
+        checkInputResidue();
 
-  formItem.className = "form-content error"
+        const formItems = form.querySelectorAll(".form-content")
 
-}
+        const isValid = [...formItems].every((item) => {
+            return item.className === "form-content"
+        });
+
+        if (isValid) {
+            alert("PONTO DE COLETA CADASTRADO COM SUCESSO!")
+        }
+
+    }
+
+
+    function errorInput(input, message) {
+        const formItem = input.parentElement;
+        const textMessage = formItem.querySelector("a")
+
+        textMessage.innerText = message;
+
+        formItem.className = "form-content error"
+
+    }
+});
