@@ -41,7 +41,7 @@ main {
 }
 
 .form-content {
-    margin-bottom: 8px;
+    margin-bottom: 25px;
     padding-bottom: 18px;
     position: relative;
 }
@@ -90,5 +90,7 @@ option{
 
 .form-content.error a {
     color: #ff3b25;
+    font-size: 14px;
     visibility: visible;
+    margin-bottom: 5px;
 }

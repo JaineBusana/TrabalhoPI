@@ -8,7 +8,7 @@ window.addEventListener("load", (event) => {
 
 
     form.addEventListener("submit", (e) => {
-        event.preventDefault();
+        e.preventDefault();
 
         checkForm();
     })
@@ -22,6 +22,10 @@ window.addEventListener("load", (event) => {
         checkInputPlaceName();
     })
 
+    phoneNumber.addEventListener("blur", () => {
+        checkInputPhoneNumber();
+    })
+
 
     function checkInputPlaceName() {
         const placeNameValue = placeName.value;
@@ -29,7 +33,7 @@ window.addEventListener("load", (event) => {
         if (placeNameValue === "") {
             errorInput(placeName, " NOME do Ponto de Coleta não preenchido!")
         } else {
-            const formItem = username.parentElement;
+            const formItem = placeName.parentElement;
             formItem.className = "form-content"
         }
 
@@ -55,7 +59,7 @@ window.addEventListener("load", (event) => {
         if (phoneNumberValue === "") {
             errorInput(phoneNumber, "NÚMERO DE CONTATO não preenchido!")
         } else if (phoneNumberValue.length < 9) {
-            errorInput(phoneNumber, "O número de contato precisa ter no mínimo 8 caracteres.")
+            errorInput(phoneNumber, "O número de contato precisa ter  8 CARACTERES.")
         } else {
             const formItem = phoneNumber.parentElement;
             formItem.className = "form-content"
@@ -77,7 +81,6 @@ window.addEventListener("load", (event) => {
 
 
     }
-
 
 
     function checkForm() {
