@@ -10,5 +10,5 @@ function closeModal() {
 
 function closeModalHome() {
   modal.classList.remove('active')
-  window.location.href = "index-logado.html";
+  window.location.href = "index.html";
 }
