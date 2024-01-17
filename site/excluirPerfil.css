@@ -42,13 +42,13 @@
     padding: 30px;
     background-color: white;
     border-radius: 10px;
-    width: 50%;
+    width: 30%;
     font-family: mukta_medium;
     text-align: justify;
   }
 
   .modal img{
-      max-width: 15%;
+      max-width: 25%;
       height: auto;
       margin: auto;
   }
