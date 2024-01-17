@@ -181,6 +181,9 @@ p {
     color: #ff3b25;
     visibility: visible;
 }
+.first-form.ativo {
+    display: none;
+}
 
 @media(min-width: 970px) {
 
