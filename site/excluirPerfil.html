@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="excluirPerfil.css">
+
+    <title>Perfil do usuário</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="#" class="logo"><img src="./assets/img/logo-com-slogan.png" alt=""></a>
+            <div class="nav-home">
+                <ul class="nav-menu">
+                    <li class="nav-item "><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="pontoColeta.html">Pontos de coleta</a></li>
+                    <li class="nav-item"><a href="#">Login</a></li>
+
+
+                </ul>
+            </div>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <button class="btnOpenModal" onclick="openModal()">Teste Modal</button> <!--ADD NA EDIÇÃO DE PERFIL -->
+
+        <div class="modal-container">
+            <div class="modal">
+                <img id="deleteProfile" src="" alt="ColetaBlu triste">
+
+                <span>
+                    <p>🌿😢Partir nunca é fácil... ...</p>
+
+                    <p>A ColetaBlu sente sua falta antes mesmo de você ir.</p>
+
+                    <p>Cada ação sua fez a diferença, contribuindo para um mundo mais verde e sustentável.</p>
+
+                    <p>Até logo, amigo! 🌍💙</p>
+                </span>
+
+                <div class="btns">
+                    <button class="btnOK" onclick="closeModal()">OK</button>
+                    <button class="btnClose" onclick="closeModal()">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="excluirPerfil.js"></script>
+</body>
+
+</html>
