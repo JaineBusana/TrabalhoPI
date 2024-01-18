@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Trabalho_PI.Entity;
 
-namespace Trabalho_PI.Repository
+namespace Trabalho_PI.Contracts.Repository
 {
     internal interface IUserRepository
     {
