@@ -1,6 +1,6 @@
-const menu = document.querySelector('.menu');
-const NavMenu = document.querySelector('.nav-menu')
-const NavHome = document.querySelector('.nav-home')
+const menu = document.querySelector('.navigationBar');
+const NavMenu = document.querySelector('.menuNav')
+const NavHome = document.querySelector('.navHome')
 const carousel1 = document.querySelector('.carousel1')
 
 menu.addEventListener('click', () => {
