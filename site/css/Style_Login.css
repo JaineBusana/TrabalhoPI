@@ -1,0 +1,179 @@
+/* FONTES ANTERIORES */
+
+/* @font-face {
+    font-family: Fredoka;
+    src: url(../assets/fonts/Fredoka.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/fonts/Montserrat.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Italic;
+    src: url(../assets/fonts/Montserrat-Italic.ttf);
+} */
+
+@font-face {
+
+    font-family: "mukta_bold";
+    src: url("../assets/fonts/pontoColeta/Mukta-Bold.ttf")
+}
+
+
+@font-face {
+
+    font-family: "mukta_medium";
+    src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
+}
+
+#modal-login {
+    background-color: rgba(0,0,0,.35);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 2;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.entrar {
+    font-size: 45px;
+    color: #307C52;
+    font-family: mukta_bold;
+}
+
+.msg {
+    position: absolute;
+    margin-left: 88px;
+    text-align: center;
+    font-family: mukta_medium;
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+#fundo-login {
+    background-color: #FFF;
+    border-radius: 12px;
+    height: 630px;
+}
+
+#fechar-modal {
+    font-size: 35px;
+    color: #000;
+    margin-left: 5px;
+}
+
+.modal-login-active {
+    display: flex !important;
+}
+
+#foto-fundo {
+    margin-left: 73px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+#login {
+    background-color: #3B5284;
+    border-radius: 20px;
+    color: #FFF;
+    width: 150px ;
+    height: 40px ;
+    padding: 5px;
+    margin-left: 117px;
+    margin-top: 73px;
+}
+
+#usuario {
+    color: #307C52;
+    font-size: 22px;
+    margin-left: 70px;
+    font-family: mukta_medium;
+}
+
+#logo {
+    margin-top: 45px;
+    width: 70px;
+    height: 70px;
+    margin-left: 90px;
+}
+
+#esqueci-senha {
+    margin-left: 210px;
+    font-size: 14px;
+    color: #94B447;
+}
+
+#insert-usuario {
+    border-radius: 15px;
+    margin-left: 70px;
+    width: 250px;
+    height: 28px;
+    border-width: 2px;
+    background-color: #e5e5e5;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: small;
+    outline: none;
+}
+
+#insert-usuario:active,
+#insert-usuario:focus  {
+    border-color: #3B5284;
+    border-width: 2px;
+}
+
+#insert-senha:active,
+#insert-senha:focus  {
+    border-color: #3B5284;
+    border-width: 2px;
+}
+
+#insert-senha {
+    border-radius: 15px;
+    width: 250px;
+    height: 28px;
+    margin-left: 70px;
+    border-width: 2px;
+    background-color: #e5e5e5;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: small;
+    outline: none;
+}
+
+#senha {
+    color: #307C52;
+    margin-top: 15px;
+    font-size: 22px;
+    margin-left: 70px;
+    font-family: mukta_medium;
+}
+
+.cadastrar {
+    margin-top: 105px;
+    font-size: 14px;
+}
+
+#link-cadastrar {
+    color: #94B447;
+}
+
+@media(max-width: 970px) {
+    #foto-fundo {
+        margin-left: 73px;
+        border-radius: 12px;
+        display: none;
+    }
+
+    #fundo-login {
+        background-color: #FFF;
+        border-radius: 12px;
+        padding-right: 60px;
+    }
+}
