@@ -3,11 +3,17 @@
     font-family: "mukta_bold";
     src: url("../assets/fonts/pontoColeta/Mukta-Bold.ttf")
 }
+
+@font-face {
+
+    font-family: "mukta_medium";
+    src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: mukta_bold;
+    font-family: mukta_medium !important;
     list-style: none;
     text-decoration: none;
 }
@@ -75,6 +81,8 @@ body {
     background: #307A50;
 
 }
+
+
 
 #owl-demo .item img {
     display: block;
