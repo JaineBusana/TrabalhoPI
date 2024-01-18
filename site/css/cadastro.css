@@ -37,35 +37,35 @@ main h1 {
 aside h1 {
     margin: 1px;
 }
-#texto {
+#text {
     color: #fff;
     text-align: center;
 }
-#texto p{
+#text p{
     color: #fff;
     text-align: center;
     margin: 5px;
 }
 
-#saudacoes{
+#greetings{
     display: grid;
     direction: column;
     
 }
-#saudacoes-image{
+#greetingsImage{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 5px;
 }
 
-#logo-image {
+#logoImage {
     width: 90px;
 }
-#logo-image-verde{
+#logoImageVerde{
     display: none;
 }
-#image-rodape {
+#imageFooter{
     visibility: hidden;
     height: 0px;
 }
@@ -202,13 +202,13 @@ p {
         text-align: center;
     }
 
-    #logo-image-verde {
+    #logoImageVerde {
         width: 190px;
         margin: 15px;
         margin: 40px auto;
         display: block;
     }
-    #logo-image{
+    #logoImage{
         display: none;
     }
     aside {
@@ -220,19 +220,19 @@ p {
         color: #5D6E1E;
     }
 
-    #texto p{
+    #text p{
         margin-bottom: 61px;
         color: #5D6E1E;
         font-size: 17px;
     }
-    #texto h1{
+    #text h1{
         margin-bottom: 50px;
 
         color: #5D6E1E;
     }
 
 
-    #image-rodape {
+    #imageFooter {
         height: 100px;
         width: 600px;
         display: block;
