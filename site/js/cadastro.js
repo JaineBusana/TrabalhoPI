@@ -3,7 +3,7 @@ const nome = document.getElementById("nome")
 const email = document.getElementById("email")
 const password = document.getElementById("password")
 const passwordConfirmation = document.getElementById("password-confirmation");
-const firstForm = document.querySelector('.first-form');
+const firstForm = document.querySelector('.firstForm');
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
