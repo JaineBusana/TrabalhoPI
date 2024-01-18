@@ -1,0 +1,88 @@
+/* @font-face {
+    font-family: "mukta_bold";
+    src: url("./assets/img/fonts/Mukta-Bold.ttf")
+}
+
+@font-face {
+    font-family: "mukta_medium";
+    src: url("./assets/img/fonts/Mukta-Medium.ttf")
+}
+
+
+.separador {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.categorias {
+
+    font-size: 18px;
+    border: 2px solid #fff;
+    background-color: #94B447;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 50px;
+    font-weight: 600;
+
+}
+
+.card {
+    box-shadow: -3px 2px 12px -4px rgba(0, 0, 0, 0.91);
+    margin-top: 50px;
+    border-radius: 22px;
+    border-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.25);
+    height: 379px;
+    width: 249px;
+}
+
+.imagem-card {
+    border-radius: 4px;
+}
+
+.separador a {
+    font-family: mukta_bold;
+    cursor: pointer;
+}
+
+#quantidades {
+    color: #5D6E1E;
+    font-weight: 600;
+}
+
+.informações {
+    color: #5D6E1E;
+}
+
+#tag-venda,
+#tag-compra {
+    font-size: 18px;
+    margin-left: -8px;
+    margin-top: 8px;
+    border-radius: 3px;
+    background-color: #3B5284;
+    color: #fff;
+    align-items: center;
+    width: 70px;
+    height: 30px;
+    padding-left: 5px;
+}
+
+#tag-compra {
+    background-color: #94B447;
+
+}
+
+.separador p {
+    font-family: mukta_medium;
+}
+
+@media (max-width: 960px) {
+
+    .separador-container {
+        display: flex;
+        justify-content: center;
+    }
+} */

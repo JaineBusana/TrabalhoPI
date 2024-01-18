@@ -3,6 +3,7 @@ const nome = document.getElementById("nome")
 const email = document.getElementById("email")
 const password = document.getElementById("password")
 const passwordConfirmation = document.getElementById("password-confirmation");
+const firstForm = document.querySelector('.firstForm');
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -84,10 +85,12 @@ function checkForm() {
     const isValid = [...formItens].every((item) => {
         return item.className === "form-content"
     });
-    if (isValid) {
-      
-            window.location = "index-logado.html"
-    }
+
+    if (isValid) {      
+            firstForm.classList.toggle('ativo');
+        }
+
+        
 
 }
 

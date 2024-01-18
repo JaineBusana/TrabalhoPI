@@ -1,0 +1,168 @@
+@font-face {
+
+    font-family: "mukta_bold";
+    src: url("../assets/fonts/pontoColeta/Mukta-Bold.ttf")
+}
+
+@font-face {
+
+    font-family: "mukta_medium";
+    src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: mukta_medium !important;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #FEFEEB;
+
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    width: 100%;
+    background: #FEFEEB;
+    transition: all 0.5s;
+
+}
+
+.navigation img {
+    width: 30%;
+    min-width: 100px;
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+
+}
+
+.navigation ul li a {
+    color: #6A994E;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+
+}
+
+.navigation ul li a:hover {
+    color: #A7C957;
+
+}
+
+.navigationBar {
+    cursor: pointer;
+    display: none;
+}
+
+.navigationBar .bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: #6A994E;
+    margin: 5px auto;
+    transition: all 0.3s;
+
+}
+
+.navigationBar .bar:nth-child(1),
+.navigationBar .bar:nth-child(3) {
+    background: #307A50;
+
+}
+
+
+
+#owl-demo .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+.carousel1 {
+    max-width: 1200px;
+
+}
+.carousel1 img{
+    width: 80%;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;  
+}
+
+@media(max-width:970px) {
+    .navigation {
+        padding: 18px 20px;
+        z-index: 2;
+
+    }
+
+    .navigationBar {
+        display: block;
+
+    }
+
+    .navigationBar.ativo .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .navigationBar.ativo .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navigationBar.ativo .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .menuNav {
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 50%;
+        height: 100%;
+        flex-direction: column;
+        background: #FEFEEB;
+        transition: 0.3s;
+
+    }
+
+    .menuNav.ativo {
+        right: 0;
+    }
+
+
+    .navItem {
+        margin: 10px 0;
+        padding: 0px;
+    }
+
+    .carousel1 {
+        max-width: 600px;
+        position: absolute;
+        z-index: 1;
+
+    }
+
+    section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
