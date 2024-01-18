@@ -11,6 +11,10 @@
     src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
 }
 
+.index{
+    max-width: 1200px;
+    margin: auto;
+}
 .centralizeParagraph{
     display: flex;
     justify-content: center;
@@ -24,6 +28,10 @@
 
 .paragraphQuemPodeUsarImg {
     display: none;
+}
+
+.paragraphQuemPodeUsarLogo {
+    display: flex;
 }
 
 .paragraphQuemSomosImg,
@@ -156,64 +164,6 @@
 
 @media(min-width: 970px) {
 
-    /* #header-logo-menu {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .header-logo {
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .header-btn-login {
-        width: 110px;
-        font-size: 20px;
-    }
-
-    .header-menu {
-        align-items: center;
-        position: relative;
-    }
-
-    .header-btn-menu {
-        display: none;
-    }
-
-    .header-modal-menu {
-        display: flex;
-        justify-content: end;
-        width: 600px;
-        background-color: #FAF3E1;
-    }
-
-    .header-menu li {
-        color: #307c52;
-        font-size: 22px;
-        padding-left: 5px;
-    }
-
-    /* .header-modal-menu-residuos li{
-        color: #FAF3E1;
-    } */
-
-    /* .header-modal-menu-residuos,
-    .footer-modal-menu-residuos {
-        padding-left: 0px;
-        position: absolute;
-        background-color: #6A994E;
-        color: #FAF3E1;
-        border-radius: 30px;
-        font-family: mukta_medium !important;
-        height: 198px;
-        width: 150px;
-        padding: 10px;
-    }
-
-    .footer-modal-menu-residuos{
-        position: relative !important;
-    } */
-
     #paragraphQuemSomos,
     .paragraphQuemPodeUsar,
     .paragraphComoAjudamos {
@@ -225,6 +175,9 @@
         display: flex;
         height: 350px;
         margin: 30px 100px;
+    }
+    .paragraphQuemPodeUsarLogo {
+        display: none;
     }
 
     .paragraphQuemSomosImgMapa {
@@ -306,133 +259,3 @@
 
 }
 
-/* FONTES ANTERIORES */
-
-/* @font-face {
-    font-family: Fredoka;
-    src: url(../assets/fonts/Fredoka.ttf);
-}
-
-@font-face {
-    font-family: Montserrat;
-    src: url(../assets/fonts/Montserrat.ttf);
-}
-
-@font-face {
-    font-family: Montserrat-Italic;
-    src: url(../assets/fonts/Montserrat-Italic.ttf);
-} */
-
-/* body {
-    background-color: #FAF3E1;
-} */
-
-/* .error {
-    background-color: #3B5284;
-    border-radius: 22px;
-    border: solid 1px #FAF3E1;
-    color: #FAF3E1;
-    /* margin: 5px 160px; */
-/* width: 190px; */
-/*margin-bottom: 10px;
-    padding: 5px 10px;
-    font-family: mukta_bold;
-    text-align: center;
-} */
-
-/* .header-logo {
-    height: 80px;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-} */
-
-/* .header-btn-login {
-    width: 100px;
-    height: 40px;
-    padding-left: 5px;
-    border: 1px solid #5D6E1E;
-    border-radius: 20px;
-    font-size: 18px;
-    font-family: mukta_bold !important;
-} */
-
-/* .header-btn-menu {
-    width: 100px;
-    height: 40px;
-}
-
-#header-btn-menu-texto {
-    transform: rotate(90deg);
-    color: #307c52;
-    font-size: 30px;
-    font-weight: 700;
-} */
-
-
-/* .modal-active {
-    display: block !important; 
-}*/
-
-/* 
-.header-modal-menu {
-    display: none;
-    background-color: #307c52;
-    width: 100vw;
-    margin-top: 10px;
-    padding: 10px;
-}
-
-.header-modal-menu li:hover {
-    color: #5D6E1E;
-}
-
-.header-menu {
-    display: flex;
-    justify-content: center;
-}
-
-.header-menu-padding{
-    padding-bottom: 15px;
-}
-
-.header-menu li {
-    padding-right: 18px;
-    color: #FAF3E1;
-    font-size: 20px;
-    font-family: Montserrat !important;
-}
-
-.header-modal-menu-residuos,
-.footer-modal-menu-residuos {
-    display: none;
-    padding-left: 30px;
-    color: #fff;
-} */
-
-/* .header-pesquisa {
-    width: 600px;
-    height: 40px;
-    border: 2px solid #307c52;
-    border-radius: 20px;
-    background-color: #fff;
-    outline: none;
-    padding-left: 10px;
-    padding-right: 96px;
-    margin-right: -96px;
-}
-
-.header-pesquisa:active,
-.header-pesquisa:focus {
-    border-color: #307c52;
-    border-width: 3px;
-}
-
-.header-btn-pesquisa {
-    width: 100px;
-    height: 40px;
-    border: 2px solid #307c52;
-    border-radius: 20px;
-    background-color: #307c52;
-    font-family: Fredoka !important;
-} */

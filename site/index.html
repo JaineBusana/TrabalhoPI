@@ -7,7 +7,9 @@
   <link rel="stylesheet" href="./css/style-index.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/Style_Login.css">
-  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.theme.default.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./assets/1.3.0/css/line-awesome.css">
   <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
@@ -69,7 +71,7 @@
 
   <header>
     <nav class="navigation">
-      
+
       <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
       <div class="navHome">
         <ul class="menuNav">
@@ -87,75 +89,89 @@
         <span class="bar"></span>
       </div>
     </nav>
-
-
   </header>
 
-  <div class="my-5">
-    <div id="paragraphQuemSomos">
-      <div class="paragraphQuemSomosLogoText centralizeParagraph">
-        <div class="paragraphQuemSomosImg centralizeParagraph">
-          <img src="./assets/img/bola-logo-verde-claro.png" alt="Logo do site, sendo um criculo com uma folha dentro"
-            class="h-20">
-        </div>
-        <div class="paragraphQuemSomosText mx-[15px]">
-          <h1>Quem somos?</h1>
-          <p>
-            Somos uma aplicação regional criada pelo alunos do curso #Entra21 da edição de 2023.
-          </p>
-        </div>
 
-      </div>
-      <div class="grid justify-items-center">
-        <img src="./assets/img/mapaBlumenau.png" alt="Mapa de Blumenau" class="paragraphQuemSomosImgMapa">
-      </div>
+  <section>
+    <div class="owl-carousel owl-theme carousel1">
+      <div class="item"><img src="./imagens/bannerColetablu.png"></div>
+      <div class="item"><img src="./imagens/balloons-1786430_1280.jpg"></div>
+      <div class="item"><img src="./imagens/fantasy-2506830_1920.jpg"></div>
+      <div class="item"><img src="./imagens/girl-2696947_1920.jpg"></div>
+      <div class="item"><img src="./imagens/thunderstorm-3440450_1280.jpg"></div>
+      <div class="item"><img src="./imagens/tree-736885_1920.jpg"></div>
+      <div class="item"><img src="./imagens/turntable-1337986_1280.jpg"></div>
     </div>
-  </div>
+  </section>
 
-  <div class="paragraphQuemPodeUsar">
-    <div class="paragraphQuemPodeUsarImg">
-      <img src="./assets/img/pessoas-reciclando.png" alt="pessoas descartando residuos">
-    </div>
-    <div class="paragraphQuemPodeUsarText">
-      <div id="paragraphQuemPodeUsarLogoText">
-        <div class="paragraphQuemPodeUsarLogo centralizeParagraph">
-          <img src="./assets/img/MicrosoftTeams-image (7).png" alt="Logo do site, sendo um criculo com uma folha dentro"
-            class="h-20">
-        </div>
-        <div class="mx-[15px]">
-          <h1>Quem pode usar a ferramenta?</h1>
-          <p>
-            Todos! Toda população de Blumenau
-            que esteja preocupada com o destino
-            correto de resíduos e queira ter uma renda extra.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="my-5">
-    <div class="paragraphComoAjudamos">
-      <div class="paragraphComoAjudamosLogoText centralizeParagraph">
-        <div class="paragraphComoAjudamosImg centralizeParagraph">
-          <img src="./assets/img/bola-logo-verde-claro.png" alt="Logo do site, sendo um criculo com uma folha dentro"
-            class="h-20">
-        </div>
-        <div class="paragraphComoAjudamosText mx-[15px]">
-          <h1>Como a Coletablu te ajuda?</h1>
-          <p>
-            Conectando interessados em realizar o descarte de materiais com os coletoresde resíduos,
-            facilitando o processo e gerando recompensas. <br>Se interessou?
-          </p>
-          <div class="flex">
-            <button class="m-4"><a href="cadastro.html">Cadastre-se</a></button>
+  <div class="index">
+    <div class="my-5">
+      <div id="paragraphQuemSomos">
+        <div class="paragraphQuemSomosLogoText centralizeParagraph">
+          <div class="paragraphQuemSomosImg centralizeParagraph">
+            <img src="./assets/img/bola-logo-verde-claro.png" alt="Logo do site, sendo um criculo com uma folha dentro"
+              class="h-20">
+          </div>
+          <div class="paragraphQuemSomosText mx-[15px]">
+            <h1>Quem somos?</h1>
+            <p>
+              Somos uma aplicação regional criada pelo alunos do curso #Entra21 da edição de 2023.
+            </p>
           </div>
 
         </div>
+        <div class="grid justify-items-center">
+          <img src="./assets/img/mapaBlumenau.png" alt="Mapa de Blumenau" class="paragraphQuemSomosImgMapa">
+        </div>
       </div>
+    </div>
 
-      <div class="grid justify-items-center">
-        <img src="./assets/img/circulo-de-residuos.png" alt="Circulo com resíduos" class="paragraphComoAjudamosResiduos">
+    <div class="paragraphQuemPodeUsar">
+      <div class="paragraphQuemPodeUsarImg">
+        <img src="./assets/img/pessoas-reciclando.png" alt="pessoas descartando residuos">
+      </div>
+      <div class="paragraphQuemPodeUsarText">
+        <div id="paragraphQuemPodeUsarLogoText">
+          <div class="paragraphQuemPodeUsarLogo centralizeParagraph">
+            <img src="./assets/img/MicrosoftTeams-image (7).png"
+              alt="Logo do site, sendo um criculo com uma folha dentro" class="h-20">
+          </div>
+          <div class="mx-[15px]">
+            <h1>Quem pode usar a ferramenta?</h1>
+            <p>
+              Todos! Toda população de Blumenau
+              que esteja preocupada com o destino
+              correto de resíduos e queira ter uma renda extra.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="my-5">
+      <div class="paragraphComoAjudamos">
+        <div class="paragraphComoAjudamosLogoText centralizeParagraph">
+          <div class="paragraphComoAjudamosImg centralizeParagraph">
+            <img src="./assets/img/bola-logo-verde-claro.png" alt="Logo do site, sendo um criculo com uma folha dentro"
+              class="h-20">
+          </div>
+          <div class="paragraphComoAjudamosText mx-[15px]">
+            <h1>Como a Coletablu te ajuda?</h1>
+            <p>
+              Conectando interessados em realizar o descarte de materiais com os coletoresde resíduos,
+              facilitando o processo e gerando recompensas. <br>Se interessou?
+            </p>
+            <div class="flex">
+              <button class="m-4"><a href="cadastro.html">Cadastre-se</a></button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="grid justify-items-center">
+          <img src="./assets/img/circulo-de-residuos.png" alt="Circulo com resíduos"
+            class="paragraphComoAjudamosResiduos">
+        </div>
       </div>
     </div>
   </div>
@@ -184,9 +200,24 @@
 
   </footer>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <!-- <script src="./js/index.js"></script> -->
   <script src="./js/login.js"></script>
   <script src="./js/nav.js"></script>
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/owlCarousel/dist/owl.carousel.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".carousel1").owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        dots: false,
+        center: true,
+        items: 1,
+      });
+
+    });
+  </script>
+
 </body>
 
 </html>

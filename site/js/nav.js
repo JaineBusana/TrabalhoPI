@@ -8,19 +8,3 @@ menu.addEventListener('click', () => {
   NavMenu.classList.toggle('ativo');
   NavHome.classList.toggle('ativo')
 })
-$(document).ready(function () {
-
-  $(".owl-carousel").owlCarousel();
-
-});
-$(document).ready(function () {
-            $(".carousel1").owlCarousel({
-                loop: true,
-                autoplay: true,
-                autoplayTimeout: 5000,
-                dots: false,
-                center: true,
-                items: 1,
-            });
-
-        });
