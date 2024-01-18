@@ -1,17 +1,4 @@
-@font-face {
-    font-family: Fredoka;
-    src: url(./assets/fonts/Fredoka.ttf);
-}
 
-@font-face {
-    font-family: Montserrat;
-    src: url(./assets/fonts/Montserrat.ttf);
-}
-
-@font-face {
-    font-family: Montserrat-Italic;
-    src: url(./assets/fonts/Montserrat-Italic.ttf);
-}
 
 * {
     margin: 0;
@@ -110,7 +97,6 @@ section {
 @media(max-width:970px) {
     .navigation {
         padding: 18px 20px;
-        position: absolute;
         z-index: 2;
 
     }
