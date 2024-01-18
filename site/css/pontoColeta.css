@@ -37,7 +37,8 @@
 
 #localNext {
 
-    margin-top: 80px;
+    /* margin-top: 80px; ANTES DA GAMBIARRA DA NAV */
+    margin-top: -34px;
     margin-left: 60px !important;
     margin-bottom: -20px;
 }
