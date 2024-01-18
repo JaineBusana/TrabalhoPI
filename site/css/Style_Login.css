@@ -28,7 +28,7 @@
     src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
 }
 
-#modal-login {
+#modalLogin {
     background-color: rgba(0,0,0,.35);
     top: 0;
     bottom: 0;
@@ -41,9 +41,9 @@
     justify-content: center;
 }
 
-.entrar {
+.enterLogin {
     font-size: 45px;
-    color: #307C52;
+    color: #6A994E;
     font-family: mukta_bold;
 }
 
@@ -56,30 +56,30 @@
     margin-top: 7px;
 }
 
-#fundo-login {
+#backgroundLogin {
     background-color: #FFF;
     border-radius: 12px;
     height: 630px;
 }
 
-#fechar-modal {
+#closeModal {
     font-size: 35px;
-    color: #000;
+    color: #6A994E;
     margin-left: 5px;
 }
 
-.modal-login-active {
+.modalLoginActive {
     display: flex !important;
 }
 
-#foto-fundo {
+#backgroundPhoto {
     margin-left: 73px;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
 }
 
 #login {
-    background-color: #3B5284;
+    background-color: #A7C957;
     border-radius: 20px;
     color: #FFF;
     width: 150px ;
@@ -89,8 +89,8 @@
     margin-top: 73px;
 }
 
-#usuario {
-    color: #307C52;
+#userLogin {
+    color: #6A994E;
     font-size: 22px;
     margin-left: 70px;
     font-family: mukta_medium;
@@ -103,13 +103,13 @@
     margin-left: 90px;
 }
 
-#esqueci-senha {
+#forgotPasswordLogin {
     margin-left: 210px;
     font-size: 14px;
-    color: #94B447;
+    color: #A7C957;
 }
 
-#insert-usuario {
+#insertUserLogin {
     border-radius: 15px;
     margin-left: 70px;
     width: 250px;
@@ -122,19 +122,19 @@
     outline: none;
 }
 
-#insert-usuario:active,
-#insert-usuario:focus  {
-    border-color: #3B5284;
+#insertUserLogin:active,
+#insertUserLogin:focus  {
+    border-color: #A7C957;
     border-width: 2px;
 }
 
-#insert-senha:active,
-#insert-senha:focus  {
-    border-color: #3B5284;
+#insertPasswordLogin:active,
+#insertPasswordLogin:focus  {
+    border-color: #A7C957;
     border-width: 2px;
 }
 
-#insert-senha {
+#insertPasswordLogin {
     border-radius: 15px;
     width: 250px;
     height: 28px;
@@ -147,31 +147,31 @@
     outline: none;
 }
 
-#senha {
-    color: #307C52;
+#passwordLogin {
+    color: #6A994E;
     margin-top: 15px;
     font-size: 22px;
     margin-left: 70px;
     font-family: mukta_medium;
 }
 
-.cadastrar {
+.registerLogin {
     margin-top: 105px;
     font-size: 14px;
 }
 
-#link-cadastrar {
-    color: #94B447;
+#linkRegisterLogin {
+    color: #6A994E;
 }
 
 @media(max-width: 970px) {
-    #foto-fundo {
+    #backgroundPhoto {
         margin-left: 73px;
         border-radius: 12px;
         display: none;
     }
 
-    #fundo-login {
+    #backgroundLogin {
         background-color: #FFF;
         border-radius: 12px;
         padding-right: 60px;
