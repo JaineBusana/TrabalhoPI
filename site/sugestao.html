@@ -40,20 +40,19 @@
             <section class="headerSuggestion">
                 <h1>Torne-nos Melhores: Compartilhe suas Sugestões!</h1>
             </section>
+            
+            <form action="https://formsubmit.co/contactcoletablu@gmail.com " método="POST"  id="formSuggestion" class="formSuggestion" >
+            <div class="formContentSuggestion">
+                <textarea id="textSuggestion" name="message" placeholder="Digite sua mensagem aqui..." required ></textarea>
+                <a>Mensagem de Erro</a>
+            </div>
 
-            <!--  VER SE VAMOS TER UM EMAIL -->
-            <form id="formSuggestion" class="formSuggestion" action="https://formsubmit.co/EMAILAQUI" method="POST">
-                <div class="formContentSuggestion">
-                    <textarea id="textSuggestion" name="message" placeholder="Digite sua mensagem aqui..."></textarea>
-                    <a>Mensagem de Erro</a>
-                </div>
+            <div class="msgSuggestion"></div>
+            <button type="submit">Enviar Sugestão</button>
 
-                <div class="msgSuggestion"></div>
-                <button type="submit">Enviar Sugestão</button>
-
-                <input type="hidden" name="_subject" value="Novo Contato!"> <!--  APARECER COMO TÍTULO DO EMAIL -->
-                <input type="text" name="_honey" style="display:none"> <!--  EVITA IR PARA SPAM -->
-                <input type="hidden" name="_captcha" value="false"> <!--  DESABILITA CAPTCHA -->
+            <input type="hidden" name="_subject" value="Novo Contato!"> <!--  APARECER COMO TÍTULO DO EMAIL -->
+            <input type="text" name="_honey" style="display:none"> <!--  EVITA IR PARA SPAM -->
+            <input type="hidden" name="_captcha" value="false"> <!--  DESABILITA CAPTCHA -->
 
             </form>
 
