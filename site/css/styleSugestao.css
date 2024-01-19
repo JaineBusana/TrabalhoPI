@@ -1,0 +1,114 @@
+@font-face {
+
+    font-family: "mukta_bold";
+    src: url("../assets/fonts/pontoColeta/Mukta-Bold.ttf")
+}
+
+
+@font-face {
+
+    font-family: "mukta_medium";
+    src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
+}
+
+
+#textSuggestion{
+    max-width: 600px;
+    width: 100%;
+    height: 200px;
+    outline: none;
+    border: none;
+    background-color:  #fafafa;
+    padding: 10px;
+    color: #000;
+    resize: none;
+}
+
+#textSuggestion:focus {
+    border: none;
+}
+
+#suggestion {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: mukta_medium;
+}
+
+.containerSuggestion {
+    background-color: #fafafa; /* MUDAR COR  */
+    border-radius: 22px;
+    margin: 14px;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: 0 3px 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.headerSuggestion {
+    background-color: #6A994E;
+    padding: 24px;
+    text-align: center;
+    color: #FFF;
+}
+
+.formSuggestion {
+    padding: 18px;
+}
+
+.formContentSuggestion {
+    margin-bottom: 25px;
+    padding-bottom: 18px;
+    position: relative;
+}
+
+.formContentSuggestion label {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.formContentSuggestion input, select {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+    font-family: mukta_medium;
+}
+
+.formContentSuggestion a {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+}
+
+.formSuggestion button {
+    background-color: #6A994E;
+    color: #FFF;
+    width: 100%;
+    border-radius: 22px;
+    padding: 10px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 14px;
+    font-family: mukta_medium;
+}
+
+.form-content.error input {
+    border-color: #ff3b25;
+}
+
+.form-content.error a {
+    color: #ff3b25;
+    font-size: 14px;
+    visibility: visible;
+    margin-bottom: 5px;
+}
+
+.sucess {
+    color: #307c52;
+    font-family: mukta_bold;
+}
