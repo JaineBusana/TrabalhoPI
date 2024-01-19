@@ -72,6 +72,7 @@
     border-radius: 22px;
     background-color: #FFFFFF;
     color: #6A994E;
+    font-family: mukta_medium ;
 }
 
 
@@ -79,7 +80,7 @@
 
     display: flex;
     /* position: relative; */
-    width: 103px;
+    width: 120px;
     height: 43px;
     margin-left: -17px;
     border-radius: 22px, 0px, 22px, 22px;
@@ -96,7 +97,7 @@ form {
 .designInputPonto {
 
     height: 44px;
-    width: 295px;
+    width: 390px;
     background-color: white;
     display: inline-flex;
     justify-content: space-evenly;
@@ -105,7 +106,7 @@ form {
     margin-top: 50px;
     border-radius: 22px;
     border: 1px solid #FFFFFF;
-    font-family: mukta_medium;
+    font-family: mukta_medium ;
 }
 
 
@@ -130,14 +131,22 @@ form {
     margin-left: 40px;
 }
 
+.card{
+   padding-bottom: 40px;
+}
 
-.card {
+.card, .mainTitleCard {
     flex-direction: column;
     /* position: relative; */
     margin-left: 33px;
     color: black;
     font-family: mukta_medium;
     font-size: 15px;
+}
+
+#allCards{
+    display: flex;
+    COLUMN-GAP: 130px;
 }
 
 .titleCard {
