@@ -11,11 +11,11 @@
     src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
 }
 
-.navigation{
+.navigation {
     margin-top: -30px !important;
 }
 
-.main{
+.main {
     margin-top: 50px;
 }
 
@@ -72,7 +72,7 @@
     border-radius: 22px;
     background-color: #FFFFFF;
     color: #6A994E;
-    font-family: mukta_medium ;
+    font-family: mukta_medium;
 }
 
 
@@ -97,7 +97,7 @@ form {
 .designInputPonto {
 
     height: 44px;
-    width: 390px;
+    width: 300px;
     background-color: white;
     display: inline-flex;
     justify-content: space-evenly;
@@ -106,7 +106,7 @@ form {
     margin-top: 50px;
     border-radius: 22px;
     border: 1px solid #FFFFFF;
-    font-family: mukta_medium ;
+    font-family: mukta_medium;
 }
 
 
@@ -131,11 +131,12 @@ form {
     margin-left: 40px;
 }
 
-.card{
-   padding-bottom: 40px;
+.card {
+    padding-bottom: 40px;
 }
 
-.card, .mainTitleCard {
+.card,
+.mainTitleCard {
     flex-direction: column;
     /* position: relative; */
     margin-left: 33px;
@@ -144,9 +145,10 @@ form {
     font-size: 15px;
 }
 
-#allCards{
+#allCards {
     display: flex;
-    COLUMN-GAP: 130px;
+    COLUMN-GAP: 55px;
+
 }
 
 .titleCard {
@@ -166,9 +168,10 @@ form {
 
 @media(min-width:750px) {
 
-    .main{
+    .main {
         margin-left: 250px;
     }
+
     #instructionPontoColeta,
     #doubtsPontoColeta,
     #titlePontoColeta {
@@ -182,10 +185,20 @@ form {
     }
 
 
-    #btnLocalPonto{
+    .designInputPonto {
+        width: 390px;
+    }
+
+
+    #btnLocalPonto {
         display: flex;
         margin-top: 60px;
         padding: 8px 80px;
+    }
+
+    #allCards {
+        COLUMN-GAP: 130px;
+        
     }
 
 }
