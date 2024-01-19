@@ -43,6 +43,7 @@ body {
 
 .navigation ul {
     display: flex;
+    padding-top: 0px;
     align-items: center;
     gap: 5rem;
 
@@ -167,6 +168,12 @@ section {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .navigation ul {  
+        padding-top: 50px;
+        gap: 3rem;
+    
     }
 
 }
