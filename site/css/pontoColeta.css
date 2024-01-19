@@ -19,6 +19,10 @@
     margin-top: 50px;
 }
 
+#coletaBluImg{
+    display: none;
+}
+
 #titlePontoColeta,
 #localNext {
 
@@ -172,7 +176,7 @@ form {
 @media(min-width:750px) {
 
     .main {
-        margin-left: 250px;
+        margin-left: 170px;
     }
 
     #instructionPontoColeta,
@@ -210,6 +214,15 @@ form {
         white-space: nowrap;
         text-overflow: ellipsis;
         width: 200px;
+    }
+
+    #coletaBluImg{
+        display: flex;
+        margin-right: 30px;
+        width: 500px;
+        height: 445px;
+        float: right;
+        border-radius: 22px;
     }
 
 
