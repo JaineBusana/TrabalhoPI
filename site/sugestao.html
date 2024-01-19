@@ -40,19 +40,20 @@
             <section class="headerSuggestion">
                 <h1>Torne-nos Melhores: Compartilhe suas Sugestões!</h1>
             </section>
-            
-            <form action="https://formsubmit.co/contactcoletablu@gmail.com " método="POST"  id="formSuggestion" class="formSuggestion" >
-            <div class="formContentSuggestion">
-                <textarea id="textSuggestion" name="message" placeholder="Digite sua mensagem aqui..." required ></textarea>
-                <a>Mensagem de Erro</a>
-            </div>
 
-            <div class="msgSuggestion"></div>
-            <button type="submit">Enviar Sugestão</button>
+            <form action="https://api.staticforms.xyz/submit" método="POST" id="formSuggestion" class="formSuggestion">
+                <div class="formContentSuggestion">
+                    <textarea id="textSuggestion" name="message" placeholder="Digite sua mensagem aqui..."
+                        required></textarea>
+                    <a>Mensagem de Erro</a>
+                </div>
 
-            <input type="hidden" name="_subject" value="Novo Contato!"> <!--  APARECER COMO TÍTULO DO EMAIL -->
-            <input type="text" name="_honey" style="display:none"> <!--  EVITA IR PARA SPAM -->
-            <input type="hidden" name="_captcha" value="false"> <!--  DESABILITA CAPTCHA -->
+                <div class="msgSuggestion"></div>
+                <button type="submit">Enviar Sugestão</button>
+
+                <input type="hidden" name="accessKey" value="079cceed-f2b2-4d8d-a41e-9446986a71d7">
+                <input type="text" name="honeypot" style="display: none;">
+
 
             </form>
 
