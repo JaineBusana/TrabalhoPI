@@ -15,6 +15,8 @@
     display: none;
 }
 
+
+
 #textSuggestion {
     max-width: 600px;
     width: 100%;
@@ -56,7 +58,7 @@
     color: #FFF;
 }
 
-.formSuggestion {
+form {
     padding: 18px;
 }
 
@@ -73,7 +75,7 @@
     visibility: hidden;
 }
 
-.formSuggestion button {
+form button {
     background-color: #6A994E;
     color: #FFF;
     width: 100%;
@@ -94,11 +96,6 @@
     font-family: mukta_bold !important;
 }
 
-.sucess {
-    color: #307c52;
-    font-family: mukta_bold !important;
-
-}
 
 @media (min-width:750px) {
     #suggestion {
