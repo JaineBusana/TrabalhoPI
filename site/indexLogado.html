@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/styleIndex.css">
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/StyleLogin.css">
+  <link rel="stylesheet" href="./css/styleIndexLogado.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.theme.default.min.css">
@@ -30,44 +30,6 @@
 </head>
 
 <body>
-  <form id="formLogin">
-    <div id="modalLogin" class="">
-      <div id="backgroundLogin" class="flex">
-        <div>
-          <button id="closeModal" onclick="CLOSE_MODAL_LOGIN()"><i class="las la-times-circle"></i></button>
-          <div class="flex">
-            <img id="logo" class="h-20" src="./assets/img/MicrosoftTeams-image (7).png" alt="Logo da ColetaBlu">
-            <h1 class=" mt-12 enterLogin">Entrar</h1>
-          </div>
-          <div class="msg"> </div>
-          <div class="">
-            <h1 id="userLogin" class="mt-10">Usuário</h1>
-          </div>
-          <div>
-            <input id="insertUserLogin" class="mb-2 " type="text" onfocus="this.value='';">
-          </div>
-          <div>
-            <h1 id="passwordLogin" class="">Senha</h1>
-          </div>
-          <div class="flex">
-            <input id="insertPasswordLogin" class="" type="password" onfocus="this.value='';">
-          </div>
-          <div>
-            <a id="forgotPasswordLogin" class="" href="">Esqueci a senha!</a>
-          </div>
-          <div>
-            <button id="login">Login</button>
-          </div>
-          <div class="flex">
-            <h1 class="registerLogin ml-5">Não tem uma conta?</h1>
-            <a id="linkRegisterLogin" class="registerLogin ml-1" href="cadastro.html">Cadastre-se!</a>
-          </div>
-        </div>
-        <img id="backgroundPhoto" src="./assets/img/Foto_Fundo_Login.jpg" alt="Imagen fundo"
-          style="max-width:100%;height:auto;">
-      </div>
-    </div>
-  </form>
 
   <header>
     <nav class="navigation">
@@ -78,8 +40,9 @@
           <li class="navItem "><a href="index.html">Home</a></li>
           <li class="navItem"><a href="pontoColeta.html">Pontos de coleta</a></li>
           <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
-          <li class="navItem" onclick="SHOW_MODAL_LOGIN()"><a href="#">Login</a></li>
-
+          <li class="navItem" onclick="SHOW_MODAL_LOGIN()"> <svg xmlns="http://www.w3.org/2000/svg" class="imgLoginNav bi bi-person">
+            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+          </svg><a href="perfil.html">Perfil</a></li>
 
         </ul>
       </div>

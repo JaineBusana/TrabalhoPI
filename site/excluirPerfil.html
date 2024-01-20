@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/excluirPerfil.css">
+    <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
 
     <title>Perfil do usuário</title>
 </head>
@@ -19,6 +20,7 @@
                 <ul class="nav-menu">
                     <li class="nav-item "><a href="index.html">Home</a></li>
                     <li class="nav-item"><a href="pontoColeta.html">Pontos de coleta</a></li>
+                    <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
                     <li class="nav-item"><a href="#">Login</a></li>
 
 
@@ -32,10 +34,10 @@
         </nav>
     </header>
     <main>
-        <button class="btnOpenModal" onclick="openModal()">Teste Modal</button> <!--ADD NA EDIÇÃO DE PERFIL -->
+        <button class="btnOpenModalDelete" onclick="openModalDelete()">Teste Modal</button> <!--ADD NA EDIÇÃO DE PERFIL -->
 
-        <div class="modal-container">
-            <div class="modal">
+        <div class="modalContainerDelete">
+            <div class="modalDelete">
                 <img id="deleteProfile" src="./assets/img/excluirConta/planetaTriste.png" alt="ColetaBlu triste">
 
                 <span>
@@ -48,9 +50,9 @@
                     <p>Até logo, amigo! 🌍💚</p>
                 </span>
 
-                <div class="btns">
-                    <button class="btnOK" onclick="closeModalHome()">Excluir Conta</button>
-                    <button class="btnClose" onclick="closeModal()">Cancelar</button>
+                <div class="btnsDelete">
+                    <button class="btnOK" onclick="closeModalDeleteHome()">Excluir Conta</button>
+                    <button class="btnClose" onclick="closeModalDelete()">Cancelar</button>
                 </div>
             </div>
         </div>

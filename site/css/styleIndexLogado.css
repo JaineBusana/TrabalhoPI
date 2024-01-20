@@ -1,4 +1,12 @@
-
+.imgLoginNav {
+    margin-left: 10px;
+    margin-top: -10px;
+    margin-bottom: -5px;
+    height: 20px;
+    width: 30px;
+    fill: #6A994E;;
+}
+/* 
 .header-btn-login {
     width: 100px;
     height: 60px;
@@ -8,13 +16,13 @@
     justify-content: center;
 }
 
-.header-menu-login{
+.header-menu-login {
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
-.header-modal-menu-login{
+.header-modal-menu-login {
     display: none;
     height: 118px;
     width: 118px;
@@ -30,6 +38,6 @@
     z-index: 1
 }
 
-.header-modal-menu-login li:hover{
+.header-modal-menu-login li:hover {
     color: #307c52;
-}
+} */

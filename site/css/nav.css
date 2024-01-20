@@ -38,10 +38,12 @@ body {
 .navigation img {
     width: 30%;
     min-width: 100px;
+    
 }
 
 .navigation ul {
     display: flex;
+    padding-top: 0px;
     align-items: center;
     gap: 5rem;
 
@@ -97,19 +99,21 @@ body {
 }
 .carousel1 img{
     width: 80%;
+    
 }
 
 section {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;  
+    margin-top: 10px; 
 }
 
 @media(max-width:970px) {
     .navigation {
         padding: 18px 20px;
-        z-index: 2;
+        position: relative;
+        z-index: 1001; 
 
     }
 
@@ -156,6 +160,7 @@ section {
         max-width: 600px;
         position: absolute;
         z-index: 1;
+        
 
     }
 
@@ -163,6 +168,12 @@ section {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .navigation ul {  
+        padding-top: 50px;
+        gap: 3rem;
+    
     }
 
 }
