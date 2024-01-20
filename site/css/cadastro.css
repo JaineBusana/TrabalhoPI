@@ -89,19 +89,20 @@ aside h1 {
 .formulario p{
     margin-bottom: 10px;
 }
-#login-alternativo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-   
+.checkboxSerColetor{
+    display: flex;
+    margin: 0px;
+    justify-content: center;
 }
-#face{
-    justify-self: end;
-    width: 20px;
-    margin-right: 25px;
-}
-#google{
-    width: 20px;
-    margin-left: 25px;
+.checkboxSerColetor input {
+    width: 25px!important;
+    margin: 5px;
+} 
+.checkboxSerColetor label{
+    margin: 5px;
+    font-weight: 700;
+    font-family: mukta_bold;
+    font-size: 20px!important;
 }
 
 .form {
