@@ -88,6 +88,7 @@ function checkForm() {
 
     if (isValid) {      
             firstForm.classList.toggle('ativo');
+            console.log(password.value);
         }
 
         
