@@ -4,22 +4,40 @@ const email = document.getElementById("email")
 const password = document.getElementById("password")
 const passwordConfirmation = document.getElementById("password-confirmation");
 const firstForm = document.querySelector('.firstForm');
+const secondForm = document.querySelector('#second-form')
+const btnProx = document.querySelector('#btnProx')
+const btnCadastro = document.querySelector('.btnCadastro')
+const checkbox = document.querySelector('#btnSejacoletor')
+
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
-    checkForm()
+    checkForm();
     
 })
-nome.addEventListener ("blur", () => {
+
+checkbox.addEventListener('click', function (event)  {
+    checkbox.classList.toggle('ativo');
+    btnCadastro.classList.toggle('ativo');
+    btnProx.classList.toggle('ativo'); 
+})
+btnProx.addEventListener('click' , function(event){
+    event.preventDefault();
+    checkFormProx();
+})
+
+
+
+nome.addEventListener("blur", () => {
     checkInputNome()
 });
-email.addEventListener ("blur" , () => {
+email.addEventListener("blur", () => {
     checkInputEmail()
 });
-password.addEventListener ("blur" , () => {
+password.addEventListener("blur", () => {
     checkInputPassword()
 });
-passwordConfirmation.addEventListener ("blur" , () => {
+passwordConfirmation.addEventListener("blur", () => {
     checkInputPasswordConfirmation()
 });
 
@@ -86,12 +104,34 @@ function checkForm() {
         return item.className === "form-content"
     });
 
-    if (isValid) {      
-            firstForm.classList.toggle('ativo');
-            console.log(password.value);
-        }
+    if (isValid) {
+        window.location = "indexLogado.html"
+      
+    }else{
+        console.log("a")
+    }
+}
 
-        
+
+function checkFormProx() {
+    checkInputNome();
+    checkInputEmail();
+    checkInputPassword();
+    checkInputPasswordConfirmation();
+    
+
+    const formItens = form.querySelectorAll(".form-content")
+    const isValid = [...formItens].every((item) => {
+        return item.className === "form-content"
+    });
+
+    if (isValid) {
+        firstForm.classList.toggle('ativo');
+    secondForm.classList.toggle('ativo')
+
+    }
+
+
 
 }
 

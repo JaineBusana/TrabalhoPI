@@ -6,12 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/cadastro.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="css/nav.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png"> 
+    <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
     <title>Cadastro</title>
 </head>
 
 <body>
+    <header>
+        <nav class="navigation">
+
+            <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
+            <div class="navHome">
+                <ul class="menuNav">
+                    <li class="navItem "><a href="index.html">Home</a></li>
+                    <li class="navItem"><a href="pontoColeta.html">Pontos de coleta</a></li>
+                </ul>
+            </div>
+            <div class="navigationBar">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
     <main>
         <aside>
             <div id="greetings">
@@ -42,6 +60,11 @@
                         <a>Mensagem de erro</a>
                     </div>
                     <div class="form-content">
+                        <label for="cpf">Cpf</label>
+                        <input type="cpf" id="cpf" placeholder="Digite seu Cpf" />
+                        <a>Mensagem de erro</a>
+                    </div>
+                    <div class="form-content">
                         <label for="password">Senha</label>
                         <input type="password" id="password" placeholder="Digite sua senha" />
                         <a>Mensagem de erro</a>
@@ -51,19 +74,23 @@
                         <input type="password" id="password-confirmation" placeholder="Digite sua senha novamente" />
                         <a>Mensagem de erro</a>
                     </div>
-                    <div class="form-content checkboxSerColetor ">
-                        <input type="checkbox" id="checkboxSerColetor" />
-                        <label for="checkboxSerColetor">Seja coletor</label>
-                        <a>Mensagem de erro</a>
+                    <div class="sejaColetor">
+                        <div id="btnSejacoletor" class="btnSejacoletor"></div>
+                        <p>Seja coletor</p>
                     </div>
-                    <div id="submit">
+                    <div id="submit" class="btnCadastro">
                         <button href="./index.html" type="submit">Cadastrar</button>
+                    </div>
+                    <div class="btnProx">
+                        <div id="btnProx">
+                            Prox->
+                        </div>
                     </div>
                     <p>Já passui uma conta? <a id="link" href="./index.html">Login</a></p>
                 </div>
 
-                    
-                <div class="second-form">
+
+                <div id="second-form">
                     <div>
                         <div class="form-content">
                             <label for="cnpj">Cnpj</label>
@@ -79,7 +106,8 @@
 
                         <div class="form-content">
                             <label for="nome do estabelecimento ">Nome do estabelecimento</label>
-                            <input type="text" id="omeDoEstabelecimento " placeholder="Digite o nome do estabelecimento " />
+                            <input type="text" id="omeDoEstabelecimento "
+                                placeholder="Digite o nome do estabelecimento " />
                             <a>Mensagem de erro</a>
                         </div>
 
@@ -88,14 +116,19 @@
                             <input type="text" id="telefone " placeholder="Digite o telefone " />
                             <a>Mensagem de erro</a>
                         </div>
+                        <div id="submit" class="btnCadastro">
+                            <button href="./index.html" type="submit">Cadastrar</button>
+                        </div>
+
                     </div>
-                    
+
                 </div>
             </form>
 
         </div>
     </main>
     <script src="./js/cadastro.js"></script>
+    <script src="js/nav.js"></script>
 </body>
 
 </html>
