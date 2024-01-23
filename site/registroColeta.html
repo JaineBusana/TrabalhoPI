@@ -41,8 +41,8 @@
         <!--ADD NO BUTTON DE REGISTRAR -->
         <div class="modalContainerHistoric">
             <div class="modalHistoric">
-                <label for="placeIdentifier">CPF</label>
-                <input type="text" id="placeIdentifier" placeholder="Digite o CPF do usuário..." />
+                <label for="placeIdentifier"> Informe o CPF do cliente</label>
+                <input type="text" id="placeIdentifier" placeholder="Digite aqui..." />
                 <a>Mensagem de Erro</a>
                 <div class="msgHistoricModal"></div>
                 <button type="submit" class="btnConfirm">Confirmar</button>
@@ -56,8 +56,18 @@
 
                 <form id="formRegister" class="formRegister">
                     <div class="formContentRegister">
-                        <label for="placeNameRegister">Nome</label>
+                        <label for="placeNameRegister">Nome do Produto:</label>
                         <input type="text" id="placeNameRegister" placeholder="Digite o nome do ponto de coleta..." />
+                        <a>Mensagem de Erro</a>
+                    </div>
+                    <div class="formContentRegister">
+                        <label for="placeQuantityRegister">Unidades:</label>
+                        <input type="text" id="placeQuantityRegister" placeholder="Digite a quantidade..." />
+                        <a>Mensagem de Erro</a>
+                    </div>
+                    <div class="formContentRegister">
+                        <label for="placeDateRegister">Data:</label>
+                        <input type="date" id="placeDateRegister" />
                         <a>Mensagem de Erro</a>
                     </div>
             </div>
