@@ -36,6 +36,49 @@
 
     </header>
 
+    <main class="mainHistoric">
+        <div class="containerHistoric">
+            <section class="headerHistoric">
+                <h1>Registro de EcoScore</h1>
+            </section>
+
+            <form id="formHistoric" class="formHistoric">
+                <div class="formHistoricContent">
+                    <label for="placeName">Nome</label>
+                    <input type="text" id="placeName" placeholder="Digite o nome do ponto de coleta..." />
+                    <a>Mensagem de Erro</a>
+                </div>
+
+                <div class="formHistoricContent">
+                    <label for="address">Endereço</label>
+                    <input type="address" id="address" placeholder="Digite o endereço do local..." />
+                    <a>Mensagem de Erro</a>
+                </div>
+
+                <div class="formHistoricContent">
+                    <label for="phoneNumber">Número de contato</label>
+                    <input type="phoneNumber" id="phoneNumber" placeholder="Digite um número de contato..." />
+                    <a>Mensagem de Erro</a>
+                </div>
+
+                <div class="formHistoricContent">
+                    <label for="residue">Classificação do resíduo</label>
+                    <select class="select" id="selectResidue">
+                        <option value="">Selecione o resíduo</option>
+                        <option value="1">Pet</option>
+                        <option value="2">Vidro</option>
+                        <option value="3">Metal</option>
+                    </select>
+                    <a>Aqui vai a mensagem de erro....</a>
+                </div>
+                <div class="msgHistoric"></div>
+                <button type="submit">Cadastrar Ponto de Coleta</button>
+
+            </form>
+
+        </div>
+    </main>
+
 </body>
 <script src="./js/registroColeta.js"></script>
 <script src="./js/nav.js"></script>
