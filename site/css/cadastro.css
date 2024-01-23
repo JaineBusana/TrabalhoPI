@@ -199,7 +199,9 @@ p {
     align-items: center;
     justify-content: center;
 }
-
+#textoSejaColetor{
+    font-size: 11px;
+}
 .btnSejacoletor {
     width: 20px;
     height: 20px;
@@ -256,9 +258,9 @@ p {
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        background-color: #fff;
+        background-color: #FEFEEB;
         width: 1000px;
-        height: 600px;
+        height: 650px;
         margin: 110px auto;
         border-radius: 20px;
         box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
@@ -283,14 +285,20 @@ p {
 
     aside {
         width: 500px;
-        height: 600px;
+        height: 650px;
         background-color: #FEFEEB;
         border-bottom-left-radius: 20px;
         border-top-left-radius: 20px;
         color: #5D6E1E;
         
+        
     }
-
+    .form{
+        background-color: #FEFEEB;
+    }
+    h1{
+        background-color: #FEFEEB;
+    }
     #text p {
         margin-bottom: 61px;
         color: #5D6E1E;
@@ -298,7 +306,7 @@ p {
     }
 
     #text h1 {
-        margin-bottom: 50px;
+        margin-bottom: 99px;
 
         color: #5D6E1E;
     }
