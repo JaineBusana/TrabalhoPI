@@ -51,11 +51,11 @@
 }
 
 .btnConfirm {
-  display: flex;
   justify-content: space-between;
   margin-top: 10px;
   font-size: medium;
   padding: 10px;
+  align-items: center;
   border: none;
   border-radius: 15px;
   color: white;
@@ -70,12 +70,13 @@
   left: 0;
   visibility: hidden;
 }
-.modalHistoric label {
+
+.modalHistoric label, .formContentRegister label {
   display: inline-block;
   margin-bottom: 4px;
 }
 
-.modalHistoric input, select {
+.modalHistoric input, select, .formContentRegister input, select {
   display: block;
   width: 100%;
   border-radius: 8px;
@@ -83,20 +84,15 @@
   border: 2px solid #dfdfdf;
   font-family: mukta_medium;
 }
-.modalHistoric.error input {
+.modalHistoric.error input, .formContentRegister.error input {
   border-color: #ff3b25;
 }
 
-.modalHistoric.error a {
+.modalHistoric.error a, .formContentRegister.error a {
   color: #ff3b25;
   font-size: 14px;
   visibility: visible;
   margin: 5px;
-}
-
-.sucess {
-  color: #307c52;
-  font-family: mukta_bold;
 }
 
 
@@ -111,6 +107,54 @@
     transform: translate3d(0, 0, 0);
   }
 }
+
+.containerRegister {
+  background-color: #fafafa;
+  border-radius: 22px;
+  margin: 14px;
+  max-width: 600px;
+  width: 100%;
+  box-sizing: 0 3px 5px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.register{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: mukta_medium;
+}
+
+.headerRegister {
+  background-color: #6A994E;
+  padding: 24px;
+  text-align: center;
+  color: #FFF;
+}
+
+.formRegister {
+  padding: 18px;
+  
+}
+
+.formContentRegister {
+  margin-bottom: 25px;
+  padding-bottom: 18px;
+  position: relative;
+}
+
+.formRegister a {
+  bottom: -8px;
+  left: 0;
+  visibility: hidden;
+}
+
+.register {
+  display: none;
+}
+
+
 
 @media (max-width: 500px) {
   .modalHistoric {

@@ -1,4 +1,6 @@
 const modal = document.querySelector('.modalContainerHistoric')
+const modalRegister = document.querySelector('.modalContainerHistoric')
+const secondModal = document.querySelector('.register');
 
 function openModalHistoric() {
     modal.classList.add('active')
@@ -6,6 +8,10 @@ function openModalHistoric() {
 
 function closeModalHistoric() {
     modal.classList.remove('active')
+}
+
+function openModalRegister() {
+    modal.classList.add('active')
 }
 
 window.addEventListener("load", (event) => {
@@ -26,6 +32,9 @@ window.addEventListener("load", (event) => {
         } else {
             const formItem = identifier.parentElement;
             formItem.className = "modalHistoric"
+            secondModal.style.display = "flex";
+            modal.style.display = "none";
+
         }
 
     }
