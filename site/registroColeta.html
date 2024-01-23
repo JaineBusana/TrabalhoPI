@@ -37,7 +37,21 @@
     </header>
 
     <main class="mainHistoric">
-        <div class="containerHistoric">
+        <button class="btnOpenModalHistoric" onclick="openModalHistoric()">Teste Modal</button>
+        <!--ADD NO BUTTON DE REGISTRAR -->
+        <div class="modalContainerHistoric">
+            <div class="modalHistoric">
+                <label for="placeIdentifier">CPF</label>
+                <input type="text" id="placeIdentifier" placeholder="Digite o CPF do usuário..." />
+                <a>Mensagem de Erro</a>
+                
+                    <button class="btnConfirm" onclick="closeModalHistoric()">Confirmar</button>
+            
+            </div>
+        </div>
+
+
+        <!-- <div class="containerHistoric">
             <section class="headerHistoric">
                 <h1>Registro de EcoScore</h1>
             </section>
@@ -76,7 +90,7 @@
 
             </form>
 
-        </div>
+        </div> -->
     </main>
 
 </body>

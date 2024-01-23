@@ -1,100 +1,112 @@
+const modal = document.querySelector('.modalContainerHistoric')
+
+function openModalHistoric() {
+    modal.classList.add('active')
+}
+
+function closeModalHistoric() {
+    modal.classList.remove('active')
+}
+
+
 window.addEventListener("load", (event) => {
 
-    const form = document.getElementById("formHistoric");
-    const placeName = document.getElementById("placeName")
-    const address = document.getElementById("address")
-    const phoneNumber = document.getElementById("phoneNumber")
-    const residue = document.getElementById("selectResidue");
+
+    const formHistoric = document.getElementById("formHistoric");
+    const placeIdentifier = document.getElementById("placeIdentifier")
+    // const address = document.getElementById("address")
+    // const phoneNumber = document.getElementById("phoneNumber")
+    // const residue = document.getElementById("selectResidue");
 
 
-    form.addEventListener("submit", (e) => {
+    formHistoric.addEventListener("submit", (e) => {
         e.preventDefault();
 
         checkForm();
     })
 
-    address.addEventListener("blur", () => {
-        checkInputAddress();
+    // address.addEventListener("blur", () => {
+    //     checkInputAddress();
+    // })
+
+
+    placeIdentifier.addEventListener("blur", () => {
+        checkInputPlaceIdentifier();
     })
 
+    // phoneNumber.addEventListener("blur", () => {
+    //     checkInputPhoneNumber();
+    // })
 
-    placeName.addEventListener("blur", () => {
-        checkInputPlaceName();
-    })
-
-    phoneNumber.addEventListener("blur", () => {
-        checkInputPhoneNumber();
-    })
-
-    residue.addEventListener("blur", () => {
-        checkInputResidue();
-    })
+    // residue.addEventListener("blur", () => {
+    //     checkInputResidue();
+    // })
 
 
-    function checkInputPlaceName() {
-        const placeNameValue = placeName.value;
+    function checkInputPlaceIdentifier() {
+        const placeIdentifierValue = placeIdentifier.value;
 
-        if (placeNameValue === "") {
-            errorInput(placeName, " NOME do Ponto de Coleta não preenchido!")
+        if (placeIdentifierValue === "") {
+            errorInput(placeIdentifier, " CPF não preenchido!")
         } else {
-            const formItem = placeName.parentElement;
+            const formItem = placeIdentifier.parentElement;
             formItem.className = "formHistoricContent"
         }
 
     }
 
-    function checkInputAddress() {
-        const addressValue = address.value;
+    // function checkInputAddress() {
+    //     const addressValue = address.value;
 
-        if (addressValue === "") {
-            errorInput(address, "ENDEREÇO não preenchido!")
-        } else {
-            const formItem = address.parentElement;
-            formItem.className = "formHistoricContent"
-        }
-
-
-    }
+    //     if (addressValue === "") {
+    //         errorInput(address, "ENDEREÇO não preenchido!")
+    //     } else {
+    //         const formItem = address.parentElement;
+    //         formItem.className = "formHistoricContent"
+    //     }
 
 
-    function checkInputPhoneNumber() {
-        const phoneNumberValue = phoneNumber.value;
-
-        if (phoneNumberValue === "") {
-            errorInput(phoneNumber, "NÚMERO DE CONTATO não preenchido!")
-        } else if (phoneNumberValue.length < 9) {
-            errorInput(phoneNumber, "O número de contato precisa ter  9 CARACTERES.")
-        } else {
-            const formItem = phoneNumber.parentElement;
-            formItem.className = "formHistoricContent"
-        }
+    // }
 
 
-    }
+    // function checkInputPhoneNumber() {
+    //     const phoneNumberValue = phoneNumber.value;
+
+    //     if (phoneNumberValue === "") {
+    //         errorInput(phoneNumber, "NÚMERO DE CONTATO não preenchido!")
+    //     } else if (phoneNumberValue.length < 9) {
+    //         errorInput(phoneNumber, "O número de contato precisa ter  9 CARACTERES.")
+    //     } else {
+    //         const formItem = phoneNumber.parentElement;
+    //         formItem.className = "formHistoricContent"
+    //     }
 
 
-    function checkInputResidue() {
-        const residueValue = residue.value;
-
-        if (residueValue === "") {
-            errorInput(residue, "RESÍDUO não preenchido!")
-        } else {
-            const formItem = residue.parentElement;
-            formItem.className = "formHistoricContent"
-        }
+    // }
 
 
-    }
+    // function checkInputResidue() {
+    //     const residueValue = residue.value;
+
+    //     if (residueValue === "") {
+    //         errorInput(residue, "RESÍDUO não preenchido!")
+    //     } else {
+    //         const formItem = residue.parentElement;
+    //         formItem.className = "formHistoricContent"
+    //     }
+
+
+    // }
 
 
     function checkForm() {
-        checkInputPlaceName();
-        checkInputAddress();
-        checkInputPhoneNumber();
-        checkInputResidue();
+        checkInputPlaceIdentifier();
+        // checkInputAddress();
+        // checkInputPhoneNumber();
+        // checkInputResidue();
         const sucessMessage = document.querySelector('.msgHistoric')
 
-        const formItems = form.querySelectorAll(".formHistoricContent")
+        const formItems = formHistoric.querySelectorAll(".formHistoricContent")
 
         const isValid = [...formItems].every((item) => {
             return item.className === "formHistoricContent"
@@ -102,13 +114,14 @@ window.addEventListener("load", (event) => {
 
         if (isValid) {
 
-            sucessMessage.innerHTML = "Cadastro salvo!";
+            sucessMessage.innerHTML = "Confirmado!";
             sucessMessage.classList.add("sucess");
 
             setTimeout(() => {
                 sucessMessage.innerHTML = "";
                 sucessMessage.classList.remove("sucess");
             }, 5000);
+            closeModalHistoric();
         }
 
     }
