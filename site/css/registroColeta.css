@@ -1,179 +1,124 @@
 @font-face {
 
-    font-family: "mukta_bold";
-    src: url("../assets/fonts/pontoColeta/Mukta-Bold.ttf")
+  font-family: "mukta_bold";
+  src: url("../assets/fonts/pontoColeta/Mukta-Bold.ttf")
 }
 
 
 @font-face {
 
-    font-family: "mukta_medium";
-    src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
+  font-family: "mukta_medium";
+  src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
 }
+
 .btnOpenModalHistoric {
-    font-size: x-large;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #6A994E;
-    color: white;
-    cursor: pointer;
-    font-family: mukta_medium;
-  }
-
-  .modalContainerHistoric {
-    width: 100vw;
-    position: fixed;
-    margin: inherit;
-    display: none;
-    z-index: 999;
-    justify-content: center;
-  }
-  
-  .modalHistoric {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    background-color: white;
-    border-radius: 10px;
-    width: 30%;
-    font-family: mukta_medium;
-    text-align: justify;
-  }
-
-  .active {
-    display: flex;
-  }
-  
-  .active .modalHistoric {
-    animation: modal .4s;
-  }
-
-  .btnConfirm {
-    background-color: #6A994E;
-    font-size: medium;
-    padding: 10px;
-    border: none;
-    border-radius: 15px;
-    color: white;
-    cursor: pointer;
-    font-family: mukta_medium;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-   }
-  
-.mainHistoric {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: mukta_medium;
+  font-size: x-large;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6A994E;
+  color: white;
+  cursor: pointer;
+  font-family: mukta_medium;
 }
 
-.containerHistoric {
-    background-color: #fafafa; /* MUDAR COR  */
-    border-radius: 22px;
-    margin: 14px;
-    max-width: 600px;
-    width: 100%;
-    box-sizing: 0 3px 5px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
+.modalContainerHistoric {
+  width: 100vw;
+  position: fixed;
+  margin: inherit;
+  display: none;
+  z-index: 999;
+  justify-content: center;
 }
 
-.headerHistoric {
-    background-color: #6A994E;
-    padding: 24px;
-    text-align: center;
-    color: #FFF;
+.modalHistoric {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  width: 30%;
+  font-family: mukta_medium;
+  text-align: justify;
 }
 
-.formHistoric {
-    padding: 18px;
+.active {
+  display: flex;
 }
 
-.formHistoricContent {
-    margin-bottom: 25px;
-    padding-bottom: 18px;
-    position: relative;
-} 
-
-.formHistoricContent label {
-    display: inline-block;
-    margin-bottom: 4px;
-} 
-
-.formHistoricContent input, select, .modalContainerHistoric input {
-    display: block;
-    width: 100%;
-    border-radius: 8px;
-    padding: 8px;
-    border: 2px solid #dfdfdf;
-    font-family: mukta_medium;
+.active .modalHistoric {
+  animation: modal .4s;
 }
 
-#selectResidue option{
-    font-family: mukta_medium;
-} 
+.btnConfirm {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: medium;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+  font-family: mukta_medium;
+  background-color: #6A994E;
 
-.formHistoricContent a {
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    visibility: hidden;
 }
 
-.modalContainerHistoric a{
-    bottom: -8px;
-    visibility: hidden;
+.modalHistoric a {
+  bottom: -8px;
+  left: 0;
+  visibility: hidden;
+}
+.modalHistoric label {
+  display: inline-block;
+  margin-bottom: 4px;
 }
 
-.formHistoric button {
-    background-color: #6A994E;
-    color: #FFF;
-    width: 100%;
-    border-radius: 22px;
-    padding: 10px;
-    border: 0;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 14px;
-    font-family: mukta_medium;
-} 
-
-.formHistoricContent.error input, .modalContainerHistoric.error input {
-    border-color: #ff3b25;
+.modalHistoric input, select {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  padding: 8px;
+  border: 2px solid #dfdfdf;
+  font-family: mukta_medium;
+}
+.modalHistoric.error input {
+  border-color: #ff3b25;
 }
 
-.formHistoricContent.error a, .modalContainerHistoric.error a {
-    color: #ff3b25;
-    font-size: 14px;
-    visibility: visible;
-    margin-bottom: 5px;
+.modalHistoric.error a {
+  color: #ff3b25;
+  font-size: 14px;
+  visibility: visible;
+  margin: 5px;
 }
 
 .sucess {
-    color: #307c52;
-    font-family: mukta_bold;
+  color: #307c52;
+  font-family: mukta_bold;
 }
 
+
 @keyframes modal {
-    from {
-      opacity: 0;
-      transform: translate3d(0, -60px, 0);
-    }
-    to {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-    }
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
   }
-   @media (max-width: 500px) {
-    .modalHistoric {
-      padding: 10px;
-      width: 80%;
-    }   
-  
-    .btnConfirm button {
-      font-size: smaller;
-    }
-   }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (max-width: 500px) {
+  .modalHistoric {
+    padding: 10px;
+    width: 80%;
+  }
+
+  .btnConfirm button {
+    font-size: smaller;
+  }
+}
