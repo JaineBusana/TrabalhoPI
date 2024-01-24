@@ -115,7 +115,18 @@ select {
   cursor: pointer;
   margin-top: 14px;
   font-family: mukta_medium;
+  margin-right: 20px;
 }
+
+.btnsRegister{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.btnCloseHistoric {
+  background-color: brown !important;
+ }
 
 .formContentHistoric.error input {
   border-color: #ff3b25;
