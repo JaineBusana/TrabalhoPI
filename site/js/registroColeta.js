@@ -2,6 +2,7 @@ const form = document.getElementById('formHistoric');
 const btnAddHistoric = document.getElementById('btnAddHistoric');
 const modal = document.querySelector('.containerHistoric');
 
+
 // ABRE E FECHA MODAL⬇️
 function openModalHistoric() {
     modal.classList.add('active')
@@ -63,12 +64,12 @@ window.addEventListener("load", (event) => {
     })
 
 
-    function  checkInputCPF() {
-       
+    function checkInputCPF() {
+
         const cpfValue = placeCpfHistoric.value;
         if (cpfValue === "") {
             errorInput(placeCpfHistoric, "Não preenchido!")
-            
+
         } else if (cpfValue.length < 11) {
             errorInput(placeCpfHistoric, "O CPF precisa ter  11 CARACTERES.")
         } else {
@@ -79,12 +80,12 @@ window.addEventListener("load", (event) => {
 
     }
 
-    function  checkInputName() {
-       
+    function checkInputName() {
+
         const nameValue = placeNameHistoric.value;
         if (nameValue === "") {
             errorInput(placeNameHistoric, "Não preenchido!")
-    
+
         } else {
             const formItem = placeNameHistoric.parentElement;
             formItem.className = "formContentHistoric"
@@ -93,12 +94,12 @@ window.addEventListener("load", (event) => {
 
     }
 
-    function  checkInputQuantity() {
-       
+    function checkInputQuantity() {
+
         const quantityValue = placeQuantityHistoric.value;
         if (quantityValue === "") {
             errorInput(placeQuantityHistoric, "Não preenchida!")
-    
+
         } else {
             const formItem = placeQuantityHistoric.parentElement;
             formItem.className = "formContentHistoric"
@@ -110,7 +111,7 @@ window.addEventListener("load", (event) => {
         checkInputCPF();
         checkInputName();
         checkInputQuantity();
-       
+
         const formItems = form.querySelectorAll(".formContentHistoric")
 
         const isValid = [...formItems].every((item) => {
@@ -119,7 +120,7 @@ window.addEventListener("load", (event) => {
 
         if (isValid) {
             alert("Registro Salvo!")
-            window.location.reload();  
+            window.location.reload();
         }
 
     }
@@ -132,5 +133,11 @@ window.addEventListener("load", (event) => {
     }
 
 
-    
+
 });
+
+
+function closeHistoric() {
+    window.location.reload();
+
+}
