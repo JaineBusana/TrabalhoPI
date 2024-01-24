@@ -22,14 +22,10 @@
   font-family: mukta_medium;
 }
 
-.active {
-  display: flex;
-}
 
 .active .containerHistory {
   animation: modal .4s;
 }
-
 
 .mainHistoric {
   margin-top: 30px;
@@ -48,6 +44,10 @@
   width: 100%;
   box-sizing: 0 3px 5px rgba(0, 0, 0, 0.5);
   overflow: hidden;
+}
+
+.active {
+  display: flex ;
 }
 
 .headerHistory {
