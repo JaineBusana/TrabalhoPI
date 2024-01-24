@@ -7,10 +7,6 @@ function openModalHistoric() {
     modal.classList.add('active')
 }
 
-function closeModalHistoric() {
-    modal.classList.remove('active')
-}
-
 
 // DUPLICA OS INPUTS ⬇️  !!!!!! NOMES DOS INPUTS MULTIPLICAM
 btnAddHistoric.addEventListener('click', function (event) {
