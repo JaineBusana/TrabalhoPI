@@ -98,7 +98,7 @@ select {
 
 .formContentHistoric a {
   position: absolute;
-  bottom: -8px;
+  bottom: -4px;
   left: 0;
   visibility: hidden;
 }

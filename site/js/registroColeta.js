@@ -1,6 +1,7 @@
 const form = document.getElementById('formHistoric');
 const btnAddHistoric = document.getElementById('btnAddHistoric');
 const modal = document.querySelector('.containerHistoric');
+const btnCloseHistoric = document.getElementById('btnCloseHistoric');
 
 
 // ABRE E FECHA MODAL⬇️
@@ -119,7 +120,8 @@ window.addEventListener("load", (event) => {
         });
 
         if (isValid) {
-            alert("Registro Salvo!")
+            
+            alert("Registro Salvo!");
             window.location.reload();
         }
 
@@ -136,8 +138,11 @@ window.addEventListener("load", (event) => {
 
 });
 
+function removeInput() {
+    const inputNew = document.querySelector(".addNewHistoric");
 
-function closeHistoric() {
-    window.location.reload();
-
+    if (inputNew) {
+        inputNew.remove();
+    }
 }
+
