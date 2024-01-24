@@ -39,41 +39,28 @@
     <main class="mainHistoric">
         <button class="btnOpenModalHistoric" onclick="openModalHistoric()">Teste Modal</button>
         <!--ADD NO BUTTON DE REGISTRAR -->
-        <div class="modalContainerHistoric">
-            <div class="modalHistoric">
-                <label for="placeIdentifier"> Informe o CPF do cliente</label>
-                <input type="text" id="placeIdentifier" placeholder="Digite aqui..." />
-                <a>Mensagem de Erro</a>
-                <div class="msgHistoricModal"></div>
-                <button type="submit" class="btnConfirm">Confirmar</button>
-            </div>
-        </div>
-        <div class="register">
-            <div class="containerRegister">
-                <section class="headerRegister">
-                    <h1>Registro de EcoScore</h1>
-                </section>
+        <div class="containerHistory">
+            <section class="headerHistory">
+                <h1>Registro de EcoScore</h1>
+            </section>
 
-                <form id="formRegister" class="formRegister">
-                    <div class="formContentRegister">
-                        <label for="placeNameRegister">Nome do Produto:</label>
-                        <input type="text" id="placeNameRegister" placeholder="Digite o nome do ponto de coleta..." />
+            <form id="formHistory" class="formHistory">
+                <div class="addHistory">
+                    <div class="formContentHistory">
+                        <label for="placeNameHistory">Nome do produto:</label>
+                        <input type="text" id="placeNameHistory" placeholder="Digite aqui..." />
                         <a>Mensagem de Erro</a>
                     </div>
-                    <div class="formContentRegister">
-                        <label for="placeQuantityRegister">Unidades:</label>
-                        <input type="text" id="placeQuantityRegister" placeholder="Digite a quantidade..." />
+                    <div class="formContentHistory">
+                        <label for="placeQuantityHistory">Quantidade:</label>
+                        <input type="text" id="placeQuantityHistory" placeholder="Digite aqui..." />
                         <a>Mensagem de Erro</a>
                     </div>
-                    <div class="formContentRegister">
-                        <label for="placeDateRegister">Data:</label>
-                        <input type="date" id="placeDateRegister" />
-                        <a>Mensagem de Erro</a>
-                    </div>
-            </div>
-        </div>
+                    <button id="btnAddHistory" type="submit"> + </button>
+                </div>
 
 
+                <button id="btnHistory" type="submit"> Registrar</button>
 
     </main>
 
