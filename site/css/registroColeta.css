@@ -75,7 +75,6 @@
 }
 
 .formContentHistoric {
-  margin-bottom: 25px;
   padding-bottom: 18px;
   position: relative;
   margin-left: 25px;
@@ -150,7 +149,7 @@ select {
   .addNewHistoric {
     display: flex;
     justify-content: space-between;
-    margin-left: -15px;
-    margin-right: 52px;
+    margin-left: -25px;
+    margin-right: 40px;
   }
 }
