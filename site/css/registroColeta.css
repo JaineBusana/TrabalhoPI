@@ -22,11 +22,6 @@
   font-family: mukta_medium;
 }
 
-
-.active .containerHistory {
-  animation: modal .4s;
-}
-
 .mainHistoric {
   margin-top: 30px;
   display: flex;
@@ -35,10 +30,10 @@
   font-family: mukta_medium;
 }
 
-.containerHistory {
-  background-color: #fafafa;
-  display: none;
+.containerHistoric {
+  background-color: #fafafa; 
   border-radius: 22px;
+  display: none;
   margin: 14px;
   max-width: 600px;
   width: 100%;
@@ -47,33 +42,37 @@
 }
 
 .active {
-  display: flex ;
+  display: flex;
+  flex-direction: column;
 }
 
-.headerHistory {
+.active .containerHistoric {
+  animation: modal .4s;
+}
+
+.headerHistoric {
   background-color: #6A994E;
   padding: 24px;
   text-align: center;
   color: #FFF;
 }
 
-.formHistory {
+.formHistoric {
   padding: 18px;
 }
 
-.formContentHistory {
+.formContentHistoric {
   margin-bottom: 25px;
   padding-bottom: 18px;
   position: relative;
 }
 
-.formContentHistory label {
+.formContentHistoric label {
   display: inline-block;
   margin-bottom: 4px;
 }
 
-.formContentHistory input,
-select {
+.formContentHistoric input, select {
   display: block;
   width: 100%;
   border-radius: 8px;
@@ -82,15 +81,14 @@ select {
   font-family: mukta_medium;
 }
 
-
-.formContentHistory a {
+.formContentHistoric a {
   position: absolute;
   bottom: -8px;
   left: 0;
   visibility: hidden;
 }
 
-.formHistory button {
+.formHistoric button {
   background-color: #6A994E;
   color: #FFF;
   width: 100%;
@@ -103,11 +101,11 @@ select {
   font-family: mukta_medium;
 }
 
-.formContentHistory.error input {
+.formContentHistoric.error input {
   border-color: #ff3b25;
 }
 
-.formContentHistory.error a {
+.formContentHistoric.error a {
   color: #ff3b25;
   font-size: 14px;
   visibility: visible;

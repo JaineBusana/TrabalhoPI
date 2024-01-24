@@ -1,4 +1,4 @@
-const modal = document.querySelector('.containerHistory')
+const modal = document.querySelector('.containerHistoric')
 
 
 function openModalHistoric() {
