@@ -35,10 +35,12 @@
   border-radius: 22px;
 
 
-  display: flex;  /* DEIXA NONE DEPOIS */
-  flex-direction: column; /* TIRA DEPOIS */
+  display: flex;
+  /* DEIXA NONE DEPOIS */
+  flex-direction: column;
+  /* TIRA DEPOIS */
 
-  
+
   margin: 14px;
   max-width: 600px;
   width: 100%;
@@ -134,7 +136,14 @@ select {
 @media(min-width:750px) {
 
   .addHistoric {
-  display: flex;
-  justify-content: space-around;
-}
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .addNewHistoric {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -15px;
+    margin-right: 52px;
+  }
 }
