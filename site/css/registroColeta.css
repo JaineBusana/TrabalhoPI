@@ -31,14 +31,25 @@
 }
 
 .containerHistoric {
-  background-color: #fafafa; 
+  background-color: #fafafa;
   border-radius: 22px;
-  display: none;
+
+
+  display: flex;  /* DEIXA NONE DEPOIS */
+  flex-direction: column; /* TIRA DEPOIS */
+
+  
   margin: 14px;
   max-width: 600px;
   width: 100%;
   box-sizing: 0 3px 5px rgba(0, 0, 0, 0.5);
   overflow: hidden;
+}
+
+#btnAddHistoric {
+  border-radius: 90px;
+  width: 45px;
+  height: 45px;
 }
 
 .active {
@@ -65,6 +76,8 @@
   margin-bottom: 25px;
   padding-bottom: 18px;
   position: relative;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .formContentHistoric label {
@@ -72,7 +85,8 @@
   margin-bottom: 4px;
 }
 
-.formContentHistoric input, select {
+.formContentHistoric input,
+select {
   display: block;
   width: 100%;
   border-radius: 8px;
@@ -115,4 +129,12 @@
 .sucess {
   color: #307c52;
   font-family: mukta_bold;
+}
+
+@media(min-width:750px) {
+
+  .addHistoric {
+  display: flex;
+  justify-content: space-around;
+}
 }

@@ -37,7 +37,7 @@
     </header>
 
     <main class="mainHistoric">
-        <button class="btnOpenModalHistoric" onclick="openModalHistoric()">Teste Modal</button>
+        <!-- <button class="btnOpenModalHistoric" onclick="openModalHistoric()">Teste Modal</button> -->
         <!--ADD NO BUTTON DE REGISTRAR -->
         <div class="containerHistoric">
             <section class="headerHistoric">
@@ -45,14 +45,21 @@
             </section>
 
             <form id="formHistoric" class="formHistoric">
+
+                <div class="formContentHistoric">
+                    <label for="placeCpfHistoric">Digite o CPF do usuário</label>
+                    <input type="text" id="placeCpfHistoric" placeholder="Digite aqui..." />
+                    <a>Mensagem de Erro</a>
+                </div>
                 <div class="addHistoric">
                     <div class="formContentHistoric">
-                        <label for="placeNameHistoric">Nome do produto:</label>
+                        <label for="placeNameHistoric">Nome do Produto</label>
                         <input type="text" id="placeNameHistoric" placeholder="Digite aqui..." />
                         <a>Mensagem de Erro</a>
                     </div>
+
                     <div class="formContentHistoric">
-                        <label for="placeQuantityHistoric">Quantidade:</label>
+                        <label for="placeQuantityHistoric">Quantidade</label>
                         <input type="text" id="placeQuantityHistoric" placeholder="Digite aqui..." />
                         <a>Mensagem de Erro</a>
                     </div>
