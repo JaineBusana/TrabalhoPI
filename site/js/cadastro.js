@@ -2,12 +2,16 @@ const form = document.getElementById("form")
 const nome = document.getElementById("nome")
 const email = document.getElementById("email")
 const password = document.getElementById("password")
-const passwordConfirmation = document.getElementById("password-confirmation");
-const firstForm = document.querySelector('.firstForm');
+const passwordConfirmation = document.getElementById("password-confirmation")
+const cpf = document.getElementById("cpf")
+const firstForm = document.querySelector('.firstForm')
 const secondForm = document.querySelector('#second-form')
 const btnProx = document.querySelector('#btnProx')
 const btnCadastro = document.querySelector('.btnCadastro')
 const checkbox = document.querySelector('#btnSejacoletor')
+const sejaColetor = document.querySelector('#sejaColetor')
+const sejaUsuario = document.querySelector('#sejaUsuario')
+
 
 
 form.addEventListener("submit", (event) => {
@@ -20,6 +24,8 @@ checkbox.addEventListener('click', function (event)  {
     checkbox.classList.toggle('ativo');
     btnCadastro.classList.toggle('ativo');
     btnProx.classList.toggle('ativo'); 
+    sejaColetor.classList.toggle('ativo'); 
+    sejaUsuario.classList.toggle('ativo'); 
 })
 btnProx.addEventListener('click' , function(event){
     event.preventDefault();
@@ -33,6 +39,9 @@ nome.addEventListener("blur", () => {
 });
 email.addEventListener("blur", () => {
     checkInputEmail()
+});
+cpf.addEventListener("blur", () => {
+    checkInputCpf()
 });
 password.addEventListener("blur", () => {
     checkInputPassword()
@@ -64,7 +73,19 @@ function checkInputEmail() {
         formItem.className = "form-content"
     }
 }
+function checkInputCpf() {
+    const cpfValue = cpf.value;
 
+    if (cpfValue === "") {
+        erroInput(cpf, " O CPF e obrigatório")
+    }else if (cpfValue.length < 11){
+        erroInput(cpf, " Precisa ter no mínimo 11 caracteres")
+    }
+    else {
+        const formItem = password.parentElement;
+        formItem.className = "form-content"
+    }
+}
 function checkInputPassword() {
     const passwordValue = password.value;
 

@@ -47,87 +47,91 @@
         <div class="formulario">
 
             <h1>Criar conta</h1>
-            <form id="form" class="form">
-                <div class="firstForm">
-                    <div class="form-content">
-                        <label for="nome">Nome</label>
-                        <input type="text" id="nome" placeholder="Digite seu nome" />
-                        <a>Mensagem de erro</a>
-                    </div>
-                    <div class="form-content ">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Digite seu email" />
-                        <a>Mensagem de erro</a>
-                    </div>
-                    <div class="form-content">
-                        <label for="cpf">Cpf</label>
-                        <input type="cpf" id="cpf" placeholder="Digite seu Cpf" />
-                        <a>Mensagem de erro</a>
-                    </div>
-                    <div class="form-content">
-                        <label for="password">Senha</label>
-                        <input type="password" id="password" placeholder="Digite sua senha" />
-                        <a>Mensagem de erro</a>
-                    </div>
-                    <div class="form-content">
-                        <label for="password-confirmation">Confirmação de senha</label>
-                        <input type="password" id="password-confirmation" placeholder="Digite sua senha novamente" />
-                        <a>Mensagem de erro</a>
-                    </div>
-                    <div class="sejaColetor">
+            <div id="escolhaTipoCadastro">
+                <div id="btnSejacoletor" class="btnSejacoletor"></div>
+                <h2 id="SejaColetor" class="SejaColetor">Seja EcoColetor</h2>
+                <h2 id="SejaUsuario" class="SejaUsuario">Seja EcoUsuario</h2>
+            </div>
+            <p id ="textoSejaColetor" class="textoSejaColetor">
+                ♻️ Colabore para um planeta mais saudável. <br>
+                Inscreva-se agora como coletor </p>
+        </div>
+        <form id="form" class="form">
+            <div class="firstForm">
+                <div class="form-content">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome" />
+                    <a>Mensagem de erro</a>
+                </div>
+                <div class="form-content ">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Digite seu email" />
+                    <a>Mensagem de erro</a>
+                </div>
+                <div class="form-content">
+                    <label for="cpf">Cpf</label>
+                    <input type="cpf" id="cpf" placeholder="Digite seu Cpf" />
+                    <a>Mensagem de erro</a>
+                </div>
+                <div class="form-content">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Digite sua senha" />
+                    <a>Mensagem de erro</a>
+                </div>
+                <div class="form-content">
+                    <label for="password-confirmation">Confirmação de senha</label>
+                    <input type="password" id="password-confirmation" placeholder="Digite sua senha novamente" />
+                    <a>Mensagem de erro</a>
+                </div>
+                <!-- <div class="sejaColetor">
                         <div id="btnSejacoletor" class="btnSejacoletor"></div>
                         <h2>Seja coletor</h2>
-                    </div>
-                    <div id="textoSejaColetor">
+                    </div> -->
+                <!-- <div id="textoSejaColetor">
                         <p>Faça parte de uma comunidade dedicada
-                         a causar impacto <br>ambiental positivo. <br>♻️ Colabore para um planeta mais saudável. Inscreva-se agora como coletor </p>
+                         a causar impacto <br>ambiental positivo.<br>
+                         ♻️ Colabore para um planeta mais saudável. <br>
+                         Inscreva-se agora como coletor </p>
+                    </div> -->
+                <div id="submit" class="btnCadastro">
+                    <button href="./index.html" type="submit">Cadastrar</button>
+                </div>
+                <div class="btnProx">
+                    <div id="btnProx">
+                        Prox->
+                    </div>
+                </div>
+                <p>Já passui uma conta? <a id="link" href="./index.html">Login</a></p>
+            </div>
+
+
+            <div id="second-form">
+                <div>
+                    <div class="form-content">
+                        <label for="cnpj">Cnpj</label>
+                        <input type="text" id="cnpj" placeholder="Digite seu cnpj" />
+                        <a>Mensagem de erro</a>
+                    </div>
+
+                    <div class="form-content">
+                        <label for="nome do estabelecimento ">Nome do estabelecimento</label>
+                        <input type="text" id="omeDoEstabelecimento " placeholder="Digite o nome do estabelecimento " />
+                        <a>Mensagem de erro</a>
+                    </div>
+
+                    <div class="form-content">
+                        <label for="telefone ">Telefone</label>
+                        <input type="text" id="telefone " placeholder="Digite o telefone " />
+                        <a>Mensagem de erro</a>
                     </div>
                     <div id="submit" class="btnCadastro">
                         <button href="./index.html" type="submit">Cadastrar</button>
                     </div>
-                    <div class="btnProx">
-                        <div id="btnProx">
-                            Prox->
-                        </div>
-                    </div>
-                    <p>Já passui uma conta? <a id="link" href="./index.html">Login</a></p>
-                </div>
-
-
-                <div id="second-form">
-                    <div>
-                        <div class="form-content">
-                            <label for="cnpj">Cnpj</label>
-                            <input type="text" id="cnpj" placeholder="Digite seu cnpj" />
-                            <a>Mensagem de erro</a>
-                        </div>
-
-                        <div class="form-content">
-                            <label for="categoria de residuo">Categoria de residuo</label>
-                            <input type="text" id="categoriaResiduo" placeholder="Digite a categoria de residuo" />
-                            <a>Mensagem de erro</a>
-                        </div>
-
-                        <div class="form-content">
-                            <label for="nome do estabelecimento ">Nome do estabelecimento</label>
-                            <input type="text" id="omeDoEstabelecimento "
-                                placeholder="Digite o nome do estabelecimento " />
-                            <a>Mensagem de erro</a>
-                        </div>
-
-                        <div class="form-content">
-                            <label for="telefone ">Telefone</label>
-                            <input type="text" id="telefone " placeholder="Digite o telefone " />
-                            <a>Mensagem de erro</a>
-                        </div>
-                        <div id="submit" class="btnCadastro">
-                            <button href="./index.html" type="submit">Cadastrar</button>
-                        </div>
-
-                    </div>
 
                 </div>
-            </form>
+
+            </div>
+        </form>
 
         </div>
     </main>

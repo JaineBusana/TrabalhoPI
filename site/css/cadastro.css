@@ -50,7 +50,7 @@ aside h1 {
 #greetings {
     display: grid;
     direction: column;
-
+    
 }
 
 #greetingsImage {
@@ -72,7 +72,47 @@ aside h1 {
     visibility: hidden;
     height: 0px;
 }
+#escolhaTipoCadastro{
+    display: flex;
+    background-color: #FEFEEB;
+    justify-content: center;
+    margin: 5px;
+}
+.btnSejacoletor{
+    width: 15px;
+    height: 15px;
+    border: solid 1px;
+    border-radius: 10px;
+    margin: 3px;
+}
+.btnSejacoletor.ativo{
+    background-color: #3B5284;
+}
 
+.SejaColetor{
+    font-size: 18px;
+    font-family: Montserrat;
+}
+.SejaColetor.ativo{
+    font-size: 18px;
+    font-family: Montserrat;
+   
+    display: none;
+}
+.SejaUsuario{
+    font-size: 15px;
+    font-family: Montserrat;
+    display: none;
+}.SejaUsuario.ativo{
+    font-size: 15px;
+    font-family: Montserrat;
+    display: block;
+}
+.textoSejaColetor{
+    font-size: 12px;
+    background-color: #FEFEEB;
+    font-family: fredoka;
+}
 .formulario {
     background-color: #fff;
     max-width: 450px;
@@ -194,7 +234,8 @@ p {
 
 }
 
-.sejaColetor {
+
+/* .sejaColetor {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -211,7 +252,7 @@ p {
 
 .btnSejacoletor.ativo {
     background-color: #3c49b9
-}
+} */
 
 #btnProx {
     display: flex;
