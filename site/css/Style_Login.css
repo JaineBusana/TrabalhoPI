@@ -28,6 +28,12 @@
     src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
 }
 
+@font-face {
+
+    font-family: "Nunito_Regular";
+    src: url("../assets/fonts/Nunito-Regular.ttf")
+}
+
 #modalLogin {
     background-color: rgba(0,0,0,.35);
     top: 0;
@@ -64,9 +70,11 @@
 }
 
 #closeModal {
-    font-size: 35px;
+    font-size: 30px;
     color: #6A994E;
-    margin-left: 5px;
+    margin-left: 15px;
+    font-family: Nunito_Regular;
+    margin-top: 3px;
 }
 
 .modalLoginActive {
@@ -157,12 +165,13 @@
 }
 
 .registerLogin {
-    margin-top: 75px;
+    margin-top: 80px;
     font-size: 14px;
 }
 
 #linkRegisterLogin {
     color: #6A994E;
+    
 }
 
 @media(max-width: 970px) {
