@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('#placeNameHistoric').select2();
+    $('.placeNameHistoric').select2();
 });
 
 
@@ -23,11 +23,12 @@ btnAddHistoric.addEventListener('click', function (event) {
 
     addInputHistoric.classList.add('formContentHistoric');
 
+
     const divHistoric = `
     <div class="addNewHistoric">
     <div class="formContentHistoric">
     <label for="placeNameHistoric">Nome do Produto</label>
-    <select id="placeNameHistoric">
+    <select class="placeNameHistoric">
     <option value="pet">Selecione</option>
     <option value="pet">Lata de Cerveja</option>
     <option value="pet">Long Neck</option>
@@ -46,13 +47,15 @@ btnAddHistoric.addEventListener('click', function (event) {
     addInputHistoric.innerHTML = divHistoric;
 
     form.insertBefore(addInputHistoric, form.lastElementChild);
+
+
 });
 
 // VALIDAÇÃO ⬇️
 window.addEventListener("load", (event) => {
 
     const placeCpfHistoric = document.getElementById("placeCpfHistoric")
-    const placeNameHistoric = document.getElementById("placeNameHistoric");
+    // const placeNameHistoric = document.getElementById("placeNameHistoric");
     const placeQuantityHistoric = document.getElementById("placeQuantityHistoric");
 
     form.addEventListener("submit", (e) => {
@@ -65,9 +68,9 @@ window.addEventListener("load", (event) => {
         checkInputCPF();
     })
 
-    placeNameHistoric.addEventListener("blur", () => {
-        checkInputName();
-    })
+    // placeNameHistoric.addEventListener("blur", () => {
+    //     checkInputName();
+    // })
 
 
     placeQuantityHistoric.addEventListener("blur", () => {
@@ -91,19 +94,19 @@ window.addEventListener("load", (event) => {
 
     }
 
-    function checkInputName() {
+    // function checkInputName() {
 
-        const nameValue = placeNameHistoric.value;
-        if (nameValue === "") {
-            errorInput(placeNameHistoric, "Não preenchido!")
+    //     const nameValue = placeNameHistoric.value;
+    //     if (nameValue === "") {
+    //         errorInput(placeNameHistoric, "Não preenchido!")
 
-        } else {
-            const formItem = placeNameHistoric.parentElement;
-            formItem.className = "formContentHistoric"
+    //     } else {
+    //         const formItem = placeNameHistoric.parentElement;
+    //         formItem.className = "formContentHistoric"
 
-        }
+    //     }
 
-    }
+    // }
 
     function checkInputQuantity() {
 
@@ -119,12 +122,17 @@ window.addEventListener("load", (event) => {
 
     }
     function checkForm() {
+
+        $('.placeNameHistoric').select2();
+
+        
         checkInputCPF();
         checkInputName();
         checkInputQuantity();
 
         const formItems = form.querySelectorAll(".formContentHistoric")
 
+        
         const isValid = [...formItems].every((item) => {
             return item.className === "formContentHistoric"
         });
