@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $('#placeNameHistoric').select2();
 });
 
@@ -26,8 +26,13 @@ btnAddHistoric.addEventListener('click', function (event) {
     const divHistoric = `
     <div class="addNewHistoric">
     <div class="formContentHistoric">
-        <label for="placeNameHistoric">Nome do Produto</label>
-        <input type="text" id="placeNameHistoric" placeholder="Digite aqui..." />
+    <label for="placeNameHistoric">Nome do Produto</label>
+    <select id="placeNameHistoric">
+    <option value="pet">Selecione</option>
+    <option value="pet">Lata de Cerveja</option>
+    <option value="pet">Long Neck</option>
+    <option value="pet">Garrafa Pet</option>
+    </select>
         <a>Mensagem de Erro</a>
     </div>
 
@@ -125,7 +130,7 @@ window.addEventListener("load", (event) => {
         });
 
         if (isValid) {
-            
+
             alert("Registro Salvo!");
             window.location.reload();
         }
