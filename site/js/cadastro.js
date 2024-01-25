@@ -10,9 +10,6 @@ const btnProx = document.querySelector('#btnProx')
 const btnCadastro = document.querySelector('.btnCadastro')
 const checkbox = document.querySelector('#btnSejacoletor')
 const sejaColetor = document.querySelector('#sejaColetor')
-const sejaUsuario = document.querySelector('#sejaUsuario')
-
-
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -25,7 +22,6 @@ checkbox.addEventListener('click', function (event)  {
     btnCadastro.classList.toggle('ativo');
     btnProx.classList.toggle('ativo'); 
     sejaColetor.classList.toggle('ativo'); 
-    sejaUsuario.classList.toggle('ativo'); 
 })
 btnProx.addEventListener('click' , function(event){
     event.preventDefault();

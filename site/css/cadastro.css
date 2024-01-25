@@ -1,4 +1,117 @@
 @font-face {
+
+    font-family: "mukta_bold";
+    src: url("../assets/fonts/pontoColeta/Mukta-Bold.ttf")
+}
+
+
+@font-face {
+
+    font-family: "mukta_medium";
+    src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
+}
+
+
+.greetings {
+    display: grid;
+    justify-content: center;
+}
+
+aside img {
+    height: 90px;
+    margin: 10px auto;
+}
+
+aside h1 {
+    font-family: mukta_bold;
+    font-size: 30px;
+    margin: auto;
+}
+
+aside p {
+    font-family: mukta_medium;
+    margin: auto;
+    text-align: center;
+}
+
+.register {
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.register h1 {
+    font-family: mukta_bold;
+    margin: auto;
+    font-size: 25px;
+}
+
+#chooseAcontType {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.btnSejaColetor {
+    width: 15px;
+    height: 15px;
+    border: solid 1px;
+    border-radius: 10px;
+}
+
+.btnSejaColetor.ativo {
+    background-color: #3B5284;
+}
+
+#chooseAcontType h2 {
+    font-family: mukta_bold;
+    margin: 0px 0px 3px 5px;
+
+}
+
+#textSejaColetor {
+    font-family: mukta_medium;
+    font-size: 12px;
+    text-align: center;
+}
+
+.formCadastre {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.formContent {
+    font-family: mukta_medium;
+
+}
+
+.formContent label {
+    display: inline-block;
+    margin-bottom: 4px;
+    color: #000;
+    font-size: 15px;
+}
+
+.formContent input {
+    display: block;
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid #b6b2b2;
+    color: #000;
+}
+
+.formContent a {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+}
+
+
+/* @font-face {
     font-family: Fredoka;
     src: url(../assets/fonts/Fredoka.ttf);
 }
@@ -89,25 +202,11 @@ aside h1 {
     background-color: #3B5284;
 }
 
-.SejaColetor{
+.sejaColetor{
     font-size: 18px;
     font-family: Montserrat;
 }
-.SejaColetor.ativo{
-    font-size: 18px;
-    font-family: Montserrat;
-   
-    display: none;
-}
-.SejaUsuario{
-    font-size: 15px;
-    font-family: Montserrat;
-    display: none;
-}.SejaUsuario.ativo{
-    font-size: 15px;
-    font-family: Montserrat;
-    display: block;
-}
+
 .textoSejaColetor{
     font-size: 12px;
     background-color: #FEFEEB;
@@ -254,7 +353,7 @@ p {
     background-color: #3c49b9
 } */
 
-#btnProx {
+/*#btnProx {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -361,4 +460,4 @@ p {
         visibility: visible;
     }
 
-}
+} */
