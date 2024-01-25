@@ -94,6 +94,8 @@
   padding: 8px;
   border: 2px solid #dfdfdf;
   font-family: mukta_medium;
+  margin-bottom: 10px;
+
 }
 
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
@@ -166,7 +168,7 @@
   color: #ff3b25;
   font-size: 14px;
   visibility: visible;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 
