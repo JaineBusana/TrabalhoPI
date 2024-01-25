@@ -70,10 +70,8 @@
 }
 
 #closeModal {
-    font-size: 30px;
     color: #6A994E;
     margin-left: 15px;
-    font-family: Nunito_Regular;
     margin-top: 3px;
 }
 
@@ -106,7 +104,7 @@
 }
 
 #logo {
-    margin-top: 24px;
+    margin-top: 37px;
     width: 70px;
     height: 70px;
     margin-left: 90px;
@@ -174,6 +172,30 @@
     
 }
 
+.barLogin {
+    display: flex;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: #6A994E;
+    margin: 5px auto;
+    transition: all 0.3s;
+ 
+}
+ 
+.menuLogin {
+    margin-top: 15px;
+    margin-left: 12px;
+}
+
+.barLogin:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+ 
+.barLogin:nth-child(2) {
+    transform: translateY(-0px) rotate(-45deg);
+}
+
 @media(max-width: 970px) {
     #backgroundPhoto {
         margin-left: 73px;
@@ -185,5 +207,6 @@
         background-color: #FFF;
         border-radius: 12px;
         padding-right: 60px;
+        width: 400px;
     }
 }
