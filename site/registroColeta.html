@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <title>Registro de Coletas</title>
 </head>
 
@@ -37,8 +42,13 @@
     </header>
 
     <main class="mainHistoric">
+
+        
         <!-- <button class="btnOpenModalHistoric" onclick="openModalHistoric()">Teste Modal</button> -->
         <!--ADD NO BUTTON DE REGISTRAR -->
+
+
+
         <div class="containerHistoric">
             <section class="headerHistoric">
                 <h1>Registro de EcoScore</h1>
@@ -51,10 +61,16 @@
                     <input type="text" id="placeCpfHistoric" placeholder="Digite aqui..." />
                     <a>Mensagem de Erro</a>
                 </div>
+
                 <div class="addHistoric">
                     <div class="formContentHistoric">
                         <label for="placeNameHistoric">Nome do Produto</label>
-                        <input type="text" id="placeNameHistoric" placeholder="Digite aqui..." />
+                        <select id="placeNameHistoric">
+                        <option value="pet">Selecione</option>
+                        <option value="pet">Lata de Cerveja</option>
+                        <option value="pet">Long Neck</option>
+                        <option value="pet">Garrafa Pet</option>
+                        </select>
                         <a>Mensagem de Erro</a>
                     </div>
 
@@ -67,8 +83,9 @@
                 </div>
 
                 <div class="btnsRegister">
-                <button id="btnHistoric" type="submit"> Registrar</button>
-                <button id="btnCloseHistoric"class="btnCloseHistoric"  type="reset" onclick="removeInput()">Cancelar</button>
+                    <button id="btnHistoric" type="submit"> Registrar</button>
+                    <button id="btnCloseHistoric" class="btnCloseHistoric" type="reset"
+                        onclick="removeInput()">Cancelar</button>
                 </div>
             </form>
         </div>

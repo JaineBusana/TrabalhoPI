@@ -1,3 +1,8 @@
+$(document).ready(function() {
+    $('#placeNameHistoric').select2();
+});
+
+
 const form = document.getElementById('formHistoric');
 const btnAddHistoric = document.getElementById('btnAddHistoric');
 const modal = document.querySelector('.containerHistoric');
