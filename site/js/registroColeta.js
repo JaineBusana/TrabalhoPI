@@ -29,15 +29,21 @@ btnAddHistoric.addEventListener('click', function (event) {
 
     const divHistoric = `
     <div class="addNewHistoric">
-    <div class="formContentHistoric">
-        <label for="placeNameHistoric">Nome do Produto</label>
-        <input type="text" class="placeNameHistoric" placeholder="Digite aqui..." />
-        <a>Mensagem de Erro</a>
-    </div>
-    <div class="formContentHistoric">
-        <label for="placeQuantityHistoric">Quantidade</label>
-        <input type="text" id="placeQuantityHistoric" placeholder="Digite aqui..." />
-        <a>Mensagem de Erro</a>
+       <div class="formContentHistoric">
+         <label for="placeNameHistoric">Nome do Produto</label>
+          <select class="placeNameHistoric">
+          <option value="pet">Selecione</option>
+          <option value="pet">Lata de Cerveja</option>
+          <option value="pet">Long Neck</option>
+          <option value="pet">Garrafa Pet</option>
+          </select>
+          <a>Mensagem de Erro</a>
+        </div>
+        <div class="formContentHistoric">
+          <label for="placeQuantityHistoric">Quantidade</label>
+          <input type="text" id="placeQuantityHistoric" placeholder="Digite aqui..." />
+          <a>Mensagem de Erro</a>
+        </div>
     </div>
 </div>`;
 
