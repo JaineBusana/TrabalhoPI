@@ -32,6 +32,7 @@ btnAddHistoric.addEventListener('click', function (event) {
     event.preventDefault();
      const div2 = document.querySelector(".addHistoric").cloneNode(true)
      document.querySelector(".addHistoric").after(div2)
+     
 
 });
 
