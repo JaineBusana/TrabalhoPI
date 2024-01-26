@@ -19,6 +19,7 @@ function openModalConfirmn() {
 
 function closeModalConfirmn() {
     modalConfirmn.classList.remove('activeConfirmn')
+    location. reload();
 }
 
 
