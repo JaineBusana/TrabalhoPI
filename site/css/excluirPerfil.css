@@ -11,17 +11,7 @@
     src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
 }
   
-  .btnOpenModalDelete {
-    font-size: x-large;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #6A994E;
-    color: white;
-    cursor: pointer;
-    font-family: mukta_medium;
-  }
-  
+
   span p{
     margin: 15px;
   
@@ -54,7 +44,7 @@
   }
   
     
-  .active {
+  .activeConfirmn {
     display: flex;
   }
   

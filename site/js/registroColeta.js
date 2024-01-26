@@ -1,18 +1,24 @@
+const placeCpfHistoric = document.getElementById("placeCpfHistoric")
+const placeNameHistoric = document.querySelector(".placeNameHistoric");
+const placeQuantityHistoric = document.getElementById("placeQuantityHistoric");
+const form = document.getElementById('formHistoric');
+const btnAddHistoric = document.getElementById('btnAddHistoric');
+const modal = document.querySelector('.containerHistoric');
+const btnCloseHistoric = document.getElementById('btnCloseHistoric');
+const modalConfirmn = document.querySelector('.modalContainerConfirmn')
+
+
 $(document).ready(function () {
     $('.placeNameHistoric').select2();
 });
 
 
-const form = document.getElementById('formHistoric');
-const btnAddHistoric = document.getElementById('btnAddHistoric');
-const modal = document.querySelector('.containerHistoric');
-const btnCloseHistoric = document.getElementById('btnCloseHistoric');
+function openModalConfirmn() {
+    modalConfirmn.classList.add('activeConfirmn')
+}
 
-
-
-// ABRE E FECHA MODAL⬇️
-function openModalHistoric() {
-    modal.classList.add('active')
+function closeModalConfirmn() {
+    modalConfirmn.classList.remove('activeConfirmn')
 }
 
 
@@ -57,9 +63,6 @@ btnAddHistoric.addEventListener('click', function (event) {
 // VALIDAÇÃO ⬇️
 window.addEventListener("load", (event) => {
 
-    const placeCpfHistoric = document.getElementById("placeCpfHistoric")
-    const placeNameHistoric = document.querySelector(".placeNameHistoric");
-    const placeQuantityHistoric = document.getElementById("placeQuantityHistoric");
 
 
     form.addEventListener("submit", (e) => {
@@ -128,8 +131,7 @@ window.addEventListener("load", (event) => {
 
         if (isValid) {
 
-            alert("Registro Salvo!");
-            window.location.reload();
+            openModalConfirmn();
         }
     }
 

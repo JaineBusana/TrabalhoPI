@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
 
-
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <title>Registro de Coletas</title>
 </head>
@@ -43,10 +43,12 @@
 
     <main class="mainHistoric">
 
-        
-        <!-- <button class="btnOpenModalHistoric" onclick="openModalHistoric()">Teste Modal</button> -->
-        <!--ADD NO BUTTON DE REGISTRAR -->
-
+        <div class="modalContainerConfirmn ">
+            <div class="modalConfirmn ">
+                <span> Registro Salvo!</span>
+                <button  class="btnConfirmn" type="reset" onclick="closeModalConfirmn()">OK</button>
+            </div>
+        </div>
 
 
         <div class="containerHistoric">
@@ -66,15 +68,15 @@
                     <div class="formContentHistoric">
                         <label for="placeNameHistoric">Nome do Produto</label>
                         <select class="placeNameHistoric">
-                        <option value="">Selecione</option>
-                        <option value="1">Lata de Cerveja</option>
-                        <option value="2">Long Neck</option>
-                        <option value="3">Garrafa Pet</option>
+                            <option value="">Selecione</option>
+                            <option value="1">Lata de Cerveja</option>
+                            <option value="2">Long Neck</option>
+                            <option value="3">Garrafa Pet</option>
                         </select>
                         <a>Mensagem de Erro</a>
                     </div>
 
-                    <div class="formContentHistoric">
+                    <div class="formContentHistoric ">
                         <label for="placeQuantityHistoric">Quantidade</label>
                         <input type="text" id="placeQuantityHistoric" placeholder="Digite aqui..." />
                         <a>Mensagem de Erro</a>
@@ -83,7 +85,7 @@
                 </div>
 
                 <div class="btnsRegister">
-                    <button id="btnHistoric" type="submit"> Registrar</button>
+                    <button id="btnHistoric" type="submit" onclick=" openModalConfirmn()"> Registrar</button>
                     <button id="btnCloseHistoric" class="btnCloseHistoric" type="reset"
                         onclick="removeInput()">Cancelar</button>
                 </div>
@@ -95,6 +97,7 @@
 </body>
 <script src="./js/registroColeta.js"></script>
 <script src="./js/nav.js"></script>
+
 
 
 </html>

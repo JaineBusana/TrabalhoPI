@@ -12,16 +12,57 @@
 }
 
 
-.btnOpenModalHistoric {
-  font-size: x-large;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #6A994E;
-  color: white;
-  cursor: pointer;
-  font-family: mukta_medium;
+.modalContainerConfirmn {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, .35);
+  position: fixed;
+  top: 30px;
+  display: none;
+  z-index: 999;
+  justify-content: center;
 }
+
+.activeConfirmn {
+  display: flex !important;
+}
+
+.modalConfirmn {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  width: 30%;
+  font-family: mukta_medium;
+  text-align: justify;
+  margin: 200px;
+}
+
+
+
+.activeConfirmn .modalConfirmn {
+  animation: modal .4s;
+}
+
+.modalContainerConfirmn span{
+  margin-left: 17px;
+  margin-bottom: 10px;
+}
+
+.btnConfirmn{
+  width: 50px;
+  margin-left: 45px;
+  border: none ;
+  border-radius: 15px;
+  color: white ;
+  cursor: pointer;
+  font-family: mukta_medium ;
+  background-color: #6A994E ;
+}
+
+
 
 .mainHistoric {
   margin-top: 30px;
@@ -34,14 +75,8 @@
 .containerHistoric {
   background-color: #fafafa;
   border-radius: 22px;
-
-
   display: flex;
-  /* DEIXA NONE DEPOIS */
   flex-direction: column;
-  /* TIRA DEPOIS */
-
-
   margin: 14px;
   max-width: 600px;
   width: 100%;
@@ -55,14 +90,14 @@
   height: 45px;
 }
 
-.active {
+/* .active {
   display: flex;
   flex-direction: column;
 }
 
 .active .containerHistoric {
   animation: modal .4s;
-}
+} */
 
 .headerHistoric {
   background-color: #6A994E;
