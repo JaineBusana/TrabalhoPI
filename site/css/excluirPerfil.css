@@ -17,11 +17,20 @@
   
   }
   
+  /* ADICIONAR NO ADICIONAR PERFIL */
+  .active {
+    display: flex ;
+  }
+  
+  .active .modalDelete {
+    animation: modal .4s ;
+  } 
+  
   .modalContainerDelete {
     width: 100vw;
     position: fixed;
     top: 30px;
-    display: none;
+    display: flex;
     z-index: 999;
     justify-content: center;
   }
@@ -30,7 +39,7 @@
     display: flex;
     flex-direction: column;
     padding: 30px;
-    background-color: white;
+    background-color: #FEFEEB;
     border-radius: 10px;
     width: 30%;
     font-family: mukta_medium;
@@ -43,14 +52,6 @@
       margin: auto;
   }
   
-    
-  .activeConfirmn {
-    display: flex;
-  }
-  
-  .active .modalDelete {
-    animation: modal .4s;
-  }
   
   span {
     margin: 10px auto;
