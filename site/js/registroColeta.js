@@ -25,38 +25,15 @@ function closeModalConfirmn() {
 
 
 
+
 // DUPLICA OS INPUTS ⬇️  !!!!!! NOMES DOS INPUTS MULTIPLICAM
 btnAddHistoric.addEventListener('click', function (event) {
 
     event.preventDefault();
 
-    const addInputHistoric = document.createElement('div');
-    addInputHistoric.classList.add('formContentHistoric');
+     const div2 = document.querySelector(".addHistoric").cloneNode(true)
+     document.querySelector(".addHistoric").after(div2)
 
-
-    const divHistoric = `
-    <div class="addNewHistoric">
-       <div class="formContentHistoric">
-         <label for="placeNameHistoric">Nome do Produto</label>
-          <select class="placeNameHistoric">
-          <option value="pet">Selecione</option>
-          <option value="pet">Lata de Cerveja</option>
-          <option value="pet">Long Neck</option>
-          <option value="pet">Garrafa Pet</option>
-          </select>
-          <a>Mensagem de Erro</a>
-        </div>
-        <div class="formContentHistoric">
-          <label for="placeQuantityHistoric">Quantidade</label>
-          <input type="text" id="placeQuantityHistoric" placeholder="Digite aqui..." />
-          <a>Mensagem de Erro</a>
-        </div>
-    </div>
-</div>`;
-
-
-    addInputHistoric.innerHTML = divHistoric;
-    form.insertBefore(addInputHistoric, form.lastElementChild);
 });
 
 
@@ -146,8 +123,5 @@ window.addEventListener("load", (event) => {
 });
 
 function removeInput() {
-    const inputNew = document.querySelector(".addNewHistoric");
-    if (inputNew) {
-        inputNew.remove();
-    }
+    document.querySelector(".addHistoric").remove();
 }

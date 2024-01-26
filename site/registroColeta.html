@@ -46,7 +46,7 @@
         <div class="modalContainerConfirmn ">
             <div class="modalConfirmn ">
                 <span> Registro Salvo!</span>
-                <button  class="btnConfirmn" onclick="closeModalConfirmn()">OK</button>
+                <button class="btnConfirmn" onclick="closeModalConfirmn()">OK</button>
             </div>
         </div>
 
@@ -59,9 +59,13 @@
             <form id="formHistoric" class="formHistoric">
 
                 <div class="formContentHistoric">
-                    <label for="placeCpfHistoric">Digite o CPF do usuário</label>
+                    <div class="register">
+                        <label for="placeCpfHistoric">Digite o CPF do usuário</label>
+                        <button id="btnAddHistoric" type="submit"> + </button>
+                    </div>
                     <input type="text" id="placeCpfHistoric" placeholder="Digite aqui..." />
                     <a>Mensagem de Erro</a>
+
                 </div>
 
                 <div class="addHistoric">
@@ -81,7 +85,6 @@
                         <input type="text" id="placeQuantityHistoric" placeholder="Digite aqui..." />
                         <a>Mensagem de Erro</a>
                     </div>
-                    <button id="btnAddHistoric" type="submit"> + </button>
                 </div>
 
                 <div class="btnsRegister">
