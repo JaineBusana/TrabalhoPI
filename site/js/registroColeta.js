@@ -109,7 +109,7 @@ window.addEventListener("load", (event) => {
 
         if (isValid) {
 
-            openModalConfirmn();
+            document.getElementsByClassName("modalContainerConfirmn")[0].style.display = "flex";
         }
     }
 

@@ -47,13 +47,13 @@
 }
 
 .modalContainerConfirmn span {
-  margin-left: 17px;
+  margin-left: 0px;
   margin-bottom: 10px;
 }
 
 .btnConfirmn {
   width: 50px;
-  margin-left: 45px;
+  margin-left: 0px;
   border: none;
   border-radius: 15px;
   color: white;
@@ -147,6 +147,7 @@
   padding: 5px !important;
   border: 2px solid #dfdfdf !important;
   font-family: mukta_medium !important;
+  margin-bottom: 10px;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
@@ -213,6 +214,7 @@
 
   .select2-container--default .select2-selection--single {
     width: 200px !important;
+
   }
 
   .select2-container--default .select2-selection--single .select2-selection__arrow b {
