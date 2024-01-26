@@ -190,7 +190,7 @@
   background-color: brown !important;
 }
 
-.formContentHistoric.error input, select {
+.formContentHistoric.error input {
   border-color: #ff3b25;
 }
 

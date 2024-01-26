@@ -1,5 +1,5 @@
 const placeCpfHistoric = document.getElementById("placeCpfHistoric")
-const placeNameHistoric = document.querySelector(".placeNameHistoric");
+const placeNameHistoric = document.getElementById("placeNameHistoric");
 const placeQuantityHistoric = document.getElementById("placeQuantityHistoric");
 const form = document.getElementById('formHistoric');
 const btnAddHistoric = document.getElementById('btnAddHistoric');
