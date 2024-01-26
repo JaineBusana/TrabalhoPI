@@ -46,20 +46,20 @@
   animation: modal .4s;
 }
 
-.modalContainerConfirmn span{
+.modalContainerConfirmn span {
   margin-left: 17px;
   margin-bottom: 10px;
 }
 
-.btnConfirmn{
+.btnConfirmn {
   width: 50px;
   margin-left: 45px;
-  border: none ;
+  border: none;
   border-radius: 15px;
-  color: white ;
+  color: white;
   cursor: pointer;
-  font-family: mukta_medium ;
-  background-color: #6A994E ;
+  font-family: mukta_medium;
+  background-color: #6A994E;
 }
 
 
@@ -240,5 +240,20 @@
 
   .select2-container--default .select2-selection--single .select2-selection__rendered {
     line-height: 25px !important;
+  }
+
+  .modalConfirmn {
+
+    width: 12%;
+
+  }
+
+  .modalContainerConfirmn span {
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+
+  .btnConfirmn {
+    margin-left: 26px;
   }
 }
