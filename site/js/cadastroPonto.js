@@ -1,10 +1,10 @@
 window.addEventListener("load", (event) => {
 
     const form = document.getElementById("form");
-    const placeName = document.getElementById("placeName")
-    const address = document.getElementById("address")
-    const phoneNumber = document.getElementById("phoneNumber")
-    const residue = document.getElementById("select-residue");
+    const placeName = document.getElementById("placeName");
+    const address = document.getElementById("address");
+    const phoneNumber = document.getElementById("phoneNumber");
+    const residue = document.getElementById("selectResidue");
 
 
     form.addEventListener("submit", (e) => {
@@ -38,7 +38,7 @@ window.addEventListener("load", (event) => {
             errorInput(placeName, " NOME do Ponto de Coleta não preenchido!")
         } else {
             const formItem = placeName.parentElement;
-            formItem.className = "form-content"
+            formItem.className = "formContent"
         }
 
     }
@@ -50,7 +50,7 @@ window.addEventListener("load", (event) => {
             errorInput(address, "ENDEREÇO não preenchido!")
         } else {
             const formItem = address.parentElement;
-            formItem.className = "form-content"
+            formItem.className = "formContent"
         }
 
 
@@ -66,7 +66,7 @@ window.addEventListener("load", (event) => {
             errorInput(phoneNumber, "O número de contato precisa ter  9 CARACTERES.")
         } else {
             const formItem = phoneNumber.parentElement;
-            formItem.className = "form-content"
+            formItem.className = "formContent"
         }
 
 
@@ -80,7 +80,7 @@ window.addEventListener("load", (event) => {
             errorInput(residue, "RESÍDUO não preenchido!")
         } else {
             const formItem = residue.parentElement;
-            formItem.className = "form-content"
+            formItem.className = "formContent"
         }
 
 
@@ -94,10 +94,10 @@ window.addEventListener("load", (event) => {
         checkInputResidue();
         const sucessMessage = document.querySelector('.msg')
 
-        const formItems = form.querySelectorAll(".form-content")
+        const formItems = form.querySelectorAll(".formContent")
 
         const isValid = [...formItems].every((item) => {
-            return item.className === "form-content"
+            return item.className === "formContent"
         });
 
         if (isValid) {
@@ -120,7 +120,7 @@ window.addEventListener("load", (event) => {
 
         textMessage.innerText = message;
 
-        formItem.className = "form-content error"
+        formItem.className = "formContent error"
 
     }
 });
