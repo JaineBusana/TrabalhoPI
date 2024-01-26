@@ -12,7 +12,7 @@ $(document).ready(function () {
     $('.placeNameHistoric').select2();
 });
 
-
+// ABRE E FECHA MODAL ⬇️ 
 function openModalConfirmn() {
     modalConfirmn.classList.add('activeConfirmn')
 }
@@ -26,16 +26,30 @@ function closeModalConfirmn() {
 
 
 
-// DUPLICA OS INPUTS ⬇️  !!!!!! NOMES DOS INPUTS MULTIPLICAM
+// DUPLICA OS INPUTS ⬇️ 
 btnAddHistoric.addEventListener('click', function (event) {
 
     event.preventDefault();
-
      const div2 = document.querySelector(".addHistoric").cloneNode(true)
      document.querySelector(".addHistoric").after(div2)
 
 });
 
+btnCloseHistoric.addEventListener('click', function (event) {
+    const divsQuantity = document.querySelector('.formContentHistoric');
+    
+    if (divsQuantity.length > 1) {
+        document.querySelector(".addHistoric").remove();
+    }else{
+        location.reload();
+    }
+});
+
+// function removeInput() {
+   
+//     document.querySelector(".addHistoric").remove();
+    
+// }
 
 
 // VALIDAÇÃO ⬇️
@@ -120,8 +134,3 @@ window.addEventListener("load", (event) => {
     }
 });
 
-function removeInput() {
-   
-    document.querySelector(".addHistoric").remove();
-    
-}
