@@ -11,7 +11,7 @@
     src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
 }
   
-  .btnOpenModal {
+  .btnOpenModalDelete {
     font-size: x-large;
     padding: 10px;
     border: none;
@@ -27,7 +27,7 @@
   
   }
   
-  .modal-container {
+  .modalContainerDelete {
     width: 100vw;
     position: fixed;
     top: 30px;
@@ -36,7 +36,7 @@
     justify-content: center;
   }
   
-  .modal {
+  .modalDelete {
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -47,7 +47,7 @@
     text-align: justify;
   }
 
-  .modal img{
+  .modalDelete img{
       max-width: 25%;
       height: auto;
       margin: auto;
@@ -58,7 +58,7 @@
     display: flex;
   }
   
-  .active .modal {
+  .active .modalDelete {
     animation: modal .4s;
   }
   
@@ -66,13 +66,13 @@
     margin: 10px auto;
   }
   
-  .btns {
+  .btnsDelete {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
   }
   
-  .btns button {
+  .btnsDelete button {
     font-size: medium;
     padding: 10px;
     border: none;
@@ -101,12 +101,13 @@
     }
   }
    @media (max-width: 500px) {
-    .modal1 {
+
+    .modalDelete {
       padding: 10px;
       width: 80%;
     }   
   
-    span, .btns button {
+    span, .btnsDelete button {
       font-size: smaller;
     }
    }

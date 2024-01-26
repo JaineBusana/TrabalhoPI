@@ -173,27 +173,27 @@
 }
 
 .barLogin {
-    display: flex;
-    width: 28px;
-    height: 3px;
-    border-radius: 3px;
-    background: #6A994E;
-    margin: 5px auto;
-    transition: all 0.3s;
+    display: flex !important;
+    width: 28px !important;
+    height: 3px !important;
+    border-radius: 3px !important;
+    background: #6A994E !important;
+    margin: 5px auto !important;
+    transition: all 0.3s !important;
  
 }
  
 .menuLogin {
-    margin-top: 15px;
-    margin-left: 12px;
+    margin-top: 15px !important;
+    margin-left: 12px !important;
 }
 
 .barLogin:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg) !important;
 }
  
 .barLogin:nth-child(2) {
-    transform: translateY(-0px) rotate(-45deg);
+    transform: translateY(-0px) rotate(-45deg) !important;
 }
 
 @media(max-width: 970px) {
