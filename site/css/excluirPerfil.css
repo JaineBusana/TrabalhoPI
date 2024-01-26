@@ -11,68 +11,59 @@
     src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
 }
   
-  .btnOpenModal {
-    font-size: x-large;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #6A994E;
-    color: white;
-    cursor: pointer;
-    font-family: mukta_medium;
-  }
-  
+
   span p{
     margin: 15px;
   
   }
   
-  .modal-container {
+  /* ADICIONAR NO ADICIONAR PERFIL */
+  .active {
+    display: flex ;
+  }
+  
+  .active .modalDelete {
+    animation: modal .4s ;
+  } 
+  
+  .modalContainerDelete {
     width: 100vw;
     position: fixed;
     top: 30px;
-    display: none;
+    display: flex;
     z-index: 999;
     justify-content: center;
   }
   
-  .modal {
+  .modalDelete {
     display: flex;
     flex-direction: column;
     padding: 30px;
-    background-color: white;
+    background-color: #FEFEEB;
     border-radius: 10px;
     width: 30%;
     font-family: mukta_medium;
     text-align: justify;
   }
 
-  .modal img{
+  .modalDelete img{
       max-width: 25%;
       height: auto;
       margin: auto;
   }
   
-    
-  .active {
-    display: flex;
-  }
-  
-  .active .modal {
-    animation: modal .4s;
-  }
   
   span {
     margin: 10px auto;
   }
   
-  .btns {
+  .btnsDelete {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
   }
   
-  .btns button {
+  .btnsDelete button {
     font-size: medium;
     padding: 10px;
     border: none;
@@ -101,12 +92,12 @@
     }
   }
    @media (max-width: 500px) {
-    .modal {
+    .modalDelete {
       padding: 10px;
       width: 80%;
     }   
   
-    span, .btns button {
+    span, .btnsDelete button {
       font-size: smaller;
     }
    }

@@ -1,14 +1,14 @@
-const modal = document.querySelector('.modal-container')
+const modal = document.querySelector('.modalContainerDelete')
 
-function openModal() {
+function openModalDelete() {
   modal.classList.add('active')
 }
 
-function closeModal() {
-    modal.classList.remove('active')
-  }
+function closeModalDelete() {
+  document.getElementsByClassName("modalDelete")[0].style.display = "none";
+}
 
-function closeModalHome() {
+function closeModalDeleteHome() {
   modal.classList.remove('active')
   window.location.href = "index.html";
 }

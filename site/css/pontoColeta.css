@@ -19,6 +19,10 @@
     margin-top: 50px;
 }
 
+#coletaBluImg{
+    display: none;
+}
+
 #titlePontoColeta,
 #localNext {
 
@@ -143,7 +147,10 @@ form {
     color: black;
     font-family: mukta_medium;
     font-size: 15px;
+    gap: 4px;
+    height: 50%;
 }
+
 
 #allCards {
     display: flex;
@@ -151,6 +158,14 @@ form {
 
 }
 
+.nameCard,
+.address,
+.obsCard {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 140px;
+}
 .titleCard {
 
     color: #6A994E;
@@ -162,14 +177,15 @@ form {
     font-family: mukta_bold;
     font-size: 16px;
     margin-left: 0 !important;
-    margin-bottom: 8px;
 }
 
 
 @media(min-width:750px) {
 
     .main {
+
         margin-left: 250px;
+
     }
 
     #instructionPontoColeta,
@@ -200,5 +216,6 @@ form {
         COLUMN-GAP: 130px;
         
     }
+
 
 }
