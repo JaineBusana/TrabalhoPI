@@ -95,21 +95,19 @@ window.addEventListener("load", (event) => {
             formItem.className = "formContentHistoric"
         }
     }
-
+    
     function checkForm() {
-
         checkInputCPF();
         checkInputName();
         checkInputQuantity();
-
-        const formItems = form.querySelectorAll(".formContentHistoric")
+    
+        const formItems = form.querySelectorAll(".formContentHistoric");
         const isValid = [...formItems].every((item) => {
-            return item.className === "formContentHistoric"
+            return item.className === "formContentHistoric";
         });
-
+    
         if (isValid) {
-
-            document.getElementsByClassName("modalContainerConfirmn")[0].style.display = "flex";
+            openModalConfirmn();
         }
     }
 
