@@ -123,5 +123,7 @@ window.addEventListener("load", (event) => {
 });
 
 function removeInput() {
+   
     document.querySelector(".addHistoric").remove();
+    
 }
