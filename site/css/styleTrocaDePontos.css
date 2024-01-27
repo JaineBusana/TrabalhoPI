@@ -1,0 +1,44 @@
+@font-face {
+
+    font-family: "mukta_bold";
+    src: url("../assets/fonts/pontoColeta/Mukta-Bold.ttf")
+}
+
+
+@font-face {
+
+    font-family: "mukta_medium";
+    src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
+}
+
+
+#motivationalPhrase,#motivationalPhrase1 {
+
+    width: 306px;
+    /* position: relative; */
+    font-size: 14px;
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 33px;
+    font-family: mukta_medium;
+}
+#motivationalPhrase{
+    margin-top: 20px;
+}
+#tittleTrocaPonto{
+    margin-left: 33px;
+    width: 206px;
+    margin-top: 30px;
+    height: 21px;
+    flex-shrink: 0;
+    color: #6A994E;
+    font-family: mukta_bold;
+    font-size: 19px;
+    font-style: normal;
+    line-height: normal;
+}
+main {
+
+    justify-content: center;
+    align-items: center;
+}
