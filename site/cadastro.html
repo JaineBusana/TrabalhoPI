@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/cadastro.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="icon" href="/MicrosoftTeams-image (8).png">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="icon" href="./MicrosoftTeams-image (8).png">
     <title>Cadastro</title>
 </head>
 
 <body>
     <nav class="navigation">
 
-        <a href="#" class="logoNav"><img src="/assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
+        <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
         <div class="navHome">
             <ul class="menuNav">
                 <li class="navItem "><a href="index.html">Home</a></li>
@@ -28,7 +28,7 @@
         </div>
     </nav>
     <aside class="greetings">
-        <img src="/assets/img/MicrosoftTeams-image (5).png" alt="Logo coletablu">
+        <img src="./assets/img/MicrosoftTeams-image (5).png" alt="Logo coletablu">
         <h1>Bem vindo!</h1>
         <p>Insira algumas informações <br>
             e comece sua jornada conosco!</p>
@@ -46,9 +46,10 @@
         </div>
         <form id="formCadastre" class="formCadastre">
             <div class="cadastreUser">
+
                 <div class="formContent">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" placeholder="Digite seu Nome">
+                    <label for="username">Nome</label>
+                    <input type="text" id="username" placeholder="Digite seu Nome">
                     <a>Mensagem de erro</a>
                 </div>
                 <div class="formContent">
@@ -56,28 +57,33 @@
                     <input type="email" id="email" placeholder="Digite seu Email">
                     <a>Mensagem de erro</a>
                 </div>
-                <div class="formContent">
-                    <label for="cpf">Cpf</label>
-                    <input type="text" id="cpf" placeholder="Digite seu Cpf">
-                    <a>Mensagem de erro</a>
-                </div>
-                <!-- ===================================== -->
-                <div class="formContent">
-                    <label for="cnpj">Cnpj</label>
-                    <input type="text" id="cnpj" placeholder="Digite seu Cnpj">
-                    <a>Mensagem de erro</a>
-                </div>
-                <div class="formContent">
-                    <label for="address">Endereço</label>
-                    <input type="text" id="Address" placeholder="Digite o Endereço">
-                    <a>Mensagem de erro</a>
-                </div>
-                <div class="formContent">
-                    <label for="phone">Telefone</label>
-                    <input type="text" id="phone" placeholder="Digite seu Telefone">
-                    <a>Mensagem de erro</a>
+                <div class="campCpf "> 
+                    <div class="formContent ">
+                        <label for="cpf">Cpf</label>
+                        <input type="text" id="cpf " placeholder="Digite seu Cpf">
+                        <a>Mensagem de erro</a>
+                    </div>
                 </div>
 
+                <!-- ===================================== -->
+
+                <div class="formCadastreColetor ">
+                    <div class="formContent">
+                        <label for="cnpj">Cnpj</label>
+                        <input type="text" id="cnpj" placeholder="Digite seu Cnpj">
+                        <a>Mensagem de erro</a>
+                    </div>
+                    <div class="formContent">
+                        <label for="address">Endereço</label>
+                        <input type="text" id="address" placeholder="Digite o Endereço">
+                        <a>Mensagem de erro</a>
+                    </div>
+                    <div class="formContent">
+                        <label for="phone">Telefone</label>
+                        <input type="text" id="phone" placeholder="Digite seu Telefone">
+                        <a>Mensagem de erro</a>
+                    </div>
+                </div>
                 <!--========================================-->
                 <div class="formContent">
                     <label for="password">Senha</label>
@@ -89,16 +95,19 @@
                     <input type="password" id="confirmationPassword" placeholder="Digite sua senha novamente">
                     <a>Mensagem de erro</a>
                 </div>
-                <div id="submit" class="btnCadastro">
-                    <button href="./index.html" type="submit">Cadastrar</button>
+                <div id="submitCadastreUser">
+                    <button class="btnCadastro" href="./index.html" type="submit">Cadastrar</button>
                 </div>
-                <p>Já passui uma conta? <a id="link" href="./index.html">Login</a></p>
+                <div id="textJaPossuiConta">
+                    <p>Já passui uma conta? <a id="link" href="./index.html">Login</a></p>
+                </div>
             </div>
         </form>
     </main>
 </body>
-<script src="/js/nav.js"></script>
-<script src="/js/cadastro.js"></script>
+<script src="./js/nav.js"></script>
+<script src="./js/cadastro.js"></script>
+
 </html>
 
 

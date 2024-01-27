@@ -10,8 +10,9 @@
     font-family: "mukta_medium";
     src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
 }
-
-
+*{
+    height: auto;
+}
 .greetings {
     display: grid;
     justify-content: center;
@@ -53,14 +54,15 @@ aside p {
 }
 
 .btnSejaColetor {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     border: solid 1px;
     border-radius: 10px;
 }
 
-.btnSejaColetor.ativo {
-    background-color: #3B5284;
+.btnSejaColetor.active {
+    background-color: #386641;
+    border: 0px;
 }
 
 #chooseAcontType h2 {
@@ -75,12 +77,30 @@ aside p {
     text-align: center;
 }
 
+.formCadastreColetor {
+    display: none;
+}
+.formCadastreColetor.active {
+    display: block;
+}
+
+
+.formCadastreUser.active {
+    display: none;
+}
+.campCpf.active{
+    display: none;
+
+}
 .formCadastre {
     display: flex;
     justify-content: center;
     margin: 10px;
 }
-
+.formCadastre label{
+    margin: 5px;
+    padding: 3px;
+}
 .formContent {
     font-family: mukta_medium;
 
@@ -103,13 +123,37 @@ aside p {
     color: #000;
 }
 
+#submitCadastreUser{
+    display: flex;
+    justify-content: center;
+}
+.btnCadastro{
+    width: 100px;
+    height: 35px;
+    border-radius: 25px;
+    border: 0px;
+    margin: 20px;
+    background-color: #386641;
+    color: white;
+}
+#textJaPossuiConta{
+text-align: center;
+}
+#textJaPossuiConta a{
+    color: #386641;
+}
 .formContent a {
-    position: absolute;
     bottom: -8px;
     left: 0;
     visibility: hidden;
 }
-
+.formContent.error input {
+    border-color: #ff3b25;
+}
+.formContent.error a {
+    color: #ff3b25;
+    visibility: visible;
+}
 
 /* @font-face {
     font-family: Fredoka;
