@@ -35,8 +35,8 @@ body {
 
 }
 
-.navigation img {
-    width: 30%;
+.logoNav {
+    width: 17%;
     min-width: 100px;
     
 }
@@ -47,6 +47,15 @@ body {
     align-items: center;
     gap: 5rem;
 
+}
+
+.menuNav{
+    overflow: auto;
+}
+
+#ProfileTextPoint{
+    width: 130px;
+    text-align: left;
 }
 
 .navigation ul li a {
