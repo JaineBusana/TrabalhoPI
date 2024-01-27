@@ -36,14 +36,25 @@
       <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
       <div class="navHome">
         <ul class="menuNav">
-          <li><img src="./assets/img/perifl/Ellipse 22.png" id="profilePicture"></li>
-          <li><p>João da Silva Souza</p></li>
-          <li id="ProfileTextPoint"><p>EcoScore:</p></li>
-          <li><img src="./assets/img/cadastro/planeta-terra.png" alt=""> <span>300 pontos</span></li>
-          <li class="navItem "><a href="index.html">Pontos de Coleta</a></li>
-          <li class="navItem"><a href="pontoColeta.html">Troca de Pontos</a></li>
-          <li class="navItem"><a href="sugestao.html">Editar Perfil</a></li>
-          <li class="navItem" onclick="SHOW_MODAL_LOGIN()"><a href="#">Login</a></li>
+          <div id="profile">
+            <li><img src="./assets/img/perifl/Ellipse 22.png" id="profilePicture"></li>
+            <li>
+              <p id="profileName">João da Silva Souza</p>
+            </li>
+          
+          <div  id="profileTextPoint">
+            <li>
+              <p>EcoScore:</p>
+            </li>
+            <li id="profilePoint"><img src="./assets/img/cadastro/planeta-terra.png" alt="" class="profilePonitImg"><img src="./assets/img/cadastro/planeta-terra.png" alt="" class="profilePonitImg"><img src="./assets/img/cadastro/planeta-terra.png" alt="" class="profilePonitImg">300 pontos</li>
+          </div>
+        </div>
+          <li class="navItem "><a href="pontoColeta.html">Pontos de Coleta</a></li>
+          <li class="navItem"><a href="trocadePontos.html">Troca de Pontos</a></li>
+          <li class="navItem">Editar Perfil</li>
+          <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
+          <li class="navItem"><a href="index.html">Sair</a></li>
+
 
 
         </ul>
@@ -61,58 +72,58 @@
     <img id="coletaBluImg" src="./assets/img/pontoColeta/imgPontoColeta.jpg">
     <h1 id="titlePontoColeta"> Pontos de Coleta</h1>
     <div id="instructionPontoColeta"> Informe seu CEP, selecione o item a ser descartado e descubra os locais
-        designados para
-        receber esse produto adequadamente.</div>
+      designados para
+      receber esse produto adequadamente.</div>
     <div id="doubtsPontoColeta"> • Caso tenha dúvidas, busque a assistência de um colaborador no estabelecimento.
     </div>
 
 
     <form>
-        <div class="designInputPonto">
-            <img id="leafInput" src="./assets/img/pontoColeta/inputBairro.png" alt="ícone folha input">
-            <select class="selectPonto" id="selectNeighborhood">
-                <option value="0">Selecione o bairro</option>
-                <option value="1">Badenfurt</option>
-                <option value="2">Fidélis</option>
-                <option value="3">Itoupava Central</option>
-            </select>
-        </div>
-        <div class="designInputPonto">
-            <img id="leafInput" src="./assets/img/pontoColeta/inputResiduo.png" alt="ícone folha input">
-            <select class="selectPonto" id="selectResidue">
-                <option value="0">Selecione o resíduo</option>
-                <option value="1">Pet</option>
-                <option value="2">Vidro</option>
-                <option value="3">Metal</option>
-            </select>
-        </div>
-        <button id="btnLocalPonto" type="button">Encontrar Pontos</button>
+      <div class="designInputPonto">
+        <img id="leafInput" src="./assets/img/pontoColeta/inputBairro.png" alt="ícone folha input">
+        <select class="selectPonto" id="selectNeighborhood">
+          <option value="0">Selecione o bairro</option>
+          <option value="1">Badenfurt</option>
+          <option value="2">Fidélis</option>
+          <option value="3">Itoupava Central</option>
+        </select>
+      </div>
+      <div class="designInputPonto">
+        <img id="leafInput" src="./assets/img/pontoColeta/inputResiduo.png" alt="ícone folha input">
+        <select class="selectPonto" id="selectResidue">
+          <option value="0">Selecione o resíduo</option>
+          <option value="1">Pet</option>
+          <option value="2">Vidro</option>
+          <option value="3">Metal</option>
+        </select>
+      </div>
+      <button id="btnLocalPonto" type="button">Encontrar Pontos</button>
     </form>
     <img id="location" src="./assets/img/pontoColeta/localização.png">
     <h1 id="localNext"> Pontos Próximos</h1>
     <div class="grid grid-cols-1"></div>
 
     <div class="contentCard">
-        <div class="card ">
-            <p id="nameCard" class="card"> Mercado Dona Rosa</p>
-            <p class="titleCard">Endereço: </p>
-            <p class="address">Alameda Rio Branco, Blumenau</p>
-            <p class="titleCard"> Observação: </p>
-            <p class="obsCard"> Mercadorias com validade próxima </p>
-            
-        </div>
-        <div class="card ">
-            <p id="nameCard" class="card"> Loja Fictícia</p>
-            <p class="titleCard">Endereço: </p>
-            <p class="address">Rua, bairro </p>
-            <p class="titleCard"> Observação: </p>
-            <p class="obsCard"> fictícia </p>
-        </div>
+      <div class="card ">
+        <p id="nameCard" class="card"> Mercado Dona Rosa</p>
+        <p class="titleCard">Endereço: </p>
+        <p class="address">Alameda Rio Branco, Blumenau</p>
+        <p class="titleCard"> Observação: </p>
+        <p class="obsCard"> Mercadorias com validade próxima </p>
+
+      </div>
+      <div class="card ">
+        <p id="nameCard" class="card"> Loja Fictícia</p>
+        <p class="titleCard">Endereço: </p>
+        <p class="address">Rua, bairro </p>
+        <p class="titleCard"> Observação: </p>
+        <p class="obsCard"> fictícia </p>
+      </div>
 
 
     </div>
 
-</main>
+  </main>
 
   <footer>
     <div class="footerImgMobile">

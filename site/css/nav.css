@@ -53,9 +53,36 @@ body {
     overflow: auto;
 }
 
-#ProfileTextPoint{
-    width: 130px;
-    text-align: left;
+#profile{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#profilePicture{
+    width: 120px;
+}
+
+#profileName{
+    color: #6A994E;
+    font-family: mukta_bold !important;
+}
+
+#profileTextPoint{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#profilePoint{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    color: #6A994E;
+    font-family: mukta_bold !important;
+}
+
+.profilePonitImg{
+    width: 12%;
 }
 
 .navigation ul li a {
@@ -147,7 +174,7 @@ section {
         position: fixed;
         right: -100%;
         top: 70px;
-        width: 50%;
+        width: 60%;
         height: 100%;
         flex-direction: column;
         background: #FEFEEB;
