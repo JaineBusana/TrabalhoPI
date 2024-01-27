@@ -1,19 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/pontoColeta.css" />
     <link rel="stylesheet" href="./css/styleIndex.css">
-    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/pontoColeta.css" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styleIndexLogado.css">
+    <link rel="stylesheet" href="css/nav.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./css/StyleLogin.css">
     <link rel="stylesheet" href="./assets/1.3.0/css/line-awesome.css">
     <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
 
-    <title>Pontos de Coleta</title>
+    <title>ColetaBlu</title>
+
     <script>
         tailwind.config = {
             theme: {
@@ -27,60 +28,55 @@
     </script>
 </head>
 
-
 <body>
-    <form id="formLogin">
-        <div id="modalLogin" class="">
-            <div id="backgroundLogin" class="flex">
-                <div>
-                    <button id="closeModal" onclick="CLOSE_MODAL_LOGIN()"><i class="las la-times-circle"></i></button>
-                    <div class="flex">
-                        <img id="logo" class="h-20" src="./assets/img/MicrosoftTeams-image (7).png"
-                            alt="Logo da ColetaBlu">
-                        <h1 class=" mt-12 enterLogin">Entrar</h1>
-                    </div>
-                    <div class="msg"> </div>
-                    <div class="">
-                        <h1 id="userLogin" class="mt-10">Usuário</h1>
-                    </div>
-                    <div>
-                        <input id="insertUserLogin" class="mb-2 " type="text" onfocus="this.value='';">
-                    </div>
-                    <div>
-                        <h1 id="passwordLogin" class="">Senha</h1>
-                    </div>
-                    <div class="flex">
-                        <input id="insertPasswordLogin" class="" type="password" onfocus="this.value='';">
-                    </div>
-                    <div>
-                        <a id="forgotPasswordLogin" class="" href="">Esqueci a senha!</a>
-                    </div>
-                    <div>
-                        <button id="login">Login</button>
-                    </div>
-                    <div class="flex">
-                        <h1 class="registerLogin ml-5">Não tem uma conta?</h1>
-                        <a id="linkRegisterLogin" class="registerLogin ml-1" href="cadastro.html">Cadastre-se!</a>
-                    </div>
-                </div>
-                <img id="backgroundPhoto" src="./assets/img/Foto_Fundo_Login.jpg" alt="Imagen fundo"
-                    style="max-width:100%;height:auto;">
-            </div>
-        </div>
-    </form>
 
     <header>
         <nav class="navigation">
 
-            <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
+            <a href="index.html" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
             <div class="navHome">
                 <ul class="menuNav">
-                    <li class="navItem "><a href="index.html">Home</a></li>
-                    <li class="navItem"><a href="pontoColeta.html">Pontos de coleta</a></li>
+                    <div id="profile">
+                        <li><img src="./assets/img/perifl/Ellipse 22.png" id="profilePicture"></li>
+                        <li>
+                            <p id="profileName">Jean Cleiton Souza</p>
+                        </li>
+
+                        <div id="profileTextPoint">
+                            <li>
+                                <p>EcoScore:</p>
+                            </li>
+                            <li id="profilePoint"><img src="./assets/img/cadastro/planeta-terra.png" alt=""
+                                    class="profilePonitImg">300 pontos</li>
+                            <li id="profilePickup"><img src="./assets/img/perifl/icone-loja-verde-removebg-preview.png"
+                                    alt="" class="profilePickupImg">30 Coletas
+                            </li>
+                        </div>
+                    </div>
+                    <li class="navItem profileHome"><a href="index.html">Home</a></li>
+                    <li class="navItem"><a href="pontoColeta.html">Pontos de Coleta</a></li>
+                    <li class="navItem"><a href="pontoColeta.html">Registrar Coleta</a></li>
+                    <!-- <li class="navItem"><a href="trocadePontos.html">Troca de Pontos</a></li> -->
+                    <li class="navItem profileEditbtn">Editar Perfil</li>
                     <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
-                    <li class="navItem" onclick="SHOW_MODAL_LOGIN()"><a href="#">Login</a></li>
-
-
+                    <li class="navItem profileExitbtn"><a href="index.html">Sair</a></li>
+                    <li class="btnProfilePicture"><img src="./assets/img/perifl/Ellipse 22.png"
+                            class="profilePictureBtn"></li>
+                    <div class="modalProfilePicture">
+                        <!-- quando for coletor eu mudo a altura do box com     height: 320px; -->
+                        <div id="boxProfilePicture">
+                            <p id="profileName">Jean Cleiton Souza</p>
+                            <li id="profilePoint"><img src="./assets/img/cadastro/planeta-terra.png" alt=""
+                                    class="profilePonitImg">300 pontos</li>
+                            <li id="profilePickup"><img src="./assets/img/perifl/icone-loja-verde-removebg-preview.png"
+                                    alt="" class="profilePickupImg">30 Coletas
+                            </li>
+                            <div id="itemsBoxProfile">
+                                <li class="navItem profileEdit"><a href="">Editar Perfil</a></li>
+                                <li class="navItem profileExit"><a href="index.html">Sair</a></li>
+                            </div>
+                        </div>
+                    </div>
                 </ul>
             </div>
             <div class="navigationBar">
@@ -89,8 +85,6 @@
                 <span class="bar"></span>
             </div>
         </nav>
-
-
     </header>
 
     <main class="main">
@@ -129,28 +123,28 @@
         <h1 id="localNext"> Pontos Próximos</h1>
         <div class="grid grid-cols-1"></div>
 
-
-        <div id="allCards">
+        <div class="contentCard">
             <div class="card ">
-                <p id="nameCard" class="mainTitleCard"> Loja Fictícia</p>
+                <p id="nameCard" class="card"> Mercado Dona Rosa</p>
                 <p class="titleCard">Endereço: </p>
-                <p class="address">Alameda Rio Branco </p>
+                <p class="address">Alameda Rio Branco, Blumenau</p>
                 <p class="titleCard"> Observação: </p>
-                <p class="obsCard"> fictícia </p>
+                <p class="obsCard"> Mercadorias com validade próxima </p>
 
             </div>
-
             <div class="card ">
-                <p id="nameCard" class="mainTitleCard"> Loja Fictícia</p>
+                <p id="nameCard" class="card"> Loja Fictícia</p>
                 <p class="titleCard">Endereço: </p>
-                <p class="address">Alameda Rio Branco</p>
+                <p class="address">Rua, bairro </p>
                 <p class="titleCard"> Observação: </p>
                 <p class="obsCard"> fictícia </p>
-
             </div>
+
+
         </div>
 
     </main>
+
     <footer>
         <div class="footerImgMobile">
             <img id="imgPlant" src="./assets/img/rodape-img-mobile.png" alt="">
@@ -173,12 +167,9 @@
             </form>
         </div>
 
-
     </footer>
 
     <script src="./js/pontoColeta.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="./js/login.js"></script>
     <script src="./js/nav.js"></script>
 </body>
 
