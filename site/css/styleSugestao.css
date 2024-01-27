@@ -76,7 +76,7 @@ form {
 }
 
 form button {
-    background-color: #6A994E;
+    background-color: #6A994E !important;
     color: #FFF;
     width: 100%;
     border-radius: 22px;
@@ -96,8 +96,12 @@ form button {
     font-family: mukta_bold !important;
 }
 
+.sucess {
+    color: #307c52;
+    font-family: mukta_bold !important;
+}
 
-@media (min-width:750px) {
+@media (min-width:1700px) {
     #suggestion {
         margin-top: 100px;
         margin-left: 320px;

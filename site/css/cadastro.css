@@ -1,4 +1,117 @@
 @font-face {
+
+    font-family: "mukta_bold";
+    src: url("../assets/fonts/pontoColeta/Mukta-Bold.ttf")
+}
+
+
+@font-face {
+
+    font-family: "mukta_medium";
+    src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
+}
+
+
+.greetings {
+    display: grid;
+    justify-content: center;
+}
+
+aside img {
+    height: 90px;
+    margin: 10px auto;
+}
+
+aside h1 {
+    font-family: mukta_bold;
+    font-size: 30px;
+    margin: auto;
+}
+
+aside p {
+    font-family: mukta_medium;
+    margin: auto;
+    text-align: center;
+}
+
+.register {
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.register h1 {
+    font-family: mukta_bold;
+    margin: auto;
+    font-size: 25px;
+}
+
+#chooseAcontType {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.btnSejaColetor {
+    width: 15px;
+    height: 15px;
+    border: solid 1px;
+    border-radius: 10px;
+}
+
+.btnSejaColetor.ativo {
+    background-color: #3B5284;
+}
+
+#chooseAcontType h2 {
+    font-family: mukta_bold;
+    margin: 0px 0px 3px 5px;
+
+}
+
+#textSejaColetor {
+    font-family: mukta_medium;
+    font-size: 12px;
+    text-align: center;
+}
+
+.formCadastre {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.formContent {
+    font-family: mukta_medium;
+
+}
+
+.formContent label {
+    display: inline-block;
+    margin-bottom: 4px;
+    color: #000;
+    font-size: 15px;
+}
+
+.formContent input {
+    display: block;
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid #b6b2b2;
+    color: #000;
+}
+
+.formContent a {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+}
+
+
+/* @font-face {
     font-family: Fredoka;
     src: url(../assets/fonts/Fredoka.ttf);
 }
@@ -50,7 +163,7 @@ aside h1 {
 #greetings {
     display: grid;
     direction: column;
-
+    
 }
 
 #greetingsImage {
@@ -72,7 +185,33 @@ aside h1 {
     visibility: hidden;
     height: 0px;
 }
+#escolhaTipoCadastro{
+    display: flex;
+    background-color: #FEFEEB;
+    justify-content: center;
+    margin: 5px;
+}
+.btnSejacoletor{
+    width: 15px;
+    height: 15px;
+    border: solid 1px;
+    border-radius: 10px;
+    margin: 3px;
+}
+.btnSejacoletor.ativo{
+    background-color: #3B5284;
+}
 
+.sejaColetor{
+    font-size: 18px;
+    font-family: Montserrat;
+}
+
+.textoSejaColetor{
+    font-size: 12px;
+    background-color: #FEFEEB;
+    font-family: fredoka;
+}
 .formulario {
     background-color: #fff;
     max-width: 450px;
@@ -194,12 +333,15 @@ p {
 
 }
 
-.sejaColetor {
+
+/* .sejaColetor {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+#textoSejaColetor{
+    font-size: 11px;
+}
 .btnSejacoletor {
     width: 20px;
     height: 20px;
@@ -209,9 +351,9 @@ p {
 
 .btnSejacoletor.ativo {
     background-color: #3c49b9
-}
+} */
 
-#btnProx {
+/*#btnProx {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -256,9 +398,9 @@ p {
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        background-color: #fff;
+        background-color: #FEFEEB;
         width: 1000px;
-        height: 600px;
+        height: 650px;
         margin: 110px auto;
         border-radius: 20px;
         box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25);
@@ -283,14 +425,20 @@ p {
 
     aside {
         width: 500px;
-        height: 600px;
+        height: 650px;
         background-color: #FEFEEB;
         border-bottom-left-radius: 20px;
         border-top-left-radius: 20px;
         color: #5D6E1E;
         
+        
     }
-
+    .form{
+        background-color: #FEFEEB;
+    }
+    h1{
+        background-color: #FEFEEB;
+    }
     #text p {
         margin-bottom: 61px;
         color: #5D6E1E;
@@ -298,7 +446,7 @@ p {
     }
 
     #text h1 {
-        margin-bottom: 50px;
+        margin-bottom: 99px;
 
         color: #5D6E1E;
     }
@@ -312,4 +460,4 @@ p {
         visibility: visible;
     }
 
-}
+} */

@@ -7,6 +7,111 @@
     <link rel="stylesheet" href="./css/cadastro.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="icon" href="/MicrosoftTeams-image (8).png">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <nav class="navigation">
+
+        <a href="#" class="logoNav"><img src="/assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
+        <div class="navHome">
+            <ul class="menuNav">
+                <li class="navItem "><a href="index.html">Home</a></li>
+                <li class="navItem"><a href="pontoColeta.html">Pontos de coleta</a></li>
+            </ul>
+        </div>
+        <div class="navigationBar">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <aside class="greetings">
+        <img src="/assets/img/MicrosoftTeams-image (5).png" alt="Logo coletablu">
+        <h1>Bem vindo!</h1>
+        <p>Insira algumas informações <br>
+            e comece sua jornada conosco!</p>
+    </aside>
+    <main>
+        <div class="register">
+            <h1>Criar conta</h1>
+            <div id="chooseAcontType">
+                <div id="btnSejaColetor" class="btnSejaColetor"></div>
+                <h2>Seja coletor</h2>
+            </div>
+            <p id="textSejaColetor" class="textSejaColetor">
+                ♻️ Colabore para um planeta mais saudável. <br>
+                Inscreva-se agora como coletor </p>
+        </div>
+        <form id="formCadastre" class="formCadastre">
+            <div class="cadastreUser">
+                <div class="formContent">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Digite seu Nome">
+                    <a>Mensagem de erro</a>
+                </div>
+                <div class="formContent">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Digite seu Email">
+                    <a>Mensagem de erro</a>
+                </div>
+                <div class="formContent">
+                    <label for="cpf">Cpf</label>
+                    <input type="text" id="cpf" placeholder="Digite seu Cpf">
+                    <a>Mensagem de erro</a>
+                </div>
+                <!-- ===================================== -->
+                <div class="formContent">
+                    <label for="cnpj">Cnpj</label>
+                    <input type="text" id="cnpj" placeholder="Digite seu Cnpj">
+                    <a>Mensagem de erro</a>
+                </div>
+                <div class="formContent">
+                    <label for="address">Endereço</label>
+                    <input type="text" id="Address" placeholder="Digite o Endereço">
+                    <a>Mensagem de erro</a>
+                </div>
+                <div class="formContent">
+                    <label for="phone">Telefone</label>
+                    <input type="text" id="phone" placeholder="Digite seu Telefone">
+                    <a>Mensagem de erro</a>
+                </div>
+
+                <!--========================================-->
+                <div class="formContent">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Digite sua Senha">
+                    <a>Mensagem de erro</a>
+                </div>
+                <div class="formContent">
+                    <label for="confirmationPassword">Confirmação de senha</label>
+                    <input type="password" id="confirmationPassword" placeholder="Digite sua senha novamente">
+                    <a>Mensagem de erro</a>
+                </div>
+                <div id="submit" class="btnCadastro">
+                    <button href="./index.html" type="submit">Cadastrar</button>
+                </div>
+                <p>Já passui uma conta? <a id="link" href="./index.html">Login</a></p>
+            </div>
+        </form>
+    </main>
+</body>
+<script src="/js/nav.js"></script>
+<script src="/js/cadastro.js"></script>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cadastro.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="css/nav.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
     <title>Cadastro</title>
@@ -32,7 +137,7 @@
     </header>
     <main>
         <aside>
-            <div id="greetings">
+            <div id=" ">
                 <div id="greetingsImage">
                     <img id="logoImage" src="./assets/img/MicrosoftTeams-image (8).png" alt="logo coletablu">
                     <img id="logoImageVerde" src="./assets/img/MicrosoftTeams-image (6).png" alt="logo coletablu">
@@ -47,88 +152,94 @@
         <div class="formulario">
 
             <h1>Criar conta</h1>
-            <form id="form" class="form">
-                <div class="firstForm">
-                    <div class="form-content">
-                        <label for="nome">Nome</label>
-                        <input type="text" id="nome" placeholder="Digite seu nome" />
-                        <a>Mensagem de erro</a>
-                    </div>
-                    <div class="form-content ">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Digite seu email" />
-                        <a>Mensagem de erro</a>
-                    </div>
-                    <div class="form-content">
-                        <label for="cpf">Cpf</label>
-                        <input type="cpf" id="cpf" placeholder="Digite seu Cpf" />
-                        <a>Mensagem de erro</a>
-                    </div>
-                    <div class="form-content">
-                        <label for="password">Senha</label>
-                        <input type="password" id="password" placeholder="Digite sua senha" />
-                        <a>Mensagem de erro</a>
-                    </div>
-                    <div class="form-content">
-                        <label for="password-confirmation">Confirmação de senha</label>
-                        <input type="password" id="password-confirmation" placeholder="Digite sua senha novamente" />
-                        <a>Mensagem de erro</a>
-                    </div>
-                    <div class="sejaColetor">
+            <div id="escolhaTipoCadastro">
+                <div id="btnSejacoletor" class="btnSejacoletor"></div>
+                <h2 id="sejaColetor" class="sejaColetor">Seja EcoColetor</h2>
+            </div>
+            <p id="textoSejaColetor" class="textoSejaColetor">
+                ♻️ Colabore para um planeta mais saudável. <br>
+                Inscreva-se agora como coletor </p>
+        </div>
+        <form id="form" class="form">
+            <div class="firstForm">
+                <div class="form-content">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome" />
+                    <a>Mensagem de erro</a>
+                </div>
+                <div class="form-content ">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Digite seu email" />
+                    <a>Mensagem de erro</a>
+                </div>
+                <div class="form-content">
+                    <label for="cpf">Cpf</label>
+                    <input type="cpf" id="cpf" placeholder="Digite seu Cpf" />
+                    <a>Mensagem de erro</a>
+                </div>
+                <div class="form-content">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Digite sua senha" />
+                    <a>Mensagem de erro</a>
+                </div>
+                <div class="form-content">
+                    <label for="password-confirmation">Confirmação de senha</label>
+                    <input type="password" id="password-confirmation" placeholder="Digite sua senha novamente" />
+                    <a>Mensagem de erro</a>
+                </div>
+                <div class="sejaColetor">
                         <div id="btnSejacoletor" class="btnSejacoletor"></div>
-                        <p>Seja coletor</p>
+                        <h2>Seja coletor</h2>
+                    </div>
+                <div id="textoSejaColetor">
+                        <p>Faça parte de uma comunidade dedicada
+                         a causar impacto <br>ambiental positivo.<br>
+                         ♻️ Colabore para um planeta mais saudável. <br>
+                         Inscreva-se agora como coletor </p>
+                    </div>
+                <div id="submit" class="btnCadastro">
+                    <button href="./index.html" type="submit">Cadastrar</button>
+                </div>
+                <div class="btnProx">
+                    <div id="btnProx">
+                        Prox->
+                    </div>
+                </div>
+                <p>Já passui uma conta? <a id="link" href="./index.html">Login</a></p>
+            </div>
+
+
+            <div id="second-form">
+                <div>
+                    <div class="form-content">
+                        <label for="cnpj">Cnpj</label>
+                        <input type="text" id="cnpj" placeholder="Digite seu cnpj" />
+                        <a>Mensagem de erro</a>
+                    </div>
+
+                    <div class="form-content">
+                        <label for="nome do estabelecimento ">Nome do estabelecimento</label>
+                        <input type="text" id="omeDoEstabelecimento " placeholder="Digite o nome do estabelecimento " />
+                        <a>Mensagem de erro</a>
+                    </div>
+
+                    <div class="form-content">
+                        <label for="telefone ">Telefone</label>
+                        <input type="text" id="telefone " placeholder="Digite o telefone " />
+                        <a>Mensagem de erro</a>
                     </div>
                     <div id="submit" class="btnCadastro">
                         <button href="./index.html" type="submit">Cadastrar</button>
                     </div>
-                    <div class="btnProx">
-                        <div id="btnProx">
-                            Prox->
-                        </div>
-                    </div>
-                    <p>Já passui uma conta? <a id="link" href="./index.html">Login</a></p>
-                </div>
-
-
-                <div id="second-form">
-                    <div>
-                        <div class="form-content">
-                            <label for="cnpj">Cnpj</label>
-                            <input type="text" id="cnpj" placeholder="Digite seu cnpj" />
-                            <a>Mensagem de erro</a>
-                        </div>
-
-                        <div class="form-content">
-                            <label for="categoria de residuo">Categoria de residuo</label>
-                            <input type="text" id="categoriaResiduo" placeholder="Digite a categoria de residuo" />
-                            <a>Mensagem de erro</a>
-                        </div>
-
-                        <div class="form-content">
-                            <label for="nome do estabelecimento ">Nome do estabelecimento</label>
-                            <input type="text" id="omeDoEstabelecimento "
-                                placeholder="Digite o nome do estabelecimento " />
-                            <a>Mensagem de erro</a>
-                        </div>
-
-                        <div class="form-content">
-                            <label for="telefone ">Telefone</label>
-                            <input type="text" id="telefone " placeholder="Digite o telefone " />
-                            <a>Mensagem de erro</a>
-                        </div>
-                        <div id="submit" class="btnCadastro">
-                            <button href="./index.html" type="submit">Cadastrar</button>
-                        </div>
-
-                    </div>
 
                 </div>
-            </form>
+
+            </div>
+        </form>
 
         </div>
     </main>
     <script src="./js/cadastro.js"></script>
     <script src="js/nav.js"></script>
 </body>
-
-</html>
+</html>   -->
