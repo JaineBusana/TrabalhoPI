@@ -5,7 +5,7 @@ const formCadastreColetor =document.querySelector('.formCadastreColetor')
 const form = document.getElementById("formCadastre")
 const username = document.getElementById("username")
 const email = document.getElementById("email")
-const cpf = document.getElementById("cpf")
+const usercpf = document.getElementById("usercpf")
 const cnpj = document.getElementById("cnpj")
 const address = document.getElementById("address")
 const phone = document.getElementById("phone")
@@ -24,14 +24,55 @@ btnSejaColetor.addEventListener('click',function (event){
     btnSejaColetor.classList.toggle('active');
 });
 
+email.addEventListener('blur',() =>{
+    checkInputEmail();
+})
+username.addEventListener('blur',() =>{
+    checkInputUsername();
+})
+usercpf.addEventListener('blur',() =>{
+    checkInputCpf();
+})
+cnpj.addEventListener('blur',() =>{
+    checkInputCnpj();
+})
+address.addEventListener('blur',() =>{
+    checkInputAddress();
+})
+phone.addEventListener('blur',() =>{
+    checkInputPhone();
+})
+password.addEventListener('blur',() =>{
+    checkInputPassword();
+})
+passwordConfirmation.addEventListener('blur',() =>{
+    checkInputpasswordConfirmation();
+})
 form.addEventListener("submit", (event)=>{
     event.preventDefault();
+    checkForm();
+ 
+})
+
+function checkForm(){
     checkInputUsername();
     checkInputEmail();
-    // checkInputCpf();
+    checkInputCpf();
+    checkInputCnpj();
+    checkInputPhone();
+    checkInputAddress();
     checkInputPassword();
     checkInputpasswordConfirmation()
-})
+
+    const formItems = form.querySelectorAll(".formContent")
+    const isValid = [...formItems].every( (item) => {
+        return item.className === "formContent"
+    })
+    if(isValid){
+        window.location = "indexLogado.html"
+    }
+
+}
 
 function checkInputUsername(){
     const usernameValue = username.value;
@@ -53,19 +94,48 @@ function checkInputEmail(){
     }
     
 }
-
 function checkInputCpf(){
-    const cpfValue = cpf.value;
-    if(cpfValue === ""){
-        erroInput(cpf,"Preencha a Senha.")
-    }else if(cpfValue.length < 8){
-        erroInput(cpf,"Senha precisa ter no minimo 8 caracteres.")
+    const usercpfValue = usercpf.value;
+    if(usercpfValue === ""){
+        erroInput(usercpf,"Preencha o Cpf.")
+    }else if(usercpfValue.length < 11){
+        erroInput(usercpf,"Cpf incorreto.")
     }else{
-        const formItem = cpf.parentElement;
+        const formItem = usercpf.parentElement;
         formItem.className ="formContent"
     }
 }
-
+function checkInputCnpj(){
+    const cnpjValue = cnpj.value;
+    if(cnpjValue === ""){
+        erroInput(cnpj,"Preencha o Cnpj.")
+    }else if(cnpjValue.length < 11){
+        erroInput(cnpjValue,"Cnpj incorreto.")
+    }else{
+        const formItem = cnpj.parentElement;
+        formItem.className ="formContent"
+    }
+}
+function checkInputPhone(){
+    const phoneValue = phone.value;
+    if(phoneValue ===""){
+        erroInput(phone, "Preencha o Telefone.")
+    }else{
+        const formItem = phone.parentElement;
+        formItem.className = "formContent"
+    }
+    
+}
+function checkInputAddress(){
+    const addressValue = address.value;
+    if(addressValue ===""){
+        erroInput(address, "Preencha o Endereço.")
+    }else{
+        const formItem = address.parentElement;
+        formItem.className = "formContent"
+    }
+    
+}
 function checkInputPassword(){
     const passwordValue = password.value;
     if(passwordValue === ""){
@@ -77,7 +147,6 @@ function checkInputPassword(){
         formItem.className ="formContent"
     }
 }
-
 function checkInputpasswordConfirmation(){
     const passwordConfirmationValue = passwordConfirmation.value;
     const passwordValue = password.value;
@@ -87,9 +156,10 @@ function checkInputpasswordConfirmation(){
         erroInput(passwordConfirmation,"As senhas nao são iguais!")
     }else{
         const formItem = passwordConfirmation.parentElement;
-        formItem.className ="formContent"
+        formItem.className ="formContent" 
     }
 }
+
 
 function erroInput(input, message){
     const formItem = input.parentElement;
