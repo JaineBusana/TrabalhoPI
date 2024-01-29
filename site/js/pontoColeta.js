@@ -1,7 +1,11 @@
+const modalContainerPontoColeta = document.querySelector('.modalContainerPontoColeta')
 const menu = document.querySelector('#openModalPontoColeta');
-const NavHome = document.querySelector('.modalContainerPontoColeta')
-
+const btnCloseModalPontoColeta = document.getElementById('btnCloseModalPontoColeta')
 
 menu.addEventListener('click', () => {
-  NavHome.classList.toggle('ativo')
-})
+  modalContainerPontoColeta.classList.toggle('ativo')
+});
+
+btnCloseModalPontoColeta.addEventListener('click', () => {
+  modalContainerPontoColeta.classList.remove('ativo');
+});
