@@ -1,65 +1,61 @@
-$(document).ready(function () {
-    $('.placeNameHistoric').select2();
-});
-
-
+const placeCpfHistoric = document.getElementById("placeCpfHistoric")
+const placeNameHistoric = document.getElementById("placeNameHistoric");
+const placeQuantityHistoric = document.getElementById("placeQuantityHistoric");
 const form = document.getElementById('formHistoric');
 const btnAddHistoric = document.getElementById('btnAddHistoric');
 const modal = document.querySelector('.containerHistoric');
 const btnCloseHistoric = document.getElementById('btnCloseHistoric');
+const modalConfirmn = document.querySelector('.modalContainerConfirmn')
 
 
+$(document).ready(function () {
+    $('.placeNameHistoric').select2();
+});
 
-// ABRE E FECHA MODAL⬇️
-function openModalHistoric() {
-    modal.classList.add('active')
+// ABRE E FECHA MODAL ⬇️ 
+function openModalConfirmn() {
+    modalConfirmn.classList.add('activeConfirmn')
+}
+
+function closeModalConfirmn() {
+    modalConfirmn.classList.remove('activeConfirmn')
+    location. reload();
 }
 
 
 
 
-// DUPLICA OS INPUTS ⬇️  !!!!!! NOMES DOS INPUTS MULTIPLICAM
+
+// DUPLICA OS INPUTS ⬇️ 
 btnAddHistoric.addEventListener('click', function (event) {
 
     event.preventDefault();
+     const div2 = document.querySelector(".addHistoric").cloneNode(true)
+     document.querySelector(".addHistoric").after(div2)
+     
 
-    const addInputHistoric = document.createElement('div');
-    addInputHistoric.classList.add('formContentHistoric');
-
-
-    const divHistoric = `
-    <div class="addNewHistoric">
-       <div class="formContentHistoric">
-         <label for="placeNameHistoric">Nome do Produto</label>
-          <select class="placeNameHistoric">
-          <option value="pet">Selecione</option>
-          <option value="pet">Lata de Cerveja</option>
-          <option value="pet">Long Neck</option>
-          <option value="pet">Garrafa Pet</option>
-          </select>
-          <a>Mensagem de Erro</a>
-        </div>
-        <div class="formContentHistoric">
-          <label for="placeQuantityHistoric">Quantidade</label>
-          <input type="text" id="placeQuantityHistoric" placeholder="Digite aqui..." />
-          <a>Mensagem de Erro</a>
-        </div>
-    </div>
-</div>`;
-
-
-    addInputHistoric.innerHTML = divHistoric;
-    form.insertBefore(addInputHistoric, form.lastElementChild);
 });
 
+btnCloseHistoric.addEventListener('click', function (event) {
+    const divsQuantity = document.querySelector('.formContentHistoric');
+    
+    if (divsQuantity.length > 1) {
+        document.querySelector(".addHistoric").remove();
+    }else{
+        location.reload();
+    }
+});
+
+// function removeInput() {
+   
+//     document.querySelector(".addHistoric").remove();
+    
+// }
 
 
 // VALIDAÇÃO ⬇️
 window.addEventListener("load", (event) => {
 
-    const placeCpfHistoric = document.getElementById("placeCpfHistoric")
-    const placeNameHistoric = document.querySelector(".placeNameHistoric");
-    const placeQuantityHistoric = document.getElementById("placeQuantityHistoric");
 
 
     form.addEventListener("submit", (e) => {
@@ -114,22 +110,19 @@ window.addEventListener("load", (event) => {
             formItem.className = "formContentHistoric"
         }
     }
-
+    
     function checkForm() {
-
         checkInputCPF();
         checkInputName();
         checkInputQuantity();
-
-        const formItems = form.querySelectorAll(".formContentHistoric")
+    
+        const formItems = form.querySelectorAll(".formContentHistoric");
         const isValid = [...formItems].every((item) => {
-            return item.className === "formContentHistoric"
+            return item.className === "formContentHistoric";
         });
-
+    
         if (isValid) {
-
-            alert("Registro Salvo!");
-            window.location.reload();
+            openModalConfirmn();
         }
     }
 
@@ -142,9 +135,3 @@ window.addEventListener("load", (event) => {
     }
 });
 
-function removeInput() {
-    const inputNew = document.querySelector(".addNewHistoric");
-    if (inputNew) {
-        inputNew.remove();
-    }
-}

@@ -5,8 +5,8 @@ function openModalDelete() {
 }
 
 function closeModalDelete() {
-    modal.classList.remove('active')
-  }
+  document.getElementsByClassName("modalDelete")[0].style.display = "none";
+}
 
 function closeModalDeleteHome() {
   modal.classList.remove('active')

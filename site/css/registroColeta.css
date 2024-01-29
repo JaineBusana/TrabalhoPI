@@ -12,16 +12,57 @@
 }
 
 
-.btnOpenModalHistoric {
-  font-size: x-large;
-  padding: 10px;
+.modalContainerConfirmn {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, .35);
+  position: fixed;
+  top: 30px;
+  display: none;
+  z-index: 999;
+  justify-content: center;
+}
+
+.activeConfirmn {
+  display: flex !important;
+}
+
+.modalConfirmn {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: #FEFEEB;
+  border-radius: 10px;
+  width: 30%;
+  font-family: mukta_medium;
+  text-align: justify;
+  margin: 200px;
+}
+
+
+
+.activeConfirmn .modalConfirmn {
+  animation: modal .4s;
+}
+
+.modalContainerConfirmn span {
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+
+.btnConfirmn {
+  width: 50px;
+  margin-left: 0px;
   border: none;
-  border-radius: 5px;
-  background-color: #6A994E;
+  border-radius: 15px;
   color: white;
   cursor: pointer;
   font-family: mukta_medium;
+  background-color: #6A994E;
 }
+
+
 
 .mainHistoric {
   margin-top: 30px;
@@ -34,14 +75,8 @@
 .containerHistoric {
   background-color: #fafafa;
   border-radius: 22px;
-
-
   display: flex;
-  /* DEIXA NONE DEPOIS */
   flex-direction: column;
-  /* TIRA DEPOIS */
-
-
   margin: 14px;
   max-width: 600px;
   width: 100%;
@@ -53,15 +88,9 @@
   border-radius: 90px;
   width: 45px;
   height: 45px;
-}
-
-.active {
-  display: flex;
-  flex-direction: column;
-}
-
-.active .containerHistoric {
-  animation: modal .4s;
+  margin-left: 220px;
+  margin-top: -18px;
+  margin-bottom: 10px;
 }
 
 .headerHistoric {
@@ -83,7 +112,7 @@
 }
 
 .formContentHistoric label {
-  display: inline-block;
+  display: block;
   margin-bottom: 4px;
 }
 
@@ -118,6 +147,7 @@
   padding: 5px !important;
   border: 2px solid #dfdfdf !important;
   font-family: mukta_medium !important;
+  margin-bottom: 10px;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
@@ -171,23 +201,20 @@
   margin-bottom: 15px;
 }
 
+.registerPlace {
+  display: flex;
+}
 
 @media(min-width:750px) {
 
   .addHistoric {
     display: flex;
-    justify-content: space-around;
-  }
-
-  .addNewHistoric {
-    display: flex;
     justify-content: space-between;
-    margin-left: -25px;
-    margin-right: 40px;
   }
 
   .select2-container--default .select2-selection--single {
     width: 200px !important;
+
   }
 
   .select2-container--default .select2-selection--single .select2-selection__arrow b {
@@ -206,4 +233,31 @@
   .select2-container--default .select2-selection--single .select2-selection__rendered {
     line-height: 25px !important;
   }
+
+  .modalConfirmn {
+
+    width: 9%;
+
+  }
+
+  .modalContainerConfirmn span {
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+
+  .btnConfirmn {
+    margin-left: 26px;
+  }
+
+  .register label {
+    display: block;
+    padding-top: 10px;
+    margin-bottom: -1px;
+  }
+
+  #btnAddHistoric {
+    margin-left: 450px;
+
+  }
+  
 }
