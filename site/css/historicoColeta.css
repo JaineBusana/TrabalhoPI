@@ -11,33 +11,33 @@
     margin-top: 35px;
 }
 
-#descriptionHistoryPage {
+#descriptionHP {
     width: 320px;
 }
 
-#msgSuport {
+#msgSuportHP {
     width: 350px;
     margin-left: 10px;
 }
 
-#ImagemH {
+#ImagemHP {
     display: flex;
     width: 220px;
     height: 220px;
     margin-top: 8px;
 }
 
-#Div1 {
+#conteiner1HP {
     width: fit-content;
     width: 450px;
 }
 
-#Div2 {
+#conteiner2HP {
     display: flex;
     margin-top: 40px;
 }
 
-#Div3 {
+#conteiner3HP {
     width: 239px;
     height: 104px;
     flex-shrink: 0;
@@ -51,17 +51,17 @@
     margin-top: 15px;
 }
 
-#point {
+#pointHP {
     margin-left: 10px;
 }
 
-#Div4 {
+#conteiner4HP {
     display: flex;
     width: 350px;
     margin-top: 10px;
 }
 
-#DivImagem {
+#conteinerImagemHP {
     justify-content: right;
     align-items: end;
     float: right;
@@ -70,7 +70,7 @@
     padding-right: 120px;
 }
 
-.cardHistoryColection {
+.cardHistoryColectionHP {
     background-color: #fff;
     width: 340px;
     height: 110px;
@@ -80,21 +80,21 @@
     align-items: center;
 }
 
-.symbolLocation {
+.symbolLocationHP {
     width: 40px;
     height: 40px;
     margin-left: 15px;
 }
 
-.residueHistoryPage {
+.residueHP {
     display: flex;
 }
 
-.ecoscoreHistoryPage {
+.ecoscoreHP {
     display: flex;
 }
 
-.nameColectionPointHistoryPage {
+.nameColectionPointHP {
     color: #6A994E;
     font-family: Roboto;
     font-size: 15px;
@@ -104,7 +104,7 @@
     margin-bottom: 14px;
 }
 
-.residueColectionPointHistoryPage {
+.residueColectionPointHP {
     color: #6A994E;
     font-family: Roboto;
     font-size: 13px;
@@ -114,7 +114,7 @@
     margin-right: 4px;
 }
 
-.residueColectionPointHistoryPage2 {
+.residueColectionPointHP2 {
     color: #000;
     font-family: Roboto;
     font-size: 13px;
@@ -123,7 +123,7 @@
     line-height: normal;
 }
 
-.ecoscoreHistoryPage2 {
+.ecoscoreHP2 {
     color: #6A994E;
     font-family: Roboto;
     font-size: 13px;
@@ -133,7 +133,7 @@
     margin-right: 4px;
 }
 
-.ecoscoreHistoryPage3 {
+.ecoscoreHP3 {
     color: #000;
     font-family: Roboto;
     font-size: 13px;
@@ -142,7 +142,7 @@
     line-height: normal;
 }
 
-.dataColectionHistoryPage {
+.dataColectionHP {
     color: #000;
     font-family: Roboto;
     font-size: 13px;
@@ -152,11 +152,11 @@
     margin-left: 10px;
 }
 
-.locationData {
+.locationDataHP {
     margin-left: 15px;
 }
 
-.ConteinerHP1 {
+.conteiner5HP {
     margin-left: 15px;
 }
 
@@ -174,7 +174,7 @@
     margin-top: 40px;
 }
 @media(max-width: 970px) {
-    #ImagemH {
+    #ImagemHP {
         display: none;
         margin-top: 0px;
     }
@@ -184,7 +184,7 @@
         margin-top: 0px;
     }
 
-    #Div3 {
+    #conteiner3HP {
         margin-left: 25px;
     }
 
