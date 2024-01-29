@@ -8,9 +8,9 @@ const btnCloseHistoric = document.getElementById('btnCloseHistoric');
 const modalConfirmn = document.querySelector('.modalContainerConfirmn')
 
 
-$(document).ready(function () {
-    $('.placeNameHistoric').select2();
-});
+// $(document).ready(function () {
+//     $('.placeNameHistoric').select2();
+// });
 
 // ABRE E FECHA MODAL ⬇️ 
 function openModalConfirmn() {
