@@ -7,26 +7,34 @@
     <link rel="stylesheet" href="./css/cadastro.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/nav.css">
-    <link rel="icon" href="./MicrosoftTeams-image (8).png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
+    
     <title>Cadastro</title>
 </head>
 
 <body>
-    <nav class="navigation">
 
-        <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
-        <div class="navHome">
+    <header>
+        <nav class="navigation">
+    
+          <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
+          <div class="navHome">
             <ul class="menuNav">
-                <li class="navItem "><a href="index.html">Home</a></li>
-                <li class="navItem"><a href="pontoColeta.html">Pontos de coleta</a></li>
+              <li class="navItem "><a href="index.html">Home</a></li>
+              <li class="navItem" onclick="SHOW_MODAL_LOGIN()"><a href="#">Login</a></li>
+    
+    
             </ul>
-        </div>
-        <div class="navigationBar">
+          </div>
+          <div class="navigationBar">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-        </div>
-    </nav>
+          </div>
+        </nav>
+      </header>
+
     <aside class="greetings">
         <img src="./assets/img/MicrosoftTeams-image (5).png" alt="Logo coletablu">
         <h1>Bem vindo!</h1>
@@ -101,8 +109,8 @@
             </div>
         </form>
     </main>
+    <script src="./js/cadastro.js"></script>
+    <script src="./js/nav.js"></script>
 </body>
-<script src="./js/nav.js"></script>
-<script src="./js/cadastro.js"></script>
 
 </html>

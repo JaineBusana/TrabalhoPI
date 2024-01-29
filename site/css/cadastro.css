@@ -10,9 +10,6 @@
     font-family: "mukta_medium";
     src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
 }
-*{
-    height: auto;
-}
 .greetings {
     display: grid;
     justify-content: center;
