@@ -11,10 +11,6 @@
     src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
 }
 
-.navigation {
-    margin-top: -30px !important;
-}
-
 .main {
     margin-top: 50px;
 }
@@ -88,13 +84,6 @@
     margin-left: -17px;
     border-radius: 22px, 0px, 22px, 22px;
 }
-
-
-form {
-
-    margin-top: 30px;
-}
-
 
 
 .designInputPonto {
@@ -186,10 +175,6 @@ form {
         width: 755px;
     }
 
-    form {
-
-        margin-top: 30px;
-    }
 
 
     #btnLocalPonto {
