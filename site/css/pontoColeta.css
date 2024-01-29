@@ -143,7 +143,7 @@ form {
     flex-shrink: 0;
     margin-left: 30px;
     margin-top: -100px;
-    /* display: none; */
+    display: none;
     position: absolute;
     border-radius: 22px;
     background: #FEFEEB;
@@ -166,8 +166,7 @@ form {
 
 #imagePontoColeta {
 
-    position: absolute;
-    z-index: 2;
+    margin-top: 250px;
 }
 
 .imagePontoColetaModal {
@@ -304,7 +303,7 @@ form {
     }
 
     /* ModalPontoColeta */
-    .modalContainerPontoColeta {
+    /* .ContainerPontoColeta {
         display: flex;
         justify-content: end;
         width: 800px;
@@ -331,10 +330,11 @@ form {
     }
     #imagePontoColeta{
         margin-right: 50%;
+        margin-top: 0px;
     }
     #closeModalPontoColeta{
         margin-bottom: 20px;
-    }
+    } */
 
     .contentCard {
         gap: 80px;
