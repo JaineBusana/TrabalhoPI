@@ -11,7 +11,7 @@
     src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
 }
 
-main {
+.mainTroca {
 
     justify-content: center;
     align-items: center;
@@ -62,4 +62,42 @@ main {
     margin-top: -23px;
     margin-left: 150px;
 
+}
+.discountPoints{
+    position: absolute;
+    margin-left: 103px;
+    color: white;
+}
+
+.cardImgTroca{
+    height: auto;
+    width: 160px;
+}
+
+.spanTroca{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.tittleCardTroca{
+    display: flex;
+    justify-content: space-around;
+}
+
+.slideContent{
+    justify-content: center;
+    display: flex;
+}
+
+.cardWrapper{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+    width: 90%;
+    border-radius: 22px;
+    height: 200px;
+    background-color: #FAF3E1;
+    box-shadow: 0px 4px 4px 0px #00000040; 
 }
