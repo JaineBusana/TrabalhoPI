@@ -112,6 +112,8 @@
 .tittleCardTroca{
     display: flex;
     justify-content: space-around;
+    color:#6A994E;
+    font-size: 18px;
 }
 
 .slideContent{

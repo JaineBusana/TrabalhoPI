@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="./assets/1.3.0/css/line-awesome.css">
     <link rel="stylesheet" href="./css/styleTrocaPonto.css">
     <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
+
+
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
+
+
     <title>Troca de pontos</title>
 </head>
 
@@ -50,10 +56,10 @@
             <div id="ecoScore">EcoScore:</div>
             <div id="ecoScorePoint">300 Pontos</div>
         </section>
-        <section class="slideContainer">
-            <div class="slideContent">
-                <div class="cardWrapper">
-                    <div class="cardTroca">
+        <section class="slideContainer swiper">
+            <div class="slideContent ">
+                <div class="cardWrapper swiper-wrapper">
+                    <div class="cardTroca swiper-slide">
                         <h1 class="tittleCardTroca"> Empresa de Bebidas X</h1>
                         <div class="discountPoints"><span class="spanTroca">50</span>pontos</div>
                         <img src="./assets/img/trocaPontos/fundoCard.png" alt="" class="cardImgTroca">
@@ -63,22 +69,9 @@
                     </div>
 
                 </div>
-
+                <div class="swiper-pagination"></div>
             </div>
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     </main>
@@ -107,6 +100,8 @@
 
     </footer>
     <script src="./js/nav.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/trocaPonto.js"></script>
 </body>
 
 </html>
