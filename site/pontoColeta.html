@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
+ 
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/StyleLogin.css">
     <link rel="stylesheet" href="./assets/1.3.0/css/line-awesome.css">
     <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
-
+ 
     <title>Pontos de Coleta</title>
     <script>
         tailwind.config = {
@@ -26,8 +26,8 @@
         };
     </script>
 </head>
-
-
+ 
+ 
 <body>
     <form id="formLogin">
         <div id="modalLogin" class="">
@@ -70,10 +70,10 @@
           </div>
         </div>
       </form>
-
+ 
     <header>
         <nav class="navigation">
-
+ 
             <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
             <div class="navHome">
                 <ul class="menuNav">
@@ -81,8 +81,8 @@
                     <li class="navItem"><a href="pontoColeta.html">Pontos de coleta</a></li>
                     <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
                     <li class="navItem" onclick="SHOW_MODAL_LOGIN()"><a href="#">Login</a></li>
-
-
+ 
+ 
                 </ul>
             </div>
             <div class="navigationBar">
@@ -91,14 +91,12 @@
                 <span class="bar"></span>
             </div>
         </nav>
-
-
+ 
+ 
     </header>
-
-
-    <main>
-        <div class="banner"></div>
-        <h1 id="title"> Pontos de Coleta</h1>
+ 
+    <main class="main">
+ 
         <img id="coletaBluImg" src="./assets/img/pontoColeta/imgPontoColeta.jpg">
         <h1 id="titlePontoColeta"> Pontos de Coleta</h1>
         <div id="instructionPontoColeta"> Informe seu CEP, selecione o item a ser descartado e descubra os locais
@@ -106,8 +104,8 @@
             receber esse produto adequadamente.</div>
         <div id="doubtsPontoColeta"> • Caso tenha dúvidas, busque a assistência de um colaborador no estabelecimento.
         </div>
-
-
+ 
+ 
         <form>
             <div class="designInputPonto">
                 <img id="leafInput" src="./assets/img/pontoColeta/inputBairro.png" alt="ícone folha input">
@@ -128,12 +126,12 @@
                 </select>
             </div>
             <button id="btnLocalPonto" type="button">Encontrar Pontos</button>
-
         </form>
         <img id="location" src="./assets/img/pontoColeta/localização.png">
         <h1 id="localNext"> Pontos Próximos</h1>
         <div class="grid grid-cols-1"></div>
-
+ 
+ 
         <div id="allCards">
             <div class="card ">
                 <p id="nameCard" class="mainTitleCard"> Loja Fictícia</p>
@@ -141,19 +139,19 @@
                 <p class="address">Alameda Rio Branco </p>
                 <p class="titleCard"> Observação: </p>
                 <p class="obsCard"> fictícia </p>
-
+ 
             </div>
-
+ 
             <div class="card ">
                 <p id="nameCard" class="mainTitleCard"> Loja Fictícia</p>
                 <p class="titleCard">Endereço: </p>
                 <p class="address">Alameda Rio Branco</p>
                 <p class="titleCard"> Observação: </p>
                 <p class="obsCard"> fictícia </p>
-
+ 
             </div>
         </div>
-
+ 
     </main>
     <footer>
         <div class="footerImgMobile">
@@ -176,12 +174,14 @@
             </div>
             </form>
         </div>
+ 
+ 
     </footer>
-
+ 
     <script src="./js/pontoColeta.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./js/login.js"></script>
     <script src="./js/nav.js"></script>
 </body>
-
+ 
 </html>
