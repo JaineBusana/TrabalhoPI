@@ -268,10 +268,9 @@ form {
 }
 #nameCard:hover{
     color: #6A994E;
-    animation: animacaoTexto 20m ;
+    animation: animacaoTexto 20s ;
 }
     
-
 @keyframes animacaoTexto {
     0% { opacity: 0,5; transform: translateY(-10px); }
     100% { opacity: 1; transform: translateY(-10px); }
