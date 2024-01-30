@@ -15,7 +15,7 @@
     margin-top: 50px;
 }
 
-#coletaBluImg{
+#coletaBluImg {
     display: none;
 }
 
@@ -124,11 +124,110 @@
     margin-left: 40px;
 }
 
-.card {
-    padding-bottom: 40px;
+/* modal */
+
+
+.modalContainerPontoColeta {
+    width: 350px;
+    height: 550px;
+    flex-shrink: 0;
+    margin-left: 30px;
+    margin-top: -100px;
+    display: none;
+    position: absolute;
+    border-radius: 22px;
+    background: #FEFEEB;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.card,
+.modalContainerPontoColeta.ativo {
+    display: block;
+}
+
+.topModalPontoColeta {
+    width: 100%;
+    height: 100px;
+    background: #6A994E;
+    position: absolute;
+    z-index: 1;
+    border-radius: 22px 22px 0px 0px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#imagePontoColeta {
+
+    margin-top: 250px;
+}
+
+.imagePontoColetaModal {
+    width: 350px;
+    height: 200px;
+    flex-shrink: 0;
+    margin-top: 28px;
+    border-radius: 22px 22px 0px 0px;
+
+}
+
+.modalContainerPontoColeta h1 {
+    color: #6A994E;
+    font-family: mukta_bold;
+    margin: 10px;
+    font-size: 25px;
+
+}
+
+
+.infoPonoColeta {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoPonoColeta li {
+    width: 350px;
+    height: 80px;
+    overflow: hidden;
+    margin-left: 5px;
+}
+
+.infoPonoColeta li {
+    font-family: mukta_medium;
+}
+
+.infoPonoColeta li span {
+    color: #6A994E;
+    font-family: mukta_bold;
+}
+
+#closeModalPontoColeta {
+    display: flex;
+    justify-content: center;
+    margin-top: -25px;
+}
+
+.barCloseModalPontoColeta {
+    display: flex;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: #6A994E;
+    margin: 5px auto;
+    transition: all 0.3s;
+
+}
+
+.barCloseModalPontoColeta:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.barCloseModalPontoColeta:nth-child(2) {
+    transform: translateY(-0px) rotate(-45deg);
+}
+
+
+.contentCard {
+    display: flex;
+    gap: 25px;
+}
 .mainTitleCard {
     flex-direction: column;
     /* position: relative; */
@@ -154,11 +253,21 @@
 
 #nameCard {
 
-    font-family: mukta_bold;
-    font-size: 16px;
-    margin-left: 0 !important;
-}
 
+    font-family: mukta_bold;
+    font-size: 26px;
+    margin-left: 0 !important;
+    cursor: pointer;
+}
+#nameCard:hover{
+    color: #6A994E;
+    animation: animacaoTexto 20s ;
+}
+    
+@keyframes animacaoTexto {
+    0% { opacity: 0,5; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(-10px); }
+}  
 
 @media(min-width:750px) {
 
@@ -191,5 +300,63 @@
         COLUMN-GAP: 130px;
         
     }
+
+
+    /* ModalPontoColeta */
+    /* .ContainerPontoColeta {
+        display: flex;
+        justify-content: end;
+        width: 800px;
+        height: 300px;
+        max-width: 1200px;
+        border-radius: 50px 50px 50px 50px;
+    }
+
+    .topModalPontoColeta {
+        width: 380px;
+        height: 100%;
+        background: #6A994E;
+        position: absolute;
+        z-index: 1;
+        border-radius: 0px 50px 50px 0px;
+        box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .imagePontoColetaModal {
+        height: 280px;
+        margin: 10px 20px 10px 0px;
+        border-radius: 0px 50px 50px 0px;
+
+    }
+    #imagePontoColeta{
+        margin-right: 50%;
+        margin-top: 0px;
+    }
+    #closeModalPontoColeta{
+        margin-bottom: 20px;
+    } */
+
+    .contentCard {
+        gap: 80px;
+    }
+
+    .nameCard,
+    .address,
+    .obsCard {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 200px;
+    }
+
+    #coletaBluImg {
+        display: flex;
+        margin-right: 200px;
+        width: 500px;
+        height: 445px;
+        float: right;
+        border-radius: 22px;
+    }
+
 
 }
