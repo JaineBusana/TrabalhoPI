@@ -4,6 +4,8 @@ using ColetaBlu.Entity;
 using ColetaBlu.Infrastructure;
 using Mysqlx.Prepare;
 using Dapper;
+using Mysqlx.Session;
+
 namespace ColetaBlu.Repository
 {
     internal class UserRepository : Connection, IUserRepository
@@ -32,6 +34,8 @@ namespace ColetaBlu.Repository
             string sql = "SELECT * FROM User";
             return await GetConnection().QueryAsync<UserEntity>(sql);
         }
+
+
         public async Task Update(UserEntity user)
         {
             string sql = @"
