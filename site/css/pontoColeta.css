@@ -123,7 +123,7 @@
     margin-bottom: 30px;
     margin-left: 40px;
 }
- 
+
 .card {
     padding-bottom: 40px;
 }
@@ -139,13 +139,22 @@
     gap: 4px;
     height: 50%;
 }
- 
+
 #allCards {
     display: flex;
     COLUMN-GAP: 55px;
  
 }
- 
+
+.nameCard,
+.address,
+.obsCard {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 140px;
+}
+
 .titleCard {
  
     color: #6A994E;
@@ -163,7 +172,9 @@
 @media(min-width:750px) {
  
     .main {
+
         margin-left: 250px;
+
     }
  
     #instructionPontoColeta,
@@ -172,24 +183,27 @@
  
         width: 755px;
     }
- 
- 
- 
- 
+
+
+    form {
+
+        margin-top: 30px;
+    }
+
+
     .designInputPonto {
         width: 390px;
     }
- 
- 
- 
+
     #btnLocalPonto {
         display: flex;
         margin-top: 60px;
         padding: 8px 80px;
     }
+
     #allCards {
         COLUMN-GAP: 130px;
        
     }
- 
+
 }
