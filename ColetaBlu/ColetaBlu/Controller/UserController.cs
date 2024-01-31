@@ -7,6 +7,6 @@ namespace ColetaBlu.Controller
     [Route("user")]
     public class UserController : ControllerBase
     {
-     private readonly IUser
+     private readonly IUser;
     }
 }
