@@ -172,6 +172,7 @@
 
 }
 
+
 .infoPonoColeta {
     display: flex;
     flex-direction: column;
@@ -256,13 +257,23 @@
 
 #nameCard {
 
+
     font-family: mukta_bold;
-    font-size: 16px;
+    font-size: 26px;
     margin-left: 0 !important;
+    cursor: pointer;
 }
+#nameCard:hover{
+    color: #6A994E;
+    animation: animacaoTexto 20s ;
+}
+    
+@keyframes animacaoTexto {
+    0% { opacity: 0,5; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(-10px); }
+}  
 
-
-@media(min-width:750px) {
+@media(min-width: 750px) {
 
     .main {
         margin-left: 250px;
@@ -291,6 +302,7 @@
         
     }
 
+<<<<<<< HEAD
     /* ModalPontoColeta */
     /* .ContainerPontoColeta {
         display: flex;
@@ -324,6 +336,9 @@
     #closeModalPontoColeta{
         margin-bottom: 20px;
     } */
+=======
+
+>>>>>>> 6f1c0ef78df49dea1563881fff3b6b95345a17ba
 
     .contentCard {
         gap: 80px;

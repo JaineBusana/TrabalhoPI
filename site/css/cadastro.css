@@ -123,14 +123,13 @@ aside p {
 #submitCadastreUser{
     display: flex;
     justify-content: center;
+    margin: auto;
+    width: 100px;
+    height: 50px;
+    background-color: #386641;
+    border-radius: 20px;
 }
 .btnCadastro{
-    width: 100px;
-    height: 35px;
-    border-radius: 25px;
-    border: 0px;
-    margin: 20px;
-    background-color: #386641;
     color: white;
 }
 #textJaPossuiConta{
