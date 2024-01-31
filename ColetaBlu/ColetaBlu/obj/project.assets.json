@@ -2724,23 +2724,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\matheus.ramos1\\.nuget\\packages\\": {},
+    "C:\\Users\\jaine.busana\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\matheus.ramos1\\source\\repos\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\ColetaBlu.csproj",
+      "projectUniqueName": "C:\\Users\\jaine.busana\\source\\repos\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\ColetaBlu.csproj",
       "projectName": "ColetaBlu",
-      "projectPath": "C:\\Users\\matheus.ramos1\\source\\repos\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\ColetaBlu.csproj",
-      "packagesPath": "C:\\Users\\matheus.ramos1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\matheus.ramos1\\source\\repos\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\obj\\",
+      "projectPath": "C:\\Users\\jaine.busana\\source\\repos\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\ColetaBlu.csproj",
+      "packagesPath": "C:\\Users\\jaine.busana\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jaine.busana\\source\\repos\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\matheus.ramos1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jaine.busana\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

@@ -1,0 +1,7 @@
+C:\Users\jaine.busana\source\repos\TrabalhoPI\ColetaBlu\ColetaBlu\obj\Debug\net6.0\ColetaBlu.csproj.AssemblyReference.cache
+C:\Users\jaine.busana\source\repos\TrabalhoPI\ColetaBlu\ColetaBlu\obj\Debug\net6.0\ColetaBlu.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jaine.busana\source\repos\TrabalhoPI\ColetaBlu\ColetaBlu\obj\Debug\net6.0\ColetaBlu.AssemblyInfoInputs.cache
+C:\Users\jaine.busana\source\repos\TrabalhoPI\ColetaBlu\ColetaBlu\obj\Debug\net6.0\ColetaBlu.AssemblyInfo.cs
+C:\Users\jaine.busana\source\repos\TrabalhoPI\ColetaBlu\ColetaBlu\obj\Debug\net6.0\ColetaBlu.csproj.CoreCompileInputs.cache
+C:\Users\jaine.busana\source\repos\TrabalhoPI\ColetaBlu\ColetaBlu\obj\Debug\net6.0\ColetaBlu.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\jaine.busana\source\repos\TrabalhoPI\ColetaBlu\ColetaBlu\obj\Debug\net6.0\ColetaBlu.MvcApplicationPartsAssemblyInfo.cache
