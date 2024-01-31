@@ -2,9 +2,7 @@
 using ColetaBlu.DTO;
 using ColetaBlu.Entity;
 using ColetaBlu.Infrastructure;
-using Mysqlx.Prepare;
 using Dapper;
-using Mysqlx.Session;
 
 namespace ColetaBlu.Repository
 {
@@ -33,6 +31,17 @@ namespace ColetaBlu.Repository
         {
             string sql = "SELECT * FROM User";
             return await GetConnection().QueryAsync<UserEntity>(sql);
+        }
+
+        public async Task<UserTokenDTO> LogIn(UserLoginDTO user)
+        {
+            string sql = "SELECT * FROM User WHERE Email = @Email AND Password = @Password";
+            UserEntity userLogin = await GetConnection().QueryFirstAsync<UserEntity>(sql, user);
+            return new UserTokenDTO
+            {
+                Token = Authentication.GenerateToken(userLogin),
+                User = userLogin
+            };
         }
 
 
