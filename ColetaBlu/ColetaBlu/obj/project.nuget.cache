@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JJFMJ9AVnt7dhgpKwzwX3k5LHP2/0pKIMh7EyHlj7MTwoe+Rmf6jBl3U9Ih1wGGA5t9zyf59CWCsG8G965ONlg==",
+  "dgSpecHash": "4m7fa4w6HL9Bzs+0Tl+9n/sM0pWIoJ9e6IjSXmFeWy1sy1PhT4lK0SmNOmD+LVpKHPRc30oVBZOxfr/LOKggZg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\matheus.ramos1\\source\\repos\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\ColetaBlu.csproj",
+  "projectFilePath": "C:\\Users\\matheus.ramos1\\Music\\Trabalho PI API\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\ColetaBlu.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\matheus.ramos1\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\matheus.ramos1\\.nuget\\packages\\dapper\\2.1.28\\dapper.2.1.28.nupkg.sha512",
