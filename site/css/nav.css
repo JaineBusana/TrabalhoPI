@@ -9,7 +9,6 @@
     font-family: "mukta_medium";
     src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -34,13 +33,12 @@ body {
     background: #FEFEEB;
     transition: all 0.5s;
 
-
 }
 
-.logoNav {
-    width: 17%;
+.navigation img {
+    width: 30%;
     min-width: 100px;
-
+    
 }
 
 .navigation ul {
@@ -48,15 +46,20 @@ body {
     padding-top: 0px;
     align-items: center;
     gap: 5rem;
+
+}
+
+.navigation ul li a {
+    color: #6A994E;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+
 }
 
 .navigation ul li a:hover {
     color: #A7C957;
-}
 
-.navItem {
-    font-size: 20px;
-    color: #6A994E;
 }
 
 .navigationBar {
@@ -82,95 +85,6 @@ body {
 }
 
 
-#profile {
-    display: none;
-}
-
-.profileEditbtn,
-.profileExitbtn {
-    display: none;
-}
-
-.btnProfilePicture {
-    display: flex;
-    justify-content: center;
-    width: 100px;
-}
-
-.modalProfilePicture {
-    display: none;
-    position: absolute;
-    top: 120px;
-    right: 31px;
-    z-index: 1
-}
-
-#boxProfilePicture {
-    height: 240px;
-    width: 200px;
-    background-color: #94B447;
-    color: #FAF3E1;
-    border-radius: 30px;
-    padding-left: 15px;
-    padding-top: 15px;
-    box-shadow: 0 0.1rem 0.5rem #ccc;
-}
-
-.modalProfilePicture.ativo {
-    display: flex;
-}
-
-#profileName {
-    margin-left: 7px;
-    margin-top: 10px;
-    font-size: 122%;
-    color: #FAF3E1;
-    font-family: mukta_bold !important;
-}
-
-#profilePoint,
-#profilePickup {
-    height: 58px;
-    width: 172px;
-    margin-top: 15px;
-    margin-bottom: 25px;
-    font-size: 130%;
-    display: flex;
-    gap: 7px;
-    align-items: center;
-    justify-content: center;
-    color: #6A994E;
-    border-radius: 28px;
-    BORDER: 1px solid #6A994E;
-    background-color: #FFFFFF;
-    font-family: mukta_bold !important;
-}
-
-.profilePonitImg,
-.profilePickupImg {
-    width: 22%;
-}
-
-#itemsBoxProfile {
-    margin-right: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.profileExit {
-    margin-top: 10px;
-}
-
-.profileEdit,
-.profileExit {
-    color: #FAF3E1;
-}
-
-.profileEdit a:hover,
-.profileExit a:hover {
-    color: #307A50 !important;
-}
 
 #owl-demo .item img {
     display: block;
@@ -183,25 +97,24 @@ body {
     max-width: 1200px;
 
 }
-
-.carousel1 img {
+.carousel1 img{
     width: 80%;
-
+    
 }
 
 section {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 10px; 
 }
 
 @media(max-width:970px) {
     .navigation {
         padding: 18px 20px;
-        z-index: 1001;
-        position: fixed;
-        margin-top: -50px;
+        position: relative;
+        z-index: 1001; 
+
     }
 
     .logoNav {
@@ -226,92 +139,34 @@ section {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .navHome {
-        overflow-y: scroll !important;
-    }
-
-    .navHome.ativo {
-        overflow-y: scroll !important;
-    }
-
     .menuNav {
         height: 896px;
         position: fixed;
         right: -100%;
-        top: 65px;
-        width: 60%;
+        top: 70px;
+        width: 50%;
+        height: 100%;
         flex-direction: column;
         background: #FEFEEB;
         transition: 0.3s;
-        overflow-y: scroll !important;
+
     }
 
     .menuNav.ativo {
         right: 0;
-        overflow-y: scroll !important;
     }
 
-    .navigation ul {
-        padding-top: 15px;
-        gap: 36px;
-    }
 
     .navItem {
-        font-size: 17px;
-        height: 35px;
-        width: 175px;
-        color: #FFFFFF;
-        background-color: #6A994E;
-        border-radius: 22px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+        margin: 10px 0;
+        padding: 0px;
     }
-
-    #profile {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    #profilePicture {
-        width: 120px;
-    }
-
-    #profileName {
-        color: #6A994E;
-    }
-
-    #profilePoint {
-        margin-top: 2px;
-        margin-bottom: 0px;
-    }
-
-    #profilePickup {
-        margin-top: 15px;
-        margin-bottom: 0px;
-    }
-
-    #profileTextPoint {
-        margin-top: 25px;
-        margin-bottom: 10px;
-        margin-left: 3px;
-    }
-
-    .profileEdit,
-    .profileExit,
-    .profilePictureBtn,
-    .profileHome,
-    #boxProfilePicture {
-        display: none;
-    }
-
 
     .carousel1 {
         max-width: 600px;
         position: absolute;
         z-index: 1;
-
+        
 
     }
 
@@ -319,6 +174,12 @@ section {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .navigation ul {  
+        padding-top: 50px;
+        gap: 3rem;
+    
     }
 
 }
