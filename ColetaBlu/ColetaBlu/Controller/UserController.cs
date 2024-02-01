@@ -51,7 +51,7 @@ namespace ColetaBlu.Controller
             return Ok();
         }
 
-        [Authorize]
+   
         [HttpPost]
         [Route("login")]
         public async Task<IActionResult> LogIn(UserLoginDTO user)
