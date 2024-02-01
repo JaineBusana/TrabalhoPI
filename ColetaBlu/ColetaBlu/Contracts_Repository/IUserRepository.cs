@@ -12,4 +12,5 @@ namespace ColetaBlu.Contracts_Repository
         Task<UserEntity> GetByEmail(string email);
     
     }
+
 }

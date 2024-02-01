@@ -1,9 +1,11 @@
 ﻿using ColetaBlu.Contracts_Repository;
+using ColetaBlu.DTO;
 using Microsoft.AspNetCore.Mvc;
+using static ColetaBlu.Contracts_Repository.ICadastroPontoRepository;
 
 namespace ColetaBlu.Controller
 {
-        [ApiController]
+    [ApiController]
     [Route("cadastroponto")]
     public class CadastroPontoController : ControllerBase
     {
@@ -13,6 +15,5 @@ namespace ColetaBlu.Controller
             _cadastroPontoRepository = cadastroPontoRepository;
         }
 
-        [HttpGet("{id}")]
     }
 }
