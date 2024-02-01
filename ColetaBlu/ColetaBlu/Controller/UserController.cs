@@ -2,7 +2,6 @@
 using ColetaBlu.DTO;
 using ColetaBlu.Entity;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ColetaBlu.Controller
@@ -52,8 +51,25 @@ namespace ColetaBlu.Controller
             return Ok();
         }
 
+        [Authorize]
+        [HttpPost]
+        [Route("login")]
+        public async Task<IActionResult> LogIn(UserLoginDTO user)
+        {
+            try
+            {
+                return Ok(await _userRepository.LogIn(user));
+            }
+            catch (Exception ex)
+            {
+                return Unauthorized("Usuário ou senha inválidos");
+            }
+        }
+
     }
 }
+
+
 
 
 

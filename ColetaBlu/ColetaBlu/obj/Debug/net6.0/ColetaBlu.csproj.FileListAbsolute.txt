@@ -67,3 +67,4 @@ C:\Users\jaine.busana\source\repos\TrabalhoPI\ColetaBlu\ColetaBlu\obj\Debug\net6
 C:\Users\jaine.busana\source\repos\TrabalhoPI\ColetaBlu\ColetaBlu\obj\Debug\net6.0\ColetaBlu.pdb
 C:\Users\jaine.busana\source\repos\TrabalhoPI\ColetaBlu\ColetaBlu\obj\Debug\net6.0\ColetaBlu.genruntimeconfig.cache
 C:\Users\jaine.busana\source\repos\TrabalhoPI\ColetaBlu\ColetaBlu\obj\Debug\net6.0\ref\ColetaBlu.dll
+C:\Users\jaine.busana\source\repos\TrabalhoPI\ColetaBlu\ColetaBlu\bin\Debug\net6.0\Microsoft.AspNet.Identity.Core.dll
