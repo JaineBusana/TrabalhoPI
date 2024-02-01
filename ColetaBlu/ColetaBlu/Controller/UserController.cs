@@ -10,7 +10,6 @@ namespace ColetaBlu.Controller
     [Route("user")]
     public class UserController : ControllerBase
     {
-
         private readonly IUserRepository _userRepository;
 
         public UserController(IUserRepository userRepository)
@@ -52,6 +51,7 @@ namespace ColetaBlu.Controller
             return Ok();
         }
 
+        [Authorize]
         [HttpPost]
         [Route("login")]
         public async Task<IActionResult> LogIn(UserLoginDTO user)
@@ -66,9 +66,10 @@ namespace ColetaBlu.Controller
             }
         }
 
-
     }
-
 }
+
+
+
 
 

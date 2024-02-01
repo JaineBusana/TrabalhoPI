@@ -22,13 +22,13 @@ var key = Encoding.ASCII.GetBytes(Configuration.JWTSecret);
 
 builder.Services.AddSwaggerGen(c =>
 {
-c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
-{
-    Name = "Authorization",
-    Type = SecuritySchemeType.ApiKey,
-    Scheme = "Bearer",
-    In = ParameterLocation.Header
-});
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
+    {
+        Name = "Authorization",
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = "Bearer",
+        In = ParameterLocation.Header
+    });
 
     c.AddSecurityRequirement(new OpenApiSecurityRequirement()
     {
