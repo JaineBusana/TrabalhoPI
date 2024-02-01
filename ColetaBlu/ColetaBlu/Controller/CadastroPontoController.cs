@@ -4,12 +4,15 @@ using Microsoft.AspNetCore.Mvc;
 namespace ColetaBlu.Controller
 {
         [ApiController]
+    [Route("cadastroponto")]
     public class CadastroPontoController : ControllerBase
     {
-        private readonly ICadastroPontoRepository cadastroPontoRepository;
+        private readonly ICadastroPontoRepository _cadastroPontoRepository;
         public CadastroPontoController(ICadastroPontoRepository cadastroPontoRepository)
         {
-            this.cadastroPontoRepository = cadastroPontoRepository;
+            _cadastroPontoRepository = cadastroPontoRepository;
         }
+
+        [HttpGet("{id}")]
     }
 }
