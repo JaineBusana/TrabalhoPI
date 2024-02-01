@@ -67,7 +67,7 @@ $(() => {
              localStorage.setItem(`token`, result.token); 
              localStorage.setItem(`userName`, result.user.name); 
              localStorage.setItem(`userRole`, result.user.role);
-             location.href = "home.html"; 
+             location.href = "index.html"; 
           },
           contentType: "application/json",
           dataType: "json",
