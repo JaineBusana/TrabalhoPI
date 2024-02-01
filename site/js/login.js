@@ -60,7 +60,7 @@ $(() => {
        
       $.ajax({
           type: "POST",
-          url: "https://localhost:7275/user/login",
+          url: "https://localhost:7249/user/login",
           data: JSON.stringify(data),
           success: (result) => {
              localStorage.clear();
