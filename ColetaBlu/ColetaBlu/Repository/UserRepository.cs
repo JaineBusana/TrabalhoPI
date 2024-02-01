@@ -29,13 +29,13 @@ namespace ColetaBlu.Repository
         }
         public async Task<IEnumerable<UserEntity>> Read()
         {
-            string sql = "SELECT * FROM User";
+            string sql = "SELECT * FROM user";
             return await GetConnection().QueryAsync<UserEntity>(sql);
         }
 
         public async Task<UserTokenDTO> LogIn(UserLoginDTO user)
         {
-            string sql = "SELECT * FROM User WHERE Email = @Email AND Password = @Password";
+            string sql = "SELECT * FROM user WHERE Email = @Email AND Password = @Password";
             UserEntity userLogin = await GetConnection().QueryFirstAsync<UserEntity>(sql, user);
             return new UserTokenDTO
             {
