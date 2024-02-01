@@ -67,7 +67,7 @@ C:\Users\jaine.busana\source\repos\TrabalhoPI\ColetaBlu\ColetaBlu\obj\Debug\net6
 C:\Users\jaine.busana\source\repos\TrabalhoPI\ColetaBlu\ColetaBlu\obj\Debug\net6.0\ColetaBlu.pdb
 C:\Users\jaine.busana\source\repos\TrabalhoPI\ColetaBlu\ColetaBlu\obj\Debug\net6.0\ColetaBlu.genruntimeconfig.cache
 C:\Users\jaine.busana\source\repos\TrabalhoPI\ColetaBlu\ColetaBlu\obj\Debug\net6.0\ref\ColetaBlu.dll
-<<<<<<< HEAD
+
 C:\Users\thiago.ribeiro2\Desktop\trabalho PI\TrabalhoPI\ColetaBlu\ColetaBlu\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\thiago.ribeiro2\Desktop\trabalho PI\TrabalhoPI\ColetaBlu\ColetaBlu\bin\Debug\net6.0\appsettings.json
 C:\Users\thiago.ribeiro2\Desktop\trabalho PI\TrabalhoPI\ColetaBlu\ColetaBlu\bin\Debug\net6.0\ColetaBlu.exe
@@ -137,9 +137,9 @@ C:\Users\thiago.ribeiro2\Desktop\trabalho PI\TrabalhoPI\ColetaBlu\ColetaBlu\obj\
 C:\Users\thiago.ribeiro2\Desktop\trabalho PI\TrabalhoPI\ColetaBlu\ColetaBlu\obj\Debug\net6.0\ColetaBlu.pdb
 C:\Users\thiago.ribeiro2\Desktop\trabalho PI\TrabalhoPI\ColetaBlu\ColetaBlu\obj\Debug\net6.0\ColetaBlu.genruntimeconfig.cache
 C:\Users\thiago.ribeiro2\Desktop\trabalho PI\TrabalhoPI\ColetaBlu\ColetaBlu\obj\Debug\net6.0\ref\ColetaBlu.dll
-=======
+
 C:\Users\jaine.busana\source\repos\TrabalhoPI\ColetaBlu\ColetaBlu\bin\Debug\net6.0\Microsoft.AspNet.Identity.Core.dll
->>>>>>> e76d3ce3c7183c168aef32ef7deb4dd2ebfc69fb
+
 C:\Users\tigoh\OneDrive\Área de Trabalho\Nova pasta\TrabalhoPI\ColetaBlu\ColetaBlu\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\tigoh\OneDrive\Área de Trabalho\Nova pasta\TrabalhoPI\ColetaBlu\ColetaBlu\bin\Debug\net6.0\appsettings.json
 C:\Users\tigoh\OneDrive\Área de Trabalho\Nova pasta\TrabalhoPI\ColetaBlu\ColetaBlu\bin\Debug\net6.0\ColetaBlu.exe
