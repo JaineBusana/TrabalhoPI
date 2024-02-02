@@ -208,3 +208,5 @@ C:\Users\tigoh\OneDrive\Área de Trabalho\Nova pasta\TrabalhoPI\ColetaBlu\Coleta
 C:\Users\tigoh\OneDrive\Área de Trabalho\Nova pasta\TrabalhoPI\ColetaBlu\ColetaBlu\obj\Debug\net6.0\ColetaBlu.genruntimeconfig.cache
 C:\Users\tigoh\OneDrive\Área de Trabalho\Nova pasta\TrabalhoPI\ColetaBlu\ColetaBlu\obj\Debug\net6.0\ref\ColetaBlu.dll
 C:\Users\tigoh\OneDrive\Área de Trabalho\Nova pasta\TrabalhoPI\ColetaBlu\ColetaBlu\bin\Debug\net6.0\libman.json
+C:\Users\thiago.ribeiro2\Desktop\trabalho PI\TrabalhoPI\ColetaBlu\ColetaBlu\bin\Debug\net6.0\libman.json
+C:\Users\thiago.ribeiro2\Desktop\trabalho PI\TrabalhoPI\ColetaBlu\ColetaBlu\bin\Debug\net6.0\Microsoft.AspNet.Identity.Core.dll
