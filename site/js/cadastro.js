@@ -1,6 +1,6 @@
-const btnSejaColetor =document.querySelector('.btnSejaColetor')
-const campCpf =document.querySelector('.campCpf')
-const formCadastreColetor =document.querySelector('.formCadastreColetor')
+const btnSejaColetor = document.querySelector('.btnSejaColetor')
+const campCpf = document.querySelector('.campCpf')
+const formCadastreColetor = document.querySelector('.formCadastreColetor')
 // Validadores
 const form = document.getElementById("formCadastre")
 const username = document.getElementById("username")
@@ -14,48 +14,48 @@ const passwordConfirmation = document.getElementById("confirmationPassword")
 
 
 
-btnSejaColetor.addEventListener('click',function (event){
+btnSejaColetor.addEventListener('click', function (event) {
     campCpf.classList.toggle('active');
 });
-btnSejaColetor.addEventListener('click',function (event){
+btnSejaColetor.addEventListener('click', function (event) {
     formCadastreColetor.classList.toggle('active');
 });
-btnSejaColetor.addEventListener('click',function (event){
+btnSejaColetor.addEventListener('click', function (event) {
     btnSejaColetor.classList.toggle('active');
 });
 
 
-email.addEventListener('blur',() =>{
+email.addEventListener('blur', () => {
     checkInputEmail();
 })
-username.addEventListener('blur',() =>{
+username.addEventListener('blur', () => {
     checkInputUsername();
 })
-usercpf.addEventListener('blur',() =>{
+usercpf.addEventListener('blur', () => {
     checkInputCpf();
 })
-cnpj.addEventListener('blur',() =>{
+cnpj.addEventListener('blur', () => {
     checkInputCnpj();
 })
-address.addEventListener('blur',() =>{
+address.addEventListener('blur', () => {
     checkInputAddress();
 })
-phone.addEventListener('blur',() =>{
+phone.addEventListener('blur', () => {
     checkInputPhone();
 })
-password.addEventListener('blur',() =>{
+password.addEventListener('blur', () => {
     checkInputPassword();
 })
-passwordConfirmation.addEventListener('blur',() =>{
+passwordConfirmation.addEventListener('blur', () => {
     checkInputpasswordConfirmation();
 })
-form.addEventListener("submit", (event)=>{
+form.addEventListener("submit", (event) => {
     event.preventDefault();
     checkForm();
- 
+
 })
 
-function checkForm(){
+function checkForm() {
     checkInputUsername();
     checkInputEmail();
     checkInputCpf();
@@ -66,109 +66,127 @@ function checkForm(){
     checkInputpasswordConfirmation()
 
     const formItems = form.querySelectorAll(".formContent")
-    const isValid = [...formItems].every( (item) => {
+    const isValid = [...formItems].every((item) => {
         return item.className === "formContent"
     })
-    if(isValid){
+    if (isValid) {
         window.location = "indexLogado.html"
     }
 
 }
 
-function checkInputUsername(){
+function checkInputUsername() {
     const usernameValue = username.value;
-    if(usernameValue ===""){
+    if (usernameValue === "") {
         erroInput(username, "Preencha o Nome.")
-    }else{
+    } else {
         const formItem = username.parentElement;
         formItem.className = "formContent"
     }
-    
+
 }
-function checkInputEmail(){
+function checkInputEmail() {
     const emailValue = email.value;
-    if(emailValue ===""){
+    if (emailValue === "") {
         erroInput(email, "Preencha o Email.")
-    }else{
+    } else {
         const formItem = email.parentElement;
         formItem.className = "formContent"
     }
-    
+
 }
-function checkInputCpf(){
+function checkInputCpf() {
     const usercpfValue = usercpf.value;
-    if(usercpfValue === ""){
-        erroInput(usercpf,"Preencha o Cpf.")
-    }else if(usercpfValue.length < 11){
-        erroInput(usercpf,"Cpf incorreto.")
-    }else{
+    if (usercpfValue === "") {
+        erroInput(usercpf, "Preencha o Cpf.")
+    } else if (usercpfValue.length < 11) {
+        erroInput(usercpf, "Cpf incorreto.")
+    } else {
         const formItem = usercpf.parentElement;
-        formItem.className ="formContent"
+        formItem.className = "formContent"
     }
 }
-function checkInputCnpj(){
+function checkInputCnpj() {
     const cnpjValue = cnpj.value;
-    if(cnpjValue === ""){
-        erroInput(cnpj,"Preencha o Cnpj.")
-    }else if(cnpjValue.length < 11){
-        erroInput(cnpjValue,"Cnpj incorreto.")
-    }else{
+    if (cnpjValue === "") {
+        erroInput(cnpj, "Preencha o Cnpj.")
+    } else if (cnpjValue.length < 11) {
+        erroInput(cnpjValue, "Cnpj incorreto.")
+    } else {
         const formItem = cnpj.parentElement;
-        formItem.className ="formContent"
+        formItem.className = "formContent"
     }
 }
-function checkInputPhone(){
+function checkInputPhone() {
     const phoneValue = phone.value;
-    if(phoneValue ===""){
+    if (phoneValue === "") {
         erroInput(phone, "Preencha o Telefone.")
-    }else{
+    } else {
         const formItem = phone.parentElement;
         formItem.className = "formContent"
     }
-    
+
 }
-function checkInputAddress(){
+function checkInputAddress() {
     const addressValue = address.value;
-    if(addressValue ===""){
+    if (addressValue === "") {
         erroInput(address, "Preencha o Endereço.")
-    }else{
+    } else {
         const formItem = address.parentElement;
         formItem.className = "formContent"
     }
-    
+
 }
-function checkInputPassword(){
+function checkInputPassword() {
     const passwordValue = password.value;
-    if(passwordValue === ""){
-        erroInput(password,"Preencha a Senha.")
-    }else if(passwordValue.length < 8){
-        erroInput(password,"Senha precisa ter no minimo 8 caracteres.")
-    }else{
+    if (passwordValue === "") {
+        erroInput(password, "Preencha a Senha.")
+    } else if (passwordValue.length < 8) {
+        erroInput(password, "Senha precisa ter no minimo 8 caracteres.")
+    } else {
         const formItem = password.parentElement;
-        formItem.className ="formContent"
+        formItem.className = "formContent"
     }
 }
-function checkInputpasswordConfirmation(){
+function checkInputpasswordConfirmation() {
     const passwordConfirmationValue = passwordConfirmation.value;
     const passwordValue = password.value;
-    if(passwordConfirmationValue === ""){
-        erroInput(passwordConfirmation,"Preencha a Senha.")
-    }else if(passwordValue !== passwordConfirmationValue){
-        erroInput(passwordConfirmation,"As senhas nao são iguais!")
-    }else{
+    if (passwordConfirmationValue === "") {
+        erroInput(passwordConfirmation, "Preencha a Senha.")
+    } else if (passwordValue !== passwordConfirmationValue) {
+        erroInput(passwordConfirmation, "As senhas nao são iguais!")
+    } else {
         const formItem = passwordConfirmation.parentElement;
-        formItem.className ="formContent" 
+        formItem.className = "formContent"
     }
 }
 
 
-function erroInput(input, message){
+function erroInput(input, message) {
     const formItem = input.parentElement;
     const textMensage = formItem.querySelector("a")
 
-    textMensage.innerText =message;
+    textMensage.innerText = message;
     formItem.className = "formContent error"
 
 }
+
+$(() => {
+    $(".btnCadastro").click((e) => {
+        e.preventDefault();
+
+        const data = {
+            username: $("#username").val(),
+            email: $("#email").val(),
+            usercpf: $("#usercpf").val(),
+            cnpj: $("#cnpj").val(),
+            address: $("#address").val(),
+            phone: $("#phone").val(),
+            password: $("#password").val(),
+            confirmationPassword: $("#confirmationPassword").val()
+        };
+        console.log(data)
+    });
+});
 
 
