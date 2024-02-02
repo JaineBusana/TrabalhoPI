@@ -22,7 +22,7 @@
                     <li class="navItem "><a href="index.html">Home</a></li>
                     <li class="navItem"><a href="pontoColeta.html">Pontos de coleta</a></li>
                     <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
-                    <li class="navItem" onclick="SHOW_MODAL_LOGIN()"><a href="#">Login</a></li>
+                    <li class="navItem"><a  id="Logout" href="#">Logout</a></li>
 
 
                 </ul>
@@ -71,17 +71,17 @@
                     </select>
                     <a>Aqui vai a mensagem de erro....</a>
                 </div>
-                <div class="msg"></div> 
-                <button type="submit">Cadastrar Ponto de Coleta</button>
+                <div class="msg"></div>
+                <button id="sendPontoColeta" type="submit" >Cadastrar Ponto de Coleta</button>
 
             </form>
 
         </div>
     </main>
-
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./js/cadastroPonto.js"></script>
     <script src="./js/nav.js"></script>
+    <!-- <script src="./lib/jquery/jquery.min.js"></script> -->
 </body>
 
 </html>

@@ -19,7 +19,7 @@ namespace ColetaBlu.Controller
         public async Task<IActionResult> Add(CadastroPontoDTO cadastroPonto)
         {
             await _cadastroPontoRepository.Add(cadastroPonto);
-            return Ok();
+            return Ok(cadastroPonto);
         }
 
     }

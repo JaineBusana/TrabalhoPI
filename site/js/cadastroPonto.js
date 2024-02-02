@@ -8,8 +8,6 @@ window.addEventListener("load", (event) => {
 
 
     form.addEventListener("submit", (e) => {
-        e.preventDefault();
-
         checkForm();
     })
 
@@ -109,6 +107,7 @@ window.addEventListener("load", (event) => {
                 sucessMessage.innerHTML = "";
                 sucessMessage.classList.remove("sucess");
             }, 5000);
+
         }
 
     }
@@ -123,4 +122,42 @@ window.addEventListener("load", (event) => {
         formItem.className = "formContent error"
 
     }
+});
+
+
+$(() => {
+
+    if (!localStorage.getItem(`token`)) {
+        location.href = "index.html";
+      }
+    $("#logout").click(() => {
+        localStorage.clear();
+        location.reload;
+    })
+    $("#sendPontoColeta").click((e) => {
+        e.preventDefault();
+
+
+        const data = {
+            placeName: $("#placeName").val(),
+            street: $("#street").val(),
+            phoneNumber: $("#phoneNumber").val(),
+            neighborhood_Id: $("#neighborhood_Id").val(),
+            user_Id: $("#user_Id").val()
+        };
+
+        $.ajax({
+            type: "POST",
+            url: "https://localhost:7249/cadastroponto",
+            data: JSON.stringify(data),
+            headers: {
+                Authorization: `Bearer ${localStorage.getItem(`token`)}`,
+              },
+            success: (result) => {
+                location.href = "cadastroPonto.html";
+            },
+            contentType: "application/json",
+            dataType: "json",
+        });
+    });
 });
