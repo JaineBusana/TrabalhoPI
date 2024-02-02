@@ -1,7 +1,7 @@
 window.addEventListener("load", (event) => {
 
     const form = document.getElementById("form");
-    const placeName = document.getElementById("placeName");
+    const Name = document.getElementById("Name");
     const address = document.getElementById("address");
     const phoneNumber = document.getElementById("phoneNumber");
     const residue = document.getElementById("selectResidue");
