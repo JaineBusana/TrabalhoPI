@@ -1,9 +1,9 @@
 window.addEventListener("load", (event) => {
 
     const form = document.getElementById("form");
-    const Name = document.getElementById("Name");
-    const address = document.getElementById("address");
-    const phoneNumber = document.getElementById("phoneNumber");
+    const placeName = document.getElementById("Name");
+    const address = document.getElementById("Street");
+    const phoneNumber = document.getElementById("Number");
     const residue = document.getElementById("selectResidue");
 
 
@@ -127,9 +127,9 @@ window.addEventListener("load", (event) => {
 
 $(() => {
 
-    if (!localStorage.getItem(`token`)) {
-        location.href = "index.html";
-      }
+    // if (!localStorage.getItem(`token`)) {
+    //     location.href = "index.html";
+    //   }
     $("#logout").click(() => {
         localStorage.clear();
         location.reload;
@@ -139,7 +139,7 @@ $(() => {
 
 
         const data = {
-            placeName: $("#placeName").val(),
+            placeName: $("#Name").val(),
             street: $("#street").val(),
             phoneNumber: $("#phoneNumber").val(),
             neighborhood_Id: $("#neighborhood_Id").val(),
