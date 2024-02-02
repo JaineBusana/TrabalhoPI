@@ -99,6 +99,7 @@ body {
 }
 .carousel1 img{
     width: 80%;
+    height: 400px;
     
 }
 
@@ -165,7 +166,7 @@ section {
     }
 
     .carousel1 img{
-        height: 400px;
+        height: auto;
         
     }
 
