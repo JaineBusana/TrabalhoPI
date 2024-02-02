@@ -3,15 +3,16 @@ using ColetaBlu.Entity;
 
 namespace ColetaBlu.Contracts_Repository
 {
-    public class ICadastroPontoRepository
-    {
-        public interface ICadastroPonto
+
+    
+        public interface ICadastroPontoRepository
         {
             Task Add(CadastroPontoDTO user);
             Task<IEnumerable<CadastroPontoEntity>> Read();
             Task Update(CadastroPontoDTO user);
             Task Delete(int id);
 
+
         }
-    }
+    
 }

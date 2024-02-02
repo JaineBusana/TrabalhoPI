@@ -124,13 +124,10 @@
     margin-left: 40px;
 }
 
-<<<<<<< HEAD
 
 /* modal */
 
 
-=======
->>>>>>> 664f87ae55b3c29d3f06d8f80276a26d94e90e3d
 .modalContainerPontoColeta {
     width: 350px;
     height: 550px;
@@ -142,12 +139,13 @@
     border-radius: 22px;
     background: #FEFEEB;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-<<<<<<< HEAD
-
-    .card {
-        padding-bottom: 40px;
-=======
 }
+
+.card {
+    padding-bottom: 40px;
+
+}
+
 .modalContainerPontoColeta.ativo {
     display: block;
 }
@@ -236,6 +234,7 @@
     display: flex;
     gap: 25px;
 }
+
 .mainTitleCard {
     flex-direction: column;
     margin-left: 33px;
@@ -261,6 +260,7 @@
     text-overflow: ellipsis;
     width: 140px;
 }
+
 .titleCard {
 
     color: #6A994E;
@@ -275,22 +275,30 @@
     margin-left: 0 !important;
     cursor: pointer;
 }
-#nameCard:hover{
+
+#nameCard:hover {
     color: #6A994E;
-    animation: animacaoTexto 20s ;
+    animation: animacaoTexto 20s;
 }
-    
+
 @keyframes animacaoTexto {
-    0% { opacity: 0,5; transform: translateY(-10px); }
-    100% { opacity: 1; transform: translateY(-10px); }
-}  
+    0% {
+        opacity: 0, 5;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+}
 
 @media(min-width: 750px) {
 
     .main {
         margin-left: 250px;
 
->>>>>>> 664f87ae55b3c29d3f06d8f80276a26d94e90e3d
+
     }
 
     .modalContainerPontoColeta.ativo {
@@ -329,7 +337,6 @@
 
     }
 
-<<<<<<< HEAD
 
     .infoPonoColeta {
         display: flex;
@@ -378,8 +385,7 @@
         transform: translateY(-0px) rotate(-45deg);
     }
 
-=======
-    .designInputPonto {
+   .designInputPonto {
         width: 390px;
     }
 
@@ -389,12 +395,13 @@
         margin-top: 60px;
         padding: 8px 80px;
     }
+
     #allCards {
         COLUMN-GAP: 130px;
-        
+
     }
 
-<<<<<<< HEAD
+
     /* ModalPontoColeta */
     /* .ContainerPontoColeta {
         display: flex;
@@ -428,11 +435,6 @@
     #closeModalPontoColeta{
         margin-bottom: 20px;
     } */
-=======
-
->>>>>>> 6f1c0ef78df49dea1563881fff3b6b95345a17ba
->>>>>>> 664f87ae55b3c29d3f06d8f80276a26d94e90e3d
-
     .contentCard {
         display: flex;
         gap: 25px;
@@ -471,8 +473,6 @@
 
         color: #6A994E;
     }
-
-<<<<<<< HEAD
 
     #nameCard {
 
@@ -555,6 +555,5 @@
 
 
     }
-=======
->>>>>>> 664f87ae55b3c29d3f06d8f80276a26d94e90e3d
+
 }
