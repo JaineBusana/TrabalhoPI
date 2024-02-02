@@ -6,7 +6,7 @@ using static ColetaBlu.Contracts_Repository.ICadastroPontoRepository;
 namespace ColetaBlu.Controller
 {
     [ApiController]
-    [Route("cadastroponto")]
+    [Route("/cadastroponto")]
     public class CadastroPontoController : ControllerBase
     {
         private readonly ICadastroPontoRepository _cadastroPontoRepository;
@@ -15,5 +15,14 @@ namespace ColetaBlu.Controller
             _cadastroPontoRepository = cadastroPontoRepository;
         }
 
+        [HttpPost]
+        public async Task<IActionResult> Add(CadastroPontoDTO cadastroPonto)
+        {
+            await _cadastroPontoRepository.Add(cadastroPonto);
+            return Ok();
+        }
+
     }
 }
+
+

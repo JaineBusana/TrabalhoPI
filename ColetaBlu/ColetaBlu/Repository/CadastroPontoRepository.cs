@@ -5,11 +5,16 @@ using ColetaBlu.Infrastructure;
 
 namespace ColetaBlu.Repository
 {
-    public class CadastroPontoRepository : Connection
+    public class CadastroPontoRepository : Connection, ICadastroPontoRepository
     {
-        public Task Add(CadastroPontoDTO user)
+
+        public  async Task Add(CadastroPontoDTO cadastroPonto)
         {
-            throw new NotImplementedException();
+            string sql = @"
+                INSERT INTO CollectionPoint (Name, Street, Number, Neighborhood_Id, User_Id)
+                            VALUE (@Name, @Street, @Number, @Neighborhood_Id, @User_Id)
+            ";
+            await Execute(sql, cadastroPonto);
         }
 
         public Task Delete(int id)
