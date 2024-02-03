@@ -127,6 +127,7 @@
     align-items: center;
     padding-top: 8px;
     width: 90%;
+    cursor: pointer;
     border-radius: 22px;
     height: 300px;
     background-color: #FAF3E1;
@@ -137,10 +138,6 @@
     margin-block-end: auto;
     margin-left: 20px;
 }
-
-
-
-
 
 
 .modalTrocaCupomContent {
@@ -173,6 +170,7 @@
   }
   
   .menuBarCoupom {
+    cursor: pointer;
     margin-top: -25px !important;
     margin-left: -25px !important;
 }
