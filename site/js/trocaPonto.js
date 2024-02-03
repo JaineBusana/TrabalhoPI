@@ -1,8 +1,10 @@
-var swiper = new Swiper(".slideContainer", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
+const modalCoupom = document.querySelector('.modalTrocaCupomContent');
+
+
+function modalCoupomOpen() {
+  modalCoupom.style.display = 'flex';
+}
+
+function modalCoupomClose() {
+  modalCoupom.style.display = 'none';
+}

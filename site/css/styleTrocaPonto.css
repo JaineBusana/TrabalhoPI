@@ -151,13 +151,13 @@
     top: 0px;
     z-index: 999;
     justify-content: center;
-    display: flex;
+    display: none;
     align-items: center;
   }
   
   
   .modalTrocaCupom {
-    height: 160px;
+    height: 180px;
     display: flex;
     padding: 30px;
     background-color: #FEFEEB;
