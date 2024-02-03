@@ -127,9 +127,9 @@ window.addEventListener("load", (event) => {
 
 $(() => {
 
-    // if (!localStorage.getItem(`token`)) {
-    //     location.href = "index.html";
-    //   }
+    if (!localStorage.getItem(`token`)) {
+        location.href = "index.html";
+      }
     $("#logout").click(() => {
         localStorage.clear();
         location.reload;
