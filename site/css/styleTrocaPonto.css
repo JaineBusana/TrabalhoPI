@@ -172,6 +172,29 @@
     max-width: 70%;
   }
   
+  .menuBarCoupom {
+    margin-top: -25px !important;
+    margin-left: -25px !important;
+}
+
+  .barCoupom{
+    display: flex !important;
+    width: 28px !important;
+    height: 3px !important;
+    border-radius: 3px !important;
+    background: #6A994E !important;
+    margin: 5px auto !important;
+    transition: all 0.3s !important;
+  }
+
+  .barCoupom:nth-child(1) {
+    transform: translateY(8px) rotate(45deg) !important;
+}
+ 
+.barCoupom:nth-child(2) {
+    transform: translateY(-0px) rotate(-45deg) !important;
+}
+  
 
   
   @media(min-width:750px) {
@@ -179,7 +202,8 @@
   
     .modalTrocaCupom {
   
-      width: 9%;
+        width: 20%;
+        height: 30%;
   
     }
   
