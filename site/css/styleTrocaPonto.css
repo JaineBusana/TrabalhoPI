@@ -137,3 +137,51 @@
     margin-block-end: auto;
     margin-left: 20px;
 }
+
+
+
+
+
+
+.modalTrocaCupomContent {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .35);
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .modalTrocaCupom {
+    height: 160px;
+    display: flex;
+    padding: 30px;
+    background-color: #FEFEEB;
+    border-radius: 10px;
+    width: 60%;
+    font-family: mukta_medium;
+    text-align: justify;
+  }
+
+  .coupom{
+    margin: auto;
+    max-width: 70%;
+  }
+  
+
+  
+  @media(min-width:750px) {
+  
+  
+    .modalTrocaCupom {
+  
+      width: 9%;
+  
+    }
+  
+    
+  }
