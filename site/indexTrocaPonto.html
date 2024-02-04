@@ -79,10 +79,8 @@
                         <img src="./assets/img/trocaPontos/valeCupom.png" alt="" class="coupom">
                     </div>
                 </div>
-
-                <div class="owl-carousel owl-theme cardWrapper">
-                    <h1 class="tittleCardTroca"> Empresa de Bebidas X</h1>
-
+                <h1 class="tittleCardTroca"> Empresa de Bebidas X</h1>
+                <div class="owl-carousel  cardWrapper">
                     <div class="cardTroca" onclick="modalCoupomOpen()">
                         <div class="discountPoints"><span class="spanTroca">50</span>pontos</div>
                         <img src="./assets/img/trocaPontos/fundoCard.png" alt="" class="cardImgTroca">
@@ -124,24 +122,32 @@
         </div>
 
     </footer>
-    
+
     <script src="./lib/jquery/jquery.min.js"></script>
     <script src="./lib/owlCarousel/dist/owl.carousel.min.js"></script>
     <script src="./js/nav.js"></script>
     <script src="./js/trocaPonto.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-          $(".cardWrapper").owlCarousel({
-            loop: true,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            dots: false,
-            center: true,
-            items: 1,
-          });
-    
+            $(".cardWrapper").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            });
+
         });
-      </script>
+    </script>
 
 
 </body>
