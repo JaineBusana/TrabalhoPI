@@ -72,9 +72,9 @@
     color: white;
 }
 
-.cardImgTroca {
+.owl-carousel .owl-item img {
     height: auto;
-    width: 160px;
+    width: 160px !important;
 }
 
 .spanDiscount {
@@ -117,6 +117,9 @@
     justify-content: space-around;
     color: #6A994E;
     font-size: 18px;
+    position: absolute;
+    margin-top: 15px;
+    font-size: 20px;
 }
 
 .imgCoupomPc {
@@ -126,6 +129,8 @@
 .slideContent {
     justify-content: center;
     display: flex;
+    margin-top: 50px;
+
 }
 
 .cardWrapper {
@@ -143,7 +148,9 @@
 
 .cardTroca {
     margin-block-end: auto;
-    margin-left: 100px;
+    margin-left: 120px;
+    margin-top: 40px;
+
 }
 
 
@@ -245,12 +252,14 @@
     }
 
     .tittleCardTroca {
-        position: absolute;
-        margin-top: -250px;
-        margin-left: 30px;
+        margin-top: 20px;
+        margin-left: auto;
+        font-size: 25px;
     }
-    .cardTroca{
+
+    .cardTroca {
         margin-top: 50px;
+        margin-left: 100px;
 
     }
 
@@ -273,13 +282,16 @@
     }
 
     .tittleCardTroca {
-        position: absolute;
-        margin-top: -250px;
-        margin-left: 30px;
+        margin-top: 20px;
+        margin-left: auto;
+        font-size: 25px;
+
     }
 
-    .cardTroca{
+    .cardTroca {
         margin-top: 50px;
+        margin-left: 100px;
+
 
     }
 }
