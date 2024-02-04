@@ -42,7 +42,7 @@
     flex-shrink: 0;
     color: #6A994E;
     font-family: mukta_bold !important;
-    font-size: 19px;
+    font-size: 20px;
     font-style: normal;
     line-height: normal;
 }
@@ -50,7 +50,8 @@
 #ecoScore {
     background-color: #6A994E;
     border-radius: 22px;
-    width: 100px;
+    width: 105px;
+    font-size: 18px;
     padding-left: 20px;
     color: white;
     margin-top: 40px;
@@ -63,6 +64,7 @@
     color: #6A994E;
     margin-top: -23px;
     margin-left: 150px;
+    font-size: 18px;
 
 }
 
@@ -96,7 +98,7 @@
 .discountMenssageApp {
     margin-top: 20px;
     margin-left: 10px;
-    font-size: 12px;
+    font-size: 16px;
     color: black;
 }
 
@@ -231,11 +233,17 @@
 
     }
 
+    #tittleTrocaPonto{
+        font-size: 25px;
+
+    }
+
 
     #motivationalPhrase,
     #motivationalPhrase1 {
 
-        width: 50%
+        width: 50%;
+        font-size: 18px;
     }
 
     .cardWrapper {
@@ -259,7 +267,7 @@
 
 }
 
-@media(min-width:1200px) {
+@media(min-width:1800px) {
 
     .imgCoupomPc {
         margin-left: 1150px;
