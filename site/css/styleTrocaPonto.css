@@ -94,16 +94,10 @@
 }
 
 .discountMenssageApp {
-    margin-top: 1px;
-    margin-left: 35px;
-    position: absolute;
+    margin-top: 20px;
+    margin-left: 10px;
     font-size: 12px;
     color: black;
-}
-
-.spanMessageApp {
-    display: flex;
-    justify-content: center;
 }
 
 .spanTroca {
@@ -265,7 +259,7 @@
 
 }
 
-@media(min-width:1800px) {
+@media(min-width:1200px) {
 
     .imgCoupomPc {
         margin-left: 1150px;
