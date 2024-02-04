@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./css/pontoColeta.css" />
     <link rel="stylesheet" href="./css/styleIndex.css">
     <link rel="stylesheet" href="./css/nav.css">
@@ -33,11 +34,16 @@
         <div id="modalLogin" class="">
             <div id="backgroundLogin" class="flex">
                 <div>
-                    <button id="closeModal" onclick="CLOSE_MODAL_LOGIN()"><i class="las la-times-circle"></i></button>
+                    <button class="closeModal" onclick="CLOSE_MODAL_LOGIN()">
+                        <div class="menuLogin">
+                            <span class="barLogin"></span>
+                            <span class="barLogin"></span>
+                        </div>
+                    </button>
                     <div class="flex">
                         <img id="logo" class="h-20" src="./assets/img/MicrosoftTeams-image (7).png"
                             alt="Logo da ColetaBlu">
-                        <h1 class=" mt-12 enterLogin">Entrar</h1>
+                        <h1 class=" mt-10 enterLogin">Entrar</h1>
                     </div>
                     <div class="msg"> </div>
                     <div class="">
@@ -59,16 +65,15 @@
                         <button id="login">Login</button>
                     </div>
                     <div class="flex">
-                        <h1 class="registerLogin ml-5">Não tem uma conta?</h1>
+                        <h1 class="registerLogin ml-6">Não tem uma conta?</h1>
                         <a id="linkRegisterLogin" class="registerLogin ml-1" href="cadastro.html">Cadastre-se!</a>
                     </div>
                 </div>
                 <img id="backgroundPhoto" src="./assets/img/Foto_Fundo_Login.jpg" alt="Imagen fundo"
-                    style="max-width:100%;height:auto;">
+                    style="max-width:51%;height:auto;">
             </div>
         </div>
     </form>
-
     <header>
         <nav class="navigation">
 
@@ -130,11 +135,51 @@
         <div class="grid grid-cols-1"></div>
 
 
-        <div id="allCards">
+
+
+        <div class="modalContainerPontoColeta">
+            <div class="topModalPontoColeta">
+                <img class="imagePontoColetaModal" src="./assets/img/estabelecimento.jpg" alt="imagem do estabelecimento ">
+            </div>
+            <div id="imagePontoColeta">
+                <h1>Nome do Estabelecimento</h1>
+                <ul class="infoPonoColeta">
+                    <li id="addressPontoColeta"><span>Endereço:</span> R.Padrejacons ,139 - Centro,Blumenau-SC,89010-080
+                    </li>
+                    <li id="observacaoPontoColeta"><span>Observação:</span> Horário de funcionamento:
+                        segunda-feira–sábado, 08:00–19:00</li>
+                    <li id="mapsPontoColeta"><span>Mapa:</span> Link Aqui. </li>
+                </ul>
+                <div id="closeModalPontoColeta">
+                    <button id="btnCloseModalPontoColeta">
+                        <div class="menuCloseModalPontoColeta">
+                            <span class="barCloseModalPontoColeta"></span>
+                            <span class="barCloseModalPontoColeta"></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="contentCard">
+
             <div class="card ">
-                <p id="nameCard" class="mainTitleCard"> Loja Fictícia</p>
+                <div id="openModalPontoColeta">
+                    <p id="nameCard" class="card"> Mercado Dona Rosa</p>
+                </div>
                 <p class="titleCard">Endereço: </p>
-                <p class="address">Alameda Rio Branco </p>
+                <p class="address">Alameda Rio Branco, Blumenau</p>
+                <p class="titleCard"> Observação: </p>
+                <p class="obsCard"> Mercadorias com validade próxima </p>
+
+            </div>
+            <div class="card ">
+                <p id="nameCard" class="card"> Loja Fictícia</p>
+                <p class="titleCard">Endereço: </p>
+                <p class="address">Rua, bairro </p>
                 <p class="titleCard"> Observação: </p>
                 <p class="obsCard"> fictícia </p>
 
@@ -148,6 +193,7 @@
                 <p class="obsCard"> fictícia </p>
 
             </div>
+
         </div>
 
     </main>

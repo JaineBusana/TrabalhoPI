@@ -38,7 +38,7 @@ body {
 }
 
 .logoNav {
-    width: 17%;
+    width: 17% !important;
     min-width: 100px;
 
 }
@@ -204,6 +204,13 @@ section {
         margin-top: -50px;
     }
 
+    .logoNav {
+        width: 50% !important;
+        min-width: 100px;
+    
+    }
+    
+
     .navigationBar {
         display: block;
 
@@ -221,14 +228,6 @@ section {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .navHome {
-        overflow-y: scroll !important;
-    }
-
-    .navHome.ativo {
-        overflow-y: scroll !important;
-    }
-
     .menuNav {
         position: fixed;
         right: -100%;
@@ -237,12 +236,11 @@ section {
         flex-direction: column;
         background: #FEFEEB;
         transition: 0.3s;
-        overflow-y: scroll !important;
     }
 
     .menuNav.ativo {
         right: 0;
-        overflow-y: scroll !important;
+        height: 896px;
     }
 
     .navigation ul {
