@@ -14,8 +14,8 @@
     <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
 
 
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
-
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
 
     <title>Troca de pontos</title>
@@ -66,7 +66,8 @@
                             <span class="barCoupom"></span>
                             <span class="barCoupom"></span>
                         </div>
-                        <img src="./assets/img/trocaPontos/cupom.png" alt="" class="coupomConfirmn" onclick="modalConfirmnOpen()">
+                        <img src="./assets/img/trocaPontos/cupom.png" alt="" class="coupomConfirmn"
+                            onclick="modalConfirmnOpen()">
                     </div>
                 </div>
                 <div class="modalTrocaConfirmnContent">
@@ -78,15 +79,19 @@
                         <img src="./assets/img/trocaPontos/valeCupom.png" alt="" class="coupom">
                     </div>
                 </div>
-                <div class="cardWrapper">
+
+                <div class="owl-carousel owl-theme cardWrapper">
+                    <h1 class="tittleCardTroca"> Empresa de Bebidas X</h1>
+
                     <div class="cardTroca" onclick="modalCoupomOpen()">
-                        <h1 class="tittleCardTroca"> Empresa de Bebidas X</h1>
                         <div class="discountPoints"><span class="spanTroca">50</span>pontos</div>
                         <img src="./assets/img/trocaPontos/fundoCard.png" alt="" class="cardImgTroca">
                         <p class="spanDiscount">10%</p>
                         <p class="discountTroca">De desconto</p>
                         <p class="discountMenssageApp"><span class="spanMessageApp">Na próxima</span> compra do app</p>
                     </div>
+
+
 
                 </div>
 
@@ -119,9 +124,26 @@
         </div>
 
     </footer>
+    
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
     <script src="./js/nav.js"></script>
-    <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/trocaPonto.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+          $(".cardWrapper").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            dots: false,
+            center: true,
+            items: 1,
+          });
+    
+        });
+      </script>
+
+
 </body>
 
 </html>
