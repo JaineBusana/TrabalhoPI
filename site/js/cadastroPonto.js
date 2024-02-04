@@ -2,8 +2,8 @@ window.addEventListener("load", (event) => {
 
     const form = document.getElementById("form");
     const placeName = document.getElementById("Name");
-    const address = document.getElementById("Street");
-    const phoneNumber = document.getElementById("Number");
+    const address = document.getElementById("street");
+    const phoneNumber = document.getElementById("phoneNumber");
     const residue = document.getElementById("selectResidue");
 
 
@@ -127,32 +127,34 @@ window.addEventListener("load", (event) => {
 
 $(() => {
 
-    if (!localStorage.getItem(`token`)) {
-        location.href = "index.html";
-      }
-    $("#logout").click(() => {
-        localStorage.clear();
-        location.reload;
-    })
+    // if (!localStorage.getItem(`token`)) {
+    //     location.href = "index.html";
+    //   }
+    // $("#logout").click(() => {
+    //     localStorage.clear();
+    //     location.reload;
+    // })
     $("#sendPontoColeta").click((e) => {
         e.preventDefault();
 
 
         const data = {
-            placeName: $("#Name").val(),
+            name: $("#Name").val(),
             street: $("#street").val(),
-            phoneNumber: $("#phoneNumber").val(),
-            neighborhood_Id: $("#neighborhood_Id").val(),
-            user_Id: $("#user_Id").val()
+            number: $("#AddressNumber").val(),
+            // phoneNumber: $("#phoneNumber").val(),
+            neighborhood_Id: $("#neighborhood").val(),
+            // selectResidue: $("#selectResidue").val(),
+            user_Id: $("#User").val()
         };
-
+        console.log(data)
         $.ajax({
             type: "POST",
             url: "https://localhost:7249/cadastroponto",
             data: JSON.stringify(data),
-            headers: {
-                Authorization: `Bearer ${localStorage.getItem(`token`)}`,
-              },
+        //     headers: {
+        //         Authorization: `Bearer ${localStorage.getItem(`token`)}`,
+        //       },
             success: (result) => {
                 location.href = "cadastroPonto.html";
             },
