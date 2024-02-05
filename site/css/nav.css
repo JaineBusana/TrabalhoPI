@@ -118,6 +118,11 @@ section {
 
     }
 
+    .logoNav {
+        width: 45%;
+    
+    }
+
     .navigationBar {
         display: block;
 
@@ -136,6 +141,7 @@ section {
     }
 
     .menuNav {
+        height: 896px;
         position: fixed;
         right: -100%;
         top: 70px;

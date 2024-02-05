@@ -401,40 +401,6 @@
 
     }
 
-
-    /* ModalPontoColeta */
-    /* .ContainerPontoColeta {
-        display: flex;
-        justify-content: end;
-        width: 800px;
-        height: 300px;
-        max-width: 1200px;
-        border-radius: 50px 50px 50px 50px;
-    }
-
-    .topModalPontoColeta {
-        width: 380px;
-        height: 100%;
-        background: #6A994E;
-        position: absolute;
-        z-index: 1;
-        border-radius: 0px 50px 50px 0px;
-        box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
-
-    .imagePontoColetaModal {
-        height: 280px;
-        margin: 10px 20px 10px 0px;
-        border-radius: 0px 50px 50px 0px;
-
-    }
-    #imagePontoColeta{
-        margin-right: 50%;
-        margin-top: 0px;
-    }
-    #closeModalPontoColeta{
-        margin-bottom: 20px;
-    } */
     .contentCard {
         display: flex;
         gap: 25px;
@@ -509,6 +475,16 @@
         #titlePontoColeta {
 
             width: 755px;
+        
+        }
+
+        #instructionPontoColeta,
+        #doubtsPontoColeta{
+           font-size:18px;
+        }
+        #titlePontoColeta{
+            font-size:25px;
+
         }
 
 
