@@ -23,22 +23,38 @@ const selectNeighborhood = () => {
 
 const btnLocalPonto = document.getElementById("btnLocalPonto");
 btnLocalPonto.addEventListener("click", () => {
-    const select = document.getElementById("selectNeighborhood");
-    const selectedValue = select.value;
+    const selectNeighborhoodValue = document.getElementById("selectNeighborhood");
+    const selectResidueValue = document.getElementById("selectResidue");
+
+    const selectedNeighborhood = selectNeighborhoodValue.value;
+    const selectedResidue = selectResidueValue.value;
 
     const nameCardElement = document.getElementById("nameCard");
     const addressElement = document.querySelector(".address");
     const obsCardElement = document.querySelector(".obsCard");
 
-    if (selectedValue !== "0") {
-        const neighborhoodSelected = neighborhood[selectedValue];
+    const errorMessageElement = document.getElementById("error-message");
 
-        if (neighborhoodSelected) {
-            nameCardElement.textContent = neighborhoodSelected.nome;
-            addressElement.textContent = "Endereço:" `${neighborhoodSelected.endereco}`;
-            obsCardElement.textContent = "Observação:" `${neighborhoodSelected.observacao}`;
+    if (selectedNeighborhood !== "0" || selectedResidue !== "0") {
+        errorMessageElement.textContent = "";
+        errorMessageElement.style.display = "none";
+
+        if (selectedNeighborhood !== "0") {
+            const neighborhoodSelected = neighborhood[selectedNeighborhood];
+            if (neighborhoodSelected) {
+                nameCardElement.textContent = neighborhoodSelected.nome;
+                addressElement.textContent = "Endereço: " + neighborhoodSelected.endereco;
+                obsCardElement.textContent = "Observação: " + neighborhoodSelected.observacao;
+            }
+        } else {
+            nameCardElement.textContent = "";
+            addressElement.textContent = "Endereço: ";
+            obsCardElement.textContent = "Observação: ";
         }
     } else {
+        errorMessageElement.textContent = "Favor selecionar algum item em um dos filtros";
+        errorMessageElement.style.display = "block";
+
         nameCardElement.textContent = "";
         addressElement.textContent = "Endereço: ";
         obsCardElement.textContent = "Observação: ";
