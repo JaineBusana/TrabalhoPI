@@ -10,6 +10,7 @@
     font-family: "mukta_medium";
     src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
 }
+
  
 @font-face {
  
@@ -87,11 +88,7 @@
 }
  
 #logo {
-<<<<<<< HEAD:site/css/Style_Login.css
-    margin-top: 24px;
-=======
     margin-top: 37px;
->>>>>>> 3e10ef995e715037d1d0ff01e77228ae088ca34b:site/css/StyleLogin.css
     width: 70px;
     height: 70px;
     margin-left: 90px;
@@ -150,17 +147,12 @@
 }
  
 .registerLogin {
-<<<<<<< HEAD:site/css/Style_Login.css
-    margin-top: 75px;
-=======
     margin-top: 80px;
->>>>>>> 3e10ef995e715037d1d0ff01e77228ae088ca34b:site/css/StyleLogin.css
     font-size: 14px;
 }
  
 #linkRegisterLogin {
     color: #6A994E;
-   
 }
  
 .barLogin {

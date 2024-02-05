@@ -3,6 +3,7 @@ using ColetaBlu.DTO;
 using ColetaBlu.Entity;
 using ColetaBlu.Infrastructure;
 using Dapper;
+using Mysqlx.Session;
 
 namespace ColetaBlu.Repository
 {
