@@ -1,0 +1,215 @@
+@font-face {
+
+  font-family: "mukta_bold";
+  src: url("../assets/fonts/pontoColeta/Mukta-Bold.ttf")
+}
+
+
+@font-face {
+
+  font-family: "mukta_medium";
+  src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
+}
+
+
+.modalContainerConfirmn {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, .35);
+  position: fixed;
+  top: 30px;
+  display: none;
+  z-index: 999;
+  justify-content: center;
+}
+
+.activeConfirmn {
+  display: flex !important;
+}
+
+.modalConfirmn {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: #FEFEEB;
+  border-radius: 10px;
+  width: 30%;
+  font-family: mukta_medium;
+  text-align: justify;
+  margin: 200px;
+}
+
+
+
+.activeConfirmn .modalConfirmn {
+  animation: modal .4s;
+}
+
+.modalContainerConfirmn span {
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+
+.btnConfirmn {
+  width: 50px;
+  margin-left: 0px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+  font-family: mukta_medium;
+  background-color: #6A994E;
+}
+
+
+
+.mainHistoric {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: mukta_medium;
+}
+
+.containerHistoric {
+  background-color: #fafafa;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  margin: 14px;
+  max-width: 600px;
+  width: 100%;
+  box-sizing: 0 3px 5px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+#btnAddHistoric {
+  border-radius: 90px;
+  width: 45px;
+  height: 45px;
+  margin-left: 135px;
+  margin-top: -18px;
+  margin-bottom: 10px;
+}
+
+.headerHistoric {
+  background-color: #6A994E;
+  padding: 24px;
+  text-align: center;
+  color: #FFF;
+}
+
+.formHistoric {
+  padding: 18px;
+}
+
+.formContentHistoric {
+  padding-bottom: 18px;
+  position: relative;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.formContentHistoric label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.formContentHistoric input, select {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  padding: 8px;
+  border: 2px solid #dfdfdf;
+  font-family: mukta_medium;
+  margin-bottom: 10px;
+
+}
+
+
+.formContentHistoric a {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  visibility: hidden;
+}
+
+.formHistoric button {
+  background-color: #6A994E;
+  color: #FFF;
+  width: 100%;
+  border-radius: 22px;
+  padding: 10px;
+  border: 0;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 14px;
+  font-family: mukta_medium;
+  margin-right: 20px;
+}
+
+.btnsRegister {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.btnCloseHistoric {
+  background-color: brown !important;
+}
+
+.formContentHistoric.error input {
+  border-color: #ff3b25;
+}
+
+.formContentHistoric.error a {
+  color: #ff3b25;
+  font-size: 14px;
+  visibility: visible;
+  margin-bottom: 15px;
+}
+
+.registerPlace {
+  display: flex;
+}
+
+@media(min-width:750px) {
+
+  .addHistoric {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .placeNameHistoric {
+    width: 200px ;
+  
+  }
+
+  .modalConfirmn {
+
+    width: 9%;
+
+  }
+
+  .modalContainerConfirmn span {
+    margin-left: 5px;
+    margin-bottom: 10px;
+  }
+
+  .btnConfirmn {
+    margin-left: 26px;
+  }
+
+  .register label {
+    display: block;
+    padding-top: 10px;
+    margin-bottom: -1px;
+  }
+
+  #btnAddHistoric {
+    margin-left: 270px;
+
+  }
+  
+}

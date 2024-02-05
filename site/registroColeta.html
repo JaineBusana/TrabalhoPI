@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/registroColeta.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <title>Registro de Coletas</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+
+            <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
+            <div class="navHome">
+                <ul class="menuNav">
+                    <li class="navItem "><a href="index.html">Home</a></li>
+                    <li class="navItem"><a href="pontoColeta.html">Pontos de coleta</a></li>
+                    <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
+                    <li class="navItem" onclick="SHOW_MODAL_LOGIN()"><a href="#">Login</a></li>
+
+
+                </ul>
+            </div>
+            <div class="navigationBar">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <main class="mainHistoric">
+
+        <div class="modalContainerConfirmn ">
+            <div class="modalConfirmn ">
+                <span> Registro Salvo!</span>
+                <button class="btnConfirmn" onclick="closeModalConfirmn()">OK</button>
+            </div>
+        </div>
+
+
+        <div class="containerHistoric">
+            <section class="headerHistoric">
+                <h1>Registro de EcoScore</h1>
+            </section>
+
+            <form id="formHistoric" class="formHistoric">
+
+                <div class="formContentHistoric">
+                    <label for="placeCpfHistoric">Digite o CPF do usuário</label>
+                    <input type="text" id="placeCpfHistoric" placeholder="Digite aqui..." />
+                    <a>Mensagem de Erro</a>
+
+                </div>
+                <div class="allHistoric">
+                    <button id="btnAddHistoric" type="submit"> + </button>
+                    <div class="addHistoric">
+                        <div class="formContentHistoric">
+                            <label for="placeNameHistoric">Nome do Produto</label>
+                            <select class="placeNameHistoric" id="placeNameHistoric">
+                                <option value="">Selecione</option>
+                                <option value="1">Lata de Cerveja</option>
+                                <option value="2">Long Neck</option>
+                                <option value="3">Garrafa Pet</option>
+                            </select>
+                            <a>Mensagem de Erro</a>
+                        </div>
+
+                        <div class="formContentHistoric ">
+                            <label for="placeQuantityHistoric">Quantidade</label>
+                            <input type="text" id="placeQuantityHistoric" placeholder="Digite aqui..." />
+                            <a>Mensagem de Erro</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="btnsRegister">
+                    <button id="btnHistoric" type="submit"> Registrar</button>
+                    <button id="btnCloseHistoric" class="btnCloseHistoric" type="reset"
+                        onclick="removeInput()">Cancelar</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+</body>
+<script src="./js/registroColeta.js"></script>
+<script src="./js/nav.js"></script>
+
+
+
+</html>

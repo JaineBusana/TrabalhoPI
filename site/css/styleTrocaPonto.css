@@ -1,0 +1,285 @@
+@font-face {
+
+    font-family: "mukta_bold";
+    src: url("../assets/fonts/pontoColeta/Mukta-Bold.ttf")
+}
+
+
+@font-face {
+
+    font-family: "mukta_medium";
+    src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
+}
+
+.mainTroca {
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+#motivationalPhrase,
+#motivationalPhrase1 {
+
+    width: 306px;
+    /* position: relative; */
+    font-size: 14px;
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 33px;
+    font-family: mukta_medium;
+}
+
+#motivationalPhrase {
+    margin-top: 20px;
+}
+
+#tittleTrocaPonto {
+    margin-left: 33px;
+    width: 206px;
+    margin-top: 30px;
+    height: 21px;
+    flex-shrink: 0;
+    color: #6A994E;
+    font-family: mukta_bold !important;
+    font-size: 19px;
+    font-style: normal;
+    line-height: normal;
+}
+
+#ecoScore {
+    background-color: #6A994E;
+    border-radius: 22px;
+    width: 100px;
+    padding-left: 20px;
+    color: white;
+    margin-top: 40px;
+    margin-left: 30px;
+
+}
+
+#ecoScorePoint {
+    width: 100px;
+    color: #6A994E;
+    margin-top: -23px;
+    margin-left: 150px;
+
+}
+
+.discountPoints {
+    position: absolute;
+    margin-left: 103px;
+    color: white;
+}
+
+.cardImgTroca {
+    height: auto;
+    width: 160px;
+}
+
+.spanDiscount {
+    margin-top: -110px;
+    margin-left: 35px;
+    position: absolute;
+    font-size: 40px;
+    color: white;
+}
+
+.discountTroca {
+    font-size: 16px;
+    position: absolute;
+    margin-top: -55px;
+    margin-left: 30px;
+    color: white;
+}
+
+.discountMenssageApp {
+    margin-top: 1px;
+    margin-left: 35px;
+    position: absolute;
+    font-size: 12px;
+    color: black;
+}
+
+.spanMessageApp {
+    display: flex;
+    justify-content: center;
+}
+
+.spanTroca {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.tittleCardTroca {
+    display: flex;
+    justify-content: space-around;
+    color: #6A994E;
+    font-size: 18px;
+}
+
+.imgCoupomPc {
+    display: none;
+}
+
+.slideContent {
+    justify-content: center;
+    display: flex;
+}
+
+.cardWrapper {
+    margin-top: 50px;
+    display: block;
+    align-items: center;
+    padding-top: 8px;
+    width: 90%;
+    cursor: pointer;
+    border-radius: 22px;
+    height: 300px;
+    background-color: #FAF3E1;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.cardTroca {
+    margin-block-end: auto;
+    margin-left: 100px;
+}
+
+
+.modalTrocaCupomContent,
+.modalTrocaConfirmnContent {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .35);
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    justify-content: center;
+    display: none;
+    align-items: center;
+}
+
+
+.modalTrocaCupom,
+.modalConfirmnCupom {
+    height: 180px;
+    display: flex;
+    padding: 30px;
+    background-color: #FEFEEB;
+    border-radius: 10px;
+    width: 60%;
+    font-family: mukta_medium;
+    text-align: justify;
+}
+
+.coupomConfirmn {
+    margin: auto;
+    max-width: 70%;
+    cursor: pointer;
+}
+
+.coupom {
+    margin: auto;
+}
+
+.menuBarCoupom {
+    cursor: pointer;
+    margin-top: -25px !important;
+    margin-left: -25px !important;
+}
+
+.barCoupom {
+    display: flex !important;
+    width: 28px !important;
+    height: 3px !important;
+    border-radius: 3px !important;
+    background: #6A994E !important;
+    margin: 5px auto !important;
+    transition: all 0.3s !important;
+}
+
+.barCoupom:nth-child(1) {
+    transform: translateY(8px) rotate(45deg) !important;
+}
+
+.barCoupom:nth-child(2) {
+    transform: translateY(-0px) rotate(-45deg) !important;
+}
+
+
+@media(min-width:750px) {
+
+    .imgCoupomPc {
+        display: flex;
+        width: 10%;
+        margin-left: 850px;
+        position: absolute;
+    }
+
+    .modalTrocaCupom,
+    .modalConfirmnCupom {
+
+        width: 20%;
+        height: 30%;
+
+    }
+
+    .introductoryText {
+        margin-left: 225px;
+
+    }
+
+
+    #motivationalPhrase,
+    #motivationalPhrase1 {
+
+        width: 50%
+    }
+
+    .cardWrapper {
+
+        width: 75%;
+        display: flex;
+
+    }
+
+    .tittleCardTroca {
+        position: absolute;
+        margin-top: -250px;
+        margin-left: 30px;
+    }
+    .cardTroca{
+        margin-top: 50px;
+
+    }
+
+}
+
+@media(min-width:1800px) {
+
+    .imgCoupomPc {
+        margin-left: 1150px;
+    }
+
+    .introductoryText {
+        margin-left: 260px;
+
+    }
+
+    .cardWrapper {
+        display: flex;
+
+    }
+
+    .tittleCardTroca {
+        position: absolute;
+        margin-top: -250px;
+        margin-left: 30px;
+    }
+
+    .cardTroca{
+        margin-top: 50px;
+
+    }
+}

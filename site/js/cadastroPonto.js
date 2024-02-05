@@ -1,15 +1,13 @@
 window.addEventListener("load", (event) => {
 
     const form = document.getElementById("form");
-    const placeName = document.getElementById("placeName")
-    const address = document.getElementById("address")
-    const phoneNumber = document.getElementById("phoneNumber")
-    const residue = document.getElementById("select-residue");
+    const placeName = document.getElementById("Name");
+    const address = document.getElementById("street");
+    const phoneNumber = document.getElementById("phoneNumber");
+    const residue = document.getElementById("selectResidue");
 
 
     form.addEventListener("submit", (e) => {
-        e.preventDefault();
-
         checkForm();
     })
 
@@ -38,7 +36,7 @@ window.addEventListener("load", (event) => {
             errorInput(placeName, " NOME do Ponto de Coleta não preenchido!")
         } else {
             const formItem = placeName.parentElement;
-            formItem.className = "form-content"
+            formItem.className = "formContent"
         }
 
     }
@@ -50,7 +48,7 @@ window.addEventListener("load", (event) => {
             errorInput(address, "ENDEREÇO não preenchido!")
         } else {
             const formItem = address.parentElement;
-            formItem.className = "form-content"
+            formItem.className = "formContent"
         }
 
 
@@ -66,7 +64,7 @@ window.addEventListener("load", (event) => {
             errorInput(phoneNumber, "O número de contato precisa ter  9 CARACTERES.")
         } else {
             const formItem = phoneNumber.parentElement;
-            formItem.className = "form-content"
+            formItem.className = "formContent"
         }
 
 
@@ -80,7 +78,7 @@ window.addEventListener("load", (event) => {
             errorInput(residue, "RESÍDUO não preenchido!")
         } else {
             const formItem = residue.parentElement;
-            formItem.className = "form-content"
+            formItem.className = "formContent"
         }
 
 
@@ -94,10 +92,10 @@ window.addEventListener("load", (event) => {
         checkInputResidue();
         const sucessMessage = document.querySelector('.msg')
 
-        const formItems = form.querySelectorAll(".form-content")
+        const formItems = form.querySelectorAll(".formContent")
 
         const isValid = [...formItems].every((item) => {
-            return item.className === "form-content"
+            return item.className === "formContent"
         });
 
         if (isValid) {
@@ -109,6 +107,7 @@ window.addEventListener("load", (event) => {
                 sucessMessage.innerHTML = "";
                 sucessMessage.classList.remove("sucess");
             }, 5000);
+
         }
 
     }
@@ -120,7 +119,47 @@ window.addEventListener("load", (event) => {
 
         textMessage.innerText = message;
 
-        formItem.className = "form-content error"
+        formItem.className = "formContent error"
 
     }
+});
+
+
+$(() => {
+
+    // if (!localStorage.getItem(`token`)) {
+    //     location.href = "index.html";
+    //   }
+    // $("#logout").click(() => {
+    //     localStorage.clear();
+    //     location.reload;
+    // })
+    $("#sendPontoColeta").click((e) => {
+        e.preventDefault();
+
+
+        const data = {
+            name: $("#Name").val(),
+            street: $("#street").val(),
+            number: $("#AddressNumber").val(),
+            // phoneNumber: $("#phoneNumber").val(),
+            neighborhood_Id: $("#neighborhood").val(),
+            // selectResidue: $("#selectResidue").val(),
+            user_Id: $("#User").val()
+        };
+        console.log(data)
+        $.ajax({
+            type: "POST",
+            url: "https://localhost:7249/cadastroponto",
+            data: JSON.stringify(data),
+        //     headers: {
+        //         Authorization: `Bearer ${localStorage.getItem(`token`)}`,
+        //       },
+            success: (result) => {
+                location.href = "cadastroPonto.html";
+            },
+            contentType: "application/json",
+            dataType: "json",
+        });
+    });
 });

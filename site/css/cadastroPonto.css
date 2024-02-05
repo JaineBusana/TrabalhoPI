@@ -40,18 +40,18 @@ main {
     padding: 18px;
 }
 
-.form-content {
+.formContent {
     margin-bottom: 25px;
     padding-bottom: 18px;
     position: relative;
 }
 
-.form-content label {
+.formContent label {
     display: inline-block;
     margin-bottom: 4px;
 }
 
-.form-content input, select {
+.formContent input, select {
     display: block;
     width: 100%;
     border-radius: 8px;
@@ -64,7 +64,7 @@ option{
     font-family: mukta_medium;
 }
 
-.form-content a {
+.formContent a {
     position: absolute;
     bottom: -8px;
     left: 0;
@@ -84,11 +84,11 @@ option{
     font-family: mukta_medium;
 }
 
-.form-content.error input {
+.formContent.error input {
     border-color: #ff3b25;
 }
 
-.form-content.error a {
+.formContent.error a {
     color: #ff3b25;
     font-size: 14px;
     visibility: visible;
