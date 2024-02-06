@@ -174,18 +174,28 @@ function erroInput(input, message) {
 $(() => {
     $(".btnCadastro").click((e) => {
         e.preventDefault();
-
+        
         const data = {
-            username: $("#username").val(),
+            type: $("#usercpf").val() !== null ? 'coletor' : 'cidadao',
+            name: $("#username").val(),
             email: $("#email").val(),
-            usercpf: $("#usercpf").val(),
-            cnpj: $("#cnpj").val(),
+            SocialNumber: $(".usercpf").val(),
             address: $("#address").val(),
-            phone: $("#phone").val(),
+            Telephone: $("#phone").val(),
             password: $("#password").val(),
-            confirmationPassword: $("#confirmationPassword").val()
         };
-        console.log(data)
+
+
+        $.ajax({
+            type: "POST",
+            url: "https://localhost:7249/user",
+            data: JSON.stringify(data),
+            sucess: (result) => {
+                console.log(result);
+            },
+            contentType: "application/json",
+            dataType: "json",
+        });
     });
 });
 
