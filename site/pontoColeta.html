@@ -114,9 +114,41 @@
                 <img id="leafInput" src="./assets/img/pontoColeta/inputBairro.png" alt="ícone folha input">
                 <select class="selectPonto" id="selectNeighborhood">
                     <option value="0">Selecione o bairro</option>
-                    <option value="1">Badenfurt</option>
-                    <option value="2">Fidélis</option>
-                    <option value="3">Itoupava Central</option>
+                    <option value="1">Água Verde</option>
+                    <option value="2">Badenfurt</option>
+                    <option value="3">Boa Vista</option>
+                    <option value="4">Bom Retiro</option>
+                    <option value="5">Centro</option>
+                    <option value="6">Escola Agrícola</option>
+                    <option value="7">Fidélis</option>
+                    <option value="8">Fortaleza</option>
+                    <option value="9">Fortaleza Alta</option>
+                    <option value="10">Garcia</option>
+                    <option value="11">Glória</option>
+                    <option value="12">Itoupava Central</option>
+                    <option value="13">Itoupava Norte</option>
+                    <option value="14">Itoupava Seca</option>
+                    <option value="15">Itoupavazinha</option>
+                    <option value="16">Jardim Blumenau</option>
+                    <option value="17">Nova Esperança</option>
+                    <option value="18">Passo Manso</option>
+                    <option value="19">Ponta Aguda</option>
+                    <option value="20">Progresso</option>
+                    <option value="21">Ribeirão Fresco</option>
+                    <option value="22">Salto</option>
+                    <option value="23">Salto do Norte</option>
+                    <option value="24">Salto Weissbach</option>
+                    <option value="25">Testo Salto</option>
+                    <option value="26">Tribess</option>
+                    <option value="27">Valparaíso</option>
+                    <option value="28">Velha</option>
+                    <option value="29">Velha Central</option>
+                    <option value="30">Velha Grande</option>
+                    <option value="31">Victor Konder</option>
+                    <option value="32">Vila Formosa</option>
+                    <option value="33">Vila Itoupava</option>
+                    <option value="34">Vila Nova</option>
+                    <option value="35">Vorstadt</option>
                 </select>
             </div>
             <div class="designInputPonto">
@@ -144,12 +176,15 @@
             </div>
             <div id="imagePontoColeta">
                 <h1>Nome do Estabelecimento</h1>
-                <ul class="infoPonoColeta">
-                    <li id="addressPontoColeta"><span>Endereço:</span> R.Padrejacons ,139 - Centro,Blumenau-SC,89010-080
+                <ul class="infoPontoColeta">
+                    <li id="addressPontoColeta"><span>Rua:</span> Padre jacons
                     </li>
-                    <li id="observacaoPontoColeta"><span>Observação:</span> Horário de funcionamento:
-                        segunda-feira–sábado, 08:00–19:00</li>
-                    <li id="mapsPontoColeta"><span>Mapa:</span> Link Aqui. </li>
+                    <li id="AddressNumber"><span>Número:</span> 139 <!--addressNumberPontoColeta não existe ainda, criei agora FALTA-->
+                    </li>
+                    <li id="phoneNumber"><span>Telefone:</span>  </li>
+                    <li id="phoneNumber"><span>Horário de atendimento:</span>  </li> <!-- ver como thiago nomeou o dele-->
+                    <li id="observacaoPontoColeta"><span>Observação:</span> </li>
+
                 </ul>
                 <div id="closeModalPontoColeta">
                     <button id="btnCloseModalPontoColeta">
@@ -167,29 +202,17 @@
 
         <div class="contentCard">
 
-
         <div id="allCards">
-
             <div class="card ">
                 <div id="openModalPontoColeta">
-                    <p id="nameCard" class="card"> Mercado Dona Rosa</p>
+                    <p id="nameCard" class="card"> Nome</p>
                 </div>
-                <p class="titleCard">Endereço: </p>
-                <p class="address">Alameda Rio Branco, Blumenau</p>
-                <p class="titleCard"> Observação: </p>
-                <p class="obsCard"> Mercadorias com validade próxima </p>
-
+                <p class="titleCard">Bairro: </p>
+                <p class="neighborhood"> </p>
+                <p class="titleCard"> Resíduo: </p>
+                <p class="residue"> </p>
             </div>
-            <div class="card ">
-                <p id="nameCard" class="card"> Loja Fictícia</p>
-                <p class="titleCard">Endereço: </p>
-                <p class="address">Rua, bairro </p>
-                <p class="titleCard"> Observação: </p>
-                <p class="obsCard"> fictícia </p>
-
-            </div>
-
-
+            <!--FALTA CRIAR MAIS CARDS -->
         </div>
 
     </main>

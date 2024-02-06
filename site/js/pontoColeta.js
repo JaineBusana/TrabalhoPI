@@ -63,3 +63,53 @@ btnLocalPonto.addEventListener("click", () => {
 
 const selectNeighborhoodValue = document.getElementById("selectNeighborhood");
 selectNeighborhoodValue.addEventListener("change", selectNeighborhood);
+
+let url = "https://localhost:7249/pontoColeta";
+
+// Adiciona o parâmetro neighborhood se estiver definido
+if (selectedNeighborhood !== "0") {
+    url += `?neighborhood=${selectedNeighborhood}`;
+}
+
+// Adiciona o parâmetro residue se estiver definido e se já houver parâmetros na URL
+if (selectedResidue !== "0") {
+    url += selectedNeighborhood !== "0" ? `&residue=${selectedResidue}` : `?residue=${selectedResidue}`;
+}
+$.ajax({
+    type: "GET",
+    url: url,
+    success: (result) => { 
+        document.getElementById("nameElement").textContent = result.name;
+        document.getElementById("neighborhoodElement").textContent = result.neighborhood;
+        document.getElementById("residueElement").textContent = result.residue;
+       
+       //console.log(result.name);
+       //console.log(result.neighborhood);
+       //console.log(result.residue);
+    },
+    contentType: "application/json",
+    dataType: "json",
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Aqui sera a quantidade de retornos do result
+    const numberOfCards = 5;
+
+    // Container para os cards
+    const cardContainer = document.getElementById("cardContainer");
+
+    // Criar cards dinamicamente
+    for (let i = 1; i <= numberOfCards; i++) {
+        const card = createCardElement(i);
+        cardContainer.appendChild(card);
+    }
+});
+
+// Função para criar um elemento de card
+function createCardElement(cardNumber) {
+    const card = document.createElement("div");
+    card.className = "card";
+    card.textContent = "Card " + cardNumber;
+    return card;
+}
