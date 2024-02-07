@@ -1,47 +1,319 @@
-.imgLoginNav {
-    margin-left: 10px;
-    margin-top: -10px;
-    margin-bottom: -5px;
-    height: 20px;
-    width: 30px;
-    fill: #6A994E;;
+@font-face {
+
+    font-family: "mukta_bold";
+    src: url("../assets/fonts/pontoColeta/Mukta-Bold.ttf")
+}
+
+@font-face {
+
+    font-family: "mukta_medium";
+    src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: mukta_medium !important;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #FEFEEB;
+
 }
 
 .navigation {
-    margin-top: 0px !important;
-}
-/* 
-.header-btn-login {
-    width: 100px;
-    height: 60px;
-    padding-left: 5px;
-    border: 1px solid #5D6E1E;
-    border-radius: 30px;
-    justify-content: center;
-}
-
-.header-menu-login {
     display: flex;
-    flex-direction: column;
-    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    width: 100%;
+    background: #FEFEEB;
+    transition: all 0.5s;
+
+
 }
 
-.header-modal-menu-login {
+.logoNav {
+    width: 17% !important;
+    min-width: 100px;
+
+}
+
+.navigation ul {
+    display: flex;
+    padding-top: 0px;
+    align-items: center;
+    gap: 5rem;
+}
+
+.navigation ul li a:hover {
+    color: #A7C957;
+}
+
+.navItem {
+    font-size: 20px;
+    color: #6A994E;
+}
+
+.navigationBar {
+    cursor: pointer;
     display: none;
-    height: 118px;
-    width: 118px;
-    background-color: #94B447;
-    color: #FAF3E1;
-    font-family: Montserrat !important;
-    font-weight: 700;
-    border-radius: 30px;
-    padding-left: 15px;
-    padding-top: 15px;
+}
+
+.navigationBar .bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: #6A994E;
+    margin: 5px auto;
+    transition: all 0.3s;
+
+}
+
+.navigationBar .bar:nth-child(1),
+.navigationBar .bar:nth-child(3) {
+    background: #307A50;
+
+}
+
+
+#profile {
+    display: none;
+}
+
+.profileEditbtn,
+.profileExitbtn {
+    display: none;
+}
+
+.btnProfilePicture {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    cursor: pointer;
+}
+
+.btnProfilePicture:hover {
+    animation: animacaoTexto 20s;
+}
+
+.modalProfilePicture {
+    display: none;
     position: absolute;
-    top: 40px;
+    top: 120px;
+    right: 31px;
     z-index: 1
 }
 
-.header-modal-menu-login li:hover {
-    color: #307c52;
-} */
+#boxProfilePicture {
+    height: 240px;
+    width: 200px;
+    background-color: #94B447;
+    color: #FAF3E1;
+    border-radius: 30px;
+    padding-left: 15px;
+    padding-top: 15px;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+}
+
+.modalProfilePicture.ativo {
+    display: flex;
+}
+
+#profileName {
+    margin-left: 7px;
+    margin-top: 10px;
+    font-size: 122%;
+    color: #FAF3E1;
+    font-family: mukta_bold !important;
+}
+
+#profilePoint,
+#profilePickup {
+    height: 58px;
+    width: 172px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 130%;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    justify-content: center;
+    color: #6A994E;
+    border-radius: 28px;
+    BORDER: 1px solid #6A994E;
+    background-color: #FFFFFF;
+    font-family: mukta_bold !important;
+}
+
+.profilePonitImg,
+.profilePickupImg {
+    width: 22%;
+}
+
+#itemsBoxProfile {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.profileExit {
+    margin-top: 10px;
+}
+
+.profileEdit,
+.profileExit {
+    color: #FAF3E1;
+}
+
+.profileEdit a:hover,
+.profileExit a:hover {
+    color: #307A50 !important;
+}
+
+#owl-demo .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+.carousel1 {
+    max-width: 1200px;
+
+}
+
+.carousel1 img {
+    width: 80%;
+
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+@media(max-width:970px) {
+    .navigation {
+        padding: 18px 20px;
+        z-index: 1001;
+        position: fixed;
+        margin-top: -50px;
+    }
+
+    .logoNav {
+        width: 50% !important;   
+    }
+    
+
+    .navigationBar {
+        display: block;
+
+    }
+
+    .navigationBar.ativo .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .navigationBar.ativo .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navigationBar.ativo .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .menuNav {
+        position: fixed;
+        right: -100%;
+        top: 65px;
+        width: 60%;
+        flex-direction: column;
+        background: #FEFEEB;
+        transition: 0.3s;
+    }
+
+    .menuNav.ativo {
+        right: 0;
+        height: 896px;
+    }
+
+    .navigation ul {
+        padding-top: 15px;
+        gap: 36px;
+    }
+
+    .navItem {
+        font-size: 17px;
+        height: 35px;
+        width: 175px;
+        color: #FFFFFF;
+        background-color: #6A994E;
+        border-radius: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #profile {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #profilePicture {
+        width: 120px;
+    }
+
+    #profileName {
+        color: #6A994E;
+    }
+
+    #profilePoint {
+        margin-top: 2px;
+        margin-bottom: 0px;
+    }
+
+    #profilePickup {
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+
+    #profileTextPoint {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        margin-left: 3px;
+    }
+
+    .profileEdit,
+    .profileExit,
+    .btnProfilePicture,
+    .profileHome,
+    #boxProfilePicture {
+        display: none;
+    }
+
+
+    .carousel1 {
+        max-width: 600px;
+        position: absolute;
+        z-index: 1;
+
+
+    }
+
+    section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
