@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Função para carregar conteúdo com base no hash da URL
     function loadContent() {
-        const hash = 'header'; // Página padrão é 'home'
+        const hash = 'header'; // Página padrão é 'header'
 
         fetch(`${hash}.html`)
             .then(response => response.text())
