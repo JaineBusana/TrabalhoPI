@@ -1,5 +1,6 @@
 $(() => {    
-    $.get('menu.html', (result) => {
-        $('header').append(result);
+    $.get('index.html', (result) => {
+        $('main').append(result);
     })
 });
+
