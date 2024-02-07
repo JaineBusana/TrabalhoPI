@@ -5,8 +5,7 @@ const formCadastreColetor = document.querySelector('.formCadastreColetor')
 const form = document.getElementById("formCadastre")
 const username = document.getElementById("username")
 const email = document.getElementById("email")
-const usercpf = document.getElementById("usercpf")
-const cnpj = document.getElementById("cnpj")
+const userSocialNumber = document.getElementById("userSocialNumber")
 const address = document.getElementById("address")
 const phone = document.getElementById("phone")
 const password = document.getElementById("password")
@@ -32,10 +31,7 @@ username.addEventListener('blur', () => {
     checkInputUsername();
 })
 usercpf.addEventListener('blur', () => {
-    checkInputCpf();
-})
-cnpj.addEventListener('blur', () => {
-    checkInputCnpj();
+    checkInputSocialNumber();
 })
 address.addEventListener('blur', () => {
     checkInputAddress();
@@ -58,8 +54,7 @@ form.addEventListener("submit", (event) => {
 function checkForm() {
     checkInputUsername();
     checkInputEmail();
-    checkInputCpf();
-    checkInputCnpj();
+    checkInputSocialNumber();
     checkInputPhone();
     checkInputAddress();
     checkInputPassword();
@@ -95,25 +90,14 @@ function checkInputEmail() {
     }
 
 }
-function checkInputCpf() {
-    const usercpfValue = usercpf.value;
-    if (usercpfValue === "") {
-        erroInput(usercpf, "Preencha o Cpf.")
+function checkInputSocialNumber() {
+    const userSocialNumberValue = userSocialNumber.value;
+    if (userSocialNumberValue === "") {
+        erroInput(userSocialNumber, "Preencha o Número Social.")
     } else if (usercpfValue.length < 11) {
-        erroInput(usercpf, "Cpf incorreto.")
+        erroInput(usercpf, "Número Social incorreto.")
     } else {
-        const formItem = usercpf.parentElement;
-        formItem.className = "formContent"
-    }
-}
-function checkInputCnpj() {
-    const cnpjValue = cnpj.value;
-    if (cnpjValue === "") {
-        erroInput(cnpj, "Preencha o Cnpj.")
-    } else if (cnpjValue.length < 11) {
-        erroInput(cnpjValue, "Cnpj incorreto.")
-    } else {
-        const formItem = cnpj.parentElement;
+        const formItem = userSocialNumber.parentElement;
         formItem.className = "formContent"
     }
 }
@@ -176,10 +160,10 @@ $(() => {
         e.preventDefault();
         
         const data = {
-            type: $("#usercpf").val() !== null ? 'coletor' : 'cidadao',
+            type: $("#usercpf").val(),
             name: $("#username").val(),
             email: $("#email").val(),
-            SocialNumber: $(".usercpf").val(),
+            SocialNumber: $("#userSocialNumber").val(),
             address: $("#address").val(),
             Telephone: $("#phone").val(),
             password: $("#password").val(),
