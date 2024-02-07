@@ -14,4 +14,5 @@ namespace ColetaBlu.Contracts_Repository
         Task<UserTokenDTO> LogIn(UserLoginDTO user);
 
     }
+
 }

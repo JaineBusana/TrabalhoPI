@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ColetaBlu.Controller
 {
+
     [ApiController]
     [Route("user")]
     public class UserController : ControllerBase

@@ -1,15 +1,13 @@
 window.addEventListener("load", (event) => {
 
     const form = document.getElementById("form");
-    const placeName = document.getElementById("placeName");
-    const address = document.getElementById("address");
+    const placeName = document.getElementById("Name");
+    const address = document.getElementById("street");
     const phoneNumber = document.getElementById("phoneNumber");
     const residue = document.getElementById("selectResidue");
 
 
     form.addEventListener("submit", (e) => {
-        e.preventDefault();
-
         checkForm();
     })
 
@@ -109,6 +107,7 @@ window.addEventListener("load", (event) => {
                 sucessMessage.innerHTML = "";
                 sucessMessage.classList.remove("sucess");
             }, 5000);
+
         }
 
     }
@@ -123,4 +122,44 @@ window.addEventListener("load", (event) => {
         formItem.className = "formContent error"
 
     }
+});
+
+
+$(() => {
+
+    // if (!localStorage.getItem(`token`)) {
+    //     location.href = "index.html";
+    //   }
+    // $("#logout").click(() => {
+    //     localStorage.clear();
+    //     location.reload;
+    // })
+    $("#sendPontoColeta").click((e) => {
+        e.preventDefault();
+
+
+        const data = {
+            name: $("#Name").val(),
+            street: $("#street").val(),
+            number: $("#AddressNumber").val(),
+            // phoneNumber: $("#phoneNumber").val(),
+            neighborhood_Id: $("#neighborhood").val(),
+            // selectResidue: $("#selectResidue").val(),
+            user_Id: $("#User").val()
+        };
+        console.log(data)
+        $.ajax({
+            type: "POST",
+            url: "https://localhost:7249/cadastroponto",
+            data: JSON.stringify(data),
+        //     headers: {
+        //         Authorization: `Bearer ${localStorage.getItem(`token`)}`,
+        //       },
+            success: (result) => {
+                location.href = "cadastroPonto.html";
+            },
+            contentType: "application/json",
+            dataType: "json",
+        });
+    });
 });
