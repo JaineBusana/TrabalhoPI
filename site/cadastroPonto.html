@@ -7,29 +7,34 @@
     <link rel="stylesheet" href="./css/cadastroPonto.css">
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
+
     <title>Cadastro de Locais </title>
 </head>
 
 <body>
-    <!-- FONTE NN ESTA IGUAL -->
     <header>
         <nav class="navigation">
-            <a href="#" class="logo"><img src="./assets/img/logo-com-slogan.png" alt=""></a>
-            <div class="nav-home">
-                <ul class="nav-menu">
-                    <li class="nav-item "><a href="index.html">Home</a></li>
-                    <li class="nav-item"><a href="pontoColeta.html">Pontos de coleta</a></li>
-                    <li class="nav-item"><a href="#">Login</a></li>
+
+            <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
+            <div class="navHome">
+                <ul class="menuNav">
+                    <li class="navItem "><a href="index.html">Home</a></li>
+                    <li class="navItem"><a href="pontoColeta.html">Pontos de coleta</a></li>
+                    <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
+                    <li class="navItem" onclick="SHOW_MODAL_LOGIN()"><a href="#">Login</a></li>
 
 
                 </ul>
             </div>
-            <div class="menu">
+            <div class="navigationBar">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
         </nav>
+
+
     </header>
     <main>
         <div class="container">
@@ -38,27 +43,27 @@
             </section>
 
             <form id="form" class="form">
-                <div class="form-content">
+                <div class="formContent">
                     <label for="placeName">Nome</label>
                     <input type="text" id="placeName" placeholder="Digite o nome do ponto de coleta..." />
                     <a>Mensagem de Erro</a>
                 </div>
 
-                <div class="form-content">
+                <div class="formContent">
                     <label for="address">Endereço</label>
                     <input type="address" id="address" placeholder="Digite o endereço do local..." />
                     <a>Mensagem de Erro</a>
                 </div>
 
-                <div class="form-content">
+                <div class="formContent">
                     <label for="phoneNumber">Número de contato</label>
                     <input type="phoneNumber" id="phoneNumber" placeholder="Digite um número de contato..." />
                     <a>Mensagem de Erro</a>
                 </div>
 
-                <div class="form-content">
+                <div class="formContent">
                     <label for="residue">Classificação do resíduo</label>
-                    <select class="select" id="select-residue">
+                    <select class="select" id="selectResidue">
                         <option value="">Selecione o resíduo</option>
                         <option value="1">Pet</option>
                         <option value="2">Vidro</option>
@@ -66,7 +71,7 @@
                     </select>
                     <a>Aqui vai a mensagem de erro....</a>
                 </div>
-                <div class="msg"></div>
+                <div class="msg"></div> 
                 <button type="submit">Cadastrar Ponto de Coleta</button>
 
             </form>
@@ -76,6 +81,7 @@
 
 
     <script src="./js/cadastroPonto.js"></script>
+    <script src="./js/nav.js"></script>
 </body>
 
 </html>

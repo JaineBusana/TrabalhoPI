@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styleIndex.css">
+  <link rel="stylesheet" href="./css/pontoColeta.css" />
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styleIndexLogado.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./assets/1.3.0/css/line-awesome.css">
+  <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
+
+  <title>ColetaBlu</title>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navigation">
+
+      <a href="index.html" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
+      <div class="navHome">
+
+        <ul class="menuNav">
+          <div id="profile">
+            <li><img src="./assets/img/perifl/Ellipse 22.png" id="profilePicture"></li>
+            <li>
+              <p id="profileName">Jean Cleiton Souza</p>
+            </li>
+
+            <div id="profileTextPoint">
+              <li>
+                <p>EcoScore:</p>
+              </li>
+              <li id="profilePoint"><img src="./assets/img/cadastro/planeta-terra.png" alt=""
+                  class="profilePonitImg">300 pontos</li>
+            </div>
+          </div>
+          <li class="navItem profileHome"><a href="index.html">Home</a></li>
+          <li class="navItem"><a href="pontoColeta.html">Pontos de Coleta</a></li>
+          <!-- <li class="navItem"><a href="trocadePontos.html">Troca de Pontos</a></li> -->
+          <li class="navItem profileEditbtn">Editar Perfil</li>
+          <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
+          <li class="navItem profileExitbtn"><a href="index.html">Sair</a></li>
+          <li class="btnProfilePicture"><img src="./assets/img/perifl/Ellipse 22.png" class="profilePictureBtn"></li>
+          <div class="modalProfilePicture">
+            <div id="boxProfilePicture">
+              <p id="profileName">Jean Cleiton Souza</p>
+              <li id="profilePoint"><img src="./assets/img/cadastro/planeta-terra.png" alt=""
+                  class="profilePonitImg">300 pontos</li>
+              <div id="itemsBoxProfile">
+                <li class="navItem profileEdit"><a href="">Editar Perfil</a></li>
+                <li class="navItem profileExit"><a href="index.html">Sair</a></li>
+              </div>
+            </div>
+          </div>
+        </ul>
+
+      </div>
+      <div class="navigationBar">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <img id="coletaBluImg" src="./assets/img/pontoColeta/imgPontoColeta.jpg">
+    <h1 id="titlePontoColeta"> Pontos de Coleta</h1>
+    <div id="instructionPontoColeta"> Informe seu CEP, selecione o item a ser descartado e descubra os locais
+      designados para
+      receber esse produto adequadamente.</div>
+    <div id="doubtsPontoColeta"> • Caso tenha dúvidas, busque a assistência de um colaborador no estabelecimento.
+    </div>
+
+
+    <form>
+      <div class="designInputPonto">
+        <img id="leafInput" src="./assets/img/pontoColeta/inputBairro.png" alt="ícone folha input">
+        <select class="selectPonto" id="selectNeighborhood">
+          <option value="0">Selecione o bairro</option>
+          <option value="1">Badenfurt</option>
+          <option value="2">Fidélis</option>
+          <option value="3">Itoupava Central</option>
+        </select>
+      </div>
+      <div class="designInputPonto">
+        <img id="leafInput" src="./assets/img/pontoColeta/inputResiduo.png" alt="ícone folha input">
+        <select class="selectPonto" id="selectResidue">
+          <option value="0">Selecione o resíduo</option>
+          <option value="1">Pet</option>
+          <option value="2">Vidro</option>
+          <option value="3">Metal</option>
+        </select>
+      </div>
+      <button id="btnLocalPonto" type="button">Encontrar Pontos</button>
+    </form>
+    <img id="location" src="./assets/img/pontoColeta/localização.png">
+    <h1 id="localNext"> Pontos Próximos</h1>
+    <div class="grid grid-cols-1"></div>
+
+    <div class="contentCard">
+      <div class="card ">
+        <p id="nameCard" class="card"> Mercado Dona Rosa</p>
+        <p class="titleCard">Endereço: </p>
+        <p class="address">Alameda Rio Branco, Blumenau</p>
+        <p class="titleCard"> Observação: </p>
+        <p class="obsCard"> Mercadorias com validade próxima </p>
+
+      </div>
+      <div class="card ">
+        <p id="nameCard" class="card"> Loja Fictícia</p>
+        <p class="titleCard">Endereço: </p>
+        <p class="address">Rua, bairro </p>
+        <p class="titleCard"> Observação: </p>
+        <p class="obsCard"> fictícia </p>
+      </div>
+
+
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footerImgMobile">
+      <img id="imgPlant" src="./assets/img/rodape-img-mobile.png" alt="">
+    </div>
+    <div class="footerImgPlants">
+      <img src="./assets/img/img-rodape.png" alt="">
+    </div>
+    <div class="footerColumn">
+      <div class="footerLogo centralizeParagraph">
+        <img src="./assets/img/logo-com-slogan-branco.png" alt="">
+      </div>
+      <div class="footerComplaint">
+        <h1>Denúncias - Ligue 156</h1>
+        <p>A Fiscalização Ambiental no município de Blumenau é realizada através da Gerência de Fiscalização da
+          Semmas.
+          Para mais informações acesse o site:</p>
+        <a href="https://www.blumenau.sc.gov.br/governo/fundacao-do-meio-ambiente/pagina/fiscalizacao-faema">Prefeitura
+          de Blumenau</a>
+      </div>
+      </form>
+    </div>
+
+  </footer>
+
+  <script src="./js/pontoColeta.js"></script>
+  <script src="./js/nav.js"></script>
+</body>
+
+</html>

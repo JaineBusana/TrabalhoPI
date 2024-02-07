@@ -1,0 +1,203 @@
+@font-face {
+ 
+    font-family: "mukta_bold";
+    src: url("../assets/fonts/pontoColeta/Mukta-Bold.ttf")
+}
+ 
+ 
+@font-face {
+ 
+    font-family: "mukta_medium";
+    src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
+}
+ 
+@font-face {
+ 
+    font-family: "Nunito_Regular";
+    src: url("../assets/fonts/Nunito-Regular.ttf")
+}
+ 
+#modalLogin {
+    background-color: rgba(0,0,0,.35);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 2;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.enterLogin {
+    font-size: 45px;
+    color: #6A994E;
+    font-family: mukta_bold;
+}
+ 
+.msg {
+    position: absolute;
+    margin-left: 88px;
+    text-align: center;
+    font-family: mukta_medium;
+    font-size: 14px;
+    margin-top: 7px;
+}
+ 
+#backgroundLogin {
+    background-color: #FFF;
+    border-radius: 30px;
+    height: 570px;
+    width: 800px;
+}
+ 
+#closeModal {
+    color: #6A994E;
+    margin-left: 15px;
+    margin-top: 3px;
+}
+ 
+.modalLoginActive {
+    display: flex !important;
+}
+ 
+#backgroundPhoto {
+    margin-left: 73px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+ 
+#login {
+    background-color: #A7C957;
+    border-radius: 20px;
+    color: #FFF;
+    width: 150px ;
+    height: 40px ;
+    padding: 5px;
+    margin-left: 117px;
+    margin-top: 65px;
+}
+ 
+#userLogin {
+    color: #6A994E;
+    font-size: 22px;
+    margin-left: 70px;
+    font-family: mukta_medium;
+}
+ 
+#logo {
+<<<<<<< HEAD:site/css/Style_Login.css
+    margin-top: 24px;
+=======
+    margin-top: 37px;
+>>>>>>> ded485987209b0c951aec6d536ab8d481a93fb88:site/css/StyleLogin.css
+    width: 70px;
+    height: 70px;
+    margin-left: 90px;
+}
+ 
+#forgotPasswordLogin {
+    margin-left: 210px;
+    font-size: 14px;
+    color: #A7C957;
+}
+ 
+#insertUserLogin {
+    border-radius: 15px;
+    margin-left: 70px;
+    width: 250px;
+    height: 28px;
+    border-width: 2px;
+    background-color: #e5e5e5;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: small;
+    outline: none;
+}
+ 
+#insertUserLogin:active,
+#insertUserLogin:focus  {
+    border-color: #A7C957;
+    border-width: 2px;
+}
+ 
+#insertPasswordLogin:active,
+#insertPasswordLogin:focus  {
+    border-color: #A7C957;
+    border-width: 2px;
+}
+ 
+#insertPasswordLogin {
+    border-radius: 15px;
+    width: 250px;
+    height: 28px;
+    margin-left: 70px;
+    border-width: 2px;
+    background-color: #e5e5e5;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: small;
+    outline: none;
+}
+ 
+#passwordLogin {
+    color: #6A994E;
+    margin-top: 20px;
+    font-size: 22px;
+    margin-left: 70px;
+    font-family: mukta_medium;
+}
+ 
+.registerLogin {
+<<<<<<< HEAD:site/css/Style_Login.css
+    margin-top: 75px;
+=======
+    margin-top: 80px;
+>>>>>>> ded485987209b0c951aec6d536ab8d481a93fb88:site/css/StyleLogin.css
+    font-size: 14px;
+}
+ 
+#linkRegisterLogin {
+    color: #6A994E;
+   
+}
+ 
+.barLogin {
+    display: flex !important;
+    width: 28px !important;
+    height: 3px !important;
+    border-radius: 3px !important;
+    background: #6A994E !important;
+    margin: 5px auto !important;
+    transition: all 0.3s !important;
+ 
+}
+ 
+.menuLogin {
+    margin-top: 15px !important;
+    margin-left: 12px !important;
+}
+ 
+.barLogin:nth-child(1) {
+    transform: translateY(8px) rotate(45deg) !important;
+}
+ 
+.barLogin:nth-child(2) {
+    transform: translateY(-0px) rotate(-45deg) !important;
+}
+ 
+@media(max-width: 970px) {
+    #backgroundPhoto {
+        margin-left: 73px;
+        border-radius: 12px;
+        display: none;
+    }
+ 
+    #backgroundLogin {
+        background-color: #FFF;
+        border-radius: 12px;
+        padding-right: 60px;
+        width: 400px;
+    }
+}
