@@ -8,11 +8,23 @@
     <link rel="stylesheet" href="./css/styleIndex.css">
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
+    <link rel="stylesheet" href="./css/styleIndexLogado.css">
 
     <!-- NOVOS⬇️ -->
     <link rel="stylesheet" href="./css/StyleLogin.css">
-    <!-- <link rel="stylesheet" href="css/styleSugestao.css">  -->
+    <!-- <link rel="stylesheet" href="css/styleSugestao.css"> FALTA ARRUMAR BUGUE -->
     <link rel="stylesheet" href="./assets/1.3.0/css/line-awesome.css">
+    <link rel="stylesheet" href="./css/pontoColeta.css" />
+
+    <!--  FALTA ADD NO SISTEMA ⬇️  -->
+    <link rel="stylesheet" href="./css/styleTrocaPonto.css">
+    <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/meuspontos.css">
+    <link rel="stylesheet" href="./css/registroColeta.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+
 
     <title>ColetaBlu</title>
 </head>
@@ -25,9 +37,9 @@
             <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
             <div class="navHome">
                 <ul class="menuNav">
-                    <li class="navItem" data-html="index.html"><a >Home</a></li>
+                    <li class="navItem" data-html="index.html"><a>Home</a></li>
                     <li class="navItem" data-html="pontoColeta.html"><a>Pontos de coleta</a></li>
-                    <li class="navItem" data-html="sugestao.html" ><a >Sugestão</a></li>
+                    <li class="navItem" data-html="sugestao.html"><a>Sugestão</a></li>
                     <li class="navItem" id="btnLogin"><a>Login</a></li>
 
 
@@ -41,7 +53,7 @@
         </nav>
     </header>
 
-    <main  id="main">
+    <main id="main">
 
     </main>
 
@@ -71,10 +83,27 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./lib/owlCarousel/dist/owl.carousel.min.js"></script>
+
 
     <script src="./js/load.js"></script>
-    <script src="./js/nav.js"></script>    
-    
+    <script src="./js/nav.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: "#da373d",
+                    },
+                },
+            },
+        };
+    </script>
+
+    <!--  FALTA ADD NO SISTEMA ⬇️  -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+
 
 
 </body>
