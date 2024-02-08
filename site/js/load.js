@@ -10,12 +10,12 @@ $(".navItem").click(function () {
 
 $('body').on('click', "#btnLogin", function () {
     $.get('login.html', (result) => {
-        $('#login').html(result).show();
+        $('#loginShow').html(result).show();
     });
 });
 
 $('body').on('click', '.closeModal', () => {
-    $('#login').hide();    
+    $('#loginShow').hide();    
 })
   
 
