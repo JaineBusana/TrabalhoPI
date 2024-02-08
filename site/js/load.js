@@ -1,17 +1,17 @@
-$(() => {
-    $.get('index.html', (result) => {
-        $('main').append(result);
+$(".navItem").click(function () {
+    $.get($(this).data('html'), (result) => {
+        $('main').html(result);
     })
 });
 
-$("#btnHome").click(function () {
-    $.get('index.html', (result) => {
-        $('#main').append(result);
-    })
-});
 
-$("#btnPontoColeta").click(function () {
-    $.get('pontoColeta.html', (result) => {
-        $('#main').append(result);
-    })
-});
+    $("#btnLogin").click(function () {
+        $.get('login.html', (result) => {
+            $('menu.html').html(result);
+        })
+    
+    
+    });
+
+  
+

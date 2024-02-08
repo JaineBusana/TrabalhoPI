@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function loadContent() {
         const hash = 'header'; // Página padrão é 'header'
 
-        fetch(`${hash}.html`)
+        fetch(`${hash}.html`) 
             .then(response => response.text())
             .then(content => {
                 document.getElementById('headerpadrao').innerHTML = content;

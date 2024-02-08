@@ -1,11 +1,8 @@
-function SHOW_MODAL_LOGIN() {
-    let modal = document.querySelector('#modalLogin')
-    modal.classList.add(`modalLoginActive`);
-}
+
 
 function CLOSE_MODAL_LOGIN() {
     let modal = document.querySelector('#modalLogin')
-    modal.classList.remove(`modalLoginActive`);
+    modal.style.display = "none";
 }
 
 window.addEventListener("load", (event) => {
