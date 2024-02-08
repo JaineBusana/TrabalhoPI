@@ -1,10 +1,4 @@
 
-
-function CLOSE_MODAL_LOGIN() {
-    let modal = document.querySelector('#modalLogin')
-    modal.style.display = "none";
-}
-
 window.addEventListener("load", (event) => {
 
     const usuario = document.querySelector(`#insertUserLogin`)
