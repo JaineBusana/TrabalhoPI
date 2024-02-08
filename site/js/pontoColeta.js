@@ -1,9 +1,9 @@
-const modalContainerPontoColeta = document.querySelector('.modalContainerPontoColeta')
+const modalContainerPontoColeta = document.querySelector('.modalContainerPontoColeta');
 const menu = document.querySelector('#openModalPontoColeta');
-const btnCloseModalPontoColeta = document.getElementById('btnCloseModalPontoColeta')
+const btnCloseModalPontoColeta = document.getElementById('btnCloseModalPontoColeta');
 
 menu.addEventListener('click', () => {
-  modalContainerPontoColeta.classList.toggle('ativo')
+  modalContainerPontoColeta.classList.toggle('ativo');
 });
 
 btnCloseModalPontoColeta.addEventListener('click', () => {
@@ -15,10 +15,6 @@ const neighborhood = {
     1: { nome: "Badenfurt", endereco: "UFSC", observacao: "Fundos" },
     2: { nome: "Fidélis", endereco: "Rua imperatriz leopoldina 123", observacao: "em frente ao mercado" },
     3: { nome: "Itoupava central", endereco: "Itoupava central", observacao: "Farmácia" }
-};
-
-const selectNeighborhood = () => {
-
 };
 
 const btnLocalPonto = document.getElementById("btnLocalPonto");
@@ -54,6 +50,7 @@ btnLocalPonto.addEventListener("click", () => {
     } else {
         errorMessageElement.textContent = "Favor selecionar algum item em um dos filtros";
         errorMessageElement.style.display = "block";
+        errorMessageElement.style.color = "red"; // Adicionando a cor vermelha ao aviso
 
         nameCardElement.textContent = "";
         addressElement.textContent = "Endereço: ";
@@ -61,52 +58,34 @@ btnLocalPonto.addEventListener("click", () => {
     }
 });
 
-const selectNeighborhoodValue = document.getElementById("selectNeighborhood");
-selectNeighborhoodValue.addEventListener("change", selectNeighborhood);
+document.getElementById("selectNeighborhood").addEventListener("change", checkFiltersSelection);
+document.getElementById("selectResidue").addEventListener("change", checkFiltersSelection);
 
-let url = "https://localhost:7249/pontoColeta";
+function checkFiltersSelection() {
+    const selectNeighborhoodValue = document.getElementById("selectNeighborhood");
+    const selectResidueValue = document.getElementById("selectResidue");
+    const errorMessageElement = document.getElementById("error-message");
 
-// Adiciona o parâmetro neighborhood se estiver definido
-if (selectedNeighborhood !== "0") {
-    url += `?neighborhood=${selectedNeighborhood}`;
+    if (selectNeighborhoodValue.value === "0" && selectResidueValue.value === "0") {
+        errorMessageElement.textContent = "Favor selecionar algum item em um dos filtros";
+        errorMessageElement.style.display = "block";
+        errorMessageElement.style.color = "red"; // Adicionando a cor vermelha ao aviso
+    } else {
+        errorMessageElement.textContent = "";
+        errorMessageElement.style.display = "none";
+    }
 }
-
-// Adiciona o parâmetro residue se estiver definido e se já houver parâmetros na URL
-if (selectedResidue !== "0") {
-    url += selectedNeighborhood !== "0" ? `&residue=${selectedResidue}` : `?residue=${selectedResidue}`;
-}
-$.ajax({
-    type: "GET",
-    url: url,
-    success: (result) => { 
-        document.getElementById("nameElement").textContent = result.name;
-        document.getElementById("neighborhoodElement").textContent = result.neighborhood;
-        document.getElementById("residueElement").textContent = result.residue;
-       
-       //console.log(result.name);
-       //console.log(result.neighborhood);
-       //console.log(result.residue);
-    },
-    contentType: "application/json",
-    dataType: "json",
-});
-
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Aqui sera a quantidade de retornos do result
     const numberOfCards = 5;
-
-    // Container para os cards
     const cardContainer = document.getElementById("cardContainer");
 
-    // Criar cards dinamicamente
     for (let i = 1; i <= numberOfCards; i++) {
         const card = createCardElement(i);
         cardContainer.appendChild(card);
     }
 });
 
-// Função para criar um elemento de card
 function createCardElement(cardNumber) {
     const card = document.createElement("div");
     card.className = "card";
