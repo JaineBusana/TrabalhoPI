@@ -1,5 +1,5 @@
 const btnSejaColetor = document.querySelector('.btnSejaColetor')
-const campCpf = document.querySelector('.campCpf')
+const campSocialNumber = document.querySelector('.campSocialNumber')
 const formCadastreColetor = document.querySelector('.formCadastreColetor')
 // Validadores
 const form = document.getElementById("formCadastre")
@@ -14,7 +14,7 @@ const passwordConfirmation = document.getElementById("confirmationPassword")
 
 
 btnSejaColetor.addEventListener('click', function (event) {
-    campCpf.classList.toggle('active');
+    campSocialNumber.classList.toggle('active');
 });
 btnSejaColetor.addEventListener('click', function (event) {
     formCadastreColetor.classList.toggle('active');
@@ -30,7 +30,7 @@ email.addEventListener('blur', () => {
 username.addEventListener('blur', () => {
     checkInputUsername();
 })
-usercpf.addEventListener('blur', () => {
+userSocialNumber.addEventListener('blur', () => {
     checkInputSocialNumber();
 })
 address.addEventListener('blur', () => {
@@ -94,8 +94,8 @@ function checkInputSocialNumber() {
     const userSocialNumberValue = userSocialNumber.value;
     if (userSocialNumberValue === "") {
         erroInput(userSocialNumber, "Preencha o Número Social.")
-    } else if (usercpfValue.length < 11) {
-        erroInput(usercpf, "Número Social incorreto.")
+    } else if (userSocialNumberValue.length < 11) {
+        erroInput(userSocialNumber, "Número Social incorreto.")
     } else {
         const formItem = userSocialNumber.parentElement;
         formItem.className = "formContent"
