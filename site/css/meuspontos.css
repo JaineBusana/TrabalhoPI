@@ -17,17 +17,17 @@ body {
 
 .contanerMeusPontos h1 {
     font-family: mukta_bold;
-    font-size: 40px;
+    font-size: 20px;
 }
 
 .contanerMeusPontos h2 {
     font-family: mukta_bold;
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .contanerMeusPontos h3 {
     font-family: mukta_bold;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .contanerMeusPontos p {
@@ -38,20 +38,15 @@ body {
 
 .contanerMeusPontos {
     color: #6A994E;
-    width: 80%;
-    max-width: 1000px;
-    min-width: 400px;
-    margin: auto;
+    
 }
-
-.sectionMeusPontos {
+.sectionMeusPontos{
     display: flex;
+    justify-content: center;
 }
-
-.sectionMeusPontosText {
-    width: 70%;
+.sectionMeusPontos img{
+    display: none;
 }
-
 .addMeuPonto {
     display: flex;
     justify-content: center;
@@ -73,45 +68,37 @@ body {
     padding-right: 3px;
     filter: brightness(0) invert(1) grayscale(100%);
 }
-.cardMeuPonto {
+.cardMeuPonto{
+    width: 350px;
+    height: 450px;
     background-image: url(../assets/img/estabelecimento.jpg);
+    background-size: 350px 200px;
+    padding-top: 200px;
     background-repeat: no-repeat;
-    background-size: 350px;
-    padding-left: 370px;
-    border-left: 20px solid;
-    width: 75%;
-    height: 350px;
-    columns:  2;
-    column-gap: 15px;
-    background-color: #FAF3E1;
-    display: flex;
-    margin: auto;
+    border-top: 20px solid;
     border-radius: 20px;
+    margin: auto;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 
-.imagePontoColeta img{
-    margin-left: 20px;
-    height: 350px;
-    width: 300px;
-    object-fit: cover;
-    border-radius: 20px 0px 0px 20px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
 .infoLocate{
-    width: 40%;
+    width: 100%;
+    margin-left: 15px;
 }
 .infoResidue{
-    width: 350px;
+    width: 100%;
+    margin: auto;
 }
-.infoResidue h2{
-    display: flex;
-    justify-content: center;
-}
+
 .infoResiduoColeta{
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: center;
+    padding-left: 10px;
+}
+.infoResidue h2{
+    text-align: center;
+    padding-right: 20px;
 }
 .cardResidue {
     width: 150px;
@@ -120,4 +107,63 @@ body {
     border-radius: 20px;
     background-color: #ECEAEA;
     
+}
+@media (max-width: 1200px){
+    .infoResidue{
+        width: 200px;
+    }
+
+}
+@media(min-width: 940px){
+    .contanerMeusPontos h1 {
+        font-family: mukta_bold;
+        font-size: 40px;
+    }
+    
+    .contanerMeusPontos h2 {
+        font-family: mukta_bold;
+        font-size: 30px;
+    }
+    
+    .contanerMeusPontos h3 {
+        font-family: mukta_bold;
+        font-size: 20px;
+    }
+    
+    .contanerMeusPontos p {
+        font-family: mukta_medium;
+        font-size: 20px;
+        color: #000;
+    }
+    .cardMeuPonto {
+        background-image: url(../assets/img/estabelecimento.jpg);
+        background-repeat: no-repeat;
+        background-size: 300px 350px;
+        padding-left: 300px;
+        border-left: 20px solid;
+        padding-top: 0px;
+        border-top: 0px;
+        width: 60%;
+        max-width: 800px;
+        height: 350px;
+        columns:  2;
+        column-gap: 15px;
+        background-color: #FAF3E1;
+        display: flex;
+        margin: auto;
+        border-radius: 20px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    .infoLocate{
+        width: 50%;
+    }
+    .infoResidue{
+        width: 50%;
+        margin: 10px;
+    }
+    .infoResidue h2{
+        text-align: center;
+        padding-top: 15px;
+    }
+
 }

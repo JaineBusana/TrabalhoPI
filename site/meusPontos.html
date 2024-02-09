@@ -17,9 +17,9 @@
                 <h1>Meus estabelecimentos</h1>
                 <p>Veja e edite todos os seus estabelecimentos que realizam coletas de resíduos.</p>
             </div>
-            <div>
-                <img src="./assets/img/circulo-de-residuos 1.png" alt="">
-            </div>
+
+            <img src="./assets/img/circulo-de-residuos 1.png" alt="">
+
         </section>
         <div class="addMeuPonto">
             <button class="btnAddMeuPonto"><img src="./assets/img/mais.png" alt=""></button>
@@ -69,6 +69,16 @@
         autoplay: true,
         autoplayTimeout: 2000,
         items: 2,
+        responsive: {
+            0: {
+                items: 1,
+                nav: false
+            },
+            1200: {
+                items: 2,
+                nav: false
+            },
+        }
     })</script>
 
 </html>
