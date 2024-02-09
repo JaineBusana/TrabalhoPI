@@ -10,6 +10,7 @@
     font-family: "mukta_medium";
     src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
 }
+
  
 @font-face {
  
@@ -25,7 +26,7 @@
     right: 0;
     position: fixed;
     z-index: 2;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -160,7 +161,6 @@
  
 #linkRegisterLogin {
     color: #6A994E;
-   
 }
  
 .barLogin {

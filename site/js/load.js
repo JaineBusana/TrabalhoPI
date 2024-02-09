@@ -1,17 +1,21 @@
-$(() => {
-    $.get('index.html', (result) => {
-        $('main').append(result);
+$(".navItem").click(function () {
+    if (!$(this).data('html')) {
+        return;
+    }
+    $.get($(this).data('html'), (result) => {
+        $('main').html(result);
     })
 });
 
-$("#btnHome").click(function () {
-    $.get('index.html', (result) => {
-        $('#main').append(result);
-    })
+
+$('body').on('click', "#btnLogin", function () {
+    $.get('login.html', (result) => {
+        $('#loginShow').html(result).show();
+    });
 });
 
-$("#btnPontoColeta").click(function () {
-    $.get('pontoColeta.html', (result) => {
-        $('#main').append(result);
-    })
-});
+$('body').on('click', '.closeModal', () => {
+    $('#loginShow').hide();    
+})
+  
+
