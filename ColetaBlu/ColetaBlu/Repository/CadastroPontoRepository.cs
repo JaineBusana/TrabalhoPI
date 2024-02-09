@@ -24,7 +24,7 @@ namespace ColetaBlu.Repository
 
         public Task<IEnumerable<CadastroPontoEntity>> Read()
         {
-            throw new NotImplementedException();
+           
         }
 
         public Task Update(CadastroPontoDTO user)

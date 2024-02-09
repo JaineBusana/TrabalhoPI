@@ -22,6 +22,7 @@ namespace ColetaBlu.Controller
             return Ok(cadastroPonto);
         }
 
+
     }
 }
 
