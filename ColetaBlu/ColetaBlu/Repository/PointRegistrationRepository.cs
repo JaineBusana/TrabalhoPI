@@ -5,10 +5,10 @@ using ColetaBlu.Infrastructure;
 
 namespace ColetaBlu.Repository
 {
-    public class CadastroPontoRepository : Connection, ICadastroPontoRepository
+    public class PointRegistrationRepository : Connection, IPointRegistrationRepository
     {
 
-        public  async Task Add(CadastroPontoDTO cadastroPonto)
+        public  async Task Add(PointRegistrationDTO cadastroPonto)
         {
             string sql = @"
                 INSERT INTO CollectionPoint (Name, Street, Number, Neighborhood_Id, User_Id)
@@ -22,12 +22,12 @@ namespace ColetaBlu.Repository
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<CadastroPontoEntity>> Read()
+        public Task<IEnumerable<PointRegistration>> Read()
         {
             throw new NotImplementedException();
         }
 
-        public Task Update(CadastroPontoDTO user)
+        public Task Update(PointRegistrationDTO user)
         {
             throw new NotImplementedException();
         }

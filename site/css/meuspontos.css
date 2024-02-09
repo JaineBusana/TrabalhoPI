@@ -11,27 +11,35 @@
     src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
 }
 
-.contanerMeusPontos h1{
+body {
+    background-color: #FAF3E1;
+}
+
+.contanerMeusPontos h1 {
     font-family: mukta_bold;
     font-size: 40px;
 }
-.contanerMeusPontos h2{
+
+.contanerMeusPontos h2 {
     font-family: mukta_bold;
-    font-size: 30px;
+    font-size: 25px;
 }
-.contanerMeusPontos h3{
+
+.contanerMeusPontos h3 {
     font-family: mukta_bold;
     font-size: 20px;
 }
-.contanerMeusPontos p{
+
+.contanerMeusPontos p {
     font-family: mukta_medium;
     font-size: 15px;
     color: #000;
 }
+
 .contanerMeusPontos {
     color: #6A994E;
     width: 80%;
-    max-width: 1500px;
+    max-width: 1000px;
     min-width: 400px;
     margin: auto;
 }
@@ -39,8 +47,9 @@
 .sectionMeusPontos {
     display: flex;
 }
-.sectionMeusPontosText{
-    width:  70%;
+
+.sectionMeusPontosText {
+    width: 70%;
 }
 
 .addMeuPonto {
@@ -54,6 +63,7 @@
     border: 0px;
     border-radius: 25px;
     background-color: #6A994E;
+    margin: 50px;
 }
 
 .btnAddMeuPonto img {
@@ -63,13 +73,51 @@
     padding-right: 3px;
     filter: brightness(0) invert(1) grayscale(100%);
 }
-
-.cardMeuPonto{
-    width: 90%;
-    height: 400px;
-    background-color: #fbfbfb;
+.cardMeuPonto {
+    background-image: url(../assets/img/estabelecimento.jpg);
+    background-repeat: no-repeat;
+    background-size: 350px;
+    padding-left: 370px;
+    border-left: 20px solid;
+    width: 75%;
+    height: 350px;
+    columns:  2;
+    column-gap: 15px;
+    background-color: #FAF3E1;
     display: flex;
     margin: auto;
     border-radius: 20px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.imagePontoColeta img{
+    margin-left: 20px;
+    height: 350px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.infoLocate{
+    width: 40%;
+}
+.infoResidue{
+    width: 350px;
+}
+.infoResidue h2{
+    display: flex;
+    justify-content: center;
+}
+.infoResiduoColeta{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.cardResidue {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #ECEAEA;
+    
 }

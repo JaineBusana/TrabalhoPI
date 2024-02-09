@@ -1,22 +1,22 @@
 ﻿using ColetaBlu.Contracts_Repository;
 using ColetaBlu.DTO;
 using Microsoft.AspNetCore.Mvc;
-using static ColetaBlu.Contracts_Repository.ICadastroPontoRepository;
+using static ColetaBlu.Contracts_Repository.IPointRegistrationRepository;
 
 namespace ColetaBlu.Controller
 {
     [ApiController]
     [Route("/cadastroponto")]
-    public class CadastroPontoController : ControllerBase
+    public class PointRegistrationController : ControllerBase
     {
-        private readonly ICadastroPontoRepository _cadastroPontoRepository;
-        public CadastroPontoController(ICadastroPontoRepository cadastroPontoRepository)
+        private readonly IPointRegistrationRepository _cadastroPontoRepository;
+        public PointRegistrationController(IPointRegistrationRepository cadastroPontoRepository)
         {
             _cadastroPontoRepository = cadastroPontoRepository;
         }
 
         [HttpPost]
-        public async Task<IActionResult> Add(CadastroPontoDTO cadastroPonto)
+        public async Task<IActionResult> Add(PointRegistrationDTO cadastroPonto)
         {
             await _cadastroPontoRepository.Add(cadastroPonto);
             return Ok(cadastroPonto);
