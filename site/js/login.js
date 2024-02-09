@@ -1,4 +1,3 @@
-
 window.addEventListener("load", (event) => {
 
     const usuario = document.querySelector(`#insertUserLogin`)
@@ -63,6 +62,7 @@ window.addEventListener("load", (event) => {
         }
 
     })
+
 })
 
 
