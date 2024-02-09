@@ -14,8 +14,10 @@ $('body').on('click', "#btnLogin", function () {
     });
 });
 
-$('body').on('click', '.closeModal', () => {
+$('body').on('click', '.closeModal', (event) => {
+    event.preventDefault();
     $('#loginShow').hide();    
 })
-  
+
+
 
