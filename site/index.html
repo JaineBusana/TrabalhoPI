@@ -30,14 +30,16 @@
 </head>
 
 <body>
-  <form id="formLogin">
+  <!-- <form id="formLogin">
     <div id="modalLogin" class="">
       <div id="backgroundLogin" class="flex">
         <div>
-          <button class="closeModal" onclick="CLOSE_MODAL_LOGIN()"><div class="menuLogin">
-            <span class="barLogin"></span>
-            <span class="barLogin"></span>
-        </div></button>
+          <button class="closeModal" onclick="CLOSE_MODAL_LOGIN()">
+            <div class="menuLogin">
+              <span class="barLogin"></span>
+              <span class="barLogin"></span>
+            </div>
+          </button>
           <div class="flex">
             <img id="logo" class="h-20" src="./assets/img/MicrosoftTeams-image (7).png" alt="Logo da ColetaBlu">
             <h1 class=" mt-10 enterLogin">Entrar</h1>
@@ -72,36 +74,18 @@
     </div>
   </form>
 
+
   <header>
-    <nav class="navigation">
-
-      <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
-      <div class="navHome">
-        <ul class="menuNav">
-          <li class="navItem "><a href="index.html">Home</a></li>
-          <li class="navItem"><a href="pontoColeta.html">Pontos de coleta</a></li>
-          <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
-          <li class="navItem" onclick="SHOW_MODAL_LOGIN()"><a href="#">Login</a></li>
-
-
-        </ul>
-      </div>
-      <div class="navigationBar">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </nav>
-  </header>
-
+  </header> -->
 
   <section>
     <div class="owl-carousel owl-theme carousel1">
-      <div class="item"><img src="./assets/img/banner/bannerColetablu.png"></div>
-      <div class="item"><img src="./assets/img/banner/bannerGarrafas.jpg"></div>
-      <div class="item"><img src="./assets/img/banner/bannerSuco.jpg"></div>
-      <div class="item"><img src="./assets/img/banner/bannerLixeiro.jpg"></div>
-      <div class="item"><img src="./assets/img/banner/bannerCidade.jpg"></div>
+      <div class="item"><img src="./assets/img/banner/1.png"></div>
+      <div class="item"><img src="./assets/img/banner/2.png"></div>
+      <div class="item"><img src="./assets/img/banner/3.png"></div>
+      <div class="item"><img src="./assets/img/banner/4.png"></div>
+      <div class="item"><img src="./assets/img/banner/5.png"></div>
+      <div class="item"><img src="./assets/img/banner/6.png"></div>
     </div>
   </section>
 
@@ -159,7 +143,7 @@
             <h1>Como a Coletablu te ajuda?</h1>
             <p>
               Facilita a reciclagem, oferecendo pontos e descontos.
-              Além disso, promove a parceria entre grandes empresas e pequenos estabelecimentos, 
+              Além disso, promove a parceria entre grandes empresas e pequenos estabelecimentos,
               aumentando a visibilidade local. <br>Se interessou?
             </p>
             <div class="flex">
@@ -177,7 +161,7 @@
     </div>
   </div>
 
-  <footer>
+  <!-- <footer>
     <div class="footerImgMobile">
       <img id="imgPlant" src="./assets/img/rodape-img-mobile.png" alt="">
     </div>
@@ -199,14 +183,17 @@
       </form>
     </div>
 
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </footer> -->
+
+
   <script src="./js/login.js"></script>
   <script src="./js/nav.js"></script>
   <script src="./lib/jquery/jquery.min.js"></script>
   <script src="./lib/owlCarousel/dist/owl.carousel.min.js"></script>
+  <script src="./js/load.js"></script>
   <script type="text/javascript">
     $(document).ready(function () {
+    
       $(".carousel1").owlCarousel({
         loop: true,
         autoplay: true,

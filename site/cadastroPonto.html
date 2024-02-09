@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <nav class="navigation">
 
             <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
@@ -22,7 +22,7 @@
                     <li class="navItem "><a href="index.html">Home</a></li>
                     <li class="navItem"><a href="pontoColeta.html">Pontos de coleta</a></li>
                     <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
-                    <li class="navItem" onclick="SHOW_MODAL_LOGIN()"><a href="#">Login</a></li>
+                    <li class="navItem"><a  id="Logout" href="#">Logout</a></li>
 
 
                 </ul>
@@ -35,8 +35,8 @@
         </nav>
 
 
-    </header>
-    <main>
+    </header> -->
+    <main id="conteudo">
         <div class="container">
             <section class="header">
                 <h1>Cadastro de Pontos de Coleta</h1>
@@ -44,23 +44,37 @@
 
             <form id="form" class="form">
                 <div class="formContent">
-                    <label for="placeName">Nome</label>
-                    <input type="text" id="placeName" placeholder="Digite o nome do ponto de coleta..." />
+                    <label for="Name">Nome</label>
+                    <input type="text" id="Name" placeholder="Digite o nome do ponto de coleta..." />
                     <a>Mensagem de Erro</a>
                 </div>
 
                 <div class="formContent">
-                    <label for="address">Endereço</label>
-                    <input type="address" id="address" placeholder="Digite o endereço do local..." />
+                    <label for="street">Rua</label>
+                    <input type="text" id="street" placeholder="Digite o endereço do local..." />
+                    <a>Mensagem de Erro</a>
+                </div>
+                <div class="formContent">
+                    <label for="AddressNumber">N&deg;</label>
+                    <input type="text" id="AddressNumber" placeholder="Digite o endereço do local..." />
+                    <a>Mensagem de Erro</a>
+                </div>
+                <div class="formContent">
+                    <label for="neighborhood">Bairro</label>
+                    <input type="text" id="neighborhood" placeholder="Digite o Bairro..." />
                     <a>Mensagem de Erro</a>
                 </div>
 
                 <div class="formContent">
                     <label for="phoneNumber">Número de contato</label>
-                    <input type="phoneNumber" id="phoneNumber" placeholder="Digite um número de contato..." />
+                    <input type="number" id="phoneNumber" placeholder="Digite um número de contato..." />
                     <a>Mensagem de Erro</a>
                 </div>
-
+                <div class="formContent">
+                    <label for="User">User</label>
+                    <input type="number" id="User" placeholder="Digite um número de contato..." />
+                    <a>Mensagem de Erro</a>
+                </div>
                 <div class="formContent">
                     <label for="residue">Classificação do resíduo</label>
                     <select class="select" id="selectResidue">
@@ -71,17 +85,17 @@
                     </select>
                     <a>Aqui vai a mensagem de erro....</a>
                 </div>
-                <div class="msg"></div> 
-                <button type="submit">Cadastrar Ponto de Coleta</button>
+                <div class="msg"></div>
+                <button id="sendPontoColeta" type="submit" >Cadastrar Ponto de Coleta</button>
 
             </form>
 
         </div>
     </main>
-
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./js/cadastroPonto.js"></script>
     <script src="./js/nav.js"></script>
+    <!-- <script src="./lib/jquery/jquery.min.js"></script> -->
 </body>
 
 </html>

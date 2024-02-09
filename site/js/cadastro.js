@@ -160,7 +160,6 @@ $(() => {
         e.preventDefault();
         
         const data = {
-            type: $("#usercpf").val(),
             name: $("#username").val(),
             email: $("#email").val(),
             SocialNumber: $("#userSocialNumber").val(),
@@ -168,6 +167,16 @@ $(() => {
             Telephone: $("#phone").val(),
             password: $("#password").val(),
         };
+
+        if(data.SocialNumber.length == 11) {
+            data.type = "cidadao"
+        }
+        if(data.SocialNumber.length == 14) {
+            data.type = "coletor"
+            if(!data.address && !data.Telephone){
+                console.log(data)
+            }
+        }
 
 
         $.ajax({
