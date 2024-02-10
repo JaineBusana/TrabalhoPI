@@ -42,7 +42,7 @@
     flex-shrink: 0;
     color: #6A994E;
     font-family: mukta_bold !important;
-    font-size: 19px;
+    font-size: 20px;
     font-style: normal;
     line-height: normal;
 }
@@ -50,7 +50,8 @@
 #ecoScore {
     background-color: #6A994E;
     border-radius: 22px;
-    width: 100px;
+    width: 105px;
+    font-size: 18px;
     padding-left: 20px;
     color: white;
     margin-top: 40px;
@@ -63,6 +64,7 @@
     color: #6A994E;
     margin-top: -23px;
     margin-left: 150px;
+    font-size: 18px;
 
 }
 
@@ -72,9 +74,9 @@
     color: white;
 }
 
-.cardImgTroca {
+.owl-carousel .owl-item img {
     height: auto;
-    width: 160px;
+    width: 160px !important;
 }
 
 .spanDiscount {
@@ -94,16 +96,10 @@
 }
 
 .discountMenssageApp {
-    margin-top: 1px;
-    margin-left: 35px;
-    position: absolute;
-    font-size: 12px;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 16px;
     color: black;
-}
-
-.spanMessageApp {
-    display: flex;
-    justify-content: center;
 }
 
 .spanTroca {
@@ -117,6 +113,9 @@
     justify-content: space-around;
     color: #6A994E;
     font-size: 18px;
+    position: absolute;
+    margin-top: 15px;
+    font-size: 20px;
 }
 
 .imgCoupomPc {
@@ -126,6 +125,8 @@
 .slideContent {
     justify-content: center;
     display: flex;
+    margin-top: 50px;
+
 }
 
 .cardWrapper {
@@ -143,7 +144,9 @@
 
 .cardTroca {
     margin-block-end: auto;
-    margin-left: 100px;
+    margin-left: 120px;
+    margin-top: 40px;
+
 }
 
 
@@ -230,11 +233,17 @@
 
     }
 
+    #tittleTrocaPonto{
+        font-size: 25px;
+
+    }
+
 
     #motivationalPhrase,
     #motivationalPhrase1 {
 
-        width: 50%
+        width: 50%;
+        font-size: 18px;
     }
 
     .cardWrapper {
@@ -245,12 +254,14 @@
     }
 
     .tittleCardTroca {
-        position: absolute;
-        margin-top: -250px;
-        margin-left: 30px;
+        margin-top: 20px;
+        margin-left: auto;
+        font-size: 25px;
     }
-    .cardTroca{
+
+    .cardTroca {
         margin-top: 50px;
+        margin-left: 100px;
 
     }
 
@@ -273,13 +284,16 @@
     }
 
     .tittleCardTroca {
-        position: absolute;
-        margin-top: -250px;
-        margin-left: 30px;
+        margin-top: 20px;
+        margin-left: auto;
+        font-size: 25px;
+
     }
 
-    .cardTroca{
+    .cardTroca {
         margin-top: 50px;
+        margin-left: 100px;
+
 
     }
 }
