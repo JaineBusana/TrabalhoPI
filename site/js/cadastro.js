@@ -96,6 +96,12 @@ function checkInputSocialNumber() {
         erroInput(userSocialNumber, "Preencha o Número Social.")
     } else if (userSocialNumberValue.length < 11) {
         erroInput(userSocialNumber, "Número Social incorreto.")
+    }else if (userSocialNumberValue.length > 14) {
+        erroInput(userSocialNumber, "Número Social incorreto.")
+    }else if (userSocialNumberValue.length == 12) {
+        erroInput(userSocialNumber, "Número Social incorreto.")
+    }else if (userSocialNumberValue.length == 13) {
+        erroInput(userSocialNumber, "Número Social incorreto.")
     } else {
         const formItem = userSocialNumber.parentElement;
         formItem.className = "formContent"
@@ -160,24 +166,34 @@ $(() => {
         e.preventDefault();
         
         const data = {
-            name: $("#username").val(),
-            email: $("#email").val(),
+            Name: $("#username").val(),
+            Email: $("#email").val(),
             SocialNumber: $("#userSocialNumber").val(),
-            address: $("#address").val(),
-            Telephone: $("#phone").val(),
-            password: $("#password").val(),
+            Password: $("#password").val()
         };
 
         if(data.SocialNumber.length == 11) {
             data.type = "cidadao"
-        }
+        };
         if(data.SocialNumber.length == 14) {
             data.type = "coletor"
-            if(!data.address && !data.Telephone){
-                console.log(data)
-            }
-        }
-
+        };
+        if(data.Name == "") {
+            data.Name = null
+            alert("Prencha o Nome do usuario!")
+        };
+        if(data.Email == "") {
+            data.Email = null
+            alert("Prencha o Email do usuario!")
+        };
+        if(data.Password == "") {
+            data.Password = null
+            alert("Crie uma senha para o usuario!")
+        };
+        if(data.Password.length < 8) {
+            data.Password = null
+            alert("A senha deve ter mais de 8 digitos!")
+        };
 
         $.ajax({
             type: "POST",

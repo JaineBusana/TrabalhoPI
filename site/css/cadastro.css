@@ -78,7 +78,7 @@ aside p {
     display: none;
 }
 .formCadastreColetor.active {
-    display: block;
+    display: none;
 }
 
 

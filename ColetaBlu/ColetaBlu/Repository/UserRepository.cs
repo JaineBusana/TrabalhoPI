@@ -12,8 +12,8 @@ namespace ColetaBlu.Repository
         public async Task Add(UserDTO user)
         {
             string sql = @"
-          INSERT INTO User (Type, Name, SocialNumber, Email, Telephone, Password, Score)
-                         VALUE(@tYPE, @Name, @SocialNumber, @Email, @Telephone, @Password, @Score)
+          INSERT INTO User (Type, Name, SocialNumber, Email, Password, Score)
+                         VALUE(@Type, @Name, @SocialNumber, @Email, @Password, @Score)
 
          ";
             await Execute(sql, user);
