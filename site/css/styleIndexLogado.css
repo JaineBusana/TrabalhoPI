@@ -24,12 +24,12 @@ body {
 
 }
 
-.navigation {
+.navigationLogado {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 18px 40px;
-    box-shadow: 0 0.1rem 0.5rem #ccc;
+    box-shadow: 0 0.1rem 0.5rem #e69d9d;
     width: 100%;
     background: #FEFEEB;
     transition: all 0.5s;
@@ -37,34 +37,34 @@ body {
 
 }
 
-.logoNav {
+.logoNavLogado {
     width: 17% !important;
     min-width: 100px;
 
 }
 
-.navigation ul {
+.navigationLogado ul {
     display: flex;
     padding-top: 0px;
     align-items: center;
     gap: 5rem;
 }
 
-.navigation ul li a:hover {
+.navigationLogado ul li a:hover {
     color: #A7C957;
 }
 
-.navItem {
+.navItemLogado {
     font-size: 20px;
     color: #6A994E;
 }
 
-.navigationBar {
+.navigationBarLogado {
     cursor: pointer;
     display: none;
 }
 
-.navigationBar .bar {
+.navigationBarLogado .bar {
     display: block;
     width: 28px;
     height: 3px;
@@ -75,14 +75,14 @@ body {
 
 }
 
-.navigationBar .bar:nth-child(1),
-.navigationBar .bar:nth-child(3) {
+.navigationBarLogado .bar:nth-child(1),
+.navigationBarLogado .bar:nth-child(3) {
     background: #307A50;
 
 }
 
 
-#profile {
+#profileLogado {
     display: none;
 }
 
@@ -125,7 +125,7 @@ body {
     display: flex;
 }
 
-#profileName {
+#profileNameLogado {
     margin-left: 7px;
     margin-top: 10px;
     font-size: 122%;
@@ -133,7 +133,7 @@ body {
     font-family: mukta_bold !important;
 }
 
-#profilePoint,
+#profilePointLogado,
 #profilePickup {
     height: 58px;
     width: 172px;
@@ -151,7 +151,7 @@ body {
     font-family: mukta_bold !important;
 }
 
-.profilePonitImg,
+.profilePonitImgLogado,
 .profilePickupImg {
     width: 22%;
 }
@@ -202,36 +202,36 @@ section {
 }
 
 @media(max-width:970px) {
-    .navigation {
+    .navigationLogado {
         padding: 18px 20px;
         z-index: 1001;
         position: fixed;
         margin-top: -50px;
     }
 
-    .logoNav {
+    .logoNavLogado {
         width: 50% !important;   
     }
     
 
-    .navigationBar {
+    .navigationBarLogado {
         display: block;
 
     }
 
-    .navigationBar.ativo .bar:nth-child(1) {
+    .navigationBarLogado.ativo .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
 
-    .navigationBar.ativo .bar:nth-child(2) {
+    .navigationBarLogado.ativo .bar:nth-child(2) {
         opacity: 0;
     }
 
-    .navigationBar.ativo .bar:nth-child(3) {
+    .navigationBarLogado.ativo .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .menuNav {
+    .menuNavLogado {
         position: fixed;
         right: -100%;
         top: 65px;
@@ -241,17 +241,17 @@ section {
         transition: 0.3s;
     }
 
-    .menuNav.ativo {
+    .menuNavLogado.ativo {
         right: 0;
         height: 896px;
     }
 
-    .navigation ul {
+    .navigationLogado ul {
         padding-top: 15px;
         gap: 36px;
     }
 
-    .navItem {
+    .navItemLogado {
         font-size: 17px;
         height: 35px;
         width: 175px;
@@ -263,7 +263,7 @@ section {
         justify-content: space-around;
     }
 
-    #profile {
+    #profileLogado {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -273,11 +273,11 @@ section {
         width: 120px;
     }
 
-    #profileName {
+    #profileNameLogado {
         color: #6A994E;
     }
 
-    #profilePoint {
+    #profilePointLogado {
         margin-top: 2px;
         margin-bottom: 0px;
     }
@@ -287,7 +287,7 @@ section {
         margin-bottom: 0px;
     }
 
-    #profileTextPoint {
+    #profileTextPointLogado {
         margin-top: 25px;
         margin-bottom: 10px;
         margin-left: 3px;

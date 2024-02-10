@@ -42,7 +42,6 @@ window.addEventListener("load", (event) => {
                     };
 
 
-
                     $.ajax({
                         type: "POST",
                         url: "https://localhost:7249/user/login",
@@ -53,6 +52,7 @@ window.addEventListener("load", (event) => {
                             localStorage.setItem(`userName`, result.user.name);
                             localStorage.setItem(`userRole`, result.user.role);
                             location.href = "indexLogado.html";
+                            console.log("oi")
                         },
                         contentType: "application/json",
                         dataType: "json",
@@ -62,6 +62,8 @@ window.addEventListener("load", (event) => {
         }
 
     })
+
+    
 
 })
 
