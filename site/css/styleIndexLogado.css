@@ -54,7 +54,7 @@ body {
     color: #A7C957;
 }
 
-.navItemLogado {
+.navItem {
     font-size: 20px;
     color: #6A994E;
 }
@@ -251,7 +251,7 @@ section {
         gap: 36px;
     }
 
-    .navItemLogado {
+    .navItem {
         font-size: 17px;
         height: 35px;
         width: 175px;

@@ -29,7 +29,10 @@ window.addEventListener("load", (event) => {
             $(() => {
 
                 if (!!localStorage.getItem(`token`)) {
-                    location.href = "menu.html";
+                    // location.href = "indexLogado.html";
+                    $.get('indexLogado.html', (result) => {
+                        $('header').html(result);
+                    });
                 }
                 $("#login").click((e) => {
                     e.preventDefault();
@@ -38,7 +41,7 @@ window.addEventListener("load", (event) => {
                     const data = {
                         email: $("#insertUserLogin").val(),
                         password: $("#insertPasswordLogin").val()
-                    };
+                    }; 
 
 
                     $.ajax({
@@ -50,7 +53,13 @@ window.addEventListener("load", (event) => {
                             localStorage.setItem(`token`, result.token);
                             localStorage.setItem(`userName`, result.user.name);
                             localStorage.setItem(`userRole`, result.user.role);
-                            location.href = "menu.html";
+                            // location.href = "indexLogado.html";
+                            $.get('indexLogado.html', (result) => {
+                                $('header').html(result);
+                            });
+                            
+
+                           
                         },
                         contentType: "application/json",
                         dataType: "json",

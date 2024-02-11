@@ -22,7 +22,12 @@ window.addEventListener("load", (event) => {
         $('#loginShow').hide();
     })
 
-   
+    $('body').on('click', "#login", function () {
+        $.get('indexLogado.html', (result) => {
+            $('header').html(result);
+        });
+    });
+
 
 })
 
