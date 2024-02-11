@@ -2751,11 +2751,17 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\tigoh\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\gustavo.pereira13\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+>>>>>>> ad1c571fadb1a797bcaec1ee4b0ced185f7aba1a
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\tigoh\\OneDrive\\Área de Trabalho\\Nova pasta\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\ColetaBlu.csproj",
       "projectName": "ColetaBlu",
       "projectPath": "C:\\Users\\tigoh\\OneDrive\\Área de Trabalho\\Nova pasta\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\ColetaBlu.csproj",
@@ -2764,6 +2770,20 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tigoh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\gustavo.pereira13\\Music\\TrabalhoPI\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\ColetaBlu.csproj",
+      "projectName": "ColetaBlu",
+      "projectPath": "C:\\Users\\gustavo.pereira13\\Music\\TrabalhoPI\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\ColetaBlu.csproj",
+      "packagesPath": "C:\\Users\\gustavo.pereira13\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gustavo.pereira13\\Music\\TrabalhoPI\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\gustavo.pereira13\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> ad1c571fadb1a797bcaec1ee4b0ced185f7aba1a
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2829,7 +2849,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+>>>>>>> ad1c571fadb1a797bcaec1ee4b0ced185f7aba1a
       }
     }
   },

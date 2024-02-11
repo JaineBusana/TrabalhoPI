@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/nav.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
-    
+
     <title>Cadastro</title>
 </head>
 
@@ -17,21 +17,21 @@
 
     <!-- <header>
         <nav class="navigation">
-    
-          <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
-          <div class="navHome">
-            <ul class="menuNav">
-              <li class="navItem "><a href="index.html">Home</a></li>
-              <li class="navItem" onclick="SHOW_MODAL_LOGIN()"><a href="#">Login</a></li>
-    
-    
-            </ul>
-          </div>
-          <div class="navigationBar">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
+
+            <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
+            <div class="navHome">
+                <ul class="menuNav">
+                    <li class="navItem "><a href="index.html">Home</a></li>
+                    <li class="navItem" onclick="SHOW_MODAL_LOGIN()"><a href="#">Login</a></li>
+
+
+                </ul>
+            </div>
+            <div class="navigationBar">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
       </header> -->
 
@@ -65,20 +65,14 @@
                     <input type="email" id="email" placeholder="Digite seu Email">
                     <a>Mensagem de erro</a>
                 </div>
-                <div class="campCpf">
+                <div class="campSocialNumber">
                     <div class="formContent">
-                        <label for="usercpf">Cpf</label>
-                        <input type="text" id="usercpf" placeholder="Digite seu Cpf">
+                        <label for="userSocialNumber">Número Social</label>
+                        <input type="text" id="userSocialNumber" placeholder="Digite seu Número Social">
                         <a>Mensagem de erro</a>
                     </div>
                 </div>
-
                 <div class="formCadastreColetor">
-                    <div class="formContent">
-                        <label for="cnpj">Cnpj</label>
-                        <input type="text" id="cnpj" placeholder="Digite seu Cnpj">
-                        <a>Mensagem de erro</a>
-                    </div>
                     <div class="formContent">
                         <label for="address">Endereço</label>
                         <input type="text" id="address" placeholder="Digite o Endereço">
@@ -90,27 +84,30 @@
                         <a>Mensagem de erro</a>
                     </div>
                 </div>
-                <div class="formContent">
-                    <label for="password">Senha</label>
-                    <input type="password" id="password" placeholder="Digite sua Senha">
-                    <a>Mensagem de erro</a>
-                </div>
-                <div class="formContent">
-                    <label for="confirmationPassword">Confirmação de senha</label>
-                    <input type="password" id="confirmationPassword" placeholder="Digite sua senha novamente">
-                    <a>Mensagem de erro</a>
-                </div>
-                <div id="submitCadastreUser">
-                    <button class="btnCadastro" href="./index.html" type="submit">Cadastrar</button>
-                </div>
-                <div id="textJaPossuiConta">
-                    <p>Já passui uma conta? <a id="link" href="./index.html">Login</a></p>
-                </div>
+            </div>
+            <div class="formContent">
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Digite sua Senha">
+                <a>Mensagem de erro</a>
+            </div>
+            <div class="formContent">
+                <label for="confirmationPassword">Confirmação de senha</label>
+                <input type="password" id="confirmationPassword" placeholder="Digite sua senha novamente">
+                <a>Mensagem de erro</a>
+            </div>
+            <div id="submitCadastreUser">
+                <button class="btnCadastro" href="./index.html" type="submit">Cadastrar</button>
+            </div>
+            <div id="textJaPossuiConta">
+                <p>Já passui uma conta? <a id="link" href="./index.html">Login</a></p>
+            </div>
             </div>
         </form>
     </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./js/cadastro.js"></script>
     <script src="./js/nav.js"></script>
+
 </body>
 
 </html>

@@ -3,6 +3,7 @@ using ColetaBlu.DTO;
 using ColetaBlu.Entity;
 using ColetaBlu.Infrastructure;
 using Dapper;
+using Mysqlx.Session;
 
 namespace ColetaBlu.Repository
 {
@@ -11,8 +12,8 @@ namespace ColetaBlu.Repository
         public async Task Add(UserDTO user)
         {
             string sql = @"
-          INSERT INTO User (Type, Name, CPF_CNPJ, Email, Telephone, Password, Score)
-                         VALUE(@tYPE, @Name, @CPF_CNPJ, @Email, @Telephone, @Password, @Score)
+          INSERT INTO User (Type, Name, SocialNumber, Email, Telephone, Password, Score)
+                         VALUE(@tYPE, @Name, @SocialNumber, @Email, @Telephone, @Password, @Score)
 
          ";
             await Execute(sql, user);
