@@ -22,11 +22,13 @@ window.addEventListener("load", (event) => {
         });
     });
 
-    
+
     $('body').on('click', '.closeModal', (event) => {
         event.preventDefault();
         $('#loginShow').hide();
     })
+
+   
 
 })
 
