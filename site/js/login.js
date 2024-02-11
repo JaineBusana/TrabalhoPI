@@ -5,6 +5,7 @@ window.addEventListener("load", (event) => {
 
         const usuario = document.querySelector(`#insertUserLogin`)
         const senha = document.querySelector(`#insertPasswordLogin`)
+        
 
         event.preventDefault();
         const errorMessage = document.querySelector('.msg')
@@ -29,10 +30,10 @@ window.addEventListener("load", (event) => {
             $(() => {
 
                 if (!!localStorage.getItem(`token`)) {
-                    // location.href = "indexLogado.html";
                     $.get('indexLogado.html', (result) => {
                         $('header').html(result);
                     });
+
                 }
                 $("#login").click((e) => {
                     e.preventDefault();

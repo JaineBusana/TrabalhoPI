@@ -26,6 +26,8 @@ window.addEventListener("load", (event) => {
         $.get('indexLogado.html', (result) => {
             $('header').html(result);
         });
+        $('#loginShow').hide();
+
     });
 
 
