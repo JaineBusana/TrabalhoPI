@@ -1,4 +1,5 @@
-{
+window.addEventListener("load", (event) => {
+
   const menu = document.querySelector('.navigationBar');
   const NavMenu = document.querySelector('.menuNav')
   const NavHome = document.querySelector('.navHome')
@@ -12,7 +13,7 @@
     NavHome.classList.toggle('ativo');
   })
 
-  btnProfilePicture.addEventListener('click', () => {
+  $(".btnProfilePicture").click(() => {
     modalProfilePicture.classList.toggle('ativo');
   })
 
@@ -22,5 +23,4 @@
   
   // });
 
-
-}
+})

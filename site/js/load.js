@@ -16,12 +16,6 @@ window.addEventListener("load", (event) => {
         });
     });
 
-    $('body').on('click', "#btnLogin", function () {
-        $.get('indexLogado.html', (result) => {
-            $('header').html(result);
-        });
-    });
-
 
     $('body').on('click', '.closeModal', (event) => {
         event.preventDefault();
