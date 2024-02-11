@@ -1,6 +1,6 @@
 ﻿namespace ColetaBlu.Entity
 {
-    public class PointRegistration
+    public class PointRegistrationEntity
     {
         public string? Name { get; set; }
         public string? Street { get; set; }

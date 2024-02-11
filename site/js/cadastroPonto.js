@@ -151,7 +151,7 @@ $(() => {
         $.ajax({
             type: "POST",
             url: "https://localhost:7249/cadastroponto",
-            data: JSON.stringify(data),
+            
         //     headers: {
         //         Authorization: `Bearer ${localStorage.getItem(`token`)}`,
         //       },

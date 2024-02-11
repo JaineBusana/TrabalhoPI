@@ -2,6 +2,7 @@
 using ColetaBlu.DTO;
 using ColetaBlu.Entity;
 using ColetaBlu.Infrastructure;
+using Dapper;
 
 namespace ColetaBlu.Repository
 {
@@ -22,14 +23,22 @@ namespace ColetaBlu.Repository
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<PointRegistration>> Read()
+        public async Task<IEnumerable<PointRegistrationEntity>> Read()
         {
-            throw new NotImplementedException();
+            string sql = "SELECT * FROM COLLECTIONPOINT";
+            return await GetConnection().QueryAsync<PointRegistrationEntity>(sql);
         }
-
+       
         public Task Update(PointRegistrationDTO user)
         {
             throw new NotImplementedException();
         }
+        public async Task<PointRegistrationEntity> GetById(int id)
+        {
+            string sql = "SELECT * FROM COLLECTIONPOINT WHERE Id = @id";
+            return await GetConnection().QueryFirstAsync<PointRegistrationEntity>(sql, new { id });
+        }
+
+        
     }
 }
