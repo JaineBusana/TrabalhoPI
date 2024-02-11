@@ -54,7 +54,6 @@ window.addEventListener("load", (event) => {
                             localStorage.setItem(`token`, result.token);
                             localStorage.setItem(`userName`, result.user.name);
                             localStorage.setItem(`userRole`, result.user.role);
-                            // location.href = "indexLogado.html";
                             $.get('indexLogado.html', (result) => {
                                 $('header').html(result);
                             });
