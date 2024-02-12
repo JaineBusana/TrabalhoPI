@@ -145,13 +145,13 @@ $(() => {
             // phoneNumber: $("#phoneNumber").val(),
             neighborhood_Id: $("#neighborhood").val(),
             // selectResidue: $("#selectResidue").val(),
-            user_Id: $("#User").val()
+            user_id: $("#User").val()
         };
         console.log(data)
         $.ajax({
             type: "POST",
             url: "https://localhost:7249/cadastroponto",
-            
+            data: JSON.stringify(data),
         //     headers: {
         //         Authorization: `Bearer ${localStorage.getItem(`token`)}`,
         //       },

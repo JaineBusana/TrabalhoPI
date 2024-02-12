@@ -12,7 +12,7 @@ namespace ColetaBlu.Repository
         public  async Task Add(PointRegistrationDTO cadastroPonto)
         {
             string sql = @"
-                INSERT INTO CollectionPoint (Name, Street, Number, Neighborhood_Id, User_Id)
+                INSERT INTO COLLECTIONPOINT (Name, Street, Number, Neighborhood_Id, User_Id)
                             VALUE (@Name, @Street, @Number, @Neighborhood_Id, @User_Id)
             ";
             await Execute(sql, cadastroPonto);
