@@ -67,6 +67,7 @@
 .selectPonto {
 
     /* position: relative; */
+    border: none !important;
     width: 359px;
     height: 43px;
     border-radius: 22px;
@@ -116,7 +117,7 @@
 }
 
 
-.grid {
+.gridColeta {
 
     width: 245px;
     height: 62px;

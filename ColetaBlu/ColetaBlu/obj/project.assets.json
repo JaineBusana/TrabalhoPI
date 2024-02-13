@@ -2751,19 +2751,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tigoh\\.nuget\\packages\\": {}
+    "C:\\Users\\gustavo.pereira13\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tigoh\\OneDrive\\Área de Trabalho\\Nova pasta\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\ColetaBlu.csproj",
+      "projectUniqueName": "C:\\Users\\gustavo.pereira13\\Music\\TrabalhoPI\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\ColetaBlu.csproj",
       "projectName": "ColetaBlu",
-      "projectPath": "C:\\Users\\tigoh\\OneDrive\\Área de Trabalho\\Nova pasta\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\ColetaBlu.csproj",
-      "packagesPath": "C:\\Users\\tigoh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tigoh\\OneDrive\\Área de Trabalho\\Nova pasta\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\obj\\",
+      "projectPath": "C:\\Users\\gustavo.pereira13\\Music\\TrabalhoPI\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\ColetaBlu.csproj",
+      "packagesPath": "C:\\Users\\gustavo.pereira13\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gustavo.pereira13\\Music\\TrabalhoPI\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\tigoh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gustavo.pereira13\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2829,7 +2834,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   },

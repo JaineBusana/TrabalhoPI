@@ -95,6 +95,11 @@ body {
     display: flex;
     justify-content: center;
     width: 100px;
+    cursor: pointer;
+}
+
+.btnProfilePicture:hover {
+    animation: animacaoTexto 20s;
 }
 
 .modalProfilePicture {
@@ -290,7 +295,7 @@ section {
 
     .profileEdit,
     .profileExit,
-    .profilePictureBtn,
+    .btnProfilePicture,
     .profileHome,
     #boxProfilePicture {
         display: none;

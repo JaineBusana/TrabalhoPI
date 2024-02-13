@@ -1,0 +1,33 @@
+#modalEditProfileIL {
+    display: grid;
+    justify-items: end;
+    justify-content: end;
+    box-shadow: 6px 6px 18px #aaa;
+    padding: 10px;
+    border-radius: 12px;
+
+}
+
+#changeNameIL {
+    border: 2px solid #D3E49E;
+}
+
+#changeEmailIL {
+    border: 2px solid #D3E49E;
+}
+
+#changePasswordIL {
+    color: #6A994E;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#saveChangesIL {
+    color: #6A994E;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
