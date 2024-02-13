@@ -11,7 +11,7 @@ namespace ColetaBlu.Contracts_Repository
             Task<IEnumerable<CadastroPontoEntity>> Read();
             Task Update(CadastroPontoDTO user);
             Task Delete(int id);
-
+            
 
         }
     

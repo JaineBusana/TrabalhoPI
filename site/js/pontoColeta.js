@@ -92,3 +92,32 @@ function createCardElement(cardNumber) {
     card.textContent = "Card " + cardNumber;
     return card;
 }
+
+let url = "https://localhost:7249/pontoColeta";//Pode Alterar
+
+if (selectedNeighborhood !== "0") {
+    url += `?neighborhood=${selectedNeighborhood}`;
+}
+
+if (selectedResidue !== "0") {
+    url += (selectedNeighborhood !== "0" ? '&' : '?') + `residue=${selectedResidue}`;
+}
+
+$.ajax({
+    type: "GET", 
+    url: url, 
+    success: (result) => { 
+        
+        //Verificar o que retorna no pontoColeta
+        console.log(result);
+        document.getElementById("nameElement").textContent = result.name;
+        document.getElementById("neighborhoodElement").textContent = result.neighborhood;
+        document.getElementById("residueElement").textContent = result.residue;
+    },
+    error: (xhr, status, error) => { 
+        console.error('Erro ao fazer a solicitação:', error);
+    },
+    contentType: "application/json", 
+    dataType: "json" 
+});
+

@@ -31,5 +31,6 @@ namespace ColetaBlu.Repository
         {
             throw new NotImplementedException();
         }
+
     }
 }
