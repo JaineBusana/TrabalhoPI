@@ -37,10 +37,10 @@ além de promover uma imagem sustentável para as empresas parceiras.
     </td>
      </td>
   <td align="center">
-      <a href="https://github.com/Matheus16777" title="Github do Matheus ....">
-        <img src="" width="100px;" alt="Foto do Matheus "/><br>
+      <a href="https://github.com/Matheus16777" title="Github do Matheus Brizola">
+        <img src="https://media.licdn.com/dms/image/D4D03AQFl-rhV3xRtsg/profile-displayphoto-shrink_800_800/0/1675345349110?e=1713398400&v=beta&t=tQS77ZrJACIg_WrEpA9A0Y9f7Ihd0wjeF4Rv3zibRO4" width="100px;" alt="Foto do Matheus "/><br>
         <sub>
-          <b>Matheus ...</b>
+          <b>Matheus Brizola</b>
         </sub>
       </a>
     </td>
