@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/nav.css"> -->
+    <link rel="stylesheet" href="./css/styleIndexLogado.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styleIndex.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/1.3.0/css/line-awesome.css">
+    <link rel="stylesheet" href="./css/styleTrocaPonto.css">
+    <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
+
+
+    <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.theme.default.min.css">
+
+
+    <title>Troca de pontos</title>
+</head>
+
+<body>
+
+    <main class="mainTroca">
+        <section class="introductoryText">
+            <img src="./assets/img/trocaPontos/terra.png" alt="" class="imgCoupomPc">
+
+            <h1 id="tittleTrocaPonto"> Troca De Pontos</h1>
+            <div id="motivationalPhrase1">A sustentabilidade é uma jornada coletiva, onde cada ação é significativa
+            </div>
+            <div id="motivationalPhrase">Lançamos uma iniciativa que reconhece e recompensa seu compromisso com o meio
+                ambiente, proporcionando benefícios por suas escolhas sustentáveis!</div>
+            <div id="ecoScore">EcoScore:</div>
+            <div id="ecoScorePoint">300 Pontos</div>
+        </section>
+        <section class="slideContainer ">
+            <div class="slideContent ">
+                <div class="modalTrocaCupomContent">
+                    <div class="modalTrocaCupom">
+                        <div class="menuBarCoupom" onclick=" modalCoupomClose()">
+                            <span class="barCoupom"></span>
+                            <span class="barCoupom"></span>
+                        </div>
+                        <img src="./assets/img/trocaPontos/cupom.png" alt="" class="coupomConfirmn"
+                            onclick="modalConfirmnOpen()">
+                    </div>
+                </div>
+                <div class="modalTrocaConfirmnContent">
+                    <div class="modalConfirmnCupom">
+                        <div class="menuBarCoupom" onclick=" modalConfirmnClose()">
+                            <span class="barCoupom"></span>
+                            <span class="barCoupom"></span>
+                        </div>
+                        <img src="./assets/img/trocaPontos/valeCupom.png" alt="" class="coupom">
+                    </div>
+                </div>
+                <h1 class="tittleCardTroca"> Empresa de Bebidas X</h1>
+                <div class="owl-carousel  cardWrapper">
+                    <div class="cardTroca" onclick="modalCoupomOpen()">
+                        <div class="discountPoints"><span class="spanTroca">50</span>pontos</div>
+                        <img src="./assets/img/trocaPontos/fundoCard.png" alt="" class="cardImgTroca">
+                        <p class="spanDiscount">10%</p>
+                        <p class="discountTroca">De desconto</p>
+                        <p class="discountMenssageApp">Na próxima compra do app</p>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/owlCarousel/dist/owl.carousel.min.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/trocaPonto.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".cardWrapper").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            });
+
+        });
+    </script>
+
+
+</body>
+
+</html>

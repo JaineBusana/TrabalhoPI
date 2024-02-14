@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/cadastro.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/nav.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
     
@@ -13,83 +14,103 @@
 </head>
 
 <body>
-    <main>
-        <aside>
-            <div id="greetings">
-                <div id="greetingsImage">
-                    <img id="logoImage" src="./assets/img/MicrosoftTeams-image (8).png" alt="logo coletablu">
-                    <img id="logoImageVerde" src="./assets/img/MicrosoftTeams-image (6).png" alt="logo coletablu">
-                </div>
-                <div id="text">
-                    <h1>Bem-vindo!</h1>
-                    <p> Insira algumas informações <br> e comece sua jornada conosco!</p>
-                </div>
-            </div>
-            <img id="imageFooter" src="./assets/img/rodape-img-mobile.png" alt="">
-        </aside>
-        <div class="formulario">
 
+    <!-- <header>
+        <nav class="navigation">
+    
+          <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
+          <div class="navHome">
+            <ul class="menuNav">
+              <li class="navItem "><a href="index.html">Home</a></li>
+              <li class="navItem" onclick="SHOW_MODAL_LOGIN()"><a href="#">Login</a></li>
+    
+    
+            </ul>
+          </div>
+          <div class="navigationBar">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header> -->
+
+    <aside class="greetings">
+        <img src="./assets/img/MicrosoftTeams-image (5).png" alt="Logo coletablu">
+        <h1>Bem vindo!</h1>
+        <p>Insira algumas informações <br>
+            e comece sua jornada conosco!</p>
+    </aside>
+    <main>
+        <div class="register">
             <h1>Criar conta</h1>
-            <form id="form" class="form">
-                <div class="firstForm">
-                    <div class="form-content">
-                        <label for="nome">Nome</label>
-                        <input type="text" id="nome" placeholder="Digite seu nome" />
+            <div id="chooseAcontType">
+                <div id="btnSejaColetor" class="btnSejaColetor"></div>
+                <h2>Seja coletor</h2>
+            </div>
+            <p id="textSejaColetor" class="textSejaColetor">
+                ♻️ Colabore para um planeta mais saudável. <br>
+                Inscreva-se agora como coletor </p>
+        </div>
+        <form id="formCadastre" class="formCadastre">
+            <div class="cadastreUser">
+
+                <div class="formContent">
+                    <label for="username">Nome</label>
+                    <input type="text" id="username" placeholder="Digite seu Nome">
+                    <a>Mensagem de erro</a>
+                </div>
+                <div class="formContent">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Digite seu Email">
+                    <a>Mensagem de erro</a>
+                </div>
+                <div class="campCpf">
+                    <div class="formContent">
+                        <label for="usercpf">Cpf</label>
+                        <input type="text" id="usercpf" placeholder="Digite seu Cpf">
                         <a>Mensagem de erro</a>
                     </div>
-                    <div class="form-content ">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Digite seu email" />
+                </div>
+
+                <div class="formCadastreColetor">
+                    <div class="formContent">
+                        <label for="cnpj">Cnpj</label>
+                        <input type="text" id="cnpj" placeholder="Digite seu Cnpj">
                         <a>Mensagem de erro</a>
                     </div>
-                    <div class="form-content">
-                        <label for="password">Senha</label>
-                        <input type="password" id="password" placeholder="Digite sua senha" />
+                    <div class="formContent">
+                        <label for="address">Endereço</label>
+                        <input type="text" id="address" placeholder="Digite o Endereço">
                         <a>Mensagem de erro</a>
                     </div>
-                    <div class="form-content">
-                        <label for="password-confirmation">Confirmação de senha</label>
-                        <input type="password" id="password-confirmation" placeholder="Digite sua senha novamente" />
+                    <div class="formContent">
+                        <label for="phone">Telefone</label>
+                        <input type="text" id="phone" placeholder="Digite seu Telefone">
                         <a>Mensagem de erro</a>
                     </div>
-                    <div id="submit">
-                        <button href="./index.html" type="submit">Cadastrar</button>
-                    </div>
+                </div>
+                <div class="formContent">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Digite sua Senha">
+                    <a>Mensagem de erro</a>
+                </div>
+                <div class="formContent">
+                    <label for="confirmationPassword">Confirmação de senha</label>
+                    <input type="password" id="confirmationPassword" placeholder="Digite sua senha novamente">
+                    <a>Mensagem de erro</a>
+                </div>
+                <div id="submitCadastreUser">
+                    <button class="btnCadastro" href="./index.html" type="submit">Cadastrar</button>
+                </div>
+                <div id="textJaPossuiConta">
                     <p>Já passui uma conta? <a id="link" href="./index.html">Login</a></p>
                 </div>
-                <div class="second-form">
-                    <div>
-                        <div class="form-content">
-                            <label for="cnpj">cnpj</label>
-                            <input type="text" id="cnpj" placeholder="Digite seu cnpj" />
-                            <a>Mensagem de erro</a>
-                        </div>
-
-                        <div class="form-content">
-                            <label for="categoria de residuo">categoria de residuo</label>
-                            <input type="text" id="categoriaResiduo" placeholder="Digite a categoria de residuo" />
-                            <a>Mensagem de erro</a>
-                        </div>
-
-                        <div class="form-content">
-                            <label for="nome do estabelecimento ">categoria de residuo</label>
-                            <input type="text" id="omeDoEstabelecimento " placeholder="Digite o nome do estabelecimento " />
-                            <a>Mensagem de erro</a>
-                        </div>
-
-                        <div class="form-content">
-                            <label for="telefone ">categoria de residuo</label>
-                            <input type="text" id="telefone " placeholder="Digite o telefone " />
-                            <a>Mensagem de erro</a>
-                        </div>
-                    </div>
-                    
-                </div>
-            </form>
-
-        </div>
+            </div>
+        </form>
     </main>
     <script src="./js/cadastro.js"></script>
+    <script src="./js/nav.js"></script>
 </body>
 
 </html>

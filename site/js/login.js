@@ -6,7 +6,8 @@ window.addEventListener("load", (event) => {
     const button = document.querySelector(`#login`)
 
 
-    button.addEventListener(click, (e) => {
+
+    button.addEventListener(`click`, (e) => {
         e.preventDefault()
 
         const errorMessage = document.querySelector('.msg')
@@ -30,7 +31,8 @@ window.addEventListener("load", (event) => {
         else {
             $(() => {
 
-                if (!!localStorage.getItem(token)) {
+
+                if (!!localStorage.getItem(`token`)) {
                     location.href = "indexLogado.html";
                 }
                 $("#login").click((e) => {
@@ -52,6 +54,7 @@ window.addEventListener("load", (event) => {
                             localStorage.setItem(token, result.token);
                             localStorage.setItem(userName, result.user.name);
                             localStorage.setItem(userRole, result.user.role);
+
                             location.href = "indexLogado.html";
                         },
                         contentType: "application/json",
@@ -60,6 +63,7 @@ window.addEventListener("load", (event) => {
                 });
             });
         }
+
    
     })
     localStorage.getItem(userRole);
@@ -77,3 +81,4 @@ window.addEventListener("load", (event) => {
         win.focus();
     }
 })
+
