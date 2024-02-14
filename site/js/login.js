@@ -8,6 +8,7 @@ function CLOSE_MODAL_LOGIN() {
     modal.classList.remove(`modalLoginActive`);
 }
 
+// teste
 window.addEventListener("load", (event) => {
 
     const usuario = document.querySelector(`#insertUserLogin`)
