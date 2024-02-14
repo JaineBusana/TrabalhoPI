@@ -170,5 +170,3 @@ function erroInput(input, message){
     formItem.className = "formContent error"
 
 }
-
-
