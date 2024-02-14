@@ -75,7 +75,7 @@ form {
     visibility: hidden;
 }
 
-.suggestionButton {
+form button {
     background-color: #6A994E !important;
     color: #FFF;
     width: 100%;
