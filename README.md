@@ -1,7 +1,11 @@
 # COLETABLU
 
-Nosso projeto inovador visa promover a sustentabilidade e  incentiva a reciclagem ao permitir que usuários se cadastrem como coletores registrando pontos de coleta em estabelecimentos como condomínios ou mercados, para receber embalagens usadas. 
-A população pode localizar esses pontos para descartar seus resíduos corretamente, acumulando pontos que podem ser trocados por vantagens, como descontos em produtos de empresas parceiras. Essa iniciativa não apenas beneficia os usuários, mas também aumenta a visibilidade e o fluxo de estabelecimentos, além de promover uma imagem sustentável para as empresas parceiras.
+Nosso projeto inovador visa promover a sustentabilidade e incentivar a reciclagem, ao permitir  
+que estabelecimentos como condomínios ou mercados recebam embalagens usadas da população,   
+que pode localizar esses pontos e descartar seus resíduos corretamente, acumulando pontos que   
+podem ser trocados por vantagens com empresas parceiras. Essa iniciativa não apenas    
+beneficia os usuários, mas também aumenta a visibilidade e o fluxo de estabelecimentos,  
+além de promover uma imagem sustentável para as empresas parceiras.  
 
 ## 🤝 Colaboradores
 <table>
