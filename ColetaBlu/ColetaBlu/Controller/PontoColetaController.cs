@@ -1,8 +1,9 @@
 using ColetaBlu.Contracts_Repository;
-using ColetaBlu.DTO;
 using ColetaBlu.Entity;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace pontoColeta.Controller
 {
@@ -10,7 +11,7 @@ namespace pontoColeta.Controller
     [Route("pontoColeta")]
     public class PontoColetaController : ControllerBase
     {
-        private readonly IPontoColetaRepository _pontoColetaRepository;//
+        private readonly IPontoColetaRepository _pontoColetaRepository;
 
         public PontoColetaController(IPontoColetaRepository pontoColetaRepository)
         {
@@ -18,17 +19,18 @@ namespace pontoColeta.Controller
         }
 
         [HttpGet]
-        public IActionResult Get(string neighborhood, string residue)
+        public async Task<IActionResult> Get(string neighborhood, string residue)
         {
-            var pontosColeta = _pontoColetaRepository.Read()
-                .Where(p => p.Neighborhood == neighborhood && p.Residue == residue)
+            var pontosColeta = await _pontoColetaRepository.Read(); 
+            var pontosFiltrados = pontosColeta
+                .Where(p => p.Neighborhood_Id == neighborhood && p.Residue == residue)
                 .ToList();
 
-            if (pontosColeta.Count == 0)
+            if (pontosFiltrados.Count == 0)
             {
-                return NotFound(); 
+                return NotFound();
             }
-            return Ok(pontosColeta);
+            return Ok(pontosFiltrados);
         }
     }
 }
