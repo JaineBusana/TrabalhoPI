@@ -2763,9 +2763,6 @@
       "packagesPath": "C:\\Users\\aline\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\aline\\Documents\\PI\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\aline\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
@@ -2862,6 +2859,12 @@
     }
   },
   "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\tigoh\\OneDrive\\Área de Trabalho\\Nova pasta\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    },
     {
       "code": "NU1701",
       "level": "Warning",

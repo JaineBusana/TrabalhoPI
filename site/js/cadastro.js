@@ -1,12 +1,11 @@
 const btnSejaColetor = document.querySelector('.btnSejaColetor')
-const campCpf = document.querySelector('.campCpf')
+const campSocialNumber = document.querySelector('.campSocialNumber')
 const formCadastreColetor = document.querySelector('.formCadastreColetor')
 // Validadores
 const form = document.getElementById("formCadastre")
 const username = document.getElementById("username")
 const email = document.getElementById("email")
-const usercpf = document.getElementById("usercpf")
-const cnpj = document.getElementById("cnpj")
+const userSocialNumber = document.getElementById("userSocialNumber")
 const address = document.getElementById("address")
 const phone = document.getElementById("phone")
 const password = document.getElementById("password")
@@ -15,7 +14,7 @@ const passwordConfirmation = document.getElementById("confirmationPassword")
 
 
 btnSejaColetor.addEventListener('click', function (event) {
-    campCpf.classList.toggle('active');
+    campSocialNumber.classList.toggle('active');
 });
 btnSejaColetor.addEventListener('click', function (event) {
     formCadastreColetor.classList.toggle('active');
@@ -31,11 +30,8 @@ email.addEventListener('blur', () => {
 username.addEventListener('blur', () => {
     checkInputUsername();
 })
-usercpf.addEventListener('blur', () => {
-    checkInputCpf();
-})
-cnpj.addEventListener('blur', () => {
-    checkInputCnpj();
+userSocialNumber.addEventListener('blur', () => {
+    checkInputSocialNumber();
 })
 address.addEventListener('blur', () => {
     checkInputAddress();
@@ -58,8 +54,7 @@ form.addEventListener("submit", (event) => {
 function checkForm() {
     checkInputUsername();
     checkInputEmail();
-    checkInputCpf();
-    checkInputCnpj();
+    checkInputSocialNumber();
     checkInputPhone();
     checkInputAddress();
     checkInputPassword();
@@ -95,25 +90,14 @@ function checkInputEmail() {
     }
 
 }
-function checkInputCpf() {
-    const usercpfValue = usercpf.value;
-    if (usercpfValue === "") {
-        erroInput(usercpf, "Preencha o Cpf.")
-    } else if (usercpfValue.length < 11) {
-        erroInput(usercpf, "Cpf incorreto.")
+function checkInputSocialNumber() {
+    const userSocialNumberValue = userSocialNumber.value;
+    if (userSocialNumberValue === "") {
+        erroInput(userSocialNumber, "Preencha o Número Social.")
+    } else if (userSocialNumberValue.length < 11) {
+        erroInput(userSocialNumber, "Número Social incorreto.")
     } else {
-        const formItem = usercpf.parentElement;
-        formItem.className = "formContent"
-    }
-}
-function checkInputCnpj() {
-    const cnpjValue = cnpj.value;
-    if (cnpjValue === "") {
-        erroInput(cnpj, "Preencha o Cnpj.")
-    } else if (cnpjValue.length < 11) {
-        erroInput(cnpjValue, "Cnpj incorreto.")
-    } else {
-        const formItem = cnpj.parentElement;
+        const formItem = userSocialNumber.parentElement;
         formItem.className = "formContent"
     }
 }
@@ -174,18 +158,37 @@ function erroInput(input, message) {
 $(() => {
     $(".btnCadastro").click((e) => {
         e.preventDefault();
-
+        
         const data = {
-            username: $("#username").val(),
+            name: $("#username").val(),
             email: $("#email").val(),
-            usercpf: $("#usercpf").val(),
-            cnpj: $("#cnpj").val(),
+            SocialNumber: $("#userSocialNumber").val(),
             address: $("#address").val(),
-            phone: $("#phone").val(),
+            Telephone: $("#phone").val(),
             password: $("#password").val(),
-            confirmationPassword: $("#confirmationPassword").val()
         };
-        console.log(data)
+
+        if(data.SocialNumber.length == 11) {
+            data.type = "cidadao"
+        }
+        if(data.SocialNumber.length == 14) {
+            data.type = "coletor"
+            if(!data.address && !data.Telephone){
+                console.log(data)
+            }
+        }
+
+
+        $.ajax({
+            type: "POST",
+            url: "https://localhost:7249/user",
+            data: JSON.stringify(data),
+            sucess: (result) => {
+                console.log(result);
+            },
+            contentType: "application/json",
+            dataType: "json",
+        });
     });
 });
 

@@ -13,9 +13,6 @@
         "packagesPath": "C:\\Users\\aline\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\aline\\Documents\\PI\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\aline\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
