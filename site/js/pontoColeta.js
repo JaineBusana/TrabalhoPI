@@ -107,7 +107,6 @@ $.ajax({
     type: "GET", 
     url: url, 
     success: (result) => { 
-        
         //Verificar o que retorna no pontoColeta
         console.log(result);
         document.getElementById("nameElement").textContent = result.name;
