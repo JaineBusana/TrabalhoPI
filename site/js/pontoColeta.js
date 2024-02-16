@@ -21,7 +21,8 @@ const neighborhood = {
 };
 
 const btnLocalPonto = document.getElementById("btnLocalPonto");
-btnLocalPonto.addEventListener("click", () => {
+function Teste() {
+    console.log("Botão Trigger");
     const selectNeighborhoodValue = document.getElementById("selectNeighborhood");
     const selectResidueValue = document.getElementById("selectResidue");
 
@@ -50,7 +51,6 @@ btnLocalPonto.addEventListener("click", () => {
             type: "GET", 
             url: url,
             success: (result) => { 
-                    //MONTAR FUNÇÃO QUE GERA CARDS  
                     console.log(result, "-----------");
                     const filtrados = result.filter(item => {
                         console.log(item);
@@ -72,8 +72,21 @@ btnLocalPonto.addEventListener("click", () => {
                         }
                     );
                     console.log(filtrados, "-----------");
-            },
-            error: (xhr, status, error) => { 
+                    const allCardsElement = document.getElementById("allCards");
+                    filtrados.map(item => {
+                        const itemHtml =
+                         `<div class="card ">
+                            <div id="openModalPontoColeta">
+                                <p id="nameCard" class="card"> Nome</p>
+                            </div>
+                            <p class="titleCard">Bairro: ${item.bairro}</span></p>
+                            <p class="neighborhood"> </p>
+                            <p class="titleCard"> Resíduo: ${item.name}</p>
+                            <p class="residue"> </p>
+                        </div>`
+                        allCardsElement.insertAdjacentHTML('beforeend', itemHtml);
+                    })
+            },error: (xhr, status, error) => { 
                 console.error('Erro ao fazer a solicitação:', error);
                 console.log(url, "Erro da requisição");
             },
@@ -89,7 +102,9 @@ btnLocalPonto.addEventListener("click", () => {
         addressElement.textContent = "Endereço: ";
         obsCardElement.textContent = "Observação: ";
     }
-});
+};
+
+btnLocalPonto.addEventListener("click", ()=>Teste());
 
 document.getElementById("selectNeighborhood").addEventListener("change", checkFiltersSelection);
 document.getElementById("selectResidue").addEventListener("change", checkFiltersSelection);
