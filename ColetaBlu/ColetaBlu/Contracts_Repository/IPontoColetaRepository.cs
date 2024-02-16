@@ -5,10 +5,12 @@ namespace ColetaBlu.Contracts_Repository
 {
     public interface IPontoColetaRepository
     {
-        public Task<IEnumerable<CollectionPointEntity>> Read()
+        Task<CollectionPointEntity> Get()
         {
             throw new NotImplementedException();
         }
+
+        Task<IEnumerable<CollectionPointEntity>> Read();
     }
 
 }

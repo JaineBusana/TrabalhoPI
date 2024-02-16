@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JPo3xlGe9XA/VIZ6P8KnJpj5toWMLKZ62PC+xh7EsOiM9OfX1orFdzOnM4IRDHv+kMZvWzN6LgJRp0bxMixVnQ==",
+  "dgSpecHash": "ESH4EcS70FSCqWJ4Kh1K2U075mOgKFHjEXqgcWga49mA+EZrSgtH8rq8qLS6ZCfkSs5ap/QUKPimA83inJPOWA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aline\\Documents\\PI\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\ColetaBlu.csproj",
+  "projectFilePath": "C:\\Users\\aline\\Documents\\PI\\TrabalhoPI\\coletablu\\coletaBlu\\ColetaBlu.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aline\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\aline\\.nuget\\packages\\dapper\\2.1.28\\dapper.2.1.28.nupkg.sha512",

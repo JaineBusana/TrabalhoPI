@@ -1,36 +1,30 @@
 using ColetaBlu.Contracts_Repository;
 using ColetaBlu.Entity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace pontoColeta.Controller
+
+namespace ColetaBlu.Controller
 {
     [ApiController]
-    [Route("pontoColeta")]
+    [Route("/pontoColeta")]
     public class PontoColetaController : ControllerBase
     {
-        private readonly IPontoColetaRepository _pontoColetaRepository;
+        private readonly IPontoColetaRepository _PontoColetaRepository;
 
         public PontoColetaController(IPontoColetaRepository pontoColetaRepository)
         {
-            _pontoColetaRepository = pontoColetaRepository;
+            _PontoColetaRepository = pontoColetaRepository;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> Get(string neighborhood, string residue)
+        [HttpGet]   
+        public async Task<IActionResult> Get()
         {
-            var pontosColeta = await _pontoColetaRepository.Read(); 
-            var pontosFiltrados = pontosColeta
-                .Where(p => p.Neighborhood_Id == neighborhood && p.Residue == residue)
-                .ToList();
-
-            if (pontosFiltrados.Count == 0)
-            {
-                return NotFound();
-            }
-            return Ok(pontosFiltrados);
+            return Ok(await _PontoColetaRepository.Read());
         }
     }
 }

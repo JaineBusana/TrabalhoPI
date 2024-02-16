@@ -2,6 +2,9 @@ const modalContainerPontoColeta = document.querySelector('.modalContainerPontoCo
 const menu = document.querySelector('#openModalPontoColeta');
 const btnCloseModalPontoColeta = document.getElementById('btnCloseModalPontoColeta');
 
+let nome_bairro;
+let residuo;
+/*
 menu.addEventListener('click', () => {
   modalContainerPontoColeta.classList.toggle('ativo');
 });
@@ -9,7 +12,7 @@ menu.addEventListener('click', () => {
 btnCloseModalPontoColeta.addEventListener('click', () => {
   modalContainerPontoColeta.classList.remove('ativo');
 });
-
+*/
 const neighborhood = {
     0: null,
     1: { nome: "Badenfurt", endereco: "UFSC", observacao: "Fundos" },
@@ -25,6 +28,7 @@ btnLocalPonto.addEventListener("click", () => {
     const selectedNeighborhood = selectNeighborhoodValue.value;
     const selectedResidue = selectResidueValue.value;
 
+
     const nameCardElement = document.getElementById("nameCard");
     const addressElement = document.querySelector(".address");
     const obsCardElement = document.querySelector(".obsCard");
@@ -32,21 +36,50 @@ btnLocalPonto.addEventListener("click", () => {
     const errorMessageElement = document.getElementById("error-message");
 
     if (selectedNeighborhood !== "0" || selectedResidue !== "0") {
-        errorMessageElement.textContent = "";
-        errorMessageElement.style.display = "none";
-
+        let url = "https://localhost:7249/pontoColeta";
+    
         if (selectedNeighborhood !== "0") {
-            const neighborhoodSelected = neighborhood[selectedNeighborhood];
-            if (neighborhoodSelected) {
-                nameCardElement.textContent = neighborhoodSelected.nome;
-                addressElement.textContent = "Endereço: " + neighborhoodSelected.endereco;
-                obsCardElement.textContent = "Observação: " + neighborhoodSelected.observacao;
-            }
-        } else {
-            nameCardElement.textContent = "";
-            addressElement.textContent = "Endereço: ";
-            obsCardElement.textContent = "Observação: ";
+            url += `?neighborhood=${selectedNeighborhood}`;
         }
+
+        if (selectedResidue !== "0") {
+            url += (selectedNeighborhood !== "0" ? '&' : '?') + `residue=${selectedResidue}`;
+        }
+        
+        $.ajax({
+            type: "GET", 
+            url: url,
+            success: (result) => { 
+                    //MONTAR FUNÇÃO QUE GERA CARDS  
+                    console.log(result, "-----------");
+                    const filtrados = result.filter(item => {
+                        console.log(item);
+                        if (selectedNeighborhood != "0") {
+                            console.log("selectedNeighborhood");
+                            if (item.bairro != selectedNeighborhood) {
+                                return false;
+                            }
+                        }
+                    
+                        if (selectedResidue != "0") {
+                            console.log("selectedResidue");
+                            console.log(selectedResidue);
+                            if (item.name != selectedResidue) {
+                                return false;
+                            }
+                        }
+                        return true;
+                        }
+                    );
+                    console.log(filtrados, "-----------");
+            },
+            error: (xhr, status, error) => { 
+                console.error('Erro ao fazer a solicitação:', error);
+                console.log(url, "Erro da requisição");
+            },
+            contentType: "application/json", 
+            dataType: "json" 
+        })
     } else {
         errorMessageElement.textContent = "Favor selecionar algum item em um dos filtros";
         errorMessageElement.style.display = "block";
@@ -85,38 +118,101 @@ document.addEventListener("DOMContentLoaded", function () {
         cardContainer.appendChild(card);
     }
 });
+const BotaoTeste = document.getElementById("btnteste");
 
-function createCardElement(cardNumber) {
-    const card = document.createElement("div");
-    card.className = "card";
-    card.textContent = "Card " + cardNumber;
-    return card;
-}
+function Teste() {
+    console.log("Botão Trigger");
+    const selectNeighborhoodValue = document.getElementById("selectNeighborhood");
+    const selectResidueValue = document.getElementById("selectResidue");
 
-let url = "https://localhost:7249/pontoColeta";//Pode Alterar
+    const selectedNeighborhood = selectNeighborhoodValue.value;
+    const selectedResidue = selectResidueValue.value;
 
-if (selectedNeighborhood !== "0") {
-    url += `?neighborhood=${selectedNeighborhood}`;
-}
 
-if (selectedResidue !== "0") {
-    url += (selectedNeighborhood !== "0" ? '&' : '?') + `residue=${selectedResidue}`;
-}
+    const nameCardElement = document.getElementById("nameCard");
+    const addressElement = document.querySelector(".address");
+    const obsCardElement = document.querySelector(".obsCard");
 
-$.ajax({
-    type: "GET", 
-    url: url, 
-    success: (result) => { 
-        //Verificar o que retorna no pontoColeta
-        console.log(result);
-        document.getElementById("nameElement").textContent = result.name;
-        document.getElementById("neighborhoodElement").textContent = result.neighborhood;
-        document.getElementById("residueElement").textContent = result.residue;
-    },
-    error: (xhr, status, error) => { 
-        console.error('Erro ao fazer a solicitação:', error);
-    },
-    contentType: "application/json", 
-    dataType: "json" 
-});
+    const errorMessageElement = document.getElementById("error-message");
+
+    if (selectedNeighborhood !== "0" || selectedResidue !== "0") {
+        let url = "https://localhost:7249/pontoColeta";
+    
+        if (selectedNeighborhood !== "0") {
+            url += `?neighborhood=${selectedNeighborhood}`;
+        }
+
+        if (selectedResidue !== "0") {
+            url += (selectedNeighborhood !== "0" ? '&' : '?') + `residue=${selectedResidue}`;
+        }
+        
+        $.ajax({
+            type: "GET", 
+            url: url,
+            success: (result) => { 
+                    //MONTAR FUNÇÃO QUE GERA CARDS  
+                    console.log(result, "-----------");
+                    const filtrados = result.filter(item => {
+                        console.log(item);
+                        if (selectedNeighborhood != "0") {
+                            console.log("selectedNeighborhood");
+                            if (item.bairro != selectedNeighborhood) {
+                                return false;
+                            }
+                        }
+                    
+                        if (selectedResidue != "0") {
+                            console.log("selectedResidue");
+                            console.log(selectedResidue);
+                            if (item.name != selectedResidue) {
+                                return false;
+                            }
+                        }
+                        return true;
+                        }
+                    );
+                    console.log(filtrados, "-----------");
+                   /*const allCardsElement = document.getElementById("allCards");
+                    filtrados.map(item => {
+                        console.log("Renderizando");
+                        const itemHtml = `<h1>${item.bairro}</h1>`
+                        allCardsElement.append(itemHtml);
+                    })
+                    */
+                    const allCardsElement = document.getElementById("allCards");
+                    filtrados.map(item => {
+                        console.log("Renderizando");
+                        const itemHtml =
+                         `<div class="card ">
+                            <div id="openModalPontoColeta">
+                                <p id="nameCard" class="card"> Nome</p>
+                            </div>
+                            <p class="titleCard">Bairro: ${item.bairro}</span></p>
+                            <p class="neighborhood"> </p>
+                            <p class="titleCard"> Resíduo: ${item.name}</p>
+                            <p class="residue"> </p>
+                        </div>`
+                        allCardsElement.insertAdjacentHTML('beforeend', itemHtml);
+                        console.log("Renderizado");
+                    })
+            },
+            error: (xhr, status, error) => { 
+                console.error('Erro ao fazer a solicitação:', error);
+                console.log(url, "Erro da requisição");
+            },
+            contentType: "application/json", 
+            dataType: "json" 
+        })
+    } else {
+        errorMessageElement.textContent = "Favor selecionar algum item em um dos filtros";
+        errorMessageElement.style.display = "block";
+        errorMessageElement.style.color = "red"; // Adicionando a cor vermelha ao aviso
+
+        nameCardElement.textContent = "";
+        addressElement.textContent = "Endereço: ";
+        obsCardElement.textContent = "Observação: ";
+    }
+};
+
+BotaoTeste.addEventListener("click", ()=>Teste());
 
