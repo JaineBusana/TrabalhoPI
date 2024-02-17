@@ -12,15 +12,6 @@ window.addEventListener("load", (event) => {
     NavHome.classList.toggle('ativo');
   })
 
-// ANTIGO QUE FAZIA ABRIR E FECHAR MAS NN ESTA MAIS FUNCIONANDO
-//   $(".btnProfilePicture").click(() => {
-//     $('.modalProfilePicture').toggleClass('ativo');
-// });
-
-  $('body').on('click', ".btnProfilePicture", function (event) {
-    $('.modalProfilePicture').css('display', 'flex');
-
-  });
 
 
 })
