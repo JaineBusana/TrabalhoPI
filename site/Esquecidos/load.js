@@ -21,5 +21,3 @@ $('body').on('click', '.closeModal', (event) => {
 
 
 
-
-
