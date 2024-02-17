@@ -11,7 +11,7 @@ const data = {
 
 $.ajax({
     type: "GET",
-    url: "https://localhost:7249/cadastroponto",
+    url: "https://localhost:7249/cadastroponto/20",
     data: JSON.stringify(data),
     //     headers: {
     //         Authorization: `Bearer ${localStorage.getItem(`token`)}`,
@@ -27,11 +27,11 @@ $.ajax({
         // $.each(data, function (index, item) {
             const cardHTML = `
             
-                 <h2>${data[1].name}</h2>
+                 <h2>${data.name}</h2>
                 <h3>Endereço</h3>
-                 <p>${data[1].name}</p>
+                 <p>${data.name}</p>
                  <h3>Observação</h3>
-                 <p>${data[1].name}</p>
+                 <p>${data.name}</p>
             
                 `;
             // $('tbody').append(cardHTML);
