@@ -19,7 +19,15 @@
     display: none;
 }
 
-#titlePontoColeta,
+#titlePontoColeta{
+    margin-bottom: 10px;
+    margin-left: 30px;
+    color: #6A994E;
+    font-family: mukta_bold;
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+}
 #localNext {
 
     /* position: relative; */
@@ -51,14 +59,22 @@
     /* position: absolute; */
 }
 
-#instructionPontoColeta,
+#instructionPontoColeta{
+    width: 306px;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 33px;
+    font-family: mukta_medium;
+}
+
 #doubtsPontoColeta {
 
     width: 306px;
     /* position: relative; */
     font-size: 14px;
     text-align: left;
-    margin-top: 25px;
+    margin-top: 20px;
     margin-left: 33px;
     font-family: mukta_medium;
 }
@@ -143,7 +159,8 @@
 }
 
 .card {
-    padding-bottom: 40px;
+    padding-bottom: 2px;
+    margin: 20px;
 
 }
 
@@ -248,8 +265,7 @@
 
 #allCards {
     display: flex;
-    COLUMN-GAP: 55px;
-
+    column-gap: 55px;
 }
 
 
@@ -269,8 +285,6 @@
 
 
 #nameCard {
-
-
     font-family: mukta_bold;
     font-size: 26px;
     margin-left: 0 !important;

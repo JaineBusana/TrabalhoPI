@@ -18,7 +18,7 @@ namespace ColetaBlu.Repository
 
         public async Task<IEnumerable<CollectionPointEntity>> Read()
         {
-            string sql = "SELECT n.Name as 'Bairro', r.Name, cp.Street, cp.Number FROM collectionpoint cp JOIN neighborhood n on n.Id = cp.Neighborhood_Id JOIN collectresidue cr on cr.collectionpoint_Id = cp.Id JOIN residue r on r.Id = cr.residue_Id";
+            string sql = "SELECT cp.Name as 'Local', n.Name as 'Bairro', r.Name, cp.Street, cp.Number FROM collectionpoint cp JOIN neighborhood n on n.Id = cp.Neighborhood_Id JOIN collectresidue cr on cr.collectionpoint_Id = cp.Id JOIN residue r on r.Id = cr.residue_Id";
             Console.WriteLine("1");
             var retorno = await GetConnection().QueryAsync<CollectionPointEntity>(sql);
             Console.WriteLine(retorno);
