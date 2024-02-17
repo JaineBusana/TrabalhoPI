@@ -1,4 +1,3 @@
-
 function SHOW_MODAL_LOGIN() {
     let modal = document.querySelector('#modalLogin')
     modal.classList.add(`modalLoginActive`);
@@ -10,18 +9,16 @@ function CLOSE_MODAL_LOGIN() {
 }
 
 // teste
-
 window.addEventListener("load", (event) => {
 
-    const usuario = document.querySelector(`#insertUserLogin`)
-    const senha = document.querySelector(`#insertPasswordLogin`)
+    
+    $('body').on('click', '#login', (event) => {
 
-    const button = document.querySelector(`#login`)
+        const usuario = document.querySelector(`#insertUserLogin`)
+        const senha = document.querySelector(`#insertPasswordLogin`)
+        
 
-
-    button.addEventListener(`click`, (e) => {
-        e.preventDefault()
-
+        event.preventDefault();
         const errorMessage = document.querySelector('.msg')
 
         const value = {
@@ -44,16 +41,19 @@ window.addEventListener("load", (event) => {
             $(() => {
 
                 if (!!localStorage.getItem(`token`)) {
-                    location.href = "indexLogado.html";
+                    $.get('indexLogado.html', (result) => {
+                        $('header').html(result);
+                    });
+
                 }
                 $("#login").click((e) => {
                     e.preventDefault();
 
+
                     const data = {
                         email: $("#insertUserLogin").val(),
                         password: $("#insertPasswordLogin").val()
-                    };
-
+                    }; 
 
 
                     $.ajax({
@@ -65,7 +65,12 @@ window.addEventListener("load", (event) => {
                             localStorage.setItem(`token`, result.token);
                             localStorage.setItem(`userName`, result.user.name);
                             localStorage.setItem(`userRole`, result.user.role);
-                            location.href = "indexLogado.html";
+                            $.get('indexLogado.html', (result) => {
+                                $('header').html(result);
+                            });
+                            
+
+                           
                         },
                         contentType: "application/json",
                         dataType: "json",
@@ -73,10 +78,5 @@ window.addEventListener("load", (event) => {
                 });
             });
         }
-
     })
-
 })
-
-
-

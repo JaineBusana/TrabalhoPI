@@ -9,6 +9,17 @@
 
 
 
+//$.ajax({
+  //  type: "GET",
+    //url: "https://localhost:7249/cadastroponto/20",
+    //data: JSON.stringify(data),
+    //     headers: {
+    //         Authorization: `Bearer ${localStorage.getItem(`token`)}`,
+    //       },
+    //success: function (data) {
+        // Limpa o conteúdo atual da tbody
+        // $('tbody').empty();
+
 // $.ajax({
 //     type: "GET",
 //     url: "https://localhost:7249/cadastroponto",
@@ -18,6 +29,7 @@
 //     //       },
 //     success: function (data) {
 
+
 //         // Limpa o conteúdo atual da carrossel
 //         $('.infoResiduoColeta').empty();
 
@@ -25,6 +37,7 @@
 //         // $.each(data, function (index, item) {
 //             const cardHTML = `
             
+
 //                  <h2>${data[1].name}</h2>
 //                 <h3>Endereço</h3>
 //                  <p>${data[1].name}</p>
