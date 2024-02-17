@@ -67,21 +67,23 @@ function Filtro() {
                                 <p id="nameCard" class="card"> ${item.local}</p>
                             </div>
                             <p class="titleCard">Bairro: ${item.bairro}</span></p>
-                            <p class="neighborhood"> </p>
-                            <p class="titleCard"> Resíduo: ${item.name}</p>
-                            <p class="residue"> </p>
+                            <p class="Street">Rua: ${item.street}</p>
+                            <p class="Number">Numero: ${item.number}</p>
+                            <p class="residue">Resíduo: ${item.name}</p>
                         </div>`
                         allCardsElement.insertAdjacentHTML('beforeend', itemHtml);
 
                         const addressPontoColetaElement = document.getElementById("addressPontoColeta");
                         const addressNumberElement = document.getElementById("AddressNumber");
                         const phoneNumberElement = document.getElementById("phoneNumber");
+                        const point = document.getElementById("Point");
 
                         addressPontoColetaElement.innerHTML = `<span>Rua:</span> ${item.street}`;
                         addressNumberElement.innerHTML = `<span>Número:</span> ${item.number}`;
+                        point.innerHTML = `<h1 id="Point"></h1> ${item.local}`;
                         //phoneNumberElement.innerHTML = `<span>Telefone:</span> ${item.telefone}`;
                     })
-                    
+                    /* MODAL
                     document.getElementById('allCards').addEventListener('click', function (event) {
                         if (event.target.id === 'nameCard') {
                             const modal = document.querySelector('.modalContainerPontoColeta');
@@ -93,7 +95,7 @@ function Filtro() {
                         const modal = document.querySelector('.modalContainerPontoColeta');
                         modal.style.display = 'none';
                     });
-                    
+                    */
             },error: (xhr, status, error) => { 
                 console.error('Erro ao fazer a solicitação:', error);
                 console.log(url, "Erro da requisição");
