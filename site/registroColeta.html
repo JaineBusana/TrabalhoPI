@@ -6,41 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/registroColeta.css">
     <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/styleIndex.css">
+    <link rel="stylesheet" href="./css/styleIndexLogado.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
-
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    
     <title>Registro de Coletas</title>
 </head>
 
 <body>
     <header>
         <nav class="navigation">
-
-            <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
-            <div class="navHome">
-                <ul class="menuNav">
-                    <li class="navItem "><a href="index.html">Home</a></li>
-                    <li class="navItem"><a href="pontoColeta.html">Pontos de coleta</a></li>
-                    <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
-                    <li class="navItem" onclick="SHOW_MODAL_LOGIN()"><a href="#">Login</a></li>
-
-
-                </ul>
-            </div>
-            <div class="navigationBar">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+    
+          <a href="index.html" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
+          <div class="navHome">
+    
+            <ul class="menuNav">
+              <div id="profile">
+                <li><img src="./assets/img/perifl/Ellipse 22.png" id="profilePicture"></li>
+                <li>
+                  <p id="profileName">Jean Cleiton Souza</p>
+                </li>
+    
+                <div id="profileTextPoint">
+                  <li>
+                    <p>EcoScore:</p>
+                  </li>
+                  <li id="profilePoint"><img src="./assets/img/cadastro/planeta-terra.png" alt=""
+                      class="profilePonitImg">300 pontos</li>
+                </div>
+              </div>
+              <li class="navItem profileHome"><a href="index.html">Home</a></li>
+              <li class="navItem"><a href="pontoColeta.html">Pontos de Coleta</a></li>
+              <li class="navItem"><a href="indexTrocaPonto.html">Troca de Pontos</a></li>
+              <li class="navItem profileEditbtn">Editar Perfil</li>
+              <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
+              <li class="navItem profileExitbtn"><a href="index.html">Sair</a></li>
+              <li class="btnProfilePicture"><img src="./assets/img/perifl/Ellipse 22.png" class="profilePictureBtn"></li>
+              <div class="modalProfilePicture">
+                <div id="boxProfilePicture">
+                  <p id="profileName">Jean Cleiton Souza</p>
+                  <li id="profilePoint"><img src="./assets/img/cadastro/planeta-terra.png" alt=""
+                      class="profilePonitImg">300 pontos</li>
+                  <div id="itemsBoxProfile">
+                    <li class="navItem profileEdit"><a href="">Editar Perfil</a></li>
+                    <li class="navItem profileExit"><a href="index.html">Sair</a></li>
+                  </div>
+                </div>
+              </div>
+            </ul>
+    
+          </div>
+          <div class="navigationBar">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </nav>
-
-
-    </header>
-
+      </header>
     <main class="mainHistoric">
 
         <div class="modalContainerConfirmn ">
@@ -94,8 +118,34 @@
         </div>
 
     </main>
+    <footer>
+        <div class="footerImgMobile">
+            <img id="imgPlant" src="./assets/img/rodape-img-mobile.png" alt="">
+        </div>
+        <div class="footerImgPlants">
+            <img src="./assets/img/img-rodape.png" alt="">
+        </div>
+        <div class="footerColumn">
+            <div class="footerLogo centralizeParagraph">
+                <img src="./assets/img/logo-com-slogan-branco.png" alt="">
+            </div>
+            <div class="footerComplaint">
+                <h1>Denúncias - Ligue 156</h1>
+                <p>A Fiscalização Ambiental no município de Blumenau é realizada através da Gerência de Fiscalização da
+                    Semmas.
+                    Para mais informações acesse o site:</p>
+                <a href="https://www.blumenau.sc.gov.br/governo/fundacao-do-meio-ambiente/pagina/fiscalizacao-faema">Prefeitura
+                    de Blumenau</a>
+            </div>
+            </form>
+        </div>
+
+    </footer>
 
 </body>
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="./js/registroColeta.js"></script>
 <script src="./js/nav.js"></script>
 
