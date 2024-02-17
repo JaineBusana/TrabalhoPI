@@ -1,4 +1,4 @@
-const modalContainerPontoColeta = document.querySelector('.cardMeuPonto')
+const modalContainerPontoColeta = document.querySelector('.modalContainerPontoColeta')
 const menu = document.querySelector('#openModalPontoColeta');
 const btnCloseModalPontoColeta = document.getElementById('btnCloseModalPontoColeta')
 

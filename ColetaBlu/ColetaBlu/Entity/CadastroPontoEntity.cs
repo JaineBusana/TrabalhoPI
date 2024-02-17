@@ -1,6 +1,6 @@
-﻿namespace ColetaBlu.DTO
+﻿namespace ColetaBlu.Entity
 {
-    public class PointRegistrationDTO
+    public class CadastroPontoEntity
     {
         public string? Name { get; set; }
         public string? Street { get; set; }
