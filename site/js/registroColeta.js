@@ -134,4 +134,3 @@ window.addEventListener("load", (event) => {
         formItem.className = "formContentHistoric error"
     }
 });
-

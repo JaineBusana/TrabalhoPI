@@ -15,7 +15,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddTransient<IUserRepository, UserRepository>();
-builder.Services.AddTransient<ICadastroPontoRepository, CadastroPontoRepository>();
+builder.Services.AddTransient<IPointRegistrationRepository, PointRegistrationRepository>();
 
 builder.Services.AddCors();
 

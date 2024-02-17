@@ -85,13 +85,17 @@ aside p {
 .formCadastreUser.active {
     display: none;
 }
+.campCpf.active{
+    display: none;
 
+}
 .formCadastre {
     display: flex;
     justify-content: center;
     margin: 10px;
-    align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
 }
 .formCadastre label{
     margin: 5px;

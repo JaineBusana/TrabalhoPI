@@ -1,4 +1,16 @@
 
+function SHOW_MODAL_LOGIN() {
+    let modal = document.querySelector('#modalLogin')
+    modal.classList.add(`modalLoginActive`);
+}
+
+function CLOSE_MODAL_LOGIN() {
+    let modal = document.querySelector('#modalLogin')
+    modal.classList.remove(`modalLoginActive`);
+}
+
+// teste
+
 window.addEventListener("load", (event) => {
 
     const usuario = document.querySelector(`#insertUserLogin`)
@@ -63,6 +75,7 @@ window.addEventListener("load", (event) => {
         }
 
     })
+    
 })
 
 
