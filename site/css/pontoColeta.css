@@ -12,7 +12,7 @@
 }
 
 .main {
-    margin: auto;
+   margin: auto;
 }
 
 #coletaBluImg {
@@ -124,94 +124,10 @@
     margin-left: 40px;
 }
 
-/* CARDPORVISORIO */
-
-.cardMeuPonto h1 {
-    font-family: mukta_bold;
-    font-size: 30px;
-}
-
-.cardMeuPonto h2 {
-    font-family: mukta_bold;
-    font-size: 25px;
-    margin: 20px;
-}
-
-.cardMeuPonto h3 {
-    font-family: mukta_bold;
-    font-size: 15px;
-    
-}
-
-.cardMeuPonto p {
-    font-family: mukta_medium;
-    font-size: 15px;
-    color: #000;
-}
-.cardMeuPonto {
-    background-image: url(../assets/img/estabelecimento.jpg);
-    background-repeat: no-repeat;
-    background-size: 250px 350px;
-    padding-left: 250px;
-    border-left: 20px solid;
-    padding-top: 0px;
-    position: absolute;
-    margin-left: 250px;
-    /* visibility: hidden; */
-    margin-top: -200px;
-    border-top: 0px;
-    width: 70%;
-    max-width: 900px;
-    height: 350px;
-    color: #6A994E;
-    columns: 2;
-    column-gap: 15px;
-    background-color: #FAF3E1;
-    display: flex;
-    border-radius: 20px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-.cardMeuPonto.ativo{
-    visibility: visible;
-}
-
-.infoLocate {
-    width: 100%;
-    margin-left: 15px;
-    margin-top: 25px;
-}
-
-.infoResidue {
-    width: 100%;
-    margin: auto;
-}
-
-.infoResiduoColeta {
-    display: flex;
-    justify-content: center;
-    padding-left: 10px;
-}
-
-.infoResidue h2 {
-    text-align: center;
-
-}
-
-.cardResidue {
-    width: 150px;
-    height: 150px;
-    margin: 10px;
-    border-radius: 20px;
-    background-color: #ECEAEA;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-
-}
 
 /* modal */
 
-/* 
+
 .modalContainerPontoColeta {
     width: 350px;
     height: 550px;
@@ -327,7 +243,7 @@
     font-size: 15px;
     gap: 4px;
     height: 50%;
-} */
+}
 
 #allCards {
     display: flex;
@@ -378,12 +294,12 @@
 }
 
 @media(min-width: 750px) {
+    
 
-
-    .mains {
-        width: 1500px;
-        margin: auto;
-    }
+   .mains{
+    width: 1500px;
+    margin: auto;
+   }
 
     .modalContainerPontoColeta.ativo {
         display: block;
@@ -469,7 +385,7 @@
         transform: translateY(-0px) rotate(-45deg);
     }
 
-    .designInputPonto {
+   .designInputPonto {
         width: 390px;
     }
 
@@ -559,16 +475,15 @@
         #titlePontoColeta {
 
             width: 755px;
-
+        
         }
 
         #instructionPontoColeta,
-        #doubtsPontoColeta {
-            font-size: 18px;
+        #doubtsPontoColeta{
+           font-size:18px;
         }
-
-        #titlePontoColeta {
-            font-size: 25px;
+        #titlePontoColeta{
+            font-size:25px;
 
         }
 

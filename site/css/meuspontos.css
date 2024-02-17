@@ -14,7 +14,9 @@
 body {
     background-color: #FAF3E1;
 }
-
+.main{
+    margin: auto;
+}
 .contanerMeusPontos h1 {
     font-family: mukta_bold;
     font-size: 20px;
