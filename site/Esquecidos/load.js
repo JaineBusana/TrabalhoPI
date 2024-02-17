@@ -32,7 +32,3 @@ window.addEventListener("load", (event) => {
 
 
 })
-
-
-
-
