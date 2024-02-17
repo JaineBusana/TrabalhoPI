@@ -61,7 +61,8 @@ window.addEventListener("load", (event) => {
                             localStorage.clear();
                             localStorage.setItem(`token`, result.token);
                             localStorage.setItem(`userName`, result.user.name);
-                            localStorage.setItem(`userRole`, result.user.role);
+                            localStorage.setItem('userEmail', result.user.email);
+                            localStorage.setItem(`userType`, result.user.type);
                             location.href = "indexLogado.html";
                         },
                         contentType: "application/json",
@@ -70,7 +71,7 @@ window.addEventListener("load", (event) => {
                 });
             });
         }
-
+            
     })
 })
 

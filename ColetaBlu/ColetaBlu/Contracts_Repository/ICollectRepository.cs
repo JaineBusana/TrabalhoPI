@@ -6,6 +6,7 @@ namespace ColetaBlu.Contracts_Repository
     public interface ICollectRepository
     {
         Task Add(CollectDTO collect);
-        Task<IEnumerable<CadastroPontoEntity>> Read();
+        Task<IEnumerable<CollectEntity>> Read();
+        Task<IEnumerable<CollectEntity>> ReadResidue();
     }
 }
