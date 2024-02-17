@@ -50,7 +50,7 @@ body {
 }
 
 .navigation ul li a {
-    color: #6A994E;
+    color: #6A994E !important;
     font-size: 20px;
     font-weight: 500;
     transition: all 0.5s;

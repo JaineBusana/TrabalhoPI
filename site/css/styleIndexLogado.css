@@ -56,9 +56,11 @@ body {
 
 .navItem {
     font-size: 20px;
+    color: #6A994E !important;
+}
+.navItem a{
     color: #6A994E;
 }
-
 .navigationBar {
     cursor: pointer;
     display: none;
