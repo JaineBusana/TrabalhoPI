@@ -1,30 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/meuspontos.css">
+
+     <link rel="stylesheet" href="./css/styleIndexLogado.css">
+    <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.theme.default.min.css">
     <title>Document</title>
+
+
 </head>
+ 
+<header>
+    <nav class="navigation">
+
+      <a href="index.html" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
+      <div class="navHome">
+
+        <ul class="menuNav">
+          <div id="profile">
+            <li><img src="./assets/img/perifl/Ellipse 22.png" id="profilePicture"></li>
+            <li>
+              <p id="profileName">Jean Cleiton Souza</p>
+            </li>
+
+            <div id="profileTextPoint">
+              <li>
+                <p>EcoScore:</p>
+              </li>
+              <li id="profilePoint"><img src="./assets/img/cadastro/planeta-terra.png" alt=""
+                  class="profilePonitImg">300 pontos</li>
+            </div>
+          </div>
+          <li class="navItem profileHome"><a href="index.html">Home</a></li>
+          <li class="navItem"><a href="pontoColeta.html">Pontos de Coleta</a></li>
+          <!-- <li class="navItem"><a href="trocadePontos.html">Troca de Pontos</a></li> -->
+          <li class="navItem profileEditbtn">Editar Perfil</li>
+          <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
+          <li class="navItem profileExitbtn"><a href="index.html">Sair</a></li>
+          <li class="btnProfilePicture"><img src="./assets/img/perifl/Ellipse 22.png" class="profilePictureBtn"></li>
+          <div class="modalProfilePicture">
+            <div id="boxProfilePicture">
+              <p id="profileName">Jean Cleiton Souza</p>
+              <li id="profilePoint"><img src="./assets/img/cadastro/planeta-terra.png" alt=""
+                  class="profilePonitImg">300 pontos</li>
+              <div id="itemsBoxProfile">
+                <li class="navItem profileEdit"><a href="">Editar Perfil</a></li>
+                <li class="navItem profileExit"><a href="index.html">Sair</a></li>
+              </div>
+            </div>
+          </div>
+        </ul>
+
+      </div>
+      <div class="navigationBar">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
 
 <body>
-    <main>
+    <main class="contanerMeusPontos">
         <section class="sectionMeusPontos">
-            <div>
+            <div class="sectionMeusPontosText">
                 <h1>Meus estabelecimentos</h1>
                 <p>Veja e edite todos os seus estabelecimentos que realizam coletas de resíduos.</p>
             </div>
-            <div>
-                <img src="./assets/img/circulo-de-residuos 1.png" alt="">
-            </div>
+
+            <img src="./assets/img/circulo-de-residuos 1.png" alt="">
+
         </section>
         <div class="addMeuPonto">
-            <button class="btnAddMeuPonto"><span class="textaddMeuPonto">Novo ponto de coleta</span ></button>
+            <button class="btnAddMeuPonto"><a href="cadastroPonto.html" ><img src="./assets/img/mais.png" alt="" ></a></button>
         </div>
-
-
+        <div class="cardMeuPonto">
+            <div class="infoLocate">
+                <!-- <h2>Nome do Estabelecimento</h2>
+                <h3>Endereço</h3>
+                <p>rua</p>
+                <h3>Observação</h3>
+                <p>.............</p> -->
+            </div> 
+            <div class="infoResidue">
+                <h2>É coletado</h2> <br>
+                <section class="owl-carousel infoResiduoColeta">
+                    <!-- <div class="item cardResidue">
+                        <h3>Patrocinador X</h3>
+                        <lu>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </lu>
+                    </div> -->
+                </section>
+            </div>
+        </div>
     </main>
 </body>
-
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/owlCarousel/dist/owl.carousel.min.js"></script>
+<script src="./js/meusPontos.js"></script>
+<script src="./js/nav.js"></script>
 </html>

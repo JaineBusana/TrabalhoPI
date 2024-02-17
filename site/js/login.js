@@ -77,6 +77,7 @@ window.addEventListener("load", (event) => {
 
    
     })
+
     localStorage.getItem(userRole);
     if (userRole == "cidadao") {
         var url = "https://www.google.com/?/links";
@@ -92,5 +93,6 @@ window.addEventListener("load", (event) => {
         win.focus();
     }
 })
+
 
 

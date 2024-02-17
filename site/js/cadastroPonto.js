@@ -145,7 +145,7 @@ $(() => {
             // phoneNumber: $("#phoneNumber").val(),
             neighborhood_Id: $("#neighborhood").val(),
             // selectResidue: $("#selectResidue").val(),
-            user_Id: $("#User").val()
+            user_id: $("#User").val()
         };
         console.log(data)
         $.ajax({
