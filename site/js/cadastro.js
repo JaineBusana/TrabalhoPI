@@ -10,11 +10,15 @@ const address = document.getElementById("address")
 const phone = document.getElementById("phone")
 const password = document.getElementById("password")
 const passwordConfirmation = document.getElementById("confirmationPassword")
-
-
+var coletor = "nao";
 
 btnSejaColetor.addEventListener('click', function (event) {
     campSocialNumber.classList.toggle('active');
+    if(coletor == "sim") {
+        coletor = "nao"
+        return
+    }
+    coletor = "sim"
 });
 btnSejaColetor.addEventListener('click', function (event) {
     formCadastreColetor.classList.toggle('active');
@@ -194,6 +198,14 @@ $(() => {
             data.Password = null
             alert("A senha deve ter mais de 8 digitos!")
         };
+        if(coletor == "sim" && data.SocialNumber.length == 11) {
+            data.type = null
+            alert("O seu número social deve ser um CNPJ para poder ser Coletor!")
+        };
+        if(coletor == "nao" && data.SocialNumber.length == 14) {
+            data.type = null
+            alert("Um número social de CNPJ não pode ser cadastrado como Cidadão, ultilize seu CPF!")
+        };
 
         $.ajax({
             type: "POST",
@@ -207,5 +219,3 @@ $(() => {
         });
     });
 });
-
-

@@ -45,20 +45,15 @@ namespace ColetaBlu.Repository
             };
         }
 
-
         public async Task Update(UserEntity user)
         {
             string sql = @"
-                     UPDATE User
-                     SET Type = @Type,
-                         Name = @Name,
-                         CPF_CNPJ = @CPF_CNPJ,
-                         Email = @Email,
-                         Telephone = @Telephone,
-                         Password = @Password,
-                         Score = @Score
-                     WHERE Id = @Id
-            ";
+             UPDATE User
+             SET Name = @Name,
+                 Email = @Email,
+                 Password = @Password
+             WHERE Id = @Id
+    ";
             await Execute(sql, user);
         }
 
