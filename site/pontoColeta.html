@@ -31,47 +31,48 @@
 <body>
     <form id="formLogin">
         <div id="modalLogin" class="">
-          <div id="backgroundLogin" class="flex">
-            <div>
-              <button class="closeModal" onclick="CLOSE_MODAL_LOGIN()">
-                <div class="menuLogin">
-                  <span class="barLogin"></span>
-                  <span class="barLogin"></span>
+            <div id="backgroundLogin" class="flex">
+                <div>
+                    <button class="closeModal" onclick="CLOSE_MODAL_LOGIN()">
+                        <div class="menuLogin">
+                            <span class="barLogin"></span>
+                            <span class="barLogin"></span>
+                        </div>
+                    </button>
+                    <div class="flex">
+                        <img id="logo" class="h-20" src="./assets/img/MicrosoftTeams-image (7).png"
+                            alt="Logo da ColetaBlu">
+                        <h1 class=" mt-10 enterLogin">Entrar</h1>
+                    </div>
+                    <div class="msg"> </div>
+                    <div class="">
+                        <h1 id="userLogin" class="mt-10">Usuário</h1>
+                    </div>
+                    <div>
+                        <input id="insertUserLogin" class="mb-2 " type="text" onfocus="this.value='';">
+                    </div>
+                    <div>
+                        <h1 id="passwordLogin" class="">Senha</h1>
+                    </div>
+                    <div class="flex">
+                        <input id="insertPasswordLogin" class="" type="password" onfocus="this.value='';">
+                    </div>
+                    <div>
+                        <a id="forgotPasswordLogin" class="" href="">Esqueci a senha!</a>
+                    </div>
+                    <div>
+                        <button id="login">Login</button>
+                    </div>
+                    <div class="flex">
+                        <h1 class="registerLogin ml-6">Não tem uma conta?</h1>
+                        <a id="linkRegisterLogin" class="registerLogin ml-1" href="cadastro.html">Cadastre-se!</a>
+                    </div>
                 </div>
-              </button>
-              <div class="flex">
-                <img id="logo" class="h-20" src="./assets/img/MicrosoftTeams-image (7).png" alt="Logo da ColetaBlu">
-                <h1 class=" mt-10 enterLogin">Entrar</h1>
-              </div>
-              <div class="msg"> </div>
-              <div class="">
-                <h1 id="userLogin" class="mt-10">Usuário</h1>
-              </div>
-              <div>
-                <input id="insertUserLogin" class="mb-2 " type="text" onfocus="this.value='';">
-              </div>
-              <div>
-                <h1 id="passwordLogin" class="">Senha</h1>
-              </div>
-              <div class="flex">
-                <input id="insertPasswordLogin" class="" type="password" onfocus="this.value='';">
-              </div>
-              <div>
-                <a id="forgotPasswordLogin" class="" href="">Esqueci a senha!</a>
-              </div>
-              <div>
-                <button id="login">Login</button>
-              </div>
-              <div class="flex">
-                <h1 class="registerLogin ml-6">Não tem uma conta?</h1>
-                <a id="linkRegisterLogin" class="registerLogin ml-1" href="cadastro.html">Cadastre-se!</a>
-              </div>
+                <img id="backgroundPhoto" src="./assets/img/Foto_Fundo_Login.jpg" alt="Imagen fundo"
+                    style="max-width:51%;height:auto;">
             </div>
-            <img id="backgroundPhoto" src="./assets/img/Foto_Fundo_Login.jpg" alt="Imagen fundo"
-              style="max-width:51%;height:auto;">
-          </div>
         </div>
-      </form>
+    </form>
     <header>
         <nav class="navigation">
 
@@ -132,10 +133,51 @@
         <h1 id="localNext"> Pontos Próximos</h1>
         <div class="grid grid-cols-1"></div>
 
+        <!-- CARD PROVISORIO -->
+
+        <div class="cardMeuPonto">
+            <div class="infoLocate">
+                <h1>Mercado Dona Rosa</h1>
+                <h2>Endereço</h2>
+                <h3>Rua</h3>
+                <p> Alameda Rio Branco,<br>
+                    <br> N&deg; 1888
+                </p>
+                <h3>Bairro</h3>
+                Jardim Blumenau
+                <h3>Telefone</h3>
+                <p>(47) 99999-9999</p>
+
+            </div>
+            <div class="infoResidue">
+                <h2>É coletado</h2> <br>
+                <section class="owl-carousel infoResiduoColeta">
+                    <div class="item cardResidue">
+                        <h3>Patrocinador X</h3>
+                        <lu>
+                            <li>longneck</li>
+                            <li>garrafa pet 500ml</li>
+                        </lu>
+                    </div>
+                    <div class="item cardResidue">
+                        <h3>Patrocinador X</h3>
+                        <lu>
+                            <li>longneck</li>
+                            <li>garrafa pet 500ml</li>
+                        </lu>
+                    </div>
+                </section>
+                <button id="btnCloseModalPontoColeta">
+                    <div class="menuCloseModalPontoColeta">
+                        <span class="barCloseModalPontoColeta"></span>
+                        <span class="barCloseModalPontoColeta"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
 
 
-
-        <div class="modalContainerPontoColeta">
+        <!-- <div class="modalContainerPontoColeta">
             <div class="topModalPontoColeta">
                 <img class="imagePontoColetaModal" src="./assets/img/estabelecimento.jpg" alt="imagem do estabelecimento ">
             </div>
@@ -157,7 +199,7 @@
                     </button>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
 
@@ -165,29 +207,29 @@
         <div class="contentCard">
 
 
-        <div id="allCards">
+            <div id="allCards">
 
-            <div class="card ">
-                <div id="openModalPontoColeta">
-                    <p id="nameCard" class="card"> Mercado Dona Rosa</p>
+                <div class="card ">
+                    <div id="openModalPontoColeta">
+                        <p id="nameCard" class="card"> Mercado Dona Rosa</p>
+                    </div>
+                    <p class="titleCard">Endereço: </p>
+                    <p class="address">Alameda Rio Branco, Blumenau</p>
+                    <p class="titleCard"> Observação: </p>
+                    <p class="obsCard"> Mercadorias com validade próxima </p>
+
                 </div>
-                <p class="titleCard">Endereço: </p>
-                <p class="address">Alameda Rio Branco, Blumenau</p>
-                <p class="titleCard"> Observação: </p>
-                <p class="obsCard"> Mercadorias com validade próxima </p>
+                <div class="card ">
+                    <p id="nameCard" class="card"> Loja Fictícia</p>
+                    <p class="titleCard">Endereço: </p>
+                    <p class="address">Rua, bairro </p>
+                    <p class="titleCard"> Observação: </p>
+                    <p class="obsCard"> fictícia </p>
+
+                </div>
+
 
             </div>
-            <div class="card ">
-                <p id="nameCard" class="card"> Loja Fictícia</p>
-                <p class="titleCard">Endereço: </p>
-                <p class="address">Rua, bairro </p>
-                <p class="titleCard"> Observação: </p>
-                <p class="obsCard"> fictícia </p>
-
-            </div>
-
-
-        </div>
 
     </main>
     <footer>
