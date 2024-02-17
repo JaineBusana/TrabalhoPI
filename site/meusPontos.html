@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/meuspontos.css">
+    <link rel="stylesheet" href="./css/styleIndex.css">
     <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.theme.default.min.css">
-    <title>Document</title>
+    <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
+
+    <title>Meus Pontos</title>
+
 
 </head>
 
@@ -21,40 +27,82 @@
 
         </section>
         <div class="addMeuPonto">
-
-            <button class="btnAddMeuPonto"><a href="cadastroPonto.html" ><img src="./assets/img/mais.png" alt="" ></a></button>
-
+            <button class="btnAddMeuPonto"><a href="cadastroPonto.html"><img src="./assets/img/mais.png"
+                        alt=""></a></button>
         </div>
-
-
         <div class="cardMeuPonto">
             <div class="infoLocate">
-                <!-- <h2>Nome do Estabelecimento</h2>
+                <h2>Mercado Mafisa</h2>
                 <h3>Endereço</h3>
-                <p>rua</p>
+                <p>Rua Mafisa N&deg; 1888</p>
                 <h3>Observação</h3>
-                <p>.............</p> -->
-            </div> 
+                <p>.............</p>
+            </div>
             <div class="infoResidue">
                 <h2>É coletado</h2> <br>
                 <section class="owl-carousel infoResiduoColeta">
-                    <!-- <div class="item cardResidue">
+                    <div class="item cardResidue">
                         <h3>Patrocinador X</h3>
                         <lu>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>longneck</li>
+                            <li>garrafa pet 500ml</li>
                         </lu>
-                    </div> -->
+                    </div>
+                    <div class="item cardResidue">
+                        <h3>Patrocinador X</h3>
+                        <lu>
+                            <li>longneck</li>
+                            <li>garrafa pet 500ml</li>
+                        </lu>
+                    </div>
                 </section>
             </div>
         </div>
-
+        <!-- <footer>
+            <div class="footerImgMobile">
+                <img id="imgPlant" src="./assets/img/rodape-img-mobile.png" alt="">
+            </div>
+            <div class="footerImgPlants">
+                <img src="./assets/img/img-rodape.png" alt="">
+            </div>
+            <div class="footerColumn">
+                <div class="footerLogo centralizeParagraph">
+                    <img src="./assets/img/logo-com-slogan-branco.png" alt="">
+                </div>
+                <div class="footerComplaint">
+                    <h1>Denúncias - Ligue 156</h1>
+                    <p>A Fiscalização Ambiental no município de Blumenau é realizada através da Gerência de Fiscalização da
+                        Semmas.
+                        Para mais informações acesse o site:</p>
+                    <a href="https://www.blumenau.sc.gov.br/governo/fundacao-do-meio-ambiente/pagina/fiscalizacao-faema">Prefeitura
+                        de Blumenau</a>
+                </div>
+                </form>
+            </div>
+    
+    
+        </footer> -->
     </main>
 </body>
 <script src="./lib/jquery/jquery.min.js"></script>
+<!-- <script src="https://cdn.tailwindcss.com"></script> -->
 <script src="./lib/owlCarousel/dist/owl.carousel.min.js"></script>
 <script src="./js/meusPontos.js"></script>
+<script type=""> $('.owl-carousel').owlCarousel({
+                 loop: true,
+                 autoplay: true,
+           autoplayTimeout: 2000,
+             items: 2,
+                responsive: {
+                    0: {
+                        items: 1,
+                         nav: false
+                    },
+                     1200: {
+                        items: 2,
+                        nav: false
+                    },
+              }
+          })</script>
+
 </html>

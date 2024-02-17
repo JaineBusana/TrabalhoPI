@@ -10,12 +10,11 @@
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.theme.default.min.css">
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./assets/1.3.0/css/line-awesome.css">
-  <link rel="stylesheet" href="./style-esqueci.css">
   <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
 
   <title>ColetaBlu</title>
+
   <script>
     tailwind.config = {
       theme: {
@@ -30,8 +29,7 @@
 </head>
 
 <body>
-
-  <!-- <form id="formLogin">
+  <form id="formLogin">
     <div id="modalLogin" class="">
       <div id="backgroundLogin" class="flex">
         <div>
@@ -46,7 +44,6 @@
           <div class="flex">
             <img id="logo" class="h-20" src="./assets/img/MicrosoftTeams-image (7).png" alt="Logo da ColetaBlu">
             <h1 class=" mt-10 enterLogin">Entrar</h1>
-
           </div>
           <div class="msg"> </div>
           <div class="">
@@ -68,9 +65,7 @@
             <button id="login">Login</button>
           </div>
           <div class="flex">
-
             <h1 class="registerLogin ml-6">Não tem uma conta?</h1>
-
             <a id="linkRegisterLogin" class="registerLogin ml-1" href="cadastro.html">Cadastre-se!</a>
           </div>
         </div>
@@ -80,9 +75,27 @@
     </div>
   </form>
 
-
   <header>
-  </header> -->
+    <nav class="navigation">
+
+      <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
+      <div class="navHome">
+        <ul class="menuNav">
+          <li class="navItem "><a href="index.html">Home</a></li>
+          <li class="navItem"><a href="pontoColeta.html">Pontos de coleta</a></li>
+          <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
+          <li class="navItem" onclick="SHOW_MODAL_LOGIN()"><a href="#">Login</a></li>
+
+
+        </ul>
+      </div>
+      <div class="navigationBar">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
 
 
   <section>
@@ -107,9 +120,7 @@
           <div class="paragraphQuemSomosText mx-[15px]">
             <h1>Quem somos?</h1>
             <p>
-              Somos uma aplicação regional criada pelo alunos do curso #Entra21 da edição de 2023.<br>
-              Nosso projeto visa criar uma comunidade engajada e comprometida com a sustentabilidade,<br> 
-              incentivando a coleta de resíduos sustentáveis por meio de uma plataforma inovadora.
+              Somos uma aplicação regional criada pelo alunos do curso #Entra21 da edição de 2023.
             </p>
           </div>
 
@@ -134,10 +145,7 @@
             <h1>Quem pode usar a ferramenta?</h1>
             <p>
               Todos! Toda população de Blumenau
-              interessados em reciclagem e pequenos estabelecimentos que desejam aumentar sua visibilidade!<br>
-              Através de parcerias com empresas, pontos de coleta e a população,
-              buscamos promover práticas ambientalmente responsáveis, ao mesmo tempo em que proporcionamos benefícios tangíveis a todos os envolvidos.
-
+              interessados em reciclagem e pequenos estabelecimentos que desejam aumentar sua visibilidade!
             </p>
           </div>
         </div>
@@ -173,16 +181,36 @@
     </div>
   </div>
 
+  <footer>
+    <div class="footerImgMobile">
+      <img id="imgPlant" src="./assets/img/rodape-img-mobile.png" alt="">
+    </div>
+    <div class="footerImgPlants">
+      <img src="./assets/img/img-rodape.png" alt="">
+    </div>
+    <div class="footerColumn">
+      <div class="footerLogo centralizeParagraph">
+        <img src="./assets/img/logo-com-slogan-branco.png" alt="">
+      </div>
+      <div class="footerComplaint">
+        <h1>Denúncias - Ligue 156</h1>
+        <p>A Fiscalização Ambiental no município de Blumenau é realizada através da Gerência de Fiscalização da
+          Semmas.
+          Para mais informações acesse o site:</p>
+        <a href="https://www.blumenau.sc.gov.br/governo/fundacao-do-meio-ambiente/pagina/fiscalizacao-faema">Prefeitura
+          de Blumenau</a>
+      </div>
+      </form>
+    </div>
 
-
+  </footer>
+  <script src="https://cdn.tailwindcss.com"></script>
   <script src="./js/login.js"></script>
   <script src="./js/nav.js"></script>
   <script src="./lib/jquery/jquery.min.js"></script>
   <script src="./lib/owlCarousel/dist/owl.carousel.min.js"></script>
-  <script src="./js/load.js"></script>
   <script type="text/javascript">
     $(document).ready(function () {
-    
       $(".carousel1").owlCarousel({
         loop: true,
         autoplay: true,

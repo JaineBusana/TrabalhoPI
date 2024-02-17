@@ -24,12 +24,12 @@ body {
 
 }
 
-.navigationLogado {
+.navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 18px 40px;
-    box-shadow: 0 0.1rem 0.5rem #e69d9d;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
     width: 100%;
     background: #FEFEEB;
     transition: all 0.5s;
@@ -37,35 +37,34 @@ body {
 
 }
 
-.logoNavLogado {
+.logoNav {
     width: 17% !important;
     min-width: 100px;
 
 }
 
-.navigationLogado ul {
+.navigation ul {
     display: flex;
     padding-top: 0px;
     align-items: center;
     gap: 5rem;
 }
 
-.navigationLogado ul li a:hover {
+.navigation ul li a:hover {
     color: #A7C957;
 }
 
 .navItem {
     font-size: 20px;
-    cursor: pointer;
     color: #6A994E;
 }
 
-.navigationBarLogado {
+.navigationBar {
     cursor: pointer;
     display: none;
 }
 
-.navigationBarLogado .bar {
+.navigationBar .bar {
     display: block;
     width: 28px;
     height: 3px;
@@ -76,14 +75,14 @@ body {
 
 }
 
-.navigationBarLogado .bar:nth-child(1),
-.navigationBarLogado .bar:nth-child(3) {
+.navigationBar .bar:nth-child(1),
+.navigationBar .bar:nth-child(3) {
     background: #307A50;
 
 }
 
 
-#profileLogado {
+#profile {
     display: none;
 }
 
@@ -96,11 +95,6 @@ body {
     display: flex;
     justify-content: center;
     width: 100px;
-    cursor: pointer;
-}
-
-.btnProfilePicture:hover {
-    animation: animacaoTexto 20s;
 }
 
 .modalProfilePicture {
@@ -126,7 +120,7 @@ body {
     display: flex;
 }
 
-#profileNameLogado {
+#profileName {
     margin-left: 7px;
     margin-top: 10px;
     font-size: 122%;
@@ -134,7 +128,7 @@ body {
     font-family: mukta_bold !important;
 }
 
-#profilePointLogado,
+#profilePoint,
 #profilePickup {
     height: 58px;
     width: 172px;
@@ -152,7 +146,7 @@ body {
     font-family: mukta_bold !important;
 }
 
-.profilePonitImgLogado,
+.profilePonitImg,
 .profilePickupImg {
     width: 22%;
 }
@@ -203,36 +197,36 @@ section {
 }
 
 @media(max-width:970px) {
-    .navigationLogado {
+    .navigation {
         padding: 18px 20px;
         z-index: 1001;
         position: fixed;
         margin-top: -50px;
     }
 
-    .logoNavLogado {
+    .logoNav {
         width: 50% !important;   
     }
     
 
-    .navigationBarLogado {
+    .navigationBar {
         display: block;
 
     }
 
-    .navigationBarLogado.ativo .bar:nth-child(1) {
+    .navigationBar.ativo .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
 
-    .navigationBarLogado.ativo .bar:nth-child(2) {
+    .navigationBar.ativo .bar:nth-child(2) {
         opacity: 0;
     }
 
-    .navigationBarLogado.ativo .bar:nth-child(3) {
+    .navigationBar.ativo .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .menuNavLogado {
+    .menuNav {
         position: fixed;
         right: -100%;
         top: 65px;
@@ -242,12 +236,12 @@ section {
         transition: 0.3s;
     }
 
-    .menuNavLogado.ativo {
+    .menuNav.ativo {
         right: 0;
         height: 896px;
     }
 
-    .navigationLogado ul {
+    .navigation ul {
         padding-top: 15px;
         gap: 36px;
     }
@@ -264,7 +258,7 @@ section {
         justify-content: space-around;
     }
 
-    #profileLogado {
+    #profile {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -274,11 +268,11 @@ section {
         width: 120px;
     }
 
-    #profileNameLogado {
+    #profileName {
         color: #6A994E;
     }
 
-    #profilePointLogado {
+    #profilePoint {
         margin-top: 2px;
         margin-bottom: 0px;
     }
@@ -288,7 +282,7 @@ section {
         margin-bottom: 0px;
     }
 
-    #profileTextPointLogado {
+    #profileTextPoint {
         margin-top: 25px;
         margin-bottom: 10px;
         margin-left: 3px;
@@ -296,7 +290,7 @@ section {
 
     .profileEdit,
     .profileExit,
-    .btnProfilePicture,
+    .profilePictureBtn,
     .profileHome,
     #boxProfilePicture {
         display: none;
