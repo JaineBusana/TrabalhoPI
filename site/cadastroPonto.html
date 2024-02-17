@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/cadastroPonto.css">
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styleIndex.css">
     <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
 
     <title>Cadastro de Locais </title>
@@ -36,46 +37,46 @@
 
 
     </header>
-    <main>
-        <div class="container">
-            <section class="header">
+    <main id="mainCadastro"">
+        <div class="containerCadastro">
+            <section class="headerCadastro">
                 <h1>Cadastro de Pontos de Coleta</h1>
             </section>
 
-            <form id="form" class="form">
-                <div class="formContent">
+            <form id="formCadastro" class="formCadastro">
+                <div class="formContentCadastro">
                     <label for="Name">Nome</label>
                     <input type="text" id="Name" placeholder="Digite o nome do ponto de coleta..." />
                     <a>Mensagem de Erro</a>
                 </div>
 
-                <div class="formContent">
+                <div class="formContentCadastro">
                     <label for="street">Rua</label>
                     <input type="text" id="street" placeholder="Digite o endereço do local..." />
                     <a>Mensagem de Erro</a>
                 </div>
-                <div class="formContent">
+                <div class="formContentCadastro">
                     <label for="AddressNumber">N&deg;</label>
                     <input type="text" id="AddressNumber" placeholder="Digite o endereço do local..." />
                     <a>Mensagem de Erro</a>
                 </div>
-                <div class="formContent">
+                <div class="formContentCadastro">
                     <label for="neighborhood">Bairro</label>
                     <input type="text" id="neighborhood" placeholder="Digite o Bairro..." />
                     <a>Mensagem de Erro</a>
                 </div>
 
-                <div class="formContent">
+                <div class="formContentCadastro">
                     <label for="phoneNumber">Número de contato</label>
                     <input type="number" id="phoneNumber" placeholder="Digite um número de contato..." />
                     <a>Mensagem de Erro</a>
                 </div>
-                <div class="formContent">
+                <div class="formContentCadastro">
                     <label for="User">User</label>
                     <input type="number" id="User" placeholder="Digite um número de contato..." />
                     <a>Mensagem de Erro</a>
                 </div>
-                <div class="formContent">
+                <div class="formContentCadastro">
                     <label for="residue">Classificação do resíduo</label>
                     <select class="select" id="selectResidue">
                         <option value="">Selecione o resíduo</option>
@@ -92,10 +93,33 @@
 
         </div>
     </main>
+    <footer>
+        <div class="footerImgMobile">
+          <img id="imgPlant" src="./assets/img/rodape-img-mobile.png" alt="">
+        </div>
+        <div class="footerImgPlants">
+          <img src="./assets/img/img-rodape.png" alt="">
+        </div>
+        <div class="footerColumn">
+          <div class="footerLogo centralizeParagraph">
+            <img src="./assets/img/logo-com-slogan-branco.png" alt="">
+          </div>
+          <div class="footerComplaint">
+            <h1>Denúncias - Ligue 156</h1>
+            <p>A Fiscalização Ambiental no município de Blumenau é realizada através da Gerência de Fiscalização da
+              Semmas.
+              Para mais informações acesse o site:</p>
+            <a href="https://www.blumenau.sc.gov.br/governo/fundacao-do-meio-ambiente/pagina/fiscalizacao-faema">Prefeitura
+              de Blumenau</a>
+          </div>
+          </form>
+        </div>
+    
+      </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="./js/cadastroPonto.js"></script>
     <script src="./js/nav.js"></script>
-    <!-- <script src="./lib/jquery/jquery.min.js"></script> -->
 </body>
 
 </html>
