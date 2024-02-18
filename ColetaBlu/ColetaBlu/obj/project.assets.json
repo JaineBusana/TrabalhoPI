@@ -2751,23 +2751,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gustavo.pereira13\\.nuget\\packages\\": {},
+    "C:\\Users\\gugui\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gustavo.pereira13\\Music\\TrabalhoPI\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\ColetaBlu.csproj",
+      "projectUniqueName": "C:\\Users\\gugui\\Music\\PI teste\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\ColetaBlu.csproj",
       "projectName": "ColetaBlu",
-      "projectPath": "C:\\Users\\gustavo.pereira13\\Music\\TrabalhoPI\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\ColetaBlu.csproj",
-      "packagesPath": "C:\\Users\\gustavo.pereira13\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gustavo.pereira13\\Music\\TrabalhoPI\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\obj\\",
+      "projectPath": "C:\\Users\\gugui\\Music\\PI teste\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\ColetaBlu.csproj",
+      "packagesPath": "C:\\Users\\gugui\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gugui\\Music\\PI teste\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\gustavo.pereira13\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gugui\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2834,7 +2834,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   },

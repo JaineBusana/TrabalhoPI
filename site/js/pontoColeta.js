@@ -9,3 +9,11 @@ menu.addEventListener('click', () => {
 btnCloseModalPontoColeta.addEventListener('click', () => {
   modalContainerPontoColeta.classList.remove('ativo');
 });
+
+function CLOSE_MODAL_PERFIL() {
+  modalEditarPerfil.style.display = 'none';
+}
+
+function OPEN_MODAL_PERFIL() {
+  modalEditarPerfil.style.display = 'flex';
+}

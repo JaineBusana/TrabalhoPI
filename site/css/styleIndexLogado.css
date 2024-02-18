@@ -97,18 +97,10 @@ body {
     width: 100px;
 }
 
-.modalProfilePicture {
-    display: none;
-    position: absolute;
-    top: 120px;
-    right: 31px;
-    z-index: 1
-}
-
 #boxProfilePicture {
     height: 240px;
     width: 200px;
-    background-color: #94B447;
+    background-color: #FFF;
     color: #FAF3E1;
     border-radius: 30px;
     padding-left: 15px;
@@ -124,15 +116,15 @@ body {
     margin-left: 7px;
     margin-top: 10px;
     font-size: 122%;
-    color: #FAF3E1;
+    color: #000;
     font-family: mukta_bold !important;
 }
 
 #profilePoint,
 #profilePickup {
-    height: 58px;
-    width: 172px;
-    margin-top: 15px;
+    height: 80px;
+    width: 250px;
+    margin-top: 25px;
     margin-bottom: 25px;
     font-size: 130%;
     display: flex;
@@ -140,7 +132,7 @@ body {
     align-items: center;
     justify-content: center;
     color: #6A994E;
-    border-radius: 28px;
+    border-radius: 55px;
     BORDER: 1px solid #6A994E;
     background-color: #FFFFFF;
     font-family: mukta_bold !important;
