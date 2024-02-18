@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,7 @@
 
   <title>ColetaBlu</title>
 
-  <script>
+  <script src="https://cdn.tailwindcss.com">
     tailwind.config = {
       theme: {
         extend: {
@@ -52,19 +53,7 @@
           <li class="navItem"><a href="pontoColeta.html">Pontos de Coleta</a></li>
           <li class="navItem"><a href="indexTrocaPonto.html">Troca de Pontos</a></li>
           <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
-          <li class="navItem"><a href="">Perfil</a></li>
-
-          <!-- <div class="modalProfilePicture">
-            <div id="boxProfilePicture">
-              <p id="profileName">Jean Cleiton Souza</p>
-              <li id="profilePoint"><img src="./assets/img/cadastro/planeta-terra.png" alt=""
-                  class="profilePonitImg">300 pontos</li>
-              <div id="itemsBoxProfile">
-                <li class="navItem profileEdit"><a href="">Editar Perfil</a></li>
-                <li class="navItem profileExit"><a href="index.html">Sair</a></li>
-              </div>
-            </div>
-          </div> -->
+          <li class="navItem"><a>Perfil</a></li>
         </ul>
 
       </div>
@@ -112,25 +101,96 @@
     <h1 id="localNext"> Pontos Próximos</h1>
     <div class="grid grid-cols-1"></div>
 
-    <div class="contentCard">
-      <div class="card ">
-        <p id="nameCard" class="card"> Mercado Dona Rosa</p>
-        <p class="titleCard">Endereço: </p>
-        <p class="address">Alameda Rio Branco, Blumenau</p>
-        <p class="titleCard"> Observação: </p>
-        <p class="obsCard"> Mercadorias com validade próxima </p>
+    <!-- CARD PROVISORIO -->
 
+    <div class="cardMeuPonto">
+      <div class="infoLocate">
+        <h1>Mercado Dona Rosa</h1>
+        <div id="infoestabelecimento">
+          <h3>Endereço</h3>
+          <p>Rua Alameda Rio Branco, N&deg; 1888
+          </p>
+          <h3>Bairro</h3>
+          <p>Jardim Blumenau</p>
+          <h3>Telefone</h3>
+          <p>(47) 99999-9999</p>
+        </div>
       </div>
-      <div class="card ">
-        <p id="nameCard" class="card"> Loja Fictícia</p>
-        <p class="titleCard">Endereço: </p>
-        <p class="address">Rua, bairro </p>
-        <p class="titleCard"> Observação: </p>
-        <p class="obsCard"> fictícia </p>
+      <div class="infoResidue">
+        <button id="btnCloseModalPontoColeta">
+          <div class="menuCloseModalPontoColeta">
+            <img src="./assets/img/cancelar.png" alt="">
+          </div>
+        </button>
+        <h2>É coletado</h2> <br>
+        <section class="owl-carousel infoResiduoColeta">
+          <div class="item cardResidue">
+            <h3>Patrocinador X</h3>
+            <p>longneck</p>
+            <p>garrafa pet 500ml</p>
+          </div>
+          <div class="item cardResidue">
+            <h3>Patrocinador X2</h3>
+            <p>Embalgem</p>
+            <p>garrafa pet</p>
+          </div>
+        </section>
       </div>
-
 
     </div>
+
+
+    <!-- <div class="modalContainerPontoColeta">
+        <div class="topModalPontoColeta">
+            <img class="imagePontoColetaModal" src="./assets/img/estabelecimento.jpg" alt="imagem do estabelecimento ">
+        </div>
+        <div id="imagePontoColeta">
+            <h1>Nome do Estabelecimento</h1>
+            <ul class="infoPonoColeta">
+                <li id="addressPontoColeta"><span>Endereço:</span> R.Padrejacons ,139 - Centro,Blumenau-SC,89010-080
+                </li>
+                <li id="observacaoPontoColeta"><span>Observação:</span> Horário de funcionamento:
+                    segunda-feira–sábado, 08:00–19:00</li>
+                <li id="mapsPontoColeta"><span>Mapa:</span> Link Aqui. </li>
+            </ul>
+            <div id="closeModalPontoColeta">
+                <button id="btnCloseModalPontoColeta">
+                    <div class="menuCloseModalPontoColeta">
+                        <span class="barCloseModalPontoColeta"></span>
+                        <span class="barCloseModalPontoColeta"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="contentCard">
+
+      <div id="allCards">
+
+        <div class="card ">
+          <div id="openModalPontoColeta">
+            <p id="nameCard" class="card"> Mercado Dona Rosa</p>
+          </div>
+          <p class="titleCard">Bairro </p>
+          <p class="obsCard"> Jardim Blumenau </p>
+          <p class="titleCard">Residuo: </p>
+          <p class="address">Garraga pet</p>
+
+
+        </div>
+        <div class="card ">
+          <p id="nameCard" class="card"> Loja Fictícia</p>
+          <p class="titleCard">Endereço: </p>
+          <p class="address">Rua, bairro </p>
+          <p class="titleCard"> Observação: </p>
+          <p class="obsCard"> fictícia </p>
+
+        </div>
+
+
+      </div>
 
   </main>
 
@@ -158,9 +218,9 @@
 
   </footer>
 
+  <script src="./lib/jquery/jquery.min.js"></script>
   <script src="./js/pontoColeta.js"></script>
   <script src="./js/nav.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
 
 </body>
 

@@ -69,7 +69,8 @@
     /* position: relative; */
     width: 359px;
     height: 43px;
-    border-radius: 22px;
+    border: none;
+    outline: none;
     background-color: #FFFFFF;
     color: #6A994E;
     font-family: mukta_medium;
@@ -181,10 +182,12 @@
 .cardMeuPonto.ativo {
     visibility: visible;
 }
-#infoestabelecimento{
-    
+
+#infoestabelecimento {
+
     margin-top: 125px;
 }
+
 .infoLocate {
     width: 100%;
     margin-left: 15px;
@@ -209,7 +212,8 @@
     text-align: center;
 
 }
-.cardResidue{
+
+.cardResidue {
     display: grid;
     align-items: center;
     justify-content: center;
