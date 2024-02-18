@@ -306,7 +306,7 @@ section {
     }
 
     .navItem a{
-        color: #FFF;
+        color: #FFF !important;
     }
 
 }
