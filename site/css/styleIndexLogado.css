@@ -305,4 +305,8 @@ section {
         justify-content: center;
     }
 
+    .navItem a{
+        color: #FFF;
+    }
+
 }
