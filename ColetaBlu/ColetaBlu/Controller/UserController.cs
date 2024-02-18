@@ -51,7 +51,6 @@ namespace ColetaBlu.Controller
             await _userRepository.Delete(id);
             return Ok();
         }
-
    
         [HttpPost]
         [Route("login")]
@@ -66,7 +65,6 @@ namespace ColetaBlu.Controller
                 return Unauthorized("Usuário ou senha inválidos");
             }
         }
-
     }
 }
 
