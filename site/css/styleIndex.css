@@ -85,7 +85,12 @@
 }
 
 .paragraphComoAjudamosResiduos {
-    height: 320px;
+    height: 280px;
+}
+
+#imgRecicleGreen {
+    margin-top: 10px;
+    border-radius: 100%;
 }
 
 .paragraphQuemPodeUsar {
