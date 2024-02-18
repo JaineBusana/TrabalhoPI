@@ -14,6 +14,28 @@
   <title>Deixe sua sugestão!</title>
 </head>
 
+<header>
+  <nav class="navigation">
+
+    <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
+    <div class="navHome">
+      <ul class="menuNav">
+        <li class="navItem "><a href="index.html">Home</a></li>
+        <li class="navItem"><a href="pontoColeta.html">Pontos de coleta</a></li>
+        <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
+        <li class="navItem" onclick="SHOW_MODAL_LOGIN()"><a href="#">Login</a></li>
+
+
+      </ul>
+    </div>
+    <div class="navigationBar">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+</header>
+
 <body>
   <form id="formLogin">
     <div id="modalLogin" class="">
@@ -58,27 +80,6 @@
       </div>
     </div>
   </form>
-  <header>
-    <nav class="navigation">
-
-      <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
-      <div class="navHome">
-        <ul class="menuNav">
-          <li class="navItem "><a href="index.html">Home</a></li>
-          <li class="navItem"><a href="pontoColeta.html">Pontos de coleta</a></li>
-          <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
-          <li class="navItem" onclick="SHOW_MODAL_LOGIN()"><a href="#">Login</a></li>
-
-
-        </ul>
-      </div>
-      <div class="navigationBar">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </nav>
-  </header>
   <script src="./js/nav.js"></script>
   <main id="suggestion">
     <img id="coletaBluImgSuggestion" src="./assets/img/sugestao/sugestao.jpg">
@@ -129,8 +130,9 @@
 
   </footer>
   <script src="./lib/jquery/jquery.min.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
   <script src="./js/nav.js"></script>
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <script src="./js/login.js"></script>
 </body>
 
