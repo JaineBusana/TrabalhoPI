@@ -13,21 +13,24 @@ namespace ColetaBlu.Repository
         {
             string sql = @"
           INSERT INTO User (Type, Name, SocialNumber, Email, Telephone, Password, Score)
-                         VALUE(@tYPE, @Name, @SocialNumber, @Email, @Telephone, @Password, @Score)
+                         VALUE(@Type, @Name, @SocialNumber, @Email, @Telephone, @Password, @Score)
 
          ";
             await Execute(sql, user);
         }
+
         public async Task Delete(int id)
         {
             string sql = "DELETE FROM User WHERE Id = @id";
             await Execute(sql, new { id });
         }
+
         public async Task<UserEntity> GetByEmail(string Email)
         {
             string sql = "SELECT * FROM User WHERE Id = @id";
             return await GetConnection().QueryFirstAsync<UserEntity>(sql, new { Email });
         }
+
         public async Task<IEnumerable<UserEntity>> Read()
         {
             string sql = "SELECT * FROM user";
@@ -45,7 +48,6 @@ namespace ColetaBlu.Repository
             };
         }
 
-
         public async Task Update(UserEntity user)
         {
             string sql = @"
@@ -61,7 +63,5 @@ namespace ColetaBlu.Repository
             ";
             await Execute(sql, user);
         }
-
     }
-
 }
