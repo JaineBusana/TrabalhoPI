@@ -8,7 +8,5 @@
         public int? Number { get; set; }
         public int? neighborhood_Id { get; set; }
         public int? User_Id { get; set; }
-
     }
-
 }
