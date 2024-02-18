@@ -60,6 +60,7 @@ body {
 }
 .navItem a{
     color: #6A994E;
+    cursor: pointer;
 }
 .navigationBar {
     cursor: pointer;
