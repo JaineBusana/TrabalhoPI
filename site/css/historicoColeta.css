@@ -35,6 +35,8 @@
 #conteiner2HP {
     display: flex;
     margin-top: 40px;
+    margin-right: 380px;
+    margin-left: 380px;
 }
 
 #conteiner3HP {
@@ -173,6 +175,7 @@
 #cardAreaHP {
     margin-top: 40px;
 }
+
 @media(max-width: 970px) {
     #ImagemHP {
         display: none;
@@ -203,5 +206,17 @@
 
     #marginEndHP {
         height: 80px;
+    }
+
+    #conteiner2HP {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media(min-width: 1200px) and (max-width:1800px) {
+    #conteiner2HP {
+        margin-right: 190px;
+        margin-left: 190px;
     }
 }

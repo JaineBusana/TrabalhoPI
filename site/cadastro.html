@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./css/cadastro.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/nav.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styleIndex.css">
+    <link rel="stylesheet" href="./css/StyleLogin.css">
     <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
 
     <title>Cadastro</title>
@@ -42,6 +43,50 @@
             e comece sua jornada conosco!</p>
     </aside>
     <main>
+        <form id="formLogin">
+            <div id="modalLogin" class="">
+              <div id="backgroundLogin" class="flex">
+                <div>
+                  <button class="closeModal" onclick="CLOSE_MODAL_LOGIN()">
+                    <div class="menuLogin">
+                      <span class="barLogin"></span>
+                      <span class="barLogin"></span>
+                    </div>
+                  </button>
+                  <div class="flex">
+                    <img id="logo" class="h-20" src="./assets/img/MicrosoftTeams-image (7).png" alt="Logo da ColetaBlu">
+                    <h1 class=" mt-10 enterLogin">Entrar</h1>
+                  </div>
+                  <div class="msg"> </div>
+                  <div class="">
+                    <h1 id="userLogin" class="mt-10">Email</h1>
+                  </div>
+                  <div>
+                    <input id="insertUserLogin" class="mb-2 " type="text" onfocus="this.value='';">
+                  </div>
+                  <div>
+                    <h1 id="passwordLogin" class="">Senha</h1>
+                  </div>
+                  <div class="flex">
+                    <input id="insertPasswordLogin" class="" type="password" onfocus="this.value='';">
+                  </div>
+                  <div>
+                    <a id="forgotPasswordLogin" class="" href="">Esqueci a senha!</a>
+                  </div>
+                  <div>
+                    <button id="login">Login</button>
+                  </div>
+                  <div class="flex">
+                    <h1 class="registerLogin ml-6">Não tem uma conta?</h1>
+                    <a id="linkRegisterLogin" class="registerLogin ml-1" href="cadastro.html">Cadastre-se!</a>
+                  </div>
+                </div>
+                <img id="backgroundPhoto" src="./assets/img/Foto_Fundo_Login.jpg" alt="Imagen fundo"
+                  style="max-width:51%;height:auto;">
+              </div>
+            </div>
+          </form>
+
         <div class="register">
             <h1>Criar conta</h1>
             <div id="chooseAcontType">
@@ -65,20 +110,14 @@
                     <input type="email" id="email" placeholder="Digite seu Email">
                     <a>Mensagem de erro</a>
                 </div>
-                <div class="campCpf">
+                <div class="campSocialNumber">
                     <div class="formContent">
-                        <label for="usercpf">Cpf</label>
-                        <input type="text" id="usercpf" placeholder="Digite seu Cpf">
+                        <label for="userSocialNumber">Número Social</label>
+                        <input type="text" id="userSocialNumber" placeholder="Digite seu Número Social">
                         <a>Mensagem de erro</a>
                     </div>
                 </div>
-
                 <div class="formCadastreColetor">
-                    <div class="formContent">
-                        <label for="cnpj">Cnpj</label>
-                        <input type="text" id="cnpj" placeholder="Digite seu Cnpj">
-                        <a>Mensagem de erro</a>
-                    </div>
                     <div class="formContent">
                         <label for="address">Endereço</label>
                         <input type="text" id="address" placeholder="Digite o Endereço">
@@ -90,26 +129,52 @@
                         <a>Mensagem de erro</a>
                     </div>
                 </div>
-                <div class="formContent">
-                    <label for="password">Senha</label>
-                    <input type="password" id="password" placeholder="Digite sua Senha">
-                    <a>Mensagem de erro</a>
-                </div>
-                <div class="formContent">
-                    <label for="confirmationPassword">Confirmação de senha</label>
-                    <input type="password" id="confirmationPassword" placeholder="Digite sua senha novamente">
-                    <a>Mensagem de erro</a>
-                </div>
-                <div id="submitCadastreUser">
-                    <button class="btnCadastro" href="./index.html" type="submit">Cadastrar</button>
-                </div>
-                <div id="textJaPossuiConta">
-                    <p>Já passui uma conta? <a id="link" href="./index.html">Login</a></p>
-                </div>
+            </div>
+            <div class="formContent">
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Digite sua Senha">
+                <a>Mensagem de erro</a>
+            </div>
+            <div class="formContent">
+                <label for="confirmationPassword">Confirmação de senha</label>
+                <input type="password" id="confirmationPassword" placeholder="Digite sua senha novamente">
+                <a>Mensagem de erro</a>
+            </div>
+            <div id="submitCadastreUser">
+                <button class="btnCadastro" href="./index.html" type="submit">Cadastrar</button>
+            </div>
+            <div id="textJaPossuiConta">
+                <p>Já passui uma conta? <a id="link" onclick="SHOW_MODAL_LOGIN()">Login</a></p>
+            </div>
             </div>
         </form>
     </main>
+    <footer>
+        <div class="footerImgMobile">
+            <img id="imgPlant" src="./assets/img/rodape-img-mobile.png" alt="">
+        </div>
+        <div class="footerImgPlants">
+            <img src="./assets/img/img-rodape.png" alt="">
+        </div>
+        <div class="footerColumn">
+            <div class="footerLogo centralizeParagraph">
+                <img src="./assets/img/logo-com-slogan-branco.png" alt="">
+            </div>
+            <div class="footerComplaint">
+                <h1>Denúncias - Ligue 156</h1>
+                <p>A Fiscalização Ambiental no município de Blumenau é realizada através da Gerência de Fiscalização da
+                    Semmas.
+                    Para mais informações acesse o site:</p>
+                <a href="https://www.blumenau.sc.gov.br/governo/fundacao-do-meio-ambiente/pagina/fiscalizacao-faema">Prefeitura
+                    de Blumenau</a>
+            </div>
+            </form>
+        </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./js/cadastro.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="./js/nav.js"></script>
 </body>
 

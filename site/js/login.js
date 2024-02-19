@@ -10,26 +10,18 @@ function CLOSE_MODAL_LOGIN() {
 
 // teste
 window.addEventListener("load", (event) => {
+    $('body').on('click', '#login', (event) => {
+        event.preventDefault()
 
-    const usuario = document.querySelector(`#insertUserLogin`)
-    const senha = document.querySelector(`#insertPasswordLogin`)
-
-    const button = document.querySelector(`#login`)
-
-
-    button.addEventListener(`click`, (e) => {
-        e.preventDefault()
-
+        const usuario = document.querySelector(`#insertUserLogin`)
+        const senha = document.querySelector(`#insertPasswordLogin`)
         const errorMessage = document.querySelector('.msg')
-
         const value = {
             usuario: usuario.value,
             senha: senha.value,
         }
 
-
         if (value.usuario === '' || value.senha === '') {
-
             errorMessage.innerHTML = "Preencha todos os campos";
             errorMessage.classList.add("error");
 
@@ -40,19 +32,14 @@ window.addEventListener("load", (event) => {
         }
         else {
             $(() => {
-
                 if (!!localStorage.getItem(`token`)) {
                     location.href = "indexLogado.html";
                 }
-                $("#login").click((e) => {
-                    e.preventDefault();
-
+                else {
                     const data = {
                         email: $("#insertUserLogin").val(),
                         password: $("#insertPasswordLogin").val()
                     };
-
-
 
                     $.ajax({
                         type: "POST",
@@ -62,15 +49,14 @@ window.addEventListener("load", (event) => {
                             localStorage.clear();
                             localStorage.setItem(`token`, result.token);
                             localStorage.setItem(`userName`, result.user.name);
-                            localStorage.setItem(`userRole`, result.user.role);
+                            localStorage.setItem(`userType`, result.user.type);
                             location.href = "indexLogado.html";
                         },
                         contentType: "application/json",
                         dataType: "json",
                     });
-                });
+                }
             });
         }
-
     })
 })

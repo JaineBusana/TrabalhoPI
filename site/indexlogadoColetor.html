@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styleIndex.css">
     <link rel="stylesheet" href="./css/pontoColeta.css" />
-    <link rel="stylesheet" href="./css/styleIndexLogado.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styleIndexLogado.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/modalEditarPerfil.css">
     <link rel="stylesheet" href="./assets/1.3.0/css/line-awesome.css">
     <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
 
     <title>ColetaBlu</title>
 
-    <script>
+    <script src="https://cdn.tailwindcss.com">
         tailwind.config = {
             theme: {
                 extend: {
@@ -30,7 +29,7 @@
 
 <body>
 
-  <header>
+    <header>
         <nav class="navigation">
 
             <a href="index.html" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
@@ -54,29 +53,11 @@
                         </div>
                     </div>
                     <li class="navItem profileHome"><a href="index.html">Home</a></li>
-                    <li class="navItem"><a href="pontoColeta.html">Pontos de Coleta</a></li>
-                    <li class="navItem"><a href="pontoColeta.html">Registrar Coleta</a></li>
-                    <li class="navItem"><a href="trocadePontos.html">Troca de Pontos</a></li>
-                    <li class="navItem profileEditbtn">Editar Perfil</li>
+                    <li class="navItem"><a href="meusPontos.html">Meus Pontos de Coleta</a></li>
+                    <li class="navItem"><a href="registroColeta.html">Registrar Coleta</a></li>
                     <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
-                    <li class="navItem profileExitbtn"><a href="index.html">Sair</a></li>
-                    <li class="btnProfilePicture"><img src="./assets/img/perifl/Ellipse 22.png"
-                            class="profilePictureBtn"></li>
-                    <div class="modalProfilePicture">
-                     
-                        <div id="boxProfilePicture">
-                            <p id="profileName">Jean Cleiton Souza</p>
-                            <li id="profilePoint"><img src="./assets/img/cadastro/planeta-terra.png" alt=""
-                                    class="profilePonitImg">300 pontos</li>
-                            <li id="profilePickup"><img src="./assets/img/perifl/icone-loja-verde-removebg-preview.png"
-                                    alt="" class="profilePickupImg">30 Coletas
-                            </li>
-                            <div id="itemsBoxProfile">
-                                <li class="navItem profileEdit"><a href="">Editar Perfil</a></li>
-                                <li class="navItem profileExit"><a href="index.html">Sair</a></li>
-                            </div>
-                        </div>
-                    </div>
+                    <li class="navItem"><a onclick="OPEN_MODAL_PERFIL()">Perfil</a></li>
+
                 </ul>
             </div>
             <div class="navigationBar">
@@ -85,10 +66,37 @@
                 <span class="bar"></span>
             </div>
         </nav>
-    </header> 
- 
+    </header>
+
 
     <main class="main">
+
+        <div id="modalEditarPerfil">
+            <div id="backgroundEP">
+              <button class="closeModalEP" onclick="CLOSE_MODAL_PERFIL()">
+                <div class="closeModalEP">
+                  <span class="barEP"></span>
+                  <span class="barEP"></span>
+                </div>
+              </button>
+              <div id="conteinerEP">
+                <div class="formContent">
+                  <h2 id="nameTitleEP">Jean Cleiton Souza</h2>
+                </div>
+                <div id="typeCidadao">Coletor</div>
+                <div class="formContent">
+                </div>
+                <div>
+                  <li id="profilePickup"><img src="./assets/img/perifl/icone-loja-verde-removebg-preview.png" alt=""
+                      class="profilePickupImg">30 Coletas
+                </div>
+                <div id="conteinerEP2">
+                  <a id="changePasswordEP">Editar Perfil</a>
+                  <a id="saveChangesEP" href="./index.html">Sair</a>
+                </div>
+              </div>
+            </div>
+          </div>
 
         <img id="coletaBluImg" src="./assets/img/pontoColeta/imgPontoColeta.jpg">
         <h1 id="titlePontoColeta"> Pontos de Coleta</h1>
@@ -171,7 +179,9 @@
     </footer>
 
     <script src="./js/pontoColeta.js"></script>
+    <script src="./js/editarPerfil.js"></script>
     <script src="./js/nav.js"></script>
+
 </body>
 
 </html>

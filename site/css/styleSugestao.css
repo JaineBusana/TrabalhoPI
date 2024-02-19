@@ -75,7 +75,7 @@ form {
     visibility: hidden;
 }
 
-form button {
+#btnEnviarSugestão {
     background-color: #6A994E !important;
     color: #FFF;
     width: 100%;

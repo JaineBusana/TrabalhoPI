@@ -11,7 +11,7 @@
     src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
 }
 
-main {
+#mainCadastro {
     margin-top: 30px;
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@ main {
     font-family: mukta_medium;
 }
 
-.container {
+.containerCadastro {
     background-color: #fafafa; /* MUDAR COR  */
     border-radius: 22px;
     margin: 14px;
@@ -29,29 +29,29 @@ main {
     overflow: hidden;
 }
 
-.header {
+.headerCadastro {
     background-color: #6A994E;
     padding: 24px;
     text-align: center;
     color: #FFF;
 }
 
-.form {
+.formCadastro {
     padding: 18px;
 }
 
-.formContent {
+.formContentCadastro {
     margin-bottom: 25px;
     padding-bottom: 18px;
     position: relative;
 }
 
-.formContent label {
+.formContentCadastro label {
     display: inline-block;
     margin-bottom: 4px;
 }
 
-.formContent input, select {
+.formContentCadastro input, select {
     display: block;
     width: 100%;
     border-radius: 8px;
@@ -64,14 +64,14 @@ option{
     font-family: mukta_medium;
 }
 
-.formContent a {
+.formContentCadastro a {
     position: absolute;
     bottom: -8px;
     left: 0;
     visibility: hidden;
 }
 
-.form button {
+.formCadastro button {
     background-color: #6A994E;
     color: #FFF;
     width: 100%;
@@ -84,11 +84,11 @@ option{
     font-family: mukta_medium;
 }
 
-.formContent.error input {
+.formContentCadastro.error input {
     border-color: #ff3b25;
 }
 
-.formContent.error a {
+.formContentCadastro.error a {
     color: #ff3b25;
     font-size: 14px;
     visibility: visible;
