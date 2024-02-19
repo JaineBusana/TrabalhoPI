@@ -155,10 +155,10 @@
 }
 
 .cardMeuPonto {
-    background-image: url(../assets/img/estabelecimento.jpg);
+    background-image: url(../assets/img/pontoColeta/estabelecimento.jpg);
     background-repeat: no-repeat;
-    background-size: 250px 350px;
-    padding-left: 250px;
+    background-size: 280px 350px;
+    padding-left: 280px;
     border-left: 20px solid;
     padding-top: 0px;
     position: absolute;
@@ -166,7 +166,7 @@
     visibility: hidden;
     margin-top: -200px;
     border-top: 0px;
-    width: 70%;
+    width: 80%;
     max-width: 900px;
     height: 350px;
     color: #6A994E;
@@ -183,23 +183,28 @@
     visibility: visible;
 }
 
-.card{
+.card {
     width: 120%;
     border-radius: 20px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
 }
-#textcardLocal
-{
+
+
+
+#textcardLocal {
     padding: 5px;
     margin: 5px;
 }
-.contentCard{
+
+.contentCard {
     visibility: hidden;
 }
-.contentCard.ativo{
+
+.contentCard.ativo {
     visibility: visible;
 }
+
 #infoestabelecimento {
 
     margin-top: 125px;
@@ -392,7 +397,7 @@
     animation: animacaoTexto 20s;
 }
 
-@keyframes animacaoTexto {
+/* @keyframes animacaoTexto {
     0% {
         opacity: 0, 5;
         transform: translateY(-10px);
@@ -401,8 +406,8 @@
     100% {
         opacity: 1;
         transform: translateY(-10px);
-    }
-}
+    } */
+
 
 @media(min-width: 750px) {
 
@@ -565,7 +570,7 @@
         animation: animacaoTexto 20s;
     }
 
-    @keyframes animacaoTexto {
+    /* @keyframes animacaoTexto {
         0% {
             opacity: 0, 5;
             transform: translateY(-10px);
@@ -575,7 +580,7 @@
             opacity: 1;
             transform: translateY(-10px);
         }
-    }
+    } */
 
     @media(min-width: 750px) {
 
