@@ -1,4 +1,6 @@
 # COLETABLU
+<img src="https://github.com/thiago1237/Assets/blob/main/Coletablu/logo-com-slogan.png?raw=true" width="400px;" alt="Foto da Aline Kowalski "/>  
+<br>  
 
 Nosso projeto inovador visa promover a sustentabilidade e incentivar a reciclagem, ao permitir  
 que estabelecimentos como condomínios ou mercados recebam embalagens usadas da população,   
@@ -26,6 +28,15 @@ além de promover uma imagem sustentável para as empresas parceiras.
         </sub>
       </a>
     </td>
+     <td align="center">
+      <a href="https://github.com/JaineBusana" title="Github da Jaine Busana">
+        <img src="https://media.licdn.com/dms/image/D4D03AQEBuetPsccpww/profile-displayphoto-shrink_800_800/0/1698808458203?e=1713398400&v=beta&t=izLt68xfb6__YU3TwlPXHMSw-p8NUMbWOiS5dL9YdEo" width="100px;" alt="Foto da Jaine Busana
+"/><br>
+        <sub>
+          <b>Jaine Busana</b>
+        </sub>
+      </a>
+    </td>
     <td align="center">
       <a href="https://github.com/LarissaBeatrizCosta" title="Github da Larissa Beatriz">
         <img src="https://media.licdn.com/dms/image/D4D35AQESMCU6Lc0tOQ/profile-framedphoto-shrink_800_800/0/1701356188564?e=1708527600&v=beta&t=djgTYWF-2vaqpyZ5gFfSiMOCtlV1lcwet0KJo_kQEjk" width="100px;" alt="Foto da Larissa Beatriz Costa
@@ -44,15 +55,7 @@ além de promover uma imagem sustentável para as empresas parceiras.
         </sub>
       </a>
     </td>
-    <td align="center">
-      <a href="https://github.com/JaineBusana" title="Github da Jaine Busana">
-        <img src="https://media.licdn.com/dms/image/D4D03AQEBuetPsccpww/profile-displayphoto-shrink_800_800/0/1698808458203?e=1713398400&v=beta&t=izLt68xfb6__YU3TwlPXHMSw-p8NUMbWOiS5dL9YdEo" width="100px;" alt="Foto da Jaine Busana
-"/><br>
-        <sub>
-          <b>Jaine Busana</b>
-        </sub>
-      </a>
-    </td>
+   
    <td align="center">
       <a href="https://github.com/thiago1237" title="Github do Thiago Ribeiro">
         <img src="https://media.licdn.com/dms/image/C4D03AQEjPpyqVyBcqA/profile-displayphoto-shrink_800_800/0/1651186030743?e=1713398400&v=beta&t=LbxlGsqf8pPiiSmeJ7s3YVMzyeZQ4CGP7Gjp0vbhxoo" width="100px;" alt="Foto do Thiago Ribeiro
@@ -64,6 +67,14 @@ além de promover uma imagem sustentável para as empresas parceiras.
     </td>
   </tr>
 </table>
+
+## Contacts:
+
+<div> 
+  <a href="https://www.instagram.com/coleta_blu?igsh=cHI3ZGpxaHJueGVv" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
+  <a href = "mailto:contactcoletablu@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+  
+</div>
 
 
 
