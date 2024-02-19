@@ -183,12 +183,19 @@
     visibility: visible;
 }
 
-.card{
+.card {
     width: 120%;
     border-radius: 20px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1PX solid #CCC;
+    padding: 25px;
+    border-left: 20px solid #6A994E; 
+    color: #000000; 
+    background-color: #FFFFFF;
 
 }
+
+
+
 #textcardLocal
 {
     padding: 5px;
@@ -351,12 +358,13 @@
     margin-left: 33px;
     color: black;
     font-family: mukta_medium;
-    font-size: 15px;
+        
     gap: 4px;
     height: 50%;
 }
 
 #allCards {
+    margin-left: 30px;
     display: flex;
     COLUMN-GAP: 55px;
 
@@ -370,6 +378,7 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     width: 140px;
+    
 }
 
 .titleCard {
@@ -379,17 +388,16 @@
 
 
 #nameCard {
-
-
     font-family: mukta_bold;
-    font-size: 26px;
+    font-size: 22px;
     margin-left: 0 !important;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 #nameCard:hover {
     color: #6A994E;
-    animation: animacaoTexto 20s;
+    /**animation: animacaoTexto 20s; ANIMAÇÃO TEXTO COMENTADA**/ 
 }
 
 @keyframes animacaoTexto {
@@ -555,14 +563,14 @@
 
 
         font-family: mukta_bold;
-        font-size: 26px;
+        font-size: 22px;
         margin-left: 0 !important;
         cursor: pointer;
     }
 
     #nameCard:hover {
         color: #6A994E;
-        animation: animacaoTexto 20s;
+        /**animation: animacaoTexto 20s;**/
     }
 
     @keyframes animacaoTexto {
