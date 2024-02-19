@@ -136,6 +136,7 @@ text-align: center;
 }
 #textJaPossuiConta a{
     color: #386641;
+    cursor: pointer;
 }
 .formContent a {
     bottom: -8px;
