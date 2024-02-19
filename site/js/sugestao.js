@@ -1,65 +1,65 @@
-// window.addEventListener("load", (event) => {
+window.addEventListener("load", (event) => {
 
-//     const form = document.getElementById("formSuggestion");
-//     const textSuggestion = document.getElementById("textSuggestion")
-
-
-//     form.addEventListener("submit", (e) => {
-//         e.preventDefault();
-
-//         checkForm();
-//     })
-
-//     textSuggestion.addEventListener("blur", () => {
-//         checkTextSuggestion();
-//     })
+    const form = document.getElementById("formSuggestion");
+    const textSuggestion = document.getElementById("textSuggestion")
 
 
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
 
-//     function checkTextSuggestion() {
-//         const textSuggestionValue = textSuggestion.value;
+        checkForm();
+    })
 
-//         if (textSuggestionValue === "") {
-//             errorInput(textSuggestion, " É necessário preencher o campo!")
-//         } else {
-//             const formItem = textSuggestion.parentElement;
-//             formItem.className = "formContentSuggestion"
-//         }
-
-//     }
+    textSuggestion.addEventListener("blur", () => {
+        checkTextSuggestion();
+    })
 
 
-//     function checkForm() {
-//         checkTextSuggestion();
 
-//         const sucessMessage = document.querySelector('.msgSuggestion')
+    function checkTextSuggestion() {
+        const textSuggestionValue = textSuggestion.value;
 
-//         const formItems = form.querySelectorAll(".formContentSuggestion")
+        if (textSuggestionValue === "") {
+            errorInput(textSuggestion, " É necessário preencher o campo!")
+        } else {
+            const formItem = textSuggestion.parentElement;
+            formItem.className = "formContentSuggestion"
+        }
 
-//         const isValid = [...formItems].every((item) => {
-//             return item.className === "formContentSuggestion"
-//         });
+    }
 
-//         if (isValid) {
 
-//             sucessMessage.innerHTML = "Sugestão Enviada!";
-//             sucessMessage.classList.add("sucess");
+    function checkForm() {
+        checkTextSuggestion();
 
-//             setTimeout(() => {
-//                 sucessMessage.innerHTML = "";
-//                 sucessMessage.classList.remove("sucess");
-//             }, 5000);
-//         }
+        const sucessMessage = document.querySelector('.msgSuggestion')
 
-//     }
+        const formItems = form.querySelectorAll(".formContentSuggestion")
 
-//     function errorInput(textArea, message) {
-//         const formItem = textArea.parentElement;
-//         const textMessage = formItem.querySelector("a")
+        const isValid = [...formItems].every((item) => {
+            return item.className === "formContentSuggestion"
+        });
 
-//         textMessage.innerText = message;
+        if (isValid) {
 
-//         formItem.className = "formContentSuggestion error"
+            sucessMessage.innerHTML = "Sugestão Enviada!";
+            sucessMessage.classList.add("sucess");
 
-//     }
-// });
+            setTimeout(() => {
+                sucessMessage.innerHTML = "";
+                sucessMessage.classList.remove("sucess");
+            }, 5000);
+        }
+
+    }
+
+    function errorInput(textArea, message) {
+        const formItem = textArea.parentElement;
+        const textMessage = formItem.querySelector("a")
+
+        textMessage.innerText = message;
+
+        formItem.className = "formContentSuggestion error"
+
+    }
+});
