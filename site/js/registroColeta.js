@@ -1,6 +1,7 @@
 const placeCpfHistoric = document.getElementById("placeCpfHistoric")
 const placeNameHistoric = document.getElementById("placeNameHistoric");
 const placeQuantityHistoric = document.getElementById("placeQuantityHistoric");
+const placeCollectPointHistoric = document.getElementById("placeCollectPointHistoric");
 const form = document.getElementById('formHistoric');
 const btnAddHistoric = document.getElementById('btnAddHistoric');
 const modal = document.querySelector('.containerHistoric');
@@ -12,6 +13,51 @@ const modalConfirmn = document.querySelector('.modalContainerConfirmn')
 //     $('.placeNameHistoric').select2();
 // });
 
+$(document).ready(function () {
+    $('#placeCpfHistoric').mask('000.000.000-00');
+
+    $.ajax({
+        type: "GET",
+        url: `https://localhost:7249/pontoColeta/getByUserEmail?email=${localStorage.getItem('userEmail')}`,
+        success: (result) => {
+            result.forEach(element => {
+                placeCollectPointHistoric.appendChild(new Option(element.name, element.id))
+            });
+        },
+        error: (jqXHR) => {
+            errorInput(placeCollectPointHistoric, jqXHR.responseText)
+        },
+        contentType: "application/json",
+        dataType: "json",
+    });
+});
+
+function removeAll(selectBox) {
+    while (selectBox.options.length > 1) {
+        selectBox.remove(1);
+    }
+}
+
+placeCollectPointHistoric.addEventListener("change", () => {
+    removeAll(placeNameHistoric)
+
+    $.ajax({
+        type: "GET",
+        url: `https://localhost:7249/residue?email=${localStorage.getItem('userEmail')}&collectionPointId=${placeCollectPointHistoric.value}`,
+        success: (result) => {
+            result.forEach(element => {
+                placeNameHistoric.appendChild(new Option(element.name, element.id))
+            });
+        },
+        error: (jqXHR) => {
+            errorInput(placeNameHistoric, jqXHR.responseText)
+        },
+        contentType: "application/json",
+        dataType: "json",
+    });
+})
+
+
 // ABRE E FECHA MODAL ⬇️ 
 function openModalConfirmn() {
     modalConfirmn.classList.add('activeConfirmn')
@@ -19,57 +65,44 @@ function openModalConfirmn() {
 
 function closeModalConfirmn() {
     modalConfirmn.classList.remove('activeConfirmn')
-    location. reload();
+    location.reload();
 }
-
-
-
 
 
 // DUPLICA OS INPUTS ⬇️ 
 btnAddHistoric.addEventListener('click', function (event) {
-
     event.preventDefault();
-     const div2 = document.querySelector(".addHistoric").cloneNode(true)
-     document.querySelector(".addHistoric").after(div2)
-     
-
+    const div2 = document.querySelector(".addHistoric").cloneNode(true)
+    document.querySelector(".addHistoric").after(div2)
 });
 
 btnCloseHistoric.addEventListener('click', function (event) {
     const divsQuantity = document.querySelector('.formContentHistoric');
-    
+
     if (divsQuantity.length > 1) {
         document.querySelector(".addHistoric").remove();
-    }else{
+    } else {
         location.reload();
     }
 });
 
 // function removeInput() {
-   
+
 //     document.querySelector(".addHistoric").remove();
-    
+
 // }
 
 
 // VALIDAÇÃO ⬇️
 window.addEventListener("load", (event) => {
-
-
-
     form.addEventListener("submit", (e) => {
-
         e.preventDefault();
-
         checkForm();
     })
-
 
     placeCpfHistoric.addEventListener("blur", () => {
         checkInputCPF();
     })
-
 
     placeNameHistoric.addEventListener("blur", () => {
         checkInputName();
@@ -110,27 +143,27 @@ window.addEventListener("load", (event) => {
             formItem.className = "formContentHistoric"
         }
     }
-    
+
     function checkForm() {
         checkInputCPF();
         checkInputName();
         checkInputQuantity();
-    
+
         const formItems = form.querySelectorAll(".formContentHistoric");
         const isValid = [...formItems].every((item) => {
             return item.className === "formContentHistoric";
         });
-    
+
         if (isValid) {
             openModalConfirmn();
         }
     }
 
-
-    function errorInput(input, message) {
-        const formItem = input.parentElement;
-        const textMessage = formItem.querySelector("a")
-        textMessage.innerText = message;
-        formItem.className = "formContentHistoric error"
-    }
 });
+
+function errorInput(input, message) {
+    const formItem = input.parentElement;
+    const textMessage = formItem.querySelector("a")
+    textMessage.innerText = message;
+    formItem.className = "formContentHistoric error"
+}

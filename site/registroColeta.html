@@ -11,60 +11,61 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-    
+
     <title>Registro de Coletas</title>
 </head>
 
 <body>
     <header>
         <nav class="navigation">
-    
-          <a href="index.html" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
-          <div class="navHome">
-    
-            <ul class="menuNav">
-              <div id="profile">
-                <li><img src="./assets/img/perifl/Ellipse 22.png" id="profilePicture"></li>
-                <li>
-                  <p id="profileName">Jean Cleiton Souza</p>
-                </li>
-    
-                <div id="profileTextPoint">
-                  <li>
-                    <p>EcoScore:</p>
-                  </li>
-                  <li id="profilePoint"><img src="./assets/img/cadastro/planeta-terra.png" alt=""
-                      class="profilePonitImg">300 pontos</li>
-                </div>
-              </div>
-              <li class="navItem profileHome"><a href="index.html">Home</a></li>
-              <li class="navItem"><a href="pontoColeta.html">Pontos de Coleta</a></li>
-              <li class="navItem"><a href="indexTrocaPonto.html">Troca de Pontos</a></li>
-              <li class="navItem profileEditbtn">Editar Perfil</li>
-              <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
-              <li class="navItem profileExitbtn"><a href="index.html">Sair</a></li>
-              <li class="btnProfilePicture"><img src="./assets/img/perifl/Ellipse 22.png" class="profilePictureBtn"></li>
-              <div class="modalProfilePicture">
-                <div id="boxProfilePicture">
-                  <p id="profileName">Jean Cleiton Souza</p>
-                  <li id="profilePoint"><img src="./assets/img/cadastro/planeta-terra.png" alt=""
-                      class="profilePonitImg">300 pontos</li>
-                  <div id="itemsBoxProfile">
-                    <li class="navItem profileEdit"><a href="">Editar Perfil</a></li>
-                    <li class="navItem profileExit"><a href="index.html">Sair</a></li>
-                  </div>
-                </div>
-              </div>
-            </ul>
-    
-          </div>
-          <div class="navigationBar">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
+
+            <a href="index.html" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
+            <div class="navHome">
+
+                <ul class="menuNav">
+                    <div id="profile">
+                        <li><img src="./assets/img/perifl/Ellipse 22.png" id="profilePicture"></li>
+                        <li>
+                            <p id="profileName">Jean Cleiton Souza</p>
+                        </li>
+
+                        <div id="profileTextPoint">
+                            <li>
+                                <p>EcoScore:</p>
+                            </li>
+                            <li id="profilePoint"><img src="./assets/img/cadastro/planeta-terra.png" alt=""
+                                    class="profilePonitImg">300 pontos</li>
+                        </div>
+                    </div>
+                    <li class="navItem profileHome"><a href="index.html">Home</a></li>
+                    <li class="navItem"><a href="pontoColeta.html">Pontos de Coleta</a></li>
+                    <li class="navItem"><a href="indexTrocaPonto.html">Troca de Pontos</a></li>
+                    <li class="navItem profileEditbtn">Editar Perfil</li>
+                    <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
+                    <li class="navItem profileExitbtn"><a href="index.html">Sair</a></li>
+                    <li class="btnProfilePicture"><img src="./assets/img/perifl/Ellipse 22.png"
+                            class="profilePictureBtn"></li>
+                    <div class="modalProfilePicture">
+                        <div id="boxProfilePicture">
+                            <p id="profileName">Jean Cleiton Souza</p>
+                            <li id="profilePoint"><img src="./assets/img/cadastro/planeta-terra.png" alt=""
+                                    class="profilePonitImg">300 pontos</li>
+                            <div id="itemsBoxProfile">
+                                <li class="navItem profileEdit"><a href="">Editar Perfil</a></li>
+                                <li class="navItem profileExit"><a href="index.html">Sair</a></li>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+
+            </div>
+            <div class="navigationBar">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
-      </header>
+    </header>
     <main class="mainHistoric">
 
         <div class="modalContainerConfirmn ">
@@ -81,23 +82,25 @@
             </section>
 
             <form id="formHistoric" class="formHistoric">
-
+                <div class="formContentHistoric">
+                    <label for="placeCollectPointHistoric">Selecione o ponto de coleta</label>
+                    <select class="comboHistoric" id="placeCollectPointHistoric">
+                        <option value=0>Selecione</option>
+                    </select>
+                    <a>Mensagem de Erro</a>
+                </div>
                 <div class="formContentHistoric">
                     <label for="placeCpfHistoric">Digite o CPF do usuário</label>
                     <input type="text" id="placeCpfHistoric" placeholder="Digite aqui..." />
                     <a>Mensagem de Erro</a>
-
                 </div>
                 <div class="allHistoric">
                     <button id="btnAddHistoric" type="submit"> + </button>
                     <div class="addHistoric">
                         <div class="formContentHistoric">
                             <label for="placeNameHistoric">Nome do Produto</label>
-                            <select class="placeNameHistoric" id="placeNameHistoric">
-                                <option value="">Selecione</option>
-                                <option value="1">Lata de Cerveja</option>
-                                <option value="2">Long Neck</option>
-                                <option value="3">Garrafa Pet</option>
+                            <select style="width: 200px;" class="comboHistoric" id="placeNameHistoric">
+                                <option value=0>Selecione</option>
                             </select>
                             <a>Mensagem de Erro</a>
                         </div>
@@ -145,6 +148,7 @@
 </body>
 <script src="./lib/jquery/jquery.min.js"></script>
 <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="./js/registroColeta.js"></script>
 <script src="./js/nav.js"></script>
