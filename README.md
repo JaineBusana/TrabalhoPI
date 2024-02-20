@@ -68,8 +68,8 @@ além de promover uma imagem sustentável para as empresas parceiras.
   </tr>
 </table>  
 
-## 💽Requisitos
--Visual studio. Versão 17.5.4 ou superior
+## 💻Requisitos  
+-Visual studio. Versão 17.5.4 ou superior  
 -Mysql. Versão 8.0.33 ou superior
 
 ## 💽Como rodar
@@ -82,7 +82,6 @@ git clone git@github.com:JaineBusana/TrabalhoPI.git
 ```
 cd TrabalhoPI
 ```
--Inicie a 
 -Para iniciar a plicação WEB 
 ```
 cd site
