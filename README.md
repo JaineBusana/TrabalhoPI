@@ -73,8 +73,8 @@ além de promover uma imagem sustentável para as empresas parceiras.
 -Mysql. Versão 8.0.33 ou superior
 
 ## 💽Como rodar
--Abra o terminal
--Faça o clone do repositorio 
+-Abra o terminal  
+-Faça o clone do repositorio
 ```
 git clone git@github.com:JaineBusana/TrabalhoPI.git
 ```
@@ -82,7 +82,7 @@ git clone git@github.com:JaineBusana/TrabalhoPI.git
 ```
 cd TrabalhoPI
 ```
--Para iniciar a plicação WEB 
+-Para iniciar aplicação WEB 
 ```
 cd site
 ```
@@ -97,6 +97,37 @@ start index.html
   <a href = "mailto:contactcoletablu@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
   
 </div>
+
+
+
+<br> </br>  
+<img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" target="_blank">
+<img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" target="_blank">
+<img src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white" target="_blank">
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" target="_blank">
+
+
+<img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white" target="_blank">
+<img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" target="_blank">
+<img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" target="_blank">
+<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank">
+<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" target="_blank">
+<img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" target="_blank">
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
 
 
 
