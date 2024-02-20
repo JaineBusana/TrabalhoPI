@@ -1,4 +1,4 @@
-# COLETABLU
+
 <img src="https://github.com/thiago1237/Assets/blob/main/Coletablu/logo-com-slogan.png?raw=true" width="400px;" alt="Foto da Aline Kowalski "/>  
 <br>  
 
@@ -68,7 +68,14 @@ além de promover uma imagem sustentável para as empresas parceiras.
   </tr>
 </table>
 
-## Contacts:
+## 💽Como rodar
+Faça o clone do repositorio 
+
+```
+git clone git@github.com:JaineBusana/TrabalhoPI.git
+```
+
+## 📩Contacts:
 
 <div> 
   <a href="https://www.instagram.com/coleta_blu?igsh=cHI3ZGpxaHJueGVv" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
