@@ -80,11 +80,18 @@ git clone git@github.com:JaineBusana/TrabalhoPI.git
 ```
 -Acesse o local
 ```
-cd TrabalhoPI
+cd TrabalhoPI/Coletablu
 ```
+-Abra a aplicação 
+```
+start ColetaBlu.sln
+```
+-Inicie  
+![image](https://github.com/JaineBusana/TrabalhoPI/assets/104945810/c2ae7cba-b672-47c0-a96b-8d969887465e)
+
 -Para iniciar aplicação WEB 
 ```
-cd site
+cd ../site
 ```
 ```
 start index.html
