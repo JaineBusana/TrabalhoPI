@@ -48,6 +48,7 @@ window.addEventListener("load", (event) => {
                         success: (result) => {
                             localStorage.clear();
                             localStorage.setItem(`token`, result.token);
+                            localStorage.setItem(`id`, result.user.id);
                             localStorage.setItem(`userName`, result.user.name);
                             localStorage.setItem(`userType`, result.user.type);
                             location.href = "indexLogado.html";
