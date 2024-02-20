@@ -66,13 +66,29 @@ além de promover uma imagem sustentável para as empresas parceiras.
       </a>
     </td>
   </tr>
-</table>
+</table>  
+
+## 💽Requisitos
+-Visual studio. Versão 17.5.4 ou superior
+-Mysql. Versão 8.0.33 ou superior
 
 ## 💽Como rodar
-Faça o clone do repositorio 
-
+-Abra o terminal
+-Faça o clone do repositorio 
 ```
 git clone git@github.com:JaineBusana/TrabalhoPI.git
+```
+-Acesse o local
+```
+cd TrabalhoPI
+```
+-Inicie a 
+-Para iniciar a plicação WEB 
+```
+cd site
+```
+```
+start index.html
 ```
 
 ## 📩Contacts:
