@@ -233,6 +233,8 @@
 
     .footerColumn {
         display: flex;
+        align-items: center;
+
     }
 
     .footerLogo {
