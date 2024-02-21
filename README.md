@@ -69,27 +69,27 @@ além de promover uma imagem sustentável para as empresas parceiras.
 </table>  
 
 ## 💻Requisitos  
--Visual studio. Versão 17.5.4 ou superior  
--Mysql. Versão 8.0.33 ou superior
+- Visual studio. Versão 17.5.4 ou superior  
+- Mysql. Versão 8.0.33 ou superior
 
 ## 💽Como rodar
--Abra o terminal  
--Faça o clone do repositorio
+- Abra o terminal  
+- Faça o clone do repositorio
 ```
 git clone git@github.com:JaineBusana/TrabalhoPI.git
 ```
--Acesse o local
+- Acesse o local
 ```
 cd TrabalhoPI/Coletablu
 ```
--Abra a aplicação 
+- Abra a aplicação 
 ```
 start ColetaBlu.sln
 ```
--Inicie  
+- Inicie  
 ![image](https://github.com/JaineBusana/TrabalhoPI/assets/104945810/c2ae7cba-b672-47c0-a96b-8d969887465e)
 
--Para iniciar aplicação WEB 
+- Para iniciar aplicação WEB 
 ```
 cd ../site
 ```
