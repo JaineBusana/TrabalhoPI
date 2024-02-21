@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./css/pontoColeta.css" />
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/styleIndexLogado.css">
-  <link rel="stylesheet" href="./css/modalEditarPerfil.css">
+  <link rel="stylesheet" href="./css/modalPerfil.css">
   <link rel="stylesheet" href="./assets/1.3.0/css/line-awesome.css">
   <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
 
@@ -70,19 +70,19 @@
   <main class="main">
 
 
-    <div id="modalEditarPerfil">
-      <div id="backgroundEP">
-        <button class="closeModalEP" onclick="CLOSE_MODAL_PERFIL()">
-          <div class="closeModalEP">
-            <span class="barEP"></span>
-            <span class="barEP"></span>
+    <div id="modalPerfil">
+      <div id="backgroundPerfil">
+        <button class="closeModalPerfil" onclick="CLOSE_MODAL_PERFIL()">
+          <div class="closeModalPerfil">
+            <span class="barPerfil"></span>
+            <span class="barPerfil"></span>
           </div>
         </button>
-        <div id="conteinerEP">
+        <div id="conteinerPerfil1">
           <div class="formContent">
-            <h2 id="nameTitleEP">Jean Cleiton Souza</h2>
+            <h2 id="nameTitlePerfil">Jean Cleiton Souza</h2>
           </div>
-          <div id="typeCidadao">Cidadão</div>
+          <div id="typePerfil">Cidadão</div>
           <div class="formContent">
           </div>
           <div>
@@ -91,9 +91,9 @@
             <li id="profilePickup"><img src="./assets/img/perifl/icone-loja-verde-removebg-preview.png" alt=""
                 class="profilePickupImg">30 Coletas
           </div>
-          <div id="conteinerEP2">
-            <a id="changePasswordEP">Editar Perfil</a>
-            <a id="saveChangesEP" href="./index.html">Sair</a>
+          <div id="conteinerPerfil2">
+            <a id="btneditPerfil">Editar Perfil</a>
+            <a id="exitPerfil" href="./index.html">Sair</a>
           </div>
         </div>
       </div>
@@ -251,6 +251,7 @@
     </div>
 
   </footer>
+  <script src="./js/perfil.js"></script>
   <script src="./js/editarPerfil.js"></script>
   <script src="./lib/jquery/jquery.min.js"></script>
   <script src="./js/pontoColeta.js"></script>

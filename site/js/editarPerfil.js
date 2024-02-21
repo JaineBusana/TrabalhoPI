@@ -1,10 +1,32 @@
-function OPEN_MODAL_PERFIL() {
-    modalEditarPerfil.style.display = 'flex';
-}
+// function OPEN_MODAL_PERFIL() {
+//     modalEditarPerfil.style.display = 'flex';
+// }
 
-function CLOSE_MODAL_PERFIL() {
-    modalEditarPerfil.style.display = 'none';
-}
+// function CLOSE_MODAL_PERFIL() {
+//     modalEditarPerfil.style.display = 'none';
+// }
+
+// $(() => {
+//     $("#saveChangesEP").click((e) => {
+//         e.preventDefault();
+        
+//         const data = {
+//             id 
+//         };
+
+//         $.ajax({
+//             type: "GET",
+//             url: "https://localhost:7249/user",
+//             data: JSON.stringify(data),
+//             sucess: (result) => {
+//                 console.log(result);
+//             },
+//             contentType: "application/json",
+//             dataType: "json",
+//         });
+//         console.log(data);
+//     });
+// });
 
 const form = document.getElementById("conteinerEP")
 const username = document.getElementById("changeNameEP")

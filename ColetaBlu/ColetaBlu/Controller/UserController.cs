@@ -26,9 +26,9 @@ namespace ColetaBlu.Controller
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(string Email)
+        public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _userRepository.GetByEmail(Email));
+            return Ok(await _userRepository.GetById(id));
         }
 
         [HttpPost]
