@@ -55,7 +55,12 @@ placeCollectPointHistoric.addEventListener("change", () => {
         contentType: "application/json",
         dataType: "json",
     });
-})
+});
+
+function blockCollectPoint() {
+    residuos = Array.from(form.querySelectorAll('#placeNameHistoric'))
+    return residuos.some((item) => item.value != 0)
+}
 
 
 // ABRE E FECHA MODAL ⬇️ 
@@ -127,10 +132,10 @@ window.addEventListener("load", (event) => {
                     url: `https://localhost:7249/registroColeta/addMultiple`,
                     data: JSON.stringify(items),
                     complete: (jqXHR) => {
-                        if (jqXHR.status == 200){
+                        if (jqXHR.status == 200) {
                             openModalConfirmn();
                         }
-                        else{
+                        else {
                             alert(jqXHR.responseText);
                         }
                     },
@@ -139,23 +144,23 @@ window.addEventListener("load", (event) => {
                 })
             }
         }
-    })
+    });
 
     placeCpfHistoric.addEventListener("blur", () => {
         checkInputCPF();
-    })
+    });
 
     placeNameHistoric.addEventListener("blur", () => {
         checkInputName();
-    })
+    });
 
     placeQuantityHistoric.addEventListener("blur", () => {
         checkInputQuantity();
-    })
+    });
 
     placeCollectPointHistoric.addEventListener("blur", () => {
         checkInputCollectPoint();
-    })
+    });
 
     function checkInputCPF() {
         const cpfValue = placeCpfHistoric.value;
@@ -204,10 +209,6 @@ window.addEventListener("load", (event) => {
         checkInputName();
         checkInputQuantity();
         checkInputCollectPoint();
-    }
-
-    function register() {
-
     }
 });
 

@@ -92,7 +92,7 @@
                     <div class="addHistoric">
                         <div class="formContentHistoric">
                             <label for="placeNameHistoric">Nome do Resíduo</label>
-                            <select class="comboHistoric" style="width: 200px;" id="placeNameHistoric">
+                            <select onchange="placeCollectPointHistoric.disabled = blockCollectPoint()" class="comboHistoric" style="width: 200px;" id="placeNameHistoric">
                                 <option value=0>Selecione</option>
                             </select>
                             <a>Mensagem de Erro</a>
