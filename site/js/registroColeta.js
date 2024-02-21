@@ -4,10 +4,10 @@ const placeQuantityHistoric = document.getElementById("placeQuantityHistoric");
 const placeCollectPointHistoric = document.getElementById("placeCollectPointHistoric");
 const form = document.getElementById('formHistoric');
 const btnAddHistoric = document.getElementById('btnAddHistoric');
+const btnHistoric = document.getElementById('btnHistoric');
 const modal = document.querySelector('.containerHistoric');
 const btnCloseHistoric = document.getElementById('btnCloseHistoric');
 const modalConfirmn = document.querySelector('.modalContainerConfirmn')
-
 
 // $(document).ready(function () {
 //     $('.placeNameHistoric').select2();
@@ -98,6 +98,47 @@ window.addEventListener("load", (event) => {
     form.addEventListener("submit", (e) => {
         e.preventDefault();
         checkForm();
+
+        const formItems = form.querySelectorAll(".formContentHistoric");
+        const isValid = [...formItems].every((item) => {
+            return item.className === "formContentHistoric";
+        });
+
+        if (isValid) {
+            let items = [];
+            const residuos = form.querySelectorAll('#placeNameHistoric');
+            const quantidades = form.querySelectorAll('#placeQuantityHistoric');
+            const collectPoint = placeCollectPointHistoric.value;
+            const cpf = placeCpfHistoric.value;
+
+            if (residuos.length === quantidades.length) {
+                residuos.forEach((item, index) => {
+                    items.push({
+                        socialNumber: cpf,
+                        quantity: quantidades[index].value,
+                        user_Id: localStorage.getItem('userID'),
+                        collectResidue_CollectionPoint_Id: collectPoint,
+                        collectResidue_Residue_Id: item.value
+                    })
+                })
+
+                $.ajax({
+                    type: "POST",
+                    url: `https://localhost:7249/registroColeta/addMultiple`,
+                    data: JSON.stringify(items),
+                    complete: (jqXHR) => {
+                        if (jqXHR.status == 200){
+                            openModalConfirmn();
+                        }
+                        else{
+                            alert(jqXHR.responseText);
+                        }
+                    },
+                    contentType: "application/json",
+                    dataType: "json",
+                })
+            }
+        }
     })
 
     placeCpfHistoric.addEventListener("blur", () => {
@@ -110,6 +151,10 @@ window.addEventListener("load", (event) => {
 
     placeQuantityHistoric.addEventListener("blur", () => {
         checkInputQuantity();
+    })
+
+    placeCollectPointHistoric.addEventListener("blur", () => {
+        checkInputCollectPoint();
     })
 
     function checkInputCPF() {
@@ -126,7 +171,7 @@ window.addEventListener("load", (event) => {
 
     function checkInputName() {
         const nameValue = placeNameHistoric.value;
-        if (nameValue === "") {
+        if (nameValue == 0) {
             errorInput(placeNameHistoric, "Não preenchido!")
         } else {
             const formItem = placeNameHistoric.parentElement;
@@ -144,21 +189,26 @@ window.addEventListener("load", (event) => {
         }
     }
 
+    function checkInputCollectPoint() {
+        const cpValue = placeCollectPointHistoric.value;
+        if (cpValue == 0) {
+            errorInput(placeCollectPointHistoric, "Não preenchido!")
+        } else {
+            const formItem = placeCollectPointHistoric.parentElement;
+            formItem.className = "formContentHistoric"
+        }
+    }
+
     function checkForm() {
         checkInputCPF();
         checkInputName();
         checkInputQuantity();
-
-        const formItems = form.querySelectorAll(".formContentHistoric");
-        const isValid = [...formItems].every((item) => {
-            return item.className === "formContentHistoric";
-        });
-
-        if (isValid) {
-            openModalConfirmn();
-        }
+        checkInputCollectPoint();
     }
 
+    function register() {
+
+    }
 });
 
 function errorInput(input, message) {

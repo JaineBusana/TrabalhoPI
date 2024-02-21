@@ -2,6 +2,7 @@
 using ColetaBlu.DTO;
 using ColetaBlu.Repository;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace ColetaBlu.Controller
 {
@@ -23,6 +24,21 @@ namespace ColetaBlu.Controller
             try
             {
                 await _collectRepository.Add(collect);
+                return Ok();
+            }
+            catch (Exception erro)
+            {
+                return BadRequest($"Não foi possível registrar a coleta. Mensagem: {erro.Message}");
+            }
+        }
+
+        [HttpPost]
+        [Route("addMultiple")]
+        public async Task<IActionResult> AddMultiple(IEnumerable<CollectDTO> collects)
+        {
+            try
+            {
+                await _collectRepository.AddMultiple(collects);
                 return Ok();
             }
             catch (Exception erro)

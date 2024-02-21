@@ -13,6 +13,7 @@ builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddTransient<IUserRepository, UserRepository>();
 builder.Services.AddTransient<IResidueRepository, ResidueRepository>();
+builder.Services.AddTransient<ICollectRepository, CollectRepository>();
 builder.Services.AddTransient<IPontoColetaRepository, PontoColetaRepository>();
 builder.Services.AddTransient<IPointRegistrationRepository, PointRegistrationRepository>();
 

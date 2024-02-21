@@ -14,5 +14,13 @@ namespace ColetaBlu.Repository
             ";
             await Execute(sql, collect);
         }
+
+        public async Task AddMultiple(IEnumerable<CollectDTO> collects)
+        {
+            foreach (var collect in collects)
+            {
+                await Add(collect);
+            }
+        }
     }
 }

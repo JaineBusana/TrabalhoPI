@@ -18,17 +18,15 @@
 <body>
     <header>
         <nav class="navigation">
-
-            <a href="index.html" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
+            <a href="index.html" class="logoNav"><img style="width: 80%" src="./assets/img/logo-com-slogan.png"
+                    alt="Logo ColetabLu"></a>
             <div class="navHome">
-
                 <ul class="menuNav">
                     <div id="profile">
                         <li><img src="./assets/img/perifl/Ellipse 22.png" id="profilePicture"></li>
                         <li>
                             <p id="profileName">Jean Cleiton Souza</p>
                         </li>
-
                         <div id="profileTextPoint">
                             <li>
                                 <p>EcoScore:</p>
@@ -57,7 +55,6 @@
                         </div>
                     </div>
                 </ul>
-
             </div>
             <div class="navigationBar">
                 <span class="bar"></span>
@@ -67,20 +64,16 @@
         </nav>
     </header>
     <main class="mainHistoric">
-
         <div class="modalContainerConfirmn ">
             <div class="modalConfirmn ">
                 <span> Registro Salvo!</span>
                 <button class="btnConfirmn" onclick="closeModalConfirmn()">OK</button>
             </div>
         </div>
-
-
         <div class="containerHistoric">
             <section class="headerHistoric">
                 <h1>Registro de EcoScore</h1>
             </section>
-
             <form id="formHistoric" class="formHistoric">
                 <div class="formContentHistoric">
                     <label for="placeCollectPointHistoric">Selecione o ponto de coleta</label>
@@ -98,13 +91,12 @@
                     <button id="btnAddHistoric" type="submit"> + </button>
                     <div class="addHistoric">
                         <div class="formContentHistoric">
-                            <label for="placeNameHistoric">Nome do Produto</label>
-                            <select style="width: 200px;" class="comboHistoric" id="placeNameHistoric">
+                            <label for="placeNameHistoric">Nome do Resíduo</label>
+                            <select class="comboHistoric" style="width: 200px;" id="placeNameHistoric">
                                 <option value=0>Selecione</option>
                             </select>
                             <a>Mensagem de Erro</a>
                         </div>
-
                         <div class="formContentHistoric ">
                             <label for="placeQuantityHistoric">Quantidade</label>
                             <input type="text" id="placeQuantityHistoric" placeholder="Digite aqui..." />
@@ -119,7 +111,6 @@
                 </div>
             </form>
         </div>
-
     </main>
     <footer>
         <div class="footerImgMobile">
@@ -142,9 +133,7 @@
             </div>
             </form>
         </div>
-
     </footer>
-
 </body>
 <script src="./lib/jquery/jquery.min.js"></script>
 <script src="https://cdn.tailwindcss.com"></script>
@@ -152,7 +141,5 @@
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="./js/registroColeta.js"></script>
 <script src="./js/nav.js"></script>
-
-
 
 </html>
