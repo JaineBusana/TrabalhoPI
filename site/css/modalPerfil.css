@@ -18,7 +18,7 @@
     src: url("../assets/fonts/Nunito-Regular.ttf")
 }
 
-#modalEditarPerfil {
+#modalPerfil {
     background-color: rgba(0,0,0,.35);
     top: 0;
     bottom: 0;
@@ -31,7 +31,7 @@
     justify-content: center;
 }
 
-#conteinerEP {
+#conteinerPerfil1 {
     display: grid;
     justify-items: start;
     justify-content: start;
@@ -41,7 +41,7 @@
     padding-right: 50px;
 }
 
-#backgroundEP {
+#backgroundPerfil {
     background-color: #FFF;
     border-radius: 22px;
 }
@@ -58,7 +58,7 @@
     
 }
 
-#changePasswordEP {
+#btneditPerfil {
     color: #FFF;
     font-size: 17px;
     font-style: normal;
@@ -73,12 +73,12 @@
     cursor: pointer;
 }
 
-#conteinerEP2 {
+#conteinerPerfil2 {
     display: flex;
     flex-direction: column;
 }
 
-#saveChangesEP {
+#exitPerfil {
     color: #FFF;
     font-size: 17px;
     font-style: normal;
@@ -101,13 +101,13 @@
     font-family: mukta_bold;
 }
 
-#nameTitleEP {
+#nameTitlePerfil {
     font-size: 32px;
     color: #6A994E;
     font-family: mukta_bold;
 }
 
-#typeCidadao {
+#typePerfil {
     font-size: 20px;
     color: #6A994E;
     font-family: mukta_bold;
@@ -128,21 +128,21 @@
     transition: all 0.3s !important;
 }
 
-.closeModalEP {
+.closeModalPerfil {
     margin-top: 8px !important;
     margin-left: 6px !important;
     margin-bottom: 13px !important;
 }
  
-.barEP:nth-child(1) {
+.barPerfil:nth-child(1) {
     transform: translateY(8px) rotate(45deg) !important;
 }
  
-.barEP:nth-child(2) {
+.barPerfil:nth-child(2) {
     transform: translateY(-0px) rotate(-45deg) !important;
 }
 
-.barEP {
+.barPerfil {
     display: flex !important;
     width: 28px !important;
     height: 3px !important;

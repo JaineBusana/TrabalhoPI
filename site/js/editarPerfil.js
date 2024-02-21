@@ -1,10 +1,10 @@
-function OPEN_MODAL_PERFIL() {
-    modalEditarPerfil.style.display = 'flex';
-}
+// function OPEN_MODAL_PERFIL() {
+//     modalEditarPerfil.style.display = 'flex';
+// }
 
-function CLOSE_MODAL_PERFIL() {
-    modalEditarPerfil.style.display = 'none';
-}
+// function CLOSE_MODAL_PERFIL() {
+//     modalEditarPerfil.style.display = 'none';
+// }
 
 const form = document.getElementById("conteinerEP")
 const username = document.getElementById("changeNameEP")
