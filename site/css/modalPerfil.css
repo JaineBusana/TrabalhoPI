@@ -1,0 +1,167 @@
+@font-face {
+ 
+    font-family: "mukta_bold";
+    src: url("../assets/fonts/pontoColeta/Mukta-Bold.ttf")
+}
+ 
+ 
+@font-face {
+ 
+    font-family: "mukta_medium";
+    src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
+}
+
+ 
+@font-face {
+ 
+    font-family: "Nunito_Regular";
+    src: url("../assets/fonts/Nunito-Regular.ttf")
+}
+
+#modalEditarPerfil {
+    background-color: rgba(0,0,0,.35);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 2;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#conteinerEP {
+    display: grid;
+    justify-items: start;
+    justify-content: start;
+    width: fit-content;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#backgroundEP {
+    background-color: #FFF;
+    border-radius: 22px;
+}
+
+#changeNameEP {
+    border: 2px solid #D3E49E;
+    width: 250px;
+    
+}
+
+#changeEmailEP {
+    border: 2px solid #D3E49E;
+    width: 250px;
+    
+}
+
+#changePasswordEP {
+    color: #FFF;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 10px;
+    margin-left: 145px;
+    border-radius: 22px;
+    background-color: #6A994E;
+    padding-inline: 10px;
+    padding-block: 3px;
+    cursor: pointer;
+}
+
+#conteinerEP2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#saveChangesEP {
+    color: #FFF;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 10px;
+    margin-left: 145px;
+    border-radius: 22px;
+    background-color: #6A994E;
+    padding-inline: 10px;
+    padding-block: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#editarPerfilTitle {
+    font-size: 32px;
+    color: #6A994E;
+    font-family: mukta_bold;
+}
+
+#nameTitleEP {
+    font-size: 32px;
+    color: #6A994E;
+    font-family: mukta_bold;
+}
+
+#typeCidadao {
+    font-size: 20px;
+    color: #6A994E;
+    font-family: mukta_bold;
+}
+
+#emailTitleEP {
+    font-family: mukta_bold;
+    margin-top: 10px;
+}
+
+.barModalEP {
+    display: flex !important;
+    width: 20px !important;
+    height: 3px !important;
+    border-radius: 3px !important;
+    background: #6A994E !important;
+    margin: 5px auto !important;
+    transition: all 0.3s !important;
+}
+
+.closeModalEP {
+    margin-top: 8px !important;
+    margin-left: 6px !important;
+    margin-bottom: 13px !important;
+}
+ 
+.barEP:nth-child(1) {
+    transform: translateY(8px) rotate(45deg) !important;
+}
+ 
+.barEP:nth-child(2) {
+    transform: translateY(-0px) rotate(-45deg) !important;
+}
+
+.barEP {
+    display: flex !important;
+    width: 28px !important;
+    height: 3px !important;
+    border-radius: 3px !important;
+    background: #6A994E !important;
+    margin: 5px auto !important;
+    transition: all 0.3s !important;
+}
+
+.formContent a {
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+    display: flex;
+}
+.formContent.error input {
+    border-color: #ff3b25;
+}
+.formContent.error a {
+    color: #ff3b25;
+    visibility: visible;
+}
