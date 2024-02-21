@@ -10,25 +10,18 @@ function CLOSE_MODAL_LOGIN() {
 
 // teste
 window.addEventListener("load", (event) => {
-
-    
     $('body').on('click', '#login', (event) => {
+        event.preventDefault()
 
         const usuario = document.querySelector(`#insertUserLogin`)
         const senha = document.querySelector(`#insertPasswordLogin`)
-        
-
-        event.preventDefault();
         const errorMessage = document.querySelector('.msg')
-
         const value = {
             usuario: usuario.value,
             senha: senha.value,
         }
 
-
         if (value.usuario === '' || value.senha === '') {
-
             errorMessage.innerHTML = "Preencha todos os campos";
             errorMessage.classList.add("error");
 
@@ -39,22 +32,14 @@ window.addEventListener("load", (event) => {
         }
         else {
             $(() => {
-
                 if (!!localStorage.getItem(`token`)) {
-                    $.get('indexLogado.html', (result) => {
-                        $('header').html(result);
-                    });
-
+                    location.href = "indexLogado.html";
                 }
-                $("#login").click((e) => {
-                    e.preventDefault();
-
-
+                else {
                     const data = {
                         email: $("#insertUserLogin").val(),
                         password: $("#insertPasswordLogin").val()
-                    }; 
-
+                    };
 
                     $.ajax({
                         type: "POST",
@@ -63,6 +48,7 @@ window.addEventListener("load", (event) => {
                         success: (result) => {
                             localStorage.clear();
                             localStorage.setItem(`token`, result.token);
+                            localStorage.setItem(`id`, result.user.id);
                             localStorage.setItem(`userName`, result.user.name);
                             localStorage.setItem('userEmail', result.user.email);
                             localStorage.setItem(`userType`, result.user.type);
@@ -71,7 +57,7 @@ window.addEventListener("load", (event) => {
                         contentType: "application/json",
                         dataType: "json",
                     });
-                });
+                }
             });
         }
     })

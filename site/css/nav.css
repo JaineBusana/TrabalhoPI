@@ -9,6 +9,7 @@
     font-family: "mukta_medium";
     src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -38,7 +39,7 @@ body {
 .navigation img {
     width: 30%;
     min-width: 100px;
-    
+
 }
 
 .navigation ul {
@@ -84,7 +85,9 @@ body {
 
 }
 
-
+.aNavPerfil {
+    color: #FFF;
+}
 
 #owl-demo .item img {
     display: block;
@@ -97,30 +100,31 @@ body {
     max-width: 1200px;
 
 }
-.carousel1 img{
+
+.carousel1 img {
     width: 80%;
     height: 400px;
-    
+
 }
 
 section {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px; 
+    margin-top: 10px;
 }
 
 @media(max-width:970px) {
     .navigation {
         padding: 18px 20px;
         position: relative;
-        z-index: 1001; 
+        z-index: 1001;
 
     }
 
     .logoNav {
         width: 45%;
-    
+
     }
 
     .navigationBar {
@@ -167,13 +171,13 @@ section {
         max-width: 600px;
         position: absolute;
         z-index: 1;
-        
+
 
     }
 
-    .carousel1 img{
+    .carousel1 img {
         height: auto;
-        
+
     }
 
     section {
@@ -182,10 +186,10 @@ section {
         justify-content: center;
     }
 
-    .navigation ul {  
+    .navigation ul {
         padding-top: 50px;
         gap: 3rem;
-    
+
     }
 
 }

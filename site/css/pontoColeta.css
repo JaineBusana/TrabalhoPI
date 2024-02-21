@@ -69,7 +69,8 @@
     /* position: relative; */
     width: 359px;
     height: 43px;
-    border-radius: 22px;
+    border: none;
+    outline: none;
     background-color: #FFFFFF;
     color: #6A994E;
     font-family: mukta_medium;
@@ -154,10 +155,10 @@
 }
 
 .cardMeuPonto {
-    background-image: url(../assets/img/estabelecimento.jpg);
+    background-image: url(../assets/img/pontoColeta/estabelecimento.jpg);
     background-repeat: no-repeat;
-    background-size: 250px 350px;
-    padding-left: 250px;
+    background-size: 280px 350px;
+    padding-left: 280px;
     border-left: 20px solid;
     padding-top: 0px;
     position: absolute;
@@ -165,7 +166,7 @@
     visibility: hidden;
     margin-top: -200px;
     border-top: 0px;
-    width: 70%;
+    width: 80%;
     max-width: 900px;
     height: 350px;
     color: #6A994E;
@@ -181,10 +182,38 @@
 .cardMeuPonto.ativo {
     visibility: visible;
 }
-#infoestabelecimento{
-    
+
+.card {
+    width: 120%;
+    border-radius: 20px;
+    border: 1PX solid #CCC;
+    padding: 25px;
+    border-left: 20px solid #6A994E; 
+    color: #000000; 
+    background-color: #FFFFFF;
+
+}
+
+
+
+#textcardLocal {
+    padding: 5px;
+    margin: 5px;
+}
+
+.contentCard {
+    visibility: hidden;
+}
+
+.contentCard.ativo {
+    visibility: visible;
+}
+
+#infoestabelecimento {
+
     margin-top: 125px;
 }
+
 .infoLocate {
     width: 100%;
     margin-left: 15px;
@@ -209,7 +238,8 @@
     text-align: center;
 
 }
-.cardResidue{
+
+.cardResidue {
     display: grid;
     align-items: center;
     justify-content: center;
@@ -330,12 +360,13 @@
     margin-left: 33px;
     color: black;
     font-family: mukta_medium;
-    font-size: 15px;
+        
     gap: 4px;
     height: 50%;
 }
 
 #allCards {
+    margin-left: 30px;
     display: flex;
     COLUMN-GAP: 55px;
 
@@ -349,6 +380,7 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     width: 140px;
+    
 }
 
 .titleCard {
@@ -358,20 +390,19 @@
 
 
 #nameCard {
-
-
     font-family: mukta_bold;
-    font-size: 26px;
+    font-size: 22px;
     margin-left: 0 !important;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 #nameCard:hover {
     color: #6A994E;
-    animation: animacaoTexto 20s;
+    /**animation: animacaoTexto 20s; ANIMAÇÃO TEXTO COMENTADA**/ 
 }
 
-@keyframes animacaoTexto {
+/* @keyframes animacaoTexto {
     0% {
         opacity: 0, 5;
         transform: translateY(-10px);
@@ -380,8 +411,8 @@
     100% {
         opacity: 1;
         transform: translateY(-10px);
-    }
-}
+    } */
+
 
 @media(min-width: 750px) {
 
@@ -534,17 +565,17 @@
 
 
         font-family: mukta_bold;
-        font-size: 26px;
+        font-size: 22px;
         margin-left: 0 !important;
         cursor: pointer;
     }
 
     #nameCard:hover {
         color: #6A994E;
-        animation: animacaoTexto 20s;
+        /**animation: animacaoTexto 20s;**/
     }
 
-    @keyframes animacaoTexto {
+    /* @keyframes animacaoTexto {
         0% {
             opacity: 0, 5;
             transform: translateY(-10px);
@@ -554,7 +585,7 @@
             opacity: 1;
             transform: translateY(-10px);
         }
-    }
+    } */
 
     @media(min-width: 750px) {
 

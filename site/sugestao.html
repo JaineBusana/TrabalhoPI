@@ -14,6 +14,28 @@
   <title>Deixe sua sugestão!</title>
 </head>
 
+<header>
+  <nav class="navigation">
+
+    <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
+    <div class="navHome">
+      <ul class="menuNav">
+        <li class="navItem "><a href="index.html">Home</a></li>
+        <li class="navItem"><a href="pontoColeta.html">Pontos de coleta</a></li>
+        <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
+        <li class="navItem" onclick="SHOW_MODAL_LOGIN()"><a href="#">Login</a></li>
+
+
+      </ul>
+    </div>
+    <div class="navigationBar" >
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+</header>
+
 <body>
   <form id="formLogin">
     <div id="modalLogin" class="">
@@ -31,7 +53,7 @@
           </div>
           <div class="msg"> </div>
           <div class="">
-            <h1 id="userLogin" class="mt-10">Usuário</h1>
+            <h1 id="userLogin" class="mt-10">Email</h1>
           </div>
           <div>
             <input id="insertUserLogin" class="mb-2 " type="text" onfocus="this.value='';">
@@ -58,27 +80,6 @@
       </div>
     </div>
   </form>
-  <header>
-    <nav class="navigation">
-
-      <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
-      <div class="navHome">
-        <ul class="menuNav">
-          <li class="navItem "><a href="index.html">Home</a></li>
-          <li class="navItem"><a href="pontoColeta.html">Pontos de coleta</a></li>
-          <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
-          <li class="navItem" onclick="SHOW_MODAL_LOGIN()"><a href="#">Login</a></li>
-
-
-        </ul>
-      </div>
-      <div class="navigationBar">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </nav>
-  </header>
   <script src="./js/nav.js"></script>
   <main id="suggestion">
     <img id="coletaBluImgSuggestion" src="./assets/img/sugestao/sugestao.jpg">
@@ -94,7 +95,8 @@
         </div>
         <div class="msgSuggestion"></div>
         <button type="submit" id="btnEnviarSugestão">Enviar Sugestão</button>
-        <input type="hidden" name="_next" value="http://127.0.0.1:3000/index.html">
+        <input type="hidden" name="_next" value="http://127.0.0.1:3000/site/index.html">
+
         <input type="hidden" name="_captcha" value="false">
 
 
@@ -127,8 +129,11 @@
     </div>
 
   </footer>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./js/sugestao.js"></script>
   <script src="./js/nav.js"></script>
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <script src="./js/login.js"></script>
 </body>
 

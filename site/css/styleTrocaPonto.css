@@ -16,7 +16,10 @@
     justify-content: center;
     align-items: center;
 }
-
+.logoNav img{
+    width: 100%;
+    max-width: 210px;
+}
 
 #motivationalPhrase,
 #motivationalPhrase1 {
@@ -134,7 +137,8 @@
     display: block;
     align-items: center;
     padding-top: 8px;
-    width: 90%;
+    width: 90% !important;
+    max-width: 1200px;
     cursor: pointer;
     border-radius: 22px;
     height: 300px;

@@ -6,6 +6,5 @@ namespace ColetaBlu.DTO
     {
         public string? Token { get; set; }
         public UserEntity? User { get; set; }
-
     }
 }
