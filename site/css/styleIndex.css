@@ -262,4 +262,9 @@
         align-items: center;
     }
 
+    .owl-carousel img{
+        border-radius: 50px;
+    }
+    
+
 }
