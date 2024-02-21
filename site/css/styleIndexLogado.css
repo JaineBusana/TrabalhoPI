@@ -56,9 +56,11 @@ body {
 
 .navItem {
     font-size: 20px;
+    color: #6A994E !important;
+}
+.navItem a{
     color: #6A994E;
 }
-
 .navigationBar {
     cursor: pointer;
     display: none;
@@ -95,11 +97,6 @@ body {
     display: flex;
     justify-content: center;
     width: 100px;
-    cursor: pointer;
-}
-
-.btnProfilePicture:hover {
-    animation: animacaoTexto 20s;
 }
 
 .modalProfilePicture {
@@ -295,7 +292,7 @@ section {
 
     .profileEdit,
     .profileExit,
-    .btnProfilePicture,
+    .profilePictureBtn,
     .profileHome,
     #boxProfilePicture {
         display: none;

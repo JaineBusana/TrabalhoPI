@@ -27,5 +27,4 @@ namespace ColetaBlu.Infrastructure
             return tokenHandler.WriteToken(token);
         }
     }
-
 }

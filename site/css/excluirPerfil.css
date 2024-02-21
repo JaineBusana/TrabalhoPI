@@ -1,103 +1,103 @@
 @font-face {
 
-    font-family: "mukta_bold";
-    src: url("../assets/fonts/pontoColeta/Mukta-Bold.ttf")
+  font-family: "mukta_bold";
+  src: url("../assets/fonts/pontoColeta/Mukta-Bold.ttf")
 }
 
 
 @font-face {
 
-    font-family: "mukta_medium";
-    src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
+  font-family: "mukta_medium";
+  src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
 }
-  
 
-  span p{
-    margin: 15px;
-  
+
+span p{
+  margin: 15px;
+
+}
+
+/* ADICIONAR NO ADICIONAR PERFIL */
+.active {
+  display: flex ;
+}
+
+.active .modalDelete {
+  animation: modal .4s ;
+} 
+
+.modalContainerDelete {
+  width: 100vw;
+  position: fixed;
+  top: 30px;
+  display: flex;
+  z-index: 999;
+  justify-content: center;
+}
+
+.modalDelete {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: #FEFEEB;
+  border-radius: 10px;
+  width: 30%;
+  font-family: mukta_medium;
+  text-align: justify;
+}
+
+.modalDelete img{
+    max-width: 25%;
+    height: auto;
+    margin: auto;
+}
+
+
+span {
+  margin: 10px auto;
+}
+
+.btnsDelete {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.btnsDelete button {
+  font-size: medium;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+  font-family: mukta_medium;
+}
+
+.btnOK {
+ background-color: #6A994E;
+}
+
+.btnClose {
+  background-color: brown;
+ }
+
+ @keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
   }
-  
-  /* ADICIONAR NO ADICIONAR PERFIL */
-  .active {
-    display: flex ;
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
-  
-  .active .modalDelete {
-    animation: modal .4s ;
-  } 
-  
-  .modalContainerDelete {
-    width: 100vw;
-    position: fixed;
-    top: 30px;
-    display: flex;
-    z-index: 999;
-    justify-content: center;
-  }
-  
+}
+ @media (max-width: 500px) {
   .modalDelete {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    background-color: #FEFEEB;
-    border-radius: 10px;
-    width: 30%;
-    font-family: mukta_medium;
-    text-align: justify;
-  }
-
-  .modalDelete img{
-      max-width: 25%;
-      height: auto;
-      margin: auto;
-  }
-  
-  
-  span {
-    margin: 10px auto;
-  }
-  
-  .btnsDelete {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-  }
-  
-  .btnsDelete button {
-    font-size: medium;
     padding: 10px;
-    border: none;
-    border-radius: 15px;
-    color: white;
-    cursor: pointer;
-    font-family: mukta_medium;
+    width: 80%;
+  }   
+
+  span, .btnsDelete button {
+    font-size: smaller;
   }
-  
-  .btnOK {
-   background-color: #6A994E;
-  }
-  
-  .btnClose {
-    background-color: brown;
-   }
-  
-   @keyframes modal {
-    from {
-      opacity: 0;
-      transform: translate3d(0, -60px, 0);
-    }
-    to {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-    }
-  }
-   @media (max-width: 500px) {
-    .modalDelete {
-      padding: 10px;
-      width: 80%;
-    }   
-  
-    span, .btnsDelete button {
-      font-size: smaller;
-    }
-   }
+ }

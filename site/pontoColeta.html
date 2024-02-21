@@ -2,6 +2,7 @@
 <html lang="en">
 
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,6 @@
     <link rel="stylesheet" href="./css/pontoColeta.css" />
     <link rel="stylesheet" href="./css/styleIndex.css">
     <link rel="stylesheet" href="./css/nav.css">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/StyleLogin.css">
     <link rel="stylesheet" href="./assets/1.3.0/css/line-awesome.css">
     <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
@@ -32,47 +32,48 @@
 <body>
     <form id="formLogin">
         <div id="modalLogin" class="">
-          <div id="backgroundLogin" class="flex">
-            <div>
-              <button class="closeModal" onclick="CLOSE_MODAL_LOGIN()">
-                <div class="menuLogin">
-                  <span class="barLogin"></span>
-                  <span class="barLogin"></span>
+            <div id="backgroundLogin" class="flex">
+                <div>
+                    <button class="closeModal" onclick="CLOSE_MODAL_LOGIN()">
+                        <div class="menuLogin">
+                            <span class="barLogin"></span>
+                            <span class="barLogin"></span>
+                        </div>
+                    </button>
+                    <div class="flex">
+                        <img id="logo" class="h-20" src="./assets/img/MicrosoftTeams-image (7).png"
+                            alt="Logo da ColetaBlu">
+                        <h1 class=" mt-10 enterLogin">Entrar</h1>
+                    </div>
+                    <div class="msg"> </div>
+                    <div class="">
+                        <h1 id="userLogin" class="mt-10">Usuário</h1>
+                    </div>
+                    <div>
+                        <input id="insertUserLogin" class="mb-2 " type="text" onfocus="this.value='';">
+                    </div>
+                    <div>
+                        <h1 id="passwordLogin" class="">Senha</h1>
+                    </div>
+                    <div class="flex">
+                        <input id="insertPasswordLogin" class="" type="password" onfocus="this.value='';">
+                    </div>
+                    <div>
+                        <a id="forgotPasswordLogin" class="" href="">Esqueci a senha!</a>
+                    </div>
+                    <div>
+                        <button id="login">Login</button>
+                    </div>
+                    <div class="flex">
+                        <h1 class="registerLogin ml-6">Não tem uma conta?</h1>
+                        <a id="linkRegisterLogin" class="registerLogin ml-1" href="cadastro.html">Cadastre-se!</a>
+                    </div>
                 </div>
-              </button>
-              <div class="flex">
-                <img id="logo" class="h-20" src="./assets/img/MicrosoftTeams-image (7).png" alt="Logo da ColetaBlu">
-                <h1 class=" mt-10 enterLogin">Entrar</h1>
-              </div>
-              <div class="msg"> </div>
-              <div class="">
-                <h1 id="userLogin" class="mt-10">Usuário</h1>
-              </div>
-              <div>
-                <input id="insertUserLogin" class="mb-2 " type="text" onfocus="this.value='';">
-              </div>
-              <div>
-                <h1 id="passwordLogin" class="">Senha</h1>
-              </div>
-              <div class="flex">
-                <input id="insertPasswordLogin" class="" type="password" onfocus="this.value='';">
-              </div>
-              <div>
-                <a id="forgotPasswordLogin" class="" href="">Esqueci a senha!</a>
-              </div>
-              <div>
-                <button id="login">Login</button>
-              </div>
-              <div class="flex">
-                <h1 class="registerLogin ml-6">Não tem uma conta?</h1>
-                <a id="linkRegisterLogin" class="registerLogin ml-1" href="cadastro.html">Cadastre-se!</a>
-              </div>
+                <img id="backgroundPhoto" src="./assets/img/Foto_Fundo_Login.jpg" alt="Imagen fundo"
+                    style="max-width:51%;height:auto;">
             </div>
-            <img id="backgroundPhoto" src="./assets/img/Foto_Fundo_Login.jpg" alt="Imagen fundo"
-              style="max-width:51%;height:auto;">
-          </div>
         </div>
-      </form>
+    </form>
     <header>
         <nav class="navigation">
 
@@ -133,10 +134,46 @@
         <h1 id="localNext"> Pontos Próximos</h1>
         <div class="grid grid-cols-1"></div>
 
+        <!-- CARD PROVISORIO -->
+
+        <div class="cardMeuPonto">
+            <div class="infoLocate">
+                <h1>Mercado Dona Rosa</h1>
+                <div id="infoestabelecimento">
+                    <h3>Endereço</h3>
+                    <p>Rua Alameda Rio Branco, N&deg; 1888
+                    </p>
+                    <h3>Bairro</h3>
+                    <p>Jardim Blumenau</p>
+                    <h3>Telefone</h3>
+                    <p>(47) 99999-9999</p>
+                </div>
+            </div>
+            <div class="infoResidue">
+                <button id="btnCloseModalPontoColeta">
+                    <div class="menuCloseModalPontoColeta">
+                        <img src="./assets/img/cancelar.png" alt="">
+                    </div>
+                </button>
+                <h2>É coletado</h2> <br>
+                <section class="owl-carousel infoResiduoColeta">
+                    <div class="item cardResidue">
+                        <h3>Patrocinador X</h3>
+                        <p>longneck</p>
+                        <p>garrafa pet 500ml</p>
+                    </div>
+                    <div class="item cardResidue">
+                        <h3>Patrocinador X2</h3>
+                        <p>Embalgem</p>
+                        <p>garrafa pet</p>
+                    </div>
+                </section>
+            </div>
+
+        </div>
 
 
-
-        <div class="modalContainerPontoColeta">
+        <!-- <div class="modalContainerPontoColeta">
             <div class="topModalPontoColeta">
                 <img class="imagePontoColetaModal" src="./assets/img/estabelecimento.jpg" alt="imagem do estabelecimento ">
             </div>
@@ -158,37 +195,35 @@
                     </button>
                 </div>
             </div>
-        </div>
-
-
+        </div> -->
 
 
         <div class="contentCard">
 
+            <div id="allCards">
 
-        <div id="allCards">
+                <div class="card ">
+                    <div id="openModalPontoColeta">
+                        <p id="nameCard" class="card"> Mercado Dona Rosa</p>
+                    </div>
+                    <p class="titleCard">Bairro </p>
+                    <p class="obsCard"> Jardim Blumenau </p>
+                    <p class="titleCard">Residuo: </p>
+                    <p class="address">Garraga pet</p>
 
-            <div class="card ">
-                <div id="openModalPontoColeta">
-                    <p id="nameCard" class="card"> Mercado Dona Rosa</p>
+
                 </div>
-                <p class="titleCard">Endereço: </p>
-                <p class="address">Alameda Rio Branco, Blumenau</p>
-                <p class="titleCard"> Observação: </p>
-                <p class="obsCard"> Mercadorias com validade próxima </p>
+                <div class="card ">
+                    <p id="nameCard" class="card"> Loja Fictícia</p>
+                    <p class="titleCard">Endereço: </p>
+                    <p class="address">Rua, bairro </p>
+                    <p class="titleCard"> Observação: </p>
+                    <p class="obsCard"> fictícia </p>
+
+                </div>
+
 
             </div>
-            <div class="card ">
-                <p id="nameCard" class="card"> Loja Fictícia</p>
-                <p class="titleCard">Endereço: </p>
-                <p class="address">Rua, bairro </p>
-                <p class="titleCard"> Observação: </p>
-                <p class="obsCard"> fictícia </p>
-
-            </div>
-
-
-        </div>
 
     </main>
     <footer>
@@ -214,12 +249,11 @@
         </div>
 
 
-    </footer>
 
+    </footer>
+    <script src="./lib/jquery/jquery.min.js"></script>
     <script src="./js/pontoColeta.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="./js/login.js"></script>
     <script src="./js/nav.js"></script>
 </body>
-
-</html>
