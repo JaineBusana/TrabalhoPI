@@ -25,10 +25,10 @@ namespace ColetaBlu.Repository
             await Execute(sql, new { id });
         }
 
-        public async Task<UserEntity> GetByEmail(string Email)
+        public async Task<UserEntity> GetById(int id)
         {
             string sql = "SELECT * FROM User WHERE Id = @id";
-            return await GetConnection().QueryFirstAsync<UserEntity>(sql, new { Email });
+            return await GetConnection().QueryFirstAsync<UserEntity>(sql, new { id });
         }
 
         public async Task<IEnumerable<UserEntity>> Read()
