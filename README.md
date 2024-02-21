@@ -1,5 +1,5 @@
 
-<img src="https://github.com/thiago1237/Assets/blob/main/Coletablu/logo-com-slogan.png?raw=true" width="400px;" alt="Foto da Aline Kowalski "/>  
+<img src="https://github.com/thiago1237/Assets/blob/main/Coletablu/logo-com-slogan.png?raw=true" width="400px;" alt="Foto do Logo coletablu"/>  
 <br>  
 
 Nosso projeto inovador visa promover a sustentabilidade e incentivar a reciclagem, ao permitir  
@@ -69,33 +69,46 @@ além de promover uma imagem sustentável para as empresas parceiras.
 </table>  
 
 ## 💻Requisitos  
--Visual studio. Versão 17.5.4 ou superior  
--Mysql. Versão 8.0.33 ou superior
+- Visual studio. Versão 17.5.4 ou superior  
+- Mysql. Versão 8.0.33 ou superior
 
 ## 💽Como rodar
--Abra o terminal  
--Faça o clone do repositorio
+- Abra o terminal  
+- Faça o clone do repositorio
 ```
 git clone git@github.com:JaineBusana/TrabalhoPI.git
 ```
--Acesse o local
+- Acesse o local
 ```
 cd TrabalhoPI/Coletablu
 ```
--Abra a aplicação 
+- Abra a aplicação 
 ```
 start ColetaBlu.sln
 ```
--Inicie  
+- Inicie  
 ![image](https://github.com/JaineBusana/TrabalhoPI/assets/104945810/c2ae7cba-b672-47c0-a96b-8d969887465e)
 
--Para iniciar aplicação WEB 
+- Para iniciar aplicação WEB 
 ```
 cd ../site
 ```
 ```
 start index.html
 ```
+## 🪛Principais ferramentas 
+<img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" target="_blank"><img src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white" target="_blank"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" target="_blank"><img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white" target="_blank"><img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"><img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" target="_blank"><img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" target="_blank">
+<img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" target="_blank"><img src="https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white" target="_blank"><img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" target="_blank">
+
+## <img src="https://github.com/thiago1237/Assets/blob/main/Coletablu/MicrosoftTeams-image%20(7).png?raw=true" width="30px"> Conclusão 
+Em um cenário onde a sustentabilidade é uma prioridade, apresentamos com entusiasmo  
+nosso projeto inovador facilitando o processo de descarte e reciclagem de embalagens.   
+A colaboração efetiva entre membros dedicados é refletida no desenvolvimento de uma aplicação   
+robusta. Utilizando ferramentas confiáveis como Visual Studio e MySQL, buscamos   
+oferecer uma experiência consistente aos usuários. Convidamos todos a se envolver,  
+clonando nosso repositório e contribuindo para um impacto positivo no meio ambiente.  
+Agradecemos a todos que se unem a nós nesse esforço coletivo por um futuro mais sustentável.  
+Juntos, estamos construindo uma comunidade comprometida com a ecologia e pronta para fazer a diferença! 🌿🌎
 
 ## 📩Contacts:
 
@@ -108,20 +121,7 @@ start index.html
 
 
 <br> </br>  
-<img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" target="_blank">
-<img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" target="_blank">
-<img src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white" target="_blank">
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" target="_blank">
 
-
-<img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white" target="_blank">
-<img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" target="_blank">
-<img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" target="_blank">
-<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank">
-<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" target="_blank">
-<img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" target="_blank">
-<img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" target="_blank">
-<img src="https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white" target="_blank">
 
 
 
