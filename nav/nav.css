@@ -94,7 +94,10 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .navIndex {
+    .navIndex,
+    .navUsuario,
+    .navColetor
+     {
         height: 896px;
         position: fixed;
         right: -100%;
@@ -108,6 +111,12 @@
     }
 
     .navIndex.ativo {
+        right: 0;
+    }
+    .navUsuario.ativo {
+        right: 0;
+    } 
+    .navColetor.ativo {
         right: 0;
     }
 

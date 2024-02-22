@@ -1,5 +1,5 @@
 const navHome = document.querySelector('.navHome')
-const navMenu = document.querySelector('.navIndex')
+const navMenu = document.querySelector('.navUsuario')
 const navigationBar = document.querySelector('.navigationBar')
   
   
