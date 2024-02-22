@@ -56,7 +56,6 @@ namespace ColetaBlu.Repository
                          Name = @Name,
                          CPF_CNPJ = @CPF_CNPJ,
                          Email = @Email,
-                         Telephone = @Telephone,
                          Password = @Password,
                          Score = @Score
                      WHERE Id = @Id
