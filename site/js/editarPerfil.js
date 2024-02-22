@@ -1,15 +1,17 @@
-// function OPEN_MODAL_PERFIL() {
-//     modalEditarPerfil.style.display = 'flex';
-// }
+function OPEN_MODAL_EDITAR_PERFIL() {
+    modalPerfil.style.display = 'none';
+    modalEditarPerfil.style.display = 'flex';
+}
 
-// function CLOSE_MODAL_PERFIL() {
-//     modalEditarPerfil.style.display = 'none';
-// }
+function CLOSE_MODAL_EDITAR_PERFIL() {
+    modalEditarPerfil.style.display = 'none';
+    modalPerfil.style.display = 'flex';
+}
 
 // $(() => {
 //     $("#saveChangesEP").click((e) => {
 //         e.preventDefault();
-        
+
 //         const data = {
 //             id 
 //         };
@@ -31,6 +33,7 @@
 const form = document.getElementById("conteinerEP")
 const username = document.getElementById("changeNameEP")
 const email = document.getElementById("changeEmailEP")
+const password = document.getElementById("changePasswordEP")
 
 email.addEventListener('blur', () => {
     checkInputEmail();
@@ -38,10 +41,14 @@ email.addEventListener('blur', () => {
 username.addEventListener('blur', () => {
     checkInputUsername();
 })
+password.addEventListener('blur', () => {
+    checkInputPassword();
+})
 
 function checkForm() {
     checkInputUsername();
     checkInputEmail();
+    checkInputPassword();
 
     const formItems = form.querySelectorAll(".formContent")
     const isValid = [...formItems].every((item) => {
@@ -73,6 +80,21 @@ function checkInputEmail() {
     }
 
 }
+function checkInputPassword() {
+    const passwordValue = password.value;
+    if (passwordValue === "") {
+        erroInput(password, "Preencha a senha.")
+    }
+    else if (passwordValue.length < 8) {
+        erroInput(password, "A senha deve ter mais de 8 digitos.")
+    }
+    else {
+        const formItem = password.parentElement;
+        formItem.className = "formContent"
+    }
+   
+
+}
 
 function erroInput(input, message) {
     const formItem = input.parentElement;
@@ -86,7 +108,7 @@ function erroInput(input, message) {
 $(() => {
     $("#saveChangesEP").click((e) => {
         e.preventDefault();
-        
+
         const data = {
             Name: $("#changeNameEP").val(),
             Email: $("#changeEmailEP").val(),
