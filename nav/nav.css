@@ -1,0 +1,121 @@
+@font-face {
+
+    font-family: "mukta_bold";
+    src: url("../assets/fonts/pontoColeta/Mukta-Bold.ttf")
+}
+
+@font-face {
+
+    font-family: "mukta_medium";
+    src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
+}
+
+#headerNavigation {
+    background: #FEFEEB;
+    width: 100%;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    display: grid;
+    justify-content: center;
+}
+
+.barNavigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    width: 90%;
+    min-width: 400px;
+    max-width: 1200px;
+    transition: all 0.5s;
+}
+
+.barNavigation img {
+    width: 30%;
+    min-width: 150px;
+    cursor: pointer;
+    margin-right: 20%;
+}
+
+.barNavigation ul {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.barNavigation ul li a {
+    font-family: mukta_medium;
+    color: #6A994E;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+.navItem {
+    margin: 10px 0;
+    padding: 0px;
+}
+.barNavigation ul li a:hover {
+    color: #A7C957;
+
+}
+
+@media(max-width:970px) {
+
+    .navHome {
+        visibility: hidden;
+    }
+
+    .navHome.ativo {
+        visibility: visible;
+    }
+
+    .navigationBar .bar {
+        display: block;
+        width: 28px;
+        height: 3px;
+        border-radius: 3px;
+        background: #6A994E;
+        margin: 5px auto;
+        transition: all 0.3s;
+        cursor: pointer;
+
+    }
+
+    .navigationBar.ativo .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .navigationBar.ativo .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navigationBar.ativo .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navIndex {
+        height: 896px;
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 50%;
+        height: 100%;
+        flex-direction: column;
+        background: #FEFEEB;
+        transition: 0.3s;
+
+    }
+
+    .navIndex.ativo {
+        right: 0;
+    }
+
+
+    .navItem {
+        margin: 10px 0;
+        padding: 0px;
+    }
+
+
+}
