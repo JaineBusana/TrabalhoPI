@@ -106,13 +106,18 @@ function erroInput(input, message) {
 }
 
 $(() => {
+    var id = localStorage.getItem("id");
+    var type = localStorage.getItem("userType");
+    var name = localStorage.getItem("userName");
+    var email = localStorage.getItem("userEmail");
+    var password = localStorage.getItem("userPassword");
+    var socialNumber = localStorage.getItem("userSocialNumber");
+    var score = localStorage.getItem("userScore");
+    console.log(name);
+    console.log(email);
+    console.log(password);
+
     $("#saveChangesEP").click((e) => {
-        var id = localStorage.getItem("id");
-        var type = localStorage.getItem("userType");
-        var score = localStorage.getItem("userScore");
-        var socialNumber = localStorage.getItem("userSocialNumber");
-        console.log(score)
-        console.log(socialNumber)
         e.preventDefault();
 
         const data = {
@@ -129,12 +134,15 @@ $(() => {
             type: "PUT",
             url: "https://localhost:7249/user",
             data: JSON.stringify(data),
-            sucess: (result) => {
+            success: (result) => {
                 console.log(result);
+                console.log(data);
+                location.href = "index.html";
+                alert("Suas alterções foram salvas com sucesso, realize o login novamente!")
+                localStorage.clear();
             },
             contentType: "application/json",
             dataType: "json",
         });
-        console.log(data);
     });
 });

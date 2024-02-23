@@ -48,7 +48,7 @@ namespace ColetaBlu.Repository
             };
         }
 
-        public async Task Update(UserEntity user)
+        public async Task<UserEntity> Update(UserEntity user)
         {
             string sql = @"
                      UPDATE User
@@ -61,6 +61,7 @@ namespace ColetaBlu.Repository
                      WHERE Id = @Id
             ";
             await Execute(sql, user);
+            return user;
         }
     }
 }
