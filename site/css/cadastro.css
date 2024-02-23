@@ -1,142 +1,115 @@
 @font-face {
-    font-family: Fredoka;
-    src: url(../assets/fonts/Fredoka.ttf);
-}
-
-@font-face {
-    font-family: Montserrat;
-    src: url(../assets/fonts/Montserrat.ttf);
-}
-
-@font-face {
 
     font-family: "mukta_bold";
-
-    src: url("../assets/img/fonts/Mukta-Bold.ttf")
+    src: url("../assets/fonts/pontoColeta/Mukta-Bold.ttf")
 }
 
-body {
-    height: 90vh;
-    background: #94B447
-}
 
-main {
-    font-family: montserrat;
-    color: #fff;
-    align-items: center;
+@font-face {
+
+    font-family: "mukta_medium";
+    src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
+}
+.greetings {
+    display: grid;
     justify-content: center;
-
 }
 
-main h1 {
-    font-family: mukta_bold;
-    font-size: 35px;
-    color: #fff;
+aside img {
+    height: 90px;
+    margin: 10px auto;
 }
 
 aside h1 {
-    margin: 1px;
-}
-#texto {
-    color: #fff;
-    text-align: center;
-}
-#texto p{
-    color: #fff;
-    text-align: center;
-    margin: 5px;
+    font-family: mukta_bold;
+    font-size: 30px;
+    margin: auto;
 }
 
-#saudacoes{
-    display: grid;
-    direction: column;
-    
+aside p {
+    font-family: mukta_medium;
+    margin: auto;
+    text-align: center;
 }
-#saudacoes-image{
+
+.register {
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.register h1 {
+    font-family: mukta_bold;
+    margin: auto;
+    font-size: 25px;
+}
+
+#chooseAcontType {
     display: flex;
-    align-items: center;
     justify-content: center;
     margin-top: 5px;
 }
 
-#logo-image {
-    width: 90px;
+.btnSejaColetor {
+    width: 20px;
+    height: 20px;
+    border: solid 1px;
+    border-radius: 10px;
 }
-#logo-image-verde{
+
+.btnSejaColetor.active {
+    background-color: #386641;
+    border: 0px;
+}
+
+#chooseAcontType h2 {
+    font-family: mukta_bold;
+    margin: 0px 0px 3px 5px;
+
+}
+
+#textSejaColetor {
+    font-family: mukta_medium;
+    font-size: 12px;
+    text-align: center;
+}
+
+.formCadastreColetor {
     display: none;
 }
-#image-rodape {
-    visibility: hidden;
-    height: 0px;
+.formCadastreColetor.active {
+    display: none;
 }
 
-.formulario {
-    background-color: #fff;
-    max-width: 450px;
-    width: 100%;
-    margin: auto;
-    align-items: center;
+
+.formCadastreUser.active {
+    display: none;
+}
+
+.formCadastre {
+    display: flex;
     justify-content: center;
-}
-
-.formulario h1 {
-    padding: 8px;
-    text-align: center;
-    color: #000;
-
-}
-
-.formulario p{
-    margin-bottom: 10px;
-}
-#login-alternativo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-   
-}
-#face{
-    justify-self: end;
-    width: 20px;
-    margin-right: 25px;
-}
-#google{
-    width: 20px;
-    margin-left: 25px;
-}
-
-.form {
-    display: grid;
-    direction: column;
+    margin: 10px;
     align-items: center;
-    justify-content: center;
-    
-    
+    flex-direction: column;
+}
+.formCadastre label{
+    margin: 5px;
+    padding: 3px;
+}
+.formContent {
+    font-family: mukta_medium;
+
 }
 
-.form-content {
-    margin-bottom: 4px;
-    padding-bottom: 10px;
-    position: relative;
-}
-
-.form-content label {
+.formContent label {
     display: inline-block;
     margin-bottom: 4px;
     color: #000;
     font-size: 15px;
+}
 
-}
-p {
-    color: #000;
-    text-align: center;
-    padding: 10px;
-}
-#link {
-    color: #5D6E1E;
-    font-family: mukta_bold;
-    font-size: 18px;
-}
-.form-content input {
+.formContent input {
     display: block;
     width: 300px;
     height: 30px;
@@ -144,97 +117,36 @@ p {
     padding: 10px;
     border: 2px solid #b6b2b2;
     color: #000;
-
 }
 
-.form-content a {
-    position: absolute;
+#submitCadastreUser{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100px;
+    height: 50px;
+    background-color: #386641;
+    border-radius: 20px;
+}
+.btnCadastro{
+    color: white;
+}
+#textJaPossuiConta{
+text-align: center;
+}
+#textJaPossuiConta a{
+    color: #386641;
+    cursor: pointer;
+}
+.formContent a {
     bottom: -8px;
     left: 0;
     visibility: hidden;
 }
-
-.form button {
-    background-color: #3B5284;
-    color: #fff;
-    width: 100px;
-    border-radius: 14px;
-    padding: 8px;
-    border: 0;
-    font-size: 16px;
-    margin-top: 10px;
-    
-}
-#submit{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 15px;
-    
-}
-
-.form-content.error input {
+.formContent.error input {
     border-color: #ff3b25;
 }
-
-.form-content.error a {
+.formContent.error a {
     color: #ff3b25;
     visibility: visible;
-}
-
-@media(min-width: 970px) {
-
-    main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        background-color: #fff;
-        width: 1000px;
-        height: 600px;
-        margin: 110px auto;
-        border-radius: 20px;
-    }
-
-    main h1 {
-        font-size: 40px;
-        text-align: center;
-    }
-
-    #logo-image-verde {
-        width: 190px;
-        margin: 15px;
-        margin: 40px auto;
-        display: block;
-    }
-    #logo-image{
-        display: none;
-    }
-    aside {
-        width: 500px;
-        height: 600px;
-        background-color: #FAF3E1;
-        border-bottom-left-radius: 20px;
-        border-top-left-radius: 20px;
-        color: #5D6E1E;
-    }
-
-    #texto p{
-        margin-bottom: 61px;
-        color: #5D6E1E;
-        font-size: 17px;
-    }
-    #texto h1{
-        margin-bottom: 50px;
-
-        color: #5D6E1E;
-    }
-
-
-    #image-rodape {
-        height: 100px;
-        width: 600px;
-        display: block;
-        border-bottom-left-radius: 20px;
-        visibility: visible;
-    }
-
 }

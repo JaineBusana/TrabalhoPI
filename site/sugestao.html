@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="./css/styleIndex.css">
+  <link rel="stylesheet" href="css/styleSugestao.css">
+  <link rel="stylesheet" href="./css/StyleLogin.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./assets/1.3.0/css/line-awesome.css">
+  <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
+  <title>Deixe sua sugestão!</title>
+</head>
+
+<header>
+  <nav class="navigation">
+
+    <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
+    <div class="navHome">
+      <ul class="menuNav">
+        <li class="navItem "><a href="index.html">Home</a></li>
+        <li class="navItem"><a href="pontoColeta.html">Pontos de coleta</a></li>
+        <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
+        <li class="navItem" onclick="SHOW_MODAL_LOGIN()"><a href="#">Login</a></li>
+
+
+      </ul>
+    </div>
+    <div class="navigationBar" >
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+</header>
+
+<body>
+  <form id="formLogin">
+    <div id="modalLogin" class="">
+      <div id="backgroundLogin" class="flex">
+        <div>
+          <button class="closeModal" onclick="CLOSE_MODAL_LOGIN()">
+            <div class="menuLogin">
+              <span class="barLogin"></span>
+              <span class="barLogin"></span>
+            </div>
+          </button>
+          <div class="flex">
+            <img id="logo" class="h-20" src="./assets/img/MicrosoftTeams-image (7).png" alt="Logo da ColetaBlu">
+            <h1 class=" mt-10 enterLogin">Entrar</h1>
+          </div>
+          <div class="msg"> </div>
+          <div class="">
+            <h1 id="userLogin" class="mt-10">Email</h1>
+          </div>
+          <div>
+            <input id="insertUserLogin" class="mb-2 " type="text" onfocus="this.value='';">
+          </div>
+          <div>
+            <h1 id="passwordLogin" class="">Senha</h1>
+          </div>
+          <div class="flex">
+            <input id="insertPasswordLogin" class="" type="password" onfocus="this.value='';">
+          </div>
+          <div>
+            <a id="forgotPasswordLogin" class="" href="">Esqueci a senha!</a>
+          </div>
+          <div>
+            <button id="login">Login</button>
+          </div>
+          <div class="flex">
+            <h1 class="registerLogin ml-6">Não tem uma conta?</h1>
+            <a id="linkRegisterLogin" class="registerLogin ml-1" href="cadastro.html">Cadastre-se!</a>
+          </div>
+        </div>
+        <img id="backgroundPhoto" src="./assets/img/Foto_Fundo_Login.jpg" alt="Imagen fundo"
+          style="max-width:51%;height:auto;">
+      </div>
+    </div>
+  </form>
+  <script src="./js/nav.js"></script>
+  <main id="suggestion">
+    <img id="coletaBluImgSuggestion" src="./assets/img/sugestao/sugestao.jpg">
+    <div class="containerSuggestion">
+      <section class="headerSuggestion">
+        <h1>Torne-nos Melhores: Compartilhe suas Sugestões!</h1>
+      </section>
+
+      <form action="https://formsubmit.co/contactcoletablu@gmail.com" method="POST">
+        <div class="formContentSuggestion">
+          <textarea id="textSuggestion" name="message" placeholder="Digite sua mensagem aqui..." required></textarea>
+          <a>Mensagem de Erro</a>
+        </div>
+        <div class="msgSuggestion"></div>
+        <button type="submit" id="btnEnviarSugestão">Enviar Sugestão</button>
+        <input type="hidden" name="_next" value="http://127.0.0.1:3000/site/index.html">
+
+        <input type="hidden" name="_captcha" value="false">
+
+
+      </form>
+
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footerImgMobile">
+      <img id="imgPlant" src="./assets/img/rodape-img-mobile.png" alt="">
+    </div>
+    <div class="footerImgPlants">
+   
+    </div>
+    <div class="footerColumn">
+      <div class="footerLogo centralizeParagraph">
+        <img src="./assets/img/logo-com-slogan-branco.png" alt="">
+      </div>
+      <div class="footerComplaint">
+        <h1>Denúncias - Ligue 156</h1>
+        <p>A Fiscalização Ambiental no município de Blumenau é realizada através da Gerência de Fiscalização da
+          Semmas.
+          Para mais informações acesse o site:</p>
+        <a href="https://www.blumenau.sc.gov.br/governo/fundacao-do-meio-ambiente/pagina/fiscalizacao-faema">Prefeitura
+          de Blumenau</a>
+      </div>
+      </form>
+    </div>
+
+  </footer>
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./js/sugestao.js"></script>
+  <script src="./js/nav.js"></script>
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./js/login.js"></script>
+</body>
+
+</html>

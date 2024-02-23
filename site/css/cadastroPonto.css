@@ -1,0 +1,101 @@
+@font-face {
+
+    font-family: "mukta_bold";
+    src: url("../assets/fonts/pontoColeta/Mukta-Bold.ttf")
+}
+
+
+@font-face {
+
+    font-family: "mukta_medium";
+    src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
+}
+
+#mainCadastro {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: mukta_medium;
+}
+
+.containerCadastro {
+    background-color: #fafafa; /* MUDAR COR  */
+    border-radius: 22px;
+    margin: 14px;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: 0 3px 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.headerCadastro {
+    background-color: #6A994E;
+    padding: 24px;
+    text-align: center;
+    color: #FFF;
+}
+
+.formCadastro {
+    padding: 18px;
+}
+
+.formContentCadastro {
+    margin-bottom: 25px;
+    padding-bottom: 18px;
+    position: relative;
+}
+
+.formContentCadastro label {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.formContentCadastro input, select {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+    font-family: mukta_medium;
+}
+
+option{
+    font-family: mukta_medium;
+}
+
+.formContentCadastro a {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+}
+
+.formCadastro button {
+    background-color: #6A994E;
+    color: #FFF;
+    width: 100%;
+    border-radius: 22px;
+    padding: 10px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 14px;
+    font-family: mukta_medium;
+}
+
+.formContentCadastro.error input {
+    border-color: #ff3b25;
+}
+
+.formContentCadastro.error a {
+    color: #ff3b25;
+    font-size: 14px;
+    visibility: visible;
+    margin-bottom: 5px;
+}
+
+.sucess {
+    color: #307c52;
+    font-family: mukta_bold;
+}

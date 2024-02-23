@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../lib/owlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../lib/owlCarousel/dist/assets/owl.theme.default.min.css">
+    <title>barra de navegação</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="index.html" class="logo"><img src="./assets/img/logo-com-slogan.png" alt=""></a>
+            <div class="nav-home">
+                <ul class="nav-menu">
+                    <li class="nav-item "><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#">Pontos de coleta</a></li>
+                    <li class="nav-item"><a href="#">Contato</a></li>
+                    <li class="nav-item"><a href="#">Login</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="owl-carousel owl-theme carousel1">
+            <div class="item"><img src="../imagens/bannerColetablu.png"></div>
+            <div class="item"><img src="../imagens/balloons-1786430_1280.jpg"></div>
+            <div class="item"><img src="../imagens/fantasy-2506830_1920.jpg"></div>
+            <div class="item"><img src="../imagens/girl-2696947_1920.jpg"></div>
+            <div class="item"><img src="../imagens/thunderstorm-3440450_1280.jpg"></div>
+            <div class="item"><img src="../imagens/tree-736885_1920.jpg"></div>
+            <div class="item"><img src="../imagens/turntable-1337986_1280.jpg"></div>
+        </div>
+    </section>
+    <script src="../js/nav.js"></script>
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script src="../lib/owlCarousel/dist/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".carousel1").owlCarousel({
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 1000,
+                dots: false,
+                center: true,
+                items: 1,
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

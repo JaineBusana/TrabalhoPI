@@ -1,0 +1,222 @@
+#titleHistoryPage {
+    width: fit-content;
+    flex-shrink: 0;
+    color: #6A994E;
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 79px;
+    margin-top: 35px;
+}
+
+#descriptionHP {
+    width: 320px;
+}
+
+#msgSuportHP {
+    width: 350px;
+    margin-left: 10px;
+}
+
+#ImagemHP {
+    display: flex;
+    width: 220px;
+    height: 220px;
+    margin-top: 8px;
+}
+
+#conteiner1HP {
+    width: fit-content;
+    width: 450px;
+}
+
+#conteiner2HP {
+    display: flex;
+    margin-top: 40px;
+    margin-right: 380px;
+    margin-left: 380px;
+}
+
+#conteiner3HP {
+    width: 239px;
+    height: 104px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+
+#pointHP {
+    margin-left: 10px;
+}
+
+#conteiner4HP {
+    display: flex;
+    width: 350px;
+    margin-top: 10px;
+}
+
+#conteinerImagemHP {
+    justify-content: right;
+    align-items: end;
+    float: right;
+    display: flex;
+    width: 1500px;
+    padding-right: 120px;
+}
+
+.cardHistoryColectionHP {
+    background-color: #fff;
+    width: 340px;
+    height: 110px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #aaa;
+    display: flex;
+    align-items: center;
+}
+
+.symbolLocationHP {
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+}
+
+.residueHP {
+    display: flex;
+}
+
+.ecoscoreHP {
+    display: flex;
+}
+
+.nameColectionPointHP {
+    color: #6A994E;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 14px;
+}
+
+.residueColectionPointHP {
+    color: #6A994E;
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-right: 4px;
+}
+
+.residueColectionPointHP2 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.ecoscoreHP2 {
+    color: #6A994E;
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-right: 4px;
+}
+
+.ecoscoreHP3 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.dataColectionHP {
+    color: #000;
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-left: 10px;
+}
+
+.locationDataHP {
+    margin-left: 15px;
+}
+
+.conteiner5HP {
+    margin-left: 15px;
+}
+
+.lineCardHP {
+    display: flex;
+    justify-content: center;
+}
+
+.separeteHP {
+    width: 230px;
+    height: 150px;
+}
+
+#cardAreaHP {
+    margin-top: 40px;
+}
+
+@media(max-width: 970px) {
+    #ImagemHP {
+        display: none;
+        margin-top: 0px;
+    }
+
+    #titleHistoryPage {
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+
+    #conteiner3HP {
+        margin-left: 25px;
+    }
+
+    .lineCardHP {
+        display: grid;
+    }
+
+    .separeteHP {
+        width: 0px;
+        height: 35px;
+    }
+
+    .separeteHP2 {
+        height: 35px;
+    }
+
+    #marginEndHP {
+        height: 80px;
+    }
+
+    #conteiner2HP {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media(min-width: 1200px) and (max-width:1800px) {
+    #conteiner2HP {
+        margin-right: 190px;
+        margin-left: 190px;
+    }
+}

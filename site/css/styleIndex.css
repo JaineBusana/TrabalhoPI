@@ -1,0 +1,270 @@
+@font-face {
+
+    font-family: "mukta_bold";
+    src: url("../assets/fonts/pontoColeta/Mukta-Bold.ttf")
+}
+
+
+@font-face {
+
+    font-family: "mukta_medium";
+    src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
+}
+
+.index{
+    max-width: 1200px;
+    margin: auto;
+}
+.centralizeParagraph{
+    display: flex;
+    justify-content: center;
+}
+
+#paragraphQuemSomos,
+.paragraphQuemPodeUsar,
+.paragraphComoAjudamos {
+    margin: 20px 0;
+}
+
+.paragraphQuemPodeUsarImg {
+    display: none;
+}
+
+.paragraphQuemPodeUsarLogo {
+    display: flex;
+}
+
+.paragraphQuemSomosImg,
+.paragraphQuemPodeUsarLogo,
+.paragraphComoAjudamosImg,
+.footerLogo {
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.footerLogo {
+    height: 56px;
+}
+
+.paragraphQuemSomosLogoText,
+.paragraphQuemPodeUsarText,
+.paragraphComoAjudamosLogoText{
+    margin: 30px 0px;
+}
+
+.paragraphQuemSomosLogoText h1,
+.paragraphComoAjudamos h1 {
+    width: 250px;
+    font-family: mukta_bold !important;
+    font-size: 25px;
+    color: #6A994E;
+    font-weight: 700;
+}
+
+.paragraphQuemSomosLogoText p,
+.paragraphComoAjudamos p {
+    width: 250px;
+    font-family: mukta_medium !important;
+    font-size: 18px;
+    color: #6A994E;
+}
+
+.paragraphQuemSomosImgMapa {
+    height: 240px;
+}
+
+.paragraphComoAjudamos button {
+    width: 130px;
+    height: 40px;
+    border: 1px solid #6A994E;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: mukta_bold !important;
+    color: #fff;
+    background-color: #6A994E;
+}
+
+.paragraphComoAjudamosResiduos {
+    height: 280px;
+}
+
+#imgRecicleGreen {
+    margin-top: 10px;
+    border-radius: 100%;
+}
+
+.paragraphQuemPodeUsar {
+    background-color: rgba(106, 153, 78, 0.15);
+}
+
+#paragraphQuemPodeUsarLogoText {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+
+.paragraphQuemPodeUsarText h1 {
+    width: 250px;
+    font-family: mukta_bold !important;
+    font-size: 25px;
+    color: #6A994E;
+    font-weight: 700;
+}
+
+.paragraphQuemPodeUsarText p {
+    width: 250px;
+    font-family: mukta_medium !important;
+    font-size: 18px;
+    color: #6A994E;
+}
+
+.footerImgPlants {
+    display: none;
+}
+
+.footerColumn {
+    background-color: #5D6E1E;
+    color: #fff;
+    display: grid;
+    justify-content: space-around;
+}
+
+.footerLogo {
+    height: 100px;
+    width: 300px;
+    margin: 20px 0;
+}
+
+.footerComplaint {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.footerComplaint h1 {
+    font-family: mukta_bold !important;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+.footerComplaint p {
+    font-family: mukta_medium !important;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footerComplaint a {
+    font-family: mukta_bold !important;
+    font-size: 14px;
+    border: 10px solid #6A994E;
+    border-radius: 20px;
+    background-color: #6A994E;
+}
+
+
+@media(min-width: 970px) {
+
+    #paragraphQuemSomos,
+    .paragraphQuemPodeUsar,
+    .paragraphComoAjudamos {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .paragraphQuemPodeUsarImg {
+        display: flex;
+        height: 350px;
+        margin: 30px 100px;
+    }
+    .paragraphQuemPodeUsarLogo {
+        display: none;
+    }
+
+    .paragraphQuemSomosImgMapa {
+        height: 350px;
+        margin-right: 50px;
+    }
+
+    .paragraphQuemSomosText,
+    .paragraphComoAjudamosText,
+    .paragraphQuemPodeUsarText {
+        align-items: center;
+        display: grid;
+        align-content: center;
+    }
+
+    .paragraphQuemSomosLogoText h1,
+    .paragraphComoAjudamos h1,
+    .paragraphQuemPodeUsarText h1 {
+        width: 500px;
+        font-size: 25px;
+    }
+
+    .paragraphQuemSomosLogoText p,
+    .paragraphComoAjudamos p,
+    .paragraphQuemPodeUsarText p {
+        width: 500px;
+        font-size: 18px;
+    }
+
+    .paragraphComoAjudamos button {
+        width: 160px;
+        font-size: 18px;
+    }
+
+    .paragraphComoAjudamoResiduos {
+        height: 400px;
+        margin-right: 100px;
+    }
+
+.footerImgMobile {
+        display: none;
+    }
+
+    .footerImgPlants {
+        display: flex;
+        height: 165px;
+        display: flex;
+        background: url(../assets/img/img-rodape.png);
+        width: 100%;
+    }
+
+    .footerColumn {
+        display: flex;
+    }
+
+    .footerLogo {
+        height: 340px;
+        margin: 0;
+    }    
+
+    .footerLogo {
+        height: 160px;
+    }
+
+    .footerComplaint {
+        width: 400px;
+    }
+
+    .footerComplaint h1 {
+        font-size: 20px;
+    }
+
+    .footerComplaint p {
+        font-size: 18px;
+    }
+
+    .footerComplaint a {
+        height: 50px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        color: #FFF;
+    }
+
+}
