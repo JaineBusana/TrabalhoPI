@@ -24,49 +24,53 @@
 
             <a href="index.html" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
             <div class="navHome">
-      
-              <ul class="menuNav">
-                <div id="profile">
-                  <li><img src="./assets/img/perifl/Ellipse 22.png" id="profilePicture"></li>
-                  <li>
-                    <p id="profileName">Jean Cleiton Souza</p>
-                  </li>
-      
-                  <div id="profileTextPoint">
-                    <li>
-                      <p>EcoScore:</p>
-                    </li>
-                    <li id="profilePoint"><img src="./assets/img/cadastro/planeta-terra.png" alt=""
-                        class="profilePonitImg">300 pontos</li>
-                  </div>
-                </div>
-                <li class="navItem profileHome"><a href="index.html">Home</a></li>
-                <li class="navItem"><a href="pontoColeta.html">Pontos de Coleta</a></li>
-                <!-- <li class="navItem"><a href="trocadePontos.html">Troca de Pontos</a></li> -->
-                <li class="navItem profileEditbtn">Editar Perfil</li>
-                <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
-                <li class="navItem profileExitbtn"><a href="index.html">Sair</a></li>
-                <li class="btnProfilePicture"><img src="./assets/img/perifl/Ellipse 22.png" class="profilePictureBtn"></li>
-                <div class="modalProfilePicture">
-                  <div id="boxProfilePicture">
-                    <p id="profileName">Jean Cleiton Souza</p>
-                    <li id="profilePoint"><img src="./assets/img/cadastro/planeta-terra.png" alt=""
-                        class="profilePonitImg">300 pontos</li>
-                    <div id="itemsBoxProfile">
-                      <li class="navItem profileEdit"><a href="">Editar Perfil</a></li>
-                      <li class="navItem profileExit"><a href="index.html">Sair</a></li>
+                <ul class="menuNav">
+                    <div id="profile">
+                        <li><img src="./assets/img/perifl/Ellipse 22.png" id="profilePicture"></li>
+                        <li>
+                            <p id="profileName">Jean Cleiton Souza</p>
+                        </li>
+
+                        <div id="profileTextPoint">
+                            <li>
+                                <p>EcoScore:</p>
+                            </li>
+                            <li id="profilePoint"><img src="./assets/img/cadastro/planeta-terra.png" alt=""
+                                    class="profilePonitImg">
+                                <div id="divProfilePoint">300 pontos</div>
+                            </li>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </ul>
-      
+                    <li class="navItem profileHome"><a href="index.html">Home</a></li>
+                    <li class="navItem"><a href="pontoColeta.html">Pontos de Coleta</a></li>
+                    <!-- <li class="navItem"><a href="trocadePontos.html">Troca de Pontos</a></li> -->
+                    <li class="navItem profileEditbtn">Editar Perfil</li>
+                    <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
+                    <li class="navItem profileExitbtn"><a href="index.html">Sair</a></li>
+                    <li class="btnProfilePicture"><img src="./assets/img/perifl/Ellipse 22.png"
+                            class="profilePictureBtn"></li>
+                    <div class="modalProfilePicture">
+                        <div id="boxProfilePicture">
+                            <p id="profileName">Jean Cleiton Souza</p>
+                            <li id="profilePoint"><img src="./assets/img/cadastro/planeta-terra.png" alt=""
+                                    class="profilePonitImg">
+                                <div id="divProfilePoint">300 pontos</div>
+                            </li>
+                            <div id="itemsBoxProfile">
+                                <li class="navItem profileEdit"><a href="">Editar Perfil</a></li>
+                                <li class="navItem profileExit"><a href="index.html">Sair</a></li>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+
             </div>
             <div class="navigationBar">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-          </nav>
+        </nav>
     </header>
     <main class="mainTroca">
         <section class="introductoryText">
@@ -89,7 +93,7 @@
                             <span class="barCoupom"></span>
                         </div>
                         <img src="./assets/img/trocaPontos/cupom.png" alt="" class="coupomConfirmn"
-                            onclick="modalConfirmnOpen()">
+                            onclick="useCupom()">
                     </div>
                 </div>
                 <div class="modalTrocaConfirmnContent">
@@ -98,7 +102,14 @@
                             <span class="barCoupom"></span>
                             <span class="barCoupom"></span>
                         </div>
-                        <img src="./assets/img/trocaPontos/valeCupom.png" alt="" class="coupom">
+                        <div id="divConfirmCupom" style="width: 100%; height: 80%; align-self: center;">
+                            <li style="font-size: x-large; text-align: center;">CUPOM:</li>
+                            <img style="margin-left: auto; margin-right: auto; display: block;"
+                                src="./assets/img/trocaPontos/vale.png" alt="">
+                            <div id="ecoScore">EcoScore:</div>
+                            <div id="ecoScorePoint">300 Pontos</div>
+                        </div>
+
                     </div>
                 </div>
                 <h1 class="tittleCardTroca"> Empresa de Bebidas X</h1>

@@ -70,6 +70,7 @@ window.addEventListener("load", (event) => {
                             localStorage.setItem(`userEmail`, result.user.email);
                             localStorage.setItem(`userName`, result.user.name);
                             localStorage.setItem(`userType`, result.user.type);
+                            localStorage.setItem(`userScore`, result.user.score);
                             location.href = "indexLogado.html";
                         },
                         error: (jqXHR) => {
