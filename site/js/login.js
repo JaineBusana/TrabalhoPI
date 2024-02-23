@@ -51,6 +51,8 @@ window.addEventListener("load", (event) => {
                             localStorage.setItem(`id`, result.user.id);
                             localStorage.setItem(`userName`, result.user.name);
                             localStorage.setItem(`userType`, result.user.type);
+                            localStorage.setItem(`userScore`, result.user.Score);
+                            localStorage.setItem(`userSocialNumber`, result.user.SocialNumber);
                             location.href = "indexLogado.html";
                         },
                         contentType: "application/json",

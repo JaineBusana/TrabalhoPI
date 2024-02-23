@@ -92,7 +92,7 @@ function checkInputPassword() {
         const formItem = password.parentElement;
         formItem.className = "formContent"
     }
-   
+
 
 }
 
@@ -107,11 +107,22 @@ function erroInput(input, message) {
 
 $(() => {
     $("#saveChangesEP").click((e) => {
+        var id = localStorage.getItem("id");
+        var type = localStorage.getItem("userType");
+        var score = localStorage.getItem("userScore");
+        var socialNumber = localStorage.getItem("userSocialNumber");
+        console.log(score)
+        console.log(socialNumber)
         e.preventDefault();
 
         const data = {
+            Id: id,
             Name: $("#changeNameEP").val(),
             Email: $("#changeEmailEP").val(),
+            Password: $("#changePasswordEP").val(),
+            SocialNumber: socialNumber,
+            Type: type,
+            Score: score,
         };
 
         $.ajax({

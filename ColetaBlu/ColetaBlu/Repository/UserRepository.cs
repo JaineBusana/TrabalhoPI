@@ -54,7 +54,7 @@ namespace ColetaBlu.Repository
                      UPDATE User
                      SET Type = @Type,
                          Name = @Name,
-                         CPF_CNPJ = @CPF_CNPJ,
+                         SocialNumber = @SocialNumber,
                          Email = @Email,
                          Password = @Password,
                          Score = @Score
