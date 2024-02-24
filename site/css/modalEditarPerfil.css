@@ -18,6 +18,10 @@
     src: url("../assets/fonts/Nunito-Regular.ttf")
 }
 
+#password {
+    margin-top: 10px;
+}
+
 #modalEditarPerfil {
     background-color: rgba(0,0,0,.35);
     top: 0;
@@ -73,6 +77,16 @@
     cursor: pointer;
 }
 
+#dropUser {
+    color: #b81414;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
 #editarPerfilTitle {
     font-size: 32px;
     color: #6A994E;
@@ -81,7 +95,6 @@
 
 #nameTitleEP {
     font-family: mukta_bold;
-    margin-top: 10px;
 }
 
 #emailTitleEP {
