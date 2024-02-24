@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
 
     font-family: "mukta_bold";
     src: url("../assets/fonts/pontoColeta/Mukta-Bold.ttf")
@@ -8,10 +8,10 @@
 
     font-family: "mukta_medium";
     src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
-}
+} */
 
 #headerNavigation {
-    background: #FEFEEB;
+    background:  #FEFEEB;
     width: 100%;
     box-shadow: 0 0.1rem 0.5rem #ccc;
     display: grid;
@@ -79,6 +79,7 @@
         margin: 5px auto;
         transition: all 0.3s;
         cursor: pointer;
+        z-index: 999;
 
     }
 
@@ -94,9 +95,7 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .navIndex,
-    .navUsuario,
-    .navColetor
+    .navIndex
      {
         height: 896px;
         position: fixed;
@@ -107,13 +106,14 @@
         flex-direction: column;
         background: #FEFEEB;
         transition: 0.3s;
+        z-index: 3;
 
     }
 
     .navIndex.ativo {
         right: 0;
     }
-    .navUsuario.ativo {
+    .navCidadao.ativo {
         right: 0;
     } 
     .navColetor.ativo {
