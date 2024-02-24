@@ -8,6 +8,7 @@ namespace ColetaBlu.Contracts_Repository
         Task Add(UserDTO user);
         Task<IEnumerable<UserEntity>> Read();
         Task Update(UserEntity user);
+        Task UpdateScore(UserEntity user);
         Task Delete(int id);
         Task<UserEntity> GetByEmail(string email);
         Task<UserTokenDTO> LogIn(UserLoginDTO user);
