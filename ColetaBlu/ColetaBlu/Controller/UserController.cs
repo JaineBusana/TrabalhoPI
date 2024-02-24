@@ -41,8 +41,7 @@ namespace ColetaBlu.Controller
         [HttpPut]
         public async Task<IActionResult> Update(UserEntity user)
         {
-            await _userRepository.Update(user);
-            return Ok();
+            return Ok(await _userRepository.Update(user));
         }
 
         [HttpDelete]

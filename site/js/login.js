@@ -46,11 +46,17 @@ window.addEventListener("load", (event) => {
                         url: "https://localhost:7249/user/login",
                         data: JSON.stringify(data),
                         success: (result) => {
+                            console.log(result);
                             localStorage.clear();
                             localStorage.setItem(`token`, result.token);
                             localStorage.setItem(`id`, result.user.id);
                             localStorage.setItem(`userName`, result.user.name);
                             localStorage.setItem(`userType`, result.user.type);
+                            localStorage.setItem(`userScore`, result.user.score);
+                            localStorage.setItem(`userSocialNumber`, result.user.socialNumber);
+                            localStorage.setItem(`userEmail`, result.user.email);
+                            localStorage.setItem(`userPassword`, result.user.password);
+                            console.log(localStorage.getItem('userScore'))
                             location.href = "indexLogado.html";
                         },
                         contentType: "application/json",
