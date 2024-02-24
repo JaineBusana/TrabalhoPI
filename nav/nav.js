@@ -49,17 +49,17 @@ else if (typeLog === "cidadao") {
 }
 else {
   const cardHTML = `
-  <li class="navItem"><a href="index.html">Home</a></li>
+  <li class="navItem "><a href="index.html">Home</a></li>
   <li class="navItem"><a href="pontoColeta.html">Pontos de coleta</a></li>
   <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
   <li class="navItem login" onclick="SHOW_MODAL_LOGIN()"><a href="#">Login</a></li>
   `;
 
   $('.navIndex').append(cardHTML);
-
   const login = document.querySelector('.login');
   login.addEventListener('click', () => {
     navIndex.classList.remove('ativo');
+   
   });
 }
 navigationBar.addEventListener('click', () => {

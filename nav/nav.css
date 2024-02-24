@@ -11,22 +11,31 @@
 } */
 
 #headerNavigation {
-    background:  #FEFEEB;
+    background: #FEFEEB;
     width: 100%;
     box-shadow: 0 0.1rem 0.5rem #ccc;
-    margin-bottom: 15px ;
+    margin-bottom: 15px;
     height: 80%;
 
 }
 
 .barNavigation {
     width: 90%;
-    display: flex;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 40%;
     align-items: center;
-    justify-content: space-between;
     padding: 18px 40px;
     min-width: 400px;
     transition: all 0.5s;
+}
+
+.indexsemlogin {
+    width: 100%;
+}
+
+.indexsemlogin li {
+    margin-left: 15%;
 }
 
 .barNavigation img {
@@ -34,9 +43,7 @@
     min-width: 150px;
     max-width: 300px;
     cursor: pointer;
-  
-    margin: auto;
-
+    margin-left: 25px;
 }
 
 .barNavigation ul {
@@ -55,7 +62,7 @@
     width: 70%;
     height: 40px;
     font-weight: 500;
-    
+
     transition: all 0.5s;
     text-decoration: none;
 }
@@ -74,6 +81,14 @@
 
     .navHome.ativo {
         visibility: visible;
+    }
+
+    .barNavigation {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .navigationBar .bar {
@@ -101,8 +116,7 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .navIndex
-     {
+    .navIndex {
         height: 896px;
         position: fixed;
         right: -100%;
@@ -119,13 +133,18 @@
     .navIndex.ativo {
         right: 0;
     }
+
     .navCidadao.ativo {
         right: 0;
-    } 
+    }
+
     .navColetor.ativo {
         right: 0;
     }
 
+    .barNavigation img {
+        margin: 0px;
+    }
 
 
 }
