@@ -33,7 +33,7 @@ else if (typeLog === "cidadao") {
   <li class="navItem "><a href="index.html">Home</a></li>
   <li class="navItem"><a href="pontoColeta.html">Pontos de coleta</a></li>
   <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
-  <li class="navItem"><a href="#">Troca Ponto</a></li>
+  <li class="navItem"><a href="indexTrocaPonto.html">Troca Ponto</a></li>
   <li class="navItem"><a onclick="OPEN_MODAL_PERFIL()">Perfil</a></li>
   <li class="navItem logout"><a href="#">Logout</a></li>
   `;

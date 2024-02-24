@@ -20,7 +20,7 @@
 }
 
 .barNavigation {
-    width: 90%;
+    width: 80%;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 40%;
@@ -131,15 +131,7 @@
     }
 
     .navIndex.ativo {
-        right: 0;
-    }
-
-    .navCidadao.ativo {
-        right: 0;
-    }
-
-    .navColetor.ativo {
-        right: 0;
+        right: 0 !important;
     }
 
     .barNavigation img {
