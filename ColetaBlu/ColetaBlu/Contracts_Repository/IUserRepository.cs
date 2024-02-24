@@ -7,7 +7,7 @@ namespace ColetaBlu.Contracts_Repository
     {
         Task Add(UserDTO user);
         Task<IEnumerable<UserEntity>> Read();
-        Task Update(UserEntity user);
+        Task<UserEntity> Update(UserEntity user);
         Task Delete(int id);
         Task<UserEntity> GetById(int id);
         Task<UserTokenDTO> LogIn(UserLoginDTO user);

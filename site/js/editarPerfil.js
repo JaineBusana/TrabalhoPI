@@ -92,7 +92,7 @@ function checkInputPassword() {
         const formItem = password.parentElement;
         formItem.className = "formContent"
     }
-   
+
 
 }
 
@@ -106,24 +106,43 @@ function erroInput(input, message) {
 }
 
 $(() => {
+    var id = localStorage.getItem("id");
+    var type = localStorage.getItem("userType");
+    var name = localStorage.getItem("userName");
+    var email = localStorage.getItem("userEmail");
+    var password = localStorage.getItem("userPassword");
+    var socialNumber = localStorage.getItem("userSocialNumber");
+    var score = localStorage.getItem("userScore");
+    console.log(name);
+    console.log(email);
+    console.log(password);
+
     $("#saveChangesEP").click((e) => {
         e.preventDefault();
 
         const data = {
+            Id: id,
             Name: $("#changeNameEP").val(),
             Email: $("#changeEmailEP").val(),
+            Password: $("#changePasswordEP").val(),
+            SocialNumber: socialNumber,
+            Type: type,
+            Score: score,
         };
 
         $.ajax({
             type: "PUT",
             url: "https://localhost:7249/user",
             data: JSON.stringify(data),
-            sucess: (result) => {
+            success: (result) => {
                 console.log(result);
+                console.log(data);
+                location.href = "index.html";
+                alert("Suas alterções foram salvas com sucesso, realize o login novamente!")
+                localStorage.clear();
             },
             contentType: "application/json",
             dataType: "json",
         });
-        console.log(data);
     });
 });
