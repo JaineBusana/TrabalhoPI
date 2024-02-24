@@ -11,36 +11,41 @@
 } */
 
 #headerNavigation {
-    background: #FEFEEB;
+    background:  #FEFEEB;
     width: 100%;
     box-shadow: 0 0.1rem 0.5rem #ccc;
-    display: grid;
-    justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 15px ;
+    height: 80%;
+
 }
 
 .barNavigation {
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 18px 40px;
-    width: 90%;
     min-width: 400px;
-    margin: auto;
     transition: all 0.5s;
 }
 
 .barNavigation img {
     width: 30%;
-    min-width: 180px;
-    max-width: 500px;
+    min-width: 150px;
+    max-width: 300px;
     cursor: pointer;
-    margin-right: 20%;
+  
+    margin: auto;
+
 }
 
 .barNavigation ul {
     display: flex;
-    gap: 5rem;
+    text-align: center;
+    align-items: center;
+    gap: 5%;
+    line-height: 1;
+    margin: auto;
 }
 
 .barNavigation ul li a {
@@ -50,9 +55,9 @@
     width: 70%;
     height: 40px;
     font-weight: 500;
+    
     transition: all 0.5s;
     text-decoration: none;
-   
 }
 
 
@@ -70,6 +75,7 @@
     .navHome.ativo {
         visibility: visible;
     }
+
     .navigationBar .bar {
         display: block;
         width: 28px;
@@ -95,8 +101,8 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .navIndex {
-        text-align: center;
+    .navIndex
+     {
         height: 896px;
         position: fixed;
         right: -100%;
@@ -113,14 +119,13 @@
     .navIndex.ativo {
         right: 0;
     }
-
     .navCidadao.ativo {
         right: 0;
-    }
-
+    } 
     .navColetor.ativo {
         right: 0;
     }
+
 
 
 }
