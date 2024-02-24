@@ -55,7 +55,7 @@ function checkForm() {
         return item.className === "formContent"
     })
     if (isValid) {
-        window.location = "indexLogado.html"
+        window.location = "index.html"
     }
 
 }

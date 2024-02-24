@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/cadastro.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="../nav/nav.css">
+    <!-- <link rel="stylesheet" href="./css/nav.css"> -->
     <link rel="stylesheet" href="./css/styleIndex.css">
     <link rel="stylesheet" href="./css/StyleLogin.css">
     <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
@@ -18,29 +19,20 @@
 
 
 
-    <header>
-        <nav class="navigation">
-
-            <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
-            <div class="navHome">
-                <ul class="menuNav">
-                    <li class="navItem "><a href="index.html">Home</a></li>
-                    <li class="navItem"><a href="pontoColeta.html">Pontos de coleta</a></li>
-                    <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
-                    <li class="navItem" onclick="SHOW_MODAL_LOGIN()"><a href="#">Login</a></li>
-
-
-                </ul>
-            </div>
-            <div class="navigationBar">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+    <header id="headerNavigation">
+        <nav class="barNavigation">
+    
+          <img class="imgbarNavigation" src="../nav/logo-com-slogan.png" alt="">
+          <div class="navHome">
+            <ul class="navIndex"> </ul>
+          </div>
+          <div class="navigationBar">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </nav>
-
-
-    </header>
+      </header>
 
     <aside class="greetings">
         <img src="./assets/img/MicrosoftTeams-image (5).png" alt="Logo coletablu">
@@ -181,7 +173,8 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./js/cadastro.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./js/nav.js"></script>
+    <!-- <script src="./js/nav.js"></script> -->
+    <script src="../nav/nav.js"></script>
 </body>
 
 </html>

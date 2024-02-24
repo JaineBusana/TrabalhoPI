@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="./css/anuncio.css" />
     <link rel="stylesheet" href="./css/pontoColeta.css" />
     <link rel="stylesheet" href="./css/styleIndex.css">
-    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="../nav/nav.css">
+    <!-- <link rel="stylesheet" href="./css/nav.css"> -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/StyleLogin.css">
     <link rel="stylesheet" href="./assets/1.3.0/css/line-awesome.css">
@@ -31,215 +32,206 @@
 
 
 <body>
-   
-        <form id="formLogin">
-            <div id="modalLogin" class="">
-                <div id="backgroundLogin" class="flex">
-                    <div>
-                        <button class="closeModal" onclick="CLOSE_MODAL_LOGIN()">
-                            <div class="menuLogin">
-                                <span class="barLogin"></span>
-                                <span class="barLogin"></span>
-                            </div>
-                        </button>
-                        <div class="flex">
-                            <img id="logo" class="h-20" src="./assets/img/MicrosoftTeams-image (7).png"
-                                alt="Logo da ColetaBlu">
-                            <h1 class=" mt-10 enterLogin">Entrar</h1>
-                        </div>
-                        <div class="msg"> </div>
-                        <div class="">
-                            <h1 id="userLogin" class="mt-10">Email</h1>
-                        </div>
-                        <div>
-                            <input id="insertUserLogin" class="mb-2 " type="text" onfocus="this.value='';">
-                        </div>
-                        <div>
-                            <h1 id="passwordLogin" class="">Senha</h1>
-                        </div>
-                        <div class="flex">
-                            <input id="insertPasswordLogin" class="" type="password" onfocus="this.value='';">
-                        </div>
-                        <div>
-                            <a id="forgotPasswordLogin" class="" href="">Esqueci a senha!</a>
-                        </div>
-                        <div>
-                            <button id="login">Login</button>
-                        </div>
-                        <div class="flex">
-                            <h1 class="registerLogin ml-6">Não tem uma conta?</h1>
-                            <a id="linkRegisterLogin" class="registerLogin ml-1" href="cadastro.html">Cadastre-se!</a>
-                        </div>
-                    </div>
-                    <img id="backgroundPhoto" src="./assets/img/Foto_Fundo_Login.jpg" alt="Imagen fundo"
-                        style="max-width:51%;height:auto;">
-                </div>
-            </div>
-        </form>
-        <header>
-            <nav class="navigation">
 
-                <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
-                <div class="navHome">
-                    <ul class="menuNav">
-                        <li class="navItem "><a href="index.html">Home</a></li>
-                        <li class="navItem"><a href="pontoColeta.html">Pontos de coleta</a></li>
-                        <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
-                        <li class="navItem" onclick="SHOW_MODAL_LOGIN()"><a href="#">Login</a></li>
-
-
-                    </ul>
-                </div>
-                <div class="navigationBar">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
-
-
-        </header>
-
-        <main class="main">
-
-            <img id="coletaBluImg" src="./assets/img/pontoColeta/imgPontoColeta.jpg">
-            <h1 id="titlePontoColeta"> Pontos de Coleta</h1>
-            <div id="instructionPontoColeta"> Informe seu CEP, selecione o item a ser descartado e descubra os locais
-                designados para
-                receber esse produto adequadamente.</div>
-            <div id="doubtsPontoColeta"> • Caso tenha dúvidas, busque a assistência de um colaborador no
-                estabelecimento.
-            </div>
-
-
-            <form>
-                <div class="designInputPonto">
-                    <img id="leafInput" src="./assets/img/pontoColeta/inputBairro.png" alt="ícone folha input">
-                    <select class="selectPonto" id="selectNeighborhood">
-                        <option value="0">Selecione o bairro</option>
-                        <option value="Água Verde">Água Verde</option>
-                        <option value="Badenfurt">Badenfurt</option>
-                        <option value="Boa Vista">Boa Vista</option>
-                        <option value="Bom Retiro">Bom Retiro</option>
-                        <option value="Centro">Centro</option>
-                        <option value="Escola Agrícola">Escola Agrícola</option>
-                        <option value="Fidélis">Fidélis</option>
-                        <option value="Fortaleza">Fortaleza</option>
-                        <option value="Fortaleza Alta">Fortaleza Alta</option>
-                        <option value="Garcia">Garcia</option>
-                        <option value="Glória">Glória</option>
-                        <option value="Itoupava Central">Itoupava Central</option>
-                        <option value="Itoupava Norte">Itoupava Norte</option>
-                        <option value="Itoupava Seca">Itoupava Seca</option>
-                        <option value="Itoupavazinha">Itoupavazinha</option>
-                        <option value="Jardim Blumenau">Jardim Blumenau</option>
-                        <option value="Nova Esperança">Nova Esperança</option>
-                        <option value="Passo Manso">Passo Manso</option>
-                        <option value="Ponta Aguda">Ponta Aguda</option>
-                        <option value="Progresso">Progresso</option>
-                        <option value="Ribeirão Fresco">Ribeirão Fresco</option>
-                        <option value="Salto">Salto</option>
-                        <option value="Salto do Norte">Salto do Norte</option>
-                        <option value="Salto Weissbach">Salto Weissbach</option>
-                        <option value="Testo Salto">Testo Salto</option>
-                        <option value="Tribess">Tribess</option>
-                        <option value="Valparaíso">Valparaíso</option>
-                        <option value="Velha">Velha</option>
-                        <option value="Velha Central">Velha Central</option>
-                        <option value="Velha Grande">Velha Grande</option>
-                        <option value="Victor Konder">Victor Konder</option>
-                        <option value="Vila Formosa">Vila Formosa</option>
-                        <option value="Vila Itoupava">Vila Itoupava</option>
-                        <option value="Vila Nova">Vila Nova</option>
-                        <option value="Vorstadt">Vorstadt</option>
-                    </select>
-                </div>
-                <div class="designInputPonto">
-                    <img id="leafInput" src="./assets/img/pontoColeta/inputResiduo.png" alt="ícone folha input">
-                    <select class="selectPonto" id="selectResidue">
-                        <option value="0">Selecione o resíduo</option>
-                        <option value="Pet">Pet</option>
-                        <option value="Vidro">Vidro</option>
-                        <option value="Metal">Metal</option>
-                    </select>
-                </div>
-                <button id="btnLocalPonto" type="button">Encontrar Pontos</button>
-                <div id="error-message" class="error-message"></div>
-            </form>
-            <img id="location" src="./assets/img/pontoColeta/localização.png">
-            <h1 id="localNext"> Pontos Próximos</h1>
-            <div class="grid grid-cols-1"></div>
-
-
-            <!-- CARD PROVISORIO -->
-            <div class="cardMeuPonto">
-                <div class="infoLocate">
-                    <h1>Mercado Dona Rosa</h1>
-                    <div id="infoestabelecimento">
-                        <h3>Endereço</h3>
-                        <p>Rua Alameda Rio Branco, N&deg; 1888
-                        </p>
-                        <h3>Bairro</h3>
-                        <p>Jardim Blumenau</p>
-                        <h3>Telefone</h3>
-                        <p>(47) 99999-9999</p>
-                    </div>
-                </div>
-                <div class="infoResidue">
-                    <button id="btnCloseModalPontoColeta">
-                        <div class="menuCloseModalPontoColeta">
-                            <img src="./assets/img/cancelar.png" alt="">
+    <form id="formLogin">
+        <div id="modalLogin" class="">
+            <div id="backgroundLogin" class="flex">
+                <div>
+                    <button class="closeModal" onclick="CLOSE_MODAL_LOGIN()">
+                        <div class="menuLogin">
+                            <span class="barLogin"></span>
+                            <span class="barLogin"></span>
                         </div>
                     </button>
-                    <h2>É coletado</h2> <br>
-                    <section class="owl-carousel infoResiduoColeta">
-                        <div class="item cardResidue">
-                            <h3>amper</h3>
-                            <p>longneck</p>
-                            <p>garrafa pet</p>
-                        </div>
-                        <div class="item cardResidue">
-                            <h3>Coobev </h3>
-                            <p>Embalgem</p>
-                            <p>garrafa pet</p>
-                        </div>
-                    </section>
+                    <div class="flex">
+                        <img id="logo" class="h-20" src="./assets/img/MicrosoftTeams-image (7).png"
+                            alt="Logo da ColetaBlu">
+                        <h1 class=" mt-10 enterLogin">Entrar</h1>
+                    </div>
+                    <div class="msg"> </div>
+                    <div class="">
+                        <h1 id="userLogin" class="mt-10">Email</h1>
+                    </div>
+                    <div>
+                        <input id="insertUserLogin" class="mb-2 " type="text" onfocus="this.value='';">
+                    </div>
+                    <div>
+                        <h1 id="passwordLogin" class="">Senha</h1>
+                    </div>
+                    <div class="flex">
+                        <input id="insertPasswordLogin" class="" type="password" onfocus="this.value='';">
+                    </div>
+                    <div>
+                        <a id="forgotPasswordLogin" class="" href="">Esqueci a senha!</a>
+                    </div>
+                    <div>
+                        <button id="login">Login</button>
+                    </div>
+                    <div class="flex">
+                        <h1 class="registerLogin ml-6">Não tem uma conta?</h1>
+                        <a id="linkRegisterLogin" class="registerLogin ml-1" href="cadastro.html">Cadastre-se!</a>
+                    </div>
                 </div>
+                <img id="backgroundPhoto" src="./assets/img/Foto_Fundo_Login.jpg" alt="Imagen fundo"
+                    style="max-width:51%;height:auto;">
+            </div>
+        </div>
+    </form>
+    <header id="headerNavigation">
+        <nav class="barNavigation">
+
+            <img class="imgbarNavigation" src="../nav/logo-com-slogan.png" alt="">
+            <div class="navHome">
+                <ul class="navIndex"> </ul>
+            </div>
+            <div class="navigationBar">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <img id="coletaBluImg" src="./assets/img/pontoColeta/imgPontoColeta.jpg">
+        <h1 id="titlePontoColeta"> Pontos de Coleta</h1>
+        <div id="instructionPontoColeta"> Informe seu CEP, selecione o item a ser descartado e descubra os locais
+            designados para
+            receber esse produto adequadamente.</div>
+        <div id="doubtsPontoColeta"> • Caso tenha dúvidas, busque a assistência de um colaborador no
+            estabelecimento.
+        </div>
+
+
+        <form>
+            <div class="designInputPonto">
+                <img id="leafInput" src="./assets/img/pontoColeta/inputBairro.png" alt="ícone folha input">
+                <select class="selectPonto" id="selectNeighborhood">
+                    <option value="0">Selecione o bairro</option>
+                    <option value="Água Verde">Água Verde</option>
+                    <option value="Badenfurt">Badenfurt</option>
+                    <option value="Boa Vista">Boa Vista</option>
+                    <option value="Bom Retiro">Bom Retiro</option>
+                    <option value="Centro">Centro</option>
+                    <option value="Escola Agrícola">Escola Agrícola</option>
+                    <option value="Fidélis">Fidélis</option>
+                    <option value="Fortaleza">Fortaleza</option>
+                    <option value="Fortaleza Alta">Fortaleza Alta</option>
+                    <option value="Garcia">Garcia</option>
+                    <option value="Glória">Glória</option>
+                    <option value="Itoupava Central">Itoupava Central</option>
+                    <option value="Itoupava Norte">Itoupava Norte</option>
+                    <option value="Itoupava Seca">Itoupava Seca</option>
+                    <option value="Itoupavazinha">Itoupavazinha</option>
+                    <option value="Jardim Blumenau">Jardim Blumenau</option>
+                    <option value="Nova Esperança">Nova Esperança</option>
+                    <option value="Passo Manso">Passo Manso</option>
+                    <option value="Ponta Aguda">Ponta Aguda</option>
+                    <option value="Progresso">Progresso</option>
+                    <option value="Ribeirão Fresco">Ribeirão Fresco</option>
+                    <option value="Salto">Salto</option>
+                    <option value="Salto do Norte">Salto do Norte</option>
+                    <option value="Salto Weissbach">Salto Weissbach</option>
+                    <option value="Testo Salto">Testo Salto</option>
+                    <option value="Tribess">Tribess</option>
+                    <option value="Valparaíso">Valparaíso</option>
+                    <option value="Velha">Velha</option>
+                    <option value="Velha Central">Velha Central</option>
+                    <option value="Velha Grande">Velha Grande</option>
+                    <option value="Victor Konder">Victor Konder</option>
+                    <option value="Vila Formosa">Vila Formosa</option>
+                    <option value="Vila Itoupava">Vila Itoupava</option>
+                    <option value="Vila Nova">Vila Nova</option>
+                    <option value="Vorstadt">Vorstadt</option>
+                </select>
+            </div>
+            <div class="designInputPonto">
+                <img id="leafInput" src="./assets/img/pontoColeta/inputResiduo.png" alt="ícone folha input">
+                <select class="selectPonto" id="selectResidue">
+                    <option value="0">Selecione o resíduo</option>
+                    <option value="Pet">Pet</option>
+                    <option value="Vidro">Vidro</option>
+                    <option value="Metal">Metal</option>
+                </select>
+            </div>
+            <button id="btnLocalPonto" type="button">Encontrar Pontos</button>
+            <div id="error-message" class="error-message"></div>
+        </form>
+        <img id="location" src="./assets/img/pontoColeta/localização.png">
+        <h1 id="localNext"> Pontos Próximos</h1>
+        <div class="grid grid-cols-1"></div>
+
+
+        <!-- CARD PROVISORIO -->
+        <div class="cardMeuPonto">
+            <div class="infoLocate">
+                <h1>Mercado Dona Rosa</h1>
+                <div id="infoestabelecimento">
+                    <h3>Endereço</h3>
+                    <p>Rua Alameda Rio Branco, N&deg; 1888
+                    </p>
+                    <h3>Bairro</h3>
+                    <p>Jardim Blumenau</p>
+                    <h3>Telefone</h3>
+                    <p>(47) 99999-9999</p>
+                </div>
+            </div>
+            <div class="infoResidue">
+                <button id="btnCloseModalPontoColeta">
+                    <div class="menuCloseModalPontoColeta">
+                        <img src="./assets/img/cancelar.png" alt="">
+                    </div>
+                </button>
+                <h2>É coletado</h2> <br>
+                <section class="owl-carousel infoResiduoColeta">
+                    <div class="item cardResidue">
+                        <h3>amper</h3>
+                        <p>longneck</p>
+                        <p>garrafa pet</p>
+                    </div>
+                    <div class="item cardResidue">
+                        <h3>Coobev </h3>
+                        <p>Embalgem</p>
+                        <p>garrafa pet</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+        <div class="contentCard">
+
+            <div id="allCards">
+
+                <div class="card ">
+                    <div id="textcardLocal">
+                        <div id="openModalPontoColeta">
+                            <p id="nameCard" class="cardName"> Mercado Dona Rosa</p>
+                        </div>
+                        <p class="titleCard">Bairro </p>
+                        <p class="obsCard"> Jardim Blumenau </p>
+                        <p class="titleCard">Residuo: </p>
+                        <p class="address">Pet</p>
+                    </div>
+                </div>
+                <div class="card ">
+                    <div id="textcardLocal">
+                        <div id="openModalPontoColeta">
+                            <p id="nameCard" class="cardName"> Condomínio Shiruma</p>
+                        </div>
+                        <p class="titleCard">Bairro </p>
+                        <p class="obsCard"> Jardim Blumenau </p>
+                        <p class="titleCard">Residuo: </p>
+                        <p class="address">Pet</p>
+                    </div>
+                </div>
+
+
             </div>
 
 
-            <div class="contentCard">
-
-                <div id="allCards">
-
-                    <div class="card ">
-                        <div id="textcardLocal">
-                            <div id="openModalPontoColeta">
-                                <p id="nameCard" class="cardName"> Mercado Dona Rosa</p>
-                            </div>
-                            <p class="titleCard">Bairro </p>
-                            <p class="obsCard"> Jardim Blumenau </p>
-                            <p class="titleCard">Residuo: </p>
-                            <p class="address">Pet</p>
-                        </div>
-                    </div>
-                    <div class="card ">
-                        <div id="textcardLocal">
-                            <div id="openModalPontoColeta">
-                                <p id="nameCard" class="cardName"> Condomínio Shiruma</p>
-                            </div>
-                            <p class="titleCard">Bairro </p>
-                            <p class="obsCard"> Jardim Blumenau </p>
-                            <p class="titleCard">Residuo: </p>
-                            <p class="address">Pet</p>
-                        </div>
-                    </div>
-
-
-                </div>
-
-
-                <!-- 
+            <!-- 
                     <div class="modalContainerPontoColeta">
                         <div class="topModalPontoColeta">
                 <img class="imagePontoColetaModal" src="./assets/img/Local.jpeg" alt="imagem do estabelecimento ">
@@ -263,45 +255,43 @@
             </div>
         </div> -->
 
-                <div class="contentCard">
+            <div class="contentCard">
 
-                    <div id="cardContainer"></div>
+                <div id="cardContainer"></div>
 
-                    <script src="script.js"></script>
 
-                    <div id="allCards"> </div>
+                <div id="allCards"> </div>
 
-        </main>
-        <footer>
-            <div class="footerImgMobile">
-                <img id="imgPlant" src="./assets/img/rodape-img-mobile.png" alt="">
+    </main>
+    <footer>
+        <div class="footerImgMobile">
+            <img id="imgPlant" src="./assets/img/rodape-img-mobile.png" alt="">
+        </div>
+        <div class="footerImgPlants">
+            <img src="./assets/img/img-rodape.png" alt="">
+        </div>
+        <div class="footerColumn">
+            <div class="footerLogo centralizeParagraph">
+                <img src="./assets/img/logo-com-slogan-branco.png" alt="">
             </div>
-            <div class="footerImgPlants">
-                <img src="./assets/img/img-rodape.png" alt="">
+            <div class="footerComplaint">
+                <h1>Denúncias - Ligue 156</h1>
+                <p>A Fiscalização Ambiental no município de Blumenau é realizada através da Gerência de Fiscalização
+                    da
+                    Semmas.
+                    Para mais informações acesse o site:</p>
+                <a href="https://www.blumenau.sc.gov.br/governo/fundacao-do-meio-ambiente/pagina/fiscalizacao-faema">Prefeitura
+                    de Blumenau</a>
             </div>
-            <div class="footerColumn">
-                <div class="footerLogo centralizeParagraph">
-                    <img src="./assets/img/logo-com-slogan-branco.png" alt="">
-                </div>
-                <div class="footerComplaint">
-                    <h1>Denúncias - Ligue 156</h1>
-                    <p>A Fiscalização Ambiental no município de Blumenau é realizada através da Gerência de Fiscalização
-                        da
-                        Semmas.
-                        Para mais informações acesse o site:</p>
-                    <a
-                        href="https://www.blumenau.sc.gov.br/governo/fundacao-do-meio-ambiente/pagina/fiscalizacao-faema">Prefeitura
-                        de Blumenau</a>
-                </div>
-                </form>
-            </div>
-        </footer>
+            </form>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../nav/nav.js"></script>
+    <script src="./js/pontoColeta.js"></script>
+    <script src="./js/login.js"></script>
+    <!-- <script src="./js/nav.js"></script> -->
 
-        <script src="./js/pontoColeta.js"></script>
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-        <script src="./js/login.js"></script>
-        <script src="./js/nav.js"></script>
-    
 </body>
 
 </html>

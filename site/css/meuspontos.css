@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: #FAF3E1;
+    background-color: #FEFEEB;
 }
 .logoNav img{
     width: 100%;
@@ -165,7 +165,7 @@ body {
         height: 350px;
         columns:  2;
         column-gap: 15px;
-        background-color: #FAF3E1;
+        background-color: #FEFEEB;
         display: flex;
         margin: auto;
         border-radius: 20px;

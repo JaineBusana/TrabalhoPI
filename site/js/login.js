@@ -33,7 +33,7 @@ window.addEventListener("load", (event) => {
         else {
             $(() => {
                 if (!!localStorage.getItem(`token`)) {
-                    location.href = "indexLogado.html";
+                    location.href = "index.html";
                 }
                 else {
                     const data = {
@@ -57,7 +57,7 @@ window.addEventListener("load", (event) => {
                             localStorage.setItem(`userEmail`, result.user.email);
                             localStorage.setItem(`userPassword`, result.user.password);
                             console.log(localStorage.getItem('userScore'))
-                            location.href = "indexLogado.html";
+                            location.href = "index.html";
                         },
                         contentType: "application/json",
                         dataType: "json",
