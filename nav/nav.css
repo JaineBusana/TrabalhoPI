@@ -11,11 +11,12 @@
 } */
 
 #headerNavigation {
-    background:  #FEFEEB;
+    background: #FEFEEB;
     width: 100%;
     box-shadow: 0 0.1rem 0.5rem #ccc;
     display: grid;
     justify-content: center;
+    margin-bottom: 15px;
 }
 
 .barNavigation {
@@ -25,20 +26,20 @@
     padding: 18px 40px;
     width: 90%;
     min-width: 400px;
-    max-width: 1200px;
+    margin: auto;
     transition: all 0.5s;
 }
 
 .barNavigation img {
     width: 30%;
-    min-width: 150px;
+    min-width: 180px;
+    max-width: 500px;
     cursor: pointer;
     margin-right: 20%;
 }
 
 .barNavigation ul {
     display: flex;
-    align-items: center;
     gap: 5rem;
 }
 
@@ -46,15 +47,15 @@
     font-family: mukta_medium;
     color: #6A994E;
     font-size: 20px;
+    width: 70%;
+    height: 40px;
     font-weight: 500;
     transition: all 0.5s;
     text-decoration: none;
+   
 }
 
-.navItem {
-    margin: 10px 0;
-    padding: 0px;
-}
+
 .barNavigation ul li a:hover {
     color: #A7C957;
 
@@ -69,7 +70,6 @@
     .navHome.ativo {
         visibility: visible;
     }
-
     .navigationBar .bar {
         display: block;
         width: 28px;
@@ -95,8 +95,8 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .navIndex
-     {
+    .navIndex {
+        text-align: center;
         height: 896px;
         position: fixed;
         right: -100%;
@@ -113,17 +113,13 @@
     .navIndex.ativo {
         right: 0;
     }
+
     .navCidadao.ativo {
-        right: 0;
-    } 
-    .navColetor.ativo {
         right: 0;
     }
 
-
-    .navItem {
-        margin: 10px 0;
-        padding: 0px;
+    .navColetor.ativo {
+        right: 0;
     }
 
 
