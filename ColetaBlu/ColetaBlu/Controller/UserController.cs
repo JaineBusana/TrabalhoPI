@@ -18,7 +18,7 @@ namespace ColetaBlu.Controller
             _userRepository = userRepository;
         }
 
-        [Authorize]
+        //[Authorize]
         [HttpGet]
         public async Task<IActionResult> Get()
         {
@@ -26,9 +26,9 @@ namespace ColetaBlu.Controller
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(string Email)
+        public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _userRepository.GetByEmail(Email));
+            return Ok(await _userRepository.GetById(id));
         }
 
         [HttpPost]
@@ -41,8 +41,7 @@ namespace ColetaBlu.Controller
         [HttpPut]
         public async Task<IActionResult> Update(UserEntity user)
         {
-            await _userRepository.Update(user);
-            return Ok();
+            return Ok(await _userRepository.Update(user));
         }
 
         [HttpPut]
@@ -54,10 +53,9 @@ namespace ColetaBlu.Controller
         }
 
         [HttpDelete]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(int id, UserEntity user)
         {
-            await _userRepository.Delete(id);
-            return Ok();
+            return Ok(await _userRepository.Delete(id, user));
         }
    
         [HttpPost]

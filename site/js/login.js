@@ -32,7 +32,7 @@ function showNotification(msg) {
     }, 3000);
 }
 
-// teste
+
 window.addEventListener("load", (event) => {
     $('body').on('click', '#login', (event) => {
         disableLoginBtn()
@@ -51,7 +51,7 @@ window.addEventListener("load", (event) => {
         else {
             $(() => {
                 if (!!localStorage.getItem(`token`)) {
-                    location.href = "indexLogado.html";
+                    location.href = "index.html";
                 }
                 else {
                     const data = {
@@ -64,6 +64,7 @@ window.addEventListener("load", (event) => {
                         url: "https://localhost:7249/user/login",
                         data: JSON.stringify(data),
                         success: (result) => {
+                            console.log(result);
                             localStorage.clear();
                             localStorage.setItem(`token`, result.token);
                             localStorage.setItem('userID', result.user.id)
@@ -71,7 +72,8 @@ window.addEventListener("load", (event) => {
                             localStorage.setItem(`userName`, result.user.name);
                             localStorage.setItem(`userType`, result.user.type);
                             localStorage.setItem(`userScore`, result.user.score);
-                            location.href = "indexLogado.html";
+                            localStorage.setItem(`userSocialNumber`, result.user.socialNumber);
+                            location.href = "index.html";
                         },
                         error: (jqXHR) => {
                             showNotification(jqXHR.responseText)
@@ -82,5 +84,9 @@ window.addEventListener("load", (event) => {
                 }
             });
         }
+    })
+
+    $('body').on('click', '#exitPerfil', (event) => {
+        localStorage.clear();
     })
 })

@@ -7,5 +7,6 @@
         public int? User_Id { get; set; }
         public int? CollectResidue_CollectionPoint_Id { get; set; }
         public int? CollectResidue_Residue_Id { get; set; }
+
     }
 }

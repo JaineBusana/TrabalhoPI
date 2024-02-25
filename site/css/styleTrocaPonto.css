@@ -80,6 +80,7 @@
 .owl-carousel .owl-item img {
     height: auto;
     width: 160px !important;
+    border-radius: 0px !important;
 }
 
 .spanDiscount {

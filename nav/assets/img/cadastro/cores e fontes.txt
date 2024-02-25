@@ -1,0 +1,9 @@
+Paleta de cores:
+#3B5284   #5BA8A0  #CDE54E   #94B447  #5D6E1E  #307C52 #FAF3E1
+
+
+fonte da logo:
+Fredoka One - Regular
+
+fonte do slogan:
+Montserrat - Bold

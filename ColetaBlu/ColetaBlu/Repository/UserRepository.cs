@@ -3,6 +3,7 @@ using ColetaBlu.DTO;
 using ColetaBlu.Entity;
 using ColetaBlu.Infrastructure;
 using Dapper;
+using Microsoft.AspNet.Identity;
 using Mysqlx.Session;
 
 namespace ColetaBlu.Repository
@@ -12,23 +13,24 @@ namespace ColetaBlu.Repository
         public async Task Add(UserDTO user)
         {
             string sql = @"
-          INSERT INTO User (Type, Name, SocialNumber, Email, Telephone, Password, Score)
-                         VALUE(@Type, @Name, @SocialNumber, @Email, @Telephone, @Password, @Score)
+          INSERT INTO User (Type, Name, SocialNumber, Email, Password, Score)
+                         VALUE(@Type, @Name, @SocialNumber, @Email, @Password, @Score)
 
          ";
             await Execute(sql, user);
         }
 
-        public async Task Delete(int id)
+        public async Task<UserEntity> Delete(int id, UserEntity user)
         {
             string sql = "DELETE FROM User WHERE Id = @id";
             await Execute(sql, new { id });
+            return user;
         }
 
-        public async Task<UserEntity> GetByEmail(string Email)
+        public async Task<UserEntity> GetById(int id)
         {
             string sql = "SELECT * FROM User WHERE Id = @id";
-            return await GetConnection().QueryFirstAsync<UserEntity>(sql, new { Email });
+            return await GetConnection().QueryFirstAsync<UserEntity>(sql, new { id });
         }
 
         public async Task<IEnumerable<UserEntity>> Read()
@@ -48,20 +50,20 @@ namespace ColetaBlu.Repository
             };
         }
 
-        public async Task Update(UserEntity user)
+        public async Task<UserEntity> Update(UserEntity user)
         {
             string sql = @"
                      UPDATE User
                      SET Type = @Type,
                          Name = @Name,
-                         CPF_CNPJ = @CPF_CNPJ,
+                         SocialNumber = @SocialNumber,
                          Email = @Email,
-                         Telephone = @Telephone,
                          Password = @Password,
                          Score = @Score
                      WHERE Id = @Id
             ";
             await Execute(sql, user);
+            return user;
         }
 
         public async Task UpdateScore(UserEntity user)

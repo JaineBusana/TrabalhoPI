@@ -48,3 +48,32 @@ namespace ColetaBlu.Controller
         }
     }
 }
+
+//namespace ColetaBlu.Controller
+//{
+
+//        [ApiController]
+//        [Route("/collect")]
+//        public class CollectController : ControllerBase
+//        {
+//            private readonly ICollectRepository _collectRepository;
+//            public CollectController(ICollectRepository collectRepository)
+//            {
+//                _collectRepository = collectRepository;
+//            }
+
+//        [HttpPost]
+//        public async Task<IActionResult> Add(CollectDTO user)
+//        {
+//            await _collectRepository.Add(user);
+//            return Ok();
+//        }
+
+
+
+
+
+//    }
+ 
+//>>>>>>> db00f6928bdfa966e424943adaaedadcc0ca8d2e
+//}

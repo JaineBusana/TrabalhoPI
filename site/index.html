@@ -4,10 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/modalPerfil.css">
+  <link rel="stylesheet" href="./css/modalEditarPerfil.css">
+  <link rel="stylesheet" href="./css/excluirPerfil.css">
   <link rel="stylesheet" href="./css/styleIndex.css">
+  <link rel="stylesheet" href="./css/styleIndexLogado.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/StyleLogin.css">
-  <link rel="stylesheet" href="css/nav.css">
+  <!-- <link rel="stylesheet" href="css/nav.css"> -->
+  <link rel="stylesheet" href="../nav/nav.css">
+
   <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="./assets/1.3.0/css/line-awesome.css">
@@ -45,7 +51,7 @@
           </div>
           <div class="msg"> </div>
           <div class="">
-            <h1 id="userLogin" class="mt-10">Usuário</h1>
+            <h1 id="userLogin" class="mt-10">Email</h1>
           </div>
           <div>
             <input id="insertUserLogin" class="mb-2 " type="text" onfocus="this.value='';">
@@ -72,8 +78,24 @@
       </div>
     </div>
   </form>
+  <header id="headerNavigation">
+    <nav class="barNavigation">
 
-  <header>
+     <a href="index.html"><img class="imgbarNavigation"  src="../nav/logo-com-slogan.png" alt=""></a> 
+      
+      <div class="navHome">
+        <ul class="navIndex">
+          
+        </ul>
+      </div>
+      <div class="navigationBar">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+  <!-- <header>
     <nav class="navigation">
 
       <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
@@ -93,17 +115,108 @@
         <span class="bar"></span>
       </div>
     </nav>
-  </header>
+  </header> -->
 
+  <div id="modalPerfil">
+    <div id="backgroundPerfil">
+      <button class="closeModalPerfil" onclick="CLOSE_MODAL_PERFIL()">
+        <div class="closeModalPerfil">
+          <span class="barPerfil"></span>
+          <span class="barPerfil"></span>
+        </div>
+      </button>
+      <div id="conteinerPerfil1">
+        <div class="formContent">
+          <h2 id="nameTitlePerfil">Jean Cleiton Souza</h2>
+        </div>
+        <div id="typePerfil">Cidadão</div>
+        <div class="formContent">
+        </div>
+        <div>
+          <li id="profilePoint"><img src="./assets/img/cadastro/planeta-terra.png" alt="" class="profilePonitImg">300
+            pontos</li>
+          <li id="profilePickup"><img src="./assets/img/perifl/icone-loja-verde-removebg-preview.png" alt=""
+              class="profilePickupImg">30 Coletas
+        </div>
+        <div id="conteinerPerfil2">
+          <a id="btneditPerfil" onclick="OPEN_MODAL_EDITAR_PERFIL()">Editar Perfil</a>
+          <a id="exitPerfil" href="./index.html">Sair</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modalEditarPerfil">
+    <div id="backgroundEP">
+      <button class="closeModalEP" onclick="CLOSE_MODAL_EDITAR_PERFIL()">
+        <div class="closeModalEP">
+          <span class="barEP"></span>
+          <span class="barEP"></span>
+        </div>
+      </button>
+      <div id="conteinerEP">
+        <h1 id="editarPerfilTitle">Editar Perfil</h1>
+        <div class="formContent">
+          <h2 id="nameTitleEP">Nome de Usuário</h2>
+          <input id="changeNameEP" type="text">
+          <a>Mensagem de erro</a>
+        </div>
+        <div class="formContent">
+          <h2 id="emailTitleEP">Email</h2>
+          <input id="changeEmailEP" type="email">
+          <a>Mensagem de erro</a>
+        </div>
+        <div class="formContent">
+          <h2 id="password">Senha</h2>
+          <input id="changePasswordEP" type="password">
+          <a>Mensagem de erro</a>
+        </div>
+        <a id="saveChangesEP">Salvar alterações</a>
+        <a id="dropUser" onclick="OPEN_MODAL_DELETE()">Excluir conta</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modalDeleteBackground">
+    <div class="modalContainerDelete">
+      <div class="modalDelete">
+        <img id="deleteProfile" src="./assets/img/excluirConta/planetaTriste.png" alt="ColetaBlu triste">
+
+        <span>
+          <p>Tem certeza? Partir nunca é fácil...</p>
+
+          <p>A ColetaBlu sente sua falta antes mesmo de você ir.</p>
+
+          <p>Cada ação sua fez a diferença, contribuindo para um mundo mais verde e sustentável.</p>
+
+          <p>Até logo, amigo! 🌍💚</p>
+        </span>
+
+        <div class="btnsDelete">
+          <button id="btnDeletePerfil" class="btnOK">Excluir Conta</button>
+          <button class="btnClose" onclick="CLOSE_MODAL_DELETE()">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <section>
     <div class="owl-carousel owl-theme carousel1">
-      <div class="item"><img src="./assets/img/banner/1.png"></div>
-      <div class="item"><img src="./assets/img/banner/2.png"></div>
-      <div class="item"><img src="./assets/img/banner/3.png"></div>
-      <div class="item"><img src="./assets/img/banner/4.png"></div>
-      <div class="item"><img src="./assets/img/banner/5.png"></div>
-      <div class="item"><img src="./assets/img/banner/6.png"></div>
+      <div class="item"><img src="./assets/img/banner/1.png"><a></a></div>
+      <div class="item"><a href="https://ndmais.com.br/educacao/dicas-de-sustentabilidade/"><img
+            src="./assets/img/banner/2.png"></a></div>
+      <div class="item"><a
+          href="https://www.aen.pr.gov.br/Noticia/Nova-tecnologia-Estado-comeca-instalar-maquinas-para-reciclar-garrafas-no-Litoral"><img
+            src="./assets/img/banner/3.png"></a></div>
+      <div class="item"><a
+          href="https://bahia.ba/carnaval/limpurb-e-ambev-instalam-oito-centrais-de-reciclagem-nos-circuitos-do-carnaval/"><img
+            src="./assets/img/banner/4.png"></a></div>
+      <div class="item"><a
+          href="https://www.aen.pr.gov.br/Noticia/Com-investimento-de-R-870-milhoes-Ambev-anuncia-fabrica-de-garrafas-sustentaveis"><img
+            src="./assets/img/banner/5.png"></a></div>
+      <div class="item"><a
+          href="https://g1.globo.com/jornal-nacional/noticia/2023/05/17/dia-mundial-da-reciclagem-96percent-dos-residuos-produzidos-no-brasil-nao-sao-reaproveitados.ghtml"><img
+            src="./assets/img/banner/6.png"></a></div>
     </div>
   </section>
 
@@ -118,7 +231,7 @@
           <div class="paragraphQuemSomosText mx-[15px]">
             <h1>Quem somos?</h1>
             <p>
-              Somos uma aplicação regional criada pelo alunos do curso #Entra21 da edição de 2023.
+              Somos um grupo comprometido com a coleta de resíduos sustentáveis! Composto por alunos do Curso #Entra21, edição 2024. Junte-se a nós e faça parte dessa mudança!
             </p>
           </div>
 
@@ -144,8 +257,8 @@
               <div class="mx-[15px]">
                 <h1>Quem pode usar a ferramenta?</h1>
                 <p>
-                  Todos! Toda população de Blumenau
-                  interessados em reciclagem e pequenos estabelecimentos que desejam aumentar sua visibilidade!
+                  Todos são bem-vindos! Se você é de Blumenau e se preocupa com o meio ambiente ou é um negócio em busca de
+                  mais visibilidade, o Coletablu é para você! Junte-se a nós e faça a diferença.
                 </p>
               </div>
             </div>
@@ -164,9 +277,9 @@
           <div class="paragraphComoAjudamosText mx-[15px]">
             <h1>Como a Coletablu te ajuda?</h1>
             <p>
-              Facilita a reciclagem, oferecendo pontos e descontos.
-              Além disso, promove a parceria entre grandes empresas e pequenos estabelecimentos,
-              aumentando a visibilidade local. <br>Se interessou?
+              Simplificamos a reciclagem, recompensando você com pontos e descontos exclusivos. Mas não é só isso!
+              Também impulsionamos parcerias entre empresas e estabelecimentos, fortalecendo sua comunidade. Interessado
+              em fazer a diferença? Junte-se a nós agora! <br>Se interessou?
             </p>
             <div class="flex">
               <button class="m-4"><a href="cadastro.html">Cadastre-se</a></button>
@@ -176,7 +289,7 @@
         </div>
 
         <div class="grid justify-items-center">
-          <img src="./assets/img/circulo-de-residuos.png" alt="Circulo com resíduos"
+          <img src="./assets/img/circulo-de-residuos.png" alt="Circulo com resíduos" id="imgRecicleGreen"
             class="paragraphComoAjudamosResiduos">
         </div>
       </div>
@@ -207,9 +320,13 @@
 
   </footer>
 
-  <script src="./js/login.js"></script>
-  <script src="./js/nav.js"></script>
   <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./js/login.js"></script>
+  <!-- <script src="./js/nav.js"></script> -->
+  <script src="../nav/nav.js"></script>
+  <script src="./js/perfil.js"></script>
+  <script src="./js/editarPerfil.js"></script>
+  <script src="./js/excluirPerfil.js"></script>
   <script src="./lib/owlCarousel/dist/owl.carousel.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function () {
