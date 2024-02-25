@@ -181,9 +181,8 @@
     justify-content: space-between;
   }
 
-  .placeNameHistoric {
-    width: 200px ;
-  
+  .comboHistoric {
+    height: 44px ;
   }
 
   .modalConfirmn {

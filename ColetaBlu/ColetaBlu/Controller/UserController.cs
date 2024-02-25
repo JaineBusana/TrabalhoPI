@@ -44,6 +44,14 @@ namespace ColetaBlu.Controller
             return Ok(await _userRepository.Update(user));
         }
 
+        [HttpPut]
+        [Route("updateScore")]
+        public async Task<IActionResult> UpdateScore(UserEntity user)
+        {
+            await _userRepository.UpdateScore(user);
+            return Ok();
+        }
+
         [HttpDelete]
         public async Task<IActionResult> Delete(int id, UserEntity user)
         {

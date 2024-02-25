@@ -23,6 +23,13 @@ namespace ColetaBlu.Repository
             Console.WriteLine(retorno);
             return retorno;
         }
+
+        public async Task<IEnumerable<CollectionPointEntity>> ReadByUserEmail(string email)
+        {
+            string sql = "SELECT cp.Id, cp.Name FROM collectionpoint cp JOIN user u ON u.Id = cp.User_Id AND u.Email = @email";
+            var retorno = await GetConnection().QueryAsync<CollectionPointEntity>(sql, new { email });
+            return retorno;
+        }
     }
 }
 

@@ -97,9 +97,10 @@ body{
     border-radius: 100%;
 }
 
-.paragraphQuemPodeUsar {
+.paragraphQuemPodeUsarBackground {
     background-color: rgba(106, 153, 78, 0.15);
 }
+
 
 #paragraphQuemPodeUsarLogoText {
     display: flex;
@@ -196,6 +197,7 @@ body{
     .paragraphComoAjudamos {
         display: flex;
         justify-content: space-around;
+        border-radius: 50px;
     }
 
     .paragraphQuemPodeUsarImg {
@@ -255,6 +257,8 @@ body{
 
     .footerColumn {
         display: flex;
+        align-items: center;
+
     }
 
     .footerLogo {

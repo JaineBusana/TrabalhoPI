@@ -26,5 +26,19 @@ namespace ColetaBlu.Controller
         {
             return Ok(await _PontoColetaRepository.Read());
         }
+
+        [HttpGet]
+        [Route("getByUserEmail")]
+        public async Task<IActionResult> GetByUserEmail(string email)
+        {
+            try
+            {
+                return Ok(await _PontoColetaRepository.ReadByUserEmail(email));
+            }
+            catch (Exception erro)
+            {
+                return BadRequest(erro.Message);
+            }
+        }
     }
 }

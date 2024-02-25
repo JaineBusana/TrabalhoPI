@@ -57,7 +57,7 @@
                             <span class="barCoupom"></span>
                         </div>
                         <img src="./assets/img/trocaPontos/cupom.png" alt="" class="coupomConfirmn"
-                            onclick="modalConfirmnOpen()">
+                            onclick="useCupom()">
                     </div>
                 </div>
                 <div class="modalTrocaConfirmnContent">
@@ -66,7 +66,14 @@
                             <span class="barCoupom"></span>
                             <span class="barCoupom"></span>
                         </div>
-                        <img src="./assets/img/trocaPontos/valeCupom.png" alt="" class="coupom">
+                        <div id="divConfirmCupom" style="width: 100%; height: 80%; align-self: center;">
+                            <li style="font-size: x-large; text-align: center;">CUPOM:</li>
+                            <img style="margin-left: auto; margin-right: auto; display: block;"
+                                src="./assets/img/trocaPontos/vale.png" alt="">
+                            <div id="ecoScore">EcoScore:</div>
+                            <div id="ecoScorePoint">300 Pontos</div>
+                        </div>
+
                     </div>
                 </div>
                 <h1 class="tittleCardTroca"> Empresa de Bebidas X</h1>
@@ -140,6 +147,7 @@
 
         });
     </script>
+      <script src="./js/restrito.js"></script>
 
 
 </body>
