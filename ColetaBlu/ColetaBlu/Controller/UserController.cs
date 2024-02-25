@@ -18,7 +18,7 @@ namespace ColetaBlu.Controller
             _userRepository = userRepository;
         }
 
-        [Authorize]
+        //[Authorize]
         [HttpGet]
         public async Task<IActionResult> Get()
         {
