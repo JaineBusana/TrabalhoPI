@@ -79,6 +79,10 @@
     margin-left: 117px;
     margin-top: 65px;
 }
+
+.disabled {
+    background-color: #e5e5e5 !important;
+}
  
 #userLogin {
     color: #6A994E;

@@ -11,5 +11,7 @@ namespace ColetaBlu.Contracts_Repository
         }
 
         Task<IEnumerable<CollectionPointEntity>> Read();
+
+        Task<IEnumerable<CollectionPointEntity>> ReadByUserEmail(string email);
     }
 }

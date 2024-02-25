@@ -14,8 +14,8 @@ function CLOSE_MODAL_DELETE() {
 }
 
 $(() => {
-  var id = localStorage.getItem("id");
-  console.log("https://localhost:7249/user?id=" + id);
+  // var id = localStorage.getItem("id");
+  console.log(`https://localhost:7249/user?id=${localStorage.getItem('userID')}`);
 
   $("#btnDeletePerfil").click((e) => {
     e.preventDefault();
@@ -26,7 +26,7 @@ $(() => {
 
     $.ajax({
       type: "DELETE",
-      url: "https://localhost:7249/user?id=" + id,
+      url: `https://localhost:7249/user?id=${localStorage.getItem('userID')}`,
       data: JSON.stringify(data),
       success: (result) => {
         console.log(data);

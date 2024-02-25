@@ -18,15 +18,10 @@ if (typeLog === "coletor") {
   <li class="navItem"><a href="meusPontos.html">Meus pontos</a></li>
   <li class="navItem"><a href="registroColeta.html">Registrar coleta</a></li>
   <li class="navItem"><a onclick="OPEN_MODAL_PERFIL()">Perfil</a></li>
-  <li class="navItem logout"><a href="#">Logout</a></li>
   `;
 
   $('.navIndex').append(cardHTML);
-  const logout = document.querySelector('.logout');
-  logout.addEventListener('click', () => {
-    localStorage.clear();
-    location.reload();
-  });
+  
 }
 else if (typeLog === "cidadao") {
   const cardHTML = `
@@ -35,16 +30,9 @@ else if (typeLog === "cidadao") {
   <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
   <li class="navItem"><a href="indexTrocaPonto.html">Troca Ponto</a></li>
   <li class="navItem"><a onclick="OPEN_MODAL_PERFIL()">Perfil</a></li>
-  <li class="navItem logout"><a href="#">Logout</a></li>
   `;
 
   $('.navIndex').append(cardHTML);
-
-  const logout = document.querySelector('.logout');
-  logout.addEventListener('click', () => {
-    localStorage.clear();
-    location.reload();
-  });
 
 }
 else {

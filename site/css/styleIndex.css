@@ -97,9 +97,10 @@ body{
     border-radius: 100%;
 }
 
-.paragraphQuemPodeUsar {
+.paragraphQuemPodeUsarBackground {
     background-color: rgba(106, 153, 78, 0.15);
 }
+
 
 #paragraphQuemPodeUsarLogoText {
     display: flex;
