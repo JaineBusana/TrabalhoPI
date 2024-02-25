@@ -5,3 +5,12 @@ menu.addEventListener('click', () => {
     menu.classList.toggle('ativo');
     NavMenu.classList.toggle('ativo');
 })
+
+// window.addEventListener("load", (event) => {
+
+//     const name = document.querySelector(`#nameTitleEP`)
+
+//     name.innerHTML(localStorage.getItem(`userName`))
+
+
+// })
