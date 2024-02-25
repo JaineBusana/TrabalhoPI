@@ -25,15 +25,3 @@ namespace ColetaBlu.Repository
         }
     }
 }
-
-/*
-SELECT cp*, n.Name AS Nome_Bairro
-FROM CollectionPoint cp
-JOIN Neighborhood n ON cp.Neighborhood_id = Neighborhood.Id
-WHERE n.Name = 'Nome do Bairro';
-
-
-SELECT *, Neighborhood.Name AS Nome_Bairro
-FROM CollectionPoint 
-JOIN Neighborhood ON CollectionPoint.Neighborhood_id = Neighborhood.Id
-*/

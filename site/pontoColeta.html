@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +15,7 @@
     <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
 
     <title>Pontos de Coleta</title>
-    <!-- <script>
+    <script>
         tailwind.config = {
             theme: {
                 extend: {
@@ -24,57 +25,57 @@
                 },
             },
         };
-    </script> -->
+    </script>
 </head>
 
 
 <body>
     <form id="formLogin">
         <div id="modalLogin" class="">
-            <div id="backgroundLogin" class="flex">
-                <div>
-                    <button class="closeModal" onclick="CLOSE_MODAL_LOGIN()">
-                        <div class="menuLogin">
-                            <span class="barLogin"></span>
-                            <span class="barLogin"></span>
-                        </div>
-                    </button>
-                    <div class="flex">
-                        <img id="logo" class="h-20" src="./assets/img/MicrosoftTeams-image (7).png"
-                            alt="Logo da ColetaBlu">
-                        <h1 class=" mt-10 enterLogin">Entrar</h1>
-                    </div>
-                    <div class="msg"> </div>
-                    <div class="">
-                        <h1 id="userLogin" class="mt-10">Email</h1>
-                    </div>
-                    <div>
-                        <input id="insertUserLogin" class="mb-2 " type="text" onfocus="this.value='';">
-                    </div>
-                    <div>
-                        <h1 id="passwordLogin" class="">Senha</h1>
-                    </div>
-                    <div class="flex">
-                        <input id="insertPasswordLogin" class="" type="password" onfocus="this.value='';">
-                    </div>
-                    <div>
-                        <a id="forgotPasswordLogin" class="" href="">Esqueci a senha!</a>
-                    </div>
-                    <div>
-                        <button id="login">Login</button>
-                    </div>
-                    <div class="flex">
-                        <h1 class="registerLogin ml-6">Não tem uma conta?</h1>
-                        <a id="linkRegisterLogin" class="registerLogin ml-1" href="cadastro.html">Cadastre-se!</a>
-                    </div>
+          <div id="backgroundLogin" class="flex">
+            <div>
+              <button class="closeModal" onclick="CLOSE_MODAL_LOGIN()">
+                <div class="menuLogin">
+                  <span class="barLogin"></span>
+                  <span class="barLogin"></span>
                 </div>
-                <img id="backgroundPhoto" src="./assets/img/Foto_Fundo_Login.jpg" alt="Imagen fundo"
-                    style="max-width:51%;height:auto;">
+              </button>
+              <div class="flex">
+                <img id="logo" class="h-20" src="./assets/img/MicrosoftTeams-image (7).png" alt="Logo da ColetaBlu">
+                <h1 class=" mt-10 enterLogin">Entrar</h1>
+              </div>
+              <div class="msg"> </div>
+              <div class="">
+                <h1 id="userLogin" class="mt-10">Usuário</h1>
+              </div>
+              <div>
+                <input id="insertUserLogin" class="mb-2 " type="text" onfocus="this.value='';">
+              </div>
+              <div>
+                <h1 id="passwordLogin" class="">Senha</h1>
+              </div>
+              <div class="flex">
+                <input id="insertPasswordLogin" class="" type="password" onfocus="this.value='';">
+              </div>
+              <div>
+                <a id="forgotPasswordLogin" class="" href="">Esqueci a senha!</a>
+              </div>
+              <div>
+                <button id="login">Login</button>
+              </div>
+              <div class="flex">
+                <h1 class="registerLogin ml-6">Não tem uma conta?</h1>
+                <a id="linkRegisterLogin" class="registerLogin ml-1" href="cadastro.html">Cadastre-se!</a>
+              </div>
             </div>
+            <img id="backgroundPhoto" src="./assets/img/Foto_Fundo_Login.jpg" alt="Imagen fundo"
+              style="max-width:51%;height:auto;">
+          </div>
         </div>
     </form>
     <header>
         <nav class="navigation">
+
             <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
             <div class="navHome">
                 <ul class="menuNav">
@@ -82,6 +83,8 @@
                     <li class="navItem"><a href="pontoColeta.html">Pontos de coleta</a></li>
                     <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
                     <li class="navItem" onclick="SHOW_MODAL_LOGIN()"><a href="#">Login</a></li>
+
+
                 </ul>
             </div>
             <div class="navigationBar">
@@ -90,15 +93,21 @@
                 <span class="bar"></span>
             </div>
         </nav>
+
+
     </header>
+
     <main class="main">
+
         <img id="coletaBluImg" src="./assets/img/pontoColeta/imgPontoColeta.jpg">
         <h1 id="titlePontoColeta"> Pontos de Coleta</h1>
         <div id="instructionPontoColeta"> Informe seu CEP, selecione o item a ser descartado e descubra os locais
-            designados para receber esse produto adequadamente.
+            designados para
+            receber esse produto adequadamente.</div>
+        <div id="doubtsPontoColeta"> • Caso tenha dúvidas, busque a assistência de um colaborador no estabelecimento.
         </div>
-        <div id="doubtsPontoColeta"> • Caso tenha dúvidas, busque a assistência de um colaborador noestabelecimento.
-        </div>
+
+
         <form>
             <div class="designInputPonto">
                 <img id="leafInput" src="./assets/img/pontoColeta/inputBairro.png" alt="ícone folha input">
@@ -153,26 +162,39 @@
             <button id="btnLocalPonto" type="button">Encontrar Pontos</button>
             <div id="error-message" class="error-message"></div>
         </form>
-
         <img id="location" src="./assets/img/pontoColeta/localização.png">
         <h1 id="localNext"> Pontos Próximos</h1>
         <div class="grid grid-cols-1"></div>
-        <div id="infoLocate"></div>
-        <div class="contentCard">
-            <div id="cardContainer"></div>
-            <div id="allCards">
-                <div class="card ">
-                    <div id="textcardLocal">
-                      <div id="openModalPontoColeta">
-                        <p id="nameCard" class="card"></p>
-                      </div>
-                      <p class="titleCard">Bairro </p>
-                      <p class="obsCard"></p>
-                      <p class="titleCard">Residuo: </p>
-                      <p class="address"></p>
-                    </div>
-                  </div>
+
+        <div class="modalContainerPontoColeta">
+            <div class="topModalPontoColeta">
+                <img class="imagePontoColetaModal" src="./assets/img/pontoColeta/estabelecimento.jpg" alt="imagem do estabelecimento ">
             </div>
+            <div id="imagePontoColeta">
+                <h1 id="Point"></h1>
+                <ul class="infoPontoColeta">
+                    <li id="addressPontoColeta"><span>Rua:</span> 
+                    </li>
+                    <li id="AddressNumber"><span>Número:</span>  
+                    </li>
+                    <li id="phoneNumber"><span>Telefone:</span>  </li> 
+                </ul>
+                <div id="closeModalPontoColeta">
+                    <button id="btnCloseModalPontoColeta">
+                        <div class="menuCloseModalPontoColeta">
+                            <span class="barCloseModalPontoColeta"></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="contentCard">
+
+        <div id="cardContainer"></div>
+        
+        <div id="allCards"> </div>
+
     </main>
     <footer>
         <div class="footerImgMobile">
@@ -187,13 +209,13 @@
             </div>
             <div class="footerComplaint">
                 <h1>Denúncias - Ligue 156</h1>
-                <p>A Fiscalização Ambiental no município de Blumenau é realizada através da Gerência de Fiscalização
-                    da
+                <p>A Fiscalização Ambiental no município de Blumenau é realizada através da Gerência de Fiscalização da
                     Semmas.
                     Para mais informações acesse o site:</p>
                 <a href="https://www.blumenau.sc.gov.br/governo/fundacao-do-meio-ambiente/pagina/fiscalizacao-faema">Prefeitura
                     de Blumenau</a>
             </div>
+            </form>
         </div>
     </footer>
 
