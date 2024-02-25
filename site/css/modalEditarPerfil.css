@@ -53,18 +53,22 @@
 #changeNameEP {
     border: 2px solid #D3E49E;
     width: 250px;
-    
+    border-radius: 20px;
+    padding-inline: 6px;
 }
 
 #changeEmailEP {
     border: 2px solid #D3E49E;
     width: 250px;
-    
+    border-radius: 20px;
+    padding-inline: 6px;
 }
 
 #changePasswordEP {
     border: 2px solid #D3E49E;
     width: 250px;
+    border-radius: 20px;
+    padding-inline: 6px;
 }
 
 #saveChangesEP {
@@ -75,16 +79,29 @@
     line-height: normal;
     margin-top: 10px;
     cursor: pointer;
+    background-color: #6A994E;
+    padding-inline: 10px;
+    padding-block: 3px;
+    color: #FFF;
+    border-radius: 22px;
 }
 
 #dropUser {
-    color: #b81414;
     font-size: 17px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     margin-top: 10px;
     cursor: pointer;
+    background-color: #b81414;
+    padding-inline: 10px;
+    padding-block: 3px;
+    color: #FFF;
+    border-radius: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 142.34px;
 }
 
 #editarPerfilTitle {

@@ -31,6 +31,10 @@
     justify-content: center;
 }
 
+#profilePoints2 {
+    
+}
+
 #conteinerPerfil1 {
     display: grid;
     justify-items: start;
@@ -39,6 +43,7 @@
     padding-bottom: 50px;
     padding-left: 50px;
     padding-right: 50px;
+    max-width: 355px;
 }
 
 #backgroundPerfil {

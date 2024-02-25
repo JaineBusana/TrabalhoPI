@@ -108,7 +108,7 @@ function erroInput(input, message) {
 }
 
 $(() => {
-    var id = localStorage.getItem("id");
+    var id = localStorage.getItem("userID");
     var type = localStorage.getItem("userType");
     var name = localStorage.getItem("userName");
     var email = localStorage.getItem("userEmail");
@@ -117,7 +117,7 @@ $(() => {
     var score = localStorage.getItem("userScore");
     console.log(name);
     console.log(email);
-    console.log(password);
+    console.log(id);
 
     $("#btneditPerfil").click((e) => {
         $('#changeNameEP').val(name)
