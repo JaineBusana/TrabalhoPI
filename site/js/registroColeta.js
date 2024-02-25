@@ -82,13 +82,9 @@ btnAddHistoric.addEventListener('click', function (event) {
 });
 
 btnCloseHistoric.addEventListener('click', function (event) {
-    const divsQuantity = document.querySelector('.formContentHistoric');
 
-    if (divsQuantity.length > 1) {
-        document.querySelector(".addHistoric").remove();
-    } else {
+
         location.reload();
-    }
 });
 
 // function removeInput() {
