@@ -45,10 +45,9 @@ namespace ColetaBlu.Controller
         }
 
         [HttpDelete]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(int id, UserEntity user)
         {
-            await _userRepository.Delete(id);
-            return Ok();
+            return Ok(await _userRepository.Delete(id, user));
         }
    
         [HttpPost]

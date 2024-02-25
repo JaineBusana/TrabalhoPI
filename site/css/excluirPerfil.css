@@ -12,19 +12,32 @@
 }
 
 
-span p{
+span p {
   margin: 15px;
 
 }
 
+#modalDeleteBackground {
+  background-color: rgba(0, 0, 0, .35);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 2;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
 /* ADICIONAR NO ADICIONAR PERFIL */
 .active {
-  display: flex ;
+  display: flex;
 }
 
 .active .modalDelete {
-  animation: modal .4s ;
-} 
+  animation: modal .4s;
+}
 
 .modalContainerDelete {
   width: 100vw;
@@ -46,10 +59,10 @@ span p{
   text-align: justify;
 }
 
-.modalDelete img{
-    max-width: 25%;
-    height: auto;
-    margin: auto;
+.modalDelete img {
+  max-width: 25%;
+  height: auto;
+  margin: auto;
 }
 
 
@@ -74,30 +87,33 @@ span {
 }
 
 .btnOK {
- background-color: #6A994E;
+  background-color: #6A994E;
 }
 
 .btnClose {
   background-color: brown;
- }
+}
 
- @keyframes modal {
+@keyframes modal {
   from {
     opacity: 0;
     transform: translate3d(0, -60px, 0);
   }
+
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
 }
- @media (max-width: 500px) {
+
+@media (max-width: 500px) {
   .modalDelete {
     padding: 10px;
     width: 80%;
-  }   
+  }
 
-  span, .btnsDelete button {
+  span,
+  .btnsDelete button {
     font-size: smaller;
   }
- }
+}
