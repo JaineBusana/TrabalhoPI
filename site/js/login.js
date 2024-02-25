@@ -8,7 +8,7 @@ function CLOSE_MODAL_LOGIN() {
     modal.classList.remove(`modalLoginActive`);
 }
 
-// teste
+
 window.addEventListener("load", (event) => {
     $('body').on('click', '#login', (event) => {
         event.preventDefault()
@@ -51,6 +51,7 @@ window.addEventListener("load", (event) => {
                             localStorage.setItem(`token`, result.token);
                             localStorage.setItem(`id`, result.user.id);
                             localStorage.setItem(`userName`, result.user.name);
+                            localStorage.setItem('userEmail', result.user.email);
                             localStorage.setItem(`userType`, result.user.type);
                             localStorage.setItem(`userScore`, result.user.score);
                             localStorage.setItem(`userSocialNumber`, result.user.socialNumber);
@@ -65,5 +66,9 @@ window.addEventListener("load", (event) => {
                 }
             });
         }
+    })
+
+    $('body').on('click', '#exitPerfil', (event) => {
+        localStorage.clear();
     })
 })

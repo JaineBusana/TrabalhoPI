@@ -196,6 +196,7 @@ body{
     .paragraphComoAjudamos {
         display: flex;
         justify-content: space-around;
+        border-radius: 50px;
     }
 
     .paragraphQuemPodeUsarImg {
@@ -255,6 +256,8 @@ body{
 
     .footerColumn {
         display: flex;
+        align-items: center;
+
     }
 
     .footerLogo {
