@@ -8,31 +8,26 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styleIndex.css">
     <link rel="stylesheet" href="./assets/1.3.0/css/line-awesome.css">
-    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="../nav/nav.css">
+    <!-- <link rel="stylesheet" href="css/nav.css"> -->
     <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
 
     <title>Histórico de Coleta</title>
 </head>
-<header>
-    <nav class="navigation">
+<header id="headerNavigation">
+    <nav class="barNavigation">
 
-        <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
-        <div class="navHome">
-            <ul class="menuNav">
-                <li class="navItem "><a href="index.html">Home</a></li>
-                <li class="navItem"><a href="pontoColeta.html">Pontos de coleta</a></li>
-                <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
-                <li class="navItem" onclick="SHOW_MODAL_LOGIN()"><a href="perfil.html">Perfil</a></li>
-            </ul>
-        </div>
-        <div class="navigationBar">
-
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
+      <img class="imgbarNavigation" src="../nav/logo-com-slogan.png" alt="">
+      <div class="navHome">
+        <ul class="navIndex"> </ul>
+      </div>
+      <div class="navigationBar">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </nav>
-</header>
+  </header>
 
 <body>
     <div id="conteiner2HP">
@@ -200,8 +195,10 @@
 
     </footer>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./js/nav.js"></script>
-    <script src="./js/restrito.js"></script>
+<script src="./js/restrito.js"></script>
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="../nav/nav.js"></script>
+    <!-- <script src="./js/nav.js"></script> -->
 </body>
 
 </html>

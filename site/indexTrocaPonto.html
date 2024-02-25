@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="./css/styleIndexLogado.css">
+    <link rel="stylesheet" href="../nav/nav.css">
+    <!-- <link rel="stylesheet" href="css/nav.css"> -->
+    <!-- <link rel="stylesheet" href="./css/styleIndexLogado.css"> -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styleIndex.css">
     <link rel="stylesheet" href="./assets/1.3.0/css/line-awesome.css">
@@ -19,34 +20,12 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navigation">
+    <header id="headerNavigation">
+        <nav class="barNavigation">
     
-          <a href="index.html" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
+          <img class="imgbarNavigation" src="../nav/logo-com-slogan.png" alt="">
           <div class="navHome">
-    
-            <ul class="menuNav">
-              <div id="profile">
-                <li><img src="./assets/img/perifl/Ellipse 22.png" id="profilePicture"></li>
-                <li>
-                  <p id="profileName">Jean Cleiton Souza</p>
-                </li>
-    
-                <div id="profileTextPoint">
-                  <li>
-                    <p>EcoScore:</p>
-                  </li>
-                  <li id="profilePoint"><img src="./assets/img/cadastro/planeta-terra.png" alt=""
-                      class="profilePonitImg">300 pontos</li>
-                </div>
-              </div>
-              <li class="navItem profileHome"><a href="index.html">Home</a></li>
-              <li class="navItem"><a href="pontoColeta.html">Pontos de Coleta</a></li>
-              <li class="navItem"><a href="indexTrocaPonto.html">Troca de Pontos</a></li>
-              <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
-              <li class="navItem"><a>Perfil</a></li>
-            </ul>
-    
+            <ul class="navIndex"> </ul>
           </div>
           <div class="navigationBar">
             <span class="bar"></span>
@@ -55,6 +34,8 @@
           </div>
         </nav>
       </header>
+
+
     <main class="mainTroca">
         <section class="introductoryText">
             <img src="./assets/img/trocaPontos/terra.png" alt="" class="imgCoupomPc">
@@ -135,8 +116,9 @@
     <script src="./lib/jquery/jquery.min.js"></script>
     <script src="./lib/owlCarousel/dist/owl.carousel.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./js/nav.js"></script>
+    <!-- <script src="./js/nav.js"></script> -->
     <script src="./js/trocaPonto.js"></script>
+    <script src="../nav/nav.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $(".owl-carousel").owlCarousel({

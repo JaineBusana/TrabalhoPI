@@ -11,11 +11,15 @@
     src: url("../assets/fonts/pontoColeta/Mukta-Medium.ttf")
 }
 
-.index{
+body{
+    background-color:  #FEFEEB;
+}
+.index {
     max-width: 1200px;
     margin: auto;
 }
-.centralizeParagraph{
+
+.centralizeParagraph {
     display: flex;
     justify-content: center;
 }
@@ -48,7 +52,7 @@
 
 .paragraphQuemSomosLogoText,
 .paragraphQuemPodeUsarText,
-.paragraphComoAjudamosLogoText{
+.paragraphComoAjudamosLogoText {
     margin: 30px 0px;
 }
 
@@ -169,6 +173,24 @@
 
 @media(min-width: 970px) {
 
+    #owl-demo .item img {
+        display: block;
+        width: 100%;
+
+
+    }
+
+    .carousel1 {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .carousel1 img {
+        width: 80%;
+        height: 400px;
+
+    }
+
     #paragraphQuemSomos,
     .paragraphQuemPodeUsar,
     .paragraphComoAjudamos {
@@ -182,6 +204,7 @@
         height: 350px;
         margin: 30px 100px;
     }
+
     .paragraphQuemPodeUsarLogo {
         display: none;
     }
@@ -264,5 +287,10 @@
         display: flex;
         align-items: center;
     }
+
+    .owl-carousel img {
+        border-radius: 50px;
+    }
+
 
 }

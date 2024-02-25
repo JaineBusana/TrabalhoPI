@@ -33,7 +33,7 @@ window.addEventListener("load", (event) => {
         else {
             $(() => {
                 if (!!localStorage.getItem(`token`)) {
-                    location.href = "indexLogado.html";
+                    location.href = "index.html";
                 }
                 else {
                     const data = {
@@ -46,14 +46,19 @@ window.addEventListener("load", (event) => {
                         url: "https://localhost:7249/user/login",
                         data: JSON.stringify(data),
                         success: (result) => {
+                            console.log(result);
                             localStorage.clear();
                             localStorage.setItem(`token`, result.token);
                             localStorage.setItem(`id`, result.user.id);
                             localStorage.setItem(`userName`, result.user.name);
                             localStorage.setItem('userEmail', result.user.email);
                             localStorage.setItem(`userType`, result.user.type);
-                            localStorage.setItem('userScore', result.user.score);
-                            location.href = "indexLogado.html";
+                            localStorage.setItem(`userScore`, result.user.score);
+                            localStorage.setItem(`userSocialNumber`, result.user.socialNumber);
+                            localStorage.setItem(`userEmail`, result.user.email);
+                            localStorage.setItem(`userPassword`, result.user.password);
+                            console.log(localStorage.getItem('userScore'))
+                            location.href = "index.html";
                         },
                         contentType: "application/json",
                         dataType: "json",

@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="./css/styleIndex.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/StyleLogin.css">
-  <link rel="stylesheet" href="css/nav.css">
+  <!-- <link rel="stylesheet" href="css/nav.css"> -->
+  <link rel="stylesheet" href="../nav/nav.css">
   <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="./lib/owlCarousel/dist/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="./assets/1.3.0/css/line-awesome.css">
@@ -72,8 +73,24 @@
       </div>
     </div>
   </form>
+  <header id="headerNavigation">
+    <nav class="barNavigation">
 
-  <header>
+     <a href="index.html"><img class="imgbarNavigation"  src="../nav/logo-com-slogan.png" alt=""></a> 
+      
+      <div class="navHome">
+        <ul class="navIndex">
+          
+        </ul>
+      </div>
+      <div class="navigationBar">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+  <!-- <header>
     <nav class="navigation">
 
       <a href="#" class="logoNav"><img src="./assets/img/logo-com-slogan.png" alt="Logo ColetabLu"></a>
@@ -93,16 +110,25 @@
         <span class="bar"></span>
       </div>
     </nav>
-  </header>
+  </header> -->
 
   <section>
     <div class="owl-carousel owl-theme carousel1">
-      <div class="item"><img src="./assets/img/banner/1.png"></div>
-      <div class="item"><img src="./assets/img/banner/2.png"></div>
-      <div class="item"><img src="./assets/img/banner/3.png"></div>
-      <div class="item"><img src="./assets/img/banner/4.png"></div>
-      <div class="item"><img src="./assets/img/banner/5.png"></div>
-      <div class="item"><img src="./assets/img/banner/6.png"></div>
+      <div class="item"><img src="./assets/img/banner/1.png"><a></a></div>
+      <div class="item"><a href="https://ndmais.com.br/educacao/dicas-de-sustentabilidade/"><img
+            src="./assets/img/banner/2.png"></a></div>
+      <div class="item"><a
+          href="https://www.aen.pr.gov.br/Noticia/Nova-tecnologia-Estado-comeca-instalar-maquinas-para-reciclar-garrafas-no-Litoral"><img
+            src="./assets/img/banner/3.png"></a></div>
+      <div class="item"><a
+          href="https://bahia.ba/carnaval/limpurb-e-ambev-instalam-oito-centrais-de-reciclagem-nos-circuitos-do-carnaval/"><img
+            src="./assets/img/banner/4.png"></a></div>
+      <div class="item"><a
+          href="https://www.aen.pr.gov.br/Noticia/Com-investimento-de-R-870-milhoes-Ambev-anuncia-fabrica-de-garrafas-sustentaveis"><img
+            src="./assets/img/banner/5.png"></a></div>
+      <div class="item"><a
+          href="https://g1.globo.com/jornal-nacional/noticia/2023/05/17/dia-mundial-da-reciclagem-96percent-dos-residuos-produzidos-no-brasil-nao-sao-reaproveitados.ghtml"><img
+            src="./assets/img/banner/6.png"></a></div>
     </div>
   </section>
 
@@ -117,7 +143,7 @@
           <div class="paragraphQuemSomosText mx-[15px]">
             <h1>Quem somos?</h1>
             <p>
-              Somos um grupo comprometido com a coleta de resíduos sustentáveis! Composto por alunos do Curso #Entra21, edição 2023. Junte-se a nós e faça parte dessa mudança!
+              Somos um grupo comprometido com a coleta de resíduos sustentáveis! Composto por alunos do Curso #Entra21, edição 2024. Junte-se a nós e faça parte dessa mudança!
             </p>
           </div>
 
@@ -141,7 +167,8 @@
           <div class="mx-[15px]">
             <h1>Quem pode usar a ferramenta?</h1>
             <p>
-              Todos são bem-vindos! Se você é de Blumenau e se preocupa com o meio ambiente, ou é um negócio em busca de mais visibilidade, o Coletablu é para você! Junte-se a nós e faça a diferença.
+              Todos são bem-vindos! Se você é de Blumenau e se preocupa com o meio ambiente, ou é um negócio em busca de
+              mais visibilidade, o Coletablu é para você! Junte-se a nós e faça a diferença.
             </p>
           </div>
         </div>
@@ -158,7 +185,9 @@
           <div class="paragraphComoAjudamosText mx-[15px]">
             <h1>Como a Coletablu te ajuda?</h1>
             <p>
-              Simplificamos a reciclagem, recompensando você com pontos e descontos exclusivos. Mas não é só isso! Também impulsionamos parcerias entre empresas e estabelecimentos, fortalecendo sua comunidade. Interessado em fazer a diferença? Junte-se a nós agora! <br>Se interessou?
+              Simplificamos a reciclagem, recompensando você com pontos e descontos exclusivos. Mas não é só isso!
+              Também impulsionamos parcerias entre empresas e estabelecimentos, fortalecendo sua comunidade. Interessado
+              em fazer a diferença? Junte-se a nós agora! <br>Se interessou?
             </p>
             <div class="flex">
               <button class="m-4"><a href="cadastro.html">Cadastre-se</a></button>
@@ -199,9 +228,10 @@
 
   </footer>
 
-  <script src="./js/login.js"></script>
-  <script src="./js/nav.js"></script>
   <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./js/login.js"></script>
+  <!-- <script src="./js/nav.js"></script> -->
+  <script src="../nav/nav.js"></script>
   <script src="./lib/owlCarousel/dist/owl.carousel.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function () {
