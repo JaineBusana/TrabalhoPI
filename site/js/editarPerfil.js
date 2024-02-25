@@ -1,4 +1,4 @@
-const insertName = document.querySelector('#nameTitleEP')
+const insertName = document.querySelector('#changeNameEP')
 
 function OPEN_MODAL_EDITAR_PERFIL() {
     modalPerfil.style.display = 'none';
@@ -120,7 +120,9 @@ $(() => {
     console.log(password);
 
     $("#btneditPerfil").click((e) => {
-        insertName.val(name)
+        $('#changeNameEP').val(name)
+        $('#changeEmailEP').val(email)
+        $('#changePasswordEP').val(password)
     });
     $("#saveChangesEP").click((e) => {
         e.preventDefault();
