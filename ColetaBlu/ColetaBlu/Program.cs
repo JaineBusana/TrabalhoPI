@@ -62,6 +62,15 @@ builder.Services.AddAuthentication(x =>
 });
 builder.Services.AddSwaggerGen();
 var app = builder.Build();
+
+/// Deixar o código nessa ordem  para ponto de coleta rodar
+app.UseCors(x =>
+{
+    x.AllowAnyOrigin();
+    x.AllowAnyMethod();
+    x.AllowAnyHeader();
+});
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -71,16 +80,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+/*
 app.UseAuthentication();
 app.UseAuthorization();
-
+*/
 
 app.MapControllers();
-
-app.UseCors(x =>
-{
-    x.AllowAnyOrigin();
-    x.AllowAnyMethod();
-    x.AllowAnyHeader();
-});
 app.Run();
