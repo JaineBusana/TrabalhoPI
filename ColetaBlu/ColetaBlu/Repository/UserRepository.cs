@@ -3,6 +3,7 @@ using ColetaBlu.DTO;
 using ColetaBlu.Entity;
 using ColetaBlu.Infrastructure;
 using Dapper;
+using Microsoft.AspNet.Identity;
 using Mysqlx.Session;
 
 namespace ColetaBlu.Repository
@@ -19,10 +20,11 @@ namespace ColetaBlu.Repository
             await Execute(sql, user);
         }
 
-        public async Task Delete(int id)
+        public async Task<UserEntity> Delete(int id, UserEntity user)
         {
             string sql = "DELETE FROM User WHERE Id = @id";
             await Execute(sql, new { id });
+            return user;
         }
 
         public async Task<UserEntity> GetById(int id)
