@@ -47,6 +47,8 @@ else {
   const login = document.querySelector('.login');
   login.addEventListener('click', () => {
     navIndex.classList.remove('ativo');
+    navHome.classList.toggle('ativo');
+    navigationBar.classList.toggle('ativo');
    
   });
 }
