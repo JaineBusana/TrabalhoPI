@@ -14,7 +14,7 @@ function CLOSE_MODAL_DELETE() {
 }
 
 $(() => {
-  // var id = localStorage.getItem("id");
+  var id = localStorage.getItem("UserID");
   console.log(`https://localhost:7249/user?id=${localStorage.getItem('userID')}`);
 
   $("#btnDeletePerfil").click((e) => {

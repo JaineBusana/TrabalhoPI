@@ -85,7 +85,7 @@ function checkInputEmail() {
 function checkInputPassword() {
     const passwordValue = password.value;
     if (passwordValue === "") {
-        erroInput(password, "Preencha a senha.")
+        erroInput(password, "Adicione uma nova senha.")
     }
     else if (passwordValue.length < 8) {
         erroInput(password, "A senha deve ter mais de 8 digitos.")
@@ -135,6 +135,11 @@ $(() => {
             SocialNumber: socialNumber,
             Type: type,
             Score: score,
+        };
+
+        if (data.Password == "") {
+            alert("Crie uma senha para o usuario!")
+            data = null;
         };
 
         $.ajax({
