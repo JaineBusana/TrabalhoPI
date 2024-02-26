@@ -131,6 +131,19 @@ body {
     background-color: #ECEAEA;
     
 }
+
+#imgFooterMeusPontos{
+    width: 100%;
+}
+
+#footerMeusPontos {
+    max-width: 100%;
+    height: auto;
+}
+
+#btnPrefeituraBlu {
+    color: #FFF;
+}
 @media(min-width: 940px){
     .contanerMeusPontos h1 {
         font-family: mukta_bold;
