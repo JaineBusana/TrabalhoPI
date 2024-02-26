@@ -144,25 +144,110 @@
 
 /* modal */
 
-
 .modalContainerPontoColeta {
-    width: 350px;
-    height: 400px;
-    flex-shrink: 0;
-    margin-left: 30px;
-    margin-top: -100px;
-    display: none;
+    background-image: url(../assets/img/pontoColeta/estabelecimento.jpg);
+    background-repeat: no-repeat;
+    background-size: 280px 350px;
+    padding-left: 280px;
+    border-left: 20px solid;
+    padding-top: 0px;
     position: absolute;
-    border-radius: 22px;
-    background: #FEFEEB;
+    margin-top: -400px;
+    border-top: 0px;
+    width: 80%;
+    max-width: 900px;
+    height: 350px;
+    color: #6A994E;
+    columns: 2;
+    column-gap: 15px;
+    background-color: #FAF3E1;
+    display: none;
+    border-radius: 20px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    z-index: 2;
 }
 
-.card {
-    padding-bottom: 2px;
-    margin-top: 20px;
-    margin-left: 5px;
-    margin-bottom: 5px;
+.modalContainerPontoColeta h1 {
+    width: 300px !important;
+    position: absolute;
+    font-family: mukta_bold;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-top: 100px;
+    margin-left: 5%;
+}
+
+.modalContainerPontoColeta h2 {
+    font-family: mukta_bold;
+    font-size: 30px;
+}
+
+.modalContainerPontoColeta h3 {
+    font-family: mukta_bold;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.modalContainerPontoColeta p {
+    font-family: mukta_medium;
+    font-size: 15px;
+    color: #000;
+    margin-top: 1%;
+    margin-left: 5%;
+}
+
+#infoestabelecimento {
+
+    margin-top: 125px;
+}
+
+.infoLocate {
+    width: 100%;
+    margin-left: 15px;
+}
+
+.infoLocate p {
+    line-height: 0.8;
+}
+
+.infoResidue {
+    width: 100%;
+    margin: auto;
+}
+
+.infoResiduoColeta {
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.infoResidue h2 {
+    text-align: center;
+
+}
+
+.cardResidue {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardResidue {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #ECEAEA;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menuCloseModalPontoColeta img {
+    margin-left: 87%;
+    margin-top: 5%;
+    width: 7%;
 }
 
 .modalContainerPontoColeta.ativo {
@@ -193,15 +278,16 @@
 
 }
 
-.modalContainerPontoColeta h1 {
-    color: #6A994E;
-    font-family: mukta_bold;
-    margin: 10px;
-    font-size: 25px;
-
+.card {
+    margin-top: 30px;
+    width: 120%;
+    border-radius: 20px;
+    border: 1PX solid #CCC;
+    padding: 25px;
+    border-left: 20px solid #6A994E; 
+    color: #000000; 
+    background-color: #FFFFFF;
 }
-
-
 .infoPonoColeta {
     display: flex;
     flex-direction: column;
@@ -296,15 +382,14 @@
     color: #6A994E;
 }
 
-
-#nameCard {
+.nameCard {
     font-family: mukta_bold;
     font-size: 26px;
     margin-left: 0 !important;
     cursor: pointer;
 }
 
-#nameCard:hover {
+.nameCard:hover {
     color: #6A994E;
     animation: animacaoTexto 20s;
 }
@@ -325,8 +410,6 @@
 
     .main {
         margin-left: 250px;
-
-
     }
 
     .modalContainerPontoColeta.ativo {
@@ -360,9 +443,8 @@
     .modalContainerPontoColeta h1 {
         color: #6A994E;
         font-family: mukta_bold;
-        margin: 10px;
-        font-size: 25px;
-
+        margin: 40px;
+        font-size: 30px;
     }
 
 
@@ -460,10 +542,13 @@
     } */
 
     .contentCard {
-        gap: 80px;
+        gap: 5%;
+        margin-top: 15px;
     }
 
-    .nameCard,
+    .nameCard{
+        margin: 5px
+    }
     .address,
     .obsCard {
         overflow: hidden;

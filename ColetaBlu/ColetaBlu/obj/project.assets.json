@@ -2757,11 +2757,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aline\\Documents\\PI\\TrabalhoPI\\coletablu\\coletaBlu\\ColetaBlu.csproj",
+      "projectUniqueName": "C:\\Users\\aline\\Documents\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\ColetaBlu.csproj",
       "projectName": "ColetaBlu",
-      "projectPath": "C:\\Users\\aline\\Documents\\PI\\TrabalhoPI\\coletablu\\coletaBlu\\ColetaBlu.csproj",
+      "projectPath": "C:\\Users\\aline\\Documents\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\ColetaBlu.csproj",
       "packagesPath": "C:\\Users\\aline\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aline\\Documents\\PI\\TrabalhoPI\\coletablu\\coletaBlu\\obj\\",
+      "outputPath": "C:\\Users\\aline\\Documents\\TrabalhoPI\\ColetaBlu\\ColetaBlu\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

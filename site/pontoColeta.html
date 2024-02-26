@@ -31,6 +31,7 @@
 
 
 <body>
+    <!---
     <form id="formLogin">
         <div id="modalLogin" class="">
           <div id="backgroundLogin" class="flex">
@@ -74,6 +75,7 @@
           </div>
         </div>
     </form>
+    -->
     <header>
         <nav class="navigation">
 
@@ -167,36 +169,49 @@
         <h1 id="localNext"> Pontos Próximos</h1>
         <div class="grid grid-cols-1"></div>
 
-        <div class="modalContainerPontoColeta">
-            <div class="topModalPontoColeta">
-                <img class="imagePontoColetaModal" src="./assets/img/Local.jpeg" alt="imagem do estabelecimento ">
-            </div>
-            <div id="imagePontoColeta">
-                <h1 id="Point"></h1>
-                <ul class="infoPontoColeta">
-                    <li id="addressPontoColeta"><span>Rua:</span> 
-                    </li>
-                    <li id="AddressNumber"><span>Número:</span>  
-                    </li>
-                    <li id="phoneNumber"><span>Telefone:</span>  </li> 
-                </ul>
-                <div id="closeModalPontoColeta">
-                    <button id="btnCloseModalPontoColeta">
-                        <div class="menuCloseModalPontoColeta">
-                            <span class="barCloseModalPontoColeta"></span>
-                        </div>
-                    </button>
+        
+            <div class="infoLocate">
+                <div class="modalContainerPontoColeta">
+                    <h1 id="Point"></h1>
+                    <div id="infoestabelecimento">
+                        <h3>Endereço</h3>
+                        <p id="addressPontoColeta"></p>
+                        <h3>Bairro</h3>
+                        <p id="NeiborhoodPontoColeta"></p>
+                        <h3>Telefone</h3>
+                        <p id="AddressTelephone">(48) 988235277</p>
+                    </div>
+                    <div class="infoResidue">
+                        <button id="btnCloseModalPontoColeta">
+                            <div class="menuCloseModalPontoColeta">
+                                <img src="./assets/img/+.png" alt="">
+                            </div>
+                        </button>
+                        <h2>É coletado</h2> <br>
+                        <section class="owl-carousel infoResiduoColeta">
+                            <div class="item cardResidue">
+                                <h3>amper</h3>
+                                <p>longneck</p>
+                                <p>garrafa pet</p>
+                            </div>
+                            <div class="item cardResidue">
+                                <h3>Coobev </h3>
+                                <p>Embalgem</p>
+                                <p>garrafa pet</p>
+                            </div>
+                        </section>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="contentCard">
-
-        <div id="cardContainer"></div>
-
-        <script src="script.js"></script>
         
-        <div id="allCards"> </div>
+
+                <div class="contentCard">
+
+                    <div id="cardContainer"></div>
+
+                    <script src="script.js"></script>
+
+                    <div id="allCards"> </div>
 
     </main>
     <footer>
