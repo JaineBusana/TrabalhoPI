@@ -17,7 +17,19 @@ builder.Services.AddTransient<ICollectRepository, CollectRepository>();
 builder.Services.AddTransient<IPontoColetaRepository, PontoColetaRepository>();
 builder.Services.AddTransient<IPointRegistrationRepository, PointRegistrationRepository>();
 
-builder.Services.AddCors();
+// builder.Services.AddCors(); CASO DER BO FOI ALTERADO 22-31
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin",
+        builder =>
+        {
+            builder.WithOrigins("https://localhost:7249")
+                   .AllowAnyHeader()
+                   .AllowAnyMethod();
+        });
+});
+
 var key = Encoding.ASCII.GetBytes(Configuration.JWTSecret);
 builder.Services.AddSwaggerGen(c =>
 {
@@ -63,7 +75,16 @@ builder.Services.AddAuthentication(x =>
     };
 });
 builder.Services.AddSwaggerGen();
+
 var app = builder.Build();
+
+app.UseCors(x =>
+{
+    x.AllowAnyOrigin();
+    x.AllowAnyMethod();
+    x.AllowAnyHeader();
+});
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -72,17 +93,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthentication();
 app.UseAuthorization();
 
-
 app.MapControllers();
 
-app.UseCors(x =>
-{
-    x.AllowAnyOrigin();
-    x.AllowAnyMethod();
-    x.AllowAnyHeader();
-});
 app.Run();
