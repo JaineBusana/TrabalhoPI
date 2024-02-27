@@ -17,11 +17,18 @@ if (typeLog === "coletor") {
   <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
   <li class="navItem"><a href="meusPontos.html">Meus pontos</a></li>
   <li class="navItem"><a href="registroColeta.html">Registrar coleta</a></li>
-  <li class="navItem"><a onclick="OPEN_MODAL_PERFIL()">Perfil</a></li>
+  <li class="navItem perfil"><a onclick="OPEN_MODAL_PERFIL()">Perfil</a></li>
   `;
 
   $('.navIndex').append(cardHTML);
-  
+  $('.navIndex').append(cardHTML);
+  const perfil = document.querySelector('.perfil');
+  perfil.addEventListener('click', () => {
+    navIndex.classList.remove('ativo');
+    navHome.classList.toggle('ativo');
+    navigationBar.classList.toggle('ativo');
+   
+  });
 }
 else if (typeLog === "cidadao") {
   const cardHTML = `
@@ -29,11 +36,17 @@ else if (typeLog === "cidadao") {
   <li class="navItem"><a href="pontoColeta.html">Pontos de coleta</a></li>
   <li class="navItem"><a href="sugestao.html">Sugestão</a></li>
   <li class="navItem"><a href="indexTrocaPonto.html">Troca Ponto</a></li>
-  <li class="navItem"><a onclick="OPEN_MODAL_PERFIL()">Perfil</a></li>
+  <li class="navItem perfil"><a onclick="OPEN_MODAL_PERFIL()">Perfil</a></li>
   `;
 
   $('.navIndex').append(cardHTML);
-
+  const perfil = document.querySelector('.perfil');
+  perfil.addEventListener('click', () => {
+    navIndex.classList.remove('ativo');
+    navHome.classList.toggle('ativo');
+    navigationBar.classList.toggle('ativo');
+   
+  });
 }
 else {
   const cardHTML = `
