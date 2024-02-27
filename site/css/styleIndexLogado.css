@@ -24,7 +24,7 @@ body {
 
 }
 
-.navigation {
+/* .navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -82,7 +82,7 @@ body {
 .navigationBar .bar:nth-child(3) {
     background: #307A50;
 
-}
+} */
 
 
 #profile {
@@ -191,7 +191,7 @@ section {
 }
 
 @media(max-width:970px) {
-    .navigation {
+    /* .navigation {
         padding: 18px 20px;
         z-index: 1001;
         position: fixed;
@@ -250,7 +250,7 @@ section {
         display: flex;
         align-items: center;
         justify-content: space-around;
-    }
+    } */
 
     #profile {
         display: flex;
@@ -305,8 +305,8 @@ section {
         justify-content: center;
     }
 
-    .navItem a{
+    /* .navItem a{
         color: #FFF !important;
-    }
+    } */
 
 }
