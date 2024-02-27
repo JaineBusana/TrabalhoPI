@@ -22,9 +22,18 @@ function CLOSE_MODAL_LOGIN() {
     modal.classList.remove(`modalLoginActive`);
 }
 
+function OPEN_MODAL_SUCESS() {
+    modalSucessCadastro.style.display = 'flex';
+}
+
+function CLOSE_MODAL_SUCESS() {
+    modalSucessCadastro.style.display = 'none';
+    SHOW_MODAL_LOGIN()
+}
+
 btnSejaColetor.addEventListener('click', function (event) {
     campSocialNumber.classList.toggle('active');
-    if(coletor == "sim") {
+    if (coletor == "sim") {
         coletor = "nao"
         return
     }
@@ -110,11 +119,11 @@ function checkInputSocialNumber() {
         erroInput(userSocialNumber, "Preencha o Número Social.")
     } else if (userSocialNumberValue.length < 11) {
         erroInput(userSocialNumber, "Número Social incorreto.")
-    }else if (userSocialNumberValue.length > 14) {
+    } else if (userSocialNumberValue.length > 14) {
         erroInput(userSocialNumber, "Número Social incorreto.")
-    }else if (userSocialNumberValue.length == 12) {
+    } else if (userSocialNumberValue.length == 12) {
         erroInput(userSocialNumber, "Número Social incorreto.")
-    }else if (userSocialNumberValue.length == 13) {
+    } else if (userSocialNumberValue.length == 13) {
         erroInput(userSocialNumber, "Número Social incorreto.")
     } else {
         const formItem = userSocialNumber.parentElement;
@@ -178,7 +187,7 @@ function erroInput(input, message) {
 $(() => {
     $(".btnCadastro").click((e) => {
         e.preventDefault();
-        
+
         const data = {
             Name: $("#username").val(),
             Email: $("#email").val(),
@@ -186,33 +195,33 @@ $(() => {
             Password: $("#password").val()
         };
 
-        if(data.SocialNumber.length == 11) {
+        if (data.SocialNumber.length == 11) {
             data.type = "cidadao"
         };
-        if(data.SocialNumber.length == 14) {
+        if (data.SocialNumber.length == 14) {
             data.type = "coletor"
         };
-        if(data.Name == "") {
+        if (data.Name == "") {
             data.Name = null
             alert("Prencha o Nome do usuario!")
         };
-        if(data.Email == "") {
+        if (data.Email == "") {
             data.Email = null
             alert("Prencha o Email do usuario!")
         };
-        if(data.Password == "") {
+        if (data.Password == "") {
             data.Password = null
             alert("Crie uma senha para o usuario!")
         };
-        if(data.Password.length < 8) {
+        if (data.Password.length < 8) {
             data.Password = null
             alert("A senha deve ter mais de 8 digitos!")
         };
-        if(coletor == "sim" && data.SocialNumber.length == 11) {
+        if (coletor == "sim" && data.SocialNumber.length == 11) {
             data.type = null
             alert("O seu número social deve ser um CNPJ para poder ser Coletor!")
         };
-        if(coletor == "nao" && data.SocialNumber.length == 14) {
+        if (coletor == "nao" && data.SocialNumber.length == 14) {
             data.type = null
             alert("Um número social de CNPJ não pode ser cadastrado como Cidadão, ultilize seu CPF!")
         };
@@ -221,8 +230,9 @@ $(() => {
             type: "POST",
             url: "https://localhost:7249/user",
             data: JSON.stringify(data),
-            sucess: (result) => {
+            success: (result) => {
                 console.log(result);
+                OPEN_MODAL_SUCESS();
             },
             contentType: "application/json",
             dataType: "json",

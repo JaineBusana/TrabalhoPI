@@ -150,3 +150,36 @@ text-align: center;
     color: #ff3b25;
     visibility: visible;
 }
+
+#modalSucessCadastro {
+    background-color: rgba(0,0,0,.35);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 2;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#conteinerSucess {
+    background-color: #FFF;
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#titleCadastroSucess {
+
+}
+
+#okCadastroSucess {
+    margin-top: 25px;
+    color: #386641;
+}
+
