@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="../nav/nav.css">
     <!-- <link rel="stylesheet" href="css/nav.css"> -->
     <!-- <link rel="stylesheet" href="./css/styleIndexLogado.css"> -->
+    <link rel="stylesheet" href="./css/styleIndexLogado.css">
+    <link rel="stylesheet" href="./css/modalPerfil.css">
+    <link rel="stylesheet" href="./css/modalEditarPerfil.css">
+    <link rel="stylesheet" href="./css/excluirPerfil.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styleIndex.css">
     <link rel="stylesheet" href="./assets/1.3.0/css/line-awesome.css">
@@ -20,20 +24,106 @@
 </head>
 
 <body>
+
+    <div id="modalPerfil">
+        <div id="backgroundPerfil">
+            <button class="closeModalPerfil" onclick="CLOSE_MODAL_PERFIL()">
+                <div class="closeModalPerfil">
+                    <span class="barPerfil"></span>
+                    <span class="barPerfil"></span>
+                </div>
+            </button>
+            <div id="conteinerPerfil1">
+                <div class="formContent">
+                    <h2 id="nameTitlePerfil"></h2>
+                </div>
+                <div id="typePerfil"></div>
+                <div class="formContent">
+                </div>
+                <div>
+                    <li id="profilePoint"><img src="./assets/img/cadastro/planeta-terra.png" alt=""
+                            class="profilePonitImg">
+                        <p id="profilePoints2"></p>
+                    </li>
+                    <li id="profilePickup"><img src="./assets/img/perifl/icone-loja-verde-removebg-preview.png" alt=""
+                            class="profilePickupImg">30 Coletas
+                </div>
+                <div id="conteinerPerfil2">
+                    <a id="btneditPerfil" onclick="OPEN_MODAL_EDITAR_PERFIL()">Editar Perfil</a>
+                    <a id="exitPerfil" href="./index.html">Sair</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalEditarPerfil">
+        <div id="backgroundEP">
+            <button class="closeModalEP" onclick="CLOSE_MODAL_EDITAR_PERFIL()">
+                <div class="closeModalEP">
+                    <span class="barEP"></span>
+                    <span class="barEP"></span>
+                </div>
+            </button>
+            <div id="conteinerEP">
+                <h1 id="editarPerfilTitle">Editar Perfil</h1>
+                <div class="formContent">
+                    <h2 id="nameTitleEP">Nome de Usuário</h2>
+                    <input id="changeNameEP" type="text">
+                    <a>Mensagem de erro</a>
+                </div>
+                <div class="formContent">
+                    <h2 id="emailTitleEP">Email</h2>
+                    <input id="changeEmailEP" type="email">
+                    <a>Mensagem de erro</a>
+                </div>
+                <div class="formContent">
+                    <h2 id="password">Senha</h2>
+                    <input id="changePasswordEP" type="password">
+                    <a>Mensagem de erro</a>
+                </div>
+                <a id="saveChangesEP">Salvar alterações</a>
+                <a id="dropUser" onclick="OPEN_MODAL_DELETE()">Excluir conta</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalDeleteBackground">
+        <div class="modalContainerDelete">
+            <div class="modalDelete">
+                <img id="deleteProfile" src="./assets/img/excluirConta/planetaTriste.png" alt="ColetaBlu triste">
+
+                <span>
+                    <p>Tem certeza? Partir nunca é fácil...</p>
+
+                    <p>A ColetaBlu sente sua falta antes mesmo de você ir.</p>
+
+                    <p>Cada ação sua fez a diferença, contribuindo para um mundo mais verde e sustentável.</p>
+
+                    <p>Até logo, amigo! 🌍💚</p>
+                </span>
+
+                <div class="btnsDelete">
+                    <button id="btnDeletePerfil" class="btnOK">Excluir Conta</button>
+                    <button class="btnClose" onclick="CLOSE_MODAL_DELETE()">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header id="headerNavigation">
         <nav class="barNavigation">
-    
-          <img class="imgbarNavigation" src="../nav/logo-com-slogan.png" alt="">
-          <div class="navHome">
-            <ul class="navIndex"> </ul>
-          </div>
-          <div class="navigationBar">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
+
+            <img class="imgbarNavigation" src="../nav/logo-com-slogan.png" alt="">
+            <div class="navHome">
+                <ul class="navIndex"> </ul>
+            </div>
+            <div class="navigationBar">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
-      </header>
+    </header>
 
 
     <main class="mainTroca">
@@ -57,7 +147,7 @@
                             <span class="barCoupom"></span>
                         </div>
                         <img src="./assets/img/trocaPontos/cupom.png" alt="" class="coupomConfirmn"
-                            onclick="modalConfirmnOpen()">
+                            onclick="useCupom()">
                     </div>
                 </div>
                 <div class="modalTrocaConfirmnContent">
@@ -66,7 +156,14 @@
                             <span class="barCoupom"></span>
                             <span class="barCoupom"></span>
                         </div>
-                        <img src="./assets/img/trocaPontos/valeCupom.png" alt="" class="coupom">
+                        <div id="divConfirmCupom" style="width: 100%; height: 80%; align-self: center;">
+                            <p style="font-size: x-large; text-align: center;">CUPOM:</p>
+                            <img style="margin-left: auto; margin-right: auto; display: block;"
+                                src="./assets/img/trocaPontos/vale.png" alt="">
+                            <div id="ecoScore">EcoScore:</div>
+                            <div id="ecoScorePoint">300 Pontos</div>
+                        </div>
+
                     </div>
                 </div>
                 <h1 class="tittleCardTroca"> Empresa de Bebidas X</h1>
@@ -114,6 +211,9 @@
     </footer>
 
     <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./js/perfil.js"></script>
+    <script src="./js/editarPerfil.js"></script>
+    <script src="./js/excluirPerfil.js"></script>
     <script src="./lib/owlCarousel/dist/owl.carousel.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- <script src="./js/nav.js"></script> -->
@@ -140,7 +240,7 @@
 
         });
     </script>
-      <script src="./js/restrito.js"></script>
+    <script src="./js/restrito.js"></script>
 
 
 </body>

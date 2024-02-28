@@ -1,16 +1,30 @@
 ﻿using ColetaBlu.Contracts_Repository;
 using ColetaBlu.DTO;
-using ColetaBlu.Entity;
 using ColetaBlu.Infrastructure;
+using ColetaBlu.Entity;
 using Dapper;
+
 
 namespace ColetaBlu.Repository
 {
     public class CollectRepository : Connection, ICollectRepository
     {
-        public Task Add(CollectDTO collect)
+
+        public async Task Add(CollectDTO collect)
         {
-            throw new NotImplementedException();
+            string sql = @"
+                INSERT INTO COLLECT (SocialNumber, Quantity, User_Id, CollectResidue_CollectionPoint_Id, CollectResidue_Residue_Id)
+                            VALUE (@SocialNumber, @Quantity, @User_Id, @CollectResidue_CollectionPoint_Id, @CollectResidue_Residue_Id)
+            ";
+            await Execute(sql, collect);
+        }
+
+        public async Task AddMultiple(IEnumerable<CollectDTO> collects)
+        {
+            foreach (var collect in collects)
+            {
+                await Add(collect);
+            }
         }
 
         public Task<IEnumerable<CollectEntity>> Read()
@@ -27,5 +41,6 @@ namespace ColetaBlu.Repository
                         on r.Id = cr.Residue_Id";
             return await GetConnection().QueryAsync<CollectEntity>(sql);
         }
+    
     }
 }

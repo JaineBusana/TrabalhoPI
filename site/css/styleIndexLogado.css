@@ -24,7 +24,7 @@ body {
 
 }
 
-.navigation {
+/* .navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -82,7 +82,7 @@ body {
 .navigationBar .bar:nth-child(3) {
     background: #307A50;
 
-}
+} */
 
 
 #profile {
@@ -138,7 +138,6 @@ body {
     border-radius: 55px;
     BORDER: 1px solid #6A994E;
     background-color: #FFFFFF;
-    font-family: mukta_bold !important;
 }
 
 .profilePonitImg,
@@ -192,7 +191,7 @@ section {
 }
 
 @media(max-width:970px) {
-    .navigation {
+    /* .navigation {
         padding: 18px 20px;
         z-index: 1001;
         position: fixed;
@@ -251,7 +250,7 @@ section {
         display: flex;
         align-items: center;
         justify-content: space-around;
-    }
+    } */
 
     #profile {
         display: flex;
@@ -306,8 +305,8 @@ section {
         justify-content: center;
     }
 
-    .navItem a{
+    /* .navItem a{
         color: #FFF !important;
-    }
+    } */
 
 }

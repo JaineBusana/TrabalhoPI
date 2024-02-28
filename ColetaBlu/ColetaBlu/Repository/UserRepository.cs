@@ -65,5 +65,15 @@ namespace ColetaBlu.Repository
             await Execute(sql, user);
             return user;
         }
+
+        public async Task UpdateScore(UserEntity user)
+        {
+            string sql = @"
+                     UPDATE User
+                     SET Score = @Score
+                     WHERE Id = @Id
+            ";
+            await Execute(sql, user);
+        }
     }
 }
