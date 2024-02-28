@@ -149,5 +149,3 @@ function checkFiltersSelection() {
     errorMessageElement.style.display = "none";
   }
 }
-
-
