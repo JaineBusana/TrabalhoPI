@@ -28,6 +28,7 @@
     padding: 18px 40px;
     min-width: 400px;
     transition: all 0.5s;
+    
 }
 
 .indexsemlogin {
@@ -57,7 +58,7 @@
 
 .barNavigation ul li a {
     font-family: mukta_medium;
-    color: #6A994E;
+    color: #6A994E ;
     font-size: 20px;
     width: 70%;
     height: 40px;
