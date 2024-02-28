@@ -2,180 +2,190 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/cadastro.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="../nav/nav.css">
-    <!-- <link rel="stylesheet" href="./css/nav.css"> -->
-    <link rel="stylesheet" href="./css/styleIndex.css">
-    <link rel="stylesheet" href="./css/StyleLogin.css">
-    <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/cadastro.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="../nav/nav.css">
+  <!-- <link rel="stylesheet" href="./css/nav.css"> -->
+  <link rel="stylesheet" href="./css/styleIndex.css">
+  <link rel="stylesheet" href="./css/StyleLogin.css">
+  <link rel="icon" href="./assets/img/cadastro/MicrosoftTeams-image (8).png">
 
-    <title>Cadastro</title>
+  <title>Cadastro</title>
 </head>
 
 <body>
 
 
 
-    <header id="headerNavigation">
-        <nav class="barNavigation">
-    
-          <img class="imgbarNavigation" src="../nav/logo-com-slogan.png" alt="">
-          <div class="navHome">
-            <ul class="navIndex"> </ul>
-          </div>
-          <div class="navigationBar">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </nav>
-      </header>
 
-    <aside class="greetings">
-        <img src="./assets/img/MicrosoftTeams-image (5).png" alt="Logo coletablu">
-        <h1>Bem vindo!</h1>
-        <p>Insira algumas informações <br>
-            e comece sua jornada conosco!</p>
-    </aside>
-    <main>
-        <form id="formLogin">
-            <div id="modalLogin" class="">
-              <div id="backgroundLogin" class="flex">
-                <div>
-                  <button class="closeModal" onclick="CLOSE_MODAL_LOGIN()">
-                    <div class="menuLogin">
-                      <span class="barLogin"></span>
-                      <span class="barLogin"></span>
-                    </div>
-                  </button>
-                  <div class="flex">
-                    <img id="logo" class="h-20" src="./assets/img/MicrosoftTeams-image (7).png" alt="Logo da ColetaBlu">
-                    <h1 class=" mt-10 enterLogin">Entrar</h1>
-                  </div>
-                  <div class="msg"> </div>
-                  <div class="">
-                    <h1 id="userLogin" class="mt-10">Email</h1>
-                  </div>
-                  <div>
-                    <input id="insertUserLogin" class="mb-2 " type="text" onfocus="this.value='';">
-                  </div>
-                  <div>
-                    <h1 id="passwordLogin" class="">Senha</h1>
-                  </div>
-                  <div class="flex">
-                    <input id="insertPasswordLogin" class="" type="password" onfocus="this.value='';">
-                  </div>
-                  <div>
-                    <a id="forgotPasswordLogin" class="" href="">Esqueci a senha!</a>
-                  </div>
-                  <div>
-                    <button id="login">Login</button>
-                  </div>
-                  <div class="flex">
-                    <h1 class="registerLogin ml-6">Não tem uma conta?</h1>
-                    <a id="linkRegisterLogin" class="registerLogin ml-1" href="cadastro.html">Cadastre-se!</a>
-                  </div>
-                </div>
-                <img id="backgroundPhoto" src="./assets/img/Foto_Fundo_Login.jpg" alt="Imagen fundo"
-                  style="max-width:51%;height:auto;">
+  <header id="headerNavigation">
+    <nav class="barNavigation">
+
+      <img class="imgbarNavigation" src="../nav/logo-com-slogan.png" alt="">
+      <div class="navHome">
+        <ul class="navIndex"> </ul>
+      </div>
+      <div class="navigationBar">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <aside class="greetings">
+    <img src="./assets/img/MicrosoftTeams-image (5).png" alt="Logo coletablu">
+    <h1>Bem vindo!</h1>
+    <p>Insira algumas informações <br>
+      e comece sua jornada conosco!</p>
+  </aside>
+  <main>
+
+    <div id="modalSucessCadastro">
+      <div id="conteinerSucess">
+        <h1 id="titleCadastroSucess">Cadastro realizado com sucesso</h1>
+        <h1 id="titleCadastroSucess2">Por favor realize o login!</h1>
+        <button id="okCadastroSucess" onclick="CLOSE_MODAL_SUCESS()">Ok</button>
+      </div>
+    </div>
+
+    <form id="formLogin">
+      <div id="modalLogin" class="">
+        <div id="backgroundLogin" class="flex">
+          <div>
+            <button class="closeModal" onclick="CLOSE_MODAL_LOGIN()">
+              <div class="menuLogin">
+                <span class="barLogin"></span>
+                <span class="barLogin"></span>
               </div>
+            </button>
+            <div class="flex">
+              <img id="logo" class="h-20" src="./assets/img/MicrosoftTeams-image (7).png" alt="Logo da ColetaBlu">
+              <h1 class=" mt-10 enterLogin">Entrar</h1>
             </div>
-          </form>
+            <div class="msg"> </div>
+            <div class="">
+              <h1 id="userLogin" class="mt-10">Email</h1>
+            </div>
+            <div>
+              <input id="insertUserLogin" class="mb-2 " type="text" onfocus="this.value='';">
+            </div>
+            <div>
+              <h1 id="passwordLogin" class="">Senha</h1>
+            </div>
+            <div class="flex">
+              <input id="insertPasswordLogin" class="" type="password" onfocus="this.value='';">
+            </div>
+            <div>
+              <a id="forgotPasswordLogin" class="" href="">Esqueci a senha!</a>
+            </div>
+            <div>
+              <button id="login">Login</button>
+            </div>
+            <div class="flex">
+              <h1 class="registerLogin ml-6">Não tem uma conta?</h1>
+              <a id="linkRegisterLogin" class="registerLogin ml-1" href="cadastro.html">Cadastre-se!</a>
+            </div>
+          </div>
+          <img id="backgroundPhoto" src="./assets/img/Foto_Fundo_Login.jpg" alt="Imagen fundo"
+            style="max-width:51%;height:auto;">
+        </div>
+      </div>
+    </form>
 
-        <div class="register">
-            <h1>Criar conta</h1>
-            <div id="chooseAcontType">
-                <div id="btnSejaColetor" class="btnSejaColetor"></div>
-                <h2>Seja coletor</h2>
-            </div>
-            <p id="textSejaColetor" class="textSejaColetor">
-                ♻️ Colabore para um planeta mais saudável. <br>
-                Inscreva-se agora como coletor </p>
-        </div>
-        <form id="formCadastre" class="formCadastre">
-            <div class="cadastreUser">
+    <div class="register">
+      <h1>Criar conta</h1>
+      <div id="chooseAcontType">
+        <div id="btnSejaColetor" class="btnSejaColetor"></div>
+        <h2>Seja coletor</h2>
+      </div>
+      <p id="textSejaColetor" class="textSejaColetor">
+        ♻️ Colabore para um planeta mais saudável. <br>
+        Inscreva-se agora como coletor </p>
+    </div>
+    <form id="formCadastre" class="formCadastre">
+      <div class="cadastreUser">
 
-                <div class="formContent">
-                    <label for="username">Nome</label>
-                    <input type="text" id="username" placeholder="Digite seu Nome">
-                    <a>Mensagem de erro</a>
-                </div>
-                <div class="formContent">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Digite seu Email">
-                    <a>Mensagem de erro</a>
-                </div>
-                <div class="campSocialNumber">
-                    <div class="formContent">
-                        <label for="userSocialNumber">Número Social</label>
-                        <input type="text" id="userSocialNumber" placeholder="Digite seu Número Social">
-                        <a>Mensagem de erro</a>
-                    </div>
-                </div>
-                <div class="formCadastreColetor">
-                    <div class="formContent">
-                        <label for="address">Endereço</label>
-                        <input type="text" id="address" placeholder="Digite o Endereço">
-                        <a>Mensagem de erro</a>
-                    </div>
-                    <div class="formContent">
-                        <label for="phone">Telefone</label>
-                        <input type="text" id="phone" placeholder="Digite seu Telefone">
-                        <a>Mensagem de erro</a>
-                    </div>
-                </div>
-            </div>
-            <div class="formContent">
-                <label for="password">Senha</label>
-                <input type="password" id="password" placeholder="Digite sua Senha">
-                <a>Mensagem de erro</a>
-            </div>
-            <div class="formContent">
-                <label for="confirmationPassword">Confirmação de senha</label>
-                <input type="password" id="confirmationPassword" placeholder="Digite sua senha novamente">
-                <a>Mensagem de erro</a>
-            </div>
-            <div id="submitCadastreUser">
-                <button class="btnCadastro"  ><a href="index.html">Cadastrar</a></button>
-            </div>
-            <div id="textJaPossuiConta">
-                <p>Já passui uma conta? <a id="link" onclick="SHOW_MODAL_LOGIN()">Login</a></p>
-            </div>
-            </div>
-        </form>
-    </main>
-    <footer>
-        <div class="footerImgMobile">
-            <img id="imgPlant" src="./assets/img/rodape-img-mobile.png" alt="">
+        <div class="formContent">
+          <label for="username">Nome</label>
+          <input type="text" id="username" placeholder="Digite seu Nome">
+          <a>Mensagem de erro</a>
         </div>
-        <div class="footerImgPlants">
-            <img src="./assets/img/img-rodape.png" alt="">
+        <div class="formContent">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Digite seu Email">
+          <a>Mensagem de erro</a>
         </div>
-        <div class="footerColumn">
-            <div class="footerLogo centralizeParagraph">
-                <img src="./assets/img/logo-com-slogan-branco.png" alt="">
-            </div>
-            <div class="footerComplaint">
-                <h1>Denúncias - Ligue 156</h1>
-                <p>A Fiscalização Ambiental no município de Blumenau é realizada através da Gerência de Fiscalização da
-                    Semmas.
-                    Para mais informações acesse o site:</p>
-                <a href="https://www.blumenau.sc.gov.br/governo/fundacao-do-meio-ambiente/pagina/fiscalizacao-faema">Prefeitura
-                    de Blumenau</a>
-            </div>
-            </form>
+        <div class="campSocialNumber">
+          <div class="formContent">
+            <label for="userSocialNumber">Número Social</label>
+            <input type="text" id="userSocialNumber" placeholder="Digite seu Número Social">
+            <a>Mensagem de erro</a>
+          </div>
         </div>
+        <div class="formCadastreColetor">
+          <div class="formContent">
+            <label for="address">Endereço</label>
+            <input type="text" id="address" placeholder="Digite o Endereço">
+            <a>Mensagem de erro</a>
+          </div>
+          <div class="formContent">
+            <label for="phone">Telefone</label>
+            <input type="text" id="phone" placeholder="Digite seu Telefone">
+            <a>Mensagem de erro</a>
+          </div>
+        </div>
+      </div>
+      <div class="formContent">
+        <label for="password">Senha</label>
+        <input type="password" id="password" placeholder="Digite sua Senha">
+        <a>Mensagem de erro</a>
+      </div>
+      <div class="formContent">
+        <label for="confirmationPassword">Confirmação de senha</label>
+        <input type="password" id="confirmationPassword" placeholder="Digite sua senha novamente">
+        <a>Mensagem de erro</a>
+      </div>
+      <div id="submitCadastreUser">
+        <button class="btnCadastro"><a href="index.html">Cadastrar</a></button>
+      </div>
+      <div id="textJaPossuiConta">
+        <p>Já passui uma conta? <a id="link" onclick="SHOW_MODAL_LOGIN()">Login</a></p>
+      </div>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <div class="footerImgMobile">
+      <img id="imgPlant" src="./assets/img/rodape-img-mobile.png" alt="">
+    </div>
+    <div class="footerImgPlants">
+      <img src="./assets/img/img-rodape.png" alt="">
+    </div>
+    <div class="footerColumn">
+      <div class="footerLogo centralizeParagraph">
+        <img src="./assets/img/logo-com-slogan-branco.png" alt="">
+      </div>
+      <div class="footerComplaint">
+        <h1>Denúncias - Ligue 156</h1>
+        <p>A Fiscalização Ambiental no município de Blumenau é realizada através da Gerência de Fiscalização da
+          Semmas.
+          Para mais informações acesse o site:</p>
+        <a href="https://www.blumenau.sc.gov.br/governo/fundacao-do-meio-ambiente/pagina/fiscalizacao-faema">Prefeitura
+          de Blumenau</a>
+      </div>
+      </form>
+    </div>
 
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="./js/login.js"></script>
-    <script src="./js/cadastro.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <script src="./js/nav.js"></script> -->
-    <script src="../nav/nav.js"></script>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="./js/login.js"></script>
+  <script src="./js/cadastro.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <script src="./js/nav.js"></script> -->
+  <script src="../nav/nav.js"></script>
 </body>
 
 </html>
