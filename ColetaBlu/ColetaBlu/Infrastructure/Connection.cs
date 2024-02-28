@@ -5,7 +5,7 @@ namespace ColetaBlu.Infrastructure
 {
     public class Connection
     {
-        protected string connectionString = "Server=localhost;DataBase=coleta_blu;User=root;Password=";
+        protected string connectionString = "Server=localhost;DataBase=coleta_blu;User=root;Password=root0512";
        
         protected MySqlConnection GetConnection()
         {

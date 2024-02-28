@@ -21,7 +21,6 @@ if (typeLog === "coletor") {
   `;
 
   $('.navIndex').append(cardHTML);
-  $('.navIndex').append(cardHTML);
   const perfil = document.querySelector('.perfil');
   perfil.addEventListener('click', () => {
     navIndex.classList.remove('ativo');

@@ -1,4 +1,4 @@
-const placeCpfHistoric = document.getElementById("placeCpfHistoric")
+{const placeCpfHistoric = document.getElementById("placeCpfHistoric")
 const placeNameHistoric = document.getElementById("placeNameHistoric");
 const placeQuantityHistoric = document.getElementById("placeQuantityHistoric");
 const placeCollectPointHistoric = document.getElementById("placeCollectPointHistoric");
@@ -213,4 +213,5 @@ function errorInput(input, message) {
     const textMessage = formItem.querySelector("a")
     textMessage.innerText = message;
     formItem.className = "formContentHistoric error"
+}
 }
