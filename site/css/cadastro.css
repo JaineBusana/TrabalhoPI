@@ -175,11 +175,28 @@ text-align: center;
 }
 
 #titleCadastroSucess {
+    font-size: 32px;
+    color: #6A994E;
+    font-family: mukta_bold;
+}
 
+#titleCadastroSucess2 {
+    font-size: 20px;
+    color: #6A994E;
+    font-family: mukta_bold;
 }
 
 #okCadastroSucess {
     margin-top: 25px;
-    color: #386641;
+    color: #FFF;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 22px;
+    background-color: #6A994E;
+    padding-inline: 20px;
+    padding-block: 3px;
+    cursor: pointer;
 }
 
