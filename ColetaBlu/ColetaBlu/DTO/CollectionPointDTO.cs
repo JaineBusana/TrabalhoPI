@@ -1,16 +1,12 @@
-﻿namespace ColetaBlu.Entity // TEM QUE FICAR IGUAL AO DO BANCO
+﻿namespace ColetaBlu.DTO
 {
-    public class CollectionPointEntity
+    public class CollectionPointDTO
     {
         public int? Id { get; set; }
         public string? Name { get; set; }
         public string? Street { get; set; }
         public int? Number { get; set; }
         public string? Bairro { get; set; }
-
         public string? Local { get; set; }
-
-        public int? Neighborhood_Id { get; set; }
     }
-
 }

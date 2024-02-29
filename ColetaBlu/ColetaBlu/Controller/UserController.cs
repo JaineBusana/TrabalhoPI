@@ -35,7 +35,7 @@ namespace ColetaBlu.Controller
         public async Task<IActionResult> Add(UserDTO user)
         {
             await _userRepository.Add(user);
-            return Ok();
+            return Ok(user);
         }
 
         [HttpPut]

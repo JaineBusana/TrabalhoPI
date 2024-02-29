@@ -9,11 +9,11 @@ namespace ColetaBlu.Infrastructure
        
         protected MySqlConnection GetConnection()
         {
-         return new MySqlConnection(connectionString);
+            return new MySqlConnection(connectionString);
         }
         protected async Task<int> Execute(string sql, object obj)
         {
-         using (MySqlConnection con = GetConnection())
+            using (MySqlConnection con = GetConnection())
             {
                 return await con.ExecuteAsync(sql, obj);
             }
